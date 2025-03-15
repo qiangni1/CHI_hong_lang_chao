@@ -1,0 +1,30 @@
+
+state={
+	id=165
+	name="STATE_165"
+	resources={
+		steel=57.000
+	}
+
+	history={
+		owner = SPR
+		add_core_of = SPR
+		add_core_of = CAT
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			air_base = 2
+			nuclear_reactor = 1
+		}
+	}
+
+	provinces={
+		854 872 897 3898 3899 6812 6836 6865 6927 6966 9797 9824 11779 
+	}
+	manpower=6436537
+	buildings_max_level_factor=1.000
+	state_category = city
+	local_supplies=0.000
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=198
+	name="STATE_198"
+
+	history={
+		owner = UKR
+		add_core_of = UKR
+		victory_points = {
+			9481 4 
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		476 6455 6480 9423 9435 9481 9533 9576 14362 
+	}
+	manpower=1497045
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.000
+}

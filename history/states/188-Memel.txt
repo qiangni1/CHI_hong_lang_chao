@@ -1,0 +1,35 @@
+
+state={
+	id=188
+	name="STATE_188"
+
+	history={
+		owner = LIT
+		add_core_of = LIT
+		victory_points = {
+			3288 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			3288 = {
+				bunker = 1
+
+			}
+			3288 = {
+				naval_base = 6
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		3288 14274 
+	}
+	manpower=252000
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.000
+}

@@ -1,0 +1,38 @@
+
+state={
+	id=171
+	name="STATE_171"
+	resources={
+		tungsten=2.000
+		aluminium=8.000
+	}
+
+	history={
+		owner = SPR
+		add_core_of = SPR
+		add_core_of = GAL
+		victory_points = {
+			758 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			synthetic_refinery = 1
+			air_base = 2
+			758 = {
+				naval_base = 6
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		729 758 3761 6764 6955 11692 11710 
+	}
+	manpower=244850
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

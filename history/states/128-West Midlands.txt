@@ -1,0 +1,22 @@
+state = {
+	id = 128
+	name = "STATE_128"
+	manpower = 5185235
+	state_category = large_city
+	
+	history = {
+		owner = ENG
+		add_core_of = ENG
+		victory_points = { 9297 25 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 3
+		}
+	}
+	
+	provinces = {
+		3301 6270 7239 9297 11345 
+	}
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=107
+	name="STATE_107"
+	resources={
+		steel=2.000
+	}
+
+	history={
+		owner = SER
+		add_core_of = SER
+		victory_points = {
+			11586 20 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 3
+			air_base = 5
+			power_plant = 2
+		}
+
+	}
+
+	provinces={
+		11586 
+	}
+	manpower=1685500
+	buildings_max_level_factor=1.000
+	state_category = city
+	local_supplies=0.000
+}

@@ -1,0 +1,21 @@
+state = {
+	id = 109
+	name = "STATE_109"
+	manpower = 2464899
+	state_category = large_suburb
+
+	history = {
+		owner = CRO
+		add_core_of = CRO
+		victory_points = { 11581 20 } #Zagreb
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+		}
+	}
+
+	provinces = {
+		6672 624 3592 3596 3627 9595 9611 11581 11594 13258
+	}
+}

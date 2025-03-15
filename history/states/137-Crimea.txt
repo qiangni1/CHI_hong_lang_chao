@@ -1,0 +1,34 @@
+	state = {
+		id = 137
+		name = "STATE_137"
+		manpower = 1913731
+		state_category = suburb
+		
+		resources = {
+			oil = 15
+		}
+		
+		history = {
+			owner = SOV
+			add_claim_by = UKR
+			add_core_of = SOV
+			victory_points = { 9680 1 }
+			victory_points = { 3722 1 }
+			victory_points = { 11649 3 }
+			victory_points = { 6704 5 }
+			buildings = {
+				infrastructure = 3
+				air_base = 2
+				dockyard = 3
+				9680  = {
+					naval_base = 1
+					coastal_bunker = 1
+					bunker = 1
+				}
+			}
+		}
+		
+		provinces = {
+			705 3722 6704 6724 9677 9680 9718 11649 14406 
+		}
+	}

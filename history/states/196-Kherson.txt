@@ -1,0 +1,42 @@
+
+state={
+	id=196
+	name="STATE_196"
+
+	history={
+		owner = UKR
+		add_core_of = UKR
+		victory_points = {
+			737 5 
+		}
+		victory_points = {
+			6771 3 
+		}
+		victory_points = {
+			3573 2 
+		}
+		victory_points = {
+			14622 1 
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			737 = {
+				naval_base = 2
+				coastal_bunker = 1
+			}
+			14622 = {
+				naval_base = 1
+			}
+		}
+
+	}
+
+	provinces={
+		568 721 737 767 3573 6771 9712 11715 14374 14375 14376 14404 14405 14600 14601 14622 14623 14624 14625 14626 14627 14629 
+	}
+	manpower=1039080
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}
