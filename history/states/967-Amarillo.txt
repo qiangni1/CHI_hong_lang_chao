@@ -1,0 +1,21 @@
+state={
+	id=967
+	name="STATE_967"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = TEX
+		victory_points = { 3972 5 }	#Amarillo
+		victory_points = { 13491 1 }	#Borger
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces={
+		13492 13491 13489 9908 2055 3972 13494
+	}
+	manpower=369309
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

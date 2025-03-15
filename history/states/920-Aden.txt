@@ -1,0 +1,22 @@
+state={
+	id=920
+	name="STATE_920"
+	history = {
+		owner = AAS
+		add_core_of = HOU
+		add_core_of = YEM
+		add_core_of = AAS
+		buildings = {
+			infrastructure = 2
+			5074 = { naval_base = 5 }
+		}
+		victory_points = { 13288 10 }
+	}
+	provinces={
+		5074 13288 13717
+	}
+	manpower=3212645
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

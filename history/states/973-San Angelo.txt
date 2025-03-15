@@ -1,0 +1,29 @@
+state={
+	id=973
+	name="STATE_973"
+	
+	resources = {
+		steel = 22
+	}
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = TEX
+		victory_points = { 13466 5 } #San Angelo
+		victory_points = { 13449 3 } #Sterling City
+		victory_points = { 13469 1 } #Melvin
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			air_base = 4
+		}
+	}
+	provinces={
+		13448 13449 13450 13466 13452 13451 13468 13467 13469 6798 7836
+	}
+	manpower = 1131243
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

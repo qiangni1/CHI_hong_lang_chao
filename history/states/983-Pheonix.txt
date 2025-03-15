@@ -1,0 +1,22 @@
+state={
+	id=983
+	name="STATE_983"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = ARZ
+		victory_points = { 13529 20 }	#Phoenix
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			air_base = 3
+		}
+	}
+	provinces={
+		13528 13530 13532 13533 13529 13531
+	}
+	manpower=4823847
+	buildings_max_level_factor=1.000
+	
+	state_category = large_suburb
+}

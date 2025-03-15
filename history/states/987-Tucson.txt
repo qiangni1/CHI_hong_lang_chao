@@ -1,0 +1,22 @@
+state={
+	id=987
+	name="STATE_987"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = ARZ
+		victory_points = { 3834 15 }	#Tucson
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	provinces={
+		3834 7920 14811 14812 14815 14814 14813
+	}
+	manpower=1618108
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

@@ -1,0 +1,19 @@
+state={
+	id=979
+	name="STATE_979"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = LOU
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	provinces={
+		4507 4535 12398
+	}
+	manpower=876917
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

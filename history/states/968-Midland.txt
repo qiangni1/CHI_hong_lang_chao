@@ -1,0 +1,27 @@
+state={
+	id=968
+	name="STATE_968"
+	
+	resources = {
+		oil = 57
+	}
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = TEX
+		victory_points = { 13456 10 } #Brownfield
+		victory_points = { 13453 10 } #Midland
+		buildings = {
+			infrastructure = 3
+			synthetic_refinery = 3
+		}
+	}
+	provinces={
+		13455 13454 13453 13456 13457 1998 8064
+	}
+	manpower=380177
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

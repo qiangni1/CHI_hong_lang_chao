@@ -1,0 +1,21 @@
+state={
+	id=991
+	name="STATE_991"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = ARZ
+		victory_points = { 7821 1 }	#Page
+		victory_points = { 12765 4 }	#Flagstaff
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces={
+		12765 850 7821 13980 14032
+	}
+	manpower=231308
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

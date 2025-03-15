@@ -1,0 +1,23 @@
+state={
+	id=993
+	name="STATE_993"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = ORE
+		victory_points = { 13543 20 }	#Portland
+		buildings = {
+			infrastructure = 4
+			air_base = 5
+			industrial_complex = 2
+			office_park = 3
+		}
+	}
+	provinces={
+		13545 13543 13546 13544 13542
+	}
+	manpower = 1562194
+	buildings_max_level_factor=1.000
+	
+	state_category = suburb
+}

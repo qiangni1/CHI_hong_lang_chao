@@ -1,0 +1,19 @@
+state={
+	id=997
+	name="STATE_997"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = ORE
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces={
+		7865 12553 4826 13556 13555
+	}
+	manpower = 150133
+	buildings_max_level_factor=1.000
+	
+	state_category = village
+}

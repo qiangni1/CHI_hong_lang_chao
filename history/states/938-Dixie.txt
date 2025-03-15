@@ -1,0 +1,20 @@
+state={
+	id=938
+	name="STATE_938"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = FLA
+		victory_points = { 13326 2 }	#Gainsville
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	provinces={
+		1556 13326 1584 13327 13328
+	}
+	manpower=1282101
+	buildings_max_level_factor=1.000
+	
+	state_category = suburb
+}

@@ -1,0 +1,26 @@
+state={
+	id=959
+	name="STATE_959"
+	
+	resources = {
+		steel = 48
+	}
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = TEX
+		victory_points = { 13378 25 }		#San Antonio
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+		}
+	}
+	provinces={
+		13379 13381 13378 13410 13380 13382
+	}
+	manpower = 2399989
+	buildings_max_level_factor=1.000
+	
+	state_category = suburb
+}

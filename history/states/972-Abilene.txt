@@ -1,0 +1,23 @@
+state={
+	id=972
+	name="STATE_972"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = TEX
+		victory_points = { 13487 10 } #Abilene
+		victory_points = { 1915 3 } #Stamford
+		victory_points = { 13486 1 } #Winters
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+		}
+	}
+	provinces={
+		13498 13487 12875 1915 3875 13486 13482 13485 7981 13483
+	}
+	manpower = 1531243
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

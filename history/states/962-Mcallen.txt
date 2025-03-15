@@ -1,0 +1,21 @@
+state={
+	id=962
+	name="STATE_962"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = TEX
+		victory_points = { 12369 3 }		#Brownsville
+		victory_points = { 13422 3 }		#McAllen
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	provinces={
+		13422 13424 13423 12369
+	}
+	manpower=1528496
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

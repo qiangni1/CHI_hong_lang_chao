@@ -1,0 +1,24 @@
+state={
+	id=978
+	name="STATE_978"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = LOU
+		victory_points = {
+			7552 20
+		}
+		buildings = {
+			infrastructure = 4
+			7552 = { naval_base = 5 }
+			nuclear_reactor = 1
+		}
+	}
+	provinces={
+		13512 13514 13513 7552
+	}
+	manpower=818576
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

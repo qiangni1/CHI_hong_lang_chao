@@ -1,0 +1,21 @@
+state={
+	id=985
+	name="STATE_985"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = ARZ
+		victory_points = { 13525 5 }		#Yuma
+		buildings = {
+			infrastructure = 3
+			energy_farm = 1
+		}
+	}
+	provinces={ 
+		13525 13526 10783
+	}
+	manpower=261988
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

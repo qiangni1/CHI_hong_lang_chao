@@ -1,0 +1,33 @@
+state = {
+	id = 936
+	name = "STATE_936"
+	history = {
+		owner = USA
+		add_core_of = FLA
+		add_core_of = USA
+		victory_points = {
+			10407
+			10
+		}		#Tallahassee
+		victory_points = {
+			10380
+			5
+		}		#Panama City
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			office_park = 1
+		}
+	}
+	provinces = {
+		13320
+		10380
+		10407
+		13321
+		13323
+		13322
+	}
+	manpower = 862832
+	buildings_max_level_factor = 1
+	state_category = town
+}

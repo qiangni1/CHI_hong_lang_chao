@@ -1,0 +1,23 @@
+state={
+	id=907
+	name="STATE_907"
+	
+	provinces={
+		4962 10884 12866 7985 12082 12733
+	}
+	
+	history = {
+		owner = HRL
+		add_core_of = HRL
+		add_core_of = LBA
+		
+		buildings = {
+			infrastructure = 0
+		}
+	}
+	
+	manpower=607230
+	buildings_max_level_factor=1.000
+	
+	state_category = wasteland
+}

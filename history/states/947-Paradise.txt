@@ -1,0 +1,26 @@
+state={ #Oh Paradise
+	id=947
+	name="STATE_947"
+	resources = {
+		tungsten = 12
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = CAL
+		victory_points = { 9697 10 } #Chico
+		victory_points = { 766 5 } #Paradise
+		victory_points = { 13366 1 } #Susanville
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+		}
+	}
+	provinces={
+		13367 13366 766 710 13346 9697 11698 13364
+	}
+	manpower=554666
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

@@ -1,0 +1,23 @@
+state={
+	id=923
+	name="STATE_923"
+	history = {
+		owner = HOU
+		add_core_of = HOU
+		add_core_of = YEM
+		victory_points = { 13272 5 }
+		buildings = {
+			infrastructure = 2
+		}
+		AAS = {
+			set_province_controller = 13269
+		}
+	}
+	provinces={
+		13268 13272 13269
+	}
+	manpower=13645
+	buildings_max_level_factor=1.000
+	
+	state_category = pastoral
+}

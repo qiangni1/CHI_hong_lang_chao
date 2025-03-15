@@ -1,0 +1,21 @@
+state={
+	id=980
+	name="STATE_980"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = LOU
+		victory_points = { 13516 3 } #DeRidder
+		victory_points = { 12313 5 } #Lakes Charles
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	provinces={
+		1528 13516 1643 12313
+	}
+	manpower=711191
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

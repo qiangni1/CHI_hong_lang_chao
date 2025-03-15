@@ -1,0 +1,25 @@
+state={
+	id=994
+	name="STATE_994"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = ORE
+		victory_points = { 4380 4 }		#Eugene
+		victory_points = { 12211 2 }	#Hillsboro
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			4380 = {
+				naval_base = 5
+			}
+		}
+	}
+	provinces={
+		10183 12211 4380 13557 3513
+	}
+	manpower = 1509866
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

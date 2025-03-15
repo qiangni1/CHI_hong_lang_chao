@@ -1,0 +1,22 @@
+state={
+	id=941
+	name="STATE_941"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = CAL
+		victory_points = { 13350 25 } #Sacramento
+		victory_points = { 13358 5 } #Yuba City
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+	}
+	provinces={
+		13348 13352 13350 13351 13358 13349
+	}
+	manpower = 2643899
+	buildings_max_level_factor=1.000
+	
+	state_category = suburb
+}

@@ -1,0 +1,31 @@
+state={
+	id=955
+	name="STATE_955"
+	history = {
+		owner = SHB
+		add_core_of = SHB
+		add_core_of = SOM
+		victory_points = { 8164 2 }
+		victory_points = { 13827 1 }
+		victory_points = { 12941 1 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 1
+			8164 = {
+				naval_base = 2
+			}
+		}
+		SOM = {
+			set_province_controller = 13829
+			set_province_controller = 8164
+		}
+	}
+	provinces={
+		11014 12941 8164 2063 10928 13828 13829 13827
+	}
+	manpower=3131243
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

@@ -1,0 +1,29 @@
+state={
+	id=943
+	name="STATE_943"
+	
+	resources = {
+		steel = 15
+		aluminium = 12
+	}
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = CAL
+		victory_points = { 3677 5 }	#Holister
+		victory_points = { 13357 5 } #Livermore
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 2
+		}
+	}
+	provinces={
+		13347 13357 13360 3677 13665 13668
+	}
+	manpower=1577476
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

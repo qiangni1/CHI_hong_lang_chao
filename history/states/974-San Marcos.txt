@@ -1,0 +1,21 @@
+state={
+	id=974
+	name="STATE_974"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = TEX
+		victory_points = { 1927 3 } #Gonzales
+		victory_points = { 13471 1 } #Luling
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	provinces={
+		13471 13472 1927 13473 13470 13474 13383
+	}
+	manpower=469969
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

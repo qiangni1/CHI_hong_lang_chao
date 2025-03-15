@@ -1,0 +1,39 @@
+state = {
+	id = 934
+	name = "STATE_934"
+	resources = {
+		oil = 5
+		steel = 6
+	}
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = {
+			7892
+			1
+		}		#Junction City
+		victory_points = {
+			1352
+			3
+		}		#Wichita
+		buildings = {
+			infrastructure = 3
+			air_base = 4
+			arms_factory = 1
+			office_park = 1
+			nuclear_reactor = 1
+		}
+	}
+	provinces = {
+		7892
+		1352
+		7834
+		4811
+		9802
+		14820
+		14822
+	}
+	manpower = 962253
+	buildings_max_level_factor = 1
+	state_category = large_town
+}

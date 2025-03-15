@@ -1,0 +1,32 @@
+state={
+	id=944
+	name="STATE_944"
+	
+	resources = {
+		steel = 33
+	}
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = CAL
+		victory_points = { 13664 10 } #Salinas
+		victory_points = { 9637 5 }	#Monterey
+		victory_points = { 6881 3 }	#Santa Maria
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			3840 = {
+				naval_base = 8
+			}
+			nuclear_reactor = 1
+		}
+	}
+	provinces={
+		9637 3840 986 6881 6861 3784 11876 13341 11859 13664
+	}
+	manpower=4627937
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

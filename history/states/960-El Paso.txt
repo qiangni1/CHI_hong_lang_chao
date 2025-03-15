@@ -1,0 +1,21 @@
+state={
+	id=960
+	name="STATE_960"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = TEX
+		victory_points = { 13376 20 }		#El Paso
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+		}
+	}
+	provinces={
+		13377 13376
+	}
+	manpower=943678
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

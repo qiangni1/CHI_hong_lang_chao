@@ -1,0 +1,22 @@
+state={
+	id=952
+	name="STATE_952"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = CAL
+		victory_points = { 1562 25 }	#San Diego
+		victory_points = { 7517 1 }		#Vista
+		buildings = {
+			infrastructure = 4
+			1562 = { naval_base = 10 } 
+		}
+	}
+	provinces={
+		1562 13671 13669 6665 13356 7517
+	}
+	manpower=6152504
+	buildings_max_level_factor=1.000
+	
+	state_category = suburb
+}

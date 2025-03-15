@@ -1,0 +1,24 @@
+state={
+	id=945
+	name="STATE_945"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = CAL
+		victory_points = { 941 10 }		#Bakersfield
+		victory_points = { 13672 5 }	#Visalia
+		victory_points = { 10483 3 }	#Lancaster
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			energy_farm = 2
+		}
+	}
+	provinces={
+		13342 13343 9855 10483 10387 941 9911 13672
+	}
+	manpower=2306806
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

@@ -1,0 +1,28 @@
+state={
+	id=975
+	name="STATE_975"
+	
+	resources = {
+		steel = 12
+	}
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = TEX
+		victory_points = { 13480 5 } #Waco
+		victory_points = { 13501 3 } #Fairfield
+		victory_points = { 13484 1 } #Gatesville
+		buildings = {
+			infrastructure = 4
+			nuclear_reactor = 1	
+		}
+	}
+	provinces={
+		13484 13481 13480 13499 5022 13500 13501 10861 13504
+	}
+	manpower=944858
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

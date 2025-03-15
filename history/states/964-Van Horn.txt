@@ -1,0 +1,26 @@
+state={
+	id=964
+	name="STATE_964"
+	
+	resources = {
+		oil = 65
+	}
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = TEX
+		victory_points = { 10894 1 }		#Van Horn
+		buildings = {
+			infrastructure = 3
+			synthetic_refinery = 1
+		}
+	}
+	provinces={
+		13411 13414 13413 10740 13438 13439 10894 4955
+	}
+	manpower = 59084
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

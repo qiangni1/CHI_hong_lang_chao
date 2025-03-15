@@ -1,0 +1,22 @@
+state={
+	id=956
+	name="STATE_956"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = TEX
+		victory_points = { 13395 30 }		#Dallas
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 1
+		}
+	}
+	provinces={
+		13400 13397 13394 13396 13395 13399 13401
+	}
+	manpower = 5094924
+	buildings_max_level_factor=1.000
+	
+	state_category = large_city
+}

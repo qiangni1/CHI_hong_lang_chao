@@ -1,0 +1,22 @@
+state={
+	id=929
+	name="STATE_929"
+	history = {
+		owner = HEZ
+		add_core_of = LEB
+		add_core_of = HEZ
+		victory_points = { 11919 1 }	#Sidon
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+		}
+	}
+	provinces={
+		13290 11919
+	}
+	manpower=913645
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}
