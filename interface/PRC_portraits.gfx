@@ -1,0 +1,11 @@
+spriteTypes = {
+	#PRCPRC
+	spriteType = {
+		name = "GFX_portrait_PRC_huchunhua_1"
+		texturefile = "gfx/leaders/PRC/PRC_Hu_Chunhua_1.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_new_left_jinghji"
+		texturefile = "gfx/gui/PRC_new_left_jinghji.png"
+	}
+}

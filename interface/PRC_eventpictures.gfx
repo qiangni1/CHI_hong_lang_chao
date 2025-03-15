@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_PLAP"
+		texturefile = "gfx/event_pictures/PRC/report_event_PLA.png"
+	}
+	spriteType = {
+		name = "GFX_2025_xinchun"
+		texturefile = "gfx/event_pictures/PRC/report_event_2025_xinchun.png"
+	}
+	spriteType = {
+		name = "GFX_chinese_flag"
+		texturefile = "gfx/event_pictures/news_event/china/chinese_flag.dds"
+	}
+	spriteType = {
+		name = "GFX_chinese_protestors"
+		texturefile = "gfx/event_pictures/news_event/china/chinese_protestors.dds"
+	}
+}

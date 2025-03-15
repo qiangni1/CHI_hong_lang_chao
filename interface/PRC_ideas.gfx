@@ -1,0 +1,6 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_PRC_idea_world_jiefang"
+		texturefile = "gfx/interface/ideas/PRC/PRC_idea_world_jiefang.png"
+	}
+}
