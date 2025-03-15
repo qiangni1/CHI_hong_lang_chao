@@ -1,0 +1,27 @@
+state={
+	id=891
+	name="STATE_891"
+	provinces={
+		1357 1535 1548 4511 7516 7601 10384 10425 10438 12264 12360 12373 12388 12402 12417 12431 12195
+	}
+	resources = {
+		tungsten=5
+		rubber = 60
+	}
+	history = {
+		owner = SIA
+		add_core_of = SIA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 2
+		}
+		victory_points = { 12360 10 }
+		victory_points = { 10384 7 }
+		victory_points = { 12417 5 }
+		victory_points = { 12195 20 }
+	}
+	state_category = suburb
+	manpower=21500250
+	buildings_max_level_factor=1.000
+}

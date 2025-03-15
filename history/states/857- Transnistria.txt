@@ -1,0 +1,33 @@
+
+state={
+	id=857
+	name="STATE_857"
+
+	history={
+		owner = TRA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_claim_by = MOL
+		add_core_of = TRA
+		victory_points = {
+			13209 15 
+		}
+		victory_points = {
+			13213 10 
+		}
+		victory_points = {
+			14807 1 
+		}
+	}
+
+	provinces={
+		13209 13210 13212 13213 13214 14807 14808 14809 
+	}
+	manpower=530200
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

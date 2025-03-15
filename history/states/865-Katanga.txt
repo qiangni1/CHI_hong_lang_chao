@@ -1,0 +1,21 @@
+state={
+	id=865
+	name="STATE_865"
+	provinces={
+		191 1516 1817 1968 4515 12907 12795 1929 14533
+	}
+	
+	history={
+		owner = COG
+		add_core_of = MMK
+		victory_points = { 191 7 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=4120000
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

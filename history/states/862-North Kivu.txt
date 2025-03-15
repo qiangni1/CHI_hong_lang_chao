@@ -1,0 +1,26 @@
+state={
+	id=862
+	name="STATE_862"
+	resources={
+		tungsten = 4
+	}
+
+	history={
+		owner = COG
+		add_core_of = NDC
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1181 1 
+		}
+
+	}
+
+	provinces={
+		1181 4201 14543 14548 13176
+	}
+	manpower=5600000
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

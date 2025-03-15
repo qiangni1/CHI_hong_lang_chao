@@ -1,0 +1,34 @@
+
+state={
+	id=855
+	name="STATE_855"
+
+	history={
+		owner = PLD
+		victory_points = {
+			3544 30 
+		}
+		victory_points = {
+			14879 7 
+		}
+		victory_points = {
+			14263 7 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 6
+			arms_factory = 2
+			air_base = 2
+		}
+		add_core_of = PLD
+
+	}
+
+	provinces={
+		3544 14263 14879
+	}
+	manpower=2321916
+	buildings_max_level_factor=1.000
+	state_category = metropolis
+	local_supplies=0.000
+}

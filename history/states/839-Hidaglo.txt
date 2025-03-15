@@ -1,0 +1,27 @@
+state={
+	id=839
+	name="STATE_839"
+	
+	resources = {
+		steel = 2
+	}
+
+	history={
+		owner = USA
+		add_core_of = USA
+		add_core_of = NMX
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = { 13982 1 }
+	}
+	
+	provinces={
+		13679 5044 13982 10914 
+	}
+	
+	manpower=111371
+	buildings_max_level_factor=1.000
+	state_category = town
+}

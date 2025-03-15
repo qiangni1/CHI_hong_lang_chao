@@ -1,0 +1,34 @@
+state={
+	id=812
+	name="STATE_812"
+	
+	resources={
+		oil = 1
+	}
+
+	history={
+		owner = ISR
+		add_core_of = ISR
+		add_core_of = PAL
+		victory_points = { 11970 1 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 3
+			1015 = { bunker = 1 }
+			7176 = { bunker = 2 }
+			11970 = { bunker = 2 }
+			13219 = { bunker = 1 }
+			13220 = { bunker = 1 }
+		}
+		victory_points = { 7176 3 }
+	}
+
+	provinces={
+		1015 7176 11970 13219 13220 
+	}
+	
+	manpower= 630000 
+	buildings_max_level_factor=1.000
+	state_category = town
+}

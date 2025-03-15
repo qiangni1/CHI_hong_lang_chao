@@ -1,0 +1,26 @@
+state={
+	id=895
+	name="STATE_895"
+	resources={
+		oil=2
+	}
+	provinces={
+		1923 5006 10786 13942 14139 14138 14141 14140
+	}
+	history={
+		owner = SAU
+		add_core_of = SAU
+		victory_points = { 10786 5 }
+		buildings = {
+			air_base = 1
+			industrial_complex = 2
+			arms_factory = 1
+			infrastructure = 1
+			dockyard = 1
+		}
+	}
+	manpower=200250
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

@@ -1,0 +1,28 @@
+state={
+	id=879
+	name="STATE_879"
+	resources = {
+		oil = 60
+	}
+	history = {
+		owner = PRC
+		add_claim_by = PRC
+		add_claim_by = CHI
+		add_claim_by = VIN
+		
+		buildings = {
+			infrastructure = 1
+			13217 = { naval_base = 1 }
+			air_base = 1
+		}
+		
+		victory_points = { 13217 1 }
+	}
+	provinces={
+		13217 
+	}
+	manpower=20
+	buildings_max_level_factor=1.000
+	
+	state_category = pastoral
+}

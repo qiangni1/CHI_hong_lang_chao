@@ -1,0 +1,24 @@
+	state={
+		id=818
+		name="STATE_818"
+		
+		history = {
+			owner = SAF
+			add_core_of = LES
+			add_core_of = SAF
+			buildings = {
+				infrastructure = 2
+				industrial_complex = 3
+				arms_factory = 1
+			}
+			victory_points = { 4556 1 }
+		}
+		
+		provinces={
+			4556 14429
+		}
+		manpower=1840400
+		buildings_max_level_factor=1.000
+		
+		state_category = large_town
+	}

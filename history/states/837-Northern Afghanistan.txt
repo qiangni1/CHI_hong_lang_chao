@@ -1,0 +1,33 @@
+state={
+	id=837
+	name="STATE_837"
+	resources={
+		chromium=1
+	}
+	history = {
+		owner = AFG
+		add_core_of = AFG
+		add_core_of = TAL
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		victory_points = { 7448 2 }		#Maimana
+		victory_points = { 7584 2 }		#Sherbergan
+		victory_points = { 12248 5 }	#Masar-e Sharif
+		victory_points = { 12314 2 }	#Kundus
+		victory_points = { 12877 1 }	#sari pul
+		TAL = {
+			set_province_controller = 13781
+			set_province_controller = 13780
+			set_province_controller = 10476
+		}
+	}
+	provinces={
+		7448 7584 10476 10896 12248 12314 12877 13780 13779 13781 13770 14527 14528
+	}
+	manpower=3670125
+	buildings_max_level_factor=1.000
+	state_category = town
+}
