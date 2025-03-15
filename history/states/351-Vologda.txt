@@ -1,0 +1,30 @@
+
+state={
+	id=351
+	name="STATE_351"
+	resources={
+		steel=1.000
+	}
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SOV
+		victory_points = {
+			9131 5 
+		}
+		victory_points = {
+			9124 2
+		}
+	}
+
+	provinces={
+		75 84 106 119 129 174 196 2996 3079 3087 3099 3124 3157 3164 3166 3175 3186 6091 6097 6100 6110 6112 6190 6213 9110 9113 9124 9131 9133 9168 9199 9202 9210 9222 11086 11095 11107 11110 11143 11177 11189 11192 11213 
+	}
+	manpower=747511
+	buildings_max_level_factor=1.000
+	state_category = village
+	local_supplies=0.000
+}

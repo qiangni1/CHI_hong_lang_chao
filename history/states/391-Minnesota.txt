@@ -1,0 +1,30 @@
+
+state = {
+	id = 391
+	name = "STATE_391"
+	manpower = 1020167
+	state_category = suburb
+	
+	resources = {
+		steel = 64
+	}
+
+	history = {
+		owner = USA
+		victory_points = {
+			7536 1
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			industrial_complex = 1
+			arms_factory = 1
+			nuclear_reactor = 1
+		}
+		add_core_of = USA
+	}
+
+	provinces = {
+		1867 4664 4807 7536 9880 12577 14113 14114 14115
+	}
+}

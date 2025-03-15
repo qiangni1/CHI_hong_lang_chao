@@ -1,0 +1,34 @@
+
+state={
+	id=356
+	name="STATE_356"
+	resources={
+		steel=1.000
+	}
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			979 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = TUR
+		victory_points = {
+			6938 1 
+		}
+
+	}
+
+	provinces={
+		979 3982 6920 6938 9844 
+	}
+	manpower=1560589
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.000
+}

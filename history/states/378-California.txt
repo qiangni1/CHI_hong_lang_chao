@@ -1,0 +1,22 @@
+
+state = {
+	id = 378
+	name = "STATE_378"
+	manpower = 32555
+	
+	state_category = town
+
+	history = {
+		owner = USA
+		victory_points = { 6482 1 }	#Happy Camp
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = USA
+		add_core_of = CAL
+	}
+
+	provinces = {
+		3644 6482
+	}
+}

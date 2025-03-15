@@ -1,0 +1,33 @@
+state={
+	id=330
+	name="STATE_330"
+	manpower=1005610
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+
+	resources = {
+		steel = 15
+		tungsten = 5
+		chromium = 3
+	}
+	
+	history={
+		owner = MON
+		add_core_of = MON
+		add_claim_by = CHI
+		victory_points = { 1834 2 }
+		victory_points = { 1859 5 }
+		victory_points = { 10554 5 }
+		victory_points = { 7881 2 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+
+	provinces={
+		1725 1728 1791 1798 1834 1859 4697 4882 7676 7717 7864 7881 10554 10623 12541 12579 12605 12614 12649
+	}
+}

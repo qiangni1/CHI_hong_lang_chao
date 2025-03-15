@@ -1,0 +1,29 @@
+
+state = {
+	id = 359
+	name = "STATE_359"
+	manpower = 9792530
+	
+	state_category = city
+
+	history = {
+		owner = USA
+		victory_points = {
+			6882 5 
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 4
+			industrial_complex = 1
+			dockyard = 1
+			office_park = 2
+			nuclear_reactor = 1
+		}
+		add_core_of = USA
+	}
+
+	provinces = {
+		3693 3863 6882 9801 9864 11740 11782 11900 14391 14392 14393 14394
+	}
+	
+}

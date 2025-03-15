@@ -1,0 +1,25 @@
+
+state = {
+	id = 390
+	name = "STATE_390"
+	manpower = 278792
+	state_category = town
+	
+	resources = {
+		steel = 3
+	}
+
+	history = {
+		owner = USA
+		buildings = {
+			infrastructure = 2
+			air_base = 5
+		}
+		add_core_of = USA
+		victory_points = { 1747 3 }		#Rapid City
+	}
+
+	provinces = {
+		1747 1875 3750 4839 7745 7771 14076 14079 14077 14841
+	}
+}

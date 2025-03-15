@@ -1,0 +1,37 @@
+
+state={
+	id=313
+	name="STATE_313"
+	resources={
+		oil=1.000
+	}
+
+	history={
+		owner = GUA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			air_base = 1
+			10886 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = GUA
+		victory_points = {
+			10886 5
+		}
+
+	}
+
+	provinces={
+		10842 10886 14661 14666 14667 14668 14671 
+	}
+	manpower=10814320
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

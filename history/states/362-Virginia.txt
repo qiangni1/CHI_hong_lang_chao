@@ -1,0 +1,30 @@
+
+state = {
+	id = 362
+	name = "STATE_362"
+	
+	resources = {
+		steel = 24
+	}
+
+	history = {
+		owner = USA
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = USA
+		victory_points = { 1506 5 }		#Roanoke
+		victory_points = { 9931 3 }		#Danville
+		victory_points = { 7558 5 }		#Wytheville
+	}
+
+	provinces = {
+		1506 7558 9779 9931 10343 10412 10439 
+	}
+	manpower = 1358374
+	buildings_max_level_factor=1.000
+	state_category = city
+}

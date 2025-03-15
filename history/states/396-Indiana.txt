@@ -1,0 +1,23 @@
+
+state = {
+	id = 396
+	name = "STATE_396"
+	manpower = 2818492
+	state_category = large_town
+
+	history = {
+		owner = USA
+		victory_points = { 870 1 } #Fort Wayne
+		victory_points = { 4437 1 } #Lafayette
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = USA
+
+	}
+
+	provinces = {
+		870 4437 6713 9653 9654 11637 13979 14860
+	}
+}

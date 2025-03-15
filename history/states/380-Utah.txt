@@ -1,0 +1,27 @@
+state= {
+	id = 380
+	name = "STATE_380"
+	manpower = 160364
+	
+	state_category = town
+	
+	resources = {
+		tungsten=3
+		oil=6
+		steel=2
+	}
+
+	history = {
+		owner = USA
+		victory_points = { 4742 3 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 4
+		}
+		add_core_of = USA
+	}
+	provinces = {
+		1756 4668 4742 7764 13896 13890 13892 13894 13893
+	}
+}

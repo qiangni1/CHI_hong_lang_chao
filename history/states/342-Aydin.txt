@@ -1,0 +1,39 @@
+
+state={
+	id=342
+	name="STATE_342"
+	resources={
+		aluminium=5.000
+		steel=10.000
+	}
+
+	history={
+		owner = TUR
+		victory_points = {
+			1005 15 
+		}
+		victory_points = {
+			784 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
+			1005 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = TUR
+
+	}
+
+	provinces={
+		784 1005 1119 1122 3876 4008 4127 12013 12016 
+	}
+	manpower=4262689
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

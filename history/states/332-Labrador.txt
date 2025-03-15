@@ -1,0 +1,20 @@
+state = {
+	id = 332
+	name = "STATE_332"
+	manpower = 28818
+	state_category = rural
+	
+	history = {
+		owner = CAN
+		add_core_of = CAN
+		victory_points = { 1785 2 }	#Labrador City
+		victory_points = { 12503 1 }	#Happy Valley-Goose Bay
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	
+	provinces = {
+		1426 1785 4720 4787 12503 13165 13180 
+	}
+}
