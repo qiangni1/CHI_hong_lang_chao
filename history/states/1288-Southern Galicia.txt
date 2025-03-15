@@ -1,0 +1,22 @@
+
+state={
+	id=1288
+	name="STATE_1288"
+	provinces={
+		6734 9686 9689 11675 11677 11840 
+	}
+	manpower=293642
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = suburb
+
+	history = {
+		owner = SPR
+		add_core_of = SPR
+		add_core_of = GAL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+}

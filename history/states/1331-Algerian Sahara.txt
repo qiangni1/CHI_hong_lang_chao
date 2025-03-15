@@ -1,0 +1,22 @@
+
+state={
+	id=1331
+	name="STATE_1331"
+	provinces={
+		5095 10749 12849 
+	}
+
+	history={
+		owner = ALG
+		add_core_of = ALG
+		add_claim_by = TAU
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+	manpower=32182
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	local_supplies=0.000
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=1395
+	name="STATE_1395"
+	resources={
+
+	}
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+		add_claim_by = CHI
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+			7108 = {
+				naval_base = 2
+
+			}
+			nuclear_reactor = 1
+		}
+		victory_points = {
+			7108 10 
+		}
+	}
+
+	provinces={
+		7108
+	}
+	manpower=17494398
+	buildings_max_level_factor=1.000
+	state_category = large_town
+	local_supplies=0.000
+}

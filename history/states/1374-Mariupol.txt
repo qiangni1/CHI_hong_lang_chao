@@ -1,0 +1,40 @@
+state={
+	id=1374
+	name="STATE_1374"
+	provinces={
+		3449 3466 6420 6776 14590 14602 14605 14606 14637 
+	}
+	history={
+		owner = UKR
+		add_core_of = UKR
+		add_core_of = DPR
+		buildings = {
+			infrastructure = 3
+			6420 = { naval_base = 8 }
+			6420 = { bunker = 3 }
+			14590 = { bunker = 2 }
+			6776 = { bunker = 2 }
+			3466 = { bunker = 5 }
+			14606 = { bunker = 3 }
+			6420 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			6420 5 
+		}
+		victory_points = {
+			14606 3 
+		}
+		victory_points = {
+			3466 1 
+		}
+		victory_points = {
+			6776 1 
+		}
+	}
+	manpower=677281
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

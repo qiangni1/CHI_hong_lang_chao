@@ -1,0 +1,20 @@
+state={
+	id=1257
+	name="STATE_1257"
+	history = {
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			power_plant = 1
+		}
+	}
+	provinces={
+		1866 6752 10719 14121 14123 12693 14125 10618 14127 12597 14126 11667 12588
+	}
+	manpower = 949041
+	buildings_max_level_factor=1.000
+	
+	state_category = village
+}

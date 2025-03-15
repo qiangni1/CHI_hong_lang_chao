@@ -1,0 +1,22 @@
+state={
+	id=1402
+	name="STATE_1402"
+	provinces={
+		4210 14911 14912 
+	}
+	history={
+		owner = WAT
+		add_core_of = WAT
+		add_core_of = BRM
+		victory_points = {
+			14911 3
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=558000
+	buildings_max_level_factor=1.000
+	state_category = village
+	local_supplies=0.000
+}

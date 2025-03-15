@@ -1,0 +1,32 @@
+
+state={
+	id=1383
+	name="STATE_1383" # Sprats vin
+	manpower = 500
+	
+	state_category = small_island
+	
+	resources={
+		oil=7
+	}
+
+	history={
+		owner = VIN
+		add_core_of = VIN
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			dockyard = 1
+			14749 = {
+				naval_base = 3
+			}
+			14748 = {
+				naval_base = 3
+			}
+		}
+	}
+
+	provinces={
+		14748 14749
+	}
+}

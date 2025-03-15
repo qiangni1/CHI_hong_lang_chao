@@ -1,0 +1,29 @@
+state={
+	id=1412
+	name="STATE_1412"
+	provinces={
+		10085 14229 1054 14227 12060
+	}
+	history={
+		owner = KOR
+		add_core_of = KOR
+		add_claim_by = PRK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			power_plant = 2
+			12060 = { naval_base = 3 }
+		}
+		victory_points = {
+			12060 5
+		}
+		victory_points = {
+			14227 2
+		}
+	}
+
+	manpower=3333056
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

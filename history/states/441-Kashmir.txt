@@ -1,0 +1,25 @@
+
+state={
+	id=441
+	name="STATE_441"
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		add_core_of = PAK
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		victory_points = { 10905 5 } #Sringar
+		victory_points = { 13928 1 } #Kishtwar
+	}
+
+	provinces={
+		10905 12754 13919 13920 13928
+	}
+	manpower=12539500
+	buildings_max_level_factor=1.000
+	state_category = town
+}

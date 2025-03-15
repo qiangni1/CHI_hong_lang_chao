@@ -1,0 +1,36 @@
+
+state={
+	id=1298
+	name="STATE_1298"
+
+	history={
+		owner = USA
+		add_core_of = USA
+		add_core_of = CAL
+		victory_points = {
+			13300 35 
+		}
+		victory_points = {
+			13298 7
+		}
+		victory_points = {
+			13296 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 2
+			office_park = 3
+			air_base = 4
+		}
+
+	}
+
+	provinces={
+		13295 13296 13297 13298 13299 13300 13301 13302 
+	}
+	manpower=5004336
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = large_suburb
+}

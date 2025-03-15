@@ -1,0 +1,25 @@
+	state = {
+	id = 1314
+	name = "STATE_1314" #Cardiff
+	manpower = 362400
+	state_category = city
+	
+	resources = {
+		tungsten = 5
+	}
+
+	history = {
+		owner = ENG
+		add_core_of = ENG
+		add_core_of = WLS
+		victory_points = { 377 15 }
+		buildings = {
+			infrastructure = 2
+			377 = { naval_base = 3 }
+		}
+	}
+
+	provinces = {
+		377
+	}
+}

@@ -1,0 +1,26 @@
+state={
+	id=1274
+	name="STATE_1274"
+	history = {
+		owner = PHI
+		add_core_of = PHI
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 4
+			air_base = 3
+			10265 = {
+				naval_base = 7
+			}
+		}
+		victory_points = { 10265 15 }
+		victory_points = { 1221 1 }
+	}
+	provinces={
+		1221 10236 10265 10306 12236
+	}
+	manpower = 16195042
+	buildings_max_level_factor=1.000
+	
+	state_category = large_city
+}

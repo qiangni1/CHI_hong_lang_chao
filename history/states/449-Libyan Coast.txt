@@ -1,0 +1,27 @@
+
+state={
+	id=449
+	name="STATE_449" # El Agheila
+	manpower = 104179
+	
+	state_category = large_town
+	
+	resources = {
+		oil=12
+	}
+
+	history={
+		owner = HRL
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = HRL
+		add_core_of = LBA
+	}
+
+	provinces={
+		1041 1198 4047 4057 10046 10117 12088 
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=1324
+	name="STATE_1324"
+
+	history={
+		owner = PAK
+		add_core_of = PAK
+		victory_points = {
+			3456 20 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 1
+			3456 = {
+				naval_base = 4
+			}
+			nuclear_reactor = 1
+		}
+	}
+
+	provinces={
+		3456 7049 10108 10735 
+	}
+	state_category=suburb
+	manpower=24626331
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

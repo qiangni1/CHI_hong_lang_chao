@@ -1,0 +1,32 @@
+state = {
+	id = 1311
+	name = "STATE_1311" #Somerset
+	manpower = 2273372
+	state_category = city
+	
+	resources = {
+		tungsten = 5
+	}
+
+	history = {
+		owner = ENG
+		add_core_of = ENG
+		victory_points = {
+			3369 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 4
+			dockyard = 1
+			3369 = {
+				naval_base = 2
+			}
+			nuclear_reactor = 1
+		}
+	}
+
+	provinces = {
+		9484 14408 14409 3369 6351
+	}
+}

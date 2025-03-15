@@ -1,0 +1,27 @@
+
+state={
+	id=1344
+	name="STATE_1344"	
+	resources={
+		steel=10.000
+	}
+
+	history={
+		owner = SSD
+		add_core_of = SSD
+		victory_points = { 12800 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+		}
+	}
+
+	provinces={
+		14493 14483 12800 10877
+	}
+	manpower=964353
+	buildings_max_level_factor=1.000
+	state_category=village
+	local_supplies=0.000
+}

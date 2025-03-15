@@ -1,0 +1,26 @@
+
+state={
+	id=1318
+	name="STATE_1318"
+	resources={
+		chromium =300.000
+	}
+
+	history={
+		owner = SAF
+		add_core_of = SAF
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+	}
+
+
+	provinces={
+		1494 8178 
+	}
+	manpower=3900000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,23 @@
+state = {
+	id = 1316
+	name = "STATE_1316" #Gwynedd
+	manpower = 394157
+	state_category = town
+	
+	resources = {
+		tungsten = 5
+	}
+
+	history = {
+		owner = ENG
+		add_core_of = ENG
+		add_core_of = WLS
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces = {
+		9364 6363
+	}
+}

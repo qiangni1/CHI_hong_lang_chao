@@ -1,0 +1,25 @@
+state = {
+	id = 1310
+	name = "STATE_1310" #Dorset
+	manpower = 366793
+	state_category = city
+	
+	resources = {
+		tungsten = 5
+	}
+
+	history = {
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 4
+			dockyard = 1
+		}
+	}
+
+	provinces = {
+		3422 3463
+	}
+}

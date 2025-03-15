@@ -1,0 +1,29 @@
+
+state={
+	id=1349
+	name="STATE_1349"	
+	resources={
+		
+	}
+
+	history={
+		owner = SUD
+		add_core_of = SUD
+		victory_points = {
+			14499 20
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+		}
+	}
+
+	provinces={
+		14499 14497 14495 12806
+	}
+	manpower=7993900
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=1359
+	name="STATE_1359"	
+	resources={
+		
+	}
+
+	history={
+		owner = COG
+		add_core_of = COG
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		14559 14560 14562 10071 12775 14558 8016 14561 14564 14563
+	}
+	manpower=1250000
+	buildings_max_level_factor=1.000
+	state_category=village
+	local_supplies=0.000
+}

@@ -1,0 +1,22 @@
+
+state={
+	id=1325
+	name="STATE_1325"
+
+	history={
+		owner = HRL
+		add_core_of = LBA
+		add_core_of = HRL
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		5004 12816 12022 
+	}
+	manpower=158797
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

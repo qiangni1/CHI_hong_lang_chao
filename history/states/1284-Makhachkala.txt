@@ -1,0 +1,21 @@
+state={
+	id=1284
+	name="STATE_1284"
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		victory_points = { 3668 5 }
+		victory_points = { 7624 3 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	provinces={
+		6689 3668 9645 7554 3711 1450 7624 4463
+	}
+	manpower = 2269347
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

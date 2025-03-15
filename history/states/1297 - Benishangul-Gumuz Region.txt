@@ -1,0 +1,24 @@
+
+state={
+	id=1297
+	name="STATE_1297"
+
+	history={
+		owner = ETH
+		victory_points = { 14164 1 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = ETH
+
+	}
+
+	provinces={
+		14163 14164 14165
+	}
+	manpower=1127001
+	buildings_max_level_factor=1.000
+	state_category=village
+	local_supplies=0.000
+}

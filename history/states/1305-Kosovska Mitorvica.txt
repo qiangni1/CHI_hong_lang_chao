@@ -1,0 +1,24 @@
+state={
+	id=1305
+	name="STATE_1305"
+	resources={
+		steel=2.000
+	}
+
+	history={
+		owner = KOS
+		add_core_of = SER
+		victory_points = { 14400 2 } #Mitrovica
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		14400 14401
+	}
+	manpower=200000
+	state_category = large_suburb
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

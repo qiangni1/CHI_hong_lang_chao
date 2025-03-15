@@ -1,0 +1,22 @@
+state={
+	id=1237
+	name="STATE_1237"
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = { 12586 4 }	#Omaha
+		victory_points = { 14061 2 }
+		victory_points = { 7852 1 }
+		buildings = {
+			infrastructure = 3
+			nuclear_reactor = 1
+		}
+	}
+	provinces={
+		10606 7852 14065 12586 14061 3708 10676 14825 14828
+	}
+	manpower = 1571479
+	buildings_max_level_factor=1.000
+	
+	state_category = suburb
+}

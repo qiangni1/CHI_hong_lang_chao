@@ -1,0 +1,29 @@
+state={
+	id=1389
+	name="STATE_1389"
+	manpower=277514
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+
+	resources = {
+		steel = 7
+		oil = 10
+	}
+	history={
+		owner = MON
+		add_core_of = MON
+		add_claim_by = CHI
+        victory_points = { 12669 5 }
+        victory_points = {12612 2 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			air_base = 1
+		}
+	}
+
+	provinces={
+		12686 1853 7749 12612 4655 1787 1723 4856 10632 12539 12669 10558 10689 4786 7806 4729 10704
+	}
+}

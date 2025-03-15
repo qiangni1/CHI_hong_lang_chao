@@ -1,0 +1,29 @@
+
+state={
+	id=496
+	name="STATE_496" # Minas Gerais
+	manpower = 4603600
+	
+	state_category = large_town
+	
+	resources={
+		aluminium = 9
+		oil = 35
+		steel = 12
+	}
+
+	history={
+		owner = BRA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+			energy_farm = 1
+		}
+		add_core_of = BRA
+	}
+
+	provinces={
+		2153 2190 2218 4570 5223 7589 8196 8233 10931 10999 12903 12909 12923 12938 
+	}
+}

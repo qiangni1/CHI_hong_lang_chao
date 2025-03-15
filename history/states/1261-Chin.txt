@@ -1,0 +1,26 @@
+
+state={
+	id=1261
+	name="STATE_1261"
+
+	history={
+		owner = CNF
+		add_core_of = CNF
+		add_core_of = BRM
+		victory_points = {
+			3999 3
+		}
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+		3999 4454 7122 7534 10033 11966 
+	}
+	manpower=478801
+	buildings_max_level_factor=1.000
+	state_category=suburb
+	local_supplies=0.000
+}

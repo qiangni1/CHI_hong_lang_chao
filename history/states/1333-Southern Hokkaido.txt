@@ -1,0 +1,31 @@
+
+state={
+	id=1333
+	name="STATE_1333"
+	resources={
+		steel=112.000
+		chromium=15.000
+	}
+
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+
+		}
+		victory_points = {
+			14710 3 
+		}
+	}
+
+	provinces={
+		3962 7532 10512 12493 14710 14711 14712 14713 14714 
+	}
+	manpower=1564500
+	buildings_max_level_factor=1.000
+	state_category=suburb
+	local_supplies=0.000
+}

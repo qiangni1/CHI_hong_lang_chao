@@ -1,0 +1,22 @@
+state={
+	id=1246
+	name="STATE_1246"
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = { 14101 20 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			office_park = 1
+		}
+	}
+	provinces={
+		6855 14101 14100 14097 14098 14099
+	}
+	manpower = 1389302
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

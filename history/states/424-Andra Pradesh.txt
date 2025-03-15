@@ -1,0 +1,45 @@
+
+state={
+	id=424
+	name="STATE_424" # Madras
+	manpower = 52791700
+	state_category = large_city
+	
+	resources = {
+		steel = 52
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		victory_points = {
+			7297 1 #Kakinda
+		}
+		victory_points = {
+			7310 3 #Kadapa
+		}
+		victory_points = {
+			4414 4 #Anantapur
+		}
+		victory_points = {
+			1430 3 #Ongole
+		}
+		victory_points = {
+			10255 10 #Visakhapatnam
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 5
+			arms_factory = 3
+			dockyard = 1
+			power_plant = 1
+			10255 = {
+				naval_base = 3
+			}
+		}
+	}
+
+	provinces={
+		1228 1344 1430 4237 4321 4365 4414 7297 7310 7340 10001 10152 10255 10296 10756 10897 12180 12779 
+	}
+}

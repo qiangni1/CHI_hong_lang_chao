@@ -1,0 +1,20 @@
+state={
+	id=1401
+	name="STATE_1401"
+	provinces={
+		12363 14914 
+	}
+	history={
+		owner = MND
+		add_core_of = MND
+		add_core_of = BRM
+		victory_points = { 12363 2 }
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	manpower=150000
+	buildings_max_level_factor=1.000
+	state_category = village
+	local_supplies=0.000
+}

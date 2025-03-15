@@ -1,0 +1,20 @@
+state={
+	id=1373
+	name="STATE_1373"
+	provinces={
+		1129 7106 12708 14741
+	}
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = { 12708 2 } #Shilma
+		victory_points = { 7106 15 } #Pathankot
+	}
+	manpower=7460000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category=town
+}

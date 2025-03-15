@@ -1,0 +1,25 @@
+
+state={
+	id=1290
+	name="STATE_1290"
+
+	history={
+		owner = SPR
+		add_core_of = SPR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			nuclear_reactor = 1
+
+		}
+
+	}
+
+	provinces={
+		977 3794 6841 6993 9785 9933 11870 
+	}
+	manpower=258890
+	buildings_max_level_factor=1.000
+	state_category = suburb
+	local_supplies=0.000
+}

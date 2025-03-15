@@ -1,0 +1,32 @@
+
+state={
+	id=1384
+	name="STATE_1384" # Philip Sprat
+	manpower = 500
+	
+	state_category = town
+	
+	resources={
+		oil=7
+	}
+
+	history={
+		owner = PHI
+		add_core_of = PHI
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+			dockyard = 1
+			14751 = {
+				naval_base = 3
+			}
+			14752 = {
+				naval_base = 3
+			}
+		}
+	}
+
+	provinces={
+		14750 14751 14752
+	}
+}

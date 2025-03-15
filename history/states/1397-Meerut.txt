@@ -1,0 +1,25 @@
+
+state={
+	id=1397
+	name="STATE_1397"
+	resources={
+
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = { 9951 5 } #Rudrapur
+	}
+
+	provinces={
+		1377 1983 4299 7064 8082 8114 9951 9973 12777 12786
+	}
+	manpower=15729669
+	buildings_max_level_factor=1.000
+	state_category = village
+	local_supplies=0.000
+}

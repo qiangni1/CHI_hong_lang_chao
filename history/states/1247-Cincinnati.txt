@@ -1,0 +1,22 @@
+state={
+	id=1247
+	name="STATE_1247"
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = { 14093 20 }
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 2
+			office_park = 1
+		}
+	}
+	provinces={
+		14093 14094 14095 14092
+	}
+	manpower = 1322487
+	buildings_max_level_factor=1.000
+	
+	state_category = suburb
+}
