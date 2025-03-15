@@ -1,0 +1,152 @@
+﻿add_namespace = prcs
+country_event = {
+	id = prcs.1
+	title = prcs.1.t
+	desc = prcs.1.d
+	picture = GFX_PLAP
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		add_war_support = 0.05
+		hidden_effect = {
+			set_country_flag = PRC_pla_xibubianqu
+		}
+		name = prcs.1.a
+	}
+}
+
+country_event = {
+	id = prcs.2
+	title = prcs.2.t
+	desc = prcs.2.d
+	picture = GFX_2025_xinchun
+	# is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		date > 2025.1.1
+		AND = {
+			tag = PRC
+			has_country_flag = PRC_pla_xibubianqu
+		}
+	}
+	option = {
+		name = prcs.2.a
+	}
+}
+
+country_event = {
+	id = prcs.3
+	title = prcs.3.t
+	desc = prcs.3.d
+	picture = GFX_2025_xinchun
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prcs.3.a
+		retire_character = PRC_hu_chunhua
+	}
+}
+
+news_event = {
+	id = prcs.4
+	title = prcs.4.t
+	desc = prcs.4.d
+	picture = GFX_Chinese_soldiers_news
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = prcs.4.a
+		trigger = {
+			original_tag = PRC
+		}
+	}
+	option = {
+		name = prcs.4.b
+		trigger = {
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+}
+
+news_event = {
+	id = prcs.5
+	title = prcs.5.t
+	desc = prcs.5.d
+	picture = GFX_Chinese_soldiers_news
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = prcs.5.a
+		trigger = {
+			original_tag = PRC
+		}
+	}
+}
+
+news_event = {
+	#Formation of East Asian Defense Intiative
+	id = prcs.6
+	title = prcs.6.t
+	desc = prcs.6.d
+	picture = GFX_Chinese_soldiers_news
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = prcs.6.a
+	}
+}
+
+country_event = {
+	id = prcs.7
+	title = prcs.7.t
+	desc = prcs.7.d
+	picture = GFX_PRC_RAJ_offensive
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			PRC = {
+				is_in_faction_with = ROP
+			}
+			PRC = {
+				is_in_faction_with = SRI
+			}
+			PRC = {
+				is_in_faction_with = SMA
+			}
+		}
+	}
+	option = {
+		name = prcs.7.a
+		hidden_effect = {
+			remove_ideas = PRC_SEA_volunteer_limit
+		}
+	}
+}
+
+news_event = {
+	id = prcs.8
+	title = prcs.8.t
+	desc = prcs.8.d
+	picture = GFX_pla_mongolia_news
+	major = yes
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = prcs.8.a
+		trigger = {
+			NOT = {
+				original_tag = PRC
+			}
+		}
+	}
+	option = {
+		name = prcs.8.b
+		trigger = {
+			original_tag = PRC
+		}
+	}
+}

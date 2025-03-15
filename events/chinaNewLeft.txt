@@ -1,0 +1,760 @@
+add_namespace = china
+country_event = {
+	id = china.1733
+	title = china.1733.t
+	desc = china.1733.d
+	picture = GFX_PRC_Generic_Unity
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+		country_exists = MON
+	}
+	# 吞并选项
+	option = {
+		name = china.1733.a
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = MON
+				}
+				add_core_of = PRC
+			}
+		}
+		clr_country_flag = PRC_mongolia_hetong_flag_1
+		clr_country_flag = PRC_mongolia_hetong_flag
+		annex_country = {
+			target = MON
+			transfer_troops = yes
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = {
+	id = china.1732
+	title = china.1732.t
+	desc = china.1732.d
+	picture = GFX_PRC_RAJ_offensive
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+		country_exists = MON
+	}
+	# 宣战选项
+	option = {
+		name = china.1732.a
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = MON
+				}
+				add_core_of = PRC
+			}
+		}
+		clr_country_flag = PRC_mongolia_hetong_flag_1
+		clr_country_flag = PRC_mongolia_hetong_flag
+		declare_war_on = {
+			target = MON
+			type = annex_everything
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = {
+	#GAW
+	id = china.1700
+	title = china.1000.t
+	desc = china.1000.d
+	picture = GFX_PRC_china_day
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = china.1000.a
+		set_global_flag = pan_asian_war_ongoing
+		PRC = {
+			declare_war_on = {
+				target = JAP
+				type = annex_everything
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = PRC_reunite_red_india
+				}
+				country_event = {
+					id = china.1708
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+#从1701开始
+country_event = {
+	#外交事件提示
+	id = china.1701
+	title = china.1701.t
+	desc = china.1701.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		set_country_flag = PRC_mongolia_hetong
+		name = china.1701.a
+		set_country_flag = PRC_waijiao
+		load_focus_tree = PRC_nl_focus
+	}
+}
+
+country_event = {
+	#未遂恐袭阴谋
+	id = china.1702
+	title = china.1702.t
+	desc = china.1702.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1702.a
+		AFG = {
+			add_ideas = {
+				PRC_Religious_forces_fight_back_idea
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = PRC_Attempted_terrorist_plot_modifiers
+				}
+				remove_ideas = {
+					PRC_Religious_forces_fight_back_idea
+				}
+			}
+		}
+		PER = {
+			add_ideas = {
+				PRC_Religious_forces_fight_back_idea
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = PRC_Attempted_terrorist_plot_modifiers
+				}
+				remove_ideas = {
+					PRC_Religious_forces_fight_back_idea
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#援助到达西亚
+	id = china.1703
+	title = china.1703.t
+	desc = china.1703.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = china.1703.a
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						Attempted_terrorist_plot_factor = 0
+					}
+					check_variable = {
+						Attempted_terrorist_plot_pp_factor = 0
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = PRC_Attempted_terrorist_plot_modifiers
+				}
+				set_country_flag = terrorist_clr
+				country_event = {
+					id = china.1704
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#援助西亚完成
+	id = china.1704
+	title = china.1704.t
+	desc = china.1704.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = china.1704.a
+	}
+}
+
+country_event = {
+	#推动世界解放国际经济一体化
+	id = china.1705
+	title = china.1705.t
+	desc = china.1705.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = china.1705.a
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = integration_of_WLI_1
+					has_country_flag = integration_of_WLI_2
+				}
+				country_event = {
+					id = china.1707
+					days = 1
+				}
+				clr_country_flag = integration_of_WLI_1
+				clr_country_flag = integration_of_WLI_2
+			}
+		}
+	}
+}
+
+country_event = {
+	#消除政治隔阂
+	id = china.1706
+	title = china.1706.t
+	desc = china.1706.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = china.1706.a
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = integration_of_WLI_1
+					has_country_flag = integration_of_WLI_2
+				}
+				country_event = {
+					id = china.1707
+					days = 1
+				}
+				clr_country_flag = integration_of_WLI_1
+				clr_country_flag = integration_of_WLI_2
+			}
+		}
+	}
+}
+
+country_event = {
+	#世界解放国际一体化
+	id = china.1707
+	title = china.1707.t
+	desc = china.1707.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = china.1707.a
+		every_country = {
+			if = {
+				limit = {
+					is_in_faction_with = PRC
+				}
+				add_ideas = PRC_integration_of_WLI
+			}
+		}
+	}
+}
+
+country_event = {
+	#火星兵印度
+	id = china.1708
+	title = china.1708.t
+	desc = china.1708.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	option = {
+		name = china.1708.a
+		431 = {
+			create_unit = {
+				division = "name = \"Militia\" division_template = \"Militia Brigade\"  start_experience_factor = 0.1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PRC
+				count = PRC_india_maoism_count
+			}
+		}
+		424 = {
+			create_unit = {
+				division = "name = \"Militia\" division_template = \"Militia Brigade\"  start_experience_factor = 0.1"
+				allow_spawning_on_enemy_provs = yes
+				owner = PRC
+				count = PRC_india_maoism_count
+			}
+		}
+	}
+}
+
+country_event = {
+	#启程再出发
+	id = china.1709
+	title = china.1709.t
+	desc = china.1709.d
+	picture = GFX_PRC_cpc_flags
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1709.a
+	}
+}
+
+country_event = {
+	#从未消逝的星火
+	id = china.1710
+	title = china.1710.t
+	desc = china.1710.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1710.a
+	}
+}
+
+country_event = {
+	#射日线事件拂晓
+	id = china.1711
+	title = china.1711.t
+	desc = china.1711.d
+	picture = GFX_PRK_soliders
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1711.a
+	}
+}
+
+country_event = {
+	#射日线击败朝鲜后立即触发事件破碎的神话
+	id = china.1712
+	title = china.1712.t
+	desc = china.1712.d
+	picture = GFX_PRK_dprk_flag
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1712.a
+		hidden_effect = {
+			country_event = {
+				id = china.1713
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	#诉苦大会
+	id = china.1713
+	title = china.1713.t
+	desc = china.1713.d
+	picture = GFX_Saudi_Refugees
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1713.a
+		hidden_effect = {
+			country_event = {
+				id = china.1714
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	#落日
+	id = china.1714
+	title = china.1714.t
+	desc = china.1714.d
+	picture = GFX_ptf_new_social_standarts
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1714.a
+		PRK = {
+			retire_character = PRK_kim_jongun
+			add_manpower = -1
+		}
+	}
+	option = {
+		name = china.1714.b
+	}
+}
+
+country_event = {
+	#解冻
+	id = china.1715
+	title = china.1715.t
+	desc = china.1715.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1715.a
+	}
+}
+
+country_event = {
+	#新时代的志愿军
+	id = china.1716
+	title = china.1716.t
+	desc = china.1716.d
+	picture = GFX_APA_marx_lenin
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1716.a
+	}
+}
+
+country_event = {
+	#从林之会
+	id = china.1717
+	title = china.1717.t
+	desc = china.1717.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1717.a
+	}
+}
+
+country_event = {
+	#红俄专属事件(在中国点完列宁的承诺后立即触发事件旧日之约)
+	id = china.1718
+	title = china.1718.t
+	desc = china.1718.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	option = {
+		country_event = {
+			id = china.1731
+			days = 4
+		}
+		name = china.1718.a
+	}
+	option = {
+		name = china.1718.b
+	}
+}
+
+country_event = {
+	#点完三个决议修筑东北防御体系，修筑蒙古防御体系，修筑西北防御体系会立即触发事件新长城
+	id = china.1719
+	title = china.1719.t
+	desc = china.1719.d
+	picture = GFX_Generic_PLAN
+	trigger = {
+		original_tag = PRC
+		has_country_flag = PRC_defense_north
+		has_country_flag = PRC_defense_westnorth
+		has_country_flag = PRC_defense_eastnorth
+	}
+	fire_only_once = yes
+	option = {
+		name = china.1719.a
+	}
+}
+
+country_event = {
+	#在gaw开战后30天触发事件解放军协助朝鲜人民军夺权
+	id = china.1720
+	title = china.1720.t
+	desc = china.1720.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1720.a
+		hidden_effect = {
+			country_event = {
+				id = china.1721
+				days = 7
+			}
+		}
+	}
+}
+
+#在解放军协助朝鲜人民军夺权事件触发7天后触发事件，金正恩的命运
+country_event = {
+	id = china.1721
+	title = china.1721.t
+	desc = china.1721.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1721.a
+	}
+	option = {
+		name = china.1721.b
+		add_manpower = 1
+	}
+}
+
+#####开gaw前各红色势力事件(触发时间为点击朝着胜利前进的国策7天内)#######
+country_event = {
+	id = china.1722
+	title = china.1722.t
+	desc = china.1722.d
+	picture = GFX_red_patriotism
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1722.a
+	}
+	option = {
+		name = china.1722.b
+	}
+}
+
+country_event = {
+	id = china.1723
+	title = china.1723.t
+	desc = china.1723.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1723.a
+	}
+	option = {
+		name = china.1723.b
+	}
+}
+
+country_event = {
+	id = china.1724
+	title = china.1724.t
+	desc = china.1724.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1724.a
+	}
+	option = {
+		name = china.1724.b
+	}
+}
+
+country_event = {
+	id = china.1725
+	title = china.1725.t
+	desc = china.1725.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1725.a
+	}
+	option = {
+		name = china.1725.b
+	}
+}
+
+country_event = {
+	id = china.1726
+	title = china.1726.t
+	desc = china.1726.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1726.a
+	}
+	option = {
+		name = china.1726.b
+	}
+}
+
+country_event = {
+	id = china.1727
+	title = china.1727.t
+	desc = china.1727.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1727.a
+	}
+	option = {
+		name = china.1727.b
+	}
+}
+
+country_event = {
+	id = china.1728
+	title = china.1728.t
+	desc = china.1728.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1728.a
+	}
+	option = {
+		name = china.1728.b
+	}
+}
+
+country_event = {
+	id = china.1729
+	title = china.1729.t
+	desc = china.1729.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1729.a
+	}
+	option = {
+		name = china.1729.b
+	}
+}
+
+###############################################################
+country_event = {
+	#碉堡仙人
+	id = china.1730
+	title = china.1730.t
+	desc = china.1730.d
+	#picture = GFX_Chinese_soldiers
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+		has_war_with = SOV
+		NOT = {
+			has_full_control_of_state = 618
+			has_full_control_of_state = 617
+			has_full_control_of_state = 1161
+			has_full_control_of_state = 1160
+			has_full_control_of_state = 619
+			has_full_control_of_state = 1390
+			has_full_control_of_state = 330
+			has_full_control_of_state = 1388
+			has_full_control_of_state = 1167
+			has_full_control_of_state = 714
+			has_full_control_of_state = 1416
+			has_full_control_of_state = 1415
+		}
+		has_country_flag = defense_north
+		has_country_flag = defense_westnorth
+		has_country_flag = defense_eastnorth
+	}
+	option = {
+		name = china.1730.a
+		add_manpower = -1
+	}
+}
+
+country_event = {
+	#外西北事件
+	id = china.1731
+	title = china.1731.t
+	desc = china.1731.d
+	#picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1731.a
+		custom_effect_tooltip = PRC_waixibei
+		hidden_effect = {
+			PRC = {
+				add_state_core = 329
+				add_state_core = 560
+				add_state_core = 1328
+				add_state_core = 657
+				add_state_core = 409
+				add_state_core = 537
+				add_state_core = 408
+				transfer_state = 329
+				transfer_state = 560
+				transfer_state = 1328
+				transfer_state = 657
+				transfer_state = 409
+				transfer_state = 537
+				transfer_state = 408
+			}
+			329 = {
+				remove_core_of = SOV
+			}
+			560 = {
+				remove_core_of = SOV
+			}
+			1328 = {
+				remove_core_of = SOV
+			}
+			657 = {
+				remove_core_of = SOV
+			}
+			409 = {
+				remove_core_of = SOV
+			}
+			537 = {
+				remove_core_of = SOV
+			}
+			408 = {
+				remove_core_of = SOV
+			}
+		}
+	}
+}
