@@ -1,0 +1,36 @@
+
+state={
+	id=429
+	name="STATE_429"
+	manpower = 112374333
+	state_category = conurbation
+	
+	resources={
+		oil=31
+		steel = 110
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+			industrial_complex = 3
+			arms_factory = 2
+			dockyard = 1
+			1349 = {
+				naval_base = 9
+			}
+			nuclear_reactor = 1
+		}
+		victory_points = { 1349 50 }	#Mumbai
+		victory_points = { 12182 10 }	#Pune
+		victory_points = { 7119 4 }	#Nashik
+		victory_points = { 4883 8 } #Nagpur
+	}	
+
+	provinces={
+		1349 1405 4072 4353 4395 4557 4883 5019 5063 7013 7060 7119 7177 7232 7430 7619 10019 10030 10171 10210 10270 10311 11993 12142 12182 12226 12269 12295 12781
+	}
+}

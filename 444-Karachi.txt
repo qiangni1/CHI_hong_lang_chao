@@ -1,0 +1,31 @@
+
+state={
+	id=444
+	name="STATE_444"
+	resources={
+		oil=30.000
+	}
+	history={
+		owner = PAK
+		add_core_of = PAK
+		victory_points = {
+			7917 5 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		1179 5043 7917 8066 8098 12774 14505 14503
+	}
+	manpower=2780458
+	buildings_max_level_factor=1.000
+	state_category = large_suburb
+	local_supplies=0.000
+}

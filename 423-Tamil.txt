@@ -1,0 +1,42 @@
+
+state={
+	id=423
+	name="STATE_423" # Madurai
+	manpower = 64512000
+	
+	state_category = large_suburb
+	
+	resources={
+		rubber = 28
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 3
+			air_base = 4
+			industrial_complex = 2
+			4327 = {
+				naval_base = 2
+			}
+			nuclear_reactor = 1
+		}
+		victory_points = {
+			10278 20 
+		}
+		victory_points = {
+			10274 10 #Coimbatore
+		}
+		victory_points = {
+			12247 5 #Madurai
+		}
+		victory_points = {
+			4327 3 #Tirunelveli
+		}
+	}
+
+	provinces={
+		1268 1381 1409 4327 4416 4420 7265 7288 7363 7402 8067 10130 10246 10274 10808 12164 12247 12275 
+	}
+}

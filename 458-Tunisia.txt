@@ -1,0 +1,30 @@
+
+state={
+	id=458
+	name="STATE_458"
+	manpower = 8282940
+	state_category = large_suburb
+	resources={
+		oil = 3
+	}
+
+	history={
+		owner = TUN
+		add_core_of = TUN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 1
+			air_base = 3
+			9994 = { naval_base = 8 }
+		}
+		victory_points = { 11969 10 }
+		victory_points = { 11921 5}
+		victory_points = { 9994 3 }
+	}
+
+	provinces={
+		1037 1046 4061 4129 4163 7077 7162 7180 9994 10091 11921 11969 
+	}
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=416
+	name="STATE_416"
+	manpower = 267321
+	state_category = village
+	
+	resources = {
+		chromium = 8
+	}
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+		}
+		victory_points = { 1521 1 } #quchan
+		victory_points = { 10351 2 } #bojnord
+		victory_points = { 7573 1 } #esfarayen
+		add_core_of = PER
+	}
+
+	provinces={
+		1521 7573 10351 11671 
+	}
+}

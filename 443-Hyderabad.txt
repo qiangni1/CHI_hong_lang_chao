@@ -1,0 +1,31 @@
+
+state={
+	id=443
+	name="STATE_443"
+	resources={
+		steel=4.000
+	}
+
+	history={
+		owner = PAK
+		add_core_of = PAK
+		victory_points = {
+			4110 15
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 3
+		}
+		victory_points = { 7084 5 }		#Rahim Yar Khan
+		victory_points = { 1147 2 }		#Islamkot
+	}
+
+	provinces={
+		1147 1971 1980 4003 4110 4382 7084 
+	}
+	manpower=23228179
+	buildings_max_level_factor=1.000
+	state_category = city
+	local_supplies=0.000
+}
