@@ -1,0 +1,28 @@
+
+state={
+	id=637
+	name="STATE_637"
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			12207 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = SOV
+		victory_points = {
+			4728 3
+		}
+	}
+
+	provinces={
+		1823 1839 1863 4728 4744 7878 12207 12522 14325 14326 14328 
+	}
+	manpower=315557
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

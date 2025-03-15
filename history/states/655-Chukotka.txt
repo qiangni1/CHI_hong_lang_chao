@@ -1,0 +1,29 @@
+
+state={
+	id=655
+	name="STATE_655"
+	resources={
+		oil=20.000
+	}
+
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			nuclear_reactor = 1
+		}
+		victory_points = {
+			13063 2
+		}
+	}
+
+	provinces={
+		5264 13062 13063 14329 14330 14331 14332 
+	}
+	manpower=49348
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

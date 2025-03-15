@@ -1,0 +1,24 @@
+state={
+	id=634
+	name="STATE_634"
+
+	history={
+		owner = PNG
+		add_core_of = PNG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			1269 = { naval_base = 2 }
+		}
+		victory_points = {
+			1269 2 
+		}
+	}
+
+	provinces={
+		1042 1085 1358 4226 10234 1269 4252 4292 10291 10319 12265 
+	}
+	manpower=555000
+	buildings_max_level_factor=1
+	state_category = town
+}

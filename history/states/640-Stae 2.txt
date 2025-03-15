@@ -1,0 +1,26 @@
+
+state={
+	id=640
+	name="STATE_640" # Mandalay
+	manpower = 9844600
+	
+	state_category = rural
+	
+	resources = {
+		tungsten=14
+	}
+
+	history={
+		owner = BRM
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+		}
+		victory_points = { 1492 5 }
+		victory_points = { 4626 10 }
+	}
+	
+	provinces={
+		1492 4585 4626 10386 12404 12449
+	}
+}

@@ -1,0 +1,28 @@
+state=
+{
+	id=628
+	name="STATE_628"
+	manpower = 8081988
+	
+	state_category = town
+	
+	resources = {
+		chromium = 4
+	}
+	
+	history=
+	{
+		owner = PHI
+		add_core_of = PHI
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			12118 = { naval_base = 2 }
+		}
+		victory_points = { 12118 5 }
+	}
+
+	provinces={
+		7385 10186 12118 12153 
+	}
+}

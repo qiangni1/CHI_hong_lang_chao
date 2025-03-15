@@ -1,0 +1,32 @@
+state={
+	id=618
+	name="STATE_618"
+	resources={
+		aluminium=40.000
+		oil=20.000
+	}
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+		add_core_of = SIK
+		add_claim_by = CHI
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+
+		}
+		victory_points = {
+			4714 3
+		}
+
+	}
+
+	provinces={
+		4714 4788 4823 4849 7693 12590 
+	}
+	manpower=613280
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

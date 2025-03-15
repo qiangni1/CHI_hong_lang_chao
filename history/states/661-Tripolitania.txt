@@ -1,0 +1,34 @@
+state={
+	id=661
+	name="STATE_661"
+	manpower = 1065917
+	
+	state_category = pastoral
+	
+	resources = {
+		oil=5
+	}
+	
+	history={
+		owner = LBA
+		add_core_of = HRL
+		add_core_of = LBA
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
+		
+		HRL = {
+			set_province_controller = 4117 
+			set_province_controller = 7194 
+			set_province_controller = 11940
+			set_province_controller = 4051
+			set_province_controller = 1174 
+			set_province_controller = 10067  
+		}
+	}
+	
+	provinces={
+		1174 4051 4117 4176 7154 7194 10037 10067 11940 12009 13263
+	}
+}

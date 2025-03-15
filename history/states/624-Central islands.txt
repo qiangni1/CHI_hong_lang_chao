@@ -1,0 +1,27 @@
+state=
+{
+	id=624
+	name="STATE_624"
+	manpower = 6082165
+	state_category = suburb
+	
+	resources = {
+		chromium = 5
+		rubber = 4
+	}
+	
+	history=
+	{
+		owner = PHI
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+		}
+		add_core_of = PHI
+	}
+	provinces={
+		1372 4228 4377 7307 12279 
+	}
+}

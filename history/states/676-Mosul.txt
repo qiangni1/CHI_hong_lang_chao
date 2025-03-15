@@ -1,0 +1,27 @@
+
+state={
+	id=676
+	name="STATE_676"
+	resources={
+		oil=35
+	}
+
+	history={
+		owner = IRQ
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+		victory_points = { 10106 20 }	#Mosul
+		add_core_of = IRQ
+	}
+
+	provinces={
+		1938 10106 12372 14005
+	}
+	manpower=2227918
+	buildings_max_level_factor=1.000
+	state_category = large_town
+}

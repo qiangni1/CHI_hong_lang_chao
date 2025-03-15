@@ -1,0 +1,25 @@
+
+state={
+	id=639
+	name="STATE_639"
+	manpower=40035
+	state_category = rural
+
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			13021 = { naval_base = 1 }
+			4387 = { naval_base = 1 }
+			7393 = { naval_base = 1 }
+			13020 = { naval_base = 1 }
+		}
+		victory_points = { 13021 2 }
+	}
+
+	provinces={
+		4387 7393 13020 13021 13022 
+	}
+}
