@@ -1,0 +1,21 @@
+state = {
+	id = 45
+	name = "STATE_45" #Vojvodina
+	manpower = 1749200
+	state_category = town
+	
+	history = {
+		owner = SER
+		add_core_of = SER
+		victory_points = { 3617 20 } #Novi Sad
+		victory_points = { 9621 2 } #Subotica
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	
+	provinces = {
+		619 3617 3623 6643 9621 11787 11580 3614 614 
+	}
+}

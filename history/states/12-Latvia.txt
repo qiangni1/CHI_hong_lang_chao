@@ -1,0 +1,37 @@
+
+state={
+	id=12
+	name="STATE_12"
+
+	history={
+		owner = LAT
+		add_core_of = LAT
+		victory_points = {
+			9340 5 
+		}
+		victory_points = {
+			9317 2 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 1
+			air_base = 3
+			9340 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		3388 9240 9317 9340 9501 10323 10493 11222 11302 14277 
+	}
+	manpower=1300000
+	buildings_max_level_factor=1.000
+	state_category = large_suburb
+	local_supplies=0.000
+}

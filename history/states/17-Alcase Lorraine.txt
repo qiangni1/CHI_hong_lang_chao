@@ -1,0 +1,25 @@
+state = {
+	id = 17
+	name = "STATE_17" #Vosges
+	manpower = 1677500
+	state_category = suburb
+	
+	resources = {
+		steel = 31
+	}
+	
+	history = {
+		owner = FRA
+		add_core_of = FRA
+		victory_points = { 9642 5 } #Besancon
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 5
+		}
+	}
+	
+	provinces = {
+		521 698 3646 3666 6698 9642 9658 
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=92
+	name="STATE_92"
+	resources={
+		steel=3.000
+	}
+
+	history={
+		owner = PLD
+		add_core_of = PLD
+		victory_points = {
+			3559 5 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+
+		}
+
+	}
+
+	provinces={
+		3521 3559 6484 6580 9452 9521 9544 11399 11466 
+	}
+	manpower=2104000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

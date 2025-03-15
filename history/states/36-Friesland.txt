@@ -1,0 +1,31 @@
+
+state={
+	id=36
+	name="STATE_36"
+	resources={
+		steel=11.000
+	}
+
+	history={
+		owner = HOL
+		add_core_of = HOL
+		victory_points = {
+			6286 2 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			air_base = 2
+
+		}
+
+	}
+
+	provinces={
+		6241 6286 9363 9403 14266 14267 
+	}
+	manpower=4364000
+	buildings_max_level_factor=1.000
+	state_category = large_suburb
+	local_supplies=0.000
+}

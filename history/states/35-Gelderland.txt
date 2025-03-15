@@ -1,0 +1,43 @@
+
+state={
+	id=35
+	name="STATE_35"
+	resources={
+		steel=9.000
+	}
+
+	history={
+		owner = HOL
+		add_core_of = HOL
+		victory_points = {
+			6496 5 
+		}
+		victory_points = {
+			9498 20 
+		}
+		victory_points = {
+			9431 1 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 3
+			9498 = {
+				naval_base = 5
+
+			}
+			nuclear_reactor = 1
+
+		}
+
+	}
+
+	provinces={
+		480 3262 6496 6500 9431 9498 11456 11562 14257 14260 14261 
+	}
+	manpower=6449000
+	buildings_max_level_factor=1.000
+	state_category = large_suburb
+	local_supplies=0.000
+}

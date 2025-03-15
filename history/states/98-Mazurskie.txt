@@ -1,0 +1,27 @@
+
+state={
+	id=98
+	name="STATE_98"
+
+	history={
+		owner = PLD
+		add_core_of = PLD
+		victory_points = {
+			6259 1 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+
+		}
+
+	}
+
+	provinces={
+		548 3230 6259 6321 6401 6567 9290 9316 11385 14270 14293 
+	}
+	manpower=1053124
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.000
+}

@@ -1,0 +1,27 @@
+state = {
+	id = 28
+	name = "STATE_28" #Lorraine
+	manpower = 2349816
+	state_category = large_suburb
+	
+	resources = {
+		steel = 88
+	}
+	
+	history = {
+		owner = FRA
+		add_core_of = FRA
+		victory_points = { 9559 3 } #Metz
+		victory_points = { 11516 5 } #Nancy
+		buildings = {
+			infrastructure = 4
+			air_base = 4
+			industrial_complex = 2
+			nuclear_reactor = 1
+		}
+	}
+	
+	provinces = {
+		9559 11502 9505 6545 5291 3546 3560 11488 11642 11516
+	}
+}

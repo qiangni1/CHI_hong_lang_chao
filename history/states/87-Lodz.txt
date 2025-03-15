@@ -1,0 +1,38 @@
+
+state={
+	id=87
+	name="STATE_87"
+	resources={
+		steel=3.000
+	}
+
+	history={
+		owner = PLD
+		add_core_of = PLD
+		victory_points = {
+			9508 5 
+		}
+		victory_points = {
+			14878 2 
+		}
+		victory_points = {
+			14881 2 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+			arms_factory = 1
+			power_plant = 3
+		}
+
+	}
+
+	provinces={
+		493 584 3482 9400 9439 9508 9546 11428 11492 11515 14256 14878 14881
+	}
+	manpower=2443000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

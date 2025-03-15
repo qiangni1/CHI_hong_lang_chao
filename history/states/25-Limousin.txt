@@ -1,0 +1,25 @@
+state = {
+	id = 25
+	name = "STATE_25" #Limousin
+	manpower = 1773700
+	state_category = large_town
+	
+	resources = {
+		steel = 25
+	}
+	
+	history = {
+		owner = FRA
+		add_core_of = FRA
+		victory_points = { 620 5 } #Limoges
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+		}
+	}
+	
+	provinces = {
+		620 625 755 3598 3771 6618 6775 6792 9717 9734 9751 11718 11720 
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=48
+	name="STATE_48"
+
+	history={
+		owner = BUL
+		add_core_of = BUL
+		victory_points = {
+			949 15 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+			nuclear_reactor = 1
+
+		}
+
+	}
+
+	provinces={
+		793 935 949 965 3908 3971 6857 9771 9818 11754 
+	}
+	manpower=2490513
+	buildings_max_level_factor=1.000
+	state_category = large_suburb
+	local_supplies=0.000
+}

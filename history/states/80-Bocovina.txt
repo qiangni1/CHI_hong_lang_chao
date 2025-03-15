@@ -1,0 +1,28 @@
+
+state={
+	id=80
+	name="STATE_80"
+	resources={
+		steel=4.000
+	}
+
+	history={
+		owner = UKR
+		add_core_of = UKR
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
+		victory_points = {
+			9548 3 
+		}
+	}
+
+	provinces={
+		577 9548 
+	}
+	manpower=884972
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.000
+}

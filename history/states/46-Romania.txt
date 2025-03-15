@@ -1,0 +1,29 @@
+state = {
+	id = 46
+	name = "STATE_46" #Muntenia
+	manpower = 3550770
+	state_category = large_suburb
+	
+	resources = {
+		steel = 26
+	}
+	
+	history = {
+		owner = ROM
+		add_core_of = ROM
+		victory_points = { 3663 5 } #Ploiesti
+		victory_points = { 14889 2 }
+		victory_points = { 14890 3 }
+		victory_points = { 9651 2 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 2
+			air_base = 3
+		}
+	}
+	
+	provinces = {
+		660 674 818 3636 3639 3663 6658 6677 6695 9651 11603 11619 11636 14882 14889 14890
+	}
+}

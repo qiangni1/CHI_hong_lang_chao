@@ -1,0 +1,30 @@
+state = {
+	id = 59
+	name = "STATE_59" #Hannover
+	manpower = 5038286
+	state_category = city
+	
+	resources = {
+		oil = 2
+		steel = 8
+	}
+	
+	history = {
+		owner = GER
+		add_core_of = GER
+		victory_points = { 3326 5 } #Bremen
+		victory_points = { 6377 20 } #Hannover
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			6325 = { naval_base = 1 }
+			nuclear_reactor = 1
+		}
+	}
+	
+	provinces = {
+		374 526 3271 3326 3395 6218 6263 6298 6325 6349 6377 6513 9264 9375 11402 11493 14360
+	}
+}

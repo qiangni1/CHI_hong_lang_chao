@@ -1,0 +1,33 @@
+
+state={
+	id=10
+	name="STATE_10"
+
+	history={
+		owner = PLD
+		add_core_of = PLD
+		buildings = {
+			infrastructure = 4
+			industrial_complex =4
+			air_base = 3
+			power_plant = 2
+		}
+		victory_points = {
+			6511 2
+		}
+		victory_points = {
+			467 3
+		}
+		victory_points = {
+			14880 2
+		}	
+	}
+
+	provinces={
+		402 467 524 3458 6511 12562 14300 14880
+	}
+	manpower=2036406
+	buildings_max_level_factor=1.000
+	state_category = large_suburb
+	local_supplies=0.000
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=4
+	name="STATE_4"
+	resources={
+		tungsten=2.000
+		steel=41.000
+	}
+
+	history={
+		owner = AUS
+		add_core_of = AUS
+		victory_points = {
+			11666 20 
+		}
+		victory_points = {
+			9648 12 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 5
+			arms_factory = 2
+			air_base = 2
+
+		}
+
+	}
+
+	provinces={
+		653 704 3700 3718 6690 6739 9527 9646 9648 9661 9679 11630 11666 14356 14357 
+	}
+	manpower=4614409
+	buildings_max_level_factor=1.000
+	state_category = city
+	local_supplies=0.000
+}

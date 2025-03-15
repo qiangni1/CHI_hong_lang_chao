@@ -1,0 +1,23 @@
+state = {
+	id = 18
+	name = "STATE_18" #Champagne
+	manpower = 1870800
+	state_category = suburb
+	
+	history = {
+		owner = FRA
+		add_core_of = FRA
+		victory_points = { 9490 5 } #Troyes
+		victory_points = { 13011 5 } #Reims
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 4
+			air_base = 5
+			nuclear_reactor = 1
+		}
+	}
+	
+	provinces = {
+		551 3533 6531 9472 9490 11732 13011 
+	}
+}
