@@ -1,0 +1,196 @@
+scripted_gui = {
+	New_left_space_force_gui = {
+		context_type = player_context
+		window_name = "New_left_gaw_head_GUI"
+		visible = {
+			has_country_flag = New_left_space_force_gui_open
+		}
+
+		triggers = {
+			new_left_space_army_GUI_supersecret_visible = {
+				NOT = {
+					new_left_space_army_choice_GUI_visible_trigger = yes
+				}
+			}
+			new_left_space_army_choice_GUI_visible = {
+				new_left_space_army_choice_GUI_visible_trigger = yes
+			}
+			new_left_rocket_army_choice_GUI_visible = {
+				new_left_space_army_choice_GUI_visible_trigger = yes
+			}
+			new_left_space_army_GUI_nuclear_btn_visible = {
+				has_country_flag = PLA_always_to_first_cf
+				has_global_flag = pan_asian_war_ongoing
+				NOT = { has_country_flag = PRC_nukes_open }
+			}
+			
+
+			new_left_space_army_choice_GUI_china_visible = {
+				has_country_flag = space_army_choice_GUI_china
+			}
+			new_left_space_army_choice_GUI_indochina_visible = {
+				has_country_flag = space_army_choice_GUI_indochina
+			}
+			new_left_space_army_choice_GUI_indonesia_visible = {
+				has_country_flag = space_army_choice_GUI_indonesia
+			}
+			new_left_space_army_choice_GUI_Philippines_visible = {
+				has_country_flag = space_army_choice_GUI_Philippines
+			}
+			new_left_space_army_choice_GUI_japan_visible = {
+				has_country_flag = space_army_choice_GUI_japan
+			}
+			new_left_space_army_choice_GUI_mailai_visible = {
+				has_country_flag = space_army_choice_GUI_mailai
+			}
+			new_left_space_army_choice_GUI_north_korea_visible = {
+				has_country_flag = space_army_choice_GUI_north_korea
+			}
+			new_left_space_army_choice_GUI_south_korea_visible = {
+				has_country_flag = space_army_choice_GUI_south_korea
+			}
+			new_left_space_army_choice_GUI_south_asia_visible = {
+				has_country_flag = space_army_choice_GUI_south_asia
+			}
+			new_left_space_army_choice_GUI_oceania_visible = {
+				has_country_flag = space_army_choice_GUI_oceania
+			}
+			new_left_space_army_choice_GUI_thai_visible = {
+				has_country_flag = space_army_choice_GUI_thai
+			}
+			
+			new_left_space_army_choice_GUI_btn_visible = {
+				PRC_space_army_action_btn_trigger = yes
+			}
+			new_left_rocket_army_choice_GUI_btn_visible = {
+				PRC_nuke_action_visible_trigger = yes
+			}
+
+			new_left_rocket_army_choice_GUI_btn_click_enabled = {
+				PRC_nuke_action_trigger = yes
+				PRC_rocket_strike_trigger = yes
+				PRC_rocket_army_strengthen_trigger = yes
+			}
+			new_left_space_army_choice_GUI_btn_click_enabled = {
+				PRC_space_strike_trigger = yes
+				PRC_new_space_army_action_trigger = yes
+				PRC_space_strike_satellite_trigger = yes
+			}
+			
+			new_left_space_army_GUI_nuclear_btn_click_enabled = {
+				has_political_power > 100
+				command_power > 100
+			}
+		}
+
+		effects = {
+			new_left_china_button_click = {
+				clr_newleft_space_army_flags = yes
+				set_country_flag = space_army_choice_GUI_china
+				space_army_GUI_action_china = yes
+			}
+			new_left_north_korea_button_click = {
+				clr_newleft_space_army_flags = yes
+				set_country_flag = space_army_choice_GUI_north_korea
+				space_army_GUI_action_north_korea = yes
+			}
+			new_left_south_korea_button_click = {
+				clr_newleft_space_army_flags = yes
+				set_country_flag = space_army_choice_GUI_south_korea
+				space_army_GUI_action_south_korea = yes
+			}
+			new_left_indonesia_button_click = {
+				clr_newleft_space_army_flags = yes
+				set_country_flag = space_army_choice_GUI_indonesia
+				space_army_GUI_action_indonesia = yes
+			}
+			new_left_japan_button_click = {
+				clr_newleft_space_army_flags = yes
+				set_country_flag = space_army_choice_GUI_japan
+				space_army_GUI_action_japan = yes
+			}
+			new_left_mailai_button_click = {
+				clr_newleft_space_army_flags = yes
+				set_country_flag = space_army_choice_GUI_mailai
+				space_army_GUI_action_mailai = yes
+			}
+			new_left_mian_button_click = {
+				clr_newleft_space_army_flags = yes
+				set_country_flag = space_army_choice_GUI_south_asia
+				space_army_GUI_action_south_asia = yes
+			}
+			new_left_Philippine_button_click = {
+				clr_newleft_space_army_flags = yes
+				set_country_flag = space_army_choice_GUI_Philippines
+				space_army_GUI_action_philippine = yes
+			}
+			new_left_thai_button_click = {
+				clr_newleft_space_army_flags = yes
+				set_country_flag = space_army_choice_GUI_thai
+				space_army_GUI_action_thai = yes
+			}
+			new_left_vietnam_button_click = {
+				clr_newleft_space_army_flags = yes
+				set_country_flag = space_army_choice_GUI_indochina
+				space_army_GUI_action_indochina =yes
+			}
+			new_left_oceania_button_click = {
+				clr_newleft_space_army_flags = yes
+				set_country_flag = space_army_choice_GUI_oceania
+				space_army_GUI_action_oceania = yes
+			}
+			new_left_space_army_GUI_close_btn_click = {
+				clr_country_flag = New_left_space_force_gui_open
+			}
+			new_left_rocket_army_choice_GUI_btn_click = {
+				hidden_effect = {
+					set_temp_variable = { PRC_nuke_target = new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i }
+				}
+				PRC_nuke_action = yes
+				PRC_rocket_army_strategic_strike = yes
+				PRC_rocket_army_tactical_strike = yes
+				PRC_rocket_army_strengthen = yes
+			}
+			new_left_space_army_choice_GUI_btn_click = {
+				hidden_effect = {
+					set_temp_variable = { PRC_space_army_target = new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i }
+				}
+				PRC_space_army_action = yes
+				PRC_new_space_army_action = yes
+				PRC_space_strike_satellite = yes
+			}
+			new_left_space_army_GUI_nuclear_btn_click = {
+				set_country_flag = PRC_nukes_open
+				custom_effect_tooltip = PRC_nukes_open
+				add_political_power = -100
+				add_command_power = -100
+			}
+		}
+		dynamic_lists = {
+			new_left_PLA_rocket_force_blue_action_list = {
+				array = new_left_PLA_rocket_force_blue_action
+				index = new_left_PLA_rocket_force_blue_action_i
+				entry_container = new_left_rocket_army_choice_GUI
+			}
+			new_left_PLA_space_force_blue_action_list = {
+				array = new_left_PLA_space_force_blue_action
+				index = new_left_PLA_space_force_blue_action_i
+				entry_container = new_left_space_army_choice_GUI
+			}
+		}
+	}
+	new_left_space_force_entrance_gui = {
+		context_type = decision_category
+		window_name = "new_left_space_army_entrance"
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			new_left_space_army_entrance_btn_click = {
+				set_country_flag = New_left_space_force_gui_open
+			}
+		}
+
+	}
+}

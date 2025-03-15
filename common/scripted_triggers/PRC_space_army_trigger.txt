@@ -1,0 +1,437 @@
+#总成
+new_left_space_army_choice_GUI_visible_trigger = {
+	OR = {
+		has_country_flag = space_army_choice_GUI_china
+		has_global_flag = pan_asian_war_ongoing
+	}
+}
+PRC_nuke_action_visible_trigger = {
+	OR = {
+		AND = {
+			has_country_flag = PRC_nukes_open
+			PRC_nuke_target_trigger = yes
+		}
+		AND = {
+			has_country_flag = PLA_further_rocket_cf
+			PRC_rocket_strike_target_trigger = yes
+		}
+		NOT = {
+			OR = {
+				PRC_nuke_target_trigger = yes
+				PRC_rocket_strike_target_trigger = yes
+			}
+		}
+	}
+}
+PRC_space_army_action_btn_trigger = {
+	OR = {
+		AND = {
+			has_country_flag = PLA_electronic_warfare_cf
+			check_variable = { new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_satellite }
+		}
+		AND = {
+			OR = {
+				PRC_new_space_army_action_replace_target_trigger = yes
+				PRC_new_space_army_action_research_target_trigger = yes
+				PRC_new_space_army_action_produce_target_trigger = yes
+				PRC_space_strike_target_trigger = yes
+			}
+			has_country_flag = PLA_orbital_drop_cf
+		}
+	}
+}
+
+#火箭军
+PRC_nuke_action_trigger = {
+	hidden_trigger = {
+		OR = {
+			AND = {
+				command_power > 30
+				PRC_nuke_target_trigger = yes
+			}
+			NOT = {
+				PRC_nuke_target_trigger = yes
+			}
+		}
+	}
+	if = {
+		limit = { PRC_nuke_target_trigger = yes }
+		command_power > 30
+	}
+}
+PRC_rocket_strike_trigger = {
+	hidden_trigger = {
+		OR = {
+			AND = {
+				check_variable = {
+					rocket_army_ability > 0
+				}
+				PRC_rocket_strike_target_trigger = yes
+			}
+			NOT = {
+				PRC_rocket_strike_target_trigger = yes
+			}
+		}
+	}
+	if = {
+		limit = { PRC_rocket_strike_target_trigger = yes }
+		custom_trigger_tooltip = {
+			check_variable = { rocket_army_ability > 0 }
+			tooltip = PRC_rocket_strike_trigger_tt
+		}
+	}
+}
+PRC_rocket_army_strengthen_trigger = {
+	hidden_trigger = {
+		OR = {
+			AND = {
+				NOT = {
+					has_active_mission = rocket_army_strengthen
+				}
+				has_political_power > 50
+				check_variable = {
+					new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_strengthen
+				}
+				check_variable = {
+					rocket_army_ability_upper_limit < 5
+				}
+			}
+			NOT = {
+				check_variable = {
+					new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_strengthen
+				}
+			}
+		}
+	}
+	if = {
+		limit = { check_variable = { new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_strengthen } }
+		has_political_power > 50
+	}
+}
+
+PRC_nuke_target_trigger = {
+	OR = {
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_tokyo
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_Singapore
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_bangkok
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_busan
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_chennai
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_dehli
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_hiroshima
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_kyoto
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_hochimin_city
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_jakarta
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_nagoya
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_osaka
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_sapporo
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_seoul
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_sydney
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:PRC_nuke_sendai
+		}
+	}
+}
+PRC_rocket_strike_target_trigger = {
+	OR = {
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_strategic_strike_india
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_strategic_strike_indochina
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_strategic_strike_indonesia
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_strategic_strike_japan
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_strategic_strike_mailai
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_strategic_strike_oceania
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_strategic_strike_philippine
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_strategic_strike_south_korea
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_strategic_strike_thai
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_strategic_strike_india
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_tactical_strike_indochina
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_tactical_strike_indonesia
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_tactical_strike_japan
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_tactical_strike_mailai
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_tactical_strike_oceania
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_tactical_strike_philippine
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_tactical_strike_korea
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_tactical_strike_thai
+		}
+		check_variable = {
+			new_left_PLA_rocket_force_blue_action^new_left_PLA_rocket_force_blue_action_i = token:rocket_army_defense
+		}
+	}
+}
+#太空军
+PRC_space_strike_trigger = {
+	hidden_trigger = {
+		OR = {
+			AND = {
+				check_variable = {
+					PRC_space_force_on_orbit > 0
+				}
+				PRC_space_strike_target_trigger = yes
+			}
+			NOT = {
+				PRC_space_strike_target_trigger = yes
+			}
+		}
+	}
+	if = {
+		limit = { 
+			PRC_space_strike_target_trigger = yes 
+		}
+		custom_trigger_tooltip = {
+			check_variable = {
+				PRC_space_force_on_orbit > 0
+			}
+			tooltip = PRC_space_strike_trigger_tt
+		}
+	}
+}
+PRC_new_space_army_action_trigger = {
+	hidden_trigger = {
+		OR = {
+				AND = {
+					NOT = {
+						has_active_mission = PLA_space_army_research
+					}
+					has_political_power > 100
+					PRC_new_space_army_action_research_target_trigger = yes
+				}
+				AND = {
+					check_variable = {
+						PRC_space_force < 17.9
+					}
+					NOT = {
+						has_active_mission = PLA_space_army_produce
+					}
+					has_political_power > 25
+					PRC_new_space_army_action_produce_target_trigger = yes
+				}
+				AND = {
+					check_variable = {
+						PRC_space_force_on_earth > 0
+					}
+					PRC_new_space_army_action_replace_target_trigger = yes
+				}
+				NOT = {
+					OR = {
+						PRC_new_space_army_action_produce_target_trigger = yes
+						PRC_new_space_army_action_research_target_trigger = yes
+						PRC_new_space_army_action_replace_target_trigger = yes
+					}
+				}
+			}
+	}
+	if = {
+		limit = { PRC_new_space_army_action_research_target_trigger = yes }
+		has_political_power > 100
+		custom_trigger_tooltip = {
+			NOT = {
+				has_active_mission = PLA_space_army_research
+				has_template = "轨道空降军"
+			}
+			tooltip = PRC_new_space_army_action_research_trigger_tt
+		}
+	}
+	if = {
+		limit = { PRC_new_space_army_action_produce_target_trigger = yes }
+		has_political_power > 25
+		custom_trigger_tooltip = {
+			check_variable = {
+				PRC_space_force < 17.9
+			}
+			NOT = {
+				has_active_mission = PLA_space_army_produce
+			}
+			tooltip = PRC_new_space_army_action_produce_trigger_tt
+		}
+	}
+	if = {
+		limit = { PRC_new_space_army_action_replace_target_trigger = yes }
+		custom_trigger_tooltip = { 
+			tooltip = PRC_new_space_army_action_replace_trigger_tt 
+			check_variable = {
+				PRC_space_force_on_earth > 0
+			}
+		}
+	}
+	
+}
+PRC_space_strike_satellite_trigger = {
+	hidden_trigger = {
+		OR = {
+			AND = {
+				command_power > 50
+				check_variable = {
+					new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_satellite
+				}
+			}
+			NOT = {
+				check_variable = {
+					new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_satellite
+				}
+			}
+		}
+	}
+	if = {
+		limit = { check_variable = { new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_satellite } }
+		command_power > 50
+	}
+}
+
+PRC_new_space_army_action_produce_target_trigger = {
+	check_variable = {
+		new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_army_produce
+	}
+}
+PRC_new_space_army_action_research_target_trigger ={
+	check_variable = {
+		new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_army_research
+	}
+}
+PRC_new_space_army_action_replace_target_trigger = {
+	check_variable = {
+		new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_army_replace
+	}
+}
+PRC_space_strike_target_trigger = {
+	OR = {
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_Phnom
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_Pyongyang
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_Singapore
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_bangkok
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_busan
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_chennai
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_dehli
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_hanoi
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_hiroshima
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_hochimin_city
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_jakarta
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_kalimantan
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_kuala_lumpur
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_kyoto
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_manila
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_nagoya
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_osaka
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_sapporo
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_sendai
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_seoul
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_sydney
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_sumatra
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_tokyo
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_vientiane
+		}
+		check_variable = {
+			new_left_PLA_space_force_blue_action^new_left_PLA_space_force_blue_action_i = token:space_strike_wellington
+		}
+	}
+}

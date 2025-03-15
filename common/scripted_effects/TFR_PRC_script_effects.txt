@@ -1,0 +1,9 @@
+PRC_wofo_MON = {
+	add_to_variable = { PRC_at_MON = PRC_at_dingdongji }
+	custom_effect_tooltip = PRC_dagoujiao
+	clamp_variable = {
+		var = PRC_at_MON
+		min = 0
+		max = 100
+	}
+}

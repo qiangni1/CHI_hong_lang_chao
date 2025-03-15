@@ -1,0 +1,42 @@
+
+on_actions = {
+
+	on_monthly_PRC = {
+		effect = {
+			if = { #太空军数量统计
+				limit = {
+					always = yes
+				}
+
+				set_variable = { PRC_space_force_on_earth = 0 }
+				every_country_division = {
+					limit = {
+						division_has_battalion_in_template = space_army
+					}
+					PRC = {
+						add_to_variable = { PRC_space_force_on_earth = 1 }
+					}
+				}
+
+				set_variable = { PRC_space_force = 0 }
+				add_to_variable = { PRC_space_force = PRC_space_force_on_earth }
+				add_to_variable = { PRC_space_force = PRC_space_force_on_orbit }
+
+				if = {
+					limit = {
+						check_variable = { PRC_space_force > 17.9 }
+					}
+					set_country_flag = PRC_space_force_troop_limit
+				}
+
+				if = {
+					limit = {
+						check_variable = { PRC_space_force < 17.9 }
+						has_country_flag = PRC_space_force_troop_limit
+					}
+					clr_country_flag = PRC_space_force_troop_limit
+				}
+			}
+		}
+	}
+}

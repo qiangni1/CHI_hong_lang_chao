@@ -1,0 +1,136 @@
+PRC_export_revolution = {
+	icon = GFX_PRC_gaw_cat
+	visible_when_empty = yes
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+		has_country_flag = PRC_world_revolution
+	}
+	priority = 199
+}
+
+PRC_assistance2communist = {
+	icon = GFX_PRC_gaw_cat
+	visible_when_empty = yes
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+		has_country_flag = PRC_world_revolution
+	}
+	priority = 195
+}
+
+PRC_red_JAP = {
+	icon = GFX_PRC_gaw_cat
+	visible_when_empty = yes
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+		has_country_flag = PRC_red_JAP_project
+	}
+	priority = 197
+}
+
+PRC_ussr_diplomacy = {
+	icon = GFX_PRC_gaw_cat
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+		has_country_flag = sov_diplomacy
+	}
+	priority = 196
+}
+
+PRC_WLA_coordination = {
+	icon = GFX_PRC_gaw_cat
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+		has_country_flag = form_the_WLA
+	}
+	priority = 196
+}
+
+PRC_The_Mexican_Dream = {
+	icon = GFX_PRC_gaw_cat
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+		has_completed_focus = The_Mexican_Dream
+	}
+	priority = 195
+}
+
+PRC_Global_Red_Tide_cat = {
+	icon = GFX_PRC_gaw_cat
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+		has_completed_focus = Global_Red_Tide
+	}
+	priority = 194
+}
+
+PRC_mongolia_hetong = {
+	# 蒙古和平统一
+	visible_when_empty = yes
+	icon = GFX_decision_category_jap_intervene_in_china
+	scripted_gui = PRC_mongolia_hetong_dec
+	visible = {
+		AND = {
+			hidden_trigger = {
+				has_country_flag = PRC_mongolia_hetong_flag
+			}
+			tag = PRC
+		}
+	}
+	allowed = {
+    	tag = PRC
+    }
+	# available = {
+	# 	hidden_trigger = {
+	# 		has_country_flag = PRC_mongolia_hetong_flag
+	# 	}
+	# }
+	priority = {
+		base = 250
+	}
+}
+
+PRC_new_left_pla_reformation = {
+    icon = GFX_PRC_pla_cat
+	picture = GFX_decision_cat_PRC_pla_picture
+    visible_when_empty = yes
+
+    allowed = {
+    	#tag = PRC
+    }
+    
+    visible = {
+    	has_completed_focus = PLA_reform
+    }
+    
+    priority = 3
+}
+
+PRC_new_left_pla_space_force = {
+    icon = GFX_PRC_pla_cat
+    visible_when_empty = yes
+    
+    allowed = {
+    	#tag = PRC
+    }
+    scripted_gui = new_left_space_force_entrance_gui
+    visible = {
+    	has_country_flag = PRC_new_left_pla_space_force_GUI_open
+    }
+    
+    priority = 1
+}

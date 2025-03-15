@@ -1,0 +1,23 @@
+PRC_WLI_modifiers = {
+  icon = GFX_idea_PRC_chinese_communist_party
+    enable = {
+		always = yes
+    }
+    icon = GFX_PRC_idea_world_jiefang
+    consumer_goods_factor = PRC_WLI_consumer_factor
+    industrial_capacity_factory = PRC_WLI_industrial_factor
+    factory_efficiency_growth = PRC_WLI_industrial_factor
+    factory_efficiency_max = PRC_WLI_industrial_factor
+}
+
+PRC_Attempted_terrorist_plot_modifiers = {
+  icon = GFX_idea_PRC_chinese_communist_party
+  enable = {
+  always = yes
+  }
+
+  stability_factor = Attempted_terrorist_plot_factor
+				political_power_factor = Attempted_terrorist_plot_pp_factor
+				industrial_capacity_factory = Attempted_terrorist_plot_factor
+				industrial_capacity_dockyard = Attempted_terrorist_plot_factor
+}
