@@ -1,0 +1,28 @@
+state={
+	id=1028
+	name="STATE_1028"
+	
+	resources = {
+		oil = 20
+	}
+	
+	history = {
+		owner = SYR
+		add_core_of = SYR
+		victory_points = { 2013 2 }	#Deir-Az-Zur
+		victory_points = { 3942 5 }	#Al-Thawrah
+		buildings = {
+			infrastructure = 2
+			fuel_silo = 2
+			synthetic_refinery = 1
+		}
+		
+	}
+	provinces={
+		2013 3942 14745
+	}
+	manpower= 293292
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

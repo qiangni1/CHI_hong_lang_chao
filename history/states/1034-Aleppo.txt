@@ -1,0 +1,21 @@
+state={
+	id=1034
+	name="STATE_1034"
+	history = {
+		owner = SYR
+		add_core_of = SYR
+		victory_points = { 13651 20 }	#Aleppo
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		
+	}
+	provinces={
+		13653 13652 13650 13649 13651
+	}
+	manpower= 2313292
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

@@ -1,0 +1,24 @@
+state={
+	id=1027
+	name="STATE_1027"
+	history = {
+		owner = HTS
+		add_core_of = SYR
+		add_core_of = HTS
+		victory_points = { 13642 5 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		
+		
+	}
+	provinces={
+		13640 13644 13642 13641 13643 
+	}
+	manpower= 1293292
+	buildings_max_level_factor=1.000
+	
+	state_category = village
+}

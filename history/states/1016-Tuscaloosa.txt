@@ -1,0 +1,23 @@
+state={
+	id=1016
+	name="STATE_1016"
+	history = {
+		owner = USA
+		add_core_of = ALA
+		add_core_of = USA
+		victory_points = {
+			1587 10 
+		}
+		buildings = {
+			infrastructure = 3
+			power_plant = 1
+		}
+	}
+	provinces={
+		4622 7422 11509 4594 12735 1587 13610 13606 13609
+	}
+	manpower = 1273392
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

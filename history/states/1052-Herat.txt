@@ -1,0 +1,25 @@
+state={
+	id=1052
+	name="STATE_1052"
+	
+	history = {
+		owner = AFG
+		add_core_of = AFG
+		add_core_of = TAL
+		victory_points = { 12871 1 }  #farah
+		victory_points = { 4893 10 } #Herat
+		buildings = {
+			infrastructure = 3
+		}
+		TAL = {
+			set_province_controller = 13740
+		}
+	}
+	provinces={
+		4893 12871 13738 13742 13740 13741
+	}
+	manpower = 2213292
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

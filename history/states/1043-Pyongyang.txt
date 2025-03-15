@@ -1,0 +1,25 @@
+state={
+	id=1043
+	name="STATE_1043"
+	
+	history = {
+		owner = PRK
+		add_claim_by = KOR
+		add_core_of = PRK
+		victory_points = { 13705 20 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 4
+		}
+		
+	}
+	provinces={
+		13703 13704 13709 13705 13711 13706 13710
+	}
+	manpower = 3060900
+	buildings_max_level_factor=1.000
+	
+	state_category = city
+}

@@ -1,0 +1,21 @@
+state = {
+	id = 1085
+	name = "STATE_1085"
+	manpower = 637392
+	state_category = large_town
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = { 12535 1 }	#Pocatello
+		victory_points = { 9695 1 }		#Twin Falls
+		victory_points = { 10672 1 }	#Rexburg
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	
+	provinces = {
+		10672 1789 9695 12535 14835 14837 14842
+	}
+}

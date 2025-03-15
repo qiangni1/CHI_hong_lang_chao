@@ -1,0 +1,32 @@
+
+state={
+	id=1090
+	name="STATE_1090"
+
+	history={
+		owner = UKR
+		add_core_of = UKR
+		add_core_of = NOV
+		buildings = {
+			infrastructure = 3
+			6519 = { bunker = 3 }
+			14610 = { bunker = 2 }
+			14645 = { bunker = 2 }
+			9476 = { bunker = 2 }
+		}
+		victory_points = {
+			6519 3 
+		}
+		victory_points = {
+			11487 3 
+		}
+	}
+
+	provinces={
+		523 6519 9476 11487 14610 14612 14613 14617 14618 14645 
+	}
+	manpower=409842
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,21 @@
+state = {
+	id = 1060
+	name = "STATE_1060"
+	manpower = 1057699
+	state_category = suburb
+	
+	history = {
+		owner = USA
+		add_core_of = FLA
+		add_core_of = USA
+		victory_points = { 10489 5 }	#Palm Bay
+		buildings = {
+			infrastructure = 4
+			nuclear_reactor = 1
+		}
+	}
+	
+	provinces = {
+		10489 13334 13333 13332 
+	}
+}

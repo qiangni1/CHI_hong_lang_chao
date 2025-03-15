@@ -1,0 +1,20 @@
+state = {
+	id = 1096
+	name = "STATE_1096"
+	manpower = 205967
+	state_category = town
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = { 14045 1 }
+		victory_points = { 14049 5 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	
+	provinces = {
+		4607 4521 13853 4736 14045 14049
+	}
+}

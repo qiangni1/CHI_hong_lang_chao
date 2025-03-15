@@ -1,0 +1,22 @@
+state={
+	id=1044
+	name="STATE_1044"
+	
+	history = {
+		owner = PRK
+		add_claim_by = KOR
+		add_core_of = PRK
+		victory_points = { 13697 3 }
+		buildings = {
+			infrastructure = 2
+		}
+		
+	}
+	provinces={
+		13697
+	}
+	manpower = 192578
+	buildings_max_level_factor=1.000
+	
+	state_category = pastoral
+}

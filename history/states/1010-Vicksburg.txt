@@ -1,0 +1,22 @@
+state={
+	id=1010
+	name="STATE_1010"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = MSS
+		victory_points = { 13594 5 } #Vicksburg
+		victory_points = { 4650 1 } #Brookhaven
+		buildings = {
+			infrastructure = 4
+			nuclear_reactor = 1
+		}
+	}
+	provinces={
+		13593 13590 13594 10449 4650 10410
+	}
+	manpower = 637753
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

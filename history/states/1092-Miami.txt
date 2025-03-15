@@ -1,0 +1,22 @@
+state = {
+	id = 1092
+	name = "STATE_1092"
+	manpower = 5630510
+	state_category = city
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = FLA
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+			nuclear_reactor = 1
+		}
+		victory_points = { 13844 20 }	#Miami
+	}
+	
+	provinces = {
+		13846 13843 13844 13847 13845
+	}
+}

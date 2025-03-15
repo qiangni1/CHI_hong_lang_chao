@@ -1,0 +1,22 @@
+state = {
+	id = 1073
+	name = "STATE_1073"
+	manpower = 2430966
+	state_category = town
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = { 14413 5 }#Lansing
+		victory_points = { 14414 2 }#Kalamazoo
+		buildings = {
+			infrastructure = 3
+			office_park = 1
+			nuclear_reactor = 1
+		}
+	}
+	
+	provinces = {
+		11685 9684 13822 691 695 11641 11656 14413 14414 
+	}
+}

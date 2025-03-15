@@ -1,0 +1,18 @@
+state = {
+	id = 1072
+	name = "STATE_1072"
+	manpower = 326075
+	state_category = village
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	
+	provinces = {
+		10599 4854 709 751 5205
+	}
+}

@@ -1,0 +1,20 @@
+state={
+	id=1058
+	name="STATE_1058"
+	
+	history = {
+		owner = TAL
+		add_core_of = AFG
+		add_core_of = TAL
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces={
+		8090 5082
+	}
+	manpower = 343292
+	buildings_max_level_factor=1.000
+	
+	state_category = rural
+}

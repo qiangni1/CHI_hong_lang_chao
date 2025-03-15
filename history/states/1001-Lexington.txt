@@ -1,0 +1,20 @@
+state={
+	id=1001
+	name="STATE_1001"
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = { 1445 15 }#Lexington
+		buildings = {
+			infrastructure = 4
+			power_plant = 1
+		}
+	}
+	provinces={
+		13571 13570 1445 9727 4452 13566
+	}
+	manpower=909255
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

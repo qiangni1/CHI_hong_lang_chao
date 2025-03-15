@@ -1,0 +1,21 @@
+state={
+	id=1021
+	name="STATE_1021"
+	history = {
+		owner = USA
+		add_core_of = GRA
+		add_core_of = USA
+		victory_points = { 7118 5 }		#Augusta
+		victory_points = { 13621 3 }		#Athens
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	provinces={
+		12384 638 7118 10394 13621
+	}
+	manpower = 1667965
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

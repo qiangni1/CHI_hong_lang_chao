@@ -1,0 +1,22 @@
+state = {
+	id = 1075
+	name = "STATE_1075"
+	manpower = 652073
+	state_category = large_town
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = { 7420 5 }#Traverse City
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			office_park = 1
+		}
+	}
+	
+	provinces = {
+		13826 9747 13825 3766 11731 7420 10303 10233
+	}
+}

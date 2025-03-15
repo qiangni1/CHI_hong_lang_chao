@@ -1,0 +1,21 @@
+state={
+	id=1030
+	name="STATE_1030"
+	history = {
+		owner = TUR
+		add_core_of = SYR
+		add_core_of = ROJ
+		add_claim_by = TUR
+		buildings = {
+			infrastructure = 1
+		}
+		
+	}
+	provinces={
+		13646
+	}
+	manpower= 33292
+	buildings_max_level_factor=1.000
+	
+	state_category = rural
+}

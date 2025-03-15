@@ -1,0 +1,23 @@
+state={
+	id=1038
+	name="STATE_1038"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = NMX
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = { 12791 2 }	#Las Cruces
+		victory_points = { 3883 1 }
+		victory_points = { 14017 3 }
+		victory_points = { 8070 1 }
+	}
+	provinces={
+		3883 12791 8070 3867 12720 10867 14013 14014 14015 14017 14019 14020 14018 
+	}
+	manpower = 603353
+	buildings_max_level_factor=1.000
+	
+	state_category = village
+}

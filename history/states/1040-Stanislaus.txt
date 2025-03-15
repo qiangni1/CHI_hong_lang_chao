@@ -1,0 +1,28 @@
+state={
+	id=1040
+	name="STATE_1040"
+	
+	resources = {
+		oil = 63
+	}
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = CAL
+		victory_points = { 13359 10 } #Modesto
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		
+	}
+	provinces={
+		13359 6694 13361 13667 6876
+	}
+	manpower = 613292
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

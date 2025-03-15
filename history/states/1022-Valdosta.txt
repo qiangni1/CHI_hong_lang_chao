@@ -1,0 +1,22 @@
+state={
+	id=1022
+	name="STATE_1022"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = GRA
+		victory_points = { 12470 5 }#Albany
+		victory_points = { 1433 3 }#Valdosta
+		buildings = {
+			infrastructure = 4
+			nuclear_reactor = 1
+		}
+	}
+	provinces={
+		12498 12325 12470 1433 1480 13619 13620
+	}
+	manpower = 1051293
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

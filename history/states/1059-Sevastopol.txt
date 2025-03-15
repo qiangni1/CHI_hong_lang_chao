@@ -1,0 +1,24 @@
+state = {
+	id = 1059
+	name = "STATE_1059"
+	manpower = 436670
+	state_category = town
+	
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_claim_by = UKR
+		victory_points = { 3686 20 }
+		buildings = {
+			infrastructure = 3
+			3686 = {
+				naval_base = 10
+				coastal_bunker = 3
+			}
+		}
+	}
+	
+	provinces = {
+		3686
+	}
+}

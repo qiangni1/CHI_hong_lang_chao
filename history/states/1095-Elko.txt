@@ -1,0 +1,19 @@
+state = {
+	id = 1095
+	name = "STATE_1095"
+	manpower = 37428
+	state_category = town
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = { 13852 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	
+	provinces = {
+		13852 13850 1862 14063 14058
+	}
+}

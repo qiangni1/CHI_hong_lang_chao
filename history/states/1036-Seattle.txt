@@ -1,0 +1,25 @@
+state={
+	id=1036
+	name="STATE_1036"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = WAS
+		victory_points = { 7315 20 }	#Seattle
+		buildings = {
+			infrastructure = 4
+			dockyard = 2
+			7315 = {
+				naval_base = 6
+			}
+		}
+		
+	}
+	provinces={
+		13675 13676 13678 13677 7315
+	}
+	manpower = 2325023
+	buildings_max_level_factor=1.000
+	
+	state_category = large_suburb
+}

@@ -1,0 +1,27 @@
+state={
+	id=1055
+	name="STATE_1055"
+	
+	history = {
+		owner = TAL
+		add_core_of = AFG
+		add_core_of = TAL
+		victory_points = { 5064 5 }		#Kandahar
+		victory_points = { 4949 2 }		#lashkar
+		buildings = {
+			infrastructure = 2
+		}
+
+		AFG = {
+			set_province_controller = 13743
+			set_province_controller = 13762
+		}
+	}
+	provinces={
+		13743 4949 5020 5064 13762
+	}
+	manpower = 123292
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

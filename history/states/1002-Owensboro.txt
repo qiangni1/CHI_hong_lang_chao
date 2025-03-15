@@ -1,0 +1,19 @@
+state={
+	id=1002
+	name="STATE_1002"
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = { 13559 3 }#Owensboro
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	provinces={
+		13559 10727 13904
+	}
+	manpower=256489
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

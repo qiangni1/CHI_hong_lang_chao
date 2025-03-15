@@ -1,0 +1,20 @@
+state={
+	id=1005
+	name="STATE_1005"
+	history = {
+		owner = USA
+		add_core_of = USA
+		victory_points = { 13572 20 }
+		buildings = {
+			infrastructure = 4
+			nuclear_reactor = 1
+		}
+	}
+	provinces={
+		13577 13572 13574 13573 13576 13575
+	}
+	manpower = 2192430
+	buildings_max_level_factor=1.000
+	
+	state_category = large_suburb
+}

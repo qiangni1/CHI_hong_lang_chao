@@ -1,0 +1,19 @@
+state = {
+	id = 1064
+	name = "STATE_1064"
+	manpower = 597144
+	state_category = town
+	
+	history = {
+		owner = SAU
+		add_core_of = SAU
+		victory_points = { 2057 3 }
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	
+	provinces = {
+		10901 2057 7970 5027 13800 13915 13943 14149
+	}
+}
