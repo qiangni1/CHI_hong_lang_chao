@@ -1,0 +1,20 @@
+state = {
+	id = 1113
+	name = "STATE_1113"
+	manpower = 1915812
+	state_category = large_town
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = FLA
+		victory_points = { 13331 4 } #Lakeland
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	
+	provinces = {
+		13331 13330 12752
+	}
+}

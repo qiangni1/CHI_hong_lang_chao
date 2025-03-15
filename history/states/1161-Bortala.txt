@@ -1,0 +1,26 @@
+
+state={
+	id=1161
+	name="STATE_1161"
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+		add_core_of = SIK
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+	victory_points = { 
+			7850 3
+		}
+
+	provinces={
+		7850 7866 12526 12601 
+	}
+	manpower=200250
+	buildings_max_level_factor=1.000
+	state_category = suburb
+	local_supplies=0.000
+}

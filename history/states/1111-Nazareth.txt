@@ -1,0 +1,25 @@
+state = {
+	id = 1111
+	name = "STATE_1111"
+	manpower = 1491300
+	state_category = town
+	
+	history = {
+		owner = ISR
+		add_core_of = PAL
+		add_core_of = ISR
+		victory_points = { 1065 3 }
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			1065 = {
+				bunker = 2
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces = {
+		1065 13906
+	}
+}

@@ -1,0 +1,23 @@
+state = {
+	id = 1108
+	name = "STATE_1108"
+	manpower = 1278486
+	state_category = village
+	
+	history = {
+		owner = SYR
+		add_core_of = SYR
+		victory_points = { 1088 3 }		#Latakia
+		victory_points = { 10087 2 }	#Tartus
+		buildings = {
+			infrastructure = 2
+			dockyard = 2
+			1088 = { naval_base = 3 }
+			10087 = { naval_base = 1 }
+		}
+	}
+	
+	provinces = {
+		1088 10087
+	}
+}

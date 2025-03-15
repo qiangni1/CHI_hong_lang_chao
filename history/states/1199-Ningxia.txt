@@ -1,0 +1,35 @@
+
+state={
+	id=1199
+	name="STATE_1199"
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			power_plant = 2
+		}
+		victory_points = {
+			8081 6
+		}
+		victory_points = {
+			3742 4
+		}
+		victory_points = {
+			5025 4
+		}
+		victory_points = {
+			10724 3
+		}
+	}
+
+	provinces={
+		1985 3742 5025 8081 10724 14213 
+	}
+	manpower=7202654
+	buildings_max_level_factor=1.000
+	state_category = suburb
+	local_supplies=0.000
+}

@@ -1,0 +1,23 @@
+state = {
+	id = 1107
+	name = "STATE_1107"
+	manpower = 1271256
+	state_category = large_town
+	
+	history = {
+		owner = USA
+		victory_points = { 4168 5 }#Greenville
+		add_core_of = USA
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			industrial_complex = 2
+			arms_factory = 1
+			power_plant = 2
+		}
+	}
+	
+	provinces = {
+		1163 4168 1077 11783 6943 9876
+	}
+}

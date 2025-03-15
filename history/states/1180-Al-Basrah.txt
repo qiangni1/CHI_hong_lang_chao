@@ -1,0 +1,27 @@
+state = {
+	id = 1180
+	name = "STATE_1180"
+	manpower = 3380241
+	state_category = large_town
+	
+	resources = {
+		oil = 50
+	}
+	
+	history = {
+		owner = IRQ
+		add_core_of = IRQ
+		victory_points = { 2089 20 }
+		victory_points = { 8001 10 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			2089 = { naval_base = 3 }
+			dockyard = 1
+		}
+	}
+	
+	provinces = {
+		10744 13998 8001 2089 12879
+	}
+}

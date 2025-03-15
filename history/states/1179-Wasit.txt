@@ -1,0 +1,27 @@
+state = {
+	id = 1179
+	name = "STATE_1179"
+	manpower = 3380241
+	state_category = town
+	
+	resources = {
+		oil = 50
+	}
+	
+	history = {
+		owner = IRQ
+		add_core_of = IRQ
+		victory_points = { 12726 3 }
+		victory_points = { 2004 3 }
+		victory_points = { 7994 3 }
+		victory_points = { 78 3 }
+		victory_points = { 7977 3 }
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	
+	provinces = {
+		12855 78 7994 14001 2004 12726 7977
+	}
+}

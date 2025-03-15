@@ -1,0 +1,22 @@
+state = {
+	id = 1172
+	name = "STATE_1172"
+	manpower = 1241222
+	state_category = large_suburb
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		#victory_points = { 13955 20 }
+		buildings = {
+			infrastructure = 4
+			air_base = 4
+			industrial_complex = 3
+			arms_factory = 1
+		}
+	}
+	
+	provinces = {
+		12437 13978 1595 9796 4531 13971 7551 9810
+	}
+}

@@ -1,0 +1,30 @@
+state={
+	id=1164
+	name="STATE_1164"
+
+	resources={
+		oil=80.000
+	}
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+		add_core_of = SIK
+		add_claim_by = CHI
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = { 4682 3 }
+		victory_points = { 
+			8086 3
+		}
+	}
+
+	provinces={
+		1703 4682 4828 7702 8086 
+	}
+	manpower=2561500
+	buildings_max_level_factor=1.000
+	state_category = large_suburb
+	local_supplies=0.000
+}

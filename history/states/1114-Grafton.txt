@@ -1,0 +1,22 @@
+state = {
+	id = 1114
+	name = "STATE_1114"
+	manpower = 122386
+	state_category = town
+	
+	resources = {
+		steel = 5
+	}
+
+	history = {
+		owner = USA
+		add_core_of = USA
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	
+	provinces = {
+		13866 13865 10481
+	}
+}

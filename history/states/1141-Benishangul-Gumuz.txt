@@ -1,0 +1,25 @@
+state = {
+	id = 1141
+	name = "STATE_1141"
+	manpower = 127001
+	state_category = town
+
+	resources = {
+		aluminium = 5
+	}
+	
+	history = {
+		owner = ETH
+		add_core_of = ETH
+		victory_points = { 7912 5 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+	
+	provinces = {
+		2009 7912 14136
+	}
+}
