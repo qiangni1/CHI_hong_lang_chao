@@ -1,0 +1,26 @@
+
+state={
+	id=538
+	name="STATE_538"
+	resources={
+		tungsten=56.000
+	}
+
+	history={
+		owner = COG
+		add_core_of = COG
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		988 7931 10883 10951 12741 12824 14565 14566 14567 14568 14569 14570 
+	}
+	manpower=7500300
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

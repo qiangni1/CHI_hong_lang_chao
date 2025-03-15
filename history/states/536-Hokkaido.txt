@@ -1,0 +1,33 @@
+
+state={
+	id=536
+	name="STATE_536"
+	resources={
+		steel=26.000
+	}
+
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+		victory_points = {
+			12421 5 
+		}
+		victory_points = {
+			4646 3
+		}
+	}
+
+	provinces={
+		1512 1642 4576 4646 7595 12352 12421 14715 14716 14717 
+	}
+	manpower=1764500
+	buildings_max_level_factor=1.000
+	state_category=suburb
+	local_supplies=0.000
+}

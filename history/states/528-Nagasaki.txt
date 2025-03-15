@@ -1,0 +1,45 @@
+
+state={
+	id=528
+	name="STATE_528"
+	resources={
+		steel=120.000
+	}
+
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+			industrial_complex = 1
+			office_park = 2
+			9950 = {
+				naval_base = 6
+
+			}
+			nuclear_reactor = 1
+
+		}
+		victory_points = {
+			4102 10
+		}
+		victory_points = {
+			9950 5 
+		}
+		victory_points = {
+			11925 10
+		}
+		victory_points = {
+			10092 5 
+		}
+	}
+
+	provinces={
+		1020 1025 1158 1183 4027 4102 4164 4198 7178 9950 10011 10020 10092 11925 11949 12006 12032 14678 
+	}
+	manpower=13033444
+	buildings_max_level_factor=1.000
+	state_category=suburb
+	local_supplies=0.000
+}

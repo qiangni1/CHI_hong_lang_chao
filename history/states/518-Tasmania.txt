@@ -1,0 +1,29 @@
+state=
+{
+	id=518
+	name="STATE_518"
+	manpower = 537000
+	
+	state_category = town
+	
+	resources = {
+		aluminium = 25
+		steel = 1
+	}
+
+	history=
+	{
+		victory_points = { 2189 1 }
+		owner = AST
+		add_core_of = AST
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+			2189 = { naval_base = 2 }
+		}
+	}
+	provinces={
+		2183 2189 5181 5187 10665 12645
+	}
+}

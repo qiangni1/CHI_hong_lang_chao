@@ -1,0 +1,24 @@
+
+state={
+	id=554
+	name="STATE_554"
+	manpower = 7065369
+	
+	state_category = village
+	
+	history={
+		owner = SYR
+		add_core_of = SYR
+		victory_points = { 4550 10 }		#Homs
+		buildings = {
+			infrastructure = 2
+			synthetic_refinery = 1
+		}
+
+	}
+
+
+	provinces={
+		4550 7184 13655 13654 13656
+	}
+}

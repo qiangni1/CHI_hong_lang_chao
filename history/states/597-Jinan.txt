@@ -1,0 +1,33 @@
+state={
+	id=597
+	name="STATE_597"
+	resources={
+		aluminium=20.000
+		oil=12.000
+		steel=40.000
+	}
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+		add_claim_by = CHI
+		victory_points = {
+			1069 10
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			air_base = 5
+
+		}
+
+	}
+
+	provinces={
+		1069 1084 4037 4089 7189 10102 10119 12045 12093 
+	}
+	manpower=23921129
+	buildings_max_level_factor=1.000
+	state_category = city
+	local_supplies=0.000
+}

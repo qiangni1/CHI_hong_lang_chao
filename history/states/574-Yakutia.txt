@@ -1,0 +1,29 @@
+
+state={
+	id=574
+	name="STATE_574"
+	resources={
+		oil=70.000
+	}
+
+	history={
+		owner = SOV
+		victory_points = {
+			10641 5
+		}
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		1714 1745 1748 1795 1852 1878 2853 4726 4752 4798 4821 4855 4878 7746 7765 7817 7844 7889 10557 10589 10608 10641 10667 10701 10714 12565 12608 12611 12623 12694 13059 14219 14221 14223 
+	}
+	manpower=890403
+	buildings_max_level_factor=1.000
+	state_category=village
+	local_supplies=0.000
+}
