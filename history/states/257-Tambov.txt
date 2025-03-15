@@ -1,0 +1,28 @@
+state = {
+	id = 257
+	name = "STATE_257" #Tambov
+	manpower = 1033552
+	state_category = town
+
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			11351 5 
+		}
+		victory_points = {
+			3332 2 
+		}
+		victory_points = {
+			232 2 
+		}
+	}
+
+	provinces = {
+		232 275 313 340 367 396 471 3332 3389 9245 9312 9367 9422 11227 11296 11323 11351 11381 11436 
+	}
+}

@@ -1,0 +1,26 @@
+state = {
+	id = 271
+	name = "STATE_271"
+	manpower = 49505500
+	state_category = conurbation
+	
+	resources = {
+		steel = 12
+	}
+	
+	history = {
+		owner = ETH
+		add_core_of = ETH
+		victory_points = { 5010 30 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 7
+			arms_factory = 2
+			air_base = 4
+		}
+	}
+	
+	provinces = {
+		5010 8036 12714 13997 8103 14161 12856 14482
+	}
+}

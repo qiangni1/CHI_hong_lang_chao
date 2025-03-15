@@ -1,0 +1,29 @@
+state = {
+	id = 274
+	name = "STATE_274"
+	manpower = 18163600
+	state_category = large_suburb
+	
+	resources = {
+		aluminium = 8
+		rubber = 7
+		oil = 6
+	}
+	
+	history = {
+		owner = GHA
+		add_core_of = GHA
+		victory_points = { 10862 5 }
+		victory_points = { 12787 3}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 1
+		}
+	}
+	
+	provinces = {
+		10862 12742 12785 12787 13136 
+	}
+}

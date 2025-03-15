@@ -1,0 +1,43 @@
+
+state={
+	id=227
+	name="STATE_227"
+	resources={
+		steel=23.000
+	}
+
+	history={
+		owner = DPR
+		add_claim_by = UKR
+		add_core_of = DPR
+		victory_points = {
+			6474 20 
+		}
+		victory_points = {
+			14594 5 
+		}
+		victory_points = {
+			6493 2 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			power_plant = 1
+			3421 = { bunker = 2 }
+			14638 = { bunker = 2 }
+			14591 = { bunker = 2 }
+			6474 = { bunker = 3 }
+			14594 = { bunker = 3 }
+		}
+
+	}
+
+	provinces={
+		3421 6474 6493 14591 14592 14594 14638 14639 
+	}
+	manpower=2092193
+	buildings_max_level_factor=1.000
+	state_category=suburb
+	local_supplies=0.000
+}

@@ -1,0 +1,49 @@
+
+state={
+	id=221
+	name="STATE_221"
+	resources={
+		oil=2.000
+		steel=55.000
+	}
+
+	history={
+		owner = UKR
+		add_core_of = UKR
+		victory_points = {
+			418 20 
+		}
+		victory_points = {
+			6530 3 
+		}
+		victory_points = {
+			3508 2 
+		}
+		victory_points = {
+			11461 2 
+		}
+		victory_points = {
+			11541 2 
+		}
+		victory_points = {
+			3409 2 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			industrial_complex = 1
+			arms_factory = 1
+			power_plant = 1
+			418 = { bunker = 1 }
+		}
+
+	}
+
+	provinces={
+		418 3409 3508 3531 6530 6554 9531 9556 11397 11461 11541 14611 14614 14616 14620 
+	}
+	manpower=2641970
+	buildings_max_level_factor=1.000
+	state_category=large_suburb
+	local_supplies=0.000
+}

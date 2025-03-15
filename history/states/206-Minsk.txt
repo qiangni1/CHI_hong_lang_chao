@@ -1,0 +1,38 @@
+
+state={
+	id=206
+	name="STATE_206"
+	resources={
+		steel=9.000
+	}
+
+	history={
+		owner = BLR
+		add_core_of = BLR
+		victory_points = {
+			11370 15 
+		}
+		victory_points = {
+			406 2 
+		}
+		victory_points = {
+			294 2 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 4
+			arms_factory = 3
+			air_base = 3
+
+		}
+
+	}
+
+	provinces={
+		216 277 294 304 360 406 3267 3759 6292 9236 11216 11313 11322 11341 11370 14368
+	}
+	manpower=3425796
+	buildings_max_level_factor=1.000
+	state_category = large_suburb
+	local_supplies=0.000
+}

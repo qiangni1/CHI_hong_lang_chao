@@ -1,0 +1,28 @@
+state = {
+	id = 225
+	name = "STATE_225" #Sumy
+	manpower = 1053422
+	state_category = rural
+	
+	resources = {
+		oil = 2
+		steel = 6
+	}
+	
+	history = {
+		owner = UKR
+		add_core_of = UKR
+		victory_points = { 3520 10 } #Sumy
+		victory_points = { 9477 5 } #Konotop
+		victory_points = { 463 2 } #Romny
+		buildings = {
+			infrastructure = 1
+			3520 = { bunker = 2 }
+			9477 = { bunker = 1 }
+		}
+	}
+	
+	provinces = {
+		463 501 522 3225 3455 3520 6565 9477 9566 11462 11553 
+	}
+}

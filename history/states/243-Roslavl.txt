@@ -1,0 +1,35 @@
+
+state={
+	id=243
+	name="STATE_243"
+	resources={
+		steel=6.000
+	}
+
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+
+		}
+		victory_points = {
+			11336 2 
+		}
+		victory_points = {
+			3278 3 
+		}
+		victory_points = {
+			11325 3 
+		}
+	}
+
+	provinces={
+		223 236 288 315 343 371 398 3210 3278 3364 3390 6305 9351 11229 11298 11325 11336 
+	}
+	manpower=876210
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

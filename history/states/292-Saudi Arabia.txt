@@ -1,0 +1,28 @@
+state = {
+	id = 292
+	name = "STATE_292"
+	manpower = 6777146
+	state_category = large_city
+	
+	resources = {
+		aluminium = 26
+		oil = 337
+		steel = 11
+	}
+	
+	history = {
+		owner = SAU
+		add_core_of = SAU
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 1
+			office_park = 3
+			air_base = 4
+		}
+	}
+	
+	provinces = {
+		10870 5093 7995 8004 8060 10892 12727 12813 12870 13783 13914 13916 13917 13918 13944 13941 13987 13986 13985 13988 14142 14143 14145
+	}
+}
