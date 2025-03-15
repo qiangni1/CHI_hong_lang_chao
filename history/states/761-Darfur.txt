@@ -1,0 +1,22 @@
+state={
+	id=761
+	name="STATE_761"
+
+	history={
+		owner = SUD
+		add_core_of = SUD
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			8052 1
+		}
+	}
+
+	provinces={
+		1960 5060 8052 10739
+	}
+	manpower=4110250
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

@@ -1,0 +1,21 @@
+state={
+	id=787
+	name="STATE_787"
+	history = {
+		owner = PAK
+		add_core_of = PAK
+		add_core_of = RAJ
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+		}
+	}
+	provinces={
+		1910 2041 10821 2084 13923 13924 13925 13926
+	}
+	manpower=1250000
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+}

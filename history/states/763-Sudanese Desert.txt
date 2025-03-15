@@ -1,0 +1,18 @@
+state={
+	id=763
+	name="STATE_763"
+	
+	impassable = yes
+	
+	history={
+		owner = SUD
+		add_core_of = SUD
+	}
+
+	provinces={
+		4961
+	}
+	manpower=533300
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+}

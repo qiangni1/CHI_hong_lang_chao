@@ -1,0 +1,35 @@
+
+state={
+	id=715
+	name="STATE_715"
+	resources={
+		oil=30.000
+	}
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+		add_claim_by = CHI
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+			power_plant = 2
+		}
+		victory_points = {
+			1638 3
+		}
+		victory_points = {
+			7633 6
+		}
+	}
+
+	provinces={
+		972 1502 1508 1558 1638 3828 3877 3978 4514 6988 7575 7633 7812 9873 10426 10429 10499 11836 11903 12337 12469 12478 14182 
+	}
+	manpower=9626550
+	buildings_max_level_factor=1.000
+	state_category = suburb
+	local_supplies=0.000
+}

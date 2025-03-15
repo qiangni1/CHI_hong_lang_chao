@@ -1,0 +1,42 @@
+
+state={
+	id=717
+	name="STATE_717"
+	resources={
+		tungsten=75.000
+		rubber=15.000
+	}
+
+	history={
+		owner = PRC
+		add_core_of = PRC
+		add_claim_by = CHI
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
+
+		}
+		victory_points = {
+			10433 15 
+		}
+		victory_points = {
+			10463 10 
+		}
+		victory_points = {
+			9766 5 
+		}
+		victory_points = {
+			1545 5 
+		}
+
+	}
+
+	provinces={
+		1545 1571 1732 3815 4551 4649 5427 6863 7526 7569 7591 7670 9623 9782 9798 10215 10368 10379 10433 10463 10503 10519 10521 10698 12342 12355 12412 12443 12500 14183 
+	}
+	manpower=20674352
+	buildings_max_level_factor=1.000
+	state_category=suburb
+	local_supplies=0.000
+}

@@ -1,0 +1,21 @@
+state={
+	id=778
+	name="STATE_778"
+	history = {
+		owner = CAR
+		add_core_of = CAR
+		add_core_of = CPC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+		}
+		victory_points = { 12830 3 }
+	}
+	provinces={
+		11012 12830 14573 14577 14579 14584 14583 14578
+	}
+	manpower=3122250
+	buildings_max_level_factor=1.000
+	
+	state_category = large_town
+}

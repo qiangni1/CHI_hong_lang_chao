@@ -1,0 +1,28 @@
+state={
+	id=759
+	name="STATE_759"
+	
+	resources = {
+		oil = 1
+	}
+	
+	history = {
+		owner = RCG
+		add_core_of = RCG
+		victory_points = { 8193 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
+		}
+	}
+	
+	provinces={
+		8193 
+	}
+	manpower=3750250
+	buildings_max_level_factor=1.000
+	
+	state_category = large_suburb
+}

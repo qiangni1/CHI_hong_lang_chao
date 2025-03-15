@@ -1,0 +1,25 @@
+state={
+	id=762
+	name="STATE_762"
+	resources={
+		oil = 13
+	}
+
+	history={
+		owner = SSD
+		add_core_of = SSD
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 1
+		}
+		victory_points = { 1953 1 }
+	}
+
+	provinces={
+		1953 4033 10764 10857 14476 14475
+	}
+	manpower=1842181
+	buildings_max_level_factor=1.000
+	state_category = town
+}
