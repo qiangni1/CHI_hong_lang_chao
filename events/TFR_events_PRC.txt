@@ -89,7 +89,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = prc_change.1
-				days = 15
+				days = 60
 			}
 		}
 		focus_unlock = yes
@@ -417,6 +417,7 @@ country_event = {
 		custom_effect_tooltip = appoint_head_minister_tooltip
 		show_ideas_tooltip = PRC_HuChunHua_hog_dummy
 		clr_country_flag = PRC_internal_factions_enabled_flag
+		set_country_flag = PRC_the_man_death_flag
 		hidden_effect = {
 			set_cosmetic_tag = PRC_totalitarian_socialist
 			add_ideas = PRC_HuChunHua_hog_dummy
