@@ -174,7 +174,6 @@ ideas = {
 			allowed = { original_tag = PRC}
 			visible = {
 				has_country_flag = PRC_the_man_death_flag
-				tag = PRC
 			}
 			allowed_to_remove = {
 				head_minister_trigger = yes
