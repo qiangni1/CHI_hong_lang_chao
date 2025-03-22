@@ -1,4 +1,4 @@
-﻿add_namespace = prcs
+add_namespace = prcs
 country_event = {
 	id = prcs.1
 	title = prcs.1.t
