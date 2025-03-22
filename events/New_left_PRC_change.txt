@@ -18,7 +18,6 @@ country_event = {
 		hidden_effect = {
 			remove_ideas = PRC_li_keqiang_hog
 		}
-		set_country_flag = PRC_first_committee_transition_flag
 		focus_unlock = yes
 		complete_national_focus = PRC_the_man_death
 	}
