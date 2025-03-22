@@ -2895,7 +2895,7 @@ focus_tree = {
 		id = Sparks_on_the_MekongRiver
 		icon = GFX_focus_PRC_new_left_meigonghe
 		relative_position_id = Rekindle_the_world_revolution
-		x = -7
+		x = -5
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
@@ -2916,12 +2916,12 @@ focus_tree = {
 		id = Adjust_path_in_Indochina
 		icon = GFX_focus_PRC_new_left_zhongnanbandao
 		relative_position_id = Sparks_on_the_MekongRiver
-		x = 0
-		y = 1
+		x = -1
+		y = 2
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = {
-			focus = Sparks_on_the_MekongRiver
+			focus = The_Spring_of_West_Asia
 		}
 		ai_will_do = {
 			factor = 50
@@ -2961,13 +2961,13 @@ focus_tree = {
 	focus = {
 		id = The_Spring_of_West_Asia
 		icon = GFX_focus_PRC_new_left_xiya
-		relative_position_id = Rekindle_the_world_revolution
-		x = -5
+		relative_position_id = Sparks_on_the_MekongRiver
+		x = 0
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = {
-			focus = Rekindle_the_world_revolution
+			focus = Sparks_on_the_MekongRiver
 		}
 		ai_will_do = {
 			factor = 50
@@ -2991,7 +2991,7 @@ focus_tree = {
 		id = Moisturizing_things_silently
 		icon = GFX_focus_PRC_new_left_3
 		relative_position_id = The_Spring_of_West_Asia
-		x = 0
+		x = 1
 		y = 1
 		cost = 2
 		available_if_capitulated = yes
@@ -3056,7 +3056,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Promote_the_thawing_of_DPRK
-		icon = GFX_focus_PRC_push_for_thaw
+		icon = GFX_focus_PRC_new_left_caoxian_jiedng
 		mutually_exclusive = {
 			focus = Shoot_the_sun
 		}
@@ -3082,7 +3082,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Assist_in_the_modernization_of_DPRK
-		icon = GFX_focus_PRC_joint_military_exercises
+		icon = GFX_focus_PRC_new_left_caoxian_xiandai
 		relative_position_id = Shoot_the_sun
 		x = 1
 		y = 1
@@ -3109,11 +3109,14 @@ focus_tree = {
 		icon = GFX_focus_PRC_new_left_hanjiang
 		relative_position_id = Assist_in_the_modernization_of_DPRK
 		x = 0
-		y = 1
+		y = 2
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = Assist_in_the_modernization_of_DPRK
+		}
+		prerequisite = {
+			focus = Brothers_of_South_Asia
 		}
 		ai_will_do = {
 			factor = 50
@@ -3128,7 +3131,7 @@ focus_tree = {
 		id = Responding_to_the_people_of_the_subcontinent
 		icon = GFX_focus_PRC_new_left_6
 		relative_position_id = Rekindle_the_world_revolution
-		x = 1
+		x = 2
 		y = 1
 		cost = 3
 		available_if_capitulated = yes
@@ -3151,14 +3154,14 @@ focus_tree = {
 	}
 	focus = {
 		id = Brothers_of_South_Asia
-		icon = GFX_focus_PRC_south_asian_brothers
+		icon = GFX_focus_PRC_new_left_nanyaxd
 		relative_position_id = Responding_to_the_people_of_the_subcontinent
-		x = 0
-		y = 1
+		x = -3
+		y = 2
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = {
-			focus = Responding_to_the_people_of_the_subcontinent
+			focus = Red_Dongying_Project
 		}
 		ai_will_do = {
 			factor = 50
@@ -3175,7 +3178,7 @@ focus_tree = {
 		id = Comrade_in_India
 		icon = GFX_focus_PRC_new_left_india
 		relative_position_id = Brothers_of_South_Asia
-		x = 0
+		x = 1
 		y = 1
 		cost = 2
 		available_if_capitulated = yes
@@ -3202,12 +3205,12 @@ focus_tree = {
 		id = Red_Dongying_Project
 		icon = GFX_focus_PRC_new_left_red_jap
 		relative_position_id = Rekindle_the_world_revolution
-		x = 3
-		y = 1
+		x = 2
+		y = 2
 		cost = 3
 		available_if_capitulated = yes
 		prerequisite = {
-			focus = Establishment_the_channel
+			focus = Responding_to_the_people_of_the_subcontinent
 		}
 		ai_will_do = {
 			factor = 50
@@ -3223,7 +3226,7 @@ focus_tree = {
 		id = Contact_the_Jap_left
 		icon = GFX_focus_PRC_new_left_lianluo
 		relative_position_id = Red_Dongying_Project
-		x = 0
+		x = 1
 		y = 1
 		cost = 2
 		available_if_capitulated = yes
@@ -3241,7 +3244,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Formation_of_JAP_Red_Army
-		icon = GFX_focus_JAP_save_our_democracy
+		icon = GFX_focus_PRC_new_left_robenhpngjun
 		relative_position_id = Contact_the_Jap_left
 		x = 0
 		y = 1
@@ -3249,6 +3252,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = Contact_the_Jap_left
+			focus = Beware_of_giant_bears
+		}
+		prerequisite = {
+			focus = Lenins_promises
 		}
 		ai_will_do = {
 			factor = 50
@@ -3309,7 +3316,7 @@ focus_tree = {
 		id = Liberation_of_Mongolia
 		icon = GFX_focus_PRC_new_left_jiefangmon
 		relative_position_id = Begonia_old_dreams
-		x = 2
+		x = 1
 		y = 1
 		cost = 3
 		available_if_capitulated = yes
@@ -3429,25 +3436,21 @@ focus_tree = {
 		icon = GFX_focus_PRC_new_left_chaozheshengli
 		relative_position_id = Comrade_in_India
 		x = -1
-		y = 1
+		y = 2
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = {
-			focus = Lenins_promises
-			focus = Beware_of_giant_bears
+			focus = Coordination_of_the_World_Liberation_Army
 		}
 		prerequisite = {
 			focus = Comrade_in_India
 		}
 		prerequisite = {
-			focus = Death_of_the_Han_River
-		}
-		prerequisite = {
 			focus = Formation_of_JAP_Red_Army
 		}
-		# prerequisite = {
-		# 	focus = Coordination_of_the_World_Liberation_Army
-		# }
+		prerequisite = {
+			focus = Death_of_the_Han_River
+		}
 		ai_will_do = {
 			factor = 50
 		}
@@ -3511,9 +3514,6 @@ focus_tree = {
 		prerequisite = {
 			focus = Ignite_the_Malay_Archipelago
 			focus = Bury_neo_Nazis
-		}
-		prerequisite = {
-			focus = Death_of_the_Han_River
 		}
 		ai_will_do = {
 			factor = 50
