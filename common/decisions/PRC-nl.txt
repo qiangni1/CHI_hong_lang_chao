@@ -1,13 +1,80 @@
 PRC_export_revolution = {
 	#输出革命
+	#缅甸
+	PRC_contact_mynamar_comrades = {
+		icon = GFX_PRC_new_left_decision
+		visible = {
+			has_completed_focus = Sparks_on_the_MekongRiver
+			has_country_flag = Mynamar_selected
+		}
+		fire_only_once = yes
+		cost = 15
+		days_remove = 1
+		complete_effect = {
+			set_country_flag = Mynamar_contacted
+		}
+	}
+	PRC_myanmar_commies_reunite = {
+		icon = GFX_PRC_new_left_decision
+		visible = {
+			has_completed_focus = Sparks_on_the_MekongRiver
+			has_country_flag = Mynamar_selected
+		}
+		available = {
+			has_country_flag = Mynamar_contacted
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 10
+		remove_effect = {
+			MND = {
+				add_stability = 0.05
+				add_war_support = 0.05
+				set_temp_variable = {
+					coalition_partner_var_temp = token:communist
+				}
+				add_to_coalition = yes
+			}
+			set_country_flag = MYA_commies_reunited
+		}
+	}
+	PRC_united_front_MYA = {
+		icon = GFX_PRC_new_left_decision
+		visible = {
+			has_completed_focus = Sparks_on_the_MekongRiver
+			has_country_flag = Mynamar_selected
+		}
+		available = {
+			has_country_flag = Mynamar_contacted
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 10
+		remove_effect = {
+			MND = {
+				add_political_power = 100
+				set_temp_variable = {
+					coalition_partner_var_temp = token:libertarian_socialist
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_democrat
+				}
+				add_to_coalition = yes
+			}
+			set_country_flag = MYA_commies_reunited
+		}
+	}
 	PRC_end_the_junta = {
-		#缅甸
 		icon = GFX_PRC_new_left_decision
 		available = {
 			has_completed_focus = Sparks_on_the_MekongRiver
+			has_country_flag = Mynamar_contacted
+			has_country_flag = MYA_commies_reunited
 		}
 		visible = {
 			has_completed_focus = Sparks_on_the_MekongRiver
+			has_country_flag = Mynamar_selected
 		}
 		fire_only_once = yes
 		cost = 25
@@ -96,8 +163,103 @@ PRC_export_revolution = {
 			base = 10
 		}
 	}
+	PRC_send_weapons_to_MND = {
+		icon = GFX_PRC_new_left_decision
+		visible = {
+			MND = {
+				is_ally_with = PRC
+			}
+			has_country_flag = Mynamar_selected
+		}
+		cost = 20
+		days_remove = 20
+		days_re_enable = 20
+		remove_effect = {
+			send_equipment = {
+				amount = 2000
+				target = MND
+				equipment = infantry_equipment
+			}
+			send_equipment = {
+				amount = 500
+				target = MND
+				equipment = motorized_equipment
+			}
+			send_equipment = {
+				amount = 500
+				target = MND
+				equipment = anti_air_equipment
+			}
+			send_equipment = {
+				amount = 300
+				target = MND
+				equipment = mechanized_equipment
+			}
+			MND = {
+				set_temp_variable = {
+					military_development_var_temp = 0.15
+				}
+				add_military_development = yes
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	#泰国
+	PRC_contact_THA_guerria = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			has_completed_focus = Sparks_on_the_MekongRiver
+		}
+		visible = {
+			has_country_flag = Thailand_selected
+			has_completed_focus = Sparks_on_the_MekongRiver
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 20
+		remove_effect = {
+			SIA = {
+				add_popularity = {
+					ideology = communist
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = totalitarian_socialist
+					popularity = 0.02
+				}
+				add_popularity = {
+					ideology = libertarian_socialist
+					popularity = 0.05
+				}
+			}
+		}
+	}
+	PRC_reform_THA_communists = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			has_completed_focus = Sparks_on_the_MekongRiver
+		}
+		visible = {
+			has_country_flag = Thailand_selected
+			has_completed_focus = Sparks_on_the_MekongRiver
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 15
+		remove_effect = {
+			SIA = {
+				add_stability = -0.1
+				add_popularity = {
+					ideology = communist
+					popularity = 0.05
+				}
+			}
+		}
+	}
 	PRC_thailand_communist = {
-		#泰国
+		
 		icon = GFX_PRC_new_left_decision
 		available = {
 			has_completed_focus = Sparks_on_the_MekongRiver
@@ -109,6 +271,7 @@ PRC_export_revolution = {
 				}
 			}
 			has_completed_focus = Sparks_on_the_MekongRiver
+			has_country_flag = Thailand_selected
 		}
 		fire_only_once = yes
 		cost = 25
@@ -120,13 +283,6 @@ PRC_export_revolution = {
 		}
 		on_map_mode = map_and_decisions_view
 		remove_effect = {
-			ROOT = {
-				set_autonomy = {
-					target = SIA
-					autonomous_state = autonomy_puppet
-					freedom_level = 0.3
-				}
-			}
 			SIA = {
 				set_party_name = {
 					ideology = communist
@@ -139,17 +295,10 @@ PRC_export_revolution = {
 					ideology = left_nationalism
 				}
 				set_cosmetic_tag = PRC_sia
-				set_politics = {
-					ruling_party = communist
-					elections_allowed = no
-				}
-				hidden_effect = {
-					set_popularities = {
-						totalitarian_socialist = 10
-						social_democrat = 10
-						libertarian_socialist = 20
-						communist = 60
-					}
+				start_civil_war = {
+					ideology = authoritarian_democrat
+					states = { 289 }
+					size = 0.4
 				}
 			}
 			PRC = {
@@ -188,6 +337,7 @@ PRC_export_revolution = {
 				}
 			}
 			has_completed_focus = Adjust_path_in_Indochina
+			has_country_flag = Laos_selected
 		}
 		fire_only_once = yes
 		cost = 25
@@ -259,6 +409,7 @@ PRC_export_revolution = {
 				}
 			}
 			has_completed_focus = Adjust_path_in_Indochina
+			has_country_flag = Cambodia_selected
 		}
 		fire_only_once = yes
 		cost = 25
@@ -345,6 +496,7 @@ PRC_export_revolution = {
 				}
 			}
 			has_completed_focus = Adjust_path_in_Indochina
+			has_country_flag = Vietnam_selected
 		}
 		fire_only_once = yes
 		cost = 25
@@ -382,6 +534,7 @@ PRC_export_revolution = {
 		}
 		visible = {
 			has_completed_focus = Ignite_the_Malay_Archipelago
+			has_country_flag = Philipine_selected
 		}
 		fire_only_once = yes
 		cost = 100
@@ -506,6 +659,7 @@ PRC_export_revolution = {
 		}
 		visible = {
 			has_completed_focus = Ignite_the_Malay_Archipelago
+			has_country_flag = Malaysia_selected
 		}
 		fire_only_once = yes
 		cost = 100
@@ -628,6 +782,7 @@ PRC_export_revolution = {
 		}
 		visible = {
 			has_completed_focus = Ignite_the_Malay_Archipelago
+			has_country_flag = Indonesia_selected
 		}
 		fire_only_once = yes
 		cost = 100
@@ -635,6 +790,7 @@ PRC_export_revolution = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 667
+				
 			}
 		}
 		on_map_mode = map_and_decisions_view
@@ -671,6 +827,11 @@ PRC_export_revolution = {
 					}
 				}
 				transfer_state = 667
+				transfer_state = 673
+				transfer_state = 668
+				transfer_state = 669
+				transfer_state = 738
+				transfer_state = 721
 				add_state_core = 667
 				set_state_controller = 334
 				division_template = {
@@ -705,8 +866,32 @@ PRC_export_revolution = {
 					create_unit = {
 						division = "division_template = \"Militia divisions\" start_experience_factor = 1 start_equipment_factor = 1.0"
 						owner = SRI
-						count = 10
+						count = 8
 					}
+				}
+				667 = {
+					create_unit = {
+						division = "division_template = \"Militia divisions\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = SRI
+						count = 1
+					}
+
+				}
+				721 = {
+					create_unit = {
+						division = "division_template = \"Militia divisions\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = SRI
+						count = 1
+					}	
+				}
+
+				738 = {
+					create_unit = {
+						division = "division_template = \"Militia divisions\" start_experience_factor = 1 start_equipment_factor = 1.0"
+						owner = SRI
+						count = 1
+					}	
+
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
@@ -756,6 +941,7 @@ PRC_export_revolution = {
 				}
 			}
 			has_completed_focus = Ignite_the_Malay_Archipelago
+			has_country_flag = Malaysia_selected
 		}
 		fire_only_once = yes
 		cost = 25
@@ -824,60 +1010,68 @@ PRC_export_revolution = {
 			base = 10
 		}
 	}
-	PRC_spring_thunder = {
-		#阿富汗
+	#伊朗
+	PRC_iran_status_quo = {
 		icon = GFX_PRC_new_left_decision
 		available = {
 			has_completed_focus = The_Spring_of_West_Asia
 		}
 		visible = {
 			has_completed_focus = The_Spring_of_West_Asia
-			OR = {
-				country_exists = AFG
-				country_exists = TAL
-			}
+			has_country_flag = IRA_selected
 		}
 		fire_only_once = yes
 		cost = 25
 		days_remove = 35
-		highlight_states = {
-			highlight_state_targets = {
-				state = 1355
-			}
-		}
-		on_map_mode = map_and_decisions_view
 		remove_effect = {
-			if = {
-				limit = {
-					country_exists = AFG
-					AFG = {
-						is_subject = no
-					}
-				}
-				declare_war_on = {
-					target = AFG
-					type = annex_everything
-				}
-			}
-			else = {
-				declare_war_on = {
-					target = TAL
-					type = annex_everything
-				}
-			}
-		}
-		ai_will_do = {
-			base = 10
+			set_country_flag = IRA_quo_viewed
+			country_event = Chihong.24
 		}
 	}
-	PRC_break_the_chains = {
-		#伊朗
+	PRC_coordinate_ira_leftie = {
 		icon = GFX_PRC_new_left_decision
 		available = {
 			has_completed_focus = The_Spring_of_West_Asia
 		}
 		visible = {
 			has_completed_focus = The_Spring_of_West_Asia
+			has_country_flag = IRA_selected
+			has_country_flag = IRA_quo_viewed
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 35
+		remove_effect = {
+			set_country_flag = IRA_leftie_coord
+			clr_country_flag = IRA_quo_viewed
+		}
+	}
+	PRC_ira_common_front = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			has_completed_focus = The_Spring_of_West_Asia
+		}
+		visible = {
+			has_completed_focus = The_Spring_of_West_Asia
+			has_country_flag = IRA_selected
+			has_country_flag = IRA_leftie_coord
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 35
+		remove_effect = {
+			set_country_flag = IRA_leftie_coord
+		}
+	}
+	PRC_break_the_chains = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			has_completed_focus = The_Spring_of_West_Asia
+		}
+		visible = {
+			has_completed_focus = The_Spring_of_West_Asia
+			has_country_flag = IRA_selected
+			has_country_flag = IRA_leftie_coord
 		}
 		fire_only_once = yes
 		cost = 25
@@ -889,6 +1083,7 @@ PRC_export_revolution = {
 		}
 		on_map_mode = map_and_decisions_view
 		remove_effect = {
+			country_event = Chihong.30
 			custom_effect_tooltip = jinggao
 			PER = {
 				dismantle_faction = yes
@@ -896,33 +1091,6 @@ PRC_export_revolution = {
 			declare_war_on = {
 				target = PER
 				type = annex_everything
-			}
-		}
-		ai_will_do = {
-			base = 10
-		}
-	}
-	PRC_free_Palestine = {
-		#巴勒斯坦
-		icon = GFX_PRC_new_left_decision
-		available = {
-			has_completed_focus = Bury_neo_Nazis
-		}
-		visible = {
-			has_completed_focus = Bury_neo_Nazis
-		}
-		fire_only_once = yes
-		cost = 15
-		days_remove = 1
-		highlight_states = {
-			highlight_state_targets = {
-				state = 811
-			}
-		}
-		on_map_mode = map_and_decisions_view
-		complete_effect = {
-			modifier = {
-				send_volunteer_size = 5
 			}
 		}
 		ai_will_do = {
@@ -937,6 +1105,7 @@ PRC_export_revolution = {
 		}
 		visible = {
 			has_completed_focus = Shoot_the_sun
+			has_country_flag = North_Korea_selected
 		}
 		fire_only_once = yes
 		cost = 25
@@ -977,6 +1146,7 @@ PRC_export_revolution = {
 		}
 		visible = {
 			has_completed_focus = Promote_the_thawing_of_DPRK
+			has_country_flag = North_Korea_selected
 		}
 		fire_only_once = yes
 		cost = 50
@@ -987,16 +1157,18 @@ PRC_export_revolution = {
 			}
 		}
 		on_map_mode = map_and_decisions_view
-		PRK = {
-			remove_ideas = {
-				PRK_heavy_sanctions_idea
-				PRK_Total_Control_idea
-				PRK_Kim_Jae_ryong_hog
-				PRK_Ri_Yong_ho_for
-				PRK_O_Su_yong_eco
-				PRK_Jong_Kyong_thaek_sec
-				PRK_Choe_Pu_Il_int
-			}
+		remove_effect = {
+			PRK = {
+				remove_ideas = {
+					PRK_heavy_sanctions_idea
+					PRK_Total_Control_idea
+					PRK_Kim_Jae_ryong_hog
+					PRK_Ri_Yong_ho_for
+					PRK_O_Su_yong_eco
+					PRK_Jong_Kyong_thaek_sec
+					PRK_Choe_Pu_Il_int
+				}
+			}	
 		}
 		ai_will_do = {
 			base = 10
@@ -1011,6 +1183,7 @@ PRC_export_revolution = {
 		}
 		visible = {
 			has_completed_focus = Death_of_the_Han_River
+			has_country_flag = South_Korea_selected
 		}
 		fire_only_once = yes
 		cost = 50
@@ -1054,6 +1227,7 @@ PRC_export_revolution = {
 		}
 		visible = {
 			has_completed_focus = Responding_to_the_people_of_the_subcontinent
+			has_country_flag = Butan_selected
 		}
 		fire_only_once = yes
 		cost = 50
@@ -1129,6 +1303,7 @@ PRC_export_revolution = {
 		}
 		visible = {
 			has_completed_focus = Responding_to_the_people_of_the_subcontinent
+			has_country_flag = Nepal_selected
 		}
 		fire_only_once = yes
 		cost = 10
@@ -1175,6 +1350,7 @@ PRC_export_revolution = {
 		}
 		visible = {
 			has_completed_focus = Responding_to_the_people_of_the_subcontinent
+			has_country_flag = Sri_Lanka_selected
 		}
 		fire_only_once = yes
 		cost = 50
@@ -1235,19 +1411,114 @@ PRC_export_revolution = {
 			base = 10
 		}
 	}
-	PRC_unite_PAK = {
-		#巴基斯坦
+	#巴基斯坦
+	PRC_Promote_Laheer = {
 		icon = GFX_PRC_new_left_decision
+		visible = {
+			has_country_flag = Pakistan_selected
+		}
 		available = {
 			has_completed_focus = Brothers_of_South_Asia
 		}
+		cost = 25
+		days_remove = 25
+		fire_only_once = yes
+		remove_effect = {
+			set_country_flag = PAK_Laheer
+			PAK = {
+				add_popularity = {
+					ideology = communist
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = libertarian_socialist
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = totalitarian_socialist
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.05
+				}
+			}
+		}
+	}
+	PRC_PAK_People_Front = {
+		icon = GFX_PRC_new_left_decision
+		visible = {
+			has_country_flag = Pakistan_selected
+		}
+		available = {
+			has_completed_focus = Brothers_of_South_Asia
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			PAK = {
+				add_popularity = {
+					ideology = communist
+					popularity = 0.02
+				}
+				add_popularity = {
+					ideology = libertarian_socialist
+					popularity = 0.02
+				}
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.02
+				}
+			}
+			set_country_flag = PRC_PAK_People_Front_flag
+		}
+	}
+	PRC_PAK_advocation_to_teens = {
+		icon = GFX_PRC_new_left_decision
+		visible = {
+			has_country_flag = Pakistan_selected
+		}
+		available = {
+			has_completed_focus = Brothers_of_South_Asia
+		}
+		cost = 25
+		days_remove = 30
+		days_re_enable = 30
+		remove_effect = {
+			set_country_flag = PAK_teen_advocated
+			PAK = {
+				add_stability = -0.03
+				add_popularity = {
+					ideology = totalitarian_socialist
+					popularity = 0.02
+				}
+				add_popularity = {
+					ideology = communist
+					popularity = 0.02
+				}
+			}
+		}
+	}
+	PRC_unite_PAK = {
+		
+		icon = GFX_PRC_new_left_decision
+		available = {
+			has_completed_focus = Brothers_of_South_Asia
+			has_country_flag = PRC_PAK_People_Front_flag
+			has_country_flag = PAK_Laheer
+			has_country_flag = PAK_teen_advocated
+		}
 		visible = {
 			has_completed_focus = Brothers_of_South_Asia
+			has_country_flag = Pakistan_selected
 		}
 		fire_only_once = yes
 		cost = 15
 		days_remove = 25
 		remove_effect = {
+			country_event = Chihong.19
+			
 			ROOT = {
 				set_autonomy = {
 					target = PAK
@@ -1301,6 +1572,7 @@ PRC_export_revolution = {
 		}
 		visible = {
 			has_completed_focus = Brothers_of_South_Asia
+			has_country_flag = Banglandash_selected
 		}
 		fire_only_once = yes
 		cost = 25
@@ -1369,8 +1641,25 @@ PRC_export_revolution = {
 			base = 10
 		}
 	}
+	#印度
+	PRC_RAJ_clear_bad_mind = {
+		icon = GFX_PRC_new_left_decision
+		visible = {
+			has_country_flag = India_selected
+		}
+		available = {
+			has_completed_focus = Comrade_in_India
+		}
+		cost = 50
+		days_remove = 50
+		remove_effect = {
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+		}
+	}
 	PRC_reunite_india = {
-		#印共毛
 		icon = GFX_PRC_new_left_decision
 		available = {
 			has_completed_focus = Comrade_in_India
@@ -1389,6 +1678,119 @@ PRC_export_revolution = {
 			base = 10
 		}
 	}
+	#阿富汗
+	PRC_AFG_commies = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			has_completed_focus = The_Spring_of_West_Asia
+		}
+		visible = {
+			has_completed_focus = The_Spring_of_West_Asia
+			has_country_flag = AFG_selected
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 50
+		remove_effect = {
+			set_country_flag = AFG_commies_flag
+			AFG = {
+				add_popularity = {
+					ideology = communist
+					popularity = 0.05
+				}
+			}
+		}
+	}
+	PRC_AFG_internal_conflict = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			has_completed_focus = The_Spring_of_West_Asia
+		}
+		visible = {
+			has_completed_focus = The_Spring_of_West_Asia
+			has_country_flag = AFG_selected
+			has_country_flag = AFG_commies_flag
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 30
+		complete_effect = {
+			country_event = {
+				id = Chihong.22
+				days = 3
+			}
+		}
+		remove_effect = {
+			clr_country_flag = AFG_commies_flag
+			set_country_flag = AFG_conflict_boiling
+			AFG = {
+				add_stability = -0.05
+				add_popularity = {
+					ideology = communist
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = libertarian_socialist
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.05
+				}
+			}
+			country_event = {
+				id = Chihong.23
+				days = 7
+			}
+		}
+	}
+	PRC_spring_thunder = {
+		icon = GFX_PRC_new_left_decision
+		available = {
+			has_completed_focus = The_Spring_of_West_Asia
+			OR = {
+				country_exists = AFG
+				country_exists = TAL
+			}
+		}
+		visible = {
+			has_completed_focus = The_Spring_of_West_Asia
+			has_country_flag = AFG_selected
+			has_country_flag = AFG_conflict_boiling
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 35
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1355
+			}
+		}
+		on_map_mode = map_and_decisions_view
+		remove_effect = {
+			AFG = {
+				if = {
+					limit = { 
+						communist > 0.6
+					}
+					start_civil_war = {
+						ideology = communist
+						size = 0.6
+					}
+				}
+				else = {
+					start_civil_war = {
+						ideology = communist
+						size = 0.4
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+
 	PRC_mongolia_war = {
 		#解放蒙古
 		icon = GFX_PRC_new_left_decision
@@ -1490,7 +1892,9 @@ PRC_export_revolution = {
 			base = 10
 		}
 	}
+	
 }
+
 
 PRC_assistance2communist = {
 	#援助外国
