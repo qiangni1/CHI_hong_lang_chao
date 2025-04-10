@@ -78,11 +78,11 @@ guiTypes = { #NVX# Tag for changes
 		Orientation = CENTER
 		Origo = center
 		
-		# iconType = {
-		# 	name ="background"
-		# 	spriteType = "GFX_black_overlay"
-		# 	position = { x= -385 y = -575 }
-		# }
+		iconType = {
+			name ="background"
+			spriteType = "GFX_black_overlay"
+			position = { x= -385 y = -575 }
+		}
 		### MAIN MENU PANEL (upperleft)
 		containerWindowType = {
 			name  ="mainmenu_panel_upperleft"
@@ -181,11 +181,11 @@ guiTypes = { #NVX# Tag for changes
 		Orientation = CENTER
 		Origo = center
 	
-		# iconType = {
-		# 	name ="background"
-		# 	spriteType = "GFX_black_overlay"
-		# 	position = { x= -385 y = -575 }
-		# }
+		iconType = {
+			name ="background"
+			spriteType = "GFX_black_overlay"
+			position = { x= -385 y = -575 }
+		}
 		
 		### MAIN MENU PANEL (upperleft)
 		containerWindowType = {
@@ -199,7 +199,7 @@ guiTypes = { #NVX# Tag for changes
 			iconType = {
 				name ="frontend_game_logo"
 				spriteType = "GFX_frontend_game_logo"
-				position = { x= 85 y = -320 }
+				position = { x= 105 y = -390 }
 				scale = 0.75
 			}
 			
@@ -332,9 +332,28 @@ guiTypes = { #NVX# Tag for changes
 		iconType = {
 			name ="frontend_update_image"
 			spriteType = "GFX_frontend_update_image"
-			position =  { x= -400 y = -55 }
+			position =  { x= 160 y = -55 }
 			pdx_tooltip = "TFR_UPDATE_TOOLTIP"
+		}	
+		ButtonType = {
+			name = "mini_update"
+			position =  { x= 468 y = -161 }
+			font = "VCR02_14"		
+			text = "MINI_UPDATE_TEXT"
 		}
+		iconType = {
+			name ="mini_update_window"
+			spriteType = "GFX_mini_update_window"
+			position =  { x= 484 y = -51 }
+			scale = 0.7
+		}
+		iconType = {
+			name ="frontend_update_image_mini"
+			spriteType = "GFX_frontend_update_image_mini"
+			position =  { x= 484 y = -51 }
+			pdx_tooltip = "TFR_UPDATE_MINI_TOOLTIP"
+			scale = 0.7
+		}	
 	}
 	
 	containerWindowType = {
