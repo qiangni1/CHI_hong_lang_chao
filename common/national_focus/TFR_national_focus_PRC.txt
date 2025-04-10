@@ -331,6 +331,126 @@ focus_tree = {
 			add_industrial_development = yes
 		}
 	}
+	focus = {
+		id = PRC_shake_up_the_politburo_2
+		icon = GFX_focus_PRC_five_shinig_stars_of_china
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = PRC_prepare_for_the_20th
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				NOT = {
+					has_idea = PRC_oil_crash1
+					has_idea = PRC_oil_crash2
+					has_idea = PRC_oil_crash3
+					has_idea = PRC_oil_crash4
+					has_idea = PRC_oil_crash5
+				}
+			}
+		}
+		prerequisite = {
+			focus = PRC_in_the_name_of_people
+		}
+		prerequisite = {
+			focus = PRC_promise_a_new_spring
+		}
+		prerequisite = {
+			focus = PRC_return_to_normalcy
+		}
+		prerequisite = {
+			focus = PRC_prepare_for_the_20th
+		}
+		completion_reward = {
+			country_event = {
+				id = prc_change.8
+				hours = 3
+			}
+		}
+	}
+	focus = {
+		id = PRC_prepare_for_the_20th
+		icon = GFX_focus_PRC_prepare_for_the_20th
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = PRC_stabilize_the_economic_sphere
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		prerequisite = {
+			focus = PRC_stabilize_the_economic_sphere
+		}
+		completion_reward = {
+			add_political_power = 100
+			if = {
+				limit = {
+					check_variable = {
+						PRC_influence_new_var_temp > PRC_influence_cen_var_temp
+					}
+				}
+				set_temp_variable = {
+					var = PRC_influence_cen_var_temp
+					value = -0.05
+				}
+				PRC_add_influence_new = yes
+				set_temp_variable = {
+					var = PRC_influence_new_var_temp
+					value = 0.05
+				}
+				PRC_add_influence_cen = yes
+			}
+			else = {
+				set_temp_variable = {
+					var = PRC_influence_new_var_temp
+					value = -0.05
+				}
+				PRC_add_influence_new = yes
+				set_temp_variable = {
+					var = PRC_influence_cen_var_temp
+					value = 0.05
+				}
+				PRC_add_influence_cen = yes
+			}
+			hidden_effect = {
+				add_country_leader_role = {
+					character = PRC_Hu_Chunhua
+					promote_leader = yes
+					country_leader = {
+						ideology = eurocommunism
+						expire = "1.1.1.1"
+						traits = {
+						}
+					}
+				}
+				set_country_flag = PRC_cen_banned_flag
+				set_party_name = {
+					ideology = communist
+					long_name = PRC_communist_party_long
+					name = PRC_communist_party
+				}
+				set_party_name = {
+					ideology = totalitarian_socialist
+					long_name = PRC_cpc_rad_maoist_tot_soc
+					name = PRC_cpc_rad_maoist_tot_soc_short
+				}
+				set_party_name = {
+					ideology = libertarian_socialist
+					long_name = PRC_cpc_neomarxist_libsoc
+					name = PRC_cpc_neomarxist_libsoc_short
+				}
+			}
+		}
+	}
 	#政治变革
 	focus = {
 		id = PRC_seek_system_change
@@ -1182,7 +1302,7 @@ focus_tree = {
 	
 	focus = {
 		id = PRC_manage_financial_crisis
-		icon = GFX_focus_PRC_manage_financial_crisis
+		icon = GFX_focus_PRC_stabilize_the_situation
 		x = 10
 		y = 0
 		cost = 1
@@ -1195,128 +1315,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = PRC_prepare_for_the_20th
-		icon = GFX_focus_PRC_prepare_for_the_20th
-		x = 0
-		y = 2
-		cost = 5
-		relative_position_id = PRC_stabilize_the_economic_sphere
-		ai_will_do = {
-			factor = 5
-		}
-		available = {
-		}
-		prerequisite = {
-			focus = PRC_stabilize_the_economic_sphere
-		}
-		completion_reward = {
-			add_political_power = 100
-			if = {
-				limit = {
-					check_variable = {
-						PRC_influence_new_var_temp > PRC_influence_cen_var_temp
-					}
-				}
-				set_temp_variable = {
-					var = PRC_influence_cen_var_temp
-					value = -0.05
-				}
-				PRC_add_influence_new = yes
-				set_temp_variable = {
-					var = PRC_influence_new_var_temp
-					value = 0.05
-				}
-				PRC_add_influence_cen = yes
-			}
-			else = {
-				set_temp_variable = {
-					var = PRC_influence_new_var_temp
-					value = -0.05
-				}
-				PRC_add_influence_new = yes
-				set_temp_variable = {
-					var = PRC_influence_cen_var_temp
-					value = 0.05
-				}
-				PRC_add_influence_cen = yes
-			}
-			hidden_effect = {
-				add_country_leader_role = {
-					character = PRC_Hu_Chunhua
-					promote_leader = yes
-					country_leader = {
-						ideology = eurocommunism
-						expire = "1.1.1.1"
-						traits = {
-						}
-					}
-				}
-				set_country_flag = PRC_cen_banned_flag
-				set_party_name = {
-					ideology = communist
-					long_name = PRC_communist_party_long
-					name = PRC_communist_party
-				}
-				set_party_name = {
-					ideology = totalitarian_socialist
-					long_name = PRC_cpc_rad_maoist_tot_soc
-					name = PRC_cpc_rad_maoist_tot_soc_short
-				}
-				set_party_name = {
-					ideology = libertarian_socialist
-					long_name = PRC_cpc_neomarxist_libsoc
-					name = PRC_cpc_neomarxist_libsoc_short
-				}
-			}
-		}
-	}
-	focus = {
-		id = PRC_shake_up_the_politburo_2
-		icon = GFX_focus_PRC_five_shinig_stars_of_china
-		x = 0
-		y = 2
-		cost = 5
-		relative_position_id = PRC_prepare_for_the_20th
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			if = {
-				limit = {
-					is_ai = no
-				}
-				NOT = {
-					has_idea = PRC_oil_crash1
-					has_idea = PRC_oil_crash2
-					has_idea = PRC_oil_crash3
-					has_idea = PRC_oil_crash4
-					has_idea = PRC_oil_crash5
-				}
-			}
-		}
-		prerequisite = {
-			focus = PRC_in_the_name_of_people
-		}
-		prerequisite = {
-			focus = PRC_promise_a_new_spring
-		}
-		prerequisite = {
-			focus = PRC_return_to_normalcy
-		}
-		prerequisite = {
-			focus = PRC_prepare_for_the_20th
-		}
-		completion_reward = {
-			country_event = {
-				id = prc_change.8
-				hours = 3
-			}
-		}
-	}
-	focus = {
 		id = PRC_expand_investment
-		icon = GFX_focus_PRC_expand_investment
+		icon = GFX_focus_PRC_southeast_asian_bailout_package
 		x = -2
 		y = 1
 		cost = 1
@@ -1331,7 +1331,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_restructure
-		icon = GFX_focus_PRC_restructure
+		icon = GFX_focus_PRC_crack_down_on_reformist_protesters
 		x = 0
 		y = 1
 		cost = 1
@@ -1346,7 +1346,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_dump_us_bonds
-		icon = GFX_focus_PRC_dump_us_bonds
+		icon = GFX_focus_PRC_crack_down_on_left_radicals
 		x = 2
 		y = 1
 		cost = 1
@@ -1361,7 +1361,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_six_guarantees_stable
-		icon = GFX_focus_PRC_six_guarantees_stable
+		icon = GFX_focus_PRC_a_nuclear_revolution
 		x = -1
 		y = 2
 		cost = 2
@@ -1379,7 +1379,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_stable_real_estate
-		icon = GFX_focus_PRC_stable_real_estate
+		icon = GFX_focus_PRC_stabilize_the_situation
 		x = 1
 		y = 2
 		cost = 2
@@ -1406,7 +1406,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_epidemic_bonds
-		icon = GFX_focus_PRC_epidemic_bonds
+		icon = GFX_focus_PRC_empower_the_50_cent_army
 		x = -2
 		y = 3
 		cost = 3
@@ -1430,7 +1430,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_support_smes
-		icon = GFX_focus_PRC_support_smes
+		icon = GFX_focus_PRC_contain_the_damage
 		x = 0
 		y = 3
 		cost = 3
@@ -1449,7 +1449,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_hainan_free_trade
-		icon = GFX_focus_PRC_hainan_free_trade
+		icon = GFX_focus_PRC_a_renewable_revolution
 		x = 2
 		y = 3
 		cost = 3
@@ -1467,7 +1467,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_boost_consumption
-		icon = GFX_focus_PRC_boost_consumption
+		icon = GFX_focus_PRC_rejuvinate_the_nation
 		x = -3
 		y = 4
 		cost = 2
@@ -1493,7 +1493,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_dual_circulation
-		icon = GFX_focus_PRC_dual_circulation
+		icon = GFX_focus_PRC_gambit_in_the_gulf
 		x = -1
 		y = 4
 		cost = 2
@@ -1512,7 +1512,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_self_control_chain
-		icon = GFX_focus_PRC_self_control_chain
+		icon = GFX_focus_PRC_diversify_the_oil_trade
 		x = 1
 		y = 4
 		cost = 2
@@ -1537,7 +1537,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_cjk_trade_zone
-		icon = GFX_focus_PRC_cjk_trade_zone
+		icon = GFX_focus_PRC_south_china_sea_expansion
 		x = 3
 		y = 4
 		cost = 2
@@ -1552,7 +1552,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_deep_reforms
-		icon = GFX_focus_PRC_deep_reforms
+		icon = GFX_focus_PRC_southeast_asian_bailout_package
 		x = -2
 		y = 5
 		cost = 3
@@ -1570,7 +1570,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_expand_belt_road
-		icon = GFX_focus_PRC_expand_belt_road
+		icon = GFX_focus_PRC_search_for_domestic_oil_sources
 		x = 2
 		y = 5
 		cost = 3
@@ -1586,7 +1586,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_end_financial_crisis
-		icon = GFX_focus_PRC_end_financial_crisis
+		icon = GFX_focus_PRC_stabilize_the_political_sphere
 		x = 0
 		y = 6
 		cost = 1
