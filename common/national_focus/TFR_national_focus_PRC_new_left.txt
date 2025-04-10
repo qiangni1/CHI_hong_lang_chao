@@ -3251,11 +3251,11 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		prerequisite = {
-			focus = Contact_the_Jap_left
+			focus = Lenins_promises
 			focus = Beware_of_giant_bears
 		}
 		prerequisite = {
-			focus = Lenins_promises
+			focus = Contact_the_Jap_left
 		}
 		ai_will_do = {
 			factor = 50
