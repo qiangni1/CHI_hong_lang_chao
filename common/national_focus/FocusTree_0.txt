@@ -1,0 +1,1575 @@
+focus_tree = {
+	id = FocusTree_0
+	country = {
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = PRC_nl_ancestor_worship
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 16
+		y = 0
+
+	}
+	focus = {
+		id = PRC_nl_three_major_reforms
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = PRC_nl_humanitarian_socialism
+		}
+		relative_position_id = PRC_nl_humanitarian_socialism
+
+	}
+	focus = {
+		id = PRC_nl_martial_law_reconstruction
+
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_ancestor_worship
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRC_nl_ancestor_worship
+
+	}
+	focus = {
+		id = PRC_nl_industry_integration_with_mainland
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_martial_law_reconstruction
+
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_martial_law_reconstruction
+
+	}
+	focus = {
+		id = PRC_nl_public_trial_separatists
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_ancestor_worship
+		}
+		x = 2
+		y = 1
+		relative_position_id = PRC_nl_ancestor_worship
+
+	}
+	focus = {
+		id = PRC_nl_cross_strait_family
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_public_trial_separatists
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_public_trial_separatists
+
+	}
+	focus = {
+		id = PRC_nl_red_wave_surge
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_cross_strait_family
+		}
+		prerequisite = {
+			focus = PRC_nl_industry_integration_with_mainland
+		}
+		x = 0
+		y = 3
+		relative_position_id = PRC_nl_ancestor_worship
+
+	}
+	focus = {
+		id = PRC_nl_clean_house
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_red_wave_surge
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = PRC_nl_marxist_theory_peak
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_clean_house
+		}
+		x = 3
+		y = 1
+		relative_position_id = PRC_nl_clean_house
+
+	}
+	focus = {
+		id = PRC_nl_political_awakening
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_clean_house
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRC_nl_clean_house
+
+	}
+	focus = {
+		id = PRC_nl_sun_at_eight_nine
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_political_awakening
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = PRC_nl_social_reeducation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_sun_at_eight_nine
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRC_nl_sun_at_eight_nine
+
+	}
+	focus = {
+		id = PRC_nl_education_radical_reform
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_social_reeducation
+		}
+		x = -2
+		y = 0
+		relative_position_id = PRC_nl_practice_combined_with_theory
+
+	}
+	focus = {
+		id = PRC_nl_practice_combined_with_theory
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_social_reeducation
+		}
+		x = -3
+		y = 1
+		relative_position_id = PRC_nl_social_reeducation
+
+	}
+	focus = {
+		id = PRC_nl_reforming_youth_league
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_practice_combined_with_theory
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_practice_combined_with_theory
+
+	}
+	focus = {
+		id = PRC_nl_new_cadre_goals
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_practice_combined_with_theory
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_practice_combined_with_theory
+
+	}
+	focus = {
+		id = PRC_nl_new_socialist_theory_practice
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_marxist_theory_peak
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_marxist_theory_peak
+
+	}
+	focus = {
+		id = PRC_nl_marxist_glory
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_new_socialist_theory_practice
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_new_socialist_theory_practice
+
+	}
+	focus = {
+		id = PRC_nl_historical_experience_summary
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_marxist_theory_peak
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_marxist_theory_peak
+
+	}
+	focus = {
+		id = PRC_nl_redefining_first_thirty_years
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_historical_experience_summary
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_historical_experience_summary
+
+	}
+	focus = {
+		id = PRC_nl_red_flag_never_falls
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_redefining_first_thirty_years
+		}
+		prerequisite = {
+			focus = PRC_nl_marxist_glory
+		}
+		x = 0
+		y = 3
+		relative_position_id = PRC_nl_marxist_theory_peak
+
+	}
+	focus = {
+		id = PRC_nl_road_to_future
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_red_wave_surge
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = PRC_nl_national_science_committee
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_road_to_future
+		}
+		x = -13
+		y = 1
+		relative_position_id = PRC_nl_road_to_future
+
+	}
+	focus = {
+		id = PRC_nl_research_institution_consolidation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_national_science_committee
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRC_nl_national_science_committee
+
+	}
+	focus = {
+		id = PRC_nl_military_civilian_integration
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_national_science_committee
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_national_science_committee
+
+	}
+	focus = {
+		id = PRC_nl_nationalized_tech_industry
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_national_science_committee
+		}
+		x = 2
+		y = 1
+		relative_position_id = PRC_nl_national_science_committee
+
+	}
+	focus = {
+		id = PRC_nl_digital_planning_committee
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_nationalized_tech_industry
+		}
+		prerequisite = {
+			focus = PRC_nl_research_institution_consolidation
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRC_nl_research_institution_consolidation
+
+	}
+	focus = {
+		id = PRC_nl_maoist_vision
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_digital_planning_committee
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_digital_planning_committee
+
+	}
+	focus = {
+		id = PRC_nl_adopting_ASPR_experience
+		icon = GFX_surrender_tiny_flag
+		cost = 4
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = PRC_nl_digital_planning_committee
+		}
+		relative_position_id = PRC_nl_digital_planning_committee
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_dawn_project
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_nationalized_tech_industry
+		}
+		prerequisite = {
+			focus = PRC_nl_research_institution_consolidation
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_nationalized_tech_industry
+
+	}
+	focus = {
+		id = PRC_nl_investment_in_new_energy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_dawn_project
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRC_nl_dawn_project
+
+	}
+	focus = {
+		id = PRC_nl_sensor_network_deployment
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_investment_in_new_energy
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_investment_in_new_energy
+
+	}
+	focus = {
+		id = PRC_nl_smart_building_development
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_sensor_network_deployment
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_sensor_network_deployment
+
+	}
+	focus = {
+		id = PRC_nl_fusion_power_demo
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_investment_in_new_energy
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_investment_in_new_energy
+
+	}
+	focus = {
+		id = PRC_nl_quantum_supercomputer
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_dawn_project
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_dawn_project
+
+	}
+	focus = {
+		id = PRC_nl_long_march_plan
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_quantum_supercomputer
+		}
+		prerequisite = {
+			focus = PRC_nl_fusion_power_demo
+		}
+		x = 0
+		y = 3
+		relative_position_id = PRC_nl_dawn_project
+
+	}
+	focus = {
+		id = PRC_nl_stellar_exploration
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_dawn_project
+		}
+		x = 3
+		y = 1
+		relative_position_id = PRC_nl_dawn_project
+
+	}
+	focus = {
+		id = PRC_nl_agriculture_collectivization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_three_major_reforms
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRC_nl_three_major_reforms
+
+	}
+	focus = {
+		id = PRC_nl_high_tech_agriculture
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_agriculture_collectivization
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_agriculture_collectivization
+
+	}
+	focus = {
+		id = PRC_nl_humanitarian_socialism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_road_to_future
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_road_to_future
+
+	}
+	focus = {
+		id = PRC_nl_public_private_partnership
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_three_major_reforms
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_three_major_reforms
+
+	}
+	focus = {
+		id = PRC_nl_de_financialization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_public_private_partnership
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_public_private_partnership
+
+	}
+	focus = {
+		id = PRC_nl_real_estate_economic_landing
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_three_major_reforms
+		}
+		x = 2
+		y = 1
+		relative_position_id = PRC_nl_three_major_reforms
+
+	}
+	focus = {
+		id = PRC_nl_crack_down_speculators
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_real_estate_economic_landing
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_real_estate_economic_landing
+
+	}
+	focus = {
+		id = PRC_nl_political_leadership_in_economic_construction
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_crack_down_speculators
+		}
+		prerequisite = {
+			focus = PRC_nl_high_tech_agriculture
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_de_financialization
+
+	}
+	focus = {
+		id = PRC_nl_new_era_AnGang_constitution
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_political_leadership_in_economic_construction
+		}
+		x = -5
+		y = 1
+		relative_position_id = PRC_nl_political_leadership_in_economic_construction
+
+	}
+	focus = {
+		id = PRC_nl_end_landlords
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_political_leadership_in_economic_construction
+		}
+		x = 5
+		y = 1
+		relative_position_id = PRC_nl_political_leadership_in_economic_construction
+
+	}
+	focus = {
+		id = PRC_nl_limit_maximum_wages
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_end_landlords
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_end_landlords
+
+	}
+	focus = {
+		id = PRC_nl_production_material_communization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_end_landlords
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRC_nl_end_landlords
+
+	}
+	focus = {
+		id = PRC_nl_brain_labor_calculation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_production_material_communization
+		}
+		prerequisite = {
+			focus = PRC_nl_limit_maximum_wages
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_end_landlords
+
+	}
+	focus = {
+		id = PRC_nl_legal_reform
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_humanitarian_socialism
+		}
+		x = 2
+		y = 1
+		relative_position_id = PRC_nl_humanitarian_socialism
+
+	}
+	focus = {
+		id = PRC_nl_cadre_revolutionization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_clean_house
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_clean_house
+
+	}
+	focus = {
+		id = PRC_nl_expand_young_forces
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_cadre_revolutionization
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_cadre_revolutionization
+
+	}
+	focus = {
+		id = PRC_nl_from_people_to_people
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_expand_young_forces
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_expand_young_forces
+
+	}
+	focus = {
+		id = PRC_nl_party_internal_democratization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_political_awakening
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_political_awakening
+
+	}
+	focus = {
+		id = PRC_nl_dare_to_pull_down_emperor
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_party_internal_democratization
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_party_internal_democratization
+
+	}
+	focus = {
+		id = PRC_nl_rebuild_proletarian_dictatorship
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_from_people_to_people
+		}
+		prerequisite = {
+			focus = PRC_nl_people_walk_with_party
+		}
+		prerequisite = {
+			focus = PRC_nl_red_flag_never_falls
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_from_people_to_people
+
+	}
+	focus = {
+		id = PRC_nl_people_walk_with_party
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_dare_to_pull_down_emperor
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_dare_to_pull_down_emperor
+
+	}
+	focus = {
+		id = PRC_nl_purge_cultural_edu_department
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_social_reeducation
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_social_reeducation
+
+	}
+	focus = {
+		id = PRC_nl_dust_to_dust
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_purge_cultural_edu_department
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_purge_cultural_edu_department
+
+	}
+	focus = {
+		id = PRC_nl_rebuild_proletarian_community
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_new_cadre_goals
+		}
+		prerequisite = {
+			focus = PRC_nl_reforming_youth_league
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_practice_combined_with_theory
+
+	}
+	focus = {
+		id = PRC_nl_comprehensive_education_revolution
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_social_reeducation
+		}
+		x = 2
+		y = 1
+		relative_position_id = PRC_nl_social_reeducation
+
+	}
+	focus = {
+		id = PRC_nl_clean_unhealthy_trend
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_comprehensive_education_revolution
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_comprehensive_education_revolution
+
+	}
+	focus = {
+		id = PRC_nl_flourish_red_culture
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_clean_unhealthy_trend
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_clean_unhealthy_trend
+
+	}
+	focus = {
+		id = PRC_nl_endure_suffering_to_be_human
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_clean_unhealthy_trend
+		}
+		prerequisite = {
+			focus = PRC_nl_dust_to_dust
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_dust_to_dust
+
+	}
+	focus = {
+		id = PRC_nl_peoples_culture_revolutionary_culture
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_flourish_red_culture
+		}
+		prerequisite = {
+			focus = PRC_nl_rebuild_proletarian_community
+		}
+		prerequisite = {
+			focus = PRC_nl_endure_suffering_to_be_human
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_endure_suffering_to_be_human
+
+	}
+	focus = {
+		id = PRC_nl_proletarian_art_festival
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_peoples_culture_revolutionary_culture
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_peoples_culture_revolutionary_culture
+
+	}
+	focus = {
+		id = PRC_nl_hundred_flowers_freedom
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_proletarian_art_festival
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRC_nl_proletarian_art_festival
+
+	}
+	focus = {
+		id = PRC_nl_peoples_artist
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_hundred_flowers_freedom
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_hundred_flowers_freedom
+
+	}
+	focus = {
+		id = PRC_nl_fighting_pen_revolutionary_painting
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_proletarian_art_festival
+		}
+		x = 2
+		y = 1
+		relative_position_id = PRC_nl_proletarian_art_festival
+
+	}
+	focus = {
+		id = PRC_nl_international_communism_everlasting
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_fighting_pen_revolutionary_painting
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_fighting_pen_revolutionary_painting
+
+	}
+	focus = {
+		id = PRC_nl_cosmos_red_tide
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_international_communism_everlasting
+		}
+		prerequisite = {
+			focus = PRC_nl_peoples_artist
+		}
+		prerequisite = {
+			focus = PRC_nl_revolutionary_art_renaissance
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_revolutionary_art_renaissance
+	}
+	focus = {
+		id = PRC_nl_revolutionary_art_renaissance
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_proletarian_art_festival
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_proletarian_art_festival
+
+	}
+	focus = {
+		id = PRC_nl_proletarian_democracy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_rebuild_proletarian_dictatorship
+		}
+		x = 16
+		y = 12
+
+	}
+	focus = {
+		id = PRC_nl_perfect_democratic_centralization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_proletarian_democracy
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_proletarian_democracy
+
+	}
+	focus = {
+		id = PRC_nl_reform_people_congress
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_proletarian_democracy
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_proletarian_democracy
+
+	}
+	focus = {
+		id = PRC_nl_collective_leadership_system
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_perfect_democratic_centralization
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_perfect_democratic_centralization
+
+	}
+	focus = {
+		id = PRC_nl_representative_rights_and_responsibilities
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_reform_people_congress
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_reform_people_congress
+
+	}
+	focus = {
+		id = PRC_nl_digital_supervision_of_the_people
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_reform_people_congress
+		}
+		x = 4
+		y = 1
+		relative_position_id = PRC_nl_reform_people_congress
+
+	}
+	focus = {
+		id = PRC_nl_unite_efforts_with_unity
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_proletarian_good_representative
+		}
+		prerequisite = {
+			focus = PRC_nl_central_purge
+		}
+		prerequisite = {
+			focus = PRC_nl_collective_leadership_system
+		}
+		x = 0
+		y = 4
+		relative_position_id = PRC_nl_proletarian_democracy
+
+	}
+	focus = {
+		id = PRC_nl_re_examine_the_people_congress
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_reform_people_congress
+		}
+		x = 2
+		y = 1
+		relative_position_id = PRC_nl_reform_people_congress
+
+	}
+	focus = {
+		id = PRC_nl_proletarian_good_representative
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_digital_supervision_of_the_people
+		}
+		prerequisite = {
+			focus = PRC_nl_re_examine_the_people_congress
+		}
+		prerequisite = {
+			focus = PRC_nl_representative_rights_and_responsibilities
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_re_examine_the_people_congress
+
+	}
+	focus = {
+		id = PRC_nl_central_purge
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_perfect_democratic_centralization
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRC_nl_perfect_democratic_centralization
+
+	}
+	focus = {
+		id = PRC_nl_advanced_industry_cluster_construction
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_village_consolidation_industrialization
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_village_consolidation_industrialization
+
+	}
+	focus = {
+		id = PRC_nl_regional_rejuvenation_movement
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_village_consolidation_industrialization
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_village_consolidation_industrialization
+
+	}
+	focus = {
+		id = PRC_nl_foolish_old_man_mountain_plan
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_regional_rejuvenation_movement
+		}
+		prerequisite = {
+			focus = PRC_nl_advanced_industry_cluster_construction
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_village_consolidation_industrialization
+
+	}
+	focus = {
+		id = PRC_nl_dazhai_spirit_lives_forever
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_new_era_AnGang_constitution
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_new_era_AnGang_constitution
+
+	}
+	focus = {
+		id = PRC_nl_economic_power_decentralization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_new_era_AnGang_constitution
+		}
+		x = 2
+		y = 1
+		relative_position_id = PRC_nl_new_era_AnGang_constitution
+
+	}
+	focus = {
+		id = PRC_nl_flexible_and_advanced_planned_economy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_economic_power_decentralization
+		}
+		prerequisite = {
+			focus = PRC_nl_dazhai_spirit_lives_forever
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_new_era_AnGang_constitution
+
+	}
+	focus = {
+		id = PRC_nl_village_consolidation_industrialization
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_political_leadership_in_economic_construction
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_political_leadership_in_economic_construction
+
+	}
+	focus = {
+		id = PRC_nl_eliminate_the_three_differences
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_brain_labor_calculation
+		}
+		prerequisite = {
+			focus = PRC_nl_foolish_old_man_mountain_plan
+		}
+		prerequisite = {
+			focus = PRC_nl_flexible_and_advanced_planned_economy
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_foolish_old_man_mountain_plan
+
+	}
+	focus = {
+		id = PRC_nl_rich_socialism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_eliminate_the_three_differences
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_eliminate_the_three_differences
+
+	}
+	focus = {
+		id = PRC_nl_implement_new_labor_law
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_rich_socialism
+		}
+		x = -4
+		y = 1
+		relative_position_id = PRC_nl_rich_socialism
+
+	}
+	focus = {
+		id = PRC_nl_refine_labor_protection_regulations
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_implement_new_labor_law
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_implement_new_labor_law
+
+	}
+	focus = {
+		id = PRC_nl_eliminate_temporary_worker_concept
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_implement_new_labor_law
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_implement_new_labor_law
+
+	}
+	focus = {
+		id = PRC_nl_954_hour_trial
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_refine_labor_protection_regulations
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_refine_labor_protection_regulations
+
+	}
+	focus = {
+		id = PRC_nl_employment_transparency
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_eliminate_temporary_worker_concept
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_eliminate_temporary_worker_concept
+
+	}
+	focus = {
+		id = PRC_nl_raise_minimum_living_standards
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_employment_transparency
+		}
+		prerequisite = {
+			focus = PRC_nl_954_hour_trial
+		}
+		x = 0
+		y = 3
+		relative_position_id = PRC_nl_implement_new_labor_law
+
+	}
+	focus = {
+		id = PRC_nl_technical_workers_honor
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_rich_socialism
+		}
+		x = 4
+		y = 1
+		relative_position_id = PRC_nl_rich_socialism
+
+	}
+	focus = {
+		id = PRC_nl_eliminate_middle_class_concept
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_technical_workers_honor
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_technical_workers_honor
+
+	}
+	focus = {
+		id = PRC_nl_comprehensive_employment_guarantee
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_technical_workers_honor
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_technical_workers_honor
+
+	}
+	focus = {
+		id = PRC_nl_reform_trade_union
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_comprehensive_employment_guarantee
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_comprehensive_employment_guarantee
+
+	}
+	focus = {
+		id = PRC_nl_expand_labor_arbitration
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_eliminate_middle_class_concept
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_eliminate_middle_class_concept
+
+	}
+	focus = {
+		id = PRC_nl_labor_for_the_people
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_reform_trade_union
+		}
+		prerequisite = {
+			focus = PRC_nl_expand_labor_arbitration
+		}
+		x = 0
+		y = 3
+		relative_position_id = PRC_nl_technical_workers_honor
+
+	}
+	focus = {
+		id = PRC_nl_subsidize_electronic_products
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_rich_socialism
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_rich_socialism
+
+	}
+	focus = {
+		id = PRC_nl_subsidize_rural_students
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_rich_socialism
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_rich_socialism
+
+	}
+	focus = {
+		id = PRC_nl_encourage_self_employed_labor
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_subsidize_electronic_products
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_subsidize_electronic_products
+
+	}
+	focus = {
+		id = PRC_nl_strengthen_hierarchical_medical_system
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_subsidize_rural_students
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_subsidize_rural_students
+
+	}
+	focus = {
+		id = PRC_nl_prioritize_domestic_supply
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_encourage_self_employed_labor
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_encourage_self_employed_labor
+
+	}
+	focus = {
+		id = PRC_nl_build_workers_health_care_center
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_strengthen_hierarchical_medical_system
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_strengthen_hierarchical_medical_system
+
+	}
+	focus = {
+		id = PRC_nl_encourage_tourism_freedom
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_prioritize_domestic_supply
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_prioritize_domestic_supply
+
+	}
+	focus = {
+		id = PRC_nl_enhance_renminbi_purchasing_power
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_build_workers_health_care_center
+		}
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_build_workers_health_care_center
+
+	}
+	focus = {
+		id = PRC_nl_share_labor_results_with_the_people
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_raise_minimum_living_standards
+		}
+		prerequisite = {
+			focus = PRC_nl_enhance_renminbi_purchasing_power
+		}
+		prerequisite = {
+			focus = PRC_nl_encourage_tourism_freedom
+		}
+		prerequisite = {
+			focus = PRC_nl_labor_for_the_people
+		}
+		x = 0
+		y = 5
+		relative_position_id = PRC_nl_rich_socialism
+
+	}
+	focus = {
+		id = PRC_nl_automation_model
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_maoist_vision
+		}
+		prerequisite = {
+			focus = PRC_nl_adopting_ASPR_experience
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_digital_planning_committee
+
+	}
+	focus = {
+		id = PRC_nl_introduce_worker_supervision
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_automation_model
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_automation_model
+
+	}
+	focus = {
+		id = PRC_nl_decentralized_construction
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_automation_model
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_automation_model
+
+	}
+	focus = {
+		id = PRC_nl_focus_on_small_infrastructure
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_sensor_network_deployment
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_sensor_network_deployment
+
+	}
+	focus = {
+		id = PRC_nl_state_enterprise_pilot_operations
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_decentralized_construction
+		}
+		prerequisite = {
+			focus = PRC_nl_introduce_worker_supervision
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_automation_model
+
+	}
+	focus = {
+		id = PRC_nl_national_IoT_construction
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_smart_building_development
+		}
+		prerequisite = {
+			focus = PRC_nl_focus_on_small_infrastructure
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_sensor_network_deployment
+
+	}
+	focus = {
+		id = PRC_nl_comprehensive_social_integration
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_state_enterprise_pilot_operations
+		}
+		prerequisite = {
+			focus = PRC_nl_national_IoT_construction
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRC_nl_national_IoT_construction
+
+	}
+	focus = {
+		id = PRC_nl_autonomous_iteration_system
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_comprehensive_social_integration
+		}
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_comprehensive_social_integration
+
+	}
+	focus = {
+		id = PRC_nl_integrate_long_march_AI
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_comprehensive_social_integration
+		}
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_comprehensive_social_integration
+
+	}
+	focus = {
+		id = PRC_nl_digital_communist_vision
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_autonomous_iteration_system
+		}
+		prerequisite = {
+			focus = PRC_nl_integrate_long_march_AI
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_comprehensive_social_integration
+
+	}
+}
