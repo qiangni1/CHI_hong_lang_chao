@@ -13,18 +13,6 @@
 defined_text = {
 	name = Get_TFR_CountryClosing_picture
 	text = {
-		trigger = { original_tag = USA }
-		localization_key = "[Get_TFR_CountryClosing_picture_USA]"
-	}
-	text = {
-		trigger = { original_tag = PRK }
-		localization_key = "[Get_TFR_CountryClosing_picture_PRK]"
-	}
-	text = {
-		trigger = { original_tag = SOV }
-		localization_key = "[Get_TFR_CountryClosing_picture_SOV]"
-	}
-	text = {
 		trigger = { original_tag = PRC }
 		localization_key = "[Get_TFR_CountryClosing_picture_PRC]"
 	}
@@ -42,79 +30,27 @@ defined_text = {
 		localization_key = "[Get_TFR_CountryClosing_title_PRC]"
 	}
 	text = {
-		trigger = {
-			original_tag = USA
-		}
-		localization_key = "[Get_TFR_CountryClosing_title_USA]"
-	}
-	text = {
-		trigger = {
-			original_tag = PRK
-		}
-		localization_key = "[Get_TFR_CountryClosing_title_PRK]"
-	}
-	text = {
 		localization_key = "TFR_CountryClosing_left_title"
 	}
 }
-defined_text = {
-	name = Get_TFR_CountryClosing_title_USA
-	text = {
-		trigger = {
-			has_country_flag = USA_bad_ending
-		}
-		localization_key = "Get_TFR_CountryClosing_title_USA_Bad_title"
-	}
-	text = {
-		localization_key = "TFR_CountryClosing_left_title"
-	}
-}
+
 defined_text = {
 	name = Get_TFR_CountryClosing_title_PRC
 	text = {
 		localization_key = "TFR_CountryClosing_left_title"
 	}
 }
-defined_text = {
-	name = Get_TFR_CountryClosing_title_PRK
-	text = {
-		trigger = {
-			has_country_flag = PRK_Nothing_Ending
-		}
-		localization_key = "Get_TFR_CountryClosing_title_PRK_Nothing_title"
-	}
-	text = {
-		localization_key = "TFR_CountryClosing_left_title"
-	}
-}
-
 # 	Get_TFR_CountryClosing_epilogue
 defined_text = {
 	name = Get_TFR_CountryClosing_epilogue
-	text = {
-		trigger = {
-			original_tag = USA
-		}
-		localization_key = "[Get_TFR_CountryClosing_epilogue_USA]"
-	}
-	text = {
-		trigger = {
-			original_tag = SOV
-		}
-		localization_key = "[Get_TFR_CountryClosing_epilogue_SOV]"
-	}
+	
 	text = {
 		trigger = {
 			original_tag = PRC
 		}
 		localization_key = "[Get_TFR_CountryClosing_epilogue_PRC]"
 	}
-	text = {
-		trigger = {
-			original_tag = PRK
-		}
-		localization_key = "[Get_TFR_CountryClosing_epilogue_PRK]"
-	}
+	
 	text = {
 		localization_key = TFR_CountryClosing_epilogue_generic
 	}
@@ -122,43 +58,7 @@ defined_text = {
 
 # / Tag-Specific Pictures
 defined_text = {
-	name = Get_TFR_CountryClosing_picture_USA
-	text = {
-		trigger = {
-			has_country_flag = USA_success_ending
-		}
-		localization_key = "GFX_TFR_CountryClosing_picture_USA_Chep_Success_Ending"
-	}
-	text = {
-		trigger = {
-			has_country_flag = USA_bad_ending
-		}
-		localization_key = "GFX_TFR_CountryClosing_picture_USA_Chep_Failure_Ending"
-	}
-	text = {
-		localization_key = "GFX_TFR_CountryClosing_picture_generic"
-	}
-}
-defined_text = {
 	name = Get_TFR_CountryClosing_picture_PRC
-	text = {
-		trigger = {
-			has_country_flag = PRC_Xi_success_ending
-		}
-		localization_key = "GFX_TFR_CountryClosing_picture_Xi_Success_Ending"
-	}
-	text = {
-		trigger = {
-			has_country_flag = PRC_Xi_par_ending
-		}
-		localization_key = "GFX_TFR_CountryClosing_picture_Xi_par_Ending"
-	}
-	text = {
-		trigger = {
-			has_country_flag = PRC_Xi_bad_ending
-		}
-		localization_key = "GFX_TFR_CountryClosing_picture_Xi_bad_Ending"
-	}
 	text = {
 		trigger = {
 			OR = {
@@ -175,35 +75,9 @@ defined_text = {
 	}
 }
 
-defined_text = {
-	name = Get_TFR_CountryClosing_picture_PRK
-	text = {
-		trigger = {
-			has_country_flag = PRK_Nothing_Ending
-		}
-		localization_key = "GFX_TFR_CountryClosing_picture_PRK_Nothing_Ending"
-	}
-}
-defined_text = {
-	name = Get_TFR_CountryClosing_picture_SOV
-	text = {
-		localization_key = "GFX_TFR_CountryClosing_picture_generic"
-	}
-}
-defined_text = {
-	name = Get_TFR_CountryClosing_picture_UKR
 
-}
 # / Tag-Specific Text
-defined_text = {
-	name = Get_TFR_CountryClosing_epilogue_USA
-	text = {
-		trigger = {
-			has_country_flag = USA_bad_ending
-		}
-		localization_key = "TFR_CountryClosing_epilogue_USA_Bad_End"
-	}
-}
+
 defined_text = {
 	name = Get_TFR_CountryClosing_epilogue_PRC
 	text = {
@@ -232,15 +106,7 @@ defined_text = {
 	}
 
 }
-defined_text = {
-	name = Get_TFR_CountryClosing_epilogue_PRK
-	text = {
-		trigger = {
-			has_country_flag = PRK_Nothing_Ending
-		}
-		localization_key = "TFR_CountryClosing_epilogue_PRK_Nothing_Ending"
-	}
-}
+
 # / Main GUI Elements
 defined_text = {
 	name = Get_TFR_CountryClosing_credits
