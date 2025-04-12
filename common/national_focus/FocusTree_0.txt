@@ -13,18 +13,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PRC_nl_three_major_reforms
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = PRC_nl_humanitarian_socialism
-		}
-		relative_position_id = PRC_nl_humanitarian_socialism
-
-	}
-	focus = {
 		id = PRC_nl_martial_law_reconstruction
 
 		icon = GFX_goal_unknown
@@ -148,53 +136,237 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PRC_nl_education_radical_reform
-		icon = GFX_goal_unknown
-		cost = 0.00
+		id = PRC_nl_party_the_face
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_social_reeducation
 		prerequisite = {
 			focus = PRC_nl_social_reeducation
 		}
-		x = -2
-		y = 0
-		relative_position_id = PRC_nl_practice_combined_with_theory
-
+		completion_reward = { }
 	}
 	focus = {
-		id = PRC_nl_practice_combined_with_theory
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_social_reeducation
-		}
+		id = PRC_nl_education_the_groundstone
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
 		x = -3
 		y = 1
 		relative_position_id = PRC_nl_social_reeducation
-
+		prerequisite = {
+			focus = PRC_nl_social_reeducation
+		}
+		completion_reward = { }
 	}
 	focus = {
-		id = PRC_nl_reforming_youth_league
-		icon = GFX_goal_unknown
-		cost = 0.00
+		id = PRC_nl_end_to_past_chaos
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 3
+		y = 1
+		relative_position_id = PRC_nl_social_reeducation
 		prerequisite = {
-			focus = PRC_nl_practice_combined_with_theory
+			focus = PRC_nl_social_reeducation
 		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_future_with_technology
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
 		x = -1
 		y = 1
-		relative_position_id = PRC_nl_practice_combined_with_theory
-
+		relative_position_id = PRC_nl_education_the_groundstone
+		prerequisite = {
+			focus = PRC_nl_education_the_groundstone
+		}
+		completion_reward = { }
 	}
 	focus = {
-		id = PRC_nl_new_cadre_goals
+		id = PRC_nl_youth_league
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_education_the_groundstone
+		prerequisite = {
+			focus = PRC_nl_education_the_groundstone
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_restructure_our_study
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_party_the_face
+		prerequisite = {
+			focus = PRC_nl_party_the_face
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_purge_culture_propaganders
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_end_to_past_chaos
+		prerequisite = {
+			focus = PRC_nl_end_to_past_chaos
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_off_bad_trend
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_end_to_past_chaos
+		prerequisite = {
+			focus = PRC_nl_end_to_past_chaos
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_purge_academic_bureaucrats
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_youth_league
+		prerequisite = {
+			focus = PRC_nl_future_with_technology
+		}
+		prerequisite = {
+			focus = PRC_nl_youth_league
+			focus = PRC_nl_restructure_our_study
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_revive_red_culture
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_purge_culture_propaganders
+		prerequisite = {
+			focus = PRC_nl_off_bad_trend
+		}
+		prerequisite = {
+			focus = PRC_nl_purge_culture_propaganders
+			focus = PRC_nl_restructure_our_study
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_peoples_culture_revolutionary_culture
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 0
+		y = 4
+		relative_position_id = PRC_nl_social_reeducation
+		prerequisite = {
+			focus = PRC_nl_purge_academic_bureaucrats
+		}
+		prerequisite = {
+			focus = PRC_nl_revive_red_culture
+		}
+	}
+	focus = {
+		id = PRC_nl_proletarian_art_festival
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = PRC_nl_practice_combined_with_theory
+			focus = PRC_nl_peoples_culture_revolutionary_culture
 		}
-		x = 1
-		y = 1
-		relative_position_id = PRC_nl_practice_combined_with_theory
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_peoples_culture_revolutionary_culture
 
 	}
+	focus = {
+		id = PRC_nl_hundred_flowers_freedom
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_proletarian_art_festival
+		}
+		x = -2
+		y = 1
+		relative_position_id = PRC_nl_proletarian_art_festival
+
+	}
+	focus = {
+		id = PRC_nl_peoples_artist
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_hundred_flowers_freedom
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_hundred_flowers_freedom
+
+	}
+	focus = {
+		id = PRC_nl_fighting_pen_revolutionary_painting
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_proletarian_art_festival
+		}
+		x = 2
+		y = 1
+		relative_position_id = PRC_nl_proletarian_art_festival
+
+	}
+	focus = {
+		id = PRC_nl_international_communism_everlasting
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_fighting_pen_revolutionary_painting
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_fighting_pen_revolutionary_painting
+
+	}
+	focus = {
+		id = PRC_nl_cosmos_red_tide
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_international_communism_everlasting
+		}
+		prerequisite = {
+			focus = PRC_nl_peoples_artist
+		}
+		prerequisite = {
+			focus = PRC_nl_revolutionary_art_renaissance
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_revolutionary_art_renaissance
+	}
+	focus = {
+		id = PRC_nl_revolutionary_art_renaissance
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = PRC_nl_proletarian_art_festival
+		}
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_proletarian_art_festival
+
+	}
+
 	focus = {
 		id = PRC_nl_new_socialist_theory_practice
 		icon = GFX_goal_unknown
@@ -459,180 +631,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = PRC_nl_agriculture_collectivization
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_three_major_reforms
-		}
-		x = -2
-		y = 1
-		relative_position_id = PRC_nl_three_major_reforms
-
-	}
-	focus = {
-		id = PRC_nl_high_tech_agriculture
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_agriculture_collectivization
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_agriculture_collectivization
-
-	}
-	focus = {
-		id = PRC_nl_humanitarian_socialism
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_road_to_future
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_road_to_future
-
-	}
-	focus = {
-		id = PRC_nl_public_private_partnership
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_three_major_reforms
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_three_major_reforms
-
-	}
-	focus = {
-		id = PRC_nl_de_financialization
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_public_private_partnership
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_public_private_partnership
-
-	}
-	focus = {
-		id = PRC_nl_real_estate_economic_landing
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_three_major_reforms
-		}
-		x = 2
-		y = 1
-		relative_position_id = PRC_nl_three_major_reforms
-
-	}
-	focus = {
-		id = PRC_nl_crack_down_speculators
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_real_estate_economic_landing
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_real_estate_economic_landing
-
-	}
-	focus = {
-		id = PRC_nl_political_leadership_in_economic_construction
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_crack_down_speculators
-		}
-		prerequisite = {
-			focus = PRC_nl_high_tech_agriculture
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_de_financialization
-
-	}
-	focus = {
-		id = PRC_nl_new_era_AnGang_constitution
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_political_leadership_in_economic_construction
-		}
-		x = -5
-		y = 1
-		relative_position_id = PRC_nl_political_leadership_in_economic_construction
-
-	}
-	focus = {
-		id = PRC_nl_end_landlords
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_political_leadership_in_economic_construction
-		}
-		x = 5
-		y = 1
-		relative_position_id = PRC_nl_political_leadership_in_economic_construction
-
-	}
-	focus = {
-		id = PRC_nl_limit_maximum_wages
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_end_landlords
-		}
-		x = 1
-		y = 1
-		relative_position_id = PRC_nl_end_landlords
-
-	}
-	focus = {
-		id = PRC_nl_production_material_communization
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_end_landlords
-		}
-		x = -2
-		y = 1
-		relative_position_id = PRC_nl_end_landlords
-
-	}
-	focus = {
-		id = PRC_nl_brain_labor_calculation
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_production_material_communization
-		}
-		prerequisite = {
-			focus = PRC_nl_limit_maximum_wages
-		}
-		x = 0
-		y = 2
-		relative_position_id = PRC_nl_end_landlords
-
-	}
-	focus = {
-		id = PRC_nl_legal_reform
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_humanitarian_socialism
-		}
-		x = 2
-		y = 1
-		relative_position_id = PRC_nl_humanitarian_socialism
-
-	}
-	focus = {
 		id = PRC_nl_cadre_revolutionization
 		icon = GFX_goal_unknown
 		cost = 0.00
@@ -720,203 +718,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_dare_to_pull_down_emperor
-
-	}
-	focus = {
-		id = PRC_nl_purge_cultural_edu_department
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_social_reeducation
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_social_reeducation
-
-	}
-	focus = {
-		id = PRC_nl_dust_to_dust
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_purge_cultural_edu_department
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_purge_cultural_edu_department
-
-	}
-	focus = {
-		id = PRC_nl_rebuild_proletarian_community
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_new_cadre_goals
-		}
-		prerequisite = {
-			focus = PRC_nl_reforming_youth_league
-		}
-		x = 0
-		y = 2
-		relative_position_id = PRC_nl_practice_combined_with_theory
-
-	}
-	focus = {
-		id = PRC_nl_comprehensive_education_revolution
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_social_reeducation
-		}
-		x = 2
-		y = 1
-		relative_position_id = PRC_nl_social_reeducation
-
-	}
-	focus = {
-		id = PRC_nl_clean_unhealthy_trend
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_comprehensive_education_revolution
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_comprehensive_education_revolution
-
-	}
-	focus = {
-		id = PRC_nl_flourish_red_culture
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_clean_unhealthy_trend
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_clean_unhealthy_trend
-
-	}
-	focus = {
-		id = PRC_nl_endure_suffering_to_be_human
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_clean_unhealthy_trend
-		}
-		prerequisite = {
-			focus = PRC_nl_dust_to_dust
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_dust_to_dust
-
-	}
-	focus = {
-		id = PRC_nl_peoples_culture_revolutionary_culture
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_flourish_red_culture
-		}
-		prerequisite = {
-			focus = PRC_nl_rebuild_proletarian_community
-		}
-		prerequisite = {
-			focus = PRC_nl_endure_suffering_to_be_human
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_endure_suffering_to_be_human
-
-	}
-	focus = {
-		id = PRC_nl_proletarian_art_festival
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_peoples_culture_revolutionary_culture
-		}
-		x = 0
-		y = 2
-		relative_position_id = PRC_nl_peoples_culture_revolutionary_culture
-
-	}
-	focus = {
-		id = PRC_nl_hundred_flowers_freedom
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_proletarian_art_festival
-		}
-		x = -2
-		y = 1
-		relative_position_id = PRC_nl_proletarian_art_festival
-
-	}
-	focus = {
-		id = PRC_nl_peoples_artist
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_hundred_flowers_freedom
-		}
-		x = 0
-		y = 2
-		relative_position_id = PRC_nl_hundred_flowers_freedom
-
-	}
-	focus = {
-		id = PRC_nl_fighting_pen_revolutionary_painting
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_proletarian_art_festival
-		}
-		x = 2
-		y = 1
-		relative_position_id = PRC_nl_proletarian_art_festival
-
-	}
-	focus = {
-		id = PRC_nl_international_communism_everlasting
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_fighting_pen_revolutionary_painting
-		}
-		x = 0
-		y = 2
-		relative_position_id = PRC_nl_fighting_pen_revolutionary_painting
-
-	}
-	focus = {
-		id = PRC_nl_cosmos_red_tide
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_international_communism_everlasting
-		}
-		prerequisite = {
-			focus = PRC_nl_peoples_artist
-		}
-		prerequisite = {
-			focus = PRC_nl_revolutionary_art_renaissance
-		}
-		x = 0
-		y = 2
-		relative_position_id = PRC_nl_revolutionary_art_renaissance
-	}
-	focus = {
-		id = PRC_nl_revolutionary_art_renaissance
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_proletarian_art_festival
-		}
-		x = 0
-		y = 2
-		relative_position_id = PRC_nl_proletarian_art_festival
 
 	}
 	focus = {
@@ -1048,393 +849,6 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = PRC_nl_perfect_democratic_centralization
-
-	}
-	focus = {
-		id = PRC_nl_advanced_industry_cluster_construction
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_village_consolidation_industrialization
-		}
-		x = -1
-		y = 1
-		relative_position_id = PRC_nl_village_consolidation_industrialization
-
-	}
-	focus = {
-		id = PRC_nl_regional_rejuvenation_movement
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_village_consolidation_industrialization
-		}
-		x = 1
-		y = 1
-		relative_position_id = PRC_nl_village_consolidation_industrialization
-
-	}
-	focus = {
-		id = PRC_nl_foolish_old_man_mountain_plan
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_regional_rejuvenation_movement
-		}
-		prerequisite = {
-			focus = PRC_nl_advanced_industry_cluster_construction
-		}
-		x = 0
-		y = 2
-		relative_position_id = PRC_nl_village_consolidation_industrialization
-
-	}
-	focus = {
-		id = PRC_nl_dazhai_spirit_lives_forever
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_new_era_AnGang_constitution
-		}
-		x = -1
-		y = 1
-		relative_position_id = PRC_nl_new_era_AnGang_constitution
-
-	}
-	focus = {
-		id = PRC_nl_economic_power_decentralization
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_new_era_AnGang_constitution
-		}
-		x = 2
-		y = 1
-		relative_position_id = PRC_nl_new_era_AnGang_constitution
-
-	}
-	focus = {
-		id = PRC_nl_flexible_and_advanced_planned_economy
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_economic_power_decentralization
-		}
-		prerequisite = {
-			focus = PRC_nl_dazhai_spirit_lives_forever
-		}
-		x = 0
-		y = 2
-		relative_position_id = PRC_nl_new_era_AnGang_constitution
-
-	}
-	focus = {
-		id = PRC_nl_village_consolidation_industrialization
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_political_leadership_in_economic_construction
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_political_leadership_in_economic_construction
-
-	}
-	focus = {
-		id = PRC_nl_eliminate_the_three_differences
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_brain_labor_calculation
-		}
-		prerequisite = {
-			focus = PRC_nl_foolish_old_man_mountain_plan
-		}
-		prerequisite = {
-			focus = PRC_nl_flexible_and_advanced_planned_economy
-		}
-		x = 0
-		y = 2
-		relative_position_id = PRC_nl_foolish_old_man_mountain_plan
-
-	}
-	focus = {
-		id = PRC_nl_rich_socialism
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_eliminate_the_three_differences
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_eliminate_the_three_differences
-
-	}
-	focus = {
-		id = PRC_nl_implement_new_labor_law
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_rich_socialism
-		}
-		x = -4
-		y = 1
-		relative_position_id = PRC_nl_rich_socialism
-
-	}
-	focus = {
-		id = PRC_nl_refine_labor_protection_regulations
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_implement_new_labor_law
-		}
-		x = -1
-		y = 1
-		relative_position_id = PRC_nl_implement_new_labor_law
-
-	}
-	focus = {
-		id = PRC_nl_eliminate_temporary_worker_concept
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_implement_new_labor_law
-		}
-		x = 1
-		y = 1
-		relative_position_id = PRC_nl_implement_new_labor_law
-
-	}
-	focus = {
-		id = PRC_nl_954_hour_trial
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_refine_labor_protection_regulations
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_refine_labor_protection_regulations
-
-	}
-	focus = {
-		id = PRC_nl_employment_transparency
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_eliminate_temporary_worker_concept
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_eliminate_temporary_worker_concept
-
-	}
-	focus = {
-		id = PRC_nl_raise_minimum_living_standards
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_employment_transparency
-		}
-		prerequisite = {
-			focus = PRC_nl_954_hour_trial
-		}
-		x = 0
-		y = 3
-		relative_position_id = PRC_nl_implement_new_labor_law
-
-	}
-	focus = {
-		id = PRC_nl_technical_workers_honor
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_rich_socialism
-		}
-		x = 4
-		y = 1
-		relative_position_id = PRC_nl_rich_socialism
-
-	}
-	focus = {
-		id = PRC_nl_eliminate_middle_class_concept
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_technical_workers_honor
-		}
-		x = -1
-		y = 1
-		relative_position_id = PRC_nl_technical_workers_honor
-
-	}
-	focus = {
-		id = PRC_nl_comprehensive_employment_guarantee
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_technical_workers_honor
-		}
-		x = 1
-		y = 1
-		relative_position_id = PRC_nl_technical_workers_honor
-
-	}
-	focus = {
-		id = PRC_nl_reform_trade_union
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_comprehensive_employment_guarantee
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_comprehensive_employment_guarantee
-
-	}
-	focus = {
-		id = PRC_nl_expand_labor_arbitration
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_eliminate_middle_class_concept
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_eliminate_middle_class_concept
-
-	}
-	focus = {
-		id = PRC_nl_labor_for_the_people
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_reform_trade_union
-		}
-		prerequisite = {
-			focus = PRC_nl_expand_labor_arbitration
-		}
-		x = 0
-		y = 3
-		relative_position_id = PRC_nl_technical_workers_honor
-
-	}
-	focus = {
-		id = PRC_nl_subsidize_electronic_products
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_rich_socialism
-		}
-		x = -1
-		y = 1
-		relative_position_id = PRC_nl_rich_socialism
-
-	}
-	focus = {
-		id = PRC_nl_subsidize_rural_students
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_rich_socialism
-		}
-		x = 1
-		y = 1
-		relative_position_id = PRC_nl_rich_socialism
-
-	}
-	focus = {
-		id = PRC_nl_encourage_self_employed_labor
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_subsidize_electronic_products
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_subsidize_electronic_products
-
-	}
-	focus = {
-		id = PRC_nl_strengthen_hierarchical_medical_system
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_subsidize_rural_students
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_subsidize_rural_students
-
-	}
-	focus = {
-		id = PRC_nl_prioritize_domestic_supply
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_encourage_self_employed_labor
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_encourage_self_employed_labor
-
-	}
-	focus = {
-		id = PRC_nl_build_workers_health_care_center
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_strengthen_hierarchical_medical_system
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_strengthen_hierarchical_medical_system
-
-	}
-	focus = {
-		id = PRC_nl_encourage_tourism_freedom
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_prioritize_domestic_supply
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_prioritize_domestic_supply
-
-	}
-	focus = {
-		id = PRC_nl_enhance_renminbi_purchasing_power
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_build_workers_health_care_center
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_nl_build_workers_health_care_center
-
-	}
-	focus = {
-		id = PRC_nl_share_labor_results_with_the_people
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_raise_minimum_living_standards
-		}
-		prerequisite = {
-			focus = PRC_nl_enhance_renminbi_purchasing_power
-		}
-		prerequisite = {
-			focus = PRC_nl_encourage_tourism_freedom
-		}
-		prerequisite = {
-			focus = PRC_nl_labor_for_the_people
-		}
-		x = 0
-		y = 5
-		relative_position_id = PRC_nl_rich_socialism
 
 	}
 	focus = {
@@ -1571,5 +985,334 @@ focus_tree = {
 		y = 2
 		relative_position_id = PRC_nl_comprehensive_social_integration
 
+	}
+
+	focus = {
+		id = PRC_nl_socialist_modernization
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_road_to_future
+		prerequisite = {
+			focus = PRC_nl_road_to_future
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_advance_productivity
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_socialist_modernization
+		prerequisite = {
+			focus = PRC_nl_socialist_modernization
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_reform_production_relation
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_socialist_modernization
+		prerequisite = {
+			focus = PRC_nl_socialist_modernization
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_socialist_construction_climax
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_socialist_modernization
+		prerequisite = {
+			focus = PRC_nl_advance_productivity
+		}
+		prerequisite = {
+			focus = PRC_nl_reform_production_relation
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_new_era_angang_constitution
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = -3
+		y = 1
+		relative_position_id = PRC_nl_socialist_construction_climax
+		prerequisite = {
+			focus = PRC_nl_socialist_construction_climax
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_boost_production_tool_usage
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_new_era_angang_constitution
+		prerequisite = {
+			focus = PRC_nl_new_era_angang_constitution
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_make_things_yourself
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_socialist_construction_climax
+		prerequisite = {
+			focus = PRC_nl_socialist_construction_climax
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_reform_farmer_cooperation
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 3
+		y = 1
+		relative_position_id = PRC_nl_socialist_construction_climax
+		prerequisite = {
+			focus = PRC_nl_socialist_construction_climax
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_restore_people_commune
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_reform_farmer_cooperation
+		prerequisite = {
+			focus = PRC_nl_reform_farmer_cooperation
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_assure_welfare
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 3
+		relative_position_id = PRC_nl_socialist_construction_climax
+		prerequisite = {
+			focus = PRC_nl_socialist_construction_climax
+		}
+		prerequisite = {
+			focus = PRC_nl_boost_production_tool_usage
+		}
+		prerequisite = {
+			focus = PRC_nl_restore_people_commune
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_UBI
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = -5
+		y = 1
+		relative_position_id = PRC_nl_assure_welfare
+		prerequisite = {
+			focus = PRC_nl_assure_welfare
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_improve_commune_function
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_UBI
+		prerequisite = {
+			focus = PRC_nl_UBI
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_labors_share
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_improve_commune_function
+		prerequisite = {
+			focus = PRC_nl_improve_commune_function
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_greatly_riched
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_assure_welfare
+		prerequisite = {
+			focus = PRC_nl_assure_welfare
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_robotic_emergency_assist
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = -2
+		y = 1
+		relative_position_id = PRC_nl_greatly_riched
+		prerequisite = {
+			focus = PRC_nl_UBI
+			focus = PRC_nl_greatly_riched
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_labor_liberation
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_robotic_emergency_assist
+		prerequisite = {
+			focus = PRC_nl_robotic_emergency_assist
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_industry_five
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_assure_welfare
+		prerequisite = {
+			focus = PRC_nl_assure_welfare
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_automation_traffic
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_assure_welfare
+		prerequisite = {
+			focus = PRC_nl_greatly_riched
+		}
+		prerequisite = {
+			focus = PRC_nl_industry_five
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_regional_integration
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_automation_traffic
+		prerequisite = {
+			focus = PRC_nl_automation_traffic
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_super_project
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 1
+		y = 2
+		relative_position_id = PRC_nl_industry_five
+		prerequisite = {
+			focus = PRC_nl_industry_five
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_free_and_equal_labor
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 5
+		y = 1
+		relative_position_id = PRC_nl_assure_welfare
+		prerequisite = {
+			focus = PRC_nl_assure_welfare
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_gain_from_each_good
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = PRC_nl_free_and_equal_labor
+		prerequisite = {
+			focus = PRC_nl_free_and_equal_labor
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_free_life_supplement
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = PRC_nl_free_and_equal_labor
+		prerequisite = {
+			focus = PRC_nl_free_and_equal_labor
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_commonhappy
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = PRC_nl_free_and_equal_labor
+		prerequisite = {
+			focus = PRC_nl_gain_from_each_good
+		}
+		prerequisite = {
+			focus = PRC_nl_free_life_supplement
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = PRC_nl_new_sky
+		icon = GFX_PRC_TFR_mongouhe_acc
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = PRC_nl_regional_integration
+		prerequisite = {
+			focus = PRC_nl_labors_share
+		}
+		prerequisite = {
+			focus = PRC_nl_labor_liberation
+		}
+		prerequisite = {
+			focus = PRC_nl_regional_integration
+		}
+		prerequisite = {
+			focus = PRC_nl_super_project
+		}
+		prerequisite = {
+			focus = PRC_nl_commonhappy
+		}
+		completion_reward = { }
 	}
 }
