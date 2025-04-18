@@ -1738,7 +1738,42 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = PRC_nl_sun_at_eight_nine
-
+		completion_reward = {
+			set_temp_variable = {
+				society_development_var_temp = 0.1
+			}
+			set_temp_variable = {
+				academic_development_var_temp = 0.15
+			}
+			add_society_development = yes
+			add_academic_development = yes
+			add_stability = -0.05
+			effect_tooltip = {
+				add_ideas = PRC_socialist_culture_start1
+			}
+			set_variable = {
+				PSC_stability_var = -0.1 
+			}
+			set_variable = {
+				PSC_drift_var = 0.1
+			}
+			set_variable = {
+				PSC_expense_var = -0.05
+			}
+			set_variable = {
+				PSC_line_change_var = 0.035
+			}
+			set_variable = {
+				PSC_max_efficiency_var = 0.025
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = PRC_socialist_culture_dynamic
+				}
+			}
+			custom_effect_tooltip = Social_GUI_Activation
+			unlock_decision_category_tooltip = PRC_Culture_Revital
+		}
 	}
 	focus = {
 		id = PRC_nl_party_the_face
@@ -1750,7 +1785,24 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_social_reeducation
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_political_power = -20
+			add_to_variable = {
+				PRC_cpc_personal_expense_factor_dynamic_var = -0.05
+			}
+			add_to_variable = {
+				PRC_cpc_line_change_production_efficiency_factor_dynamic_var = 0.025
+			}
+			add_to_variable = {
+				PSC_stability_var = 0.05
+			}
+			add_to_variable = {
+				PSC_party_stability_factor = 0.05
+			}
+			add_to_variable = {
+				PSC_war_support_var = 0.05
+			}
+		}
 	}
 	focus = {
 		id = PRC_nl_education_the_groundstone
@@ -1762,7 +1814,15 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_social_reeducation
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_political_power = 100
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start2
+				}
+			}
+		}
 	}
 	focus = {
 		id = PRC_nl_end_to_past_chaos
