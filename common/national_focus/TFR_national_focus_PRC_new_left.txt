@@ -11,7 +11,6 @@ focus_tree = {
 	}
 	# shared_focus = PRC_establish_eadi
 	shared_focus = PRC_chinas_greatest_hour
-	#economy tree
 	focus = {
 		id = PLA_reform
 		icon = GFX_focus_PRC_finaltraining
@@ -1612,7 +1611,7 @@ focus_tree = {
 		id = PRC_nl_ancestor_worship
 		icon = GFX_goal_unknown
 		cost = 0.00
-		x = 16
+		x = 18
 		y = 0
 
 	}
@@ -1688,7 +1687,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_red_wave_surge
 		}
-		x = 16
+		x = 18
 		y = 5
 
 	}
@@ -1777,7 +1776,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_party_the_face
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 1
@@ -1802,11 +1801,23 @@ focus_tree = {
 			add_to_variable = {
 				PSC_war_support_var = 0.05
 			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_chinese_communist_party_idea
+					add_idea = PRC_chinese_communist_party_idea_101
+				}
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start3
+				}
+			}
+			unlock_decision_tooltip = PRC_cadre_revolutionization
+			unlock_decision_tooltip = PRC_establish_lead_by_party
 		}
 	}
 	focus = {
 		id = PRC_nl_education_the_groundstone
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = -3
 		y = 1
@@ -1822,11 +1833,15 @@ focus_tree = {
 					add_idea = PRC_socialist_culture_start2
 				}
 			}
+			unlock_decision_tooltip = PRC_new_textbooks
+			unlock_decision_tooltip = PRC_reform_entrance_exam
+			unlock_decision_tooltip = PRC_reform_obligatory_edu
+			custom_effect_tooltip = add_a_slot
 		}
 	}
 	focus = {
 		id = PRC_nl_end_to_past_chaos
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 3
 		y = 1
@@ -1834,11 +1849,23 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_social_reeducation
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_political_power = -50
+			set_temp_variable = {
+				society_development_var_temp = -0.2
+			}
+			add_society_development = yes
+			add_timed_idea = {
+				idea = PRC_Culture_Reboot
+				days = 365
+			}
+			unlock_decision_tooltip = PRC_out_capitalist_so_call_equity
+			unlock_decision_tooltip = PRC_out_maleism
+		}
 	}
 	focus = {
 		id = PRC_nl_future_with_technology
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = -1
 		y = 1
@@ -1846,11 +1873,32 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_education_the_groundstone
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_political_power = 150
+			set_temp_variable = {
+				academic_development_var_temp = 0.05
+			}
+			add_academic_development = yes
+			add_to_variable = {
+				PSC_infrust_var = 0.075
+			}
+			add_to_variable = {
+				PSC_research_var = 0.05
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start8
+				}
+			}
+			unlock_decision_tooltip = PRC_rebuild_rural_school
+			unlock_decision_tooltip = PRC_regularize_teacher_test
+			unlock_decision_tooltip = PRC_edu_automation
+		}
 	}
 	focus = {
 		id = PRC_nl_youth_league
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 1
 		y = 1
@@ -1858,11 +1906,48 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_education_the_groundstone
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_political_power = -20
+			set_temp_variable = {
+				society_development_var_temp = 0.1
+			}
+			add_society_development = yes
+			add_to_variable = {
+				PRC_cpc_political_power_gain_dynamic_var = 0.03
+			}
+			add_to_variable = {
+				PRC_cpc_libertarian_socialist_drift_dynamic_var = 0.03
+			}
+			add_to_variable = {
+				PSC_pp_cost_var = -0.02
+			}
+			add_to_variable = {
+				PSC_max_efficiency_var = 0.035
+			}
+			add_to_variable = {
+				PSC_consumer_var = -0.05
+			}
+			add_to_variable = {
+				PSC_expense_var = -0.05
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_chinese_communist_party_idea
+					add_idea = PRC_chinese_communist_party_idea_101
+				}
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start5
+				}
+			}
+			custom_effect_tooltip = add_a_slot
+			unlock_decision_tooltip = PRC_Commie_Youth_Rev
+			unlock_decision_tooltip = PRC_replace_unloyal_officers
+		}
 	}
 	focus = {
 		id = PRC_nl_restructure_our_study
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 1
@@ -1874,7 +1959,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_purge_culture_propaganders
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = -1
 		y = 1
@@ -1882,23 +1967,70 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_end_to_past_chaos
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_to_variable = {
+				PSC_pp_cost_var = -0.06
+			}
+			add_to_variable = {
+				PSC_consumer_var = 0.03
+			}
+			add_to_variable = {
+				PSC_expense_var = 0.03
+			}
+			add_to_variable = {
+				PSC_income_var = 0.045
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start6
+				}
+			}
+			unlock_decision_tooltip = PRC_buy_tiktok
+			unlock_decision_tooltip = PRC_buy_wechat
+		}
 	}
 	focus = {
 		id = PRC_nl_off_bad_trend
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 1
 		y = 1
 		relative_position_id = PRC_nl_end_to_past_chaos
+		select_effect = {
+			add_ideas = PRC_offing_bad_trend
+		}
 		prerequisite = {
 			focus = PRC_nl_end_to_past_chaos
 		}
-		completion_reward = { }
+		completion_reward = { 
+			custom_effect_tooltip = FRA_focus_select_effect_tt
+			effect_tooltip = {
+				add_ideas = PRC_offing_bad_trend
+			}
+			hidden_effect = {
+				remove_ideas = PRC_offing_bad_trend
+			}
+			custom_effect_tooltip = FRA_focus_complete_effect_tt
+			add_political_power = -20
+			add_to_variable = {
+				PSC_expense_var = -0.05
+			}
+			add_to_variable = {
+				PSC_expense_growth_var = -0.045
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start9
+				}
+			}
+
+		}
 	}
 	focus = {
 		id = PRC_nl_purge_academic_bureaucrats
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 1
@@ -1914,7 +2046,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_revive_red_culture
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 1
@@ -1950,56 +2082,8 @@ focus_tree = {
 			focus = PRC_nl_peoples_culture_revolutionary_culture
 		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = PRC_nl_peoples_culture_revolutionary_culture
-
-	}
-	focus = {
-		id = PRC_nl_hundred_flowers_freedom
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_proletarian_art_festival
-		}
-		x = -2
-		y = 1
-		relative_position_id = PRC_nl_proletarian_art_festival
-
-	}
-	focus = {
-		id = PRC_nl_peoples_artist
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_hundred_flowers_freedom
-		}
-		x = 0
-		y = 2
-		relative_position_id = PRC_nl_hundred_flowers_freedom
-
-	}
-	focus = {
-		id = PRC_nl_fighting_pen_revolutionary_painting
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_proletarian_art_festival
-		}
-		x = 2
-		y = 1
-		relative_position_id = PRC_nl_proletarian_art_festival
-
-	}
-	focus = {
-		id = PRC_nl_international_communism_everlasting
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_fighting_pen_revolutionary_painting
-		}
-		x = 0
-		y = 2
-		relative_position_id = PRC_nl_fighting_pen_revolutionary_painting
 
 	}
 	focus = {
@@ -2007,27 +2091,18 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = PRC_nl_international_communism_everlasting
-		}
-		prerequisite = {
-			focus = PRC_nl_peoples_artist
-		}
-		prerequisite = {
-			focus = PRC_nl_revolutionary_art_renaissance
+			focus = PRC_nl_proletarian_art_festival
 		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = PRC_nl_revolutionary_art_renaissance
 	}
 	focus = {
 		id = PRC_nl_revolutionary_art_renaissance
 		icon = GFX_goal_unknown
 		cost = 0.00
-		prerequisite = {
-			focus = PRC_nl_proletarian_art_festival
-		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = PRC_nl_proletarian_art_festival
 
 	}
@@ -2392,7 +2467,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_rebuild_proletarian_dictatorship
 		}
-		x = 16
+		x = 18
 		y = 12
 
 	}
@@ -2654,7 +2729,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_nl_socialist_modernization
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 1
@@ -2666,7 +2741,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_advance_productivity
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = -1
 		y = 1
@@ -2678,7 +2753,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_reform_production_relation
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 1
 		y = 1
@@ -2690,7 +2765,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_socialist_construction_climax
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 2
@@ -2705,7 +2780,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_new_era_angang_constitution
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = -3
 		y = 1
@@ -2717,7 +2792,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_boost_production_tool_usage
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 1
 		y = 1
@@ -2729,7 +2804,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_make_things_yourself
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 2
@@ -2741,7 +2816,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_reform_farmer_cooperation
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 3
 		y = 1
@@ -2753,7 +2828,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_restore_people_commune
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = -1
 		y = 1
@@ -2765,7 +2840,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_assure_welfare
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 3
@@ -2783,7 +2858,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_UBI
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = -5
 		y = 1
@@ -2795,7 +2870,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_improve_commune_function
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 1
@@ -2807,7 +2882,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_labors_share
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 1
@@ -2819,7 +2894,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_greatly_riched
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = -1
 		y = 1
@@ -2831,7 +2906,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_robotic_emergency_assist
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = -2
 		y = 1
@@ -2844,7 +2919,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_labor_liberation
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 1
@@ -2856,7 +2931,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_industry_five
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 1
 		y = 1
@@ -2868,7 +2943,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_automation_traffic
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 2
@@ -2883,7 +2958,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_regional_integration
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 1
@@ -2895,7 +2970,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_super_project
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 1
 		y = 2
@@ -2907,7 +2982,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_free_and_equal_labor
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 5
 		y = 1
@@ -2919,7 +2994,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_gain_from_each_good
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = -1
 		y = 1
@@ -2931,7 +3006,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_free_life_supplement
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 1
 		y = 1
@@ -2943,7 +3018,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_commonhappy
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 2
@@ -2958,7 +3033,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_new_sky
-		icon = GFX_PRC_TFR_mongouhe_acc
+		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 1
@@ -2980,5 +3055,6 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
+
 
 }
