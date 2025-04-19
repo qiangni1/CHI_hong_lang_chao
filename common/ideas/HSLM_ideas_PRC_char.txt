@@ -1,0 +1,119 @@
+	ideas = {
+		head_minister = {
+			PRC_Wang_Zhaoguo = {
+				picture = generic_vacant
+				
+				allowed = {
+					original_tag = PRC
+				}
+				
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = {
+					PRC_faction_congress_fac
+					hog_gentle_sophisticated_social_activist
+					
+				}
+			}
+		}
+				
+		foreign_minister = {
+			PRC_Le_Yucheng = {
+				picture = generic_vacant
+				
+				allowed = {
+					original_tag = PRC
+				}
+				
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = {
+					PRC_faction_zhengzhijv
+					for_mild_mannered_peacemaker
+					
+				}
+			}	
+			
+
+			PRC_Mao_Yuanxin = {
+				picture = generic_vacant
+				
+				allowed = {
+					original_tag = PRC
+				}
+				
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = {
+					PRC_faction_old_left
+					for_legacy_torchbearer
+					
+				}
+			}
+		}
+		
+		interior_minister = {
+				PRC_Wang_Huning = {
+					picture = generic_vacant
+				
+				allowed = {
+					original_tag = PRC
+				}
+				
+				traits = {
+					PRC_faction_zhengzhijv
+					sec_eminence_grise
+				}
+			}
+	
+		}
+
+		economic_minister = {
+				PRC_Yuan_Jiajun = {
+				picture = generic_vacant
+				
+				allowed = {
+					original_tag = PRC
+				}
+				
+				traits = {
+					PRC_faction_congress_fac
+					eco_people_oriented
+				}
+			}
+	
+		}
+		
+		intelligence_minister = {
+			PRC_Ma_xingrui = {
+				picture = generic_vacant
+				
+				allowed = {
+					original_tag = PRC
+				}
+				
+				traits = {
+					PRC_faction_congress_fac
+					int_torrential_downpour
+				}
+			}
+			PRC_Collective_Leadership_int = {
+				picture = generic_vacant
+				
+				allowed = {
+					original_tag = PRC
+				}
+				
+				traits = {
+					PRC_faction_new_left
+					int_delicate_drizzle
+				}
+			}
+		}
+	}
