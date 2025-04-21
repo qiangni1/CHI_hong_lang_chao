@@ -19,9 +19,9 @@ PRC_export_revolution = {
 		visible = {
 			has_completed_focus = Sparks_on_the_MekongRiver
 			has_country_flag = Mynamar_selected
+			has_country_flag = Mynamar_contacted
 		}
 		available = {
-			has_country_flag = Mynamar_contacted
 		}
 		fire_only_once = yes
 		cost = 30
@@ -43,9 +43,9 @@ PRC_export_revolution = {
 		visible = {
 			has_completed_focus = Sparks_on_the_MekongRiver
 			has_country_flag = Mynamar_selected
+			has_country_flag = Mynamar_contacted
 		}
 		available = {
-			has_country_flag = Mynamar_contacted
 		}
 		fire_only_once = yes
 		cost = 30
@@ -234,6 +234,7 @@ PRC_export_revolution = {
 					popularity = 0.05
 				}
 			}
+			set_country_flag = THA_guerriaed
 		}
 	}
 	PRC_reform_THA_communists = {
@@ -244,6 +245,7 @@ PRC_export_revolution = {
 		visible = {
 			has_country_flag = Thailand_selected
 			has_completed_focus = Sparks_on_the_MekongRiver
+			has_country_flag = THA_guerriaed
 		}
 		fire_only_once = yes
 		cost = 30
@@ -256,6 +258,7 @@ PRC_export_revolution = {
 					popularity = 0.05
 				}
 			}
+			set_country_flag = THA_commies_reformed
 		}
 	}
 	PRC_thailand_communist = {
@@ -272,6 +275,7 @@ PRC_export_revolution = {
 			}
 			has_completed_focus = Sparks_on_the_MekongRiver
 			has_country_flag = Thailand_selected
+			has_country_flag = THA_commies_reformed
 		}
 		fire_only_once = yes
 		cost = 25
@@ -1044,6 +1048,22 @@ PRC_export_revolution = {
 		remove_effect = {
 			set_country_flag = IRA_leftie_coord
 			clr_country_flag = IRA_quo_viewed
+			PER = {
+				add_popularity = {
+					ideology = communist
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = libertarian_socialist
+					popularity = 0.05
+				}	
+			}
+			hidden_effect = {
+				country_event = {
+					id = Chihong.25
+					random_days = 5
+				}
+			}
 		}
 	}
 	PRC_ira_common_front = {
@@ -1061,6 +1081,12 @@ PRC_export_revolution = {
 		days_remove = 35
 		remove_effect = {
 			set_country_flag = IRA_leftie_coord
+			PER = {
+				add_popularity = {
+					ideology = conservative
+					popularity = -0.1
+				}
+			}
 		}
 	}
 	PRC_break_the_chains = {
@@ -1769,19 +1795,27 @@ PRC_export_revolution = {
 		on_map_mode = map_and_decisions_view
 		remove_effect = {
 			AFG = {
+				set_politics = {
+					ruling_party = communist
+				}
+				create_country_leader = {
+					name = "阿富汗人民委员会"
+					picture = "gfx/leaders/PRC/generals/PRC_lianm.png"
+					ideology = left_nationalism
+				}
 				if = {
 					limit = { 
-						communist > 0.6
+						communist > 0.5
 					}
 					start_civil_war = {
-						ideology = communist
-						size = 0.6
+						ideology = conservative
+						size = 0.4
 					}
 				}
 				else = {
 					start_civil_war = {
-						ideology = communist
-						size = 0.4
+						ideology = conservative
+						size = 0.6
 					}
 				}
 			}
