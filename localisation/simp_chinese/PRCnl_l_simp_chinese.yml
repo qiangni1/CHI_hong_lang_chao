@@ -83,9 +83,9 @@
  the_Red_Sentinel_desc: "古巴，加勒比海上的这颗红星，在帝国主义的封锁中坚持了半个多世纪。他们是美洲大陆上社会主义的坚强哨兵，是拉美人民争取解放的灯塔。如今，昔日的霸主已然崩塌我们将加强与古巴的合作，帮助他们重回输出革命的道路，发展经济，让这盏明灯焕发出更加耀眼的光芒！"
  Bolivar_tears: "玻利瓦尔的泪水"
  Bolivar_tears_desc: "西蒙·玻利瓦尔曾经梦想建立一个统一、独立、强大的南美洲。但两个世纪过去了，他的梦想不仅未能实现，南美洲反而深陷门罗主义的泥潭。贫困、毒品、军事独裁，这些问题如同梦魇般纠缠着南美人民。如果玻利瓦尔地下有知，必定会为此落泪。让我们擦干这些泪水，协助南美人民扫除这些积重难返的顽疾，让南美大陆重新焕发生机！"
- 
- 
-  #决议——外交
+
+ PRC_export_revolution: "重燃世界革命烽火"
+ #决议——外交
  PRC_contact_mynamar_comrades: "@BRM 联系缅甸同志"
  PRC_myanmar_commies_reunite: "@BRM 缅甸左派再联合"
  PRC_united_front_MYA: "@BRM 助推缅共建立统一战线"
@@ -127,7 +127,6 @@
  PRC_Cooperate_with_PanArab_People: "与泛阿人民协手并进"
  PRC_Deepen_cooperation_with_Europe: "与欧洲同志加深合作关系"
  PRC_invite_Cuba_to_join: "邀请古巴"
-
 
  PRC_assistance2communist: "援助项目"
  PRC_new_arab: "启动阿拉伯革新化运动"
@@ -364,4 +363,30 @@
  PRC_SEA_volunteer_limit: "东南亚革命志愿军"
  PRC_SEA_volunteer_limit_desc: "我们将为东南亚的残存革命力量提供全方位的支持，包括武器装备与军事顾问"
  PRC_dagoujiao: "蒙古人民对我方评价：[?PRC_at_dingdongji|H]%"
- jinggao: "警告：本mod在进攻伊朗后极有可能与俄罗斯赛区冲突，请尽量选择不点此决议"
+ jinggao: "警告：本mod在进攻伊朗后极有可能与俄罗斯赛区冲突，请尽量选择不选择此决议"
+
+ #民族精神
+ PRC_socialist_culture_start: "中国社会主义文化"
+ PRC_socialist_culture_start1: "中国社会主义文化"
+ PRC_socialist_culture_start2: "中国社会主义文化"
+ PRC_socialist_culture_start3: "中国社会主义文化"
+ PRC_socialist_culture_start4: "中国社会主义文化"
+ PRC_socialist_culture_start5: "中国社会主义文化"
+ PRC_socialist_culture_start6: "中国社会主义文化"
+ PRC_socialist_culture_start7: "中国社会主义文化"
+ PRC_socialist_culture_start8: "中国社会主义文化"
+ PRC_socialist_culture_start9: "中国社会主义文化"
+ PRC_socialist_culture_start10: "中国社会主义文化"
+ PRC_socialist_culture_start11: "中国社会主义文化"
+ PRC_socialist_culture_start12: "中国社会主义文化"
+ PRC_socialist_culture_start13: "中国社会主义文化"
+ PRC_socialist_culture_start14: "中国社会主义文化"
+ PRC_socialist_culture_start15: "中国社会主义文化"
+ PRC_socialist_culture_start16: "中国社会主义文化"
+ PRC_socialist_culture_start17: "中国社会主义文化"
+ PRC_socialist_culture_dynamic: "中国社会主义文化"
+ PRC_chinese_communist_party_idea_101: "中国共产党"
+ PRC_chinese_communist_party_idea_102: "中国共产党"
+ PRC_Culture_Reboot: "文化重建"
+ PRC_offing_bad_trend: "清不正之风"
+
