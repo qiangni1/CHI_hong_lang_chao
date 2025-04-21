@@ -1,0 +1,402 @@
+ideas = {
+	country = {
+		PRC_socialist_culture_start = {
+			picture = generic_covid
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				
+			}
+		}
+		PRC_socialist_culture_start1 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				drift_defence_factor = 0.1
+				personal_expense_factor = -0.05
+				line_change_production_efficiency_factor = 0.035
+				production_factory_max_efficiency_factor = 0.025
+			}
+		}
+		PRC_socialist_culture_start2 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.03
+				local_building_slots_factor = 0.05
+				industrial_development_monthly = 0.003
+				agricultural_development_monthly = 0.003
+			}
+		}
+		PRC_socialist_culture_start3 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				party_popularity_stability_factor = 0.05
+				war_support_factor = 0.05
+			}	
+		}
+		PRC_socialist_culture_start4 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.1
+				personal_expense_factor = -0.05
+				production_factory_start_efficiency_factor = 0.05
+				personal_value_factor = 0.03
+			}	
+		}
+		PRC_socialist_culture_start5 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.02
+				production_factory_max_efficiency_factor = 0.035
+				consumer_goods_factor = -0.05
+				personal_expense_factor = -0.05
+			}	
+		}
+		PRC_socialist_culture_start6 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.06
+				consumer_goods_factor = 0.03
+				income_growth_factor = 0.045
+			}	
+		}
+		PRC_socialist_culture_start7 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.06
+				consumer_goods_factor = 0.03
+				income_growth_factor = 0.045
+			}	
+		}
+
+		PRC_socialist_culture_start8 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_infrastructure_factor = 0.075
+			}	
+		}
+
+		PRC_socialist_culture_start9 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				personal_expense_factor = -0.05
+				expense_growth_factor = -0.045
+			}	
+		}
+		
+		PRC_socialist_culture_start10 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.06
+				society_development_monthly = 0.005
+			}	
+		}
+
+		PRC_socialist_culture_start11 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				research_speed_factor = 0.07
+				personal_value_factor = 0.025
+			}	
+		}
+
+		PRC_socialist_culture_start12 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.03
+				research_speed_factor = 0.03
+				army_org_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}	
+		}
+
+		PRC_socialist_culture_start13 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				communist_drift = 0.02
+				libertarian_socialist_drift = 0.02
+				income_growth_factor = 0.055
+				expense_growth_factor = 0.045
+				business_value_factor = 0.05
+			}	
+		}
+
+		PRC_socialist_culture_start14 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.04
+				academic_development_monthly = 0.003
+			}	
+		}
+
+		PRC_socialist_culture_start15 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.02
+				production_factory_max_efficiency_factor = 0.02
+				production_factory_efficiency_gain_factor = 0.03
+				research_speed_factor = 0.02
+			}	
+		}
+
+		PRC_socialist_culture_start16 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.05
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.03
+				army_org_factor = 0.03
+				conscription_factor = 0.05
+			}	
+		}
+
+		PRC_socialist_culture_start17 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.04
+				social_democrat_drift = 0.02
+				stability_weekly = 0.001
+				academic_development_monthly = 0.002
+			}	
+		}
+
+
+		PRC_Culture_Reboot = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 0.25
+				business_value_factor = -0.125
+				personal_expense_factor = 0.05
+				production_factory_start_efficiency_factor = 0.1
+			}
+			on_remove = {
+				add_to_variable = {
+					PSC_pp_cost_var = 0.1
+				}
+				add_to_variable = {
+					PSC_expense_var = -0.05
+				}
+				add_to_variable = {
+					PSC_start_efficiency_var = 0.05
+				}
+				add_to_variable = {
+					PSC_personal_value_var = 0.03
+				}
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start4
+				}
+			}
+		}
+
+		PRC_offing_bad_trend = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.02
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		PRC_teacher_the_gardener_idea = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+
+			research_bonus = {
+				electronics = 0.15
+			}
+
+		}
+	}
+}

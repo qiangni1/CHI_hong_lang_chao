@@ -3632,3 +3632,568 @@ PRC_mongolia_hetong = {
 		}
 	}
 }
+PRC_Culture_Revital = {
+	PRC_Brace_the_Future = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_social_reeducation
+		}
+		cost = 50
+		complete_effect = {
+			set_temp_variable = {
+				debt_var_temp = 10
+			}
+			add_debt = yes
+		}
+		days_remove = 90
+		days_re_enable = 90
+		modifier = {
+			stability_factor = 0.1
+			political_power_gain = 0.1
+			society_development_monthly = 0.005
+			research_speed_factor = 0.1
+			consumer_goods_factor = -0.15
+		}
+	}
+	PRC_new_textbooks = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_education_the_groundstone
+		}
+		cost = 50
+		complete_effect = {
+			set_temp_variable = {
+				debt_var_temp = 10
+			}
+			add_debt = yes
+		}
+		days_remove = 90
+		days_re_enable = 90
+		modifier = {
+			stability_factor = 0.1
+			political_power_gain = 0.1
+			society_development_monthly = 0.005
+			research_speed_factor = 0.1
+			consumer_goods_factor = -0.15
+		}
+
+	}
+	PRC_reform_entrance_exam = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_education_the_groundstone
+		}
+		cost = 50
+		complete_effect = {
+			set_temp_variable = {
+				debt_var_temp = 10
+			}
+			add_debt = yes
+		}
+		days_remove = 90
+		days_re_enable = 90
+		modifier = {
+			stability_factor = 0.1
+			political_power_gain = 0.1
+			society_development_monthly = 0.005
+			research_speed_factor = 0.1
+			consumer_goods_factor = -0.15
+		}
+
+	}
+	PRC_reform_obligatory_edu = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_education_the_groundstone
+		}
+		cost = 50
+		complete_effect = {
+			set_temp_variable = {
+				debt_var_temp = 10
+			}
+			add_debt = yes
+		}
+		days_remove = 90
+		days_re_enable = 90
+		modifier = {
+			stability_factor = 0.1
+			political_power_gain = 0.1
+			society_development_monthly = 0.005
+			research_speed_factor = 0.1
+			consumer_goods_factor = -0.15
+		}
+
+	}
+
+	PRC_cadre_revolutionization = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_party_the_face
+		}
+		cost = 50
+		complete_effect = {
+			set_temp_variable = {
+				debt_var_temp = 10
+			}
+			add_debt = yes
+		}
+		days_remove = 90
+		days_re_enable = 90
+		modifier = {
+			stability_factor = 0.1
+			political_power_gain = 0.1
+			society_development_monthly = 0.005
+			research_speed_factor = 0.1
+			consumer_goods_factor = -0.15
+		}
+
+	}
+	PRC_establish_lead_by_party = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_party_the_face
+		}
+		cost = socialist_ppgda_cost1
+		days_remove = 90
+		days_re_enable = 90
+		modifier = {
+			stability_weekly = 0.001
+			industrial_capacity_factory = 0.05
+			research_speed_factor = 0.05
+		}
+		remove_effect = {
+			if = {
+				limit = { 
+					has_decision = PRC_socialist_culture_peoples_culture
+				}
+				set_temp_variable = {
+					society_development_var_temp = 0.02
+				}
+				add_society_development = yes
+			}
+		}
+
+	}
+	PRC_hundred_flowers = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_end_to_past_chaos
+		}
+		cost = socialist_ppgda_cost1
+		days_remove = 90
+		days_re_enable = 90
+		modifier = {
+			social_democrat_drift = 0.02
+			libertarian_socialist_drift = 0.02
+			academic_development_monthly = 0.005
+			society_development_monthly = 0.003
+		}
+		remove_effect = {
+			if = {
+				limit = { 
+					has_decision = PRC_socialist_culture_peoples_culture
+				}
+				set_temp_variable = {
+					society_development_var_temp = 0.02
+				}
+				add_society_development = yes
+			}
+		}
+	}
+	PRC_out_capitalist_so_call_equity = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_end_to_past_chaos
+		}
+		cost = 50
+		days_remove = 1
+		fire_only_once = yes
+		remove_effect = {
+			set_temp_variable = {
+				society_development_var_temp = 0.1
+			}
+			add_society_development = yes
+		}
+		modifier = {
+		}
+
+	}
+	PRC_out_maleism = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_end_to_past_chaos
+		}
+		cost = 50
+		days_remove = 90
+		fire_only_once = yes
+		remove_effect = {
+			set_temp_variable = {
+				society_development_var_temp = 0.1
+			}
+			add_society_development = yes
+
+		}
+	}
+
+	PRC_Commie_Youth_Rev = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_youth_league
+		}
+		cost = socialist_ppgda_cost1
+		days_remove = 90
+		days_re_enable = 90
+		modifier = {
+			industrial_capacity_factory = 0.05
+			personal_expense_factor = 0.05
+			research_speed_factor = 0.03
+		}
+		remove_effect = {
+			add_political_power = 20
+			if = {
+				limit = { 
+					has_decision = PRC_socialist_culture_peoples_culture
+				}
+				set_temp_variable = {
+					society_development_var_temp = 0.02
+				}
+				add_society_development = yes
+			}
+		}
+	}
+	PRC_replace_unloyal_officers = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_youth_league
+		}
+		cost = 50
+		days_remove = 90
+		days_re_enable = 90
+		modifier = {
+			industrial_capacity_factory = 0.05
+			personal_expense_factor = 0.05
+			research_speed_factor = 0.03
+		}
+		remove_effect = {
+			add_political_power = 20
+		}	
+	}
+	PRC_buy_tiktok = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_purge_culture_propaganders
+		}
+		cost = 125
+		days_remove = 180
+		fire_only_once = yes
+		modifier = {
+			political_power_cost = 0.15
+			consumer_goods_factor = 0.2
+			business_value_factor = -0.075
+		}
+		remove_effect = {
+			add_to_variable = {
+				PSC_pp_cost_var = -0.06
+			}
+			add_to_variable = {
+				PSC_consumer_var = -0.05
+			}
+			add_to_variable = {
+				PSC_business_value_var = 0.03
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start7
+				}
+			}
+		}	
+
+	}
+	PRC_buy_wechat = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_purge_culture_propaganders
+		}
+		cost = 125
+		days_remove = 180
+		fire_only_once = yes
+		modifier = {
+			political_power_cost = 0.15
+			consumer_goods_factor = 0.2
+			business_value_factor = -0.075
+		}
+		remove_effect = {
+			add_to_variable = {
+				PSC_pp_cost_var = -0.06
+			}
+			add_to_variable = {
+				PSC_consumer_var = -0.05
+			}
+			add_to_variable = {
+				PSC_business_value_var = 0.03
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start7
+				}
+			}
+		}	
+
+	}
+
+	PRC_rebuild_rural_school = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_future_with_technology
+		}
+		cost = 50
+		days_remove = 90
+		days_re_enable = 90
+		complete_effect = {
+			set_temp_variable = {
+				income_var_temp = -50
+			}
+			add_income = yes
+		}
+		modifier = {
+			production_speed_infrastructure_factor = 0.03
+		}
+		remove_effect = {
+
+		}	
+
+
+	}
+
+	PRC_regularize_teacher_test = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_future_with_technology
+		}
+		cost = 100
+		days_remove = 90
+		fire_only_once = yes
+		modifier = {
+			political_power_cost = 0.15
+			research_speed_factor = -0.07
+			production_factory_max_efficiency_factor = -0.1
+			production_factory_start_efficiency_factor = -0.15
+		}
+		remove_effect = {
+			set_temp_variable = {
+				academic_development_var_temp = 0.1
+			}
+			add_academic_development = yes
+			add_to_variable = {
+				PSC_academic_var = 0.003
+			}
+			add_to_variable = {
+				PSC_research_var = 0.04
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start14
+				}
+			}
+		}	
+	}
+
+	PRC_edu_automation = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_future_with_technology
+		}
+		cost = 120
+		days_remove = 180
+		days_re_enable = 180
+		complete_effect = {
+			add_to_variable = {
+				PSC_factory_output_var = 0.02
+			}
+			add_to_variable = {
+				PSC_max_efficiency_var = 0.02
+			}
+			add_to_variable = {
+				PSC_efficiency_gain_var = 0.03
+			}
+			add_to_variable = {
+				PSC_research_var = 0.02
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start15
+				}
+			}
+		}
+		modifier = {
+			research_speed_factor = 0.05
+			expense_growth_factor = 0.075
+		}
+		remove_effect = {
+			add_tech_bonus = {
+				name = PRC_edu_automation
+				category = electronics
+				category = industry
+				ahead_reduction = 0.5
+				uses = 1
+			}
+		}
+	}
+
+	PRC_teacher_the_gardener = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_future_with_technology
+		}
+		cost = socialist_ppgda_cost1
+		days_remove = 90
+		days_re_enable = 90
+		complete_effect = {
+			add_ideas = PRC_teacher_the_gardener_idea
+		}
+		remove_effect = {
+			remove_ideas = PRC_teacher_the_gardener_idea
+		}
+
+	}
+
+	PRC_guide_students = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_future_with_technology
+		}
+		cost = 75
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = {
+			add_popularity = {
+				ideology = communist
+				popularity = -0.04
+			}
+		}
+		modifier = {
+			political_power_cost = 0.14
+			stability_factor = -0.07
+			stability_weekly = -0.003
+			society_development_monthly = 0.02
+		}
+		remove_effect = {
+			custom_override_tooltip = {
+				tooltip = Put_Back_365_days
+				country_event = Chihong.37
+			}
+		}
+	}
+
+	PRC_unify_teachers = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_future_with_technology
+		}
+		cost = 50
+		days_remove = 90
+		fire_only_once = yes
+		remove_effect = {
+			add_to_variable = {
+				PSC_pp_cost_var = 0.04
+			}
+			add_to_variable = {
+				PSC_academic_var = 0.002
+			}
+			add_to_variable = {
+				PSC_st_weekly_var = 0.001
+			}
+			add_to_variable = {
+				PSC_socdem_drift_var = 0.02
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start17
+				}
+			}
+		}
+		
+	}
+
+	PRC_digital_budget_supervision = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_future_with_technology
+		}
+		cost = 50
+		days_remove = 90
+		days_re_enable = 90
+		modifier = {
+			expense_growth_factor = -0.1
+			personal_value_factor = 0.03
+		}
+	}
+
+	PRC_socialist_culture_peoples_culture = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_future_with_technology
+		}
+		cost = socialist_ppgda_cost
+		days_remove = 180
+		days_re_enable = 180
+		complete_effect = {
+			add_ideas = PRC_teacher_the_gardener_idea
+			add_to_variable = {
+				socialist_ppgda_cost1 = -20
+			}
+			add_to_variable = {
+				socialist_ppgda_cost2 = -20
+			}
+		}
+		modifier = {
+			political_power_cost = -0.1
+			custom_modifier_tooltip = cut_20_pp_cost
+		}
+		remove_effect = {
+			remove_ideas = PRC_teacher_the_gardener_idea
+			add_to_variable = {
+				socialist_ppgda_cost = 20
+			}
+			add_to_variable = {
+				socialist_ppgda_cost1 = 20
+			}
+			add_to_variable = {
+				socialist_ppgda_cost2 = 20
+			}
+
+		}
+	}
+
+	PRC_nobody_shall_be_left = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_nl_future_with_technology
+		}
+		cost = socialist_ppgda_cost2
+		days_remove = 180
+		days_re_enable = 180
+		complete_effect = {
+		}
+		modifier = {
+			agricultural_development_monthly = 0.005
+			industrial_development_monthly = 0.005
+			poverty_development_monthly = 0.01
+			production_speed_infrastructure_factor = 0.075
+			stability_factor = 0.05
+			war_support_factor = -0.1
+			political_power_cost = 0.2
+		}
+		remove_effect = {
+			set_temp_variable = {
+				society_development_var_temp = 0.05
+			}
+			add_society_development = yes
+		}
+	}
+}

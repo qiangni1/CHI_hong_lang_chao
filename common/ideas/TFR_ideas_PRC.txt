@@ -4950,6 +4950,50 @@ ideas = {
 			}
 		}	
 		
+		PRC_chinese_communist_party_idea_101 = {
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				drift_defence_factor = 0.25
+				crypto_strength = 1
+				line_change_production_efficiency_factor = 0.025
+				personal_expense_factor = -0.05
+			}
+		}	
+		PRC_chinese_communist_party_idea_102 = {
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				drift_defence_factor = 0.25
+				crypto_strength = 1
+				political_power_gain = 0.03
+				libertarian_socialist_drift = 0.03
+			}
+		}	
+
+
 		PRC_new_red_culture_idea = {
 			picture = PRC_new_red_culture_idea
 

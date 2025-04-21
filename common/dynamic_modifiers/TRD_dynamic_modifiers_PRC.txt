@@ -1,0 +1,33 @@
+PRC_socialist_culture_dynamic = {
+	icon = GFX_idea_prc_the_long_march
+	enable = {
+		always = yes
+	}
+
+	stability_factor = PSC_stability_var
+	stability_weekly = PSC_st_weekly_var
+	political_power_cost = PSC_pp_cost_var
+	war_support_factor = PSC_war_support_var
+	consumer_goods_factor = PSC_consumer_var
+	party_popularity_stability_factor = PSC_party_stability_factor
+	conscription_factor = PSC_conscription_factor_var
+	drift_defence_factor = PSC_drift_var
+	business_value_factor = PSC_business_value_var
+	personal_value_factor = PSC_personal_value_var
+	personal_expense_factor = PSC_expense_var
+	income_growth_factor = PSC_income_var
+	expense_growth_factor = PSC_expense_growth_var
+	line_change_production_efficiency_factor = PSC_line_change_var
+	production_factory_start_efficiency_factor = PSC_start_efficiency_var
+	production_factory_max_efficiency_factor = PSC_max_efficiency_var
+	production_factory_efficiency_gain_factor = PSC_efficiency_gain_var
+	industrial_capacity_factory = PSC_factory_output_var
+	production_speed_infrastructure_factor = PSC_infrust_var
+	research_speed_factor = PSC_research_var
+	society_development_monthly = PSC_social_var
+	academic_development_monthly = PSC_academic_var
+	army_org_factor = PSC_army_org_var
+	communist_drift = PSC_commie_drift_var
+	libertarian_socialist_drift = PSC_soc_drift_var
+	social_democrat_drift = PSC_socdem_drift_var
+}

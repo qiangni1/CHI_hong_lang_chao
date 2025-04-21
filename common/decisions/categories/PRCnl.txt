@@ -135,3 +135,13 @@ PRC_new_left_pla_space_force = {
     
     priority = 1
 }
+PRC_Culture_Revital = {
+	icon = GFX_PRC_gaw_cat
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+		has_completed_focus = PRC_nl_social_reeducation
+	}
+	priority = 1
+}

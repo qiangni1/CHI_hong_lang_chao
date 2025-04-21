@@ -1765,6 +1765,9 @@ focus_tree = {
 			set_variable = {
 				PSC_max_efficiency_var = 0.025
 			}
+			set_variable = {
+				socialist_ppgda_cost1 = 50
+			}
 			hidden_effect = {
 				add_dynamic_modifier = {
 					modifier = PRC_socialist_culture_dynamic
@@ -1955,7 +1958,25 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_party_the_face
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_political_power = 50
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.05
+			}
+			add_to_variable = {
+				PSC_pp_cost_var = -0.06
+			}
+			add_to_variable = {
+				PSC_social_var = 0.005
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start10
+				}
+			}
+		}
 	}
 	focus = {
 		id = PRC_nl_purge_culture_propaganders
@@ -2042,7 +2063,35 @@ focus_tree = {
 			focus = PRC_nl_youth_league
 			focus = PRC_nl_restructure_our_study
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_political_power = -50
+			set_temp_variable = {
+				society_development_var_temp = 0.07
+			}
+			set_temp_variable = {
+				academic_development_var_temp = 0.1
+			}
+			add_society_development = yes
+			add_academic_development = yes
+			add_to_variable = {
+				PSC_pp_cost_var = -0.1
+			}
+			add_to_variable = {
+				PSC_research_var = 0.07
+			}
+			add_to_variable = {
+				PSC_personal_value_var = 0.025
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start11
+				}
+			}
+			unlock_decision_tooltip = PRC_guide_students
+			unlock_decision_tooltip = PRC_unify_teachers
+			unlock_decision_tooltip = PRC_digital_budget_supervision
+		}
 	}
 	focus = {
 		id = PRC_nl_revive_red_culture
@@ -2058,7 +2107,36 @@ focus_tree = {
 			focus = PRC_nl_purge_culture_propaganders
 			focus = PRC_nl_restructure_our_study
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_political_power = -50
+			set_temp_variable = {
+				poverty_development_var_temp = 0.075
+			}
+			add_poverty_development = yes
+			add_to_variable = {
+				PSC_conscription_factor_var = 0.03
+			}
+			add_to_variable = {
+				PSC_research_var = 0.03
+			}
+			add_to_variable = {
+				PSC_army_org_var = 0.05
+			}
+			add_to_variable = {
+				PSC_factory_output_var = 0.05
+			}
+			set_variable = {
+				socialist_ppgda_cost = 20
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start12
+				}
+			}
+			custom_effect_tooltip = add_a_slot
+			unlock_decision_tooltip = PRC_socialist_culture_peoples_culture
+		}
 	}
 	focus = {
 		id = PRC_nl_peoples_culture_revolutionary_culture
@@ -2072,6 +2150,44 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = PRC_nl_revive_red_culture
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+			set_temp_variable = {
+				academic_development_var_temp = 0.05
+			}
+			set_temp_variable = {
+				poverty_development_var_temp = 0.05
+			}
+			add_academic_development = yes
+			add_poverty_development = yes
+			add_to_variable = {
+				PSC_commie_drift_var = 0.02
+			}
+			add_to_variable = {
+				PSC_soc_drift_var = 0.02
+			}
+			add_to_variable = {
+				PSC_income_var = 0.055
+			}
+			add_to_variable = {
+				PSC_expense_growth_var = 0.045
+			}
+			add_to_variable = {
+				PSC_business_value_var = 0.05
+			}
+			set_variable = {
+				socialist_ppgda_cost2 = 75
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start13
+				}
+			}
+			custom_effect_tooltip = add_a_slot
+			unlock_decision_tooltip = PRC_nobody_shall_be_left
 		}
 	}
 	focus = {
