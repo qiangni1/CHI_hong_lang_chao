@@ -7,6 +7,7 @@ PRC_export_revolution = {
 	visible = {
 		has_country_flag = PRC_world_revolution
 	}
+	scripted_gui = PRC_Liberation_International
 	priority = 199
 }
 
