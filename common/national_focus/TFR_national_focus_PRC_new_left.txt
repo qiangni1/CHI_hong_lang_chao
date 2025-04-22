@@ -2970,7 +2970,20 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_restore_people_commune
 		}
-		completion_reward = { }
+		completion_reward = {
+		    add_stability = 0.1
+		    set_temp_variable = {
+				var = society_development_var_temp
+				value = 0.15
+			}
+			add_society_development = yes
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_assure_welfare_idea
+				}
+			}
+		}
 	}
 	focus = {
 		id = PRC_nl_UBI
@@ -2982,7 +2995,20 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_assure_welfare
 		}
-		completion_reward = { }
+		completion_reward = {
+		add_stability = 0.1
+		    set_temp_variable = {
+				var = poverty_development_var_temp
+				value = 0.05
+			}
+			add_poverty_development = yes
+			effect_tooltip = {
+				swap_ideas = {					
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_UBI_idea
+				}
+			} 
+        }
 	}
 	focus = {
 		id = PRC_nl_improve_commune_function
@@ -2994,7 +3020,96 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_UBI
 		}
-		completion_reward = { }
+		completion_reward = {
+		    random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+		    }
+
+		    random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+		    }
+		    random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+		    }
+		    random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+		    }
+		    random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+		    }
+
+			effect_tooltip = {
+				swap_ideas = {					
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_improve_commune_idea
+				}
+			} 
+		}
 	}
 	focus = {
 		id = PRC_nl_labors_share
@@ -3006,7 +3121,14 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_improve_commune_function
 		}
-		completion_reward = { }
+		completion_reward = {
+		    effect_tooltip = {
+				swap_ideas = {					
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_labors_share_idea
+				}
+		    }
+		}
 	}
 	focus = {
 		id = PRC_nl_greatly_riched
@@ -3018,7 +3140,14 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_assure_welfare
 		}
-		completion_reward = { }
+		completion_reward = {
+		    effect_tooltip = {
+				swap_ideas = {					
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_greatly_riched_idea
+				}
+			}
+		}
 	}
 	focus = {
 		id = PRC_nl_robotic_emergency_assist
@@ -3031,7 +3160,14 @@ focus_tree = {
 			focus = PRC_nl_UBI
 			focus = PRC_nl_greatly_riched
 		}
-		completion_reward = { }
+		completion_reward = {
+		    effect_tooltip = {
+				swap_ideas = {					
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_robotic_emergency_assist_idea
+				}
+			}
+		}
 	}
 	focus = {
 		id = PRC_nl_labor_liberation
@@ -3043,7 +3179,20 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_robotic_emergency_assist
 		}
-		completion_reward = { }
+		completion_reward = {
+		    add_political_power = 100
+		    set_temp_variable = {
+				var = income_var_temp
+				value = 1000
+			}
+			add_income_with_inflation = yes
+		    effect_tooltip = {
+				swap_ideas = {					
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_labor_liberation_idea
+				}
+			}
+		}
 	}
 	focus = {
 		id = PRC_nl_industry_five
@@ -3055,7 +3204,14 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_assure_welfare
 		}
-		completion_reward = { }
+		completion_reward = { 
+			effect_tooltip = {
+				swap_ideas = {					
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_industry_five_idea
+				}
+			} 	
+		}
 	}
 	focus = {
 		id = PRC_nl_automation_traffic
@@ -3070,7 +3226,14 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_industry_five
 		}
-		completion_reward = { }
+		completion_reward = {
+		    effect_tooltip = {
+				swap_ideas = {					
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_automation_traffic_idea
+				}
+		    }
+		}
 	}
 	focus = {
 		id = PRC_nl_regional_integration
@@ -3082,7 +3245,14 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_automation_traffic
 		}
-		completion_reward = { }
+		completion_reward = {
+		    effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_regional_integration_idea
+				}
+		    }
+		}
 	}
 	focus = {
 		id = PRC_nl_super_project
@@ -3094,7 +3264,24 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_industry_five
 		}
-		completion_reward = { }
+		completion_reward = {
+            set_temp_variable = {
+				var = industrial_development_var_temp
+				value = 0.15
+			}
+			add_industrial_development = yes
+			set_temp_variable = {
+				var = income_var_temp
+				value = 750
+			}
+			add_income_with_inflation = yes
+		    effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_super_project_idea
+				}
+		    }
+		}
 	}
 	focus = {
 		id = PRC_nl_free_and_equal_labor
@@ -3106,7 +3293,14 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_assure_welfare
 		}
-		completion_reward = { }
+		completion_reward = {
+		    effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_free_and_equal_labor_idea
+				}
+		    }
+		}
 	}
 	focus = {
 		id = PRC_nl_gain_from_each_good
@@ -3118,7 +3312,14 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_free_and_equal_labor
 		}
-		completion_reward = { }
+		completion_reward = {
+		    effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_gain_from_each_good_idea
+				}
+		    }
+		}
 	}
 	focus = {
 		id = PRC_nl_free_life_supplement
@@ -3130,7 +3331,14 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_free_and_equal_labor
 		}
-		completion_reward = { }
+		completion_reward = {
+		    effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_free_life_supplement_idea
+				}
+		    }
+		}
 	}
 	focus = {
 		id = PRC_nl_commonhappy
@@ -3145,7 +3353,14 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_free_life_supplement
 		}
-		completion_reward = { }
+		completion_reward = {
+		    effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_commonhappy_idea
+				}
+		    }
+		}
 	}
 	focus = {
 		id = PRC_nl_new_sky
@@ -3171,6 +3386,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
+
 
 
 }
