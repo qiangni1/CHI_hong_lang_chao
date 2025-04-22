@@ -1,0 +1,48 @@
+ideas = {
+	welfare_laws = {
+		law = yes
+		use_list_view = yes
+		communist_great_rich = {
+			removal_cost = -1
+			cost = 100
+			level = 1
+			picture = laws_welfare5
+			allowed = {
+            	tag = PRC
+            }
+			visible = {
+            	hidden_trigger = {
+            		tag = PRC
+            		has_completed_focus = PRC_nl_greatly_riched
+            	}
+            }
+            available = {
+            	hidden_trigger = {
+            	}
+            }
+			modifier = {
+				personal_expense = 0.008
+				society_development_monthly = 0.02
+				poverty_development_monthly = 0.02
+				production_speed_buildings_factor = 0.1
+				stability_weekly = 0.005
+			}
+			ai_will_do = {
+				base = 2
+				modifier = {
+					factor = 20
+					has_war = yes
+				}
+				modifier = {
+					factor = 20
+					check_variable = {
+						var = expenses_income_var
+						value = 1.5
+						compare = greater_than
+					}
+				}
+			}
+		}
+	}
+
+}
