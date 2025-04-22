@@ -1,7 +1,7 @@
 ﻿l_simp_chinese:
   PRC_export_revolution: "世界解放阵线-对外革命部"
   TFR_Chinese_Influence_desc: "在地图上选择执行行动的国家，相关决议将在右下方动态显示。"
-  TFR_Chinese_Influence_desc2: "国际共运态势：[PRC_Lib_Stage_loc]"
+  TFR_Chinese_Influence_desc2: "[PRC_Lib_Stage_loc]"
   Chihong_World_Rev_desc: "国际共运形势：[PRC_Lib_Stage_loc]\n\n[PRC_Lib_Stage_loc2]"
   PRC_Lib_Stage_loc_1: "§g熄灭§!"
   PRC_Lib_Stage_loc_2: "§Y黯淡§!"

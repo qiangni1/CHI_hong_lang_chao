@@ -8,7 +8,7 @@ guiTypes = {
 		orientation = CENTER
 		size = {
 			width = 100%
-			height = 740
+			height = 780
 		}
 		iconType = {
 			name = "statue_quo"
@@ -184,33 +184,33 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "button_Region_Southeast_Asia"
-			position = { x = 130 y = 700 }
+			position = { x = 130 y = 730 }
 			quadTextureSprite = "GFX_southeast_asia_button"
 			scale = 0.2
 		}
 		buttonType = {
 			name = "button_Region_South_Asia"
-			position = { x = 60 y = 700 }
+			position = { x = 60 y = 730 }
 			quadTextureSprite = "GFX_south_asia_button"
 			scale = 0.2
 
 		}
 		buttonType = {
 			name = "button_Region_East_Asia"
-			position = { x = 270 y = 700 }
+			position = { x = 270 y = 730 }
 			quadTextureSprite = "GFX_east_asia_button"
 			scale = 0.2
 
 		}
 		buttonType = {
 			name = "button_Region_Pacifica"
-			position = { x = 200 y = 700 }
-			quadTextureSprite = "GFX_pacifica_button"			scale = 0.2
+			position = { x = 200 y = 730 }
+			quadTextureSprite = "GFX_pacifica_button"
 			scale = 0.2
 		}
 		buttonType = {
 			name = "button_Region_West_Asia"
-			position = { x = 340 y = 700 }
+			position = { x = 340 y = 730 }
 			buttonText = "West_Asia"
 			buttonFont = "VCR02_16"
 			quadTextureSprite = "GFX_button_94x31"

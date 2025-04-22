@@ -50,6 +50,7 @@ clear_southeast_asia_data = {
 	clr_country_flag = Laos_selected
 	clr_country_flag = Thailand_selected
 	clr_country_flag = Malaysia_selected
+	clr_country_flag = Cambodia_selected
 	clr_country_flag = CHN_Display_Southeast_Asia
 	set_variable = {
 		CHN_Display_PHI = 1

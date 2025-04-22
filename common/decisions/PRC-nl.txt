@@ -70,11 +70,12 @@ PRC_export_revolution = {
 		available = {
 			has_completed_focus = Sparks_on_the_MekongRiver
 			has_country_flag = Mynamar_contacted
-			has_country_flag = MYA_commies_reunited
+			
 		}
 		visible = {
 			has_completed_focus = Sparks_on_the_MekongRiver
 			has_country_flag = Mynamar_selected
+			has_country_flag = MYA_commies_reunited
 		}
 		fire_only_once = yes
 		cost = 25
@@ -492,9 +493,8 @@ PRC_export_revolution = {
 			}
 		}
 		visible = {
-			is_in_faction_with = PRC
+			tag = PRC
 			NOT = {
-				has_global_flag = pan_asian_war_ongoing
 				JAP = {
 					is_in_faction_with = VIN
 				}
@@ -1531,13 +1531,14 @@ PRC_export_revolution = {
 		icon = GFX_PRC_new_left_decision
 		available = {
 			has_completed_focus = Brothers_of_South_Asia
-			has_country_flag = PRC_PAK_People_Front_flag
-			has_country_flag = PAK_Laheer
-			has_country_flag = PAK_teen_advocated
+			
 		}
 		visible = {
 			has_completed_focus = Brothers_of_South_Asia
 			has_country_flag = Pakistan_selected
+			has_country_flag = PRC_PAK_People_Front_flag
+			has_country_flag = PAK_Laheer
+			has_country_flag = PAK_teen_advocated
 		}
 		fire_only_once = yes
 		cost = 15
@@ -1692,6 +1693,7 @@ PRC_export_revolution = {
 		}
 		visible = {
 			has_completed_focus = Comrade_in_India
+			has_country_flag = India_selected
 		}
 		fire_only_once = yes
 		cost = 100
