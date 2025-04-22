@@ -17,6 +17,9 @@ scripted_gui = {
 				clear_south_asia_data = yes
 				clear_east_asia_data = yes
 				clear_pacifica_data = yes
+				set_variable = {
+					CHN_Display_UI = 2
+				}
 				add_to_variable = {
 					PRC_Lib_Int_Dir_Var = 1
 				}
@@ -27,6 +30,9 @@ scripted_gui = {
 				clear_southeast_asia_data = yes
 				clear_east_asia_data = yes
 				clear_pacifica_data = yes
+				set_variable = {
+					CHN_Display_UI = 1
+				}
 				add_to_variable = {
 					PRC_Lib_Int_Dir_Var = 1
 				}
@@ -37,6 +43,9 @@ scripted_gui = {
 				clear_pacifica_data = yes
 				clear_south_asia_data = yes
 				clear_west_asia_data = yes
+				set_variable = {
+					CHN_Display_UI = 3
+				}
 				add_to_variable = {
 					PRC_Lib_Int_Dir_Var = 1
 				}
@@ -47,9 +56,13 @@ scripted_gui = {
 				clear_southeast_asia_data = yes
 				clear_south_asia_data = yes
 				clear_east_asia_data = yes
+				set_variable = {
+					CHN_Display_UI = 5
+				}
 				add_to_variable = {
 					PRC_Lib_Int_Dir_Var = 1
 				}
+
 			}
 			button_Region_West_Asia_click = {
 				set_country_flag = CHN_Display_West_Asia
@@ -57,6 +70,9 @@ scripted_gui = {
 				clear_south_asia_data = yes
 				clear_east_asia_data = yes
 				clear_pacifica_data = yes
+				set_variable = {
+					CHN_Display_UI = 4
+				}
 				add_to_variable = {
 					PRC_Lib_Int_Dir_Var = 1
 				}
@@ -65,13 +81,27 @@ scripted_gui = {
 				if = {
 					limit = { 
 						check_variable = {
-							CHN_Display_BAN = 1
+							CHN_Display_BAN < 3
+						}
+					}
+					set_variable = {
+						CHN_Display_BAN = 3
+					}
+					set_country_flag = Banglandash_selected
+					add_to_variable = {
+						PRC_Lib_Int_Dir_Var = 1
+					}
+				}
+				else_if = {
+					limit = {
+						BAN = {
+							is_in_faction_with = PRC
 						}
 					}
 					set_variable = {
 						CHN_Display_BAN = 2
 					}
-					set_country_flag = Banglandash_selected
+					clr_country_flag = Banglandash_selected
 					add_to_variable = {
 						PRC_Lib_Int_Dir_Var = 1
 					}
@@ -116,13 +146,27 @@ scripted_gui = {
 				if = {
 					limit = { 
 						check_variable = {
-							CHN_Display_PAK = 1
+							CHN_Display_PAK < 3
+						}
+					}
+					set_variable = {
+						CHN_Display_PAK = 3
+					}
+					set_country_flag = Pakistan_selected
+					add_to_variable = {
+						PRC_Lib_Int_Dir_Var = 1
+					}
+				}
+				else_if = {
+					limit = { 
+						PAK = {
+							is_in_faction_with = PRC
 						}
 					}
 					set_variable = {
 						CHN_Display_PAK = 2
 					}
-					set_country_flag = Pakistan_selected
+					clr_country_flag = Pakistan_selected
 					add_to_variable = {
 						PRC_Lib_Int_Dir_Var = 1
 					}
@@ -142,13 +186,27 @@ scripted_gui = {
 				if = {
 					limit = { 
 						check_variable = {
-							CHN_Display_NEP = 1
+							CHN_Display_NEP < 3
+						}
+					}
+					set_variable = {
+						CHN_Display_NEP = 3
+					}
+					set_country_flag = Nepal_selected
+					add_to_variable = {
+						PRC_Lib_Int_Dir_Var = 1
+					}
+				}
+				else_if = {
+					limit = { 
+						NEP = {
+							is_in_faction_with = PRC
 						}
 					}
 					set_variable = {
 						CHN_Display_NEP = 2
 					}
-					set_country_flag = Nepal_selected
+					clr_country_flag = Nepal_selected
 					add_to_variable = {
 						PRC_Lib_Int_Dir_Var = 1
 					}
@@ -167,13 +225,27 @@ scripted_gui = {
 				if = {
 					limit = { 
 						check_variable = {
-							CHN_Display_BUT = 1
+							CHN_Display_BUT < 3
+						}
+					}
+					set_variable = {
+						CHN_Display_BUT = 3
+					}
+					set_country_flag = Butan_selected
+					add_to_variable = {
+						PRC_Lib_Int_Dir_Var = 1
+					}
+				}
+				else_if = {
+					limit = { 
+						BHU = {
+							is_in_faction_with = PRC
 						}
 					}
 					set_variable = {
 						CHN_Display_BUT = 2
 					}
-					set_country_flag = Butan_selected
+					clr_country_flag = Nepal_selected
 					add_to_variable = {
 						PRC_Lib_Int_Dir_Var = 1
 					}
@@ -192,13 +264,27 @@ scripted_gui = {
 				if = {
 					limit = { 
 						check_variable = {
-							CHN_Display_SRI = 1
+							CHN_Display_SRI < 3
+						}
+					}
+					set_variable = {
+						CHN_Display_SRI = 3
+					}
+					set_country_flag = Sri_Lanka_selected
+					add_to_variable = {
+						PRC_Lib_Int_Dir_Var = 1
+					}
+				}
+				else_if = {
+					limit = { 
+						SRL = {
+							is_in_faction_with = PRC
 						}
 					}
 					set_variable = {
 						CHN_Display_SRI = 2
 					}
-					set_country_flag = Sri_Lanka_selected
+					clr_country_flag = Sri_Lanka_selected
 					add_to_variable = {
 						PRC_Lib_Int_Dir_Var = 1
 					}
@@ -228,6 +314,7 @@ scripted_gui = {
 						PRC_Lib_Int_Dir_Var = 1
 					}
 				}
+				
 				else = {
 					set_variable = {
 						CHN_Display_CAM = 1
@@ -268,16 +355,32 @@ scripted_gui = {
 				if = {
 					limit = { 
 						check_variable = {
-							CHN_Display_MYA = 1
+							CHN_Display_MYA < 3
 						}
 					}
 					set_variable = {
-						CHN_Display_MYA = 2
+						CHN_Display_MYA = 3
 					}
 					set_country_flag = Mynamar_selected
 					add_to_variable = {
 						PRC_Lib_Int_Dir_Var = 1
 					}
+				}
+				else_if = {
+					limit = { 
+						BRM = {
+							has_country_flag = eadi_member
+						}
+					}
+					set_variable = {
+						CHN_Display_MYA = 2
+					}
+
+					clr_country_flag = Mynamar_selected
+					add_to_variable = {
+						PRC_Lib_Int_Dir_Var = 1
+					}
+
 				}
 				else = {
 					set_variable = {
@@ -628,6 +731,9 @@ scripted_gui = {
 
 		}
 		triggers = {
+			miaobian_southasia_visible = {
+				has_country_flag = CHN_Display_South_Asia
+			}
 			button_country_RAJ_visible = {
 				has_country_flag = CHN_Display_South_Asia
 			}
@@ -761,6 +867,9 @@ scripted_gui = {
 			}
 			button_country_IRA = {
 				frame = CHN_Display_IRA
+			}
+			background = {
+				frame = CHN_Display_UI
 			}
 		}
 
