@@ -1,39 +1,47 @@
 ideas = {
 	economy = {
-		automation_socialism = {
-				allowed = {
-					always = no
-				}
-				allowed_civil_war = {
-					always = yes
-				}
-				modifier = {
-					consumer_goods_factor = 0.2
+		law = yes
+		use_list_view = yes
+		auto_socialism = {
+			picture = laws_economic_focus
+			removal_cost = -1
+			level = 7
+			cancel_if_invalid = no
+			default = yes
+			allowed_to_remove = {
+			}
+			available = {
+			}
+			modifier = {
+				consumer_goods_factor = 0.2
 					stability_weekly = 0.002
 					business_value_factor = 0.15
 					personal_value_factor = 0.15
 					production_speed_buildings_factor = 0.1
-				}
 			}
-			automation_communism = {
-				allowed = {
-					always = no
-				}
-				allowed_civil_war = {
-					always = yes
-				}
-				modifier = {
+		}
+		auto_communism = {
+			picture = laws_economic_focus
+			removal_cost = -1
+			level = 7
+			cancel_if_invalid = no
+			default = yes
+			allowed_to_remove = {
+			}
+			available = {
+			}
+			modifier = {
 				consumer_goods_factor = 0.15
-				stability_weekly = 0.002
-				business_value_factor = 0.15
-				personal_value_factor = 0.15
-				production_speed_buildings_factor = 0.15
-				industrial_development_monthly = 0.005
-                   	 	farming_development_monthly = 0.015
-                    		poverty_development_monthly = 0.01
-                   	 	society_development_monthly = 0.01
-				}
+					stability_weekly = 0.002
+					business_value_factor = 0.15
+					personal_value_factor = 0.15
+					production_speed_buildings_factor = 0.15
+					industrial_development_monthly = 0.005
+                    farming_development_monthly = 0.015
+                    poverty_development_monthly = 0.01
+                    society_development_monthly = 0.01
 			}
+		}
 	}
 	hidden_ideas = {
 			ZZZ_automation_socialism = {
