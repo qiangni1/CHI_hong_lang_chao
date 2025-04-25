@@ -1,4 +1,40 @@
 ideas = {
+	hidden_ideas = {
+			ZZZ_automation_socialism = {
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				modifier = {
+					consumer_goods_factor = 0.2
+					stability_weekly = 0.002
+					business_value_factor = 0.15
+					personal_value_factor = 0.15
+					production_speed_buildings_factor = 0.1
+				}
+			}
+			ZZZ_automation_communism = {
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				modifier = {
+					consumer_goods_factor = 0.15
+					stability_weekly = 0.002
+					business_value_factor = 0.15
+					personal_value_factor = 0.15
+					production_speed_buildings_factor = 0.15
+					industrial_development_monthly = 0.005
+                    farming_development_monthly = 0.015
+                    poverty_development_monthly = 0.01
+                    society_development_monthly = 0.01
+				}
+			}
+    }
 	welfare_laws = {
 		law = yes
 		use_list_view = yes
