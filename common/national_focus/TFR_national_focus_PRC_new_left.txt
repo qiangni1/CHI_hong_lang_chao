@@ -2585,6 +2585,17 @@ focus_tree = {
 		}
 		x = 18
 		y = 12
+		completion_reward ={
+		add_political_power = -100
+		add_country_leader_trait = hos_reformist_from_people
+		add_timed_idea = {
+			idea = PRC_nl_go_to_proletarian_democracy_idea
+			days = 365
+			}
+		    effect_tooltip = {
+			    add_ideas = PRC_nl_shining_proletarian_democracy_idea
+		    }
+		}
 
 	}
 	focus = {
@@ -2597,6 +2608,28 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = PRC_nl_proletarian_democracy
+		completion_reward ={
+		    add_political_power = 75
+		    set_temp_variable = {
+				var = society_development_var_temp
+				value = 0.05
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.05
+			}
+			add_society_development = yes
+        	effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_nl_shining_proletarian_democracy_idea
+					add_idea = PRC_nl_shining_proletarian_democracy_2_idea
+				}
+        	    swap_ruler_traits = {
+				    remove = hos_red_dragon_rider
+				    add = hos_red_dragon_rider_nl
+			    }
+			}
+        }
 
 	}
 	focus = {
@@ -2609,6 +2642,22 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = PRC_nl_proletarian_democracy
+		completion_reward = {
+		    custom_effect_tooltip = soc_lib_coalition_tip
+		    custom_effect_tooltip = mar_lib_coalition_tip
+		    custom_effect_tooltip = con_coalition_tip
+		    custom_effect_tooltip = PRC_nl_go_to_democrat_tt
+        	modify_timed_idea = {
+				idea = PRC_nl_go_to_proletarian_democracy_idea
+				days = -30
+			}
+			custom_effect_tooltip = appoint_head_minister_tooltip
+			show_ideas_tooltip = PRC_People_Congress_hog
+			hidden_effect = {
+				add_ideas = PRC_People_Congress_hog
+			}
+
+        }
 
 	}
 	focus = {
@@ -2621,6 +2670,19 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_perfect_democratic_centralization
+		completion_reward ={
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_nl_shining_proletarian_democracy_2_idea
+					add_idea = PRC_nl_shining_proletarian_democracy_3_idea
+				}
+			}
+			custom_effect_tooltip = appoint_interior_minister_tooltip
+			show_ideas_tooltip = PRC_Political_bureau_sec
+			hidden_effect = {
+				add_ideas = PRC_Political_bureau_sec
+			}
+        }
 
 	}
 	focus = {
@@ -2633,6 +2695,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_reform_people_congress
+		completion_reward = {
+		    add_political_power = -21
+		}
 
 	}
 	focus = {
@@ -2645,6 +2710,15 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = PRC_nl_reform_people_congress
+		completion_reward = {
+		    add_political_power = -21
+            add_stability = 0.05
+		    custom_effect_tooltip = PRC_nl_go_to_democrat_tt
+        	    modify_timed_idea = {
+				    idea = PRC_nl_go_to_proletarian_democracy_idea
+				    days = -30
+			}
+		}
 
 	}
 	focus = {
@@ -2663,6 +2737,25 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = PRC_nl_proletarian_democracy
+		completion_reward ={
+			effect_tooltip = {
+			    add_ideas = PRC_socialist_harmonious_society_idea
+				swap_ideas = {
+					remove_idea = PRC_nl_shining_proletarian_democracy_3_idea
+					add_idea = PRC_nl_shining_proletarian_democracy_4_idea
+				}
+			}
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = 0.05
+			}
+			add_society_development = yes
+			set_temp_variable = {
+				var = poverty_development_var_temp
+				value = 0.05
+			}
+			add_poverty_development = yes
+        }
 
 	}
 	focus = {
@@ -2675,6 +2768,16 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = PRC_nl_reform_people_congress
+		completion_reward = {
+		    add_political_power = 75
+		    custom_effect_tooltip = PRC_nl_go_to_democrat_tt
+        	    modify_timed_idea = {
+				    idea = PRC_nl_go_to_proletarian_democracy_idea
+				    days = -30
+			    }
+		    }
+
+	    }
 
 	}
 	focus = {
@@ -2693,6 +2796,23 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_re_examine_the_people_congress
+		completion_reward = {
+		    custom_effect_tooltip = PRC_nl_go_to_democrat_tt
+        	modify_timed_idea = {
+			    idea = PRC_nl_go_to_proletarian_democracy_idea
+			    days = -30
+			}
+			set_temp_variable = {
+				var = farming_development_var_temp
+				value = 0.05
+			}
+			add_farming_development = yes
+			set_temp_variable = {
+				var = industrial_development_var_temp
+				value = 0.05
+			}
+			add_industrial_development = yes
+		}
 
 	}
 	focus = {
@@ -2705,6 +2825,13 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = PRC_nl_perfect_democratic_centralization
+		completion_reward = {
+		    custom_effect_tooltip = PRC_nl_go_to_democrat_tt
+        	    modify_timed_idea = {
+				    idea = PRC_nl_go_to_proletarian_democracy_idea
+				    days = -30
+			    }
+		}
 
 	}
 	focus = {
