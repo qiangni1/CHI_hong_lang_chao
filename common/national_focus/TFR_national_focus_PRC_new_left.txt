@@ -1613,7 +1613,32 @@ focus_tree = {
 		cost = 0.00
 		x = 18
 		y = 0
-
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+		}
+		completion_reward = {
+			swap_ruler_traits = {
+				remove = hos_red_dragon_rider
+				add = hos_red_dragon_rider_hu #在country_leader中新写的领导人特性
+			}
+			#中国收复台湾 超事件
+			country_event = {
+				id = news.356
+				days = 1
+			}
+			#台湾军管 事件 不是维持军管，似乎应该是此事件
+			country_event = {
+				id = china.36
+				days = 4
+			}
+			#事件 人事任命 似乎是原创 等待后续...
+			country_event = {
+				id = china.xxx 
+				days = 8
+			}
+		}
 	}
 	focus = {
 		id = PRC_nl_martial_law_reconstruction
@@ -1626,7 +1651,24 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = PRC_nl_ancestor_worship
-
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+		}
+		completion_reward = {
+			#台湾维持军管
+			country_event = {
+				id = china.206
+				days = 3
+			}
+			#以下决议对原有决议的可视化条件进行了修改，如有需要，请查看原有的决议
+			unlock_decision_tooltip = PRC_clean_up_kinmen
+			unlock_decision_tooltip = PRC_clean_up_tainan
+			unlock_decision_tooltip = PRC_clean_up_hualan
+			unlock_decision_tooltip = PRC_clean_up_taichzhun
+			unlock_decision_tooltip = PRC_clean_up_taibei
+		}
 	}
 	focus = {
 		id = PRC_nl_industry_integration_with_mainland
@@ -1639,7 +1681,60 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_martial_law_reconstruction
-
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+		}
+		completion_reward = {
+			#此处按照整饬台湾情况策划稿处理
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 75
+			}
+			add_debt_with_inflation = yes
+			#以下是搬运自原版
+			1148 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			1149 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			1150 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			524 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			648 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			#新写的民族精神，在ideas PRCnl_ideas 处查看,图片直接借用原版的加速当地重建
+			add_timed_idea = {
+				idea = PRC_rectify_the_local_situation
+				days = 180
+			}
+		}
 	}
 	focus = {
 		id = PRC_nl_public_trial_separatists
@@ -1651,7 +1746,20 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = PRC_nl_ancestor_worship
-
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			#审判 相关事件请后续添加 
+			country_event = {
+				id = china.xxx
+				days = 3
+			}
+		}
 	}
 	focus = {
 		id = PRC_nl_cross_strait_family
@@ -1663,7 +1771,27 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_public_trial_separatists
-
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+		}
+		completion_reward = {
+			#此处按照稳定边疆处理
+			add_political_power = 25
+			add_stability = 0.05
+			effect_tooltip = {
+				remove_ideas = PRC_the_separatist_problem
+			}
+			hidden_effect = {
+				#以下照搬自原版
+				remove_ideas = {
+					PRC_the_separatist_problem_2
+					PRC_the_separatist_problem_3
+					PRC_the_separatist_problem_4
+				}
+			}
+		}
 	}
 	focus = {
 		id = PRC_nl_red_wave_surge
@@ -1678,7 +1806,52 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = PRC_nl_ancestor_worship
-
+		ai_will_do = {
+			factor = 50
+		}
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 100
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = 0.1
+			}
+			add_society_development = yes
+			#以下处理皆考虑于原版，改动民族精神为动态修正。
+			effect_tooltip = {
+				swap_ideas = {					
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_red_wave_idea #新写的仅显示民族精神，放在prcnl_ideas了
+				}
+			}
+			hidden_effect = {
+				remove_ideas = PRC_chinese_communist_party_idea
+				add_dynamic_modifier = {
+					modifier = PRC_communist_party_of_china_dynamic
+				}
+				add_to_variable = {
+					var = PRC_cpc_academic_development_monthly_dynamic_var
+					value = 0.005
+				}
+				add_to_variable = {
+					var = PRC_cpc_society_development_monthly_dynamic_var
+					value = 0.008
+				}
+				add_to_variable = {
+					var = PRC_cpc_political_power_gain_dynamic_var
+					value = 0.25
+				}
+				add_to_variable = {
+					var = PRC_cpc_stability_factor_dynamic_var
+					value = 0.025
+				}	
+				add_to_variable = {
+					var =  PRC_cpc_production_factory_max_efficiency_factor_dynamic_var
+					value = 0.03
+				}	
+			}	
+		}
 	}
 	focus = {
 		id = PRC_nl_clean_house
