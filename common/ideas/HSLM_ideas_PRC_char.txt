@@ -17,6 +17,23 @@
 					
 				}
 			}
+			PRC_People_Congress_hog = {
+				picture = generic_vacant
+
+				allowed = {
+					original_tag = PRC
+				}
+
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+
+				traits = {
+					PRC_faction_congress_fac
+					voice_from_people
+
+				}
+			}
 		}
 				
 		foreign_minister = {
@@ -69,6 +86,16 @@
 				traits = {
 					PRC_faction_zhengzhijv
 					sec_eminence_grise
+				}
+			}
+			PRC_Political_bureau_sec = {
+				picture = generic_vacant
+				allowed = {
+					original_tag = PRC
+				}
+				traits = {
+					PRC_faction_zhengzhijv
+					centralization_democracy
 				}
 			}
 	
