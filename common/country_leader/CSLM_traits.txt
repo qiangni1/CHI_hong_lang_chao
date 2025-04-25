@@ -102,6 +102,16 @@ leader_traits = {
 		production_factory_efficiency_gain_factor = 0.1
 		personal_expense_factor = 0.1
 		}
+	#红龙驭者 新
+	hos_red_dragon_rider_hu = {
+		random = no
+		political_power_gain = 0.2
+		war_support_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
 		
 
 
