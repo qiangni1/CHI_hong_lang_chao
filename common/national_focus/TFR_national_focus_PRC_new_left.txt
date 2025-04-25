@@ -3927,6 +3927,7 @@ focus_tree = {
 			focus = PRC_nl_assure_welfare
 		}
 		completion_reward = {
+			change_welfare_type_communism = yes
 		    effect_tooltip = {
 				swap_ideas = {					
 					remove_idea = PRC_made_in_china_dummy_idea
@@ -3991,6 +3992,7 @@ focus_tree = {
 			focus = PRC_nl_assure_welfare
 		}
 		completion_reward = { 
+			change_economy_type_automation_socialism = yes
 			effect_tooltip = {
 				swap_ideas = {					
 					remove_idea = PRC_made_in_china_dummy_idea
@@ -4170,7 +4172,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_commonhappy
 		}
-		completion_reward = { }
+		completion_reward = {change_economy_type_automation_communism = yes }
 	}
 
 
