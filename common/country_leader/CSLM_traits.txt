@@ -77,6 +77,31 @@ leader_traits = {
 		random = no
 		operative_slot = 1
 		}
+	hos_reformist_from_people = {
+		political_power_factor = 0.05
+		stability_factor = 0.05
+		}
+	hos_red_dragon_rider_nl = {
+		political_power_gain = 0.05
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		libertarian_socialist_drift = 0.03
+		}
+	centralization_democracy = {
+		political_power_factor = 0.15
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		production_factory_max_efficiency_factor = 0.05
+		surrender_limit = 0.1
+		communist_drift = 0.03
+		}
+	voice_from_people = {
+		political_power_cost = 0.05
+		industrial_capacity_factory = 0.05
+		production_factory_max_efficiency_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.1
+		personal_expense_factor = 0.1
+		}
 		
 
 
