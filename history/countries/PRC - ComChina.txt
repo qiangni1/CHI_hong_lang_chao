@@ -30,6 +30,10 @@
 	}
 
 	add_dynamic_modifier = {
+		modifier = PRC_nl_jingji3_d3C0_dynamic
+	}
+
+	add_dynamic_modifier = {
 		modifier = PRC_chinese_enviroment_dynamic
 	}
 
