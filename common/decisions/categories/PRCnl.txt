@@ -118,7 +118,7 @@ PRC_new_left_pla_reformation = {
     	has_completed_focus = PLA_reform
     }
     
-    priority = 3
+    priority = 5
 }
 
 PRC_new_left_pla_space_force = {
@@ -133,7 +133,7 @@ PRC_new_left_pla_space_force = {
     	has_country_flag = PRC_new_left_pla_space_force_GUI_open
     }
     
-    priority = 1
+    priority = 4
 }
 PRC_Culture_Revital = {
 	icon = GFX_PRC_gaw_cat
@@ -142,6 +142,26 @@ PRC_Culture_Revital = {
 	}
 	visible = {
 		has_completed_focus = PRC_nl_social_reeducation
+	}
+	priority = 3
+}
+PRC_Rt_People_Democracy = {
+	icon = GFX_PRC_new_left_decision
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+		has_completed_focus = PRC_nl_clean_house
+	}
+	priority = 2
+}
+PRC_Youth_Ideological_Education = {
+	icon = GFX_PRC_new_left_decision
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+		has_completed_focus = PRC_nl_cadre_revolutionization
 	}
 	priority = 1
 }
