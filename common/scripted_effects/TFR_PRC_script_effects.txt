@@ -29,3 +29,17 @@ change_welfare_type_communism = {
 		add_ideas = communist_great_rich
 	}
 }
+
+change_economy_type_auto_socialism = {
+	custom_effect_tooltip = auto_socialism_tt
+	hidden_effect = {
+		add_ideas = automation_socialism
+	}
+}
+
+change_economy_type_auto_communism = {
+	custom_effect_tooltip = auto_communism_tt
+	hidden_effect = {
+		add_ideas = automation_communism
+	}
+}
