@@ -84,6 +84,20 @@
  Bolivar_tears: "玻利瓦尔的泪水"
  Bolivar_tears_desc: "西蒙·玻利瓦尔曾经梦想建立一个统一、独立、强大的南美洲。但两个世纪过去了，他的梦想不仅未能实现，南美洲反而深陷门罗主义的泥潭。贫困、毒品、军事独裁，这些问题如同梦魇般纠缠着南美人民。如果玻利瓦尔地下有知，必定会为此落泪。让我们擦干这些泪水，协助南美人民扫除这些积重难返的顽疾，让南美大陆重新焕发生机！"
 
+ #国策第一部分本地化
+ PRC_nl_ancestor_worship:"" #暂放，似乎存在改名情况
+ PRC_nl_ancestor_worship_desc:"" #同上
+ PRC_nl_martial_law_reconstruction: "重建期戒严"
+ PRC_nl_martial_law_reconstruction_desc: "硝烟散尽，但是战争并没有结束。无数的伪军、帝国主义者的鹰犬、反动会道门裹挟着不明真相的群众向我们从四面八方发起进攻。我们需要迅速地采取雷霆措施，恢复台湾当地的秩序，尽管说一些人会对此表示异议，但倘若我们连一个稳定的社会都无法提供给宝岛的同胞，我们又谈什么解放呢？"
+ PRC_nl_industry_integration_with_mainland:"" #暂放，似乎存在改名情况
+ PRC_nl_industry_integration_with_mainland_desc:"" #同上
+ PRC_nl_public_trial_separatists: "公审分裂分子"
+ PRC_nl_public_trial_separatists_desc: "分裂分子之所以令人感到厌恶和唾弃，真的只是因为他们从帝国主义者那边接受援助，然后不断地跳脚吗？不，他们最令人厌恶的地方就在于这帮人为了自己的阴谋，不惜生硬地将中华民族的人民从中华民族这个大家庭当中分离，打着所谓独立的旗号，却实际转头将土地又卖给外国人，让中华民族骨肉离散。这是最为罪恶且不可容忍的行为，我们必须要向大众昭示这一点。"
+ PRC_nl_cross_strait_family:"" #暂放，似乎存在改名情况
+ PRC_nl_cross_strait_family_desc:"" #同上
+ PRC_nl_red_wave_surge: "赤色浪潮在奔涌"
+ PRC_nl_red_wave_surge_desc: "如果说有什么东西让我们如鲠在喉，阻碍了中国人民大踏步迈向未来，那一定是我们还没有真正意义上地实现祖国的完全统一。而现在天下归一，中国人民终于得到了打开未来之门的钥匙。我们要高高地举起自己的旗帜，发起迈向未来的新长征。而世界人民倘若还没丧失勇气，他们将会从我们的征程中受益良多。"
+
  PRC_export_revolution: "重燃世界革命烽火"
  #决议——外交
  PRC_contact_mynamar_comrades: "@BRM 联系缅甸同志"
