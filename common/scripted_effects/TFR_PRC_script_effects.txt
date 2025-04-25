@@ -7,3 +7,25 @@ PRC_wofo_MON = {
 		max = 100
 	}
 }
+change_economy_type_automation_socialism = {
+	custom_effect_tooltip = change_economy_type_auto_socialism_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_automation_socialism
+	}
+}
+
+change_economy_type_automation_communism = {
+	custom_effect_tooltip = change_economy_type_auto_communism_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_automation_communism
+	}
+}
+
+change_welfare_type_communism = {
+	custom_effect_tooltip = rich_communism_tt
+	hidden_effect = {
+		add_ideas = communist_great_rich
+	}
+}
