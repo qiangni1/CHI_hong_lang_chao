@@ -5197,7 +5197,315 @@ ideas = {
 			modifier = {
 
 			}
+		}	
+		PRC_communist_party_of_china_dummy1 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				drift_defence_factor = -0.1
+				totalitarian_socialist_drift = 0.01
+				communist_drift = 0.02
+				libertarian_socialist_drift = 0.02
+				social_democrat_drift = 0.01
+			}
 		}		
+
+		#	国策先完成 马克思理论建设高潮 再完成 唤醒政治热潮 额外效果
+		PRC_communist_party_of_china_dummy2 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.05
+			}
+		}		
+
+		#	决议 - 同老左派和解 - 效果
+		PRC_communist_party_of_china_dummy3 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.03
+				totalitarian_socialist_drift = 0.02
+				industrial_capacity_factory = 0.04
+				personal_expense_factor = -0.1
+				farming_development_monthly = 0.003
+			}
+		}		
+		#	决议 - 同新左派合作 = 效果
+		PRC_communist_party_of_china_dummy4 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.03
+				social_democrat_drift = 0.02
+				business_value_factor = 0.04
+				personal_value_factor = 0.04
+				production_speed_industrial_complex_factor = 0.05
+				society_development_monthly = 0.003
+			}
+		}		
+		#	决议 - 自我批评 - CPC额外效果
+		PRC_communist_party_of_china_dummy5 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.02
+			}
+		}		
+		#国策 - 敢把皇帝拉下马 -效果
+		PRC_communist_party_of_china_dummy6 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.07
+				stability_weekly = 0.001
+				personal_expense_factor = -0.05
+				expense_growth_factor = -0.075
+			}
+		}	
+		#	国策 - 人民与党并肩而行	- 效果
+		PRC_communist_party_of_china_dummy7 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.03
+				stability_weekly = 0.001
+			}
+		}		
+		#	国策 - 党内民主化 -效果
+		PRC_communist_party_of_china_dummy8 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = 0.1
+				drift_defence_factor = -0.1
+			}
+		}		
+		#	国策 - 从群众中来，到群众中去 - 效果
+		PRC_communist_party_of_china_dummy9 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.025
+				production_factory_max_efficiency_factor = 0.025
+			}
+		}		
+
+		#	国策 -  马克思理论再建构 - 效果
+		PRC_communist_party_of_china_dummy10 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.07
+				stability_factor = 0.03
+				drift_defence_factor = 0.05
+				business_value_factor = -0.05
+			}
+		}		
+
+		#	国策 -  新社会主义理论实践 - 效果
+		PRC_communist_party_of_china_dummy11 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.03
+				personal_expense_factor = 0.1
+				industrial_development_monthly = 0.003
+				farming_development_monthly = 0.003
+				poverty_development_monthly = 0.003
+			}
+		}		
+		
+		#	国策 -  马克思思想放光芒 - 效果
+		PRC_communist_party_of_china_dummy12 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.075
+				research_speed_factor = 0.05
+			}
+		}		
+
+		#	国策 -   历史经验总结 - 效果
+		PRC_communist_party_of_china_dummy13 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.025
+				drift_defence_factor = 0.05
+				communist_drift = 0.01
+			}
+		}		
+		#	国策 -   回顾前三十年 - 效果
+		PRC_communist_party_of_china_dummy14 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.075
+				research_speed_factor = 0.025
+				industrial_capacity_factory = 0.03
+				personal_value_factor = 0.05
+				totalitarian_socialist_drift = 0.01
+			}
+		}		
+
 		PRC_communist_angang_xianfa = {
 			 name = PRC_angang_xianfa
 			 picture = PRC_socialist_dream_idea
