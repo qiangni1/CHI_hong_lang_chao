@@ -33,7 +33,7 @@ PRC_socialist_culture_dynamic = {
 }
 
 PRC_party_rectification_campaign_dynamic = {
-	icon = GFX_idea_PRC_mao_zedong
+	icon = GFX_idea_CCW_cpc_clique_idea
 
 	enable = {
 		always = yes
