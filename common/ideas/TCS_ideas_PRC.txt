@@ -1014,7 +1014,7 @@ ideas = {
 		}
 
 		PRC_road_to_people_democracy1 = {
-			picture = generic_covid
+			picture = PRC_peoples_democracy
 			allowed = {
 				always = no
 			}
@@ -1035,7 +1035,7 @@ ideas = {
 		}
 
 		PRC_road_to_people_democracy2 = {
-			picture = generic_covid
+			picture = PRC_peoples_democracy
 			allowed = {
 				always = no
 			}
@@ -1059,7 +1059,7 @@ ideas = {
 		}
 
 		PRC_road_to_people_democracy3 = {
-			picture = generic_covid
+			picture = PRC_peoples_democracy
 			allowed = {
 				always = no
 			}
@@ -1084,7 +1084,7 @@ ideas = {
 		}
 
 		PRC_road_to_people_democracy4 = {
-			picture = generic_covid
+			picture = PRC_peoples_democracy
 			allowed = {
 				always = no
 			}
@@ -1111,7 +1111,7 @@ ideas = {
 
 
 		PRC_Culture_Reboot = {
-			picture = generic_covid
+			picture = PRC_infinity_of_thought
 			allowed = {
 				always = no
 			}
@@ -1148,7 +1148,7 @@ ideas = {
 		}
 
 		PRC_offing_bad_trend = {
-			picture = generic_covid
+			picture = PRC_single_party_dictatorship
 			allowed = {
 				always = no
 			}
@@ -1165,7 +1165,7 @@ ideas = {
 		}
 
 		PRC_cadre_revolutionization_idea = {
-			picture = generic_covid
+			picture = PRC_vanguard_of_communism_idea
 			allowed = {
 				always = no
 			}
@@ -1184,7 +1184,7 @@ ideas = {
 		}
 
 		PRC_teacher_the_gardener_idea = {
-			picture = generic_covid
+			picture = PRC_socialist_chinese_dream
 			allowed = {
 				always = no
 			}
