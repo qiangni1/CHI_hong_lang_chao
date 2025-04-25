@@ -27,6 +27,8 @@ disable_guarantee = {
 	}
 }
 
+
+
 #Politics
 vacate_political_ministers = {
 	custom_effect_tooltip = vacate_political_ministers_tooltip
@@ -2396,6 +2398,32 @@ update_economy = {
 			value = 2
 		}
 	}
+	else_if = {
+		#Flat
+		limit = {
+			check_variable = {
+				var = inflation_var
+				value = 0
+				compare = equals
+			}
+		}
+		set_variable = {
+			var = inflation_production_factory_max_efficiency_factor_dynamic_var
+			value = inflation_var
+		}
+		multiply_variable = {
+			var = inflation_production_factory_max_efficiency_factor_dynamic_var
+			value = 1
+		}
+		set_variable = {
+			var = inflation_production_speed_buildings_factor_dynamic_var
+			value = inflation_var
+		}
+		multiply_variable = {
+			var = inflation_production_speed_buildings_factor_dynamic_var
+			value = 0.5
+		}
+	}
 }
 
 update_power_plants_effect = {
@@ -4079,6 +4107,15 @@ increase_immigration = {
 decrease_immigration = {
 	if = {
 		limit = {
+			has_idea = lower_immigration
+		}
+		swap_ideas = {
+			remove_idea = lower_immigration
+			add_idea = FAF_involuntary_repatriation_law
+		}
+	}
+	if = {
+		limit = {
 			has_idea = low_immigration
 		}
 		swap_ideas = {
@@ -4289,6 +4326,15 @@ increase_police = {
 increase_training = {
 	if = {
 		limit = {
+			has_idea = higher_training
+		}
+		swap_ideas = {
+			remove_idea = higher_training
+			add_idea = highest_training
+		}
+	}
+	if = {
+		limit = {
 			has_idea = high_training
 		}
 		swap_ideas = {
@@ -4326,6 +4372,15 @@ increase_training = {
 }
 
 decrease_training = {
+	if = {
+		limit = {
+			has_idea = highest_training
+		}
+		swap_ideas = {
+			remove_idea = highest_training
+			add_idea = higher_training
+		}
+	}
 	if = {
 		limit = {
 			has_idea = higher_training
@@ -4501,6 +4556,14 @@ remove_economy_types = {
 		ZZZ_chaostic_economy
 		ZZZ_minarchism
 		ZZZ_ancap
+		ZZZ_state_capitalism
+		ZZZ_kaiser_economy
+		ZZZ_maga_capitalism
+		ZZZ_america_first_capitalism
+		ZZZ_mixed_economy
+		ZZZ_party_state_capitalism
+		ZZZ_left_corporatism
+		ZZZ_liberal_corporatism
 	}
 }
 change_economy_type_capitalism = {
@@ -4619,6 +4682,277 @@ change_economy_type_ancap = {
 	hidden_effect = {
 		remove_economy_types = yes
 		add_ideas = ZZZ_ancap
+	}
+}
+
+change_economy_type_state_capitalism = {
+	custom_effect_tooltip = change_economy_type_state_capitalism_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_state_capitalism
+	}
+}
+
+change_economy_type_mixed_economy = {
+	custom_effect_tooltip = change_economy_type_mixed_economy_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_mixed_economy
+	}
+}
+
+change_economy_type_party_state_capitalism = {
+	custom_effect_tooltip = change_economy_type_party_state_capitalism_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_party_state_capitalism
+	}
+}
+
+change_economy_type_left_corporatism = {
+	custom_effect_tooltip = change_economy_type_left_corporatism_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_left_corporatism
+	}
+}
+
+change_economy_type_left_corporatism = {
+	custom_effect_tooltip = change_economy_type_liberal_corporatism_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_liberal_corporatism
+	}
+}
+
+change_economy_type_kaiser_economy = {
+	custom_effect_tooltip = change_economy_type_kaiser_economy_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_kaiser_economy
+	}
+}
+
+change_economy_type_america_first_capitalism = {
+	custom_effect_tooltip = change_economy_type_america_first_capitalism_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_america_first_capitalism
+	}
+}
+
+change_economy_type_maga_capitalism = {
+	custom_effect_tooltip = change_economy_type_maga_capitalism_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_maga_capitalism
+	}
+}
+
+#Government Types Change
+
+remove_gov_types = {
+	remove_ideas = {
+		ZZZ_russian_political_system
+		ZZZ_chinese_political_system
+		ZZZ_proleteriat_dictatorship
+		ZZZ_absolute_monarchy
+		ZZZ_military_dictatorship
+		ZZZ_socialist_republic
+		ZZZ_semi_constitutional_monarchy
+		ZZZ_constitutional_monarchy
+		ZZZ_neo_soviet_republic
+		ZZZ_nazi_dictatorship
+		ZZZ_fascist_dictatorship
+		ZZZ_revolutionary_front
+		ZZZ_communist_party_state
+		ZZZ_semi_presidential_system
+		ZZZ_parliamentary_republic
+		ZZZ_presidential_republic
+		ZZZ_presidential_dictatorship
+		ZZZ_ultranationalist_dictatorship
+		ZZZ_islamic_republic
+		ZZZ_american_presidential_republic
+		ZZZ_provisional_government
+		ZZZ_eurasianist_system
+		ZZZ_american_peoples_dictatorship
+		ZZZ_annihilation_cult
+	}
+}
+
+change_government_type_proleteriat_dictatorship = {
+	custom_effect_tooltip = change_gov_proleteriat_dictatorship_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_proleteriat_dictatorship
+	}
+}
+
+change_government_type_presidential_republic = {
+	custom_effect_tooltip = change_gov_type_presidential_republic_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_presidential_republic
+	}
+}
+
+change_government_type_presidential_dictatorship = {
+	custom_effect_tooltip = change_gov_type_presidential_dictatorship_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_presidential_dictatorship
+	}
+}
+
+change_government_type_islamic_republic = {
+	custom_effect_tooltip = change_gov_type_islamic_republic_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_islamic_republic
+	}
+}
+
+change_government_type_eurasianist_system = {
+	custom_effect_tooltip = change_gov_type_eurasianist_system_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_eurasianist_system
+	}
+}
+
+change_government_type_ultranationalist_dictatorship = {
+	custom_effect_tooltip = change_gov_type_ultranationalist_dictatorship_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_ultranationalist_dictatorship
+	}
+}
+
+change_government_type_absolute_monarchy = {
+	custom_effect_tooltip = change_gov_type_absolute_monarchy_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_absolute_monarchy
+	}
+}
+
+change_government_type_military_dictatorship = {
+	custom_effect_tooltip = change_gov_type_military_dictatorship_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_military_dictatorship
+	}
+}
+
+change_government_type_socialist_republic = {
+	custom_effect_tooltip = change_gov_type_socialist_republic_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_socialist_republic
+	}
+}
+
+change_government_type_semi_constitutional_monarchy = {
+	custom_effect_tooltip = change_gov_type_semi_constitutional_monarchy_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_semi_constitutional_monarchy
+	}
+}
+
+change_government_type_constitutional_monarchy = {
+	custom_effect_tooltip = change_gov_type_constitutional_monarchy_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_constitutional_monarchy
+	}
+}
+
+change_government_type_neo_soviet_republic = {
+	custom_effect_tooltip = change_gov_type_neo_soviet_republic_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_neo_soviet_republic
+	}
+}
+
+change_government_type_american_peoples_dictatorship = {
+	custom_effect_tooltip = change_gov_type_american_peoples_dictatorship_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_american_peoples_dictatorship
+	}
+}
+
+change_government_type_nazi_dictatorship = {
+	custom_effect_tooltip = change_gov_type_nazi_dictatorship_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_nazi_dictatorship
+	}
+}
+
+change_government_type_fascist_dictatorship = {
+	custom_effect_tooltip = change_gov_type_fascist_dictatorship_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_fascist_dictatorship
+	}
+}
+
+change_government_type_communist_party_state = {
+	custom_effect_tooltip = change_gov_type_communist_party_state_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_communist_party_state
+	}
+}
+
+change_government_type_revolutionary_front = {
+	custom_effect_tooltip = change_gov_type_revolutionary_front_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_revolutionary_front
+	}
+}
+
+change_government_type_semi_presidential_system = {
+	custom_effect_tooltip = change_gov_type_semi_presidential_system_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_semi_presidential_system
+	}
+}
+
+change_government_type_parliamentary_republic = {
+	custom_effect_tooltip = change_gov_type_parliamentary_republic_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_parliamentary_republic
+	}
+}
+
+change_government_type_provisional_government = {
+	custom_effect_tooltip = change_gov_type_provisional_government_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_provisional_government
+	}
+}
+
+change_government_type_theocracy = {
+	custom_effect_tooltip = change_gov_type_theocracy_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_theocracy
+	}
+}
+
+change_government_type_ai_governance = {
+	custom_effect_tooltip = change_gov_type_ai_governance_tt
+	hidden_effect = {
+		remove_gov_types = yes
+		add_ideas = ZZZ_ai_governance
 	}
 }
 
@@ -4935,7 +5269,7 @@ focus_unlock = {
 }
 
 disband_units_fraction = {
-	SAX = {
+	POL = {
 		set_temp_variable = {
 			old_manpower = manpower_k
 		}
@@ -4953,21 +5287,21 @@ disband_units_fraction = {
 			save_event_target_as = disband_state_owner
 		}
 		save_event_target_as = disband_state
-		SAX = {
+		POL = {
 			set_state_owner = PREV
 		}
 	}
 	transfer_units_fraction = {
-		target = SAX
+		target = POL
 		size = 0
 		army_ratio = var:disband_fraction
 		keep_unit_leaders_trigger = {
 			always = yes
 		}
 	}
-	SAX = {
+	POL = {
 		every_state = {
-			SAX = {
+			POL = {
 				delete_unit = {
 					state = PREV
 					disband = yes
@@ -5020,7 +5354,7 @@ disband_units_fraction = {
 		}
 	}
 	annex_country = {
-		target = SAX
+		target = POL
 	}
 }
 
@@ -5803,54 +6137,46 @@ gain_random_agency_upgrade = {
 					upgrade_intelligence_agency = upgrade_collection
 					modifier = {
 						factor = 0
-						OR = {
-							NOT = {
-								has_done_agency_upgrade = upgrade_planning_and_direction
-							}
-							has_done_agency_upgrade = upgrade_collection
+						NOT = {
+							has_done_agency_upgrade = upgrade_planning_and_direction
 						}
+						has_done_agency_upgrade = upgrade_collection
 					}
 				}
 				1 = {
 					upgrade_intelligence_agency = upgrade_processing_and_exploitation
 					modifier = {
 						factor = 0
-						OR = {
-							NOT = {
-								has_done_agency_upgrade = upgrade_planning_and_direction
-								has_done_agency_upgrade = upgrade_collection
-							}
-							has_done_agency_upgrade = upgrade_processing_and_exploitation
+						NOT = {
+							has_done_agency_upgrade = upgrade_planning_and_direction
+							has_done_agency_upgrade = upgrade_collection
 						}
+						has_done_agency_upgrade = upgrade_processing_and_exploitation
 					}
 				}
 				1 = {
 					upgrade_intelligence_agency = upgrade_analysis
 					modifier = {
 						factor = 0
-						OR = {
-							NOT = {
-								has_done_agency_upgrade = upgrade_planning_and_direction
-								has_done_agency_upgrade = upgrade_collection
-								has_done_agency_upgrade = upgrade_processing_and_exploitation
-							}
-							has_done_agency_upgrade = upgrade_analysis
+						NOT = {
+							has_done_agency_upgrade = upgrade_planning_and_direction
+							has_done_agency_upgrade = upgrade_collection
+							has_done_agency_upgrade = upgrade_processing_and_exploitation
 						}
+						has_done_agency_upgrade = upgrade_analysis
 					}
 				}
 				1 = {
 					upgrade_intelligence_agency = upgrade_dissemination
 					modifier = {
 						factor = 0
-						OR = {
-							NOT = {
-								has_done_agency_upgrade = upgrade_planning_and_direction
-								has_done_agency_upgrade = upgrade_collection
-								has_done_agency_upgrade = upgrade_processing_and_exploitation
-								has_done_agency_upgrade = upgrade_analysis
-							}
-							has_done_agency_upgrade = upgrade_dissemination
+						NOT = {
+							has_done_agency_upgrade = upgrade_planning_and_direction
+							has_done_agency_upgrade = upgrade_collection
+							has_done_agency_upgrade = upgrade_processing_and_exploitation
+							has_done_agency_upgrade = upgrade_analysis
 						}
+						has_done_agency_upgrade = upgrade_dissemination
 					}
 				}
 				1 = {
@@ -5930,13 +6256,11 @@ gain_random_agency_upgrade = {
 					upgrade_intelligence_agency = upgrade_comint
 					modifier = {
 						factor = 0
-						OR = {
-							has_done_agency_upgrade = upgrade_comint
-							NOT = {
-								has_done_agency_upgrade = upgrade_sigint
-								has_done_agency_upgrade = upgrade_humint
-								has_done_agency_upgrade = upgrade_elint
-							}
+						has_done_agency_upgrade = upgrade_comint
+						NOT = {
+							has_done_agency_upgrade = upgrade_sigint
+							has_done_agency_upgrade = upgrade_humint
+							has_done_agency_upgrade = upgrade_elint
 						}
 					}
 				}
@@ -5944,15 +6268,13 @@ gain_random_agency_upgrade = {
 					upgrade_intelligence_agency = upgrade_advanced_cryptoanalytical_attack_models
 					modifier = {
 						factor = 0
-						OR = {
-							has_done_agency_upgrade = upgrade_advanced_cryptoanalytical_attack_models
-							NOT = {
-								has_done_agency_upgrade = upgrade_sigint
-								has_done_agency_upgrade = upgrade_elint
-								OR = {
-									has_tech = petascale_computing
-									has_tech = early_quantum_computing
-								}
+						has_done_agency_upgrade = upgrade_advanced_cryptoanalytical_attack_models
+						NOT = {
+							has_done_agency_upgrade = upgrade_sigint
+							has_done_agency_upgrade = upgrade_elint
+							OR = {
+								has_tech = petascale_computing
+								has_tech = early_quantum_computing
 							}
 						}
 					}
@@ -5961,15 +6283,13 @@ gain_random_agency_upgrade = {
 					upgrade_intelligence_agency = upgrade_cryptosystem_algorithm_upgrade
 					modifier = {
 						factor = 0
-						OR = {
-							has_done_agency_upgrade = upgrade_cryptosystem_algorithm_upgrade
-							NOT = {
-								has_done_agency_upgrade = upgrade_sigint
-								has_done_agency_upgrade = upgrade_elint
-								OR = {
-									has_tech = petascale_computing
-									has_tech = early_quantum_computing
-								}
+						has_done_agency_upgrade = upgrade_cryptosystem_algorithm_upgrade
+						NOT = {
+							has_done_agency_upgrade = upgrade_sigint
+							has_done_agency_upgrade = upgrade_elint
+							OR = {
+								has_tech = petascale_computing
+								has_tech = early_quantum_computing
 							}
 						}
 					}
@@ -5978,15 +6298,13 @@ gain_random_agency_upgrade = {
 					upgrade_intelligence_agency = upgrade_quantum_cryptography
 					modifier = {
 						factor = 0
-						OR = {
-							has_done_agency_upgrade = upgrade_quantum_cryptography
-							NOT = {
-								has_done_agency_upgrade = upgrade_advanced_cryptoanalytical_attack_models
-								has_done_agency_upgrade = upgrade_cryptosystem_algorithm_upgrade
-								OR = {
-									has_tech = modern_supercomputers
-									has_tech = quantum_supremacy
-								}
+						has_done_agency_upgrade = upgrade_quantum_cryptography
+						NOT = {
+							has_done_agency_upgrade = upgrade_advanced_cryptoanalytical_attack_models
+							has_done_agency_upgrade = upgrade_cryptosystem_algorithm_upgrade
+							OR = {
+								has_tech = modern_supercomputers
+								has_tech = quantum_supremacy
 							}
 						}
 					}
@@ -6664,43 +6982,43 @@ find_biggest_national_socialist = {
 # The idea is that you can use these effects to store the party popularities (and, if desired, the ruling party) when puppeting or possibly when starting civil wars, and then use the "restore" effects to reset it after the puppeting has happened, so that you don't have to use the overlord's ideology if you don't want to. 
 get_current_ideology_popularities = {
 	set_variable = {
-		ROOT.totalitarian_socialist_support_before_change = ROOT.party_popularity_100@totalitarian_socialist
+		THIS.totalitarian_socialist_support_before_change = THIS.party_popularity_100@totalitarian_socialist
 	}
 	set_variable = {
-		ROOT.communist_support_before_change = ROOT.party_popularity_100@communist
+		THIS.communist_support_before_change = THIS.party_popularity_100@communist
 	}
 	set_variable = {
-		ROOT.libertarian_socialist_support_before_change = ROOT.party_popularity_100@libertarian_socialist
+		THIS.libertarian_socialist_support_before_change = THIS.party_popularity_100@libertarian_socialist
 	}
 	set_variable = {
-		ROOT.social_democrat_support_before_change = ROOT.party_popularity_100@social_democrat
+		THIS.social_democrat_support_before_change = THIS.party_popularity_100@social_democrat
 	}
 	set_variable = {
-		ROOT.social_liberal_support_before_change = ROOT.party_popularity_100@social_liberal
+		THIS.social_liberal_support_before_change = THIS.party_popularity_100@social_liberal
 	}
 	set_variable = {
-		ROOT.market_liberal_support_before_change = ROOT.party_popularity_100@market_liberal
+		THIS.market_liberal_support_before_change = THIS.party_popularity_100@market_liberal
 	}
 	set_variable = {
-		ROOT.conservative_support_before_change = ROOT.party_popularity_100@conservative
+		THIS.conservative_support_before_change = THIS.party_popularity_100@conservative
 	}
 	set_variable = {
-		ROOT.authoritarian_democrat_support_before_change = ROOT.party_popularity_100@authoritarian_democrat
+		THIS.authoritarian_democrat_support_before_change = THIS.party_popularity_100@authoritarian_democrat
 	}
 	set_variable = {
-		ROOT.nationalist_support_before_change = ROOT.party_popularity_100@nationalist
+		THIS.nationalist_support_before_change = THIS.party_popularity_100@nationalist
 	}
 	set_variable = {
-		ROOT.fascist_support_before_change = ROOT.party_popularity_100@fascist
+		THIS.fascist_support_before_change = THIS.party_popularity_100@fascist
 	}
 	set_variable = {
-		ROOT.national_socialist_support_before_change = ROOT.party_popularity_100@national_socialist
+		THIS.national_socialist_support_before_change = THIS.party_popularity_100@national_socialist
 	}
 }
 
 get_current_ruling_party = {
 	set_variable = {
-		ROOT.ruling_ideology_before_change = ROOT.current_party_ideology_group
+		THIS.ruling_ideology_before_change = THIS.current_party_ideology_group
 	}
 }
 
@@ -6708,36 +7026,36 @@ restore_ideology_popularities = {
 	hidden_effect = {
 		# Reset popluarities to what they were before puppeting 
 		set_popularities = {
-			totalitarian_socialist = ROOT.totalitarian_socialist_support_before_change
-			communist = ROOT.communist_support_before_change
-			libertarian_socialist = ROOT.libertarian_socialist_support_before_change
-			social_democrat = ROOT.social_democrat_support_before_change
-			social_liberal = ROOT.social_liberal_support_before_change
-			market_liberal = ROOT.market_liberal_support_before_change
-			conservative = ROOT.conservative_support_before_change
-			authoritarian_democrat = ROOT.authoritarian_democrat_support_before_change
-			nationalist = ROOT.nationalist_support_before_change
-			fascist = ROOT.fascist_support_before_change
-			national_socialist = ROOT.national_socialist_support_before_change
+			totalitarian_socialist = THIS.totalitarian_socialist_support_before_change
+			communist = THIS.communist_support_before_change
+			libertarian_socialist = THIS.libertarian_socialist_support_before_change
+			social_democrat = THIS.social_democrat_support_before_change
+			social_liberal = THIS.social_liberal_support_before_change
+			market_liberal = THIS.market_liberal_support_before_change
+			conservative = THIS.conservative_support_before_change
+			authoritarian_democrat = THIS.authoritarian_democrat_support_before_change
+			nationalist = THIS.nationalist_support_before_change
+			fascist = THIS.fascist_support_before_change
+			national_socialist = THIS.national_socialist_support_before_change
 		}
-		clear_variable = ROOT.totalitarian_socialist_support_before_change
-		clear_variable = ROOT.communist_support_before_change
-		clear_variable = ROOT.libertarian_socialist_support_before_change
-		clear_variable = ROOT.social_democrat_support_before_change
-		clear_variable = ROOT.social_liberal_support_before_change
-		clear_variable = ROOT.market_liberal_support_before_change
-		clear_variable = ROOT.conservative_support_before_change
-		clear_variable = ROOT.authoritarian_democrat_support_before_change
-		clear_variable = ROOT.nationalist_support_before_change
-		clear_variable = ROOT.fascist_support_before_change
-		clear_variable = ROOT.national_socialist_support_before_change
+		clear_variable = THIS.totalitarian_socialist_support_before_change
+		clear_variable = THIS.communist_support_before_change
+		clear_variable = THIS.libertarian_socialist_support_before_change
+		clear_variable = THIS.social_democrat_support_before_change
+		clear_variable = THIS.social_liberal_support_before_change
+		clear_variable = THIS.market_liberal_support_before_change
+		clear_variable = THIS.conservative_support_before_change
+		clear_variable = THIS.authoritarian_democrat_support_before_change
+		clear_variable = THIS.nationalist_support_before_change
+		clear_variable = THIS.fascist_support_before_change
+		clear_variable = THIS.national_socialist_support_before_change
 	}
 }
 
 restore_ruling_party = {
-	ROOT = {
+	THIS = {
 		set_politics = {
-			ruling_party = var:ROOT.ruling_ideology_before_change
+			ruling_party = var:THIS.ruling_ideology_before_change
 		}
 	}
 }
