@@ -4466,7 +4466,7 @@ PRC_maoist_politburo_cat = {
 			tag = PRC
 		}
 		visible = {
-			has_completed_focus = PRC_the_red_phoenix
+			has_completed_focus = PRC_nl_martial_law_reconstruction #PRC_the_red_phoenix
 		}
 		available = {
 		}
@@ -4493,7 +4493,7 @@ PRC_maoist_politburo_cat = {
 			tag = PRC
 		}
 		visible = {
-			has_completed_focus = PRC_the_red_phoenix
+			has_completed_focus = PRC_nl_martial_law_reconstruction #PRC_the_red_phoenix
 		}
 		available = {
 		}
@@ -4520,7 +4520,7 @@ PRC_maoist_politburo_cat = {
 			tag = PRC
 		}
 		visible = {
-			has_completed_focus = PRC_the_red_phoenix
+			has_completed_focus = PRC_nl_martial_law_reconstruction #PRC_the_red_phoenix
 		}
 		available = {
 		}
@@ -4547,7 +4547,7 @@ PRC_maoist_politburo_cat = {
 			tag = PRC
 		}
 		visible = {
-			has_completed_focus = PRC_the_red_phoenix
+			has_completed_focus = PRC_nl_martial_law_reconstruction #PRC_the_red_phoenix
 		}
 		available = {
 		}
@@ -4574,7 +4574,7 @@ PRC_maoist_politburo_cat = {
 			tag = PRC
 		}
 		visible = {
-			has_completed_focus = PRC_the_red_phoenix
+			has_completed_focus = PRC_nl_martial_law_reconstruction #PRC_the_red_phoenix
 		}
 		available = {
 			1150 = {
