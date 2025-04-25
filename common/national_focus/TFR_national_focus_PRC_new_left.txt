@@ -1900,7 +1900,7 @@ focus_tree = {
 		relative_position_id = PRC_nl_political_awakening
 
 	}
-	focus = {
+		focus = {
 		id = PRC_nl_social_reeducation
 		icon = GFX_goal_unknown
 		cost = 0.00
@@ -2363,6 +2363,7 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_nobody_shall_be_left
 		}
 	}
+
 	focus = {
 		id = PRC_nl_proletarian_art_festival
 		icon = GFX_goal_unknown
@@ -2396,58 +2397,228 @@ focus_tree = {
 
 	}
 
-	focus = {
+		focus = {
 		id = PRC_nl_new_socialist_theory_practice
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2.00
 		prerequisite = {
 			focus = PRC_nl_marxist_theory_peak
 		}
 		x = -1
 		y = 1
 		relative_position_id = PRC_nl_marxist_theory_peak
+		completion_reward = {
+			add_political_power = 50
+			add_to_variable = {
+				PRC_cpc_industrial_capacity_factory_dynamic_var = 0.03
+			}
+			add_to_variable = {
+				PRC_cpc_personal_expense_factor_dynamic_var = 0.1
+			}
+			add_to_variable = {
+				PRC_cpc_industrial_development_monthly_dynamic_var = 0.003
+			}
+			add_to_variable = {
+				PRC_cpc_agriculture_development_monthly_dynamic_var = 0.003
+			}
+			add_to_variable = {
+				PRC_cpc_poverty_development_monthly_dynamic_var = 0.003
+			}
+			add_to_variable = {
+				PPRC_pp_var = -0.02
+			}
+			add_to_variable = {
+				PPRC_st_var = 0.02
+			}
+			add_to_variable = {
+				PPRC_ws_var = 0.02
+			}
+			add_to_variable = {
+				PPRC_factory_output_var = 0.04
+			}
+			add_to_variable = {
+				PPRC_start_efficiency_var = 0.125
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy11
+				}
+				swap_ideas = {
+					remove_idea = PRC_party_rectification_campaign_empty
+					add_idea = PRC_party_rectification_campaign20
+				}
+			}
+			custom_effect_tooltip = Two_mutually_exclusive_decision
+			unlock_decision_tooltip = PRC_absorb_the_outer
+			unlock_decision_tooltip = PRC_power_to_people
+		}
 
 	}
+	#马克思思想放光芒
 	focus = {
 		id = PRC_nl_marxist_glory
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_new_socialist_theory_practice
 		}
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_new_socialist_theory_practice
+		completion_reward = {
+			add_political_power = 50
+			add_to_variable = {
+				PRC_cpc_stability_factor_dynamic_var = -0.075
+			}
+			add_to_variable = {
+				PRC_cpc_political_power_gain_dynamic_var = 0.1
+			}
+			add_to_variable = {
+				PRC_cpc_research_speed_factor_dynamic_var = 0.05
+			}
+			add_to_variable = {
+				PPRC_pp_var = -0.02
+			}
+			add_to_variable = {
+				PPRC_academic_dev_var = 0.002
+			}
+			add_to_variable = {
+				PPRC_ls_drift_var = 0.02
+			}
+			add_to_variable = {
+				PPRC_ad_drift_var = -0.02
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy12
+				}
+				swap_ideas = {
+					remove_idea = PRC_party_rectification_campaign_empty
+					add_idea = PRC_party_rectification_campaign23
+				}
+			}
+			add_days_mission_timeout = {
+				mission = PRC_damage_from_reactionary_mission
+				days = 21
+			}
 
+		}
 	}
+	#历史经验总结
 	focus = {
 		id = PRC_nl_historical_experience_summary
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2.00
 		prerequisite = {
 			focus = PRC_nl_marxist_theory_peak
 		}
 		x = 1
 		y = 1
 		relative_position_id = PRC_nl_marxist_theory_peak
-
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+			add_to_variable = {
+				PRC_cpc_stability_factor_dynamic_var = 0.025
+			}
+			add_to_variable = {
+				PRC_cpc_drift_defence_factor_dynamic_var = 0.05
+			}
+			add_to_variable = {
+				PRC_cpc_communist_drift_dynamic_var = 0.01
+			}
+			add_to_variable = {
+				PPRC_st_var = 0.05
+			}
+			add_to_variable = {
+				PPRC_factory_output_var = 0.03
+			}
+			add_to_variable = {
+				PPRC_max_efficiency_var = 0.04
+			}
+			add_to_variable = {
+				PPRC_ad_drift_var = -0.02
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy13
+				}
+				swap_ideas = {
+					remove_idea = PRC_party_rectification_campaign_empty
+					add_idea = PRC_party_rectification_campaign24
+				}
+			}
+		}
 	}
 	focus = {
 		id = PRC_nl_redefining_first_thirty_years
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2.00
 		prerequisite = {
 			focus = PRC_nl_historical_experience_summary
 		}
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_historical_experience_summary
-
+		completion_reward = {
+			add_political_power = -100
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.05
+			}
+			add_to_variable = {
+				PRC_cpc_stability_factor_dynamic_var = -0.075
+			}
+			add_to_variable = {
+				PRC_cpc_research_speed_factor_dynamic_var = 0.025
+			}
+			add_to_variable = {
+				PRC_cpc_industrial_capacity_factory_dynamic_var = 0.03
+			}
+			add_to_variable = {
+				PRC_cpc_personal_value_factor_dynamic_var = 0.05
+			}
+			add_to_variable = {
+				PRC_cpc_totalitarian_socialist_drift_dynamic_var = 0.01
+			}
+			add_to_variable = {
+				PPRC_pp_var = -0.02
+			}
+			add_to_variable = {
+				PPRC_st_var = -0.05
+			}
+			add_to_variable = {
+				PPRC_personal_value_var = 0.05
+			}
+			add_to_variable = {
+				PPRC_society_dev_var = 0.002
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy14
+				}
+				swap_ideas = {
+					remove_idea = PRC_party_rectification_campaign_empty
+					add_idea = PRC_party_rectification_campaign25
+				}
+			}
+			custom_effect_tooltip = Two_mutually_exclusive_decision1
+			unlock_decision_tooltip = PRC_CR_30_good_70_bad
+			unlock_decision_tooltip = PRC_CR_60_good_40_bad
+		}
 	}
+	#	红旗永不落
 	focus = {
 		id = PRC_nl_red_flag_never_falls
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_redefining_first_thirty_years
 		}
@@ -2457,8 +2628,45 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = PRC_nl_marxist_theory_peak
-
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = social_liberal
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = market_liberal
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = nationalist
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = fascist
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = national_socialist
+				popularity = -0.1
+			}
+			improve_people_democracy = yes
+			add_days_mission_timeout = {
+				mission = PRC_damage_from_reactionary_mission
+				days = 15
+			}
+			add_ideas = PRC_red_flag_prevails
+		}
 	}
+
 	focus = {
 		id = PRC_nl_road_to_future
 		icon = GFX_goal_unknown
@@ -2659,70 +2867,228 @@ focus_tree = {
 		relative_position_id = PRC_nl_dawn_project
 
 	}
+		#干部革命化
 	focus = {
 		id = PRC_nl_cadre_revolutionization
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_clean_house
+		}
+		select_effect = {
+			add_ideas = PRC_cadre_revolutionization_idea
 		}
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_clean_house
-
+		completion_reward = {
+			hidden_effect = {
+				remove_ideas = PRC_cadre_revolutionization_idea
+			}
+			custom_effect_tooltip = FRA_focus_select_effect_tt
+			effect_tooltip = {
+				add_ideas = PRC_cadre_revolutionization_idea
+			}
+			add_days_mission_timeout = {
+				mission = PRC_damage_from_reactionary_mission
+				days = 15
+			}
+			PRC_decrease_corrupt_bureaucracy = yes
+			custom_effect_tooltip = FRA_focus_complete_effect_tt
+			add_political_power = 100
+			unlock_decision_category_tooltip = PRC_Youth_Ideological_Education
+			unlock_decision_tooltip = PRC_military_revolutionization
+			unlock_decision_tooltip = PRC_state_corporation_revolution
+			unlock_decision_tooltip = PRC_party_cadre_revolution
+		}
 	}
+	#年轻生力军
 	focus = {
 		id = PRC_nl_expand_young_forces
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2.00
 		prerequisite = {
 			focus = PRC_nl_cadre_revolutionization
 		}
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_cadre_revolutionization
-
+		completion_reward = {
+			add_political_power = 75
+			set_temp_variable = {
+				society_development_var_temp = 0.08
+			}
+			add_society_development = yes
+			add_to_variable = {
+				PRC_cpc_political_power_gain_dynamic_var = -0.02
+			}
+			add_to_variable = {
+				PRC_cpc_line_change_production_efficiency_factor_dynamic_var = -0.025
+			}
+			add_to_variable = {
+				PRC_cpc_production_factory_max_efficiency_factor_dynamic_var = 0.05
+			}
+			add_to_variable = {
+				PRC_cpc_research_speed_factor_dynamic_var = 0.05
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_party_rectification_campaign_empty
+					add_idea = PRC_party_rectification_campaign12
+				}
+			}
+			add_ideas = PRC_organic_bureaucratism_idea
+		}
 	}
+	#从群众中来，到群众中去
 	focus = {
 		id = PRC_nl_from_people_to_people
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_expand_young_forces
 		}
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_expand_young_forces
+		select_effect = {
+			add_ideas = PRC_from_people_to_people
+		}
+		completion_reward = {
+			hidden_effect = {
+				remove_ideas = PRC_from_people_to_people
+			}
+			custom_effect_tooltip = FRA_focus_select_effect_tt
+			effect_tooltip = {
+				add_ideas = PRC_from_people_to_people
+			}
+			custom_effect_tooltip = FRA_focus_complete_effect_tt
+			add_stability = 0.1
+			add_to_variable = {
+				PRC_cpc_production_factory_start_efficiency_factor_dynamic_var = 0.05
+			}
+			add_to_variable = {
+				PRC_cpc_line_change_production_efficiency_factor_dynamic_var = 0.025
+			}
+			add_to_variable = {
+				PRC_cpc_production_factory_max_efficiency_factor_dynamic_var = 0.025
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy9
+				}
+			}
+			add_ideas = PRC_doctrine_of_the_mass_line_idea
+			add_days_mission_timeout = {
+				mission = PRC_damage_from_reactionary_mission
+				days = 15
+			}
 
+		}
 	}
+	#党内民主化
 	focus = {
 		id = PRC_nl_party_internal_democratization
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_political_awakening
 		}
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_political_awakening
-
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.03
+			}
+			PRC_decrease_corrupt_bureaucracy = yes
+			add_to_variable = {
+				PRC_cpc_party_popularity_stability_factor_dynamic_var = 0.1
+			}
+			add_to_variable = {
+				PRC_cpc_drift_defence_factor_dynamic_var = -0.1
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy8
+				}
+			}
+			unlock_decision_tooltip = PRC_self_criticize
+		}
 	}
+	#敢把皇帝拉下马
 	focus = {
 		id = PRC_nl_dare_to_pull_down_emperor
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_party_internal_democratization
 		}
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_party_internal_democratization
-
+		completion_reward = {
+			add_political_power = 150
+			set_temp_variable = {
+				society_development_var_temp = 0.1
+			}
+			add_society_development = yes
+			add_to_variable = {
+				PRC_cpc_political_power_gain_dynamic_var = 0.07
+			}
+			add_to_variable = {
+				PRC_cpc_stability_weekly_dynamic_var = 0.001
+			}
+			add_to_variable = {
+				PRC_cpc_personal_expense_factor_dynamic_var = -0.05
+			}
+			add_to_variable = {
+				PRC_cpc_expense_growth_factor_dynamic_var = -0.075
+			}
+			add_to_variable = {
+				PPRC_pp_var = -0.05
+			}
+			add_to_variable = {
+				PPRC_st_var = -0.08
+			}
+			add_to_variable = {
+				PPRC_factory_output_var = 0.05
+			}
+			add_to_variable = {
+				PPRC_start_efficiency_var = 0.1
+			}
+			add_to_variable = {
+				PPRC_max_efficiency_var = 0.05
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy6
+				}
+				swap_ideas = {
+					remove_idea = PRC_party_rectification_campaign_empty
+					add_idea = PRC_party_rectification_campaign5
+				}
+			}
+		}
 	}
+	#重建无产阶级专政
 	focus = {
 		id = PRC_nl_rebuild_proletarian_dictatorship
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 5.00
 		prerequisite = {
 			focus = PRC_nl_from_people_to_people
 		}
@@ -2735,20 +3101,139 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = PRC_nl_from_people_to_people
-
+		completion_reward = {
+			custom_effect_tooltip = PRC_nl_rebuild_proletarian_dictatorship_tt
+			set_temp_variable_to_random = {
+				var = PRC_nl_manpower_minus
+				min = -20000
+				max = -10000
+				integer = yes
+			}
+			add_manpower = PRC_nl_manpower_minus
+			set_party_name = {
+				ideology = social_liberal
+				long_name = CPPCC_social_liberal
+				name = CPPCC_social_liberal_short
+			}
+			set_party_name = {
+				ideology = market_liberal
+				long_name = CPPCC_market_liberal
+				name = CPPCC_social_liberal_short
+			}
+			set_party_name = {
+				ideology = conservative
+				long_name = CPPCC_conservative
+				name = CPPCC_conservative_short
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = PRC_nat_social_democrat_long
+				name = PRC_nat_social_democrat_short
+			}
+			set_party_name = {
+				ideology = nationalist
+				long_name = PRC_nat_social_democrat_long
+				name = PRC_nat_social_democrat_short
+			}
+			change_government_type_proleteriat_dictatorship = yes
+			add_to_variable = {
+				PPRC_consumer_num_var = -0.06
+			}
+			add_to_variable = {
+				PPRC_pp_factor_var = 0.06
+			}
+			add_to_variable = {
+				PPRC_line_var = 0.19
+			}
+			add_to_variable = {
+				PPRC_business_value_var = -0.075
+			}
+			add_to_variable = {
+				PPRC_personal_value_var = 0.03
+			}
+			add_to_variable = {
+				PPRC_expense_factor = -0.075
+			}
+			add_to_variable = {
+				PPRC_income_var = 0.075
+			}
+			add_to_variable = {
+				PPRC_conscription_factor_var = 0.02
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_party_rectification_campaign_empty
+					add_idea = PRC_party_rectification_campaign28
+				}
+			}
+			add_ideas = PRC_communist_angang_xianfa
+			add_days_mission_timeout = {
+				mission = PRC_damage_from_reactionary_mission
+				days = 90
+			}
+			custom_effect_tooltip = Two_mutually_exclusive_decision2
+			unlock_decision_tooltip = PRC_bureaucrat_training_standard
+			unlock_decision_tooltip = PRC_second_clear_four_campaign
+		}
 	}
+	#人民与党，携手共进
 	focus = {
 		id = PRC_nl_people_walk_with_party
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2.00
 		prerequisite = {
 			focus = PRC_nl_dare_to_pull_down_emperor
 		}
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_dare_to_pull_down_emperor
-
+		completion_reward = {
+			set_temp_variable = {
+				society_development_var_temp = 0.05
+			}
+			add_society_development = yes
+			set_temp_variable = {
+				poverty_development_var_temp = 0.03
+			}
+			add_poverty_development = yes
+			add_political_power = 25
+			add_to_variable = {
+				PRC_cpc_stability_factor_dynamic_var = 0.03
+			}
+			add_to_variable = {
+				PRC_cpc_stability_weekly_dynamic_var = 0.001
+			}
+			add_to_variable = {
+				PPRC_pp_var = 0.03
+			}
+			add_to_variable = {
+				PPRC_max_efficiency_var = 0.05
+			}
+			add_to_variable = {
+				PPRC_efficiency_gain_var = 0.05
+			}
+			add_to_variable = {
+				PPRC_ad_drift_var = -0.01
+			}
+			add_to_variable = {
+				PPRC_poverty_dev_var = 0.002
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy7
+				}
+				swap_ideas = {
+					remove_idea = PRC_party_rectification_campaign_empty
+					add_idea = PRC_party_rectification_campaign7
+				}
+			}
+			improve_people_democracy = yes
+			unlock_decision_tooltip = PRC_punchdown_factory_bureaucracy
+			unlock_decision_tooltip = PRC_promote_people_commune
+		}
 	}
+	#发扬无产阶级民主
 	focus = {
 		id = PRC_nl_proletarian_democracy
 		icon = GFX_goal_unknown
@@ -2758,19 +3243,20 @@ focus_tree = {
 		}
 		x = 18
 		y = 12
-		completion_reward ={
-		add_political_power = -100
-		add_country_leader_trait = hos_reformist_from_people
-		add_timed_idea = {
-			idea = PRC_nl_go_to_proletarian_democracy_idea
-			days = 365
+		completion_reward = {
+			set_temp_variable = {
+				society_development_var_temp = 0.05
 			}
-		    effect_tooltip = {
-			    add_ideas = PRC_nl_shining_proletarian_democracy_idea
-		    }
+			set_temp_variable = {
+				poverty_development_var_temp = 0.03
+			}
+			add_political_power = 25
+			add_society_development = yes
+			add_poverty_development = yes
+			increase_welfare = yes
 		}
-
 	}
+
 	focus = {
 		id = PRC_nl_perfect_democratic_centralization
 		icon = GFX_goal_unknown
