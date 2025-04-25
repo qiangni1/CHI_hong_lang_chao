@@ -322,6 +322,792 @@ ideas = {
 				academic_development_monthly = 0.002
 			}	
 		}
+		#	党内整风 - 初始
+		PRC_party_rectification_campaign = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.25
+				stability_factor = -0.1
+				consumer_goods_factor = 0.25
+				personal_expense_factor = -0.025
+				industrial_capacity_factory = -0.15
+				line_change_production_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.15
+				research_speed_factor = -0.1
+				income_growth_factor = -0.1
+				expense_growth_factor = -0.05
+				army_org_factor = -0.125
+				army_org_regain = -0.15
+				army_attack_factor = -0.1
+				authoritarian_democrat_drift = 0.15
+				poverty_development_monthly = -0.008
+				society_development_monthly = -0.008
+			}	
+
+		}
+		#	假民族精神 - 党内整风
+		PRC_party_rectification_campaign_empty = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}	
+
+		}
+		#	任务 - 反动派在行动 -效果	
+		PRC_party_rectification_campaign1 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.05
+				stability_factor = -0.02
+				stability_weekly = -0.001
+				personal_expense_factor = 0.01
+				industrial_capacity_factory = -0.03
+				production_factory_max_efficiency_factor = -0.03
+			}	
+
+		}
+		#	决议 - 同老左派和解 - 效果
+		PRC_party_rectification_campaign2 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.05
+				stability_factor = -0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				authoritarian_democrat_drift = -0.02
+			}	
+
+		}
+		#	决议 - 同新左派合作 - 效果
+		PRC_party_rectification_campaign3 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.05
+				stability_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				income_growth_factor = 0.035
+				authoritarian_democrat_drift = -0.02
+			}	
+
+		}
+		#	决议 - 自我批评 - 效果
+		PRC_party_rectification_campaign4 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.02
+				stability_factor = 0.02
+				authoritarian_democrat_drift = -0.01
+				society_development_monthly = 0.001
+			}	
+
+		}
+		PRC_party_rectification_campaign5 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = -0.08
+				industrial_capacity_factory = 0.05
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				
+			}	
+
+		}
+		#	决议 - 整肃地方党组织 - 效果
+		PRC_party_rectification_campaign6 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.02
+				stability_factor = 0.02
+				party_popularity_stability_factor = 0.02
+				authoritarian_democrat_drift = -0.01
+			}	
+		}
+		PRC_party_rectification_campaign7 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.03
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				authoritarian_democrat_drift = -0.01
+				poverty_development_monthly = 0.002
+			}	
+		}
+		#	决议 - 打击工厂官僚主义 - 效果
+		PRC_party_rectification_campaign8 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.02
+				industrial_capacity_factory = 0.025
+				industrial_development_monthly = 0.003
+				authoritarian_democrat_drift = -0.02
+			}	
+		}
+		#	决议 - 推进人民公社进程 - 效果
+		PRC_party_rectification_campaign9 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.02
+				supply_node_range = 0.02
+				attrition = -0.02
+				local_resources_factor = 0.04
+				global_building_slots_factor = 0.015
+				consumer_goods_factor = -0.02
+				authoritarian_democrat_drift = -0.02
+			}	
+		}
+		#	决议 - 军队革命化 - 效果
+		PRC_party_rectification_campaign10 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.05
+				army_attack_factor = 0.075
+				army_defence_factor = 0.05
+				army_org_factor = 0.075
+				army_org_regain = 0.075
+				land_reinforce_rate = 0.02
+				initiative_factor = 0.04
+				max_command_power = 25
+				command_power_gain_mult = 0.05
+				authoritarian_democrat_drift = -0.01
+			}	
+		}
+
+		#	国企干部革命化 - 效果
+		PRC_party_rectification_campaign11 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.03
+				stability_factor = 0.02
+				income_growth_factor = 0.05
+				expense_growth_factor = 0.05
+				production_speed_buildings_factor = 0.075
+				production_speed_energy_farm_factor = 0.1
+				research_speed_factor = 0.04
+				authoritarian_democrat_drift = -0.02
+			}	
+		}
+
+		#   国策-扩大年轻生力军 - 效果
+		PRC_party_rectification_campaign12 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.02
+				line_change_production_efficiency_factor = -0.025
+				production_factory_max_efficiency_factor = 0.05
+				research_speed_factor = 0.05
+			}	
+		}
+
+		#	决议-行政干部革命化 - 效果
+		PRC_party_rectification_campaign13 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.04
+				stability_weekly = 0.001
+				society_development_monthly = 0.004
+				authoritarian_democrat_drift = -0.02
+			}	
+		}
+		#	决议-完善官僚培训标准 - 效果
+		PRC_party_rectification_campaign14 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				stability_factor = 0.1
+				consumer_goods_factor = 0.04
+				research_speed_factor = 0.04
+				communist_drift = 0.03
+			}	
+		}
+		#	决议-试行老中青“三结合” - 效果
+		PRC_party_rectification_campaign15 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.12
+				stability_factor = 0.04
+				personal_expense_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.04
+				line_change_production_efficiency_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.08
+				libertarian_socialist_drift = 0.03
+			}	
+		}
+		#	决议-颠覆资产阶级平等幻象/粉碎父权制/地方党干部撤换- 效果
+		PRC_party_rectification_campaign16 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.02
+			}	
+		}
+
+		#	决议-乡村学校改造- 效果
+		PRC_party_rectification_campaign17 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				society_development_monthly = 0.002
+				production_speed_infrastructure_factor = 0.03
+			}	
+		}
+
+		#	国策 - 马克思理论再建构 - 效果
+		PRC_party_rectification_campaign18 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.03
+				consumer_goods_factor = -0.05
+				personal_value_factor = 0.06
+				expense_growth_factor = -0.07
+				research_speed_factor = 0.03
+				production_factory_max_efficiency_factor = 0.04
+			}	
+		}
+
+		#	决议 - 第二次三湾改编 - 效果
+		PRC_party_rectification_campaign19 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				land_reinforce_rate = 0.05
+				breakthrough_factor = 0.075
+				experience_loss_factor = -0.125
+				org_loss_when_moving = -0.1
+				combat_width_factor = -0.05
+				communist_drift = 0.03
+			}	
+		}
+
+		#	决议 - 新社会主义理论实践 - 效果
+		PRC_party_rectification_campaign20 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.02
+				stability_factor = 0.02
+				war_support_factor = 0.02
+				industrial_capacity_factory = 0.04
+				production_factory_start_efficiency_factor = 0.125
+			}	
+		}
+
+		#	决议 - 党组领导，吸收外来，不忘本来 - 效果
+		PRC_party_rectification_campaign21 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.075
+				research_speed_factor = 0.025
+				society_development_monthly = 0.004
+				academic_development_monthly = 0.002
+				communist_drift = 0.03
+				social_democrat_drift = 0.02
+			}	
+		}
+		#	决议 - 赋权人民，重塑无产阶级文化 - 效果
+		PRC_party_rectification_campaign22 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = -0.025
+				research_speed_factor = 0.125
+				society_development_monthly = 0.005
+				industrial_development_monthly = 0.002
+				academic_development_monthly = 0.002
+				farming_development_monthly = 0.002
+				conscription_factor = 0.03	
+			}	
+		}
+		#	国策 - 马克思思想放光芒 - 效果
+		PRC_party_rectification_campaign23 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.02
+				academic_development_monthly = 0.002
+				libertarian_socialist_drift = 0.02
+				authoritarian_democrat_drift = -0.02
+			}	
+		}
+		#	国策 - 历史经验总结 - 效果
+		PRC_party_rectification_campaign24 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.03
+				production_factory_max_efficiency_factor = 0.04
+				authoritarian_democrat_drift = -0.02
+			}	
+		}
+		#	国策 -  前三十年重定性 - 效果
+		PRC_party_rectification_campaign25 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.02
+				stability_factor = -0.05
+				personal_value_factor = 0.05
+				society_development_monthly = 0.002
+			}	
+		}
+		#	决议 - 三七开 - 效果
+		PRC_party_rectification_campaign26 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.12
+				stability_factor = 0.125
+				business_value_factor = 0.05
+				production_speed_buildings_factor = 0.03
+				research_speed_factor = 0.03
+				authoritarian_democrat_drift = 0.02
+				communist_drift = 0.05
+			}	
+		}
+		#	决议 -  六四开 - 效果
+		PRC_party_rectification_campaign27 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.06
+				stability_factor = -0.07
+				personal_value_factor = 0.1
+				production_speed_buildings_factor = 0.09
+				research_speed_factor = 0.09
+				industrial_capacity_factory = 0.09
+				line_change_production_efficiency_factor = 0.06
+				production_factory_max_efficiency_factor = 0.06
+				global_building_slots_factor = 0.06
+				army_attack_factor = 0.025
+				totalitarian_socialist_drift = 0.02
+				libertarian_socialist_drift = 0.05
+			}	
+		}
+		#	国策 -  重建无产阶级专政 - 效果
+		PRC_party_rectification_campaign28 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_expected_value = -0.06
+				political_power_factor = 0.06
+				line_change_production_efficiency_factor = 0.19
+				business_value_factor = -0.075
+				personal_value_factor = 0.03
+				expense_growth_factor = -0.075
+				income_growth_factor = 0.075
+				conscription_factor = 0.02
+			}	
+		}
+		#	决议 - 构建新官僚体制 - 效果
+		PRC_party_rectification_campaign29 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = -0.4
+				society_development_monthly = 0.01
+				poverty_development_monthly = 0.008
+				communist_drift = 0.04
+			}	
+		}
+
+		#	决议 - 第二次四清运动 - 效果
+		PRC_party_rectification_campaign30 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = -0.1
+				consumer_goods_factor = -0.1
+				libertarian_socialist_drift = 0.04
+				totalitarian_socialist_drift = 0.02
+				industrial_capacity_factory = 0.04
+				production_factory_max_efficiency_factor = 0.04
+				personal_expense_factor = 0.05
+
+			}	
+		}
+
+		#红旗不倒
+		PRC_red_flag_prevails = {
+			picture = PRC_five_stars_shines_over_china_idea
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+				industrial_capacity_factory = 0.1
+				army_org_regain = 0.05
+				land_reinforce_rate = 0.05
+				personal_value_factor = 0.1
+			}
+		}
+		#人民民主之路
+		PRC_road_to_people_democracy = {
+			picture = PRC_peoples_democracy
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				expense_growth_factor = 0.05
+				libertarian_socialist_drift = 0.01
+			}	
+		}
+
+		PRC_road_to_people_democracy1 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.1
+				production_factory_max_efficiency_factor = 0.025
+				expense_growth_factor = 0.075
+				society_development_monthly = 0.002
+				poverty_development_monthly = 0.002
+				libertarian_socialist_drift = 0.02
+			}	
+		}
+
+		PRC_road_to_people_democracy2 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				expense_growth_factor = 0.1
+				society_development_monthly = 0.004
+				poverty_development_monthly = 0.004
+				personal_value_factor = 0.025
+				libertarian_socialist_drift = 0.02
+				communist_drift = 0.01
+				totalitarian_socialist_drift = 0.01
+			}	
+		}
+
+		PRC_road_to_people_democracy3 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.1
+				production_factory_max_efficiency_factor = 0.075
+				expense_growth_factor = 0.1
+				income_growth_factor = 0.05
+				society_development_monthly = 0.006
+				poverty_development_monthly = 0.006
+				personal_value_factor = 0.05
+				libertarian_socialist_drift = 0.03
+				communist_drift = 0.01
+				totalitarian_socialist_drift = 0.01
+			}	
+		}
+
+		PRC_road_to_people_democracy4 = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.125
+				production_factory_max_efficiency_factor = 0.1
+				expense_growth_factor = 0.15
+				income_growth_factor = 0.1
+				society_development_monthly = 0.01
+				poverty_development_monthly = 0.01
+				personal_value_factor = 0.075
+				libertarian_socialist_drift = 0.03
+				communist_drift = 0.02
+				totalitarian_socialist_drift = 0.02
+				social_democrat_drift = 0.01
+			}	
+		}
 
 
 		PRC_Culture_Reboot = {
@@ -378,6 +1164,25 @@ ideas = {
 			}
 		}
 
+		PRC_cadre_revolutionization_idea = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.01
+				totalitarian_socialist_drift = 0.05
+				communist_drift = 0.15
+				libertarian_socialist_drift = 0.15
+			}
+		}
+
 		PRC_teacher_the_gardener_idea = {
 			picture = generic_covid
 			allowed = {
@@ -397,6 +1202,43 @@ ideas = {
 				electronics = 0.15
 			}
 
+		}
+
+	}
+	hidden_ideas = {
+		PRC_from_people_to_people = {
+			picture = generic_covid
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 1
+			}
+
+		}
+		ZZZ_proleteriat_dictatorship = {
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.1
+				army_attack_factor = 0.05
+				drift_defence_factor = 0.3
+				planning_speed = -0.1
+				max_planning_factor = 0.1
+			}
 		}
 	}
 }
