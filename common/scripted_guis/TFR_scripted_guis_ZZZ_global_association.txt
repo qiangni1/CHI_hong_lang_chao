@@ -30,17 +30,13 @@ scripted_gui = {
 					has_idea = ZZZ_ai_governance
 					has_idea = ZZZ_eurasianist_system
 					has_idea = ZZZ_american_peoples_dictatorship
-					has_idea = ZZZ_proleteriat_dictatorship
 				}
 			}
 			TFR_russian_political_system_type_icon_visible = {
 				has_idea = ZZZ_russian_political_system
 			}			
 			TFR_chinese_political_system_type_icon_visible = {
-				OR = {
-					has_idea = ZZZ_chinese_political_system
-					has_idea = ZZZ_proleteriat_dictatorship
-				}
+				has_idea = ZZZ_chinese_political_system
 			}	
 			TFR_islamic_republic_type_icon_visible = {
 				has_idea = ZZZ_islamic_republic
@@ -144,13 +140,18 @@ scripted_gui = {
 					has_idea = ZZZ_america_first_capitalism
 					has_idea = ZZZ_maga_capitalism
 					has_idea = ZZZ_left_corporatism
+					has_idea = ZZZ_OGAS
 					has_idea = ZZZ_liberal_corporatism
 					has_idea = ZZZ_kaiser_economy
+					has_idea = ZZZ_ogas
 				}
 			}
 			TFR_capitalism_type_politics_icon_visible = {
 				has_idea = ZZZ_capitalist_economy
-			}		
+			}
+			TFR_OGAS_type_politics_icon_visible = {
+				has_idea = ZZZ_ogas
+			}	
 			TFR_american_capitalism_type_politics_icon_visible = {
 				has_idea = ZZZ_american_capitalism
 			}	
