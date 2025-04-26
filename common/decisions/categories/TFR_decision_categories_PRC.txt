@@ -372,3 +372,15 @@ PHI_unification = {
         
     }
 }
+
+PRC_gaizaodaxingqiye_category = { #决议组：改造国内大型企业
+	icon = GFX_decision_cat_PRC_loji_category_icon
+	picture = GFX_decision_cat_PRC_enviroment
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+        has_country_flag = PRC_gaizaoqiye1_flag
+	}
+	priority = 5
+}
