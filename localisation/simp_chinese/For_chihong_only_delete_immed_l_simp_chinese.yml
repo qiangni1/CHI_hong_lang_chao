@@ -78,7 +78,7 @@
   PRC_second_new_culture_movement_flag: "已完成§Y第二次新文化运动§!的两个§t互斥§!决议中的一个"
   bureaucracy_pp_popularity_tt: "此外，我们还会根据目前国内§R威权社会主义§!的§G支持率§!获得对应的£GFX_pol_power §Y政治点数§!的加成。"
 #国策
-  add_a_slot: "获得一个宣传槽。"
+  add_a_slot: "获得1个宣传槽。"
   PRC_nl_socialist_modernization: "社会主义现代化建设"
   PRC_nl_advance_productivity: "发展先进生产力"
   PRC_nl_reform_production_relation: "改革不平等生产关系"
