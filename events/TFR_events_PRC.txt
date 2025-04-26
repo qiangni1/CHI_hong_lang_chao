@@ -10422,7 +10422,14 @@ country_event = {
 	title = china.318.t
 	desc = china.318.d
 	picture = GFX_PRC_evergrande_crisis
-	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+        date > 2023.8.14
+		NOT = {
+			has_country_flag = PRC_qingsuanhengda_flag
+		}
+    }
+	fire_only_once = yes
 	immediate = {
 	}
 	option = {
