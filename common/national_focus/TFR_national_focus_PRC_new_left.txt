@@ -1856,42 +1856,258 @@ focus_tree = {
 	focus = {
 		id = PRC_nl_clean_house
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 7.00
 		prerequisite = {
 			focus = PRC_nl_red_wave_surge
 		}
 		x = 18
 		y = 5
-
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+			set_variable = {
+				PPRC_pp_var = 0.25
+			}
+			set_variable = {
+				PPRC_st_var = -0.1
+			}
+			set_variable = {
+				PPRC_expense_var = -0.02
+			}
+			set_variable = {
+				PPRC_income_var = -0.1
+			}
+			set_variable = {
+				PPRC_expense_factor = -0.05
+			}
+			set_variable = {
+				PPRC_org_factor_var = -0.125
+			}
+			set_variable = {
+				PPRC_org_regain_var = -0.15
+			}
+			set_variable = {
+				PPRC_attack_var = -0.1
+			}
+			set_variable = {
+				PPRC_ad_drift_var = 0.15
+			}
+			set_variable = {
+				PPRC_line_var = -0.2
+			}
+			set_variable = {
+				PPRC_efficiency_gain_var = -0.15
+			}
+			set_variable = {
+				PPRC_research_var = -0.1
+			}
+			set_variable = {
+				PPRC_factory_output_var = -0.15
+			}
+			set_variable = {
+				PPRC_expense_factor = -0.025
+			}
+			set_variable = {
+				PPRC_consumer_var = 0.25
+			}
+			set_variable = {
+				PPRC_poverty_dev_var = -0.008
+			}
+			set_variable = {
+				PPRC_society_dev_var = -0.008
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = PRC_party_rectification_campaign_dynamic
+				}
+			}
+			effect_tooltip = {
+				add_ideas = PRC_party_rectification_campaign
+			}
+			add_ideas = PRC_road_to_people_democracy
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = CPC_reactionary_long
+				name = CPC_reactionary_long
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.03
+			}
+			unlock_decision_category_tooltip = PRC_Rt_People_Democracy
+			activate_mission = PRC_damage_from_reactionary_mission
+			custom_effect_tooltip = PARTY_GUI_UPCOMING
+		}
 	}
 	focus = {
 		id = PRC_nl_marxist_theory_peak
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_clean_house
 		}
 		x = 3
 		y = 1
 		relative_position_id = PRC_nl_clean_house
-
+		completion_reward = {
+			increase_taxes = yes
+			increase_welfare = yes
+			increase_safety = yes
+			add_to_variable = {
+				PRC_cpc_political_power_factor_dynamic_var = 0.07
+			}
+			add_to_variable = {
+				PRC_cpc_stability_factor_dynamic_var = 0.03
+			}
+			add_to_variable = {
+				PRC_cpc_drift_defence_factor_dynamic_var = 0.05
+			}
+			add_to_variable = {
+				PRC_cpc_business_value_factor_dynamic_var = -0.05
+			}
+			add_to_variable = {
+				PPRC_pp_factor_var = 0.03
+			}
+			add_to_variable = {
+				PPRC_consumer_var = -0.05
+			}
+			add_to_variable = {
+				PPRC_personal_value_var = 0.06
+			}
+			add_to_variable = {
+				PPRC_expense_factor = -0.07
+			}
+			add_to_variable = {
+				PPRC_research_var = 0.03
+			}
+			add_to_variable = {
+				PPRC_max_efficiency_var = 0.025
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy10
+				}
+				swap_ideas = {
+					remove_idea = PRC_party_rectification_campaign_empty
+					add_idea = PRC_party_rectification_campaign18
+				}
+			}
+			unlock_decision_tooltip = PRC_second_sanwan_reform
+		}
 	}
 	focus = {
 		id = PRC_nl_political_awakening
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_clean_house
 		}
 		x = -2
 		y = 1
 		relative_position_id = PRC_nl_clean_house
+		completion_reward = {
+			add_stability = -0.05
+			add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.03
+			}
+			add_to_variable = {
+				PRC_cpc_political_power_gain_dynamic_var = 0.1
+			}
+			add_to_variable = {
+				PRC_cpc_drift_defence_factor_dynamic_var = -0.1
+			}
+			add_to_variable = {
+				PRC_cpc_totalitarian_socialist_drift_dynamic_var = 0.01
+			}
+			add_to_variable = {
+				PRC_cpc_communist_drift_dynamic_var = 0.02
+			}
+			add_to_variable = {
+				PRC_cpc_libertarian_socialist_drift_dynamic_var = 0.02
+			}
+			add_to_variable = {
+				PRC_cpc_social_democrat_drift_dynamic_var = 0.01
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy1
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = PRC_nl_cadre_revolutionization
+					}
+					add_days_mission_timeout = {
+						mission = PRC_damage_from_reactionary_mission
+						days = 15
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = PRC_nl_cadre_revolutionization
+					}
+					add_to_variable = {
+						PRC_cpc_political_power_gain_dynamic_var = 0.05
+					}
+				}
+				if = {
+					limit = { 
+						NOT = {
+							has_completed_focus = PRC_nl_cadre_revolutionization
+							has_completed_focus = PRC_nl_cadre_revolutionization
+						}
+					}
+					add_political_power = 50
+				}
+	
+			}
+			custom_effect_tooltip = completed_cadre_rev_focus
+			effect_tooltip = {
+				add_days_mission_timeout = {
+					mission = PRC_damage_from_reactionary_mission
+					days = 15
+				}
+			}
+			custom_effect_tooltip = completed_marxist_peak_focus
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy2
+				}
+			}
+			custom_effect_tooltip = not_completed_both_focus
+			effect_tooltip = {
+				add_political_power = 50
+			}
+			unlock_decision_tooltip = PRC_detente_with_new_lefties
+			unlock_decision_tooltip = PRC_detente_with_old_lefties
+		}
 
 	}
 	focus = {
 		id = PRC_nl_sun_at_eight_nine
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_political_awakening
 		}
@@ -1900,10 +2116,10 @@ focus_tree = {
 		relative_position_id = PRC_nl_political_awakening
 
 	}
-		focus = {
+	focus = {
 		id = PRC_nl_social_reeducation
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 4.00
 		prerequisite = {
 			focus = PRC_nl_sun_at_eight_nine
 		}
@@ -2314,7 +2530,7 @@ focus_tree = {
 	focus = {
 		id = PRC_nl_peoples_culture_revolutionary_culture
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3.00
 		x = 0
 		y = 4
 		relative_position_id = PRC_nl_social_reeducation
