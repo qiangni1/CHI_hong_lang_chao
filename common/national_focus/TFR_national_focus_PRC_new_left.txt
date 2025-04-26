@@ -3629,7 +3629,7 @@ focus_tree = {
 
 	}
 
-	focus = {
+	focus = {#社会主义现代化建设
 		id = PRC_nl_socialist_modernization
 		icon = GFX_goal_unknown
 		cost = 3
@@ -3639,10 +3639,30 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_road_to_future
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_political_power = 100
+			effect_tooltip = { #见TFR_decisions_PRC.txt搜索推进国内大循环
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_jingji1_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_expense_growth_factor_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = PRC_mic_consumer_goods_factor_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = PRC_mic_research_speed_factor_dynamic_var
+				value = 0.07
+			}
+		}
 	}
-	focus = {
-		id = PRC_nl_advance_productivity
+	focus = { #发展先进生产力
+		id = PRC_nl_advance_productivity 
 		icon = GFX_goal_unknown
 		cost = 3
 		x = -1
@@ -3651,9 +3671,44 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_socialist_modernization
 		}
-		completion_reward = { }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_jingji2_idea
+				}
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 50
+			}
+			add_debt = yes
+			set_temp_variable = {
+				var = farming_development_var_temp
+				value = 0.1
+			}
+			add_farming_development = yes
+			set_temp_variable = {
+				var = industrial_development_var_temp
+				value = 0.1
+			}
+			add_industrial_development = yes
+			add_to_variable = {
+				var = PRC_mic_industrial_capacity_factory_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = PRC_mic_research_speed_factor_dynamic_var
+				value = 0.05
+			}
+			unlock_decision_tooltip = PRC_nl_jingji2_d1			#推进国内大循环
+			unlock_decision_tooltip = PRC_nl_jingji2_d2			#建设先进产业集群
+			unlock_decision_tooltip = PRC_nl_jingji2_d3			#扩展科技小院模式
+			unlock_decision_tooltip = PRC_nl_jingji2_d4			#推广农业八字宪法
+			#unlock_decision_tooltip仅做展示，实际启用决议需在决议中写完成某某国策的条件
+		}
 	}
-	focus = {
+	focus = { #改革不平等生产关系
 		id = PRC_nl_reform_production_relation
 		icon = GFX_goal_unknown
 		cost = 3
@@ -3663,48 +3718,144 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_socialist_modernization
 		}
-		completion_reward = { }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_jingji3_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_monthly_population_dynamic_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = PRC_mic_poverty_development_monthly_dynamic_var
+				value = 0.005
+			}
+			unlock_decision_tooltip = PRC_nl_jingji3_d1			#消灭血汗工厂（暂时占位，无意义）
+			unlock_decision_tooltip = PRC_nl_jingji3_d2			#落实劳动法
+			unlock_decision_tooltip = PRC_nl_jingji3_d3			#新时代赎买政策
+			unlock_decision_tooltip = PRC_nl_jingji3_d4			#规范统一平台经济
+		}
 	}
-	focus = {
+	focus = { #掀起社会主义建设高潮
 		id = PRC_nl_socialist_construction_climax
 		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 2
 		relative_position_id = PRC_nl_socialist_modernization
+		available = {
+			PRC_jingji_1_jieduan = yes	#脚本条件，于common\scripted_triggers中设定，用于代替一些条件并添加效果
+		} #此效果为代替八个作为条件的flag并于国策中显示文本“×/√已完成第一阶段所有决议”，详见TFR_scripted_triggers_PRC.txt搜索PRC_jingji_1_jieduan
 		prerequisite = {
 			focus = PRC_nl_advance_productivity
 		}
 		prerequisite = {
 			focus = PRC_nl_reform_production_relation
 		}
-		completion_reward = { }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_jingji4_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_income_growth_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PRC_mic_expense_growth_factor_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = PRC_mic_personal_value_factor_dynamic_var
+				value = 0.1
+			}
+			add_political_power = 100
+			set_temp_variable = {
+				income_var_temp = 500
+			}
+			add_income = yes
+			add_timed_idea = {
+				idea = PRC_nl_jingji4t_idea
+				days = 365
+			}
+			#unlock_decision_category_tooltip = 经济gui
+		}
 	}
-	focus = {
+	focus = { #现代化鞍钢宪法
 		id = PRC_nl_new_era_angang_constitution
 		icon = GFX_goal_unknown
 		cost = 3
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = PRC_nl_socialist_construction_climax
 		prerequisite = {
 			focus = PRC_nl_socialist_construction_climax
 		}
-		completion_reward = { }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_jingji5_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_production_factory_start_efficiency_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PRC_mic_military_industrial_organization_research_bonus_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PRC_mic_military_industrial_organization_funds_gain_dynamic_var
+				value = 0.2
+			}
+			swap_ideas = {
+				remove_idea = high_safety
+				add_idea = PRC_NLAG_safety
+			}
+			unlock_decision_tooltip = PRC_nl_jingji5_d1			#发扬大庆工业精神
+		}
 	}
-	focus = {
+	focus = { #提高生产资料利用率
 		id = PRC_nl_boost_production_tool_usage
 		icon = GFX_goal_unknown
 		cost = 3
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = PRC_nl_new_era_angang_constitution
 		prerequisite = {
 			focus = PRC_nl_new_era_angang_constitution
 		}
-		completion_reward = { }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_jingji7_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_local_resources_factor_dynamic_var
+				value = 0.25
+			}
+			add_to_variable = {
+				var = PRC_mic_production_lack_of_resource_penalty_factor_dynamic_var
+				value = -0.3
+			}
+			add_tech_bonus = { #科技加成卡，效果为给予三张150%的加成，3.0超前惩罚的科研卡
+				bonus = 1.5
+				ahead_reduction = 3
+				uses = 3
+				category = excavation_tech
+			}
+		}
 	}
-	focus = {
+	focus = { #自己动手丰衣足食
 		id = PRC_nl_make_things_yourself
 		icon = GFX_goal_unknown
 		cost = 3
@@ -3714,39 +3865,100 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_socialist_construction_climax
 		}
-		completion_reward = { }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_jingji8_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_personal_value_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PRC_mic_personal_expense_factor_dynamic_var
+				value = -0.15
+			}
+		}
 	}
-	focus = {
+	focus = { #改革农民合作社
 		id = PRC_nl_reform_farmer_cooperation
 		icon = GFX_goal_unknown
 		cost = 3
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = PRC_nl_socialist_construction_climax
 		prerequisite = {
 			focus = PRC_nl_socialist_construction_climax
 		}
-		completion_reward = { }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_jingji6_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_production_factory_start_efficiency_factor_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = PRC_mic_local_building_slots_factor_dynamic_var
+				value = 0.1
+			}
+			unlock_decision_tooltip = PRC_nl_jingji5_d1			#发扬农业大寨精神
+			set_temp_variable = {
+				var = farming_development_var_temp
+				value = 0.1
+			}
+			add_farming_development = yes
+		}
 	}
-	focus = {
+	focus = { #重建人民公社运动
 		id = PRC_nl_restore_people_commune
 		icon = GFX_goal_unknown
 		cost = 3
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = PRC_nl_reform_farmer_cooperation
 		prerequisite = {
 			focus = PRC_nl_reform_farmer_cooperation
 		}
-		completion_reward = { }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_jingji9_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_production_speed_buildings_factor_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = PRC_mic_line_change_production_efficiency_factor_dynamic_var
+				value = 0.15
+			}
+			add_tech_bonus = {
+				bonus = 1.5
+				ahead_reduction = 3
+				uses = 3
+				category = nuclear
+			}
+			#经济gui决议：重建人民公社运动
+		}
 	}
-	focus = {
+	focus = { #确保人民美好生活
 		id = PRC_nl_assure_welfare
 		icon = GFX_goal_unknown
 		cost = 3
 		x = 0
 		y = 3
 		relative_position_id = PRC_nl_socialist_construction_climax
+		available = {
+			PRC_jingji_2_jieduan = yes
+		}
 		prerequisite = {
 			focus = PRC_nl_socialist_construction_climax
 		}
@@ -3757,18 +3969,31 @@ focus_tree = {
 			focus = PRC_nl_restore_people_commune
 		}
 		completion_reward = {
-		    add_stability = 0.1
-		    set_temp_variable = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea
+					add_idea = PRC_nl_jingji10_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_tax_personal_rate_dynamic_var
+				value = -0.05
+			}
+			add_to_variable = {
+				var = PRC_mic_personal_expense_factor_dynamic_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = PRC_mic_poverty_development_monthly_dynamic_var
+				value = 0.005
+			}
+			set_temp_variable = {
 				var = society_development_var_temp
 				value = 0.15
 			}
 			add_society_development = yes
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = PRC_made_in_china_dummy_idea
-					add_idea = PRC_nl_assure_welfare_idea
-				}
-			}
+			add_stability = 0.1
+			#remove_idea = PRC_gyhdxqy #移除民族精神：公有化大型企业
 		}
 	}
 	focus = {
