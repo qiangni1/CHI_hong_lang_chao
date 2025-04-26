@@ -1,0 +1,53 @@
+ remove_economy_types = {
+	remove_ideas = {
+		ZZZ_capitalist_economy
+		ZZZ_american_capitalism
+		ZZZ_collective_capitalism
+		ZZZ_oligopolistic_capitalism
+		ZZZ_welfare_capitalism
+		ZZZ_corporatism
+		ZZZ_managed_economy
+		ZZZ_command_economy
+		ZZZ_planned_economy
+		ZZZ_socialist_market
+		ZZZ_developed_socialism
+		ZZZ_military_controlled_economy
+		ZZZ_worker_controlled_economy
+		ZZZ_chaostic_economy
+		ZZZ_minarchism
+		ZZZ_ancap
+		ZZZ_state_capitalism
+		ZZZ_kaiser_economy
+		ZZZ_maga_capitalism
+		ZZZ_america_first_capitalism
+		ZZZ_mixed_economy
+		ZZZ_party_state_capitalism
+		ZZZ_left_corporatism
+		ZZZ_liberal_corporatism
+		ZZZ_OGAS
+		ZZZ_ogas
+	}
+}
+
+change_economy_type_OGAS_economy = {
+	custom_effect_tooltip = change_economy_type_OGAS_economy_tt
+	hidden_effect = {
+		remove_economy_types = yes
+		add_ideas = ZZZ_OGAS
+		add_dynamic_modifier ={
+			modifier = PRC_OGAS_dynamic
+		}
+		add_to_variable = {
+			var = ogas_consumer_goods_factor_dynamic_var
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ogas_production_factory_max_efficiency_factor_dynamic_var
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ogas_production_factory_efficiency_gain_factor_dynamic_var
+			value = -0.1
+		}
+	}
+}
