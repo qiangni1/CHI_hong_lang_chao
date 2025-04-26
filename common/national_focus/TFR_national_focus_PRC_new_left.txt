@@ -3695,10 +3695,11 @@ focus_tree = {
 		}
 
 	}
+	#自动化模型
 	focus = {
 		id = PRC_nl_automation_model
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3
 		prerequisite = {
 			focus = PRC_nl_maoist_vision
 		}
@@ -3708,48 +3709,148 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = PRC_nl_digital_planning_committee
-
+		completion_reward = {
+			activate_mission = zidonghua_moxing
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = zidonghua_moxing_dynamic
+				}
+				add_to_variable = {
+					var = zdh_research_speed_factor_var
+					value = -0.1
+				}
+				add_to_variable = {
+					var = zdh_consumer_goods_factor_var
+					value = 0.1
+				}
+			}
+			effect_tooltip = {
+				add_ideas = zidonghua_moxing_dynamic_idea
+			}
+			unlock_decision_tooltip = jiasu_gongzuo
+			unlock_decision_tooltip = touru_keyan_ranyuan
+			unlock_decision_tooltip = touru_zijin
+		}
 	}
+
+	#引入工人监管
 	focus = {
 		id = PRC_nl_introduce_worker_supervision
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_automation_model
 		}
 		x = -1
 		y = 1
 		relative_position_id = PRC_nl_automation_model
-
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_ogas_idea0
+					add_idea = worker_supervision_idea
+				}
+			}
+			add_to_variable = {
+				var = ogas_personal_value_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = ogas_industrial_capacity_factory_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = ogas_production_speed_buildings_factor_dynamic_var
+				value = 0.05
+			}
+		}
 	}
+
+	#去中心化构建
 	focus = {
 		id = PRC_nl_decentralized_construction
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_automation_model
 		}
 		x = 1
 		y = 1
 		relative_position_id = PRC_nl_automation_model
-
+		completion_reward = {
+			unlock_decision_tooltip = beijing_jiedian
+		}
 	}
+
+	#关注小微基础设施
 	focus = {
 		id = PRC_nl_focus_on_small_infrastructure
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_sensor_network_deployment
 		}
 		x = 1
 		y = 1
 		relative_position_id = PRC_nl_sensor_network_deployment
-
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_ogas_idea0
+					add_idea = small_infrastructure_idea
+				}
+			}
+			add_to_variable = {
+				var = ogas_production_speed_infrastructure_factor_dynamic_var
+				value = 0.1
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
+	#国有企业试点运行
 	focus = {
 		id = PRC_nl_state_enterprise_pilot_operations
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3
 		prerequisite = {
 			focus = PRC_nl_decentralized_construction
 		}
@@ -3759,12 +3860,16 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = PRC_nl_automation_model
-
+		completion_reward = {
+			activate_mission = guoyouqiye_shixing
+		}
 	}
+
+	#全域物联网建设
 	focus = {
 		id = PRC_nl_national_IoT_construction
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3
 		prerequisite = {
 			focus = PRC_nl_smart_building_development
 		}
@@ -3774,12 +3879,21 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = PRC_nl_sensor_network_deployment
-
+		completion_reward = {
+			unlock_decision_tooltip = hua_nan
+			unlock_decision_tooltip = hua_bei
+			unlock_decision_tooltip = hua_dong
+			unlock_decision_tooltip = dong_bei
+			unlock_decision_tooltip = xi_bei
+			unlock_decision_tooltip = xi_nan
+		}
 	}
+
+	#全面引入社会
 	focus = {
 		id = PRC_nl_comprehensive_social_integration
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 5
 		prerequisite = {
 			focus = PRC_nl_state_enterprise_pilot_operations
 		}
@@ -3789,36 +3903,70 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = PRC_nl_national_IoT_construction
-
+		completion_reward = {
+			#效果：NEMS追加效果：个人产值+15%，商业产值+10%，月度收入增长+20%
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_NEMS0
+					add_idea = social_integration_idea
+				}
+			}
+			add_to_variable = {
+				var = NEMS_personal_value_factor_dynamic_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = NEMS_business_value_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = NEMS_income_growth_factor_dynamic_var
+				value = 0.2
+			}
+		}
 	}
+
+	#自主迭代系统
 	focus = {
 		id = PRC_nl_autonomous_iteration_system
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_comprehensive_social_integration
 		}
 		x = -1
 		y = 1
 		relative_position_id = PRC_nl_comprehensive_social_integration
-
+		completion_reward = {
+			#解锁读条民用工业迭代，军用工业迭代，海军生产迭代，科技研发迭代
+			set_country_flag = zizhu_diedai
+			set_variable = { mingongshu0 = num_of_civilian_factories }
+			set_variable = { jungongshu0 = num_of_military_factories }
+			set_variable = { chuanwushu0 = num_of_naval_factories }
+		}	
 	}
+
+	#综合长征智能
 	focus = {
 		id = PRC_nl_integrate_long_march_AI
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_comprehensive_social_integration
 		}
 		x = 1
 		y = 1
 		relative_position_id = PRC_nl_comprehensive_social_integration
-
+		completion_reward = {
+			#
+		}
 	}
+
+	#数字共产主义愿景
 	focus = {
 		id = PRC_nl_digital_communist_vision
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 5
 		prerequisite = {
 			focus = PRC_nl_autonomous_iteration_system
 		}
@@ -3828,9 +3976,10 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = PRC_nl_comprehensive_social_integration
-
+		completion_reward = {
+			add_ideas = communist_vision_idea
+		}
 	}
-
 	focus = {#社会主义现代化建设
 		id = PRC_nl_socialist_modernization
 		icon = GFX_goal_unknown
