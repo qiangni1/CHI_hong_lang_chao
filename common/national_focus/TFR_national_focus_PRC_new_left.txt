@@ -1856,42 +1856,262 @@ focus_tree = {
 	focus = {
 		id = PRC_nl_clean_house
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 7.00
 		prerequisite = {
 			focus = PRC_nl_red_wave_surge
 		}
 		x = 18
 		y = 5
-
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+			set_variable = {
+				PPRC_pp_var = 0.25
+			}
+			set_variable = {
+				PPRC_st_var = -0.1
+			}
+			set_variable = {
+				PPRC_expense_var = -0.02
+			}
+			set_variable = {
+				PPRC_income_var = -0.1
+			}
+			set_variable = {
+				PPRC_expense_factor = -0.05
+			}
+			set_variable = {
+				PPRC_org_factor_var = -0.125
+			}
+			set_variable = {
+				PPRC_org_regain_var = -0.15
+			}
+			set_variable = {
+				PPRC_attack_var = -0.1
+			}
+			set_variable = {
+				PPRC_ad_drift_var = 0.15
+			}
+			set_variable = {
+				PPRC_line_var = -0.2
+			}
+			set_variable = {
+				PPRC_efficiency_gain_var = -0.15
+			}
+			set_variable = {
+				PPRC_research_var = -0.1
+			}
+			set_variable = {
+				PPRC_factory_output_var = -0.15
+			}
+			set_variable = {
+				PPRC_expense_factor = -0.025
+			}
+			set_variable = {
+				PPRC_consumer_var = 0.25
+			}
+			set_variable = {
+				PPRC_poverty_dev_var = -0.008
+			}
+			set_variable = {
+				PPRC_society_dev_var = -0.008
+			}
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = PRC_party_rectification_campaign_dynamic
+				}
+			}
+			effect_tooltip = {
+				add_ideas = PRC_party_rectification_campaign
+			}
+			add_ideas = PRC_road_to_people_democracy
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = CPC_reactionary_long
+				name = CPC_reactionary_long
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.03
+			}
+			unlock_decision_category_tooltip = PRC_Rt_People_Democracy
+			activate_mission = PRC_damage_from_reactionary_mission
+			set_temp_variable = {
+				campaign_slot_total_var_temp = 1
+			}
+			add_total_campaign_slot = yes
+			custom_effect_tooltip = PARTY_GUI_UPCOMING
+		}
 	}
 	focus = {
 		id = PRC_nl_marxist_theory_peak
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_clean_house
 		}
 		x = 3
 		y = 1
 		relative_position_id = PRC_nl_clean_house
-
+		completion_reward = {
+			increase_taxes = yes
+			increase_welfare = yes
+			increase_safety = yes
+			add_to_variable = {
+				PRC_cpc_political_power_factor_dynamic_var = 0.07
+			}
+			add_to_variable = {
+				PRC_cpc_stability_factor_dynamic_var = 0.03
+			}
+			add_to_variable = {
+				PRC_cpc_drift_defence_factor_dynamic_var = 0.05
+			}
+			add_to_variable = {
+				PRC_cpc_business_value_factor_dynamic_var = -0.05
+			}
+			add_to_variable = {
+				PPRC_pp_factor_var = 0.03
+			}
+			add_to_variable = {
+				PPRC_consumer_var = -0.05
+			}
+			add_to_variable = {
+				PPRC_personal_value_var = 0.06
+			}
+			add_to_variable = {
+				PPRC_expense_factor = -0.07
+			}
+			add_to_variable = {
+				PPRC_research_var = 0.03
+			}
+			add_to_variable = {
+				PPRC_max_efficiency_var = 0.025
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy10
+				}
+				swap_ideas = {
+					remove_idea = PRC_party_rectification_campaign_empty
+					add_idea = PRC_party_rectification_campaign18
+				}
+			}
+			unlock_decision_tooltip = PRC_second_sanwan_reform
+		}
 	}
 	focus = {
 		id = PRC_nl_political_awakening
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_clean_house
 		}
 		x = -2
 		y = 1
 		relative_position_id = PRC_nl_clean_house
+		completion_reward = {
+			add_stability = -0.05
+			add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.03
+			}
+			add_to_variable = {
+				PRC_cpc_political_power_gain_dynamic_var = 0.1
+			}
+			add_to_variable = {
+				PRC_cpc_drift_defence_factor_dynamic_var = -0.1
+			}
+			add_to_variable = {
+				PRC_cpc_totalitarian_socialist_drift_dynamic_var = 0.01
+			}
+			add_to_variable = {
+				PRC_cpc_communist_drift_dynamic_var = 0.02
+			}
+			add_to_variable = {
+				PRC_cpc_libertarian_socialist_drift_dynamic_var = 0.02
+			}
+			add_to_variable = {
+				PRC_cpc_social_democrat_drift_dynamic_var = 0.01
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy1
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = PRC_nl_cadre_revolutionization
+					}
+					add_days_mission_timeout = {
+						mission = PRC_damage_from_reactionary_mission
+						days = 15
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = PRC_nl_cadre_revolutionization
+					}
+					add_to_variable = {
+						PRC_cpc_political_power_gain_dynamic_var = 0.05
+					}
+				}
+				if = {
+					limit = { 
+						NOT = {
+							has_completed_focus = PRC_nl_cadre_revolutionization
+							has_completed_focus = PRC_nl_cadre_revolutionization
+						}
+					}
+					add_political_power = 50
+				}
+	
+			}
+			custom_effect_tooltip = completed_cadre_rev_focus
+			effect_tooltip = {
+				add_days_mission_timeout = {
+					mission = PRC_damage_from_reactionary_mission
+					days = 15
+				}
+			}
+			custom_effect_tooltip = completed_marxist_peak_focus
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy2
+				}
+			}
+			custom_effect_tooltip = not_completed_both_focus
+			effect_tooltip = {
+				add_political_power = 50
+			}
+			unlock_decision_tooltip = PRC_detente_with_new_lefties
+			unlock_decision_tooltip = PRC_detente_with_old_lefties
+		}
 
 	}
 	focus = {
 		id = PRC_nl_sun_at_eight_nine
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_political_awakening
 		}
@@ -1900,10 +2120,10 @@ focus_tree = {
 		relative_position_id = PRC_nl_political_awakening
 
 	}
-		focus = {
+	focus = {
 		id = PRC_nl_social_reeducation
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 4
 		prerequisite = {
 			focus = PRC_nl_sun_at_eight_nine
 		}
@@ -2012,7 +2232,10 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_new_textbooks
 			unlock_decision_tooltip = PRC_reform_entrance_exam
 			unlock_decision_tooltip = PRC_reform_obligatory_edu
-			custom_effect_tooltip = add_a_slot
+			set_temp_variable = {
+				campaign_slot_total_var_temp = 1
+			}
+			add_total_campaign_slot = yes
 		}
 	}
 	focus = {
@@ -2116,7 +2339,10 @@ focus_tree = {
 					add_idea = PRC_socialist_culture_start5
 				}
 			}
-			custom_effect_tooltip = add_a_slot
+			set_temp_variable = {
+				campaign_slot_total_var_temp = 1
+			}
+			add_total_campaign_slot = yes
 			unlock_decision_tooltip = PRC_Commie_Youth_Rev
 			unlock_decision_tooltip = PRC_replace_unloyal_officers
 		}
@@ -2307,14 +2533,17 @@ focus_tree = {
 					add_idea = PRC_socialist_culture_start12
 				}
 			}
-			custom_effect_tooltip = add_a_slot
+			set_temp_variable = {
+				campaign_slot_total_var_temp = 1
+			}
+			add_total_campaign_slot = yes
 			unlock_decision_tooltip = PRC_socialist_culture_peoples_culture
 		}
 	}
 	focus = {
 		id = PRC_nl_peoples_culture_revolutionary_culture
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 4.00
 		x = 0
 		y = 4
 		relative_position_id = PRC_nl_social_reeducation
@@ -2359,7 +2588,10 @@ focus_tree = {
 					add_idea = PRC_socialist_culture_start13
 				}
 			}
-			custom_effect_tooltip = add_a_slot
+			set_temp_variable = {
+				campaign_slot_total_var_temp = 1
+			}
+			add_total_campaign_slot = yes
 			unlock_decision_tooltip = PRC_nobody_shall_be_left
 		}
 	}
@@ -2678,58 +2910,113 @@ focus_tree = {
 		y = 5
 
 	}
+	#组建中央科技委员会
 	focus = {
 		id = PRC_nl_national_science_committee
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 5
 		prerequisite = {
 			focus = PRC_nl_road_to_future
 		}
 		x = -13
 		y = 1
 		relative_position_id = PRC_nl_road_to_future
-
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = PRC_research_dynamic
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					add_idea = PRC_research_idea
+				}
+			}
+			add_ideas = PRC_research_idea0
+			add_to_variable = {
+				var = rd_research_speed_factor_var
+				value = 0.05
+			}
+		}
 	}
+
+	#整合科研机构
 	focus = {
 		id = PRC_nl_research_institution_consolidation
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_national_science_committee
 		}
 		x = -2
 		y = 1
 		relative_position_id = PRC_nl_national_science_committee
-
+		completion_reward = {
+			add_to_variable = {
+				var = rd_research_speed_factor_var 
+				value = 0.05
+			}
+			add_to_variable = {
+				var = rd_expense_growth_factor_var 
+				value = -0.025
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_research_idea0
+					add_idea = zhenghe_jigou
+				}
+			}
+		}
 	}
+
+	#推动军民融合
 	focus = {
 		id = PRC_nl_military_civilian_integration
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_national_science_committee
 		}
 		x = 0
 		y = 1
 		relative_position_id = PRC_nl_national_science_committee
-
+		completion_reward = {
+			add_ideas = junmin_ronghe
+		}
 	}
+
+	#国有化技术产业
 	focus = {
 		id = PRC_nl_nationalized_tech_industry
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_national_science_committee
 		}
 		x = 2
 		y = 1
 		relative_position_id = PRC_nl_national_science_committee
-
+		completion_reward = {
+			add_to_variable = {
+				var = rd_research_speed_factor_var 
+				value = 0.05
+			}
+			add_to_variable = {
+				var = rd_consumer_goods_factor_var 
+				value = -0.05
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_research_idea0
+					add_idea = guoyou_jishu
+				}
+			}
+		}
 	}
+
+	#重组数字中央计划委员会
 	focus = {
 		id = PRC_nl_digital_planning_committee
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3
 		prerequisite = {
 			focus = PRC_nl_nationalized_tech_industry
 		}
@@ -2739,36 +3026,86 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = PRC_nl_research_institution_consolidation
-
+		completion_reward = {
+			unlock_decision_category_tooltip = PRC_nems_system
+			activate_mission = fanduipai_zunao
+			unlock_decision_tooltip = chongzu_zjw
+			change_economy_type_OGAS_economy = yes
+			hidden_effect = {
+				add_ideas = PRC_ogas_idea00
+			}
+		}
 	}
+
+	#回归毛主席愿景
 	focus = {
 		id = PRC_nl_maoist_vision
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_digital_planning_committee
 		}
 		x = -1
 		y = 1
 		relative_position_id = PRC_nl_digital_planning_committee
-
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_ogas_idea0
+					add_idea = mao_yuanjing
+				}
+			}
+			add_to_variable = {
+				var = ogas_production_speed_buildings_factor_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = ogas_business_value_factor_dynamic_var
+				value = -0.05
+			}
+			add_to_variable = {
+				var = ogas_personal_value_factor_dynamic_var
+				value = 0.05
+			}
+			unlock_decision_tooltip = saoqing_zhangai
+		}
 	}
+
+	#吸收aspr的经验
 	focus = {
 		id = PRC_nl_adopting_ASPR_experience
 		icon = GFX_surrender_tiny_flag
-		cost = 4
+		cost = 2
 		x = 1
 		y = 1
 		prerequisite = {
 			focus = PRC_nl_digital_planning_committee
 		}
 		relative_position_id = PRC_nl_digital_planning_committee
-		completion_reward = { }
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_ogas_idea0
+					add_idea = ASPR_experience_idea
+				}
+			}
+			add_to_variable = {
+				var = ogas_consumer_goods_factor_dynamic_var
+				value = -0.05
+			}
+			add_to_variable = {
+				var = ogas_industrial_capacity_factory_dynamic_var
+				value = 0.1
+			}
+			unlock_decision_tooltip = tongji_shengchan_shuju
+		}
 	}
+
+	#启动曙光工程
 	focus = {
 		id = PRC_nl_dawn_project
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_nationalized_tech_industry
 		}
@@ -2778,48 +3115,128 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = PRC_nl_nationalized_tech_industry
-
+		completion_reward = {
+			unlock_decision_category_tooltip = PRC_dawn_project
+		}
 	}
+
+	#加大新能源投入
 	focus = {
 		id = PRC_nl_investment_in_new_energy
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_dawn_project
 		}
 		x = -2
 		y = 1
 		relative_position_id = PRC_nl_dawn_project
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRC_nl_investment_in_new_energy
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
+
+	#铺设传感器网络
 	focus = {
 		id = PRC_nl_sensor_network_deployment
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3
 		prerequisite = {
 			focus = PRC_nl_investment_in_new_energy
 		}
 		x = -1
 		y = 1
 		relative_position_id = PRC_nl_investment_in_new_energy
-
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_ogas_idea0
+					add_idea = network_deployment_idea
+				}
+			}
+			add_to_variable ={
+				var = ogas_production_speed_industrial_complex_factor_dynamic_var
+				value = 0.1
+			}
+			unlock_decision_tooltip = gaizao_gongchang
+		}
 	}
+
+	#智能建筑发展
 	focus = {
 		id = PRC_nl_smart_building_development
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_sensor_network_deployment
 		}
 		x = -1
 		y = 1
 		relative_position_id = PRC_nl_sensor_network_deployment
-
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_ogas_idea0
+					add_idea = building_development_idea
+				}
+			}
+			add_to_variable = {
+				var = ogas_military_factory_upkeep_factor_dynamic_var
+				value = 0.05
+			}
+		}
 	}
+
+	#建设示范聚变电站
 	focus = {
 		id = PRC_nl_fusion_power_demo
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_investment_in_new_energy
 		}
@@ -2828,22 +3245,34 @@ focus_tree = {
 		relative_position_id = PRC_nl_investment_in_new_energy
 
 	}
+
+	#开发实用量子超算
 	focus = {
 		id = PRC_nl_quantum_supercomputer
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_dawn_project
 		}
 		x = 1
 		y = 1
 		relative_position_id = PRC_nl_dawn_project
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRC_nl_quantum_supercomputer
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+			add_research_slot = 1
+		}
 	}
+
+	#启动长征计划
 	focus = {
 		id = PRC_nl_long_march_plan
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 5
 		prerequisite = {
 			focus = PRC_nl_quantum_supercomputer
 		}
@@ -2853,19 +3282,27 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = PRC_nl_dawn_project
-
+		completion_reward = {
+			unlock_decision_category_tooltip = PRC_loji_category
+		}
 	}
+
+	#远望星辰
 	focus = {
 		id = PRC_nl_stellar_exploration
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_dawn_project
 		}
 		x = 3
 		y = 1
 		relative_position_id = PRC_nl_dawn_project
-
+		completion_reward = {
+			unlock_decision_tooltip = PRC_asteroid_mining_programme_new_left
+			unlock_decision_tooltip = PRC_new_moon_race_programme_new_left
+			unlock_decision_tooltip = PRC_expand_satellite_launching_programme_new_left
+		}
 	}
 		#干部革命化
 	focus = {
@@ -3435,10 +3872,7 @@ focus_tree = {
 				    days = -30
 			    }
 		    }
-
 	    }
-
-	}
 	focus = {
 		id = PRC_nl_proletarian_good_representative
 		icon = GFX_goal_unknown
@@ -3493,10 +3927,11 @@ focus_tree = {
 		}
 
 	}
+	#自动化模型
 	focus = {
 		id = PRC_nl_automation_model
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3
 		prerequisite = {
 			focus = PRC_nl_maoist_vision
 		}
@@ -3506,48 +3941,148 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = PRC_nl_digital_planning_committee
-
+		completion_reward = {
+			activate_mission = zidonghua_moxing
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = zidonghua_moxing_dynamic
+				}
+				add_to_variable = {
+					var = zdh_research_speed_factor_var
+					value = -0.1
+				}
+				add_to_variable = {
+					var = zdh_consumer_goods_factor_var
+					value = 0.1
+				}
+			}
+			effect_tooltip = {
+				add_ideas = zidonghua_moxing_dynamic_idea
+			}
+			unlock_decision_tooltip = jiasu_gongzuo
+			unlock_decision_tooltip = touru_keyan_ranyuan
+			unlock_decision_tooltip = touru_zijin
+		}
 	}
+
+	#引入工人监管
 	focus = {
 		id = PRC_nl_introduce_worker_supervision
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_automation_model
 		}
 		x = -1
 		y = 1
 		relative_position_id = PRC_nl_automation_model
-
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_ogas_idea0
+					add_idea = worker_supervision_idea
+				}
+			}
+			add_to_variable = {
+				var = ogas_personal_value_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = ogas_industrial_capacity_factory_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = ogas_production_speed_buildings_factor_dynamic_var
+				value = 0.05
+			}
+		}
 	}
+
+	#去中心化构建
 	focus = {
 		id = PRC_nl_decentralized_construction
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_automation_model
 		}
 		x = 1
 		y = 1
 		relative_position_id = PRC_nl_automation_model
-
+		completion_reward = {
+			unlock_decision_tooltip = beijing_jiedian
+		}
 	}
+
+	#关注小微基础设施
 	focus = {
 		id = PRC_nl_focus_on_small_infrastructure
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_sensor_network_deployment
 		}
 		x = 1
 		y = 1
 		relative_position_id = PRC_nl_sensor_network_deployment
-
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_ogas_idea0
+					add_idea = small_infrastructure_idea
+				}
+			}
+			add_to_variable = {
+				var = ogas_production_speed_infrastructure_factor_dynamic_var
+				value = 0.1
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
+	#国有企业试点运行
 	focus = {
 		id = PRC_nl_state_enterprise_pilot_operations
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3
 		prerequisite = {
 			focus = PRC_nl_decentralized_construction
 		}
@@ -3557,12 +4092,16 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = PRC_nl_automation_model
-
+		completion_reward = {
+			activate_mission = guoyouqiye_shixing
+		}
 	}
+
+	#全域物联网建设
 	focus = {
 		id = PRC_nl_national_IoT_construction
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 3
 		prerequisite = {
 			focus = PRC_nl_smart_building_development
 		}
@@ -3572,12 +4111,21 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = PRC_nl_sensor_network_deployment
-
+		completion_reward = {
+			unlock_decision_tooltip = hua_nan
+			unlock_decision_tooltip = hua_bei
+			unlock_decision_tooltip = hua_dong
+			unlock_decision_tooltip = dong_bei
+			unlock_decision_tooltip = xi_bei
+			unlock_decision_tooltip = xi_nan
+		}
 	}
+
+	#全面引入社会
 	focus = {
 		id = PRC_nl_comprehensive_social_integration
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 5
 		prerequisite = {
 			focus = PRC_nl_state_enterprise_pilot_operations
 		}
@@ -3587,36 +4135,70 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = PRC_nl_national_IoT_construction
-
+		completion_reward = {
+			#效果：NEMS追加效果：个人产值+15%，商业产值+10%，月度收入增长+20%
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_NEMS0
+					add_idea = social_integration_idea
+				}
+			}
+			add_to_variable = {
+				var = NEMS_personal_value_factor_dynamic_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = NEMS_business_value_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = NEMS_income_growth_factor_dynamic_var
+				value = 0.2
+			}
+		}
 	}
+
+	#自主迭代系统
 	focus = {
 		id = PRC_nl_autonomous_iteration_system
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_comprehensive_social_integration
 		}
 		x = -1
 		y = 1
 		relative_position_id = PRC_nl_comprehensive_social_integration
-
+		completion_reward = {
+			#解锁读条民用工业迭代，军用工业迭代，海军生产迭代，科技研发迭代
+			set_country_flag = zizhu_diedai
+			set_variable = { mingongshu0 = num_of_civilian_factories }
+			set_variable = { jungongshu0 = num_of_military_factories }
+			set_variable = { chuanwushu0 = num_of_naval_factories }
+		}	
 	}
+
+	#综合长征智能
 	focus = {
 		id = PRC_nl_integrate_long_march_AI
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 2
 		prerequisite = {
 			focus = PRC_nl_comprehensive_social_integration
 		}
 		x = 1
 		y = 1
 		relative_position_id = PRC_nl_comprehensive_social_integration
-
+		completion_reward = {
+			#
+		}
 	}
+
+	#数字共产主义愿景
 	focus = {
 		id = PRC_nl_digital_communist_vision
 		icon = GFX_goal_unknown
-		cost = 0.00
+		cost = 5
 		prerequisite = {
 			focus = PRC_nl_autonomous_iteration_system
 		}
@@ -3626,9 +4208,10 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = PRC_nl_comprehensive_social_integration
-
+		completion_reward = {
+			add_ideas = communist_vision_idea
+		}
 	}
-
 	focus = {#社会主义现代化建设
 		id = PRC_nl_socialist_modernization
 		icon = GFX_goal_unknown

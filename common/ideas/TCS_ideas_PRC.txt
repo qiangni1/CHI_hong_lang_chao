@@ -322,6 +322,42 @@ ideas = {
 				academic_development_monthly = 0.002
 			}	
 		}
+		#	决议 - 义务教育素质化 - 效果
+		PRC_socialist_culture_start18 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				business_value_factor = 0.05
+				personal_value_factor = 0.05
+				personal_expense_factor = 0.02
+			}	
+		}
+		#	决议 - 改革中高考 - 效果
+		PRC_socialist_culture_start19 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				personal_expense_factor = 0.02
+				academic_development_monthly = 0.005
+			}	
+		}
+
 		#	党内整风 - 初始
 		PRC_party_rectification_campaign = {
 			picture = generic_covid

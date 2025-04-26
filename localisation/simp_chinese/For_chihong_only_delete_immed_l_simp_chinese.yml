@@ -1,5 +1,4 @@
 ﻿l_simp_chinese:
-  PRC_export_revolution: "世界解放阵线-对外革命部"
   TFR_Chinese_Influence_desc: "在地图上选择执行行动的国家，相关决议将在右下方动态显示。"
   TFR_Chinese_Influence_desc2: "[PRC_Lib_Stage_loc]"
   Chihong_World_Rev_desc: "国际共运形势：[PRC_Lib_Stage_loc]\n\n[PRC_Lib_Stage_loc2]"
@@ -78,7 +77,7 @@
   PRC_second_new_culture_movement_flag: "已完成§Y第二次新文化运动§!的两个§t互斥§!决议中的一个"
   bureaucracy_pp_popularity_tt: "此外，我们还会根据目前国内§R威权社会主义§!的§G支持率§!获得对应的£GFX_pol_power §Y政治点数§!的加成。"
 #国策
-  add_a_slot: "获得一个宣传槽。"
+  add_a_slot: "获得1个宣传槽。"
   PRC_nl_socialist_modernization: "社会主义现代化建设"
   PRC_nl_advance_productivity: "发展先进生产力"
   PRC_nl_reform_production_relation: "改革不平等生产关系"
@@ -120,7 +119,7 @@
   PRC_nl_social_reeducation: "刨除思想毒草"
   PRC_nl_social_reeducation_desc: "市场经济下，拜金主义、利己主义盛行，社会价值观混乱。我们将开展全民再教育运动，组织各阶层公民参与社会实践和集体学习，重建社会主义核心价值观，让人人都能明辨是非，自觉抵制腐朽与反动思想，来一场触及人心的大革命。"
 
-  Social_GUI_Activation: "解锁社会宣传GUI：获得一个宣传槽。"
+  Social_GUI_Activation: "解锁社会宣传GUI：获得1个宣传槽。"
   PRC_nl_education_the_groundstone: "教育，未来基石"
   PRC_nl_education_the_groundstone_desc: "当前教育过分重视书本知识，学生“两耳不闻窗外事”。我们将彻底改革教学模式，学生每学期必须参与一定时间的生产劳动和社会实践，让理论在泥土中生根，在劳动中开花，真正做到知行合一。"
   PRC_nl_future_with_technology: "开拓未来以技术"
@@ -237,13 +236,8 @@
   PRC_nl_transparent_to_the_people_desc: "信息不透明是腐败滋生的温床。全面的政务公开制度是必要的，公开党和国家机关决策过程、财政预算、干部任免等核心信息，接受群众监督。除国防军事外这类决策外，政府运作应在阳光下进行，确保权力在监督下行使。"
   PRC_nl_automation_model: "自动化模型"
   PRC_nl_national_IOT_construction: "全域物联网建设"
-  PRC_nl_ancestor_worship: "凤凰涅槃"
   PRC_nl_three_major_reforms: "三大改造运动"
   PRC_nl_three_major_reforms_desc: "美国内战以来，国内国际经济形势均起了重要变化。原有全球化体系的彻底崩盘为我们提供了“再公有化”的历史契机。在这个关键的时间节点，我们的工作应当暂时转向利用、限制、和改造资本主义工商业。以促使整体经济朝社会主义的方向发展——正如大半个世纪前第一次三大改造一般。"
-  PRC_nl_martial_law_reconstruction: "重建期戒严"
-  PRC_nl_industry_integration_with_mainland: "产业与大陆对接"
-  PRC_nl_public_trial_separatists: "公审分裂分子"
-  PRC_nl_cross_strait_family: "两岸人民一家亲"
   PRC_nl_red_wave_surge: "赤色浪潮在奔涌"
   PRC_nl_clean_house: "刨除思想毒草"
   PRC_nl_clean_house_desc: "市场经济下，拜金主义、利己主义盛行，社会价值观混乱。我们将开展全民再教育运动，组织各阶层公民参与社会实践和集体学习，对错误路线和思想进行严厉批评，重建社会主义核心价值观，让人人都能明辨是非，自觉抵制腐朽与反动思想。"
