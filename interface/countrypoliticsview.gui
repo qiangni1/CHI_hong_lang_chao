@@ -99,7 +99,7 @@ guiTypes = {
 			spriteType = "GFX_socialist_market"
 			pdx_tooltip = "TFR_SOCIALIST_MARKET_TT"
 			pdx_tooltip_delayed = "TFR_SOCIALIST_MARKET_TT_LONG"
-		}	
+		}
 		iconType = {
 			name = "TFR_developed_socialism_type_politics_icon"
 			position = { x = 0 y = 0 }
@@ -192,25 +192,18 @@ guiTypes = {
 			pdx_tooltip_delayed = "ZZZ_PARTY_STATE_CAPITALISM_TT_LONG"
 		}	
 		iconType = {
-			name = "TFR_automation_socialism_type_icon"
-			position = { x = 0 y = 0 }
-			spriteType = "GFX_automation_socialism"
-			pdx_tooltip = "ZZZ_AUTOMATION_SOCIALISM_TT"
-			pdx_tooltip_delayed = "ZZZ_AUTOMATION_SOCIALISM_TT_LONG"
-		}
-		iconType = {
-			name = "TFR_automation_communism_type_icon"
-			position = { x = 0 y = 0 }
-			spriteType = "GFX_automation_communism"
-			pdx_tooltip = "ZZZ_AUTOMATION_COMMUNISM_TT"
-			pdx_tooltip_delayed = "ZZZ_AUTOMATION_COMMUNISM_TT_LONG"
-		}
-		iconType = {
 			name = "TFR_mixed_economy_type_icon"
 			position = { x = 0 y = 0 }
 			spriteType = "GFX_mixed_economy"
 			pdx_tooltip = "ZZZ_MIXED_ECONOMY_TT"
 			pdx_tooltip_delayed = "ZZZ_MIXED_ECONOMY_TT_LONG"
+		}
+		iconType = {
+			name = "TFR_OGAS_type_politics_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_socialist_market"
+			pdx_tooltip = "TFR_OGAS_TT"
+			pdx_tooltip_delayed = "TFR_OGAS_TT_LONG"
 		}
 	}
 	containerWindowType = {

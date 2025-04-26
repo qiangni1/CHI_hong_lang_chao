@@ -2123,7 +2123,7 @@ focus_tree = {
 	focus = {
 		id = PRC_nl_social_reeducation
 		icon = GFX_goal_unknown
-		cost = 4
+		cost = 0.00
 		prerequisite = {
 			focus = PRC_nl_sun_at_eight_nine
 		}

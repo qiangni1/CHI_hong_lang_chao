@@ -1,0 +1,14 @@
+nems_jindu = {
+	custom_effect_tooltip = nems_jindu_tt
+		
+		add_to_variable = {
+			var = nems_jindu_rating_var
+			value = nems_jindu_rating_var_temp
+		}
+		
+		clamp_variable = {
+			var = nems_jindu_rating_var
+			min = 0
+			max = 1
+		}
+}
