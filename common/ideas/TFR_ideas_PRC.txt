@@ -1183,6 +1183,589 @@ ideas = {
 				poverty_development_monthly = -0.05
 			}
 		}
+PRC_nl_jingji1_idea = {
+			#社会主义现代化建设
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				research_speed_factor = 0.07
+				expense_growth_factor = 0.05
+			}
+		}
+		PRC_nl_jingji2_idea = {
+			#发展先进生产力
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		PRC_nl_jingji2_d1_idea = {
+			#决议：推进国内大循环
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.1
+				min_export = -0.1
+				industrial_development_monthly = 0.005
+			}
+		}
+		PRC_nl_jingji2_d2_idea = {
+			#决议：建设先进产业集群
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		PRC_nl_jingji2_d3_idea = {
+			#决议：扩展科技小院模式
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_energy_farm_factor = 0.1
+				farming_development_monthly = 0.005
+				society_development_monthly = 0.005
+			}
+		}
+		PRC_nl_jingji2_d4_idea = {
+			#决议：推广农业八字宪法
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				farming_development_monthly = 0.005
+				local_resources_factor = 0.05
+				poverty_development_monthly = 0.005
+			}
+		}
+		PRC_nl_jingji3_idea = {
+			#改革不平等生产关系
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.15
+				poverty_development_monthly = 0.005
+			}
+		}
+		PRC_nl_jingji3_d1_idea = {
+			#决议：消灭血汗工厂
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_development_monthly = 0.005
+				society_development_monthly = 0.005
+			}
+		}
+		PRC_nl_jingji3_d2_idea = {
+			#决议：落实劳动法
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		PRC_nl_jingji3_d3_idea = {
+			#决议：新时代赎买政策
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				poverty_development_monthly = 0.005
+				business_value_factor = -0.15
+			}
+		}
+		PRC_nl_jingji3_d3C0d_idea = {
+			#公有化大型企业(假)
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_nl_gongyouhuaqiye_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		PRC_nl_jingji3_d3C0_idea = {
+			#公有化大型企业
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_nl_gongyouhuaqiye_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.2
+				business_value_factor = -0.1
+				expense_growth_factor = 0.05
+			}
+		}
+		PRC_nl_jingji3_d3C1_idea = {
+			#公有化腾讯
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_nl_gongyouhuaqiye_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				business_value_factor = 0.025
+				income_growth_factor = 0.025
+			}
+		}
+		PRC_nl_jingji3_d3C2_idea = {
+			#公有化百度
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_nl_gongyouhuaqiye_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				business_value_factor = 0.025
+				research_speed_factor = 0.025
+			}
+		}
+		PRC_nl_jingji3_d3C3_idea = {
+			#公有化富士康
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_nl_gongyouhuaqiye_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		PRC_nl_jingji3_d3C4_idea = {
+			#公有化华为
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_nl_gongyouhuaqiye_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				business_value_factor = 0.025
+				research_speed_factor = 0.025
+			}
+		}
+		PRC_nl_jingji3_d3C5_idea = {
+			#公有化阿里巴巴
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_nl_gongyouhuaqiye_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = 0.025
+				business_value_factor = 0.025
+				political_power_gain = 0.1
+			}
+		}
+		PRC_nl_jingji3_d3C6_idea = {
+			#公有化新浪
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_nl_gongyouhuaqiye_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		PRC_nl_jingji3_d3C7_idea = {
+			#公有化字节跳动
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_nl_gongyouhuaqiye_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				farming_development_monthly = 0.005
+			}
+		}
+		PRC_nl_jingji3_d3C8_idea = {
+			#公有化京东
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_nl_gongyouhuaqiye_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				business_value_factor = 0.025
+				industrial_development_monthly = 0.005
+			}
+		}
+		PRC_nl_jingji3_d3C9_idea = {
+			#清算恒大
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_nl_gongyouhuaqiye_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				expense_growth_factor = -0.1
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		PRC_nl_jingji3_d4_idea = {
+			#决议：规范统一平台经济
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				business_value_factor = 0.15
+			}
+		}
+		PRC_nl_jingji3_d4C10_idea = {
+			#公有化美团
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_nl_gongyouhuaqiye_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				business_value_factor = 0.025
+				personal_value_factor = 0.025
+			}
+		}
+		PRC_nl_jingji3_d4C11_idea = {
+			#公有化滴滴
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_nl_gongyouhuaqiye_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				personal_value_factor = 0.025
+				industrial_capacity_factory = 0.05
+			}
+		}
+		PRC_nl_jingji4_idea = {
+			#社会主义建设高潮
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = 0.1
+				expense_growth_factor = 0.05
+				personal_value_factor = 0.1
+			}
+		}
+		PRC_nl_jingji4t_idea = {
+			#鼓足干劲力争上游
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_nl_jingji4t_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		PRC_nl_jingji5_idea = {
+			#新时代鞍钢宪法
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_start_efficiency_factor = 0.1
+				military_industrial_organization_funds_gain = 0.2
+				military_industrial_organization_research_bonus = 0.1
+			}
+		}
+		PRC_nl_jingji5_d1_idea = {
+			#决议：发扬大庆工业精神
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		PRC_nl_jingji5_d1a_idea = {
+			#人民群众的先锋模范
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_peoples_ppioneer_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_development_monthly = 0.005
+				political_power_gain = 0.15
+			}
+		}
+		PRC_nl_jingji6_idea = {
+			#改革农民合作社
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_building_slots_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		PRC_nl_jingji6_d1_idea = {
+			#决议：发扬农业大寨精神
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.15
+				local_resources_factor = 0.1
+				personal_value_factor = 0.1
+			}
+		}
+		PRC_nl_jingji6_d1b_idea = {
+			#人民群众的先锋模范
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_peoples_ppioneer_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_development_monthly = 0.005
+				farming_development_monthly = 0.005
+				political_power_gain = 0.3
+			}
+		}
+		PRC_nl_jingji7_idea = {
+			#提高生产资料利用率
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.25
+				PRODUCTION_LACK_OF_RESOURCE_PENALTY_FACTOR = -0.3
+			}
+		}
+		PRC_nl_jingji8_idea = {
+			#自己动手丰衣足食
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				personal_value = 0.1
+				personal_expense_factor = -0.15
+			}
+		}
+		PRC_nl_jingji9_idea = {
+			#重建人民公社
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				line_change_production_efficiency_factor = 0.15
+			}
+		}
+		PRC_nl_jingji10_idea = {
+			#保障人民美好生活
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				tax_personal_rate = -0.05
+				personal_expense_factor = 0.15
+				poverty_development_monthly = 0.005
+			}
+		}
 		PRC_oil_crash2 = {
 			picture = PRC_oil_crash
 
