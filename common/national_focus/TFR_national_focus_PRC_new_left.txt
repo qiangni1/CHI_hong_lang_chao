@@ -3435,10 +3435,7 @@ focus_tree = {
 				    days = -30
 			    }
 		    }
-
 	    }
-
-	}
 	focus = {
 		id = PRC_nl_proletarian_good_representative
 		icon = GFX_goal_unknown
