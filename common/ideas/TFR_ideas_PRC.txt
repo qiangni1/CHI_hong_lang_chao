@@ -1183,7 +1183,7 @@ ideas = {
 				poverty_development_monthly = -0.05
 			}
 		}
-PRC_nl_jingji1_idea = {
+		PRC_nl_jingji1_idea = {
 			#社会主义现代化建设
 			picture = GFX_idea_PRC_made_in_china
 			name = PRC_made_in_china_idea
@@ -6086,6 +6086,24 @@ PRC_nl_jingji1_idea = {
 				industrial_capacity_factory = 0.03
 				personal_value_factor = 0.05
 				totalitarian_socialist_drift = 0.01
+			}
+		}		
+		PRC_communist_party_of_china_dummy15 = {
+			name =  PRC_chinese_communist_party_idea
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				society_development_monthly = 0.002
 			}
 		}		
 

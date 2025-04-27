@@ -3,4 +3,29 @@ spriteTypes = {
 		name = "GFX_PRC_idea_world_jiefang"
 		texturefile = "gfx/interface/ideas/PRC/PRC_idea_world_jiefang.png"
 	}
+	spriteType = {
+		name = "GFX_idea_PRC_wang_huning"
+		textureFile = "gfx/interface/ideas/PRC/advisors/PRC_wang_huning.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_yuan_jiajun"
+		textureFile = "gfx/interface/ideas/PRC/advisors/PRC_yuan_jiajun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_mao_yuanxin"
+		textureFile = "gfx/interface/ideas/PRC/advisors/PRC_mao_yuanxin.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_NPC"
+		textureFile = "gfx/interface/ideas/PRC/advisors/PRC_npc.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_wang_zhaoguo"
+		textureFile = "gfx/interface/ideas/PRC/advisors/PRC_wang_zhaoguo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_ma_xingrui"
+		textureFile = "gfx/interface/ideas/PRC/advisors/PRC_ma_xingrui.png"
+	}
+
 }

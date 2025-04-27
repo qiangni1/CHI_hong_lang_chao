@@ -3793,6 +3793,16 @@ focus_tree = {
 		relative_position_id = PRC_nl_reform_people_congress
 		completion_reward = {
 		    add_political_power = -21
+			improve_people_democracy = yes
+			add_to_variable = {
+				PRC_cpc_society_development_monthly_dynamic_var = 0.002
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_communist_party_of_china_dummy
+					add_idea = PRC_communist_party_of_china_dummy15
+				}
+			}
 		}
 
 	}

@@ -43,3 +43,43 @@ change_economy_type_auto_communism = {
 		add_ideas = automation_communism
 	}
 }
+
+improve_people_democracy = {
+	if = {
+		limit = { 
+			has_idea = PRC_road_to_people_democracy
+		}
+		swap_ideas = {
+			remove_idea = PRC_road_to_people_democracy
+			add_idea = PRC_road_to_people_democracy1
+		}
+	}
+	else_if = {
+		limit = { 
+			has_idea = PRC_road_to_people_democracy1
+		}
+		swap_ideas = {
+			remove_idea = PRC_road_to_people_democracy1
+			add_idea = PRC_road_to_people_democracy2
+		}
+	}
+	else_if = {
+		limit = { 
+			has_idea = PRC_road_to_people_democracy2
+		}
+		swap_ideas = {
+			remove_idea = PRC_road_to_people_democracy2
+			add_idea = PRC_road_to_people_democracy3
+		}
+	}
+	else_if = {
+		limit = { 
+			has_idea = PRC_road_to_people_democracy3
+		}
+		swap_ideas = {
+			remove_idea = PRC_road_to_people_democracy3
+			add_idea = PRC_road_to_people_democracy4
+		}
+	}
+
+}
