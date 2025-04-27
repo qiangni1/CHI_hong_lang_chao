@@ -3,7 +3,7 @@ ideas = {
 		law = yes
 		use_list_view = yes
 		auto_socialism = {
-			picture = laws_economic_focus
+			picture = GFX_ideology_communist_group
 			removal_cost = -1
 			level = 7
 			cancel_if_invalid = no
@@ -21,7 +21,7 @@ ideas = {
 			}
 		}
 		auto_communism = {
-			picture = laws_economic_focus
+			picture = GFX_ideology_totalitarian_socialist_group
 			removal_cost = -1
 			level = 7
 			cancel_if_invalid = no
