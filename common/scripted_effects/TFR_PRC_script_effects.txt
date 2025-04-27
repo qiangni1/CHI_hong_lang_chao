@@ -31,14 +31,14 @@ change_welfare_type_communism = {
 }
 
 change_economy_type_auto_socialism = {
-	custom_effect_tooltip = auto_socialism_tt
+	custom_effect_tooltip = change_economy_type_auto_socialism_tt
 	hidden_effect = {
 		add_ideas = automation_socialism
 	}
 }
 
 change_economy_type_auto_communism = {
-	custom_effect_tooltip = auto_communism_tt
+	custom_effect_tooltip = change_economy_type_auto_communism_tt
 	hidden_effect = {
 		add_ideas = automation_communism
 	}
