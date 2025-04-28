@@ -4424,6 +4424,7 @@ PRC_Culture_Revital = {
 		}
 		cost = 10
 		days_remove = 1
+		fire_only_once = yes
 		complete_effect = {
 			country_event = Chihong.39
 		}
@@ -5569,6 +5570,7 @@ PRC_Youth_Ideological_Education = {
 				days = 365
 			}
 			add_ideas = PRC_communist_party_of_china_PRC_cutdown_party_bureaucracy
+			set_country_flag = PRC_opposition_suspended_flag
 		}
 		modifier = {
 			stability_weekly = -0.002

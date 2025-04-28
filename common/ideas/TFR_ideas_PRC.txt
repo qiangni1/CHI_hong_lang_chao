@@ -1183,10 +1183,29 @@ ideas = {
 				poverty_development_monthly = -0.05
 			}
 		}
+		PRC_nl_jingji0_idea = {
+			#通向未来之路
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				business_value_factor = -0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
 		PRC_nl_jingji1_idea = {
 			#社会主义现代化建设
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1203,7 +1222,7 @@ ideas = {
 		PRC_nl_jingji2_idea = {
 			#发展先进生产力
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1219,7 +1238,7 @@ ideas = {
 		PRC_nl_jingji2_d1_idea = {
 			#决议：推进国内大循环
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1237,7 +1256,7 @@ ideas = {
 		PRC_nl_jingji2_d2_idea = {
 			#决议：建设先进产业集群
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1252,7 +1271,7 @@ ideas = {
 		PRC_nl_jingji2_d3_idea = {
 			#决议：扩展科技小院模式
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1269,7 +1288,7 @@ ideas = {
 		PRC_nl_jingji2_d4_idea = {
 			#决议：推广农业八字宪法
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1286,7 +1305,7 @@ ideas = {
 		PRC_nl_jingji3_idea = {
 			#改革不平等生产关系
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1302,7 +1321,7 @@ ideas = {
 		PRC_nl_jingji3_d1_idea = {
 			#决议：消灭血汗工厂
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1318,7 +1337,7 @@ ideas = {
 		PRC_nl_jingji3_d2_idea = {
 			#决议：落实劳动法
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1333,7 +1352,7 @@ ideas = {
 		PRC_nl_jingji3_d3_idea = {
 			#决议：新时代赎买政策
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1524,7 +1543,7 @@ ideas = {
 		PRC_nl_jingji3_d4_idea = {
 			#决议：规范统一平台经济
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1571,7 +1590,7 @@ ideas = {
 		PRC_nl_jingji4_idea = {
 			#社会主义建设高潮
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1604,7 +1623,7 @@ ideas = {
 		PRC_nl_jingji5_idea = {
 			#新时代鞍钢宪法
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1621,7 +1640,7 @@ ideas = {
 		PRC_nl_jingji5_d1_idea = {
 			#决议：发扬大庆工业精神
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1654,7 +1673,7 @@ ideas = {
 		PRC_nl_jingji6_idea = {
 			#改革农民合作社
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1670,7 +1689,7 @@ ideas = {
 		PRC_nl_jingji6_d1_idea = {
 			#决议：发扬农业大寨精神
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1704,7 +1723,7 @@ ideas = {
 		PRC_nl_jingji7_idea = {
 			#提高生产资料利用率
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1720,7 +1739,7 @@ ideas = {
 		PRC_nl_jingji8_idea = {
 			#自己动手丰衣足食
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1736,7 +1755,7 @@ ideas = {
 		PRC_nl_jingji9_idea = {
 			#重建人民公社
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1752,7 +1771,7 @@ ideas = {
 		PRC_nl_jingji10_idea = {
 			#保障人民美好生活
 			picture = GFX_idea_PRC_made_in_china
-			name = PRC_made_in_china_idea
+			name = PRC_made_in_china_idea1
 			allowed = {
 				always = no
 			}
@@ -1898,6 +1917,24 @@ ideas = {
 			modifier = {
 			}
 		}
+		PRC_made_in_china_dummy_idea0 = { #Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+
 		
 		PRC_made_in_china_dummy_idea2 = {
 			picture = GFX_idea_PRC_made_in_china

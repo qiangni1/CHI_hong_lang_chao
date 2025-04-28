@@ -2,7 +2,7 @@
 		country = {
 			PRC_nl_assure_welfare_idea = { #Tooltip Idea
             			picture = GFX_idea_PRC_made_in_china
-            			name = PRC_made_in_china_idea
+            			name = PRC_made_in_china_idea1
 
             			allowed = {
             				always = no
@@ -22,7 +22,7 @@
             }
             PRC_nl_UBI_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }
@@ -37,7 +37,7 @@
             }
             PRC_nl_improve_commune_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }
@@ -52,7 +52,7 @@
             }
             PRC_nl_improve_commune_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }
@@ -67,7 +67,7 @@
             }
             PRC_nl_labors_share_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }
@@ -84,7 +84,7 @@
             }
             PRC_nl_greatly_riched_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }
@@ -99,7 +99,7 @@
             }
             PRC_nl_robotic_emergency_assist_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }
@@ -117,7 +117,7 @@
             }
             PRC_nl_labor_liberation_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }
@@ -133,7 +133,7 @@
             }
             PRC_nl_industry_five_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }
@@ -153,7 +153,7 @@
             }
             PRC_nl_automation_traffic_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }
@@ -172,7 +172,7 @@
             }
             PRC_nl_regional_integration_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }
@@ -187,7 +187,7 @@
             }
             PRC_nl_super_project_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }
@@ -202,7 +202,7 @@
             }
             PRC_nl_free_and_equal_labor_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }
@@ -219,7 +219,7 @@
             }
             PRC_nl_gain_from_each_good_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }
@@ -235,7 +235,7 @@
             }
             PRC_nl_free_life_supplement_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }
@@ -250,7 +250,7 @@
             }
             PRC_nl_commonhappy_idea = {
                picture = GFX_idea_PRC_made_in_china
-               name = PRC_made_in_china_idea
+               name = PRC_made_in_china_idea1
                allowed = {
                     always = no
                }

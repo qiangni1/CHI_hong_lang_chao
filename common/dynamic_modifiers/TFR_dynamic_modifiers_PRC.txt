@@ -313,6 +313,9 @@ PRC_made_in_china_dynamic = {
 	local_resources_factor = PRC_mic_local_resources_factor_dynamic_var
 }
 
+
+
+
 PRC_nl_jingji3_d3C0_dynamic = {
 	icon = GFX_idea_PRC_made_in_china_idea
 	#desc = PRC_made_in_china_dynamic_desc #No such thing in dynamic modifiers, consider tooltips instead

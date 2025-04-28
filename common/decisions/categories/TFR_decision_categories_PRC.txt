@@ -291,7 +291,7 @@ PRC_the_chinese_century_category = {
     	tag = PRC
     }	
     visible = {
-    	has_completed_focus = PRC_china_victorious_and_united
+    	has_completed_focus = PRC_nl_ancestor_worship
     }
 	priority = 5
 }

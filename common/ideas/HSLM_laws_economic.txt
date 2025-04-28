@@ -14,10 +14,10 @@ ideas = {
 			}
 			modifier = {
 				consumer_goods_factor = 0.2
-					stability_weekly = 0.002
-					business_value_factor = 0.15
-					personal_value_factor = 0.15
-					production_speed_buildings_factor = 0.1
+				stability_weekly = 0.002
+				business_value_factor = 0.15
+				personal_value_factor = 0.15
+				production_speed_buildings_factor = 0.1
 			}
 		}
 		auto_communism = {
@@ -28,18 +28,21 @@ ideas = {
 			default = yes
 			allowed_to_remove = {
 			}
+			visible = {
+				has_completed_focus = PRC_nl_new_sky
+			}
 			available = {
 			}
 			modifier = {
 				consumer_goods_factor = 0.15
-					stability_weekly = 0.002
-					business_value_factor = 0.15
-					personal_value_factor = 0.15
-					production_speed_buildings_factor = 0.15
-					industrial_development_monthly = 0.005
-                    farming_development_monthly = 0.015
-                    poverty_development_monthly = 0.01
-                    society_development_monthly = 0.01
+				stability_weekly = 0.002
+				business_value_factor = 0.15
+				personal_value_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				industrial_development_monthly = 0.005
+				farming_development_monthly = 0.015
+				poverty_development_monthly = 0.01
+				society_development_monthly = 0.01
 			}
 		}
 	}
