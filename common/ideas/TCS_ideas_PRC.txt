@@ -357,6 +357,173 @@ ideas = {
 				academic_development_monthly = 0.005
 			}	
 		}
+		#	国策 - 无产文化节 - 效果
+		PRC_socialist_culture_start20 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.05
+			}	
+		}
+		#	国策 - 百花齐放 - 效果
+		PRC_socialist_culture_start21 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.1
+				stability_weekly = 0.005
+				drift_defence_factor = -0.2
+				research_speed_factor = 0.05
+			}	
+		}
+		#	国策 - 人民艺术家 - 效果
+		PRC_socialist_culture_start22 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				communist_drift = 0.01
+				industrial_capacity_factory = 0.025
+			}	
+		}
+		#	国策 - 战斗的笔，革命的画 - 效果
+		PRC_socialist_culture_start23 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				mobilization_speed = 0.1
+				society_development_monthly = 0.005
+			}	
+		}
+		#	决议 - 宣传人民优秀作品 - 效果
+		PRC_socialist_culture_start24 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = 0.1
+				army_org_factor = 0.05
+				org_loss_at_low_org_factor = -0.15
+			}	
+		}
+		#	事件 - 此地空余黄鹤楼 - 效果
+		PRC_socialist_culture_start25 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = 0.05
+			}	
+		}
+		#	决议 - 跨国交流 - 效果
+		PRC_socialist_culture_start26 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				propaganda_mission_factor = 0.1
+				boost_ideology_mission_factor = 0.1
+				drift_defence_factor = 0.1
+				foreign_subversive_activites = -0.5
+			}	
+		}
+		#	国策 - 革命文艺复兴运动 - 效果
+		PRC_socialist_culture_start27 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_regain = 0.15
+				production_factory_max_efficiency_factor = 0.04
+				production_speed_buildings_factor = 0.05
+			}	
+		}
+		#	国策 - 寰宇赤潮 - 效果
+		PRC_socialist_culture_start28 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				surrender_limit = 0.1
+				drift_defence_factor = 0.15
+				resistance_decay = 0.1
+				compliance_growth = 0.05
+				compliance_growth_on_our_occupied_states = -0.15
+				army_org_regain = 0.1
+				army_org_factor = 0.05
+			}	
+		}
 
 		#	党内整风 - 初始
 		PRC_party_rectification_campaign = {

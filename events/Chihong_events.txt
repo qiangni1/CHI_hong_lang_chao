@@ -545,7 +545,7 @@ country_event = {
         }
     }
 }
-
+#无产文化节胜利
 country_event = {
     id = Chihong.37
     title = Chihong.37.t
@@ -558,9 +558,12 @@ country_event = {
         ai_chance = {
             base = 50
         }
+        add_political_power = 100
+        add_stability = 0.1
+        add_war_support = 0.1
     }
 }
-
+#表彰新一辈人民艺术家
 country_event = {
     id = Chihong.38
     title = Chihong.38.t
@@ -575,7 +578,7 @@ country_event = {
         }
     }
 }
-
+#此地空余黄鹤楼
 country_event = {
     id = Chihong.39
     title = Chihong.39.t
@@ -588,9 +591,25 @@ country_event = {
         ai_chance = {
             base = 50
         }
+        add_to_variable = {
+            PSC_drift_var = -0.05
+        }
+        add_to_variable = {
+            PSC_stability_var = -0.05
+        }
+        add_to_variable = {
+            PSC_war_support_var = 0.05
+        }
+        add_political_power = 20
+        effect_tooltip = {
+            swap_ideas = {
+                remove_idea = PRC_socialist_culture_start
+                add_idea = PRC_socialist_culture_start25
+            }
+        }
     }
 }
-
+#小红书的外国用户
 country_event = {
     id = Chihong.40
     title = Chihong.40.t

@@ -4362,6 +4362,140 @@ PRC_Culture_Revital = {
 			add_society_development = yes
 		}
 	}
+	#庆祝无产文化节
+	PRC_celebrate_OUR_art_festival = {
+		icon = GFX_PRC_cylc_decision
+		visible = {
+			has_completed_focus = PRC_nl_proletarian_art_festival
+		}
+		available = {
+			has_completed_focus = PRC_nl_proletarian_art_festival
+		}
+		cost = 50
+		days_remove = 100
+		fire_only_once = yes
+		remove_effect = {
+			country_event = Chihong.37
+		}
+	}
+	#宣传人民群众作品
+	PRC_propagate_PEOPLE_work = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		visible = {
+			has_completed_focus = PRC_nl_fighting_pen_revo_draw
+		}
+		available = {
+			has_completed_focus = PRC_nl_fighting_pen_revo_draw
+			has_campaign_slot = yes
+		}
+		cost = socialist_ppgda_cost1
+		days_remove = 180
+		days_re_enable = 180
+		complete_effect = {
+			remove_campaign_slot = yes
+		}
+		remove_effect = {
+			add_campaign_slot = yes
+			add_to_variable = {
+				PSC_drift_var = 0.1
+			}
+			add_to_variable = {
+				PSC_army_org_var = 0.05
+			}
+			add_to_variable = {
+				PSC_org_loss_25_var = -0.15
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start24
+				}
+			}
+		}
+	}
+	#拆掉防火墙
+	PRC_disable_firewall = {
+		icon = GFX_PRC_liberal_decision
+		visible = {
+			has_completed_focus = PRC_nl_long_live_internationalism
+		}
+		available = {
+			has_completed_focus = PRC_nl_long_live_internationalism
+		}
+		cost = 10
+		days_remove = 1
+		complete_effect = {
+			country_event = Chihong.39
+		}
+	}
+	#鼓励跨国交流
+	PRC_propagate_international_exchange = {
+		icon = GFX_PRC_new_left_decision
+		visible = {
+			has_completed_focus = PRC_nl_long_live_internationalism
+		}
+		available = {
+			has_completed_focus = PRC_nl_long_live_internationalism
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 60
+		remove_effect = {
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = PRC_pp_int_ex
+					}
+				}
+				country_event = Chihong.40
+				set_country_flag = PRC_pp_int_ex
+			}
+			add_to_variable = {
+				PSC_drift_var = 0.1
+			}
+			add_to_variable = {
+				PSC_propaganda_var = 0.1
+			}
+			add_to_variable = {
+				PSC_ideology_var = 0.1
+			}
+			add_to_variable = {
+				PSC_foreign_var = -0.5
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start26
+				}
+			}
+		}
+	}
+	#宣传：共产主义迈步走遍星球
+	PRC_communist_over_the_planet = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		visible = {
+			has_completed_focus = PRC_nl_long_live_internationalism
+		}
+		available = {
+			has_completed_focus = PRC_nl_long_live_internationalism
+			has_campaign_slot = yes
+		}
+		cost = socialist_ppgda_cost1
+		days_remove = 150
+		days_re_enable = 150
+		complete_effect = {
+			remove_campaign_slot = yes
+		}
+		modifier = {
+			send_volunteer_size = 4
+			send_volunteer_divisions_required = -1
+			offensive_war_stability_factor = 0.5
+			army_attack_against_major_factor = 0.1
+		}
+		remove_effect = {
+			add_campaign_slot = yes
+		}
+	}
 }
 PRC_Rt_People_Democracy = {
 	#	反动派在行动
