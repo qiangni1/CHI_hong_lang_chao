@@ -50,7 +50,8 @@
  PRC_ogas_idea: "自动化经济"
  PRC_NEMS: "NEMS系统"
  apply_nems_to_other_states: "在[FROM.GetFlag][FROM.GetName]部署NEMS系统"
- spread_NEMS: "[FROM.GetFlag][FROM.GetName]也将获得NEMS系统的加成。"
+ zizhu_diedai_tt: "这将启动§RNEMS系统§!的§Y自主迭代§!能力。\n我们建造的§Y民用工厂§!、§G军用工厂§!与§C海军船坞§!越多，我们的§C科研速度§!、§G军工建造速度§!与§C海军船坞产出§!"
+ spread_NEMS: "这将允许我们的盟友也获得NEMS系统的加成。"
  zidonghua_moxing_dynamic_idea: "正在编订自动化模型"
  communist_vision_idea: "数字化共产主义愿景"
  

@@ -3490,7 +3490,7 @@ focus_tree = {
 	#远望星辰
 	focus = {
 		id = PRC_nl_stellar_exploration
-		icon = GFX_goal_focus_PRC_fund_space_dev
+		icon = GFX_focus_PRC_fund_space_dev
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_dawn_project
@@ -3816,7 +3816,7 @@ focus_tree = {
 	#人民与党，携手共进
 	focus = {
 		id = PRC_nl_people_walk_with_party
-		icon = GFX_focus_PRC_Support_Initiatives_in_the_Party
+		icon = GFX_focus_PRC_support_initiatives_in_the_party
 		cost = 2.00
 		prerequisite = {
 			focus = PRC_nl_dare_to_pull_down_emperor
@@ -4380,6 +4380,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = PRC_nl_comprehensive_social_integration
 		completion_reward = {
+			custom_effect_tooltip = zizhu_diedai_tt
 			#解锁读条民用工业迭代，军用工业迭代，海军生产迭代，科技研发迭代
 			set_country_flag = zizhu_diedai
 			set_variable = { mingongshu0 = num_of_civilian_factories }
@@ -4619,7 +4620,7 @@ focus_tree = {
 	}
 	focus = { #提高生产资料利用率
 		id = PRC_nl_boost_production_tool_usage
-		icon = GFX_focus_PRC_State_Sindicalism
+		icon = GFX_focus_PRC_state_syndicalism
 		cost = 3
 		x = 0
 		y = 1

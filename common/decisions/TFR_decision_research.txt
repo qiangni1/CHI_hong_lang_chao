@@ -1808,12 +1808,10 @@ PRC_nems_system = {
 	apply_nems_to_other_states = {
 		icon = GFX_PRC_loji_decision_icon
 		target_trigger = {
-			FROM = {
-				NOT = {
-					tag = PRC
-				}
-				is_in_faction_with = PRC	
+			NOT = {
+				tag = PRC
 			}
+			is_in_faction_with = PRC	
 		}
 		cost = 50
 		fire_only_once = yes
