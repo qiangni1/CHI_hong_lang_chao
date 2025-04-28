@@ -4365,6 +4365,7 @@ focus_tree = {
 			set_variable = { mingongshu0 = num_of_civilian_factories }
 			set_variable = { jungongshu0 = num_of_military_factories }
 			set_variable = { chuanwushu0 = num_of_naval_factories }
+			set_variable = { kejishu0 = num_researched_technologies }
 		}	
 	}
 
