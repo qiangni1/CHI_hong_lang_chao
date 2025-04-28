@@ -9,7 +9,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_PRC_yuan_jiajun"
-		textureFile = "gfx/interface/ideas/PRC/advisors/PRC_yuan_jiajun.png"
+		textureFile = "gfx/interface/ideas/PRC/advisors/PRC_yuanjiajun.png"
 	}
 	spriteType = {
 		name = "GFX_idea_PRC_mao_yuanxin"

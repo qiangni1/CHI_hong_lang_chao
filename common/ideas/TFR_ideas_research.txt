@@ -227,7 +227,23 @@ ideas = {
 				production_speed_nuclear_reactor_factor = 0.25
 			}
 		}
+		jianzao_shifanjubiandianzhan_idea = {
+			picture = GFX_idea_CHI_silent_dawn_idea
+			name = PRC_research_idea
 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.25
+				research_speed_factor = 0.1
+			}
+		}
 		#自动化民族精神
 		PRC_ogas_idea = {
 			picture = GFX_idea_CHI_silent_dawn_idea

@@ -49,6 +49,8 @@
  PRC_research_idea: "中国科学"
  PRC_ogas_idea: "自动化经济"
  PRC_NEMS: "NEMS系统"
+ apply_nems_to_other_states: "在[FROM.GetFlag][FROM.GetName]部署NEMS系统"
+ spread_NEMS: "[FROM.GetFlag][FROM.GetName]也将获得NEMS系统的加成。"
  zidonghua_moxing_dynamic_idea: "正在编订自动化模型"
  communist_vision_idea: "数字化共产主义愿景"
  

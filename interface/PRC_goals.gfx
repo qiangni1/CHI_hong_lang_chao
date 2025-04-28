@@ -119,4 +119,33 @@ spriteTypes = {
 		name = "GFX_focus_PRC_new_left_zhongnanbandao"
 		texturefile = "gfx/interface/goals/PRC/PRC_new_left_zhongnanbandao.png"
 	}
+	spriteType = {
+		name = "GFX_focus_PRC_cultural_renaissance"
+		textureFile = "gfx/interface/goals/PRC/PRC_cultural_renaissance.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_people_artist"
+		textureFile = "gfx/interface/goals/PRC/PRC_people_artist.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_cosmos_red_tide"
+		textureFile = "gfx/interface/goals/PRC/PRC_cosmos_red_tide.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_long_live_internationalism"
+		textureFile = "gfx/interface/goals/PRC/PRC_long_live_internationalism.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_proletarian_art_festival"
+		textureFile = "gfx/interface/goals/PRC/PRC_proletarian_art_festival.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_hundred_flowers"
+		textureFile = "gfx/interface/goals/PRC/PRC_hundred_flowers.png"
+	}
+	spriteType = {
+		name = "GFX_focus_PRC_battle_pen_revo_drawing"
+		textureFile = "gfx/interface/goals/PRC/PRC_battle_pen_revo_drawing.png"
+	}
+
 }

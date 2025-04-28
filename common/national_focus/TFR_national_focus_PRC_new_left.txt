@@ -2611,7 +2611,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_nl_proletarian_art_festival
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_proletarian_art_festival
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_peoples_culture_revolutionary_culture
@@ -2636,7 +2636,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_hundred_flowers_bloom
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_hundred_flowers
 		cost = 3
 		x = -2
 		y = 1
@@ -2668,7 +2668,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_people_artist
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_people_artist
 		cost = 3
 		x = 0
 		y = 2
@@ -2698,7 +2698,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_nl_fighting_pen_revo_draw
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_battle_pen_revo_drawing
 		cost = 3
 		x = 2
 		y = 1
@@ -2724,7 +2724,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_long_live_internationalism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_long_live_internationalism
 		cost = 3
 		x = 0
 		y = 2
@@ -2738,7 +2738,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_cosmos_red_tide
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_cosmos_red_tide
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_proletarian_art_festival
@@ -2785,7 +2785,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_revolutionary_art_renaissance
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_cultural_renaissance
 		cost = 3.00
 		x = 0
 		y = 2
@@ -3423,7 +3423,27 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = PRC_nl_investment_in_new_energy
-
+		completion_reward = {
+			add_to_variable = {
+				rd_production_speed_nuclear_reactor_factor_var = 0.25
+			}
+			add_to_variable = {
+				rd_research_speed_factor_var = 0.1
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_research_idea0
+					add_idea = jianzao_shifanjubiandianzhan_idea
+				}
+			}
+			add_tech_bonus = {
+				name = PRC_nl_fusion_power_demo
+				uses = 1
+				category = nuclear
+				bonus = 1
+				ahead_reduction = 2
+			}
+		}
 	}
 
 	#开发实用量子超算
@@ -4381,7 +4401,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = PRC_nl_comprehensive_social_integration
 		completion_reward = {
-			#
+			custom_effect_tooltip = spread_NEMS
+			unlock_decision_tooltip = apply_nems_to_other_states
 		}
 	}
 
