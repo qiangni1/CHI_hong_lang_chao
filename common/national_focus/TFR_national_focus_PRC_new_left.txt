@@ -1609,7 +1609,7 @@ focus_tree = {
 	#重置-政经线
 	focus = {
 		id = PRC_nl_ancestor_worship
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_the_red_phoenix
 		cost = 3.00
 		x = 18
 		y = 0
@@ -1643,7 +1643,7 @@ focus_tree = {
 	focus = {
 		id = PRC_nl_martial_law_reconstruction
 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_utilize_xinjiang_methods
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_ancestor_worship
@@ -1672,7 +1672,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_industry_integration_with_mainland
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_one_china_two_systems
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_martial_law_reconstruction
@@ -1738,7 +1738,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_public_trial_separatists
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_quell_the_protests
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_ancestor_worship
@@ -1763,7 +1763,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_cross_strait_family
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_gradual_stabilization
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_public_trial_separatists
@@ -1795,7 +1795,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_red_wave_surge
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_popular_socialist_democracy
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_cross_strait_family
@@ -1855,7 +1855,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_clean_house
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_cutdown_party_bureaucracy
 		cost = 7.00
 		prerequisite = {
 			focus = PRC_nl_red_wave_surge
@@ -1945,7 +1945,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_marxist_theory_peak
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_humanist_marxism
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_clean_house
@@ -2002,7 +2002,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_political_awakening
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_consolidate_hu_chunhua_support
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_clean_house
@@ -2110,7 +2110,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_sun_at_eight_nine
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_and_may_no_one_be_left_behind
 		cost = 2.00
 		prerequisite = {
 			focus = PRC_nl_political_awakening
@@ -2132,7 +2132,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_social_reeducation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_anti_lobbying_laws
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_sun_at_eight_nine
@@ -2185,7 +2185,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_party_the_face
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_revitilize_peoples_democratic_dictatorship
 		cost = 3
 		x = 0
 		y = 1
@@ -2226,7 +2226,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_education_the_groundstone
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_stir_up_youth_patriotism
 		cost = 3
 		x = -3
 		y = 1
@@ -2253,7 +2253,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_end_to_past_chaos
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_blame_local_officials
 		cost = 3
 		x = 3
 		y = 1
@@ -2277,7 +2277,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_future_with_technology
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_ai_assisted_governance
 		cost = 3
 		x = -1
 		y = 1
@@ -2310,7 +2310,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_youth_league
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_appeal_to_the_chinese_people_gaw
 		cost = 3
 		x = 1
 		y = 1
@@ -2362,7 +2362,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_restructure_our_study
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_concessions_to_partocrats
 		cost = 3
 		x = 0
 		y = 1
@@ -2392,7 +2392,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_purge_culture_propaganders
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_ministerial_reshuffle
 		cost = 3
 		x = -1
 		y = 1
@@ -2425,7 +2425,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_off_bad_trend
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_cadre_rejuvenation
 		cost = 3
 		x = 1
 		y = 1
@@ -2463,7 +2463,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_purge_academic_bureaucrats
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_final_strike_against_the_corruption
 		cost = 3
 		x = 0
 		y = 1
@@ -2507,7 +2507,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_revive_red_culture
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_core_socialist_values
 		cost = 3
 		x = 0
 		y = 1
@@ -2555,7 +2555,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_peoples_culture_revolutionary_culture
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_enthusiasm_of_chinese_people
 		cost = 4.00
 		x = 0
 		y = 4
@@ -2814,7 +2814,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_nl_new_socialist_theory_practice
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_exonorate_neo_maoists
 		cost = 2.00
 		prerequisite = {
 			focus = PRC_nl_marxist_theory_peak
@@ -2873,7 +2873,7 @@ focus_tree = {
 	#马克思思想放光芒
 	focus = {
 		id = PRC_nl_marxist_glory
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_sinicization_of_marxism
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_new_socialist_theory_practice
@@ -2924,7 +2924,7 @@ focus_tree = {
 	#历史经验总结
 	focus = {
 		id = PRC_nl_historical_experience_summary
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_restore_party_authority
 		cost = 2.00
 		prerequisite = {
 			focus = PRC_nl_marxist_theory_peak
@@ -2973,7 +2973,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_redefining_first_thirty_years
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_revise_cultural_revolution_verdict
 		cost = 2.00
 		prerequisite = {
 			focus = PRC_nl_historical_experience_summary
@@ -3032,7 +3032,7 @@ focus_tree = {
 	#	红旗永不落
 	focus = {
 		id = PRC_nl_red_flag_never_falls
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_new_red_culture_initiative
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_redefining_first_thirty_years
@@ -3084,7 +3084,7 @@ focus_tree = {
 	#通往未来之路
 	focus = {
 		id = PRC_nl_road_to_future
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_forward_to_the_future
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_red_wave_surge
@@ -3096,7 +3096,7 @@ focus_tree = {
 	#组建中央科技委员会
 	focus = {
 		id = PRC_nl_national_science_committee
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_expand_research_development
 		cost = 5
 		prerequisite = {
 			focus = PRC_nl_road_to_future
@@ -3121,7 +3121,7 @@ focus_tree = {
 	#整合科研机构
 	focus = {
 		id = PRC_nl_research_institution_consolidation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_inegrate_research_institutes
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_national_science_committee
@@ -3150,7 +3150,7 @@ focus_tree = {
 	#推动军民融合
 	focus = {
 		id = PRC_nl_military_civilian_integration
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_accelerate_local_recovery
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_national_science_committee
@@ -3166,7 +3166,7 @@ focus_tree = {
 	#国有化技术产业
 	focus = {
 		id = PRC_nl_nationalized_tech_industry
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_nationalize_tech_industry
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_national_science_committee
@@ -3195,7 +3195,7 @@ focus_tree = {
 	#重组数字中央计划委员会
 	focus = {
 		id = PRC_nl_digital_planning_committee
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_free_of_charge
 		cost = 3
 		prerequisite = {
 			focus = PRC_nl_nationalized_tech_industry
@@ -3220,7 +3220,7 @@ focus_tree = {
 	#回归毛主席愿景
 	focus = {
 		id = PRC_nl_maoist_vision
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_revolution_of_21_century
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_digital_planning_committee
@@ -3254,7 +3254,7 @@ focus_tree = {
 	#吸收aspr的经验
 	focus = {
 		id = PRC_nl_adopting_ASPR_experience
-		icon = GFX_surrender_tiny_flag
+		icon = GFX_focus_PRC_happiness_for_everybody
 		cost = 2
 		x = 1
 		y = 1
@@ -3284,7 +3284,7 @@ focus_tree = {
 	#启动曙光工程
 	focus = {
 		id = PRC_nl_dawn_project
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_towards_automated_socialism
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_nationalized_tech_industry
@@ -3303,7 +3303,7 @@ focus_tree = {
 	#加大新能源投入
 	focus = {
 		id = PRC_nl_investment_in_new_energy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_upgrade_energy_grid
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_dawn_project
@@ -3364,7 +3364,7 @@ focus_tree = {
 	#铺设传感器网络
 	focus = {
 		id = PRC_nl_sensor_network_deployment
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_expand_network_coverage
 		cost = 3
 		prerequisite = {
 			focus = PRC_nl_investment_in_new_energy
@@ -3390,7 +3390,7 @@ focus_tree = {
 	#智能建筑发展
 	focus = {
 		id = PRC_nl_smart_building_development
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_intelligent_supply_chains
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_sensor_network_deployment
@@ -3415,7 +3415,7 @@ focus_tree = {
 	#建设示范聚变电站
 	focus = {
 		id = PRC_nl_fusion_power_demo
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_fusion_investements
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_investment_in_new_energy
@@ -3429,7 +3429,7 @@ focus_tree = {
 	#开发实用量子超算
 	focus = {
 		id = PRC_nl_quantum_supercomputer
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_fund_supercomputing_expansion
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_dawn_project
@@ -3451,7 +3451,7 @@ focus_tree = {
 	#启动长征计划
 	focus = {
 		id = PRC_nl_long_march_plan
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_towards_a_digital_world
 		cost = 5
 		prerequisite = {
 			focus = PRC_nl_quantum_supercomputer
@@ -3470,7 +3470,7 @@ focus_tree = {
 	#远望星辰
 	focus = {
 		id = PRC_nl_stellar_exploration
-		icon = GFX_goal_unknown
+		icon = GFX_goal_focus_PRC_fund_space_dev
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_dawn_project
@@ -3487,7 +3487,7 @@ focus_tree = {
 		#干部革命化
 	focus = {
 		id = PRC_nl_cadre_revolutionization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_restoration_of_cadres_rotation
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_clean_house
@@ -3522,7 +3522,7 @@ focus_tree = {
 	#年轻生力军
 	focus = {
 		id = PRC_nl_expand_young_forces
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_rejuvinate_cpc_cadres
 		cost = 2.00
 		prerequisite = {
 			focus = PRC_nl_cadre_revolutionization
@@ -3560,7 +3560,7 @@ focus_tree = {
 	#从群众中来，到群众中去
 	focus = {
 		id = PRC_nl_from_people_to_people
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_transparent_representative_government
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_expand_young_forces
@@ -3607,7 +3607,7 @@ focus_tree = {
 	#党内民主化
 	focus = {
 		id = PRC_nl_party_internal_democratization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_modernization_of_the_party
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_political_awakening
@@ -3648,7 +3648,7 @@ focus_tree = {
 	#敢把皇帝拉下马
 	focus = {
 		id = PRC_nl_dare_to_pull_down_emperor
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_denounce_xi_revisionism
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_party_internal_democratization
@@ -3704,7 +3704,7 @@ focus_tree = {
 	#重建无产阶级专政
 	focus = {
 		id = PRC_nl_rebuild_proletarian_dictatorship
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_foster_authoritative_statesmen
 		cost = 5.00
 		prerequisite = {
 			focus = PRC_nl_from_people_to_people
@@ -3796,7 +3796,7 @@ focus_tree = {
 	#人民与党，携手共进
 	focus = {
 		id = PRC_nl_people_walk_with_party
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_Support_Initiatives_in_the_Party
 		cost = 2.00
 		prerequisite = {
 			focus = PRC_nl_dare_to_pull_down_emperor
@@ -3853,7 +3853,7 @@ focus_tree = {
 	#发扬无产阶级民主
 	focus = {
 		id = PRC_nl_proletarian_democracy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_the_new_peoples_democratic_program
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_rebuild_proletarian_dictatorship
@@ -3876,7 +3876,7 @@ focus_tree = {
 
 	focus = {
 		id = PRC_nl_perfect_democratic_centralization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_increase_party_democracy
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_proletarian_democracy
@@ -3910,7 +3910,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_reform_people_congress
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_from_the_clean_slate
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_proletarian_democracy
@@ -3938,7 +3938,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_collective_leadership_system
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_modernize_hu_jintao_theories
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_perfect_democratic_centralization
@@ -3963,7 +3963,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_representative_rights_and_responsibilities
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_popular_socialist_democracy
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_reform_people_congress
@@ -3988,7 +3988,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_digital_supervision_of_the_people
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_strengthen_control_of_bureaucracy
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_reform_people_congress
@@ -4009,7 +4009,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_unite_efforts_with_unity
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_the_chinese_century
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_proletarian_good_representative
@@ -4046,7 +4046,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_re_examine_the_people_congress
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_prepare_the_new_congress
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_reform_people_congress
@@ -4065,7 +4065,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_proletarian_good_representative
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_overall_process_peoples_demorcracy
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_digital_supervision_of_the_people
@@ -4100,7 +4100,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_central_purge
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_purge_the_liberal_reformers
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_perfect_democratic_centralization
@@ -4120,7 +4120,7 @@ focus_tree = {
 	#自动化模型
 	focus = {
 		id = PRC_nl_automation_model
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_economic_computerization
 		cost = 3
 		prerequisite = {
 			focus = PRC_nl_maoist_vision
@@ -4158,7 +4158,7 @@ focus_tree = {
 	#引入工人监管
 	focus = {
 		id = PRC_nl_introduce_worker_supervision
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_worlds_factory
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_automation_model
@@ -4191,7 +4191,7 @@ focus_tree = {
 	#去中心化构建
 	focus = {
 		id = PRC_nl_decentralized_construction
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_economic_cake_growth
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_automation_model
@@ -4207,7 +4207,7 @@ focus_tree = {
 	#关注小微基础设施
 	focus = {
 		id = PRC_nl_focus_on_small_infrastructure
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_real_estate_market_stab
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_sensor_network_deployment
@@ -4271,7 +4271,7 @@ focus_tree = {
 	#国有企业试点运行
 	focus = {
 		id = PRC_nl_state_enterprise_pilot_operations
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_techno_nationalism
 		cost = 3
 		prerequisite = {
 			focus = PRC_nl_decentralized_construction
@@ -4290,7 +4290,7 @@ focus_tree = {
 	#全域物联网建设
 	focus = {
 		id = PRC_nl_national_IoT_construction
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_invest_in_artificial_intelligence
 		cost = 3
 		prerequisite = {
 			focus = PRC_nl_smart_building_development
@@ -4314,7 +4314,7 @@ focus_tree = {
 	#全面引入社会
 	focus = {
 		id = PRC_nl_comprehensive_social_integration
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_galactic_personality
 		cost = 5
 		prerequisite = {
 			focus = PRC_nl_state_enterprise_pilot_operations
@@ -4351,7 +4351,7 @@ focus_tree = {
 	#自主迭代系统
 	focus = {
 		id = PRC_nl_autonomous_iteration_system
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_fusion_investements
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_comprehensive_social_integration
@@ -4371,7 +4371,7 @@ focus_tree = {
 	#综合长征智能
 	focus = {
 		id = PRC_nl_integrate_long_march_AI
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_servant_of_the_people
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_comprehensive_social_integration
@@ -4387,7 +4387,7 @@ focus_tree = {
 	#数字共产主义愿景
 	focus = {
 		id = PRC_nl_digital_communist_vision
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_towards_a_digital_communism
 		cost = 5
 		prerequisite = {
 			focus = PRC_nl_autonomous_iteration_system
@@ -4404,7 +4404,7 @@ focus_tree = {
 	}
 	focus = {#社会主义现代化建设
 		id = PRC_nl_socialist_modernization
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_freedom_provinces_initiative
 		cost = 3
 		x = 0
 		y = 1
@@ -4436,7 +4436,7 @@ focus_tree = {
 	}
 	focus = { #发展先进生产力
 		id = PRC_nl_advance_productivity 
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_invest_mass_smart_manufacturing
 		cost = 3
 		x = -1
 		y = 1
@@ -4483,7 +4483,7 @@ focus_tree = {
 	}
 	focus = { #改革不平等生产关系
 		id = PRC_nl_reform_production_relation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_harmonization_companies
 		cost = 3
 		x = 1
 		y = 1
@@ -4514,7 +4514,7 @@ focus_tree = {
 	}
 	focus = { #掀起社会主义建设高潮
 		id = PRC_nl_socialist_construction_climax
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_national_economic_revolution
 		cost = 3
 		x = 0
 		y = 2
@@ -4561,7 +4561,7 @@ focus_tree = {
 	}
 	focus = { #现代化鞍钢宪法
 		id = PRC_nl_new_era_angang_constitution
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_propose_confederation_treaty
 		cost = 3
 		x = -2
 		y = 1
@@ -4597,7 +4597,7 @@ focus_tree = {
 	}
 	focus = { #提高生产资料利用率
 		id = PRC_nl_boost_production_tool_usage
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_State_Sindicalism
 		cost = 3
 		x = 0
 		y = 1
@@ -4630,7 +4630,7 @@ focus_tree = {
 	}
 	focus = { #自己动手丰衣足食
 		id = PRC_nl_make_things_yourself
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_absorb_western_enterprise
 		cost = 3
 		x = 0
 		y = 2
@@ -4657,7 +4657,7 @@ focus_tree = {
 	}
 	focus = { #改革农民合作社
 		id = PRC_nl_reform_farmer_cooperation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_recollectivize_agroculture
 		cost = 3
 		x = 2
 		y = 1
@@ -4690,7 +4690,7 @@ focus_tree = {
 	}
 	focus = { #重建人民公社运动
 		id = PRC_nl_restore_people_commune
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_youth_construction_brigades
 		cost = 3
 		x = 0
 		y = 1
@@ -4724,7 +4724,7 @@ focus_tree = {
 	}
 	focus = { #确保人民美好生活
 		id = PRC_nl_assure_welfare
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_five_shinig_stars_of_china
 		cost = 3
 		x = 0
 		y = 3
@@ -4771,7 +4771,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_UBI
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_escape_middle_income_trap
 		cost = 3
 		x = -5
 		y = 1
@@ -4796,7 +4796,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_improve_commune_function
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_empower_masses_autonomus_committe
 		cost = 3
 		x = 0
 		y = 1
@@ -4897,7 +4897,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_labors_share
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_embrace_communitarianism
 		cost = 3
 		x = 0
 		y = 1
@@ -4916,7 +4916,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_greatly_riched
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_economic_stability_policy
 		cost = 3
 		x = -1
 		y = 1
@@ -4936,7 +4936,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_robotic_emergency_assist
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_china_future_campaign
 		cost = 3
 		x = -2
 		y = 1
@@ -4956,7 +4956,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_labor_liberation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_a_truly_harmonious_society
 		cost = 3
 		x = 0
 		y = 1
@@ -4981,7 +4981,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_industry_five
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_socialist_modernization
 		cost = 3
 		x = 1
 		y = 1
@@ -5001,7 +5001,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_automation_traffic
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_enrich_domestic_market
 		cost = 3
 		x = 0
 		y = 2
@@ -5023,7 +5023,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_regional_integration
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_regional_industrialization
 		cost = 3
 		x = 0
 		y = 1
@@ -5042,7 +5042,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_super_project
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_endorse_the_megaprojects
 		cost = 3
 		x = 1
 		y = 2
@@ -5071,7 +5071,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_free_and_equal_labor
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_tackle_youth_unemployment
 		cost = 3
 		x = 5
 		y = 1
@@ -5090,7 +5090,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_gain_from_each_good
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_To_Struggle_Is_To_Live
 		cost = 3
 		x = -1
 		y = 1
@@ -5109,7 +5109,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_free_life_supplement
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_technology_for_everyone
 		cost = 3
 		x = 1
 		y = 1
@@ -5128,7 +5128,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_commonhappy
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_promote_common_prosperity
 		cost = 3
 		x = 0
 		y = 2
@@ -5150,7 +5150,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_new_sky
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PRC_party_of_xxi_century
 		cost = 3
 		x = 0
 		y = 1
