@@ -3145,6 +3145,7 @@ focus_tree = {
 			add_dynamic_modifier = {
 				modifier = PRC_research_dynamic
 			}
+			add_research_slot = 1
 		}
 	}
 
@@ -3441,6 +3442,14 @@ focus_tree = {
 			add_to_variable = {
 				var = ogas_military_factory_upkeep_factor_dynamic_var
 				value = 0.05
+			}
+			add_to_variable = {
+				ogas_production_speed_buildings_factor_dynamic_var = 0.1
+			}
+			add_tech_bonus = {
+				name = PRC_nl_smart_building_development
+				category = construction_tech
+				ahead_reduction = 2
 			}
 		}
 	}
@@ -4727,7 +4736,7 @@ focus_tree = {
 	}
 	focus = { #改革农民合作社
 		id = PRC_nl_reform_farmer_cooperation
-		icon = GFX_focus_PRC_recollectivize_agroculture
+		icon = GFX_focus_PRC_rooting_weeds
 		cost = 3
 		x = 2
 		y = 1
@@ -4750,7 +4759,7 @@ focus_tree = {
 				var = PRC_mic_local_building_slots_factor_dynamic_var
 				value = 0.1
 			}
-			unlock_decision_tooltip = PRC_nl_jingji5_d1			#发扬农业大寨精神
+			unlock_decision_tooltip = PRC_nl_jingji6_d1			#发扬农业大寨精神
 			set_temp_variable = {
 				var = farming_development_var_temp
 				value = 0.1

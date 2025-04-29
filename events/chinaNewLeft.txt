@@ -463,11 +463,12 @@ country_event = {
 	#picture = GFX_Chinese_soldiers
 	is_triggered_only = yes
 	option = {
+		name = china.1718.a
 		country_event = {
 			id = china.1731
 			days = 4
 		}
-		name = china.1718.a
+		
 	}
 	option = {
 		name = china.1718.b

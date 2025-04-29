@@ -5197,55 +5197,55 @@ PRC_maoist_politburo_cat = {
 	# 	icon = GFX_PRC_new_left_decision
 	# 	cost = 100
 	# }
-PRC_nl_jingji2_d1 = {
-		#决议：推进国内大循环	
-		icon = GFX_PRC_new_left_decision
-		cost = 100
-		days_remove = 90	
-		fire_only_once = yes
-		allowed = {
-			tag = PRC
-		}
-		visible = {
-			has_completed_focus = PRC_nl_advance_productivity #完成国策发展先进生产力解锁此决议
-		}
-		modifier = {
-			consumer_goods_factor = 0.1
-			misc_expense = 25
-		}
-		complete_effect = {
-		}
-		remove_effect = {
-			effect_tooltip = {	#仅展示效果，不执行
-				swap_ideas = {
-					remove_idea = PRC_made_in_china_dummy_idea	#空民族精神，无效果
-					add_idea = PRC_nl_jingji2_d1_idea	#仅填追加效果
+	PRC_nl_jingji2_d1 = {
+			#决议：推进国内大循环	
+			icon = GFX_PRC_new_left_decision
+			cost = 100
+			days_remove = 90	
+			fire_only_once = yes
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_completed_focus = PRC_nl_advance_productivity #完成国策发展先进生产力解锁此决议
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				misc_expense = 25
+			}
+			complete_effect = {
+			}
+			remove_effect = {
+				effect_tooltip = {	#仅展示效果，不执行
+					swap_ideas = {
+						remove_idea = PRC_made_in_china_dummy_idea	#空民族精神，无效果
+						add_idea = PRC_nl_jingji2_d1_idea	#仅填追加效果
+					}
 				}
+				add_to_variable = {	#预设变量，文件在common/dynamic_modifiers中，直接作用于于此创建的dynamic（相当于民族精神）实际上执行上文效果的是这部分
+					var = PRC_mic_production_speed_buildings_factor_dynamic_var	#效果为建造速度+5%，具体效果根据此名称在dynamic_modifiers文件中对应的修正而定
+					value = 0.05  #数值
+				}
+				add_to_variable = {
+					var = PRC_mic_local_resources_factor_dynamic_var
+					value = 0.1
+				}
+				add_to_variable = {
+					var = PRC_mic_min_export_dynamic_var
+					value = -0.1
+				}
+				add_to_variable = {
+					var = PRC_mic_industrial_development_monthly_dynamic_var
+					value = 0.005
+				}
+				add_stability = 0.05
+				set_temp_variable = { #TFR特殊变量：工业发展+10%
+					var = industrial_development_var_temp
+					value = 0.1
+				}
+				add_industrial_development = yes
+				set_country_flag = PRC_nl_condition_jingji1_flag  #创建国家标记，一些p语言没有的条件需要借此实现
 			}
-			add_to_variable = {	#预设变量，文件在common/dynamic_modifiers中，直接作用于于此创建的dynamic（相当于民族精神）实际上执行上文效果的是这部分
-				var = PRC_mic_production_speed_buildings_factor_dynamic_var	#效果为建造速度+5%，具体效果根据此名称在dynamic_modifiers文件中对应的修正而定
-				value = 0.05  #数值
-			}
-			add_to_variable = {
-				var = PRC_mic_local_resources_factor_dynamic_var
-				value = 0.1
-			}
-			add_to_variable = {
-				var = PRC_mic_min_export_dynamic_var
-				value = -0.1
-			}
-			add_to_variable = {
-				var = PRC_mic_industrial_development_monthly_dynamic_var
-				value = 0.005
-			}
-			add_stability = 0.05
-			set_temp_variable = { #TFR特殊变量：工业发展+10%
-				var = industrial_development_var_temp
-				value = 0.1
-			}
-			add_industrial_development = yes
-			set_country_flag = PRC_nl_condition_jingji1_flag  #创建国家标记，一些p语言没有的条件需要借此实现
-		}
 	}
 	PRC_nl_jingji2_d2 = {
 		#决议：建设先进产业集群
@@ -5633,7 +5633,7 @@ PRC_nl_jingji2_d1 = {
 			tag = PRC
 		}
 		visible = {
-			has_completed_focus = PRC_nl_new_era_angang_constitution
+			has_completed_focus = PRC_nl_reform_farmer_cooperation
 		}
 		modifier = {
 			political_power_factor = 0.1

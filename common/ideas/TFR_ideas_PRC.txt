@@ -5669,31 +5669,31 @@ ideas = {
 			}
 		}
 		
-		# PRC_doctrine_of_the_mass_line_idea = {
-		# 	picture = PRC_chinese_communist_party
+		PRC_doctrine_of_the_mass_line_idea = {
+			picture = PRC_chinese_communist_party
 
-		# 	allowed = {
-		# 		always = no
-		# 	}
+			allowed = {
+		 		always = no
+		 	}
 
-		# 	allowed_civil_war = {
-		# 		always = yes
-		# 	}
+			allowed_civil_war = {
+		 		always = yes
+		 	}
 
-		# 	removal_cost = -1
+			removal_cost = -1
 			
-		# 	modifier = {
-		# 		stability_factor = 0.1
-		# 		war_support_factor = 0.1
-		# 		research_speed_factor = -0.025
-		# 		consumer_goods_factor = -0.05
-		# 		political_power_factor = 0.1
-		# 		totalitarian_socialist_drift = 0.05
-		# 		fascist_drift = -0.01
-		# 		social_liberal_drift = -0.01
-		# 		social_democrat_drift = -0.01
-		# 	}
-		# }
+		 	modifier = {
+		 		stability_factor = 0.1
+		 		war_support_factor = 0.1
+		 		research_speed_factor = -0.025
+		 		consumer_goods_factor = -0.05
+		 		political_power_factor = 0.1
+		 		totalitarian_socialist_drift = 0.05
+		 		fascist_drift = -0.01
+		 		social_liberal_drift = -0.01
+		 		social_democrat_drift = -0.01
+		 	}
+		 }
 		
 		PRC_chinese_red_nationalism_idea = {
 			picture = PRC_chinese_red_nationalism_idea

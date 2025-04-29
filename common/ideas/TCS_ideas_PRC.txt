@@ -1412,7 +1412,6 @@ ideas = {
 	}
 	hidden_ideas = {
 		PRC_from_people_to_people = {
-			picture = generic_covid
 			allowed = {
 				always = no
 			}
