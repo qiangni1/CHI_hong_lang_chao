@@ -1673,6 +1673,9 @@ PRC_export_revolution = {
 		icon = GFX_PRC_new_left_decision
 		visible = {
 			has_country_flag = India_selected
+			RAJ = {
+				is_ally_with = PRC
+			}
 		}
 		available = {
 			has_completed_focus = Comrade_in_India
@@ -1680,9 +1683,11 @@ PRC_export_revolution = {
 		cost = 50
 		days_remove = 50
 		remove_effect = {
-			add_popularity = {
-				ideology = communist
-				popularity = 0.05
+			RAJ = {
+				add_popularity = {
+					ideology = communist
+					popularity = 0.05
+				}	
 			}
 		}
 	}

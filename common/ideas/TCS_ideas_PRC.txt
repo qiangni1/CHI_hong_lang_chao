@@ -1343,9 +1343,11 @@ ideas = {
 				add_to_variable = {
 					PSC_personal_value_var = 0.03
 				}
-				swap_ideas = {
-					remove_idea = PRC_socialist_culture_start
-					add_idea = PRC_socialist_culture_start4
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = PRC_socialist_culture_start
+						add_idea = PRC_socialist_culture_start4
+					}	
 				}
 			}
 		}
