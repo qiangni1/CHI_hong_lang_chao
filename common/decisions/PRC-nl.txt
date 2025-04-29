@@ -3698,8 +3698,8 @@ PRC_Culture_Revital = {
 			}
 			add_debt = yes
 		}
-		days_remove = 90
-		days_re_enable = 90
+		days_remove = 180
+		fire_only_once = yes
 		modifier = {
 			stability_factor = -0.05
 			political_power_cost = 0.25
@@ -3742,8 +3742,8 @@ PRC_Culture_Revital = {
 			}
 			add_debt = yes
 		}
-		days_remove = 90
-		days_re_enable = 90
+		days_remove = 180
+		fire_only_once = yes
 		modifier = {
 			political_power_cost = 0.5
 			stability_factor = -0.05

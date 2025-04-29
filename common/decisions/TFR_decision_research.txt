@@ -409,6 +409,7 @@ PRC_nems_system = {
 		}
         cost = 150
 		days_remove = 150
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 5
 		}
@@ -444,6 +445,7 @@ PRC_nems_system = {
 		}
         cost = 100
 		days_remove = 100
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 3
 		}
@@ -521,6 +523,7 @@ PRC_nems_system = {
 		}
         cost = 100
 		days_remove = 100
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 3
 		}
@@ -598,6 +601,8 @@ PRC_nems_system = {
 		}
         cost = 100
 		days_remove = 100
+		fire_only_once = yes
+
 		modifier = {
 			civilian_factory_use = 3
 		}
@@ -675,6 +680,7 @@ PRC_nems_system = {
 		}
         cost = 100
 		days_remove = 100
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 3
 		}
@@ -752,6 +758,7 @@ PRC_nems_system = {
 		}
         cost = 100
 		days_remove = 100
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 3
 		}
@@ -829,6 +836,7 @@ PRC_nems_system = {
 		}
         cost = 100
 		days_remove = 100
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 3
 		}
@@ -906,6 +914,7 @@ PRC_nems_system = {
 		}
         cost = 50
 		days_remove = 50
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -982,6 +991,7 @@ PRC_nems_system = {
 		}
         cost = 50
 		days_remove = 50
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -1058,6 +1068,7 @@ PRC_nems_system = {
 		}
         cost = 50
 		days_remove = 50
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -1134,6 +1145,7 @@ PRC_nems_system = {
 		}
         cost = 50
 		days_remove = 50
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -1203,13 +1215,16 @@ PRC_nems_system = {
 			tag = PRC
 		}
 		available = { 
-
+			1391 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
         visible = {
 			has_country_flag = beijing_jiedian_complete
 		}
         cost = 50
 		days_remove = 50
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -1218,6 +1233,11 @@ PRC_nems_system = {
 				income_var_temp = -50
 			}
 			add_income = yes
+		}
+		cancel_trigger = {
+			1391 = {
+				is_controlled_by_ROOT_or_ally = no
+			}
 		}
 		remove_effect = {
 			set_temp_variable = {
@@ -1279,13 +1299,16 @@ PRC_nems_system = {
 			tag = PRC
 		}
 		available = { 
-
+			408 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
         visible = {
 			has_country_flag = shenyan_jiedian_complete
 		}
         cost = 50
 		days_remove = 50
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -1294,6 +1317,11 @@ PRC_nems_system = {
 				income_var_temp = -50
 			}
 			add_income = yes
+		}
+		cancel_trigger = {
+			408 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
 		remove_effect = {
 			set_temp_variable = {
@@ -1402,6 +1430,7 @@ PRC_nems_system = {
 		}
         cost = 50
 		days_remove = 50
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -1462,6 +1491,7 @@ PRC_nems_system = {
 		}
         cost = 50
 		days_remove = 50
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -1522,6 +1552,7 @@ PRC_nems_system = {
 		}
         cost = 50
 		days_remove = 50
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -1582,6 +1613,7 @@ PRC_nems_system = {
 		}
         cost = 50
 		days_remove = 50
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -1642,6 +1674,7 @@ PRC_nems_system = {
 		}
         cost = 50
 		days_remove = 50
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -1702,6 +1735,7 @@ PRC_nems_system = {
 		}
         cost = 50
 		days_remove = 50
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 2
 		}
@@ -1762,6 +1796,7 @@ PRC_nems_system = {
 		}
         cost = 50
 		days_remove = 50
+		fire_only_once = yes
 		modifier = {
 			civilian_factory_use = 2
 		}
