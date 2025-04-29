@@ -5234,6 +5234,8 @@ PRC_Youth_Ideological_Education = {
 				mission = PRC_damage_from_reactionary_mission
 				days = 20
 			}
+			retire_character = PRC_wei_fenghe
+			retire_character = PRC_Li_Shangfu
 		}
 	}
 	#	第二次新文化运动:党组领导，吸收外来，不忘本来

@@ -40,7 +40,7 @@ PRC_socialist_culture_dynamic = {
 	libertarian_socialist_drift = PSC_soc_drift_var
 	social_democrat_drift = PSC_socdem_drift_var
 	resistance_decay = PSC_resistance_var
-	compliance_growth = PSC_compliance_var
+	compliance_gain = PSC_compliance_var
 	compliance_growth_on_our_occupied_states = PSC_compliance_var2
 }
 
