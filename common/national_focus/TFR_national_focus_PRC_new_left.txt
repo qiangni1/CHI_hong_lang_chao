@@ -1851,6 +1851,8 @@ focus_tree = {
 					value = 0.03
 				}	
 			}	
+			custom_effect_tooltip = PRC_for_policy_tree_available
+			set_country_flag = PRC_for_policy_tree_available
 		}
 	}
 	focus = {
@@ -3188,6 +3190,9 @@ focus_tree = {
 		relative_position_id = PRC_nl_national_science_committee
 		completion_reward = {
 			add_ideas = junmin_ronghe
+			custom_effect_tooltip = PRC_military_tree_opened_tt
+			set_country_flag = PRC_military_tree_available
+
 		}
 	}
 
@@ -3931,13 +3936,11 @@ focus_tree = {
 				idea = PRC_nl_go_to_proletarian_democracy_idea
 				days = 365
 			}
-		    	effect_tooltip = {
-			    add_ideas = PRC_nl_shining_proletarian_democracy_idea
-		    	}
-		}
+			effect_tooltip = {
+				add_ideas = PRC_nl_shining_proletarian_democracy_idea
+			}
 		}
 	}
-
 	focus = {
 		id = PRC_nl_perfect_democratic_centralization
 		icon = GFX_focus_PRC_increase_party_democracy
