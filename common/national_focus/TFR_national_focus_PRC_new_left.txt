@@ -2978,7 +2978,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_redefining_first_thirty_years
-		icon = GFX_focus_PRC_revise_cultural_revolution_verdict
+		icon = GFX_focus_PRC_legacy_of_mao
 		cost = 2.00
 		prerequisite = {
 			focus = PRC_nl_historical_experience_summary
@@ -3925,7 +3925,7 @@ focus_tree = {
 	#发扬无产阶级民主
 	focus = {
 		id = PRC_nl_proletarian_democracy
-		icon = GFX_focus_PRC_the_new_peoples_democratic_program
+		icon = GFX_focus_FPR_Parliamentarian_Socialism
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_rebuild_proletarian_dictatorship
@@ -4067,7 +4067,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_digital_supervision_of_the_people
-		icon = GFX_focus_PRC_strengthen_control_of_bureaucracy
+		icon = GFX_focus_FRA_EU_The_Will_to_Grow
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_reform_people_congress
@@ -4088,7 +4088,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_unite_efforts_with_unity
-		icon = GFX_focus_PRC_the_chinese_century
+		icon = GFX_focus_SOV_10_stalins_economic_punches
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_proletarian_good_representative
@@ -4237,7 +4237,7 @@ focus_tree = {
 	#引入工人监管
 	focus = {
 		id = PRC_nl_introduce_worker_supervision
-		icon = GFX_focus_PRC_worlds_factory
+		icon = GFX_focus_SOV_empower_peoples_corporations
 		cost = 2
 		prerequisite = {
 			focus = PRC_nl_automation_model
@@ -5071,7 +5071,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_industry_five
-		icon = GFX_focus_PRC_socialist_modernization
+		icon = GFX_focus_PRC_evacuation_of_key_industries
 		cost = 3
 		x = 1
 		y = 1
