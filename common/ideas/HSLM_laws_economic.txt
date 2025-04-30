@@ -11,6 +11,7 @@ ideas = {
 			allowed_to_remove = {
 			}
 			available = {
+				has_completed_focus = PRC_nl_industry_five
 			}
 			visible = {
 				has_completed_focus = PRC_nl_industry_five
@@ -35,6 +36,7 @@ ideas = {
 				has_completed_focus = PRC_nl_new_sky
 			}
 			available = {
+				has_completed_focus = PRC_nl_industry_five
 			}
 			modifier = {
 				consumer_goods_factor = 0.15

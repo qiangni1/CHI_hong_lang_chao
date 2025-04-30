@@ -459,6 +459,8 @@
 		high_female_service
 		high_racial_integration
 		general_exemptions
+		PRC_party_commands_the_guns
+
 		#army spirits
 		PRC_complacent_officers_spirit
 		
@@ -472,7 +474,7 @@
 		high_farming
 		medium_poverty
 		high_industry
-		medium_military
+		higher_military
 		i_dont_wanna_fight
 	}
 	
