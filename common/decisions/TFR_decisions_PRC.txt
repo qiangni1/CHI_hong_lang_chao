@@ -5199,7 +5199,7 @@ PRC_maoist_politburo_cat = {
 	# }
 	PRC_nl_jingji2_d1 = {
 			#决议：推进国内大循环	
-			icon = GFX_PRC_new_left_decision
+			icon = GFX_PRC_decision_industrial_expension
 			cost = 100
 			days_remove = 90	
 			fire_only_once = yes
@@ -5218,7 +5218,7 @@ PRC_maoist_politburo_cat = {
 			remove_effect = {
 				effect_tooltip = {	#仅展示效果，不执行
 					swap_ideas = {
-						remove_idea = PRC_made_in_china_dummy_idea	#空民族精神，无效果
+						remove_idea = PRC_made_in_china_dummy_idea0	#空民族精神，无效果
 						add_idea = PRC_nl_jingji2_d1_idea	#仅填追加效果
 					}
 				}
@@ -5249,7 +5249,7 @@ PRC_maoist_politburo_cat = {
 	}
 	PRC_nl_jingji2_d2 = {
 		#决议：建设先进产业集群
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_PRC_decision_fund_manufacturing_improvements
 		cost = 100
 		days_remove = 180	
 		fire_only_once = yes
@@ -5268,7 +5268,7 @@ PRC_maoist_politburo_cat = {
 		remove_effect = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = PRC_made_in_china_dummy_idea
+					remove_idea = PRC_made_in_china_dummy_idea0
 					add_idea = PRC_nl_jingji2_d2_idea
 				}
 			}
@@ -5299,7 +5299,7 @@ PRC_maoist_politburo_cat = {
 	}
 	PRC_nl_jingji2_d3 = {
 		#决议：	扩展科技小院模式
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_decision_FPR_Energy_Focus
 		cost = 75
 		days_remove = 90	
 		fire_only_once = yes
@@ -5318,7 +5318,7 @@ PRC_maoist_politburo_cat = {
 		remove_effect = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = PRC_made_in_china_dummy_idea
+					remove_idea = PRC_made_in_china_dummy_idea0
 					add_idea = PRC_nl_jingji2_d3_idea
 				}
 			}
@@ -5348,7 +5348,7 @@ PRC_maoist_politburo_cat = {
 	}
 	PRC_nl_jingji2_d4 = {
 		#决议：推广农业八字宪法	
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_decision_generic_investment
 		cost = 50
 		days_remove = 90	
 		fire_only_once = yes
@@ -5367,7 +5367,7 @@ PRC_maoist_politburo_cat = {
 		remove_effect = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = PRC_made_in_china_dummy_idea
+					remove_idea = PRC_made_in_china_dummy_idea0
 					add_idea = PRC_nl_jingji2_d4_idea
 				}
 			}
@@ -5388,7 +5388,7 @@ PRC_maoist_politburo_cat = {
 	}
 	PRC_nl_jingji3_d1 = {
 		#决议：消灭血汗工厂
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_PRC_things_going_bad
 		cost = 100
 		days_remove = 90	
 		fire_only_once = yes
@@ -5407,7 +5407,7 @@ PRC_maoist_politburo_cat = {
 		remove_effect = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = PRC_made_in_china_dummy_idea
+					remove_idea = PRC_made_in_china_dummy_idea0
 					add_idea = PRC_nl_jingji3_d1_idea
 				}
 			}
@@ -5452,7 +5452,7 @@ PRC_maoist_politburo_cat = {
 	}
 	PRC_nl_jingji3_d2 = {
 		#决议：落实劳动法
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_SOV_decision_SOV_recover_bureaucracy
 		cost = 150
 		days_remove = 180	
 		fire_only_once = yes
@@ -5471,7 +5471,7 @@ PRC_maoist_politburo_cat = {
 		remove_effect = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = PRC_made_in_china_dummy_idea
+					remove_idea = PRC_made_in_china_dummy_idea0
 					add_idea = PRC_nl_jingji3_d2_idea
 				}
 			}
@@ -5488,7 +5488,7 @@ PRC_maoist_politburo_cat = {
 	}
 	PRC_nl_jingji3_d3 = {
 		#决议：新时代赎买政策
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_SOV_china_investment
 		cost = 100
 		days_remove = 180	
 		fire_only_once = yes
@@ -5525,7 +5525,7 @@ PRC_maoist_politburo_cat = {
 		remove_effect = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = PRC_made_in_china_dummy_idea
+					remove_idea = PRC_made_in_china_dummy_idea0
 					add_idea = PRC_nl_jingji3_d3_idea
 				}
 			}
@@ -5547,7 +5547,7 @@ PRC_maoist_politburo_cat = {
 	}
 	PRC_nl_jingji3_d4 = {
 		#决议：规范统一平台经济
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_decision_FPR_Debt_Forgiveness_Programs
 		cost = 100
 		days_remove = 120	
 		fire_only_once = yes
@@ -5569,7 +5569,7 @@ PRC_maoist_politburo_cat = {
 		remove_effect = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = PRC_made_in_china_dummy_idea
+					remove_idea = PRC_made_in_china_dummy_idea0
 					add_idea = PRC_nl_jingji3_d4_idea
 				}
 			}
@@ -5584,7 +5584,7 @@ PRC_maoist_politburo_cat = {
 	}
 	PRC_nl_jingji5_d1 = {
 		#决议：发扬大庆工业精神
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_PRC_decision_youth_project
 		cost = 150
 		days_remove = 180	
 		fire_only_once = yes
@@ -5603,7 +5603,7 @@ PRC_maoist_politburo_cat = {
 		remove_effect = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = PRC_made_in_china_dummy_idea
+					remove_idea = PRC_made_in_china_dummy_idea0
 					add_idea = PRC_nl_jingji5_d1_idea
 				}
 			}
@@ -5625,7 +5625,7 @@ PRC_maoist_politburo_cat = {
 	}
 	PRC_nl_jingji6_d1 = {
 		#决议：发扬农业大寨精神
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_decision_generic_investment
 		cost = 100
 		days_remove = 120	
 		fire_only_once = yes
@@ -5644,7 +5644,7 @@ PRC_maoist_politburo_cat = {
 		remove_effect = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = PRC_made_in_china_dummy_idea
+					remove_idea = PRC_made_in_china_dummy_idea0
 					add_idea = PRC_nl_jingji6_d1_idea
 				}
 			}
@@ -5673,7 +5673,7 @@ PRC_gaizaodaxingqiye_category = {
 	#改造国内大型企业
 	PRC_nl_jingjiCd1 = {
 		#决议：公有化腾讯
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_SOV_decision_soviet_computers
 		cost = 100
 		days_remove = 180	
 		fire_only_once = yes
@@ -5743,7 +5743,7 @@ PRC_gaizaodaxingqiye_category = {
 	}
 	PRC_nl_jingjiCd2 = {
 		#决议：公有化百度
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_SOV_decision_soviet_computers
 		cost = 100
 		days_remove = 180	
 		fire_only_once = yes
@@ -5808,7 +5808,7 @@ PRC_gaizaodaxingqiye_category = {
 	}
 	PRC_nl_jingjiCd3 = {
 		#决议：公有化富士康
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_decision_FPR_Industrial_Focus
 		cost = 200
 		days_remove = 180	
 		fire_only_once = yes
@@ -5890,7 +5890,7 @@ PRC_gaizaodaxingqiye_category = {
 	}
 	PRC_nl_jingjiCd4 = {
 		#决议：公有化华为
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_PRC_decision_fund_manufacturing_improvements
 		cost = 100
 		days_remove = 180	
 		fire_only_once = yes
@@ -5974,7 +5974,7 @@ PRC_gaizaodaxingqiye_category = {
 	}
 	PRC_nl_jingjiCd5 = {
 		#决议：公有化阿里巴巴
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_SOV_decision_soviet_computers
 		cost = 100
 		days_remove = 180	
 		fire_only_once = yes
@@ -6040,7 +6040,7 @@ PRC_gaizaodaxingqiye_category = {
 	}
 	PRC_nl_jingjiCd6 = {
 		#决议：公有化新浪
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_SOV_decision_soviet_computers
 		cost = 100
 		days_remove = 180	
 		fire_only_once = yes
@@ -6097,7 +6097,7 @@ PRC_gaizaodaxingqiye_category = {
 	}
 	PRC_nl_jingjiCd7 = {
 		#决议：公有化字节跳动
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_SOV_decision_soviet_computers
 		cost = 100
 		days_remove = 180	
 		fire_only_once = yes
@@ -6159,7 +6159,7 @@ PRC_gaizaodaxingqiye_category = {
 	}
 	PRC_nl_jingjiCd8 = {
 		#决议：公有化京东
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_PRC_decision_industrial_expension
 		cost = 100
 		days_remove = 180	
 		fire_only_once = yes
@@ -6229,7 +6229,7 @@ PRC_gaizaodaxingqiye_category = {
 	}
 	PRC_nl_jingjiCd9 = {
 		#决议：清算恒大
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_SOV_decision_soviet_apartaments
 		cost = 100
 		days_remove = 180	
 		fire_only_once = yes
@@ -6284,7 +6284,7 @@ PRC_gaizaodaxingqiye_category = {
 	}
 	PRC_nl_jingjiCd10 = {
 		#决议：公有化美团
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_PRC_decision_industrial_expension
 		cost = 100
 		days_remove = 180	
 		fire_only_once = yes
@@ -6356,7 +6356,7 @@ PRC_gaizaodaxingqiye_category = {
 	}
 	PRC_nl_jingjiCd11 = {
 		#决议：公有化滴滴
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_PRC_decision_industrial_expension
 		cost = 100
 		days_remove = 180	
 		fire_only_once = yes
