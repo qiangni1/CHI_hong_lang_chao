@@ -46,6 +46,7 @@
  PRC_NEMS_dynamic: "国家经济管理系统"
  zidonghua_moxing_dynamic: "正在编订自动化模型"
  nems_jindu_tt: "§R NEMS§!进度[?nems_jindu_rating_var_temp|=+1%]。"
+ nems_jindu_trigger_tt: "§R NEMS§!进度达到§Y100%§!"
  PRC_research_idea: "中国科学"
  PRC_ogas_idea: "自动化经济"
  PRC_NEMS: "国家经济管理系统"

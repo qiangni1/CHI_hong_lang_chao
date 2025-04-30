@@ -298,6 +298,7 @@ PRC_nems_system = {
 					add_idea = aidonghua_moxing_idea
 				}
 			}
+			set_country_flag = zidonghua_moxed
 		}
 	}
 
@@ -306,14 +307,14 @@ PRC_nems_system = {
 		allowed = { 
 			tag = PRC
 		}
-		allowed = { 
-			tag = PRC
-		}
 		available = { 
 
 		}
         visible = {
 			has_completed_focus = PRC_nl_automation_model
+			NOT = {
+				has_country_flag = zidonghua_moxed
+			}
 		}
         cost = 10
 		days_re_enable = 60
@@ -330,14 +331,14 @@ PRC_nems_system = {
 		allowed = { 
 			tag = PRC
 		}
-		allowed = { 
-			tag = PRC
-		}
 		available = { 
 
 		}
         visible = {
 			has_completed_focus = PRC_nl_automation_model
+			NOT = {
+				has_country_flag = zidonghua_moxed
+			}
 		}
         cost = 10
 		days_re_enable = 60
@@ -372,6 +373,9 @@ PRC_nems_system = {
 		}
         visible = {
 			has_completed_focus = PRC_nl_automation_model
+			NOT = {
+				has_country_flag = zidonghua_moxed
+			}
 		}
         cost = 10
 		days_re_enable = 60

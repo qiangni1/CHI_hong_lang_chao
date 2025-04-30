@@ -4401,6 +4401,14 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_national_IoT_construction
 		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = nems_jindu_trigger_tt
+				check_variable = {
+					nems_jindu_rating_var = 1
+				}	
+			}
+		}
 		x = -2
 		y = 1
 		relative_position_id = PRC_nl_national_IoT_construction
