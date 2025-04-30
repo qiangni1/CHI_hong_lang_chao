@@ -460,6 +460,9 @@ focus_tree = {
 				remove_idea = PLA_plaaf_2
 				add_idea = PLA_plaaf_3_a
 			}
+			set_technology = {
+				improved_small_airframe = 1
+			}
 		}
 	}
 	focus = {
@@ -2679,7 +2682,7 @@ focus_tree = {
 			focus = PRC_nl_hundred_flowers_bloom
 		}
 		completion_reward = { 
-			country_event = Chihong.38
+
 			add_to_variable = {
 				PSC_pp_cost_var = -0.1
 			}

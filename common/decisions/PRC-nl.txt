@@ -4573,7 +4573,7 @@ PRC_Rt_People_Democracy = {
 			}
 			add_days_mission_timeout = {
 				mission = PRC_damage_from_reactionary_mission
-				days = 15
+				days = 25
 			}
 			add_to_variable = {
 				PRC_cpc_political_power_gain_dynamic_var = 0.03
@@ -4642,7 +4642,7 @@ PRC_Rt_People_Democracy = {
 			}
 			add_days_mission_timeout = {
 				mission = PRC_damage_from_reactionary_mission
-				days = 15
+				days = 25
 			}
 			add_to_variable = {
 				PRC_cpc_political_power_gain_dynamic_var = 0.03
@@ -4751,13 +4751,13 @@ PRC_Rt_People_Democracy = {
 			has_completed_focus = PRC_nl_dare_to_pull_down_emperor
 		}
 		cost = 50
-		days_remove = 70
+		days_remove = 60
 		days_re_enable = 90
 		complete_effect = {
 			add_stability = -0.05
 			add_days_mission_timeout = {
 				mission = PRC_damage_from_reactionary_mission
-				days = 15
+				days = 25
 			}
 		}
 		modifier = {
@@ -4811,7 +4811,7 @@ PRC_Rt_People_Democracy = {
 			}
 			add_days_mission_timeout = {
 				mission = PRC_damage_from_reactionary_mission
-				days = 10
+				days = 25
 			}
 		}
 		modifier = {
@@ -4854,7 +4854,7 @@ PRC_Rt_People_Democracy = {
 		complete_effect = {
 			add_days_mission_timeout = {
 				mission = PRC_damage_from_reactionary_mission
-				days = 15
+				days = 25
 			}
 			add_popularity = {
 				ideology = totalitarian_socialist
@@ -5078,7 +5078,7 @@ PRC_Youth_Ideological_Education = {
 			}
 			add_days_mission_timeout = {
 				mission = PRC_damage_from_reactionary_mission
-				days = 15
+				days = 25
 			}
 		}
 		modifier = {
@@ -5238,7 +5238,7 @@ PRC_Youth_Ideological_Education = {
 			}
 			add_days_mission_timeout = {
 				mission = PRC_damage_from_reactionary_mission
-				days = 20
+				days = 25
 			}
 			retire_character = PRC_wei_fenghe
 			retire_character = PRC_Li_Shangfu

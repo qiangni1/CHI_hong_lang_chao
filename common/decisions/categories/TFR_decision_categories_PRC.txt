@@ -352,8 +352,7 @@ PRC_loji_category = {
     }
     
     visible = {
-        has_completed_focus = PRC_ai_assisted_governance
-        is_ai = no
+        has_completed_focus = PRC_nl_long_march_plan
     }
 }
 
