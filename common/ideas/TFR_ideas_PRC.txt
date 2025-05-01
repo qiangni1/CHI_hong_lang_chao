@@ -1785,6 +1785,57 @@ ideas = {
 				poverty_development_monthly = 0.005
 			}
 		}
+		PRC_nl_jingji14_d1_idea = {
+			#发挥人民群众的创造力
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				personal_value = 0.2
+				personal_value_factor = 0.05
+				personal_expense = 0.1
+			}
+		}
+		PRC_nl_jingji16_d1_idea = {
+			#普及家用服务机器人
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+				monthly_population = 0.2
+				personal_value_factor = 0.1
+				society_development_monthly = 0.005
+				academic_development_monthly = 0.005
+			}
+		}
+		PRC_nl_jingji23_d1_idea = {
+			#人定胜天
+			picture = GFX_idea_PRC_made_in_china
+			name = PRC_made_in_china_idea1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_building_slots_factor = 0.15
+			}
+		}
 		PRC_oil_crash2 = {
 			picture = PRC_oil_crash
 
