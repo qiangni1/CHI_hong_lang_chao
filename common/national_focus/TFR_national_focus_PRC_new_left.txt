@@ -16,7 +16,7 @@ focus_tree = {
 		id = PLA_when_that_day_comes
 		icon = GFX_
         #图片就不予添加了
-		x = 10
+		x = 0
 		y = 0
 		cost = 1
 		ai_will_do = {
@@ -1891,7 +1891,7 @@ focus_tree = {
 		}
 		#relative_position_id = PLA_start_again_new
 		#relative_position_id = PLA_equipment_perfect_new
-		x = 10
+		x = 0
 		y = 8
 		completion_reward = {
 			swap_ideas = {
