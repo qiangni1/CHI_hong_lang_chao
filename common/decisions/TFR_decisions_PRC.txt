@@ -5074,7 +5074,7 @@ PRC_maoist_politburo_cat = {
 			set_country_flag = PRC_nl_condition_jingji10_flag
 		}
 	}
-		PRC_nl_jingji14_d1 = {
+	PRC_nl_jingji14_d1 = {
 		#决议：发挥人民群众的创造力
 		icon = GFX_PRC_new_left_decision
 		cost = 100
@@ -5142,7 +5142,7 @@ PRC_maoist_politburo_cat = {
 	}
 	PRC_nl_jingji16_d1 = {
 		#决议：普及家用服务机器人
-		icon = GFX_PRC_new_left_decision
+		icon = GFX_PRC_decision_fund_manufacturing_improvements
 		cost = 50
 		days_remove = 180
 		fire_only_once = yes
@@ -5190,8 +5190,8 @@ PRC_maoist_politburo_cat = {
 	}
 	PRC_nl_jingji23_d1 = {
 		#决议：人定胜天
-		icon = GFX_PRC_new_left_decision
-		cost = 100
+		icon = GFX_PRC_decision_youth_project
+		cost = 200
 		days_remove = 120
 		fire_only_once = yes
 		allowed = {
@@ -5201,10 +5201,15 @@ PRC_maoist_politburo_cat = {
 			has_completed_focus = PRC_nl_improve_commune_function
 		}
 		modifier = {
-			political_power_factor = 0.1
-			society_development_monthly = 0.01
+			expense_growth_factor = 0.05
+			research_speed_factor = -0.1
 		}
 		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 350
+			}
+			add_debt_with_inflation = yes
 		}
 		remove_effect = {
 			effect_tooltip = {
