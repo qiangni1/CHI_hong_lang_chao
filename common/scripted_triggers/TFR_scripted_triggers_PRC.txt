@@ -396,3 +396,14 @@ PRC_jingji_2_jieduan = {	#国策确保人民美好生活执行条件：已完成
 		has_country_flag = PRC_nl_condition_jingji10_flag
 	}
 }
+PRC_jingji_3_jieduan = {	#国策敢教日月换新天执行条件：已完成第三阶段所有决议
+	custom_trigger_tooltip = {
+		tooltip = PRC_nl_complete3y_tooltip
+		tag = PRC
+		has_country_flag = PRC_nl_condition_jingji14_flag
+		has_country_flag = PRC_nl_condition_jingji15_flag
+		has_country_flag = PRC_nl_condition_jingji16_flag
+		has_country_flag = PRC_nl_condition_jingji23_flag
+	}
+}
+
