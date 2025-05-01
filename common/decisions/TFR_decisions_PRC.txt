@@ -5201,7 +5201,7 @@ PRC_maoist_politburo_cat = {
 			has_completed_focus = PRC_nl_improve_commune_function
 		}
 		modifier = {
-			expense_growth_factor = 0.05
+			expense_growth_factor = 0.15
 			research_speed_factor = -0.1
 		}
 		complete_effect = {
