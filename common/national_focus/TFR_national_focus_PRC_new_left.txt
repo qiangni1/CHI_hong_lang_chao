@@ -6459,6 +6459,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_commonhappy
 		}
+		available = {
+			PRC_jingji_3_jieduan = yes
+		}
 		completion_reward = {change_economy_type_auto_communism = yes }
 	}
 
