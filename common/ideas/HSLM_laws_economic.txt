@@ -2,7 +2,7 @@ ideas = {
 	economy = {
 		law = yes
 		use_list_view = yes
-		auto_socialism = {
+				auto_socialism = {
 			picture = GFX_ideology_communist_group
 			removal_cost = -1
 			level = 7
@@ -15,6 +15,9 @@ ideas = {
 			}
 			visible = {
 				has_completed_focus = PRC_nl_industry_five
+				NOT = {
+					has_country_flag = PRC_nl_condition_jingji15_flag
+			}
 			}
 			modifier = {
 				consumer_goods_factor = 0.2
@@ -36,7 +39,7 @@ ideas = {
 				has_completed_focus = PRC_nl_industry_five
 			}
 			visible = {
-				always = no
+				has_country_flag = PRC_nl_condition_jingji15_flag
 			}
 			modifier = {
 				consumer_goods_factor = 0.2
