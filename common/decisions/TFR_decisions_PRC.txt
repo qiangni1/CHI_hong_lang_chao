@@ -5074,6 +5074,66 @@ PRC_maoist_politburo_cat = {
 			set_country_flag = PRC_nl_condition_jingji10_flag
 		}
 	}
+	PRC_nl_jingji7_d1 = {
+		#决议：重建人民公社
+		icon = GFX_PRC_new_left_decision
+		cost = 100
+		days_remove = 120
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_restore_people_commune
+		}
+		modifier = {
+			political_power_factor = 0.1
+			consumer_goods_factor = -0.1
+		}
+		complete_effect = {
+		}
+
+	}
+	PRC_nl_jingji8_d1 = {
+		#决议：新型科技产业建设
+		icon = GFX_PRC_new_left_decision
+		cost = 100
+		days_remove = 120
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_industry_five
+		}
+		modifier = {
+			political_power_factor = 0.1
+			consumer_goods_factor = -0.1
+		}
+		complete_effect = {
+		}
+
+	}
+	PRC_nl_jingji9_d1 = {
+		#决议：区域产业一体化
+		icon = GFX_PRC_new_left_decision
+		cost = 100
+		days_remove = 120
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_regional_integration
+		}
+		modifier = {
+			political_power_factor = 0.1
+			consumer_goods_factor = -0.1
+		}
+		complete_effect = {
+		}
+		
+	}
 }
 
 PRC_gaizaodaxingqiye_category = {
