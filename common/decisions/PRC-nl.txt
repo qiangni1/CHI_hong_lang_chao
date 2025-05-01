@@ -299,6 +299,22 @@ PRC_export_revolution = {
 					picture = "gfx/leaders/PRC/generals/PRC_lianm.png"
 					ideology = left_nationalism
 				}
+				set_politics = {
+					ruling_party = communist
+					last_election = "2021.5.1"
+					election_frequency = 48
+				}
+				hidden_effect = {
+					set_popularities = {
+						communist = 30
+						libertarian_socialist = 10
+						totalitarian_socialist = 30
+						conservative = 5
+						social_liberal = 5
+						social_democrat = 5
+						authoritarian_democrat = 15
+					}
+				}
 				set_cosmetic_tag = PRC_sia
 				start_civil_war = {
 					ideology = authoritarian_democrat
@@ -5614,8 +5630,8 @@ PRC_Youth_Ideological_Education = {
 			}
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = x
-					add_idea = CSA_avions_fairey
+					remove_idea = PRC_party_rectification_campaign_empty
+					add_idea = PRC_party_rectification_campaign30
 				}
 			}
 			custom_effect_tooltip = DOUBLE_ANYTHING
