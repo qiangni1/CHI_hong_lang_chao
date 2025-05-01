@@ -1467,6 +1467,7 @@ PRC_export_revolution = {
 		icon = GFX_PRC_new_left_decision
 		visible = {
 			has_country_flag = Pakistan_selected
+			has_completed_focus = Brothers_of_South_Asia
 		}
 		available = {
 			has_completed_focus = Brothers_of_South_Asia
@@ -1500,6 +1501,8 @@ PRC_export_revolution = {
 		icon = GFX_PRC_new_left_decision
 		visible = {
 			has_country_flag = Pakistan_selected
+			has_completed_focus = Brothers_of_South_Asia
+
 		}
 		available = {
 			has_completed_focus = Brothers_of_South_Asia
@@ -1529,6 +1532,7 @@ PRC_export_revolution = {
 		icon = GFX_PRC_new_left_decision
 		visible = {
 			has_country_flag = Pakistan_selected
+			has_completed_focus = Brothers_of_South_Asia
 		}
 		available = {
 			has_completed_focus = Brothers_of_South_Asia

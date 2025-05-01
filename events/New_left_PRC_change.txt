@@ -146,5 +146,26 @@ country_event = {
 				hours = 5
 			}
 		}
+		set_temp_variable = {
+			coalition_partner_var_temp = token:social_liberal
+		}
+		remove_from_coalition = yes
+		set_temp_variable = {
+			coalition_partner_var_temp = token:social_democrat
+		}
+		remove_from_coalition = yes
+		set_temp_variable = {
+			coalition_partner_var_temp = token:market_liberal
+		}
+		remove_from_coalition = yes
+		set_temp_variable = {
+			coalition_partner_var_temp = token:conservative
+		}
+		remove_from_coalition = yes
+		set_temp_variable = {
+			coalition_partner_var_temp = token:authoritarian_democrat
+		}
+		remove_from_coalition = yes
+
 	}
 }
