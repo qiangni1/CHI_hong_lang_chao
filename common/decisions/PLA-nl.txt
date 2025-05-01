@@ -3071,3 +3071,71 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 } 
+PLA_jueyileibie = {		#以上需写入categories
+	PLA_block_flood_of_enemy_information_des = {
+		icon = GFX_
+		#图标未定
+		available = {
+		}
+		visible = {
+			has_completed_focus = PAL_block_flood_of_enemy_information
+		}
+		fire_only_once = no
+		days_re_enable = 120	#or190...
+		days_remove = 70
+		modifier = {
+			every_country = {
+				if = {
+					limit = {
+						has_war_with = PRC
+					}
+					air_mission_efficiency = -0.1
+					air_detection = -0.85
+					air_weather_penalty = 0.5
+					sortie_efficiency = -0.15
+				}
+			}
+		}
+		remove_effect = {
+		}
+		complete_effect = {
+			add_political_power = -50
+			set_temp_variable = {
+				var = income_var_temp
+				value = -10
+			}
+			add_income = yes
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 10
+				compare = greater_than_or_equals
+			}
+			has_political_power > 50
+		}
+		custom_cost_text = dx_more_than_10B_and_50pp
+	}
+
+	PLA_build_nuclear_bomb_des = {
+		icon = GFX_
+		available = {
+		}
+		visible = {
+			has_completed_focus = PAL_roaring_wildly
+		}
+		fire_only_once = no
+		cost = 100
+		days_re_enable = 100	
+		days_remove = 50
+		#时间随便定的，如有需要，后期再改
+		modifier = {
+		}
+		remove_effect = {
+			add_thermo_nuclear_bomb = 1
+		}
+		complete_effect = {
+		}
+	}
+}
+
