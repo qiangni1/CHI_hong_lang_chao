@@ -5188,6 +5188,48 @@ PRC_maoist_politburo_cat = {
 			set_country_flag = PRC_nl_condition_jingji16_flag
 		}
 	}
+	PRC_nl_jingji23_d1 = {
+		#决议：人定胜天
+		icon = GFX_PRC_new_left_decision
+		cost = 100
+		days_remove = 120
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_improve_commune_function
+		}
+		modifier = {
+			political_power_factor = 0.1
+			society_development_monthly = 0.01
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea0
+					add_idea = PRC_nl_jingji23_d1_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_local_building_slots_factor_dynamic_var
+				value = 0.15
+			}
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = oil
+				amount = 2
+			}
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 4
+			}
+			set_country_flag = PRC_nl_condition_jingji23_flag
+		}
+	}
 }
 
 PRC_gaizaodaxingqiye_category = {
