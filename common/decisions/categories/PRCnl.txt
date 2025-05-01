@@ -172,7 +172,7 @@ PLA_jueyileibie = {
 		tag = PRC
 	}
 	visible = {
-		has_country_flag = PRC_world_revolution
+		has_completed_focus = PLA_when_that_day_comes
 	}
 	priority = 199
 }
