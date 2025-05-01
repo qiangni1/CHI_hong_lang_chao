@@ -165,3 +165,14 @@ PRC_Youth_Ideological_Education = {
 	}
 	priority = 1
 }
+PLA_jueyileibie = {
+	icon = GFX_PRC_gaw_cat
+	visible_when_empty = yes
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+		has_country_flag = PRC_world_revolution
+	}
+	priority = 199
+}
