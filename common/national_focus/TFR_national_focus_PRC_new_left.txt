@@ -6008,13 +6008,13 @@ focus_tree = {
 					instant_build = yes
 				}
 		    }
-
 			effect_tooltip = {
 				swap_ideas = {					
 					remove_idea = PRC_made_in_china_dummy_idea0
 					add_idea = PRC_nl_improve_commune_idea
 				}
 			} 
+			unlock_decision_tooltip = PRC_nl_jingji15_d1
 		}
 	}
 	focus = {
@@ -6118,6 +6118,7 @@ focus_tree = {
 					add_idea = PRC_nl_robotic_emergency_assist_idea
 				}
 			}
+			unlock_decision_tooltip = PRC_nl_jingji16_d1
 		}
 	}
 	focus = {
@@ -6301,6 +6302,7 @@ focus_tree = {
 					add_idea = PRC_nl_super_project_idea
 				}
 		    }
+			unlock_decision_tooltip = PRC_nl_jingji23_d1
 		}
 	}
 	focus = {
@@ -6336,6 +6338,7 @@ focus_tree = {
 					add_idea = PRC_nl_free_and_equal_labor_idea
 				}
 		    }
+			unlock_decision_tooltip = PRC_nl_jingji14_d1
 		}
 	}
 	focus = {
