@@ -711,12 +711,18 @@ PRC_export_revolution = {
 					}
 				}
 				set_politics = {
-					ruling_party = totalitarian_socialist
+					ruling_party = communist
 					elections_allowed = no
+				}
+				create_country_leader = {
+					name = MAL_Husairi_bin_Ariffin
+					picture = GFX_MAL_Husairi_bin_Ariffin
+					ideology = marxism_leninism
 				}
 				hidden_effect = {
 					set_popularities = {
-						totalitarian_socialist = 100
+						communist = 75
+						totalitarian_socialist = 25
 					}
 				}
 				transfer_state = 816
@@ -838,12 +844,20 @@ PRC_export_revolution = {
 					}
 				}
 				set_politics = {
-					ruling_party = totalitarian_socialist
+					ruling_party = communist
 					elections_allowed = no
+				}
+				create_country_leader = {
+					name = INS_Dominggus_Oktavianus
+					picture = GFX_INS_Dominggus_Oktavianus
+					ideology = marxism_leninism
 				}
 				hidden_effect = {
 					set_popularities = {
-						totalitarian_socialist = 100
+						communist = 50
+						totalitarian_socialist = 30
+						libertarian_socialist = 10
+						social_democrat = 10
 					}
 				}
 				transfer_state = 667
@@ -1572,13 +1586,13 @@ PRC_export_revolution = {
 				set_cosmetic_tag = PAK_name
 				set_politics = {
 					ruling_party = communist
-					#last_election = 2019.3.24
-					#election_frequency = 48
-					elections_allowed = no
+					last_election = 2019.3.24
+					election_frequency = 48
+					elections_allowed = yes
 				}
 				create_country_leader = {
-					name = "巴基斯坦人民委员会"
-					picture = "gfx/leaders/PRC/generals/PRC_lianm.png"
+					name = PAK_Imdar_Kazi
+					picture = GFX_PAK_Imdar_Kazi
 					ideology = marxism_leninism
 				}
 				add_popularity = {
@@ -1587,6 +1601,10 @@ PRC_export_revolution = {
 				}
 				add_popularity = {
 					ideology = libertarian_socialist
+					popularity = 0.1
+				}
+				add_popularity = {
+					ideology = communist
 					popularity = 0.1
 				}
 				PRC = {
@@ -3652,11 +3670,31 @@ PRC_mongolia_hetong = {
 }
 #文化革新运动
 PRC_Culture_Revital = {
+	#	工具决议：显示文化决议
+	Tool_toogle_culture_switch = {
+		icon = GFX_PRC_new_left_decision
+		visible = {
+			has_completed_focus = PRC_nl_clean_house
+		}
+		days_remove = 1
+		complete_effect = {
+			if = {
+				limit = { 
+					has_country_flag = PRC_culture_enabled_flag
+				}
+				clr_country_flag = PRC_culture_enabled_flag
+			}
+			else = {
+				set_country_flag = PRC_culture_enabled_flag
+			}
+		}
+	}
 	#	朝新世界张开怀抱
 	PRC_Brace_the_Future = {
 		icon = GFX_PRC_new_left_decision
 		visible = {
 			has_completed_focus = PRC_nl_social_reeducation
+			has_country_flag = PRC_culture_enabled_flag
 		}
 		cost = 50
 		complete_effect = {
@@ -3680,6 +3718,7 @@ PRC_Culture_Revital = {
 		icon = generic
 		visible = {
 			has_completed_focus = PRC_nl_education_the_groundstone
+			has_country_flag = PRC_culture_enabled_flag
 		}
 		cost = 50
 		complete_effect = {
@@ -3706,6 +3745,7 @@ PRC_Culture_Revital = {
 		icon = GFX_PRC_New_Gaokao
 		visible = {
 			has_completed_focus = PRC_nl_education_the_groundstone
+			has_country_flag = PRC_culture_enabled_flag
 		}
 		cost = 50
 		complete_effect = {
@@ -3747,6 +3787,7 @@ PRC_Culture_Revital = {
 		icon = GFX_PRC_New_Gaokao
 		visible = {
 			has_completed_focus = PRC_nl_education_the_groundstone
+			has_country_flag = PRC_culture_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_education_the_groundstone	
@@ -3788,6 +3829,7 @@ PRC_Culture_Revital = {
 		icon = GFX_PRC_decision_youth_project
 		visible = {
 			has_completed_focus = PRC_nl_future_with_technology
+			has_country_flag = PRC_culture_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_future_with_technology
@@ -3826,6 +3868,7 @@ PRC_Culture_Revital = {
 		icon = GFX_PRC_New_Gaokao
 		visible = {
 			has_completed_focus = PRC_nl_future_with_technology
+			has_country_flag = PRC_culture_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_future_with_technology
@@ -3863,6 +3906,7 @@ PRC_Culture_Revital = {
 		icon = GFX_PRC_New_Gaokao
 		visible = {
 			has_completed_focus = PRC_nl_future_with_technology
+			has_country_flag = PRC_culture_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_future_with_technology
@@ -3910,6 +3954,7 @@ PRC_Culture_Revital = {
 		icon = generic_political_rally
 		visible = {
 			has_completed_focus = PRC_nl_purge_academic_bureaucrats
+			has_country_flag = PRC_culture_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_purge_academic_bureaucrats
@@ -3941,6 +3986,7 @@ PRC_Culture_Revital = {
 		icon = generic_political_rally
 		visible = {
 			has_completed_focus = PRC_nl_purge_academic_bureaucrats
+			has_country_flag = PRC_culture_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_purge_academic_bureaucrats
@@ -3970,13 +4016,129 @@ PRC_Culture_Revital = {
 		}
 		
 	}
+	#	庆祝无产文化节
+	PRC_celebrate_OUR_art_festival = {
+		icon = GFX_PRC_cylc_decision
+		visible = {
+			has_completed_focus = PRC_nl_proletarian_art_festival
+			has_country_flag = PRC_culture_enabled_flag
+		}
+		available = {
+			has_completed_focus = PRC_nl_proletarian_art_festival
+		}
+		cost = 50
+		days_remove = 100
+		fire_only_once = yes
+		remove_effect = {
+			country_event = Chihong.37
+		}
+	}
+	#	宣传人民群众作品
+	PRC_propagate_PEOPLE_work = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		visible = {
+			has_completed_focus = PRC_nl_fighting_pen_revo_draw
+			has_country_flag = PRC_propaganda_enabled_flag
+		}
+		available = {
+			has_completed_focus = PRC_nl_fighting_pen_revo_draw
+			has_campaign_slot = yes
+		}
+		cost = 75
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = {
+			remove_campaign_slot = yes
+		}
+		remove_effect = {
+			add_campaign_slot = yes
+			add_to_variable = {
+				PSC_drift_var = 0.1
+			}
+			add_to_variable = {
+				PSC_army_org_var = 0.05
+			}
+			add_to_variable = {
+				PSC_org_loss_25_var = -0.15
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start24
+				}
+			}
+		}
+	}
 
-	
+	#	工具决议：显示宣传决议
+	Tool_toogle_propaganda_switch = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		visible = {
+			has_completed_focus = PRC_nl_clean_house
+		}
+		days_remove = 1
+		complete_effect = {
+			if = {
+				limit = { 
+					has_country_flag = PRC_propaganda_enabled_flag
+				}
+				clr_country_flag = PRC_propaganda_enabled_flag
+			}
+			else = {
+				set_country_flag = PRC_propaganda_enabled_flag
+			}
+		}
+	}
+	#	鼓励跨国交流
+	PRC_propagate_international_exchange = {
+		icon = GFX_PRC_new_left_decision
+		visible = {
+			has_completed_focus = PRC_nl_long_live_internationalism
+			has_country_flag = PRC_propaganda_enabled_flag
+		}
+		available = {
+			has_completed_focus = PRC_nl_long_live_internationalism
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 60
+		remove_effect = {
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = PRC_pp_int_ex
+					}
+				}
+				country_event = Chihong.40
+				set_country_flag = PRC_pp_int_ex
+			}
+			add_to_variable = {
+				PSC_drift_var = 0.1
+			}
+			add_to_variable = {
+				PSC_propaganda_var = 0.1
+			}
+			add_to_variable = {
+				PSC_ideology_var = 0.1
+			}
+			add_to_variable = {
+				PSC_foreign_var = -0.5
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start26
+				}
+			}
+		}
+	}
+
 	#	宣传：坚持党的领导
 	PRC_establish_lead_by_party = {
 		icon = GFX_decision_generic_propaganda_campaigns
 		visible = {
 			has_completed_focus = PRC_nl_party_the_face
+			has_country_flag = PRC_propaganda_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_party_the_face
@@ -4012,6 +4174,7 @@ PRC_Culture_Revital = {
 		icon = GFX_decision_generic_propaganda_campaigns
 		visible = {
 			has_completed_focus = PRC_nl_end_to_past_chaos
+			has_country_flag = PRC_propaganda_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_end_to_past_chaos
@@ -4047,6 +4210,7 @@ PRC_Culture_Revital = {
 		icon = GFX_decision_generic_propaganda_campaigns
 		visible = {
 			has_completed_focus = PRC_nl_youth_league
+			has_country_flag = PRC_propaganda_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_youth_league
@@ -4083,6 +4247,7 @@ PRC_Culture_Revital = {
 		icon = GFX_decision_generic_propaganda_campaigns
 		visible = {
 			has_completed_focus = PRC_nl_revive_red_culture
+			has_country_flag = PRC_propaganda_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_revive_red_culture
@@ -4125,6 +4290,7 @@ PRC_Culture_Revital = {
 		icon = GFX_decision_generic_propaganda_campaigns
 		visible = {
 			has_completed_focus = PRC_nl_peoples_culture_revolutionary_culture
+			has_country_flag = PRC_propaganda_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_peoples_culture_revolutionary_culture
@@ -4158,6 +4324,7 @@ PRC_Culture_Revital = {
 		icon = GFX_decision_generic_propaganda_campaigns
 		visible = {
 			has_completed_focus = PRC_nl_future_with_technology
+			has_country_flag = PRC_propaganda_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_future_with_technology
@@ -4181,6 +4348,7 @@ PRC_Culture_Revital = {
 		icon = GFX_decision_generic_propaganda_campaigns
 		visible = {
 			has_completed_focus = PRC_nl_long_live_internationalism
+			has_country_flag = PRC_propaganda_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_long_live_internationalism
@@ -4202,47 +4370,13 @@ PRC_Culture_Revital = {
 			add_campaign_slot = yes
 		}
 	}
-	#	宣传人民群众作品
-	PRC_propagate_PEOPLE_work = {
-		icon = GFX_decision_generic_propaganda_campaigns
-		visible = {
-			has_completed_focus = PRC_nl_fighting_pen_revo_draw
-		}
-		available = {
-			has_completed_focus = PRC_nl_fighting_pen_revo_draw
-			has_campaign_slot = yes
-		}
-		cost = socialist_ppgda_cost1
-		days_remove = 180
-		days_re_enable = 180
-		complete_effect = {
-			remove_campaign_slot = yes
-		}
-		remove_effect = {
-			add_campaign_slot = yes
-			add_to_variable = {
-				PSC_drift_var = 0.1
-			}
-			add_to_variable = {
-				PSC_army_org_var = 0.05
-			}
-			add_to_variable = {
-				PSC_org_loss_25_var = -0.15
-			}
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = PRC_socialist_culture_start
-					add_idea = PRC_socialist_culture_start24
-				}
-			}
-		}
-	}
 
 	#	揭穿资产阶级平等幻象
 	PRC_out_capitalist_so_call_equity = {
 		icon = GFX_PRC_new_left_decision
 		visible = {
 			has_completed_focus = PRC_nl_end_to_past_chaos
+			has_country_flag = PRC_propaganda_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_end_to_past_chaos
@@ -4273,6 +4407,7 @@ PRC_Culture_Revital = {
 		icon = GFX_PRC_new_left_decision
 		visible = {
 			has_completed_focus = PRC_nl_end_to_past_chaos
+			has_country_flag = PRC_propaganda_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_end_to_past_chaos
@@ -4297,11 +4432,33 @@ PRC_Culture_Revital = {
 
 		}
 	}
+
+	#	工具决议：显示改革决议
+	Tool_toogle_reform_switch = {
+		icon = GFX_PRC_centrist_decision
+		visible = {
+			has_completed_focus = PRC_nl_clean_house
+		}
+		days_remove = 1
+		complete_effect = {
+			if = {
+				limit = { 
+					has_country_flag = PRC_reform_enabled_flag
+				}
+				clr_country_flag = PRC_reform_enabled_flag
+			}
+			else = {
+				set_country_flag = PRC_reform_enabled_flag
+			}
+		}
+
+	}
 	#	树立干部新目标
 	PRC_cadre_revolutionization = {
 		icon = GFX_PRC_centrist_decision
 		visible = {
 			has_completed_focus = PRC_nl_party_the_face
+			has_country_flag = PRC_reform_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_party_the_face
@@ -4330,6 +4487,7 @@ PRC_Culture_Revital = {
 		icon = GFX_PRC_centrist_decision
 		visible = {
 			has_completed_focus = PRC_nl_youth_league
+			has_country_flag = PRC_reform_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_youth_league
@@ -4361,6 +4519,7 @@ PRC_Culture_Revital = {
 		icon = GFX_PRC_Reform_by_Force
 		visible = {
 			has_completed_focus = PRC_nl_purge_culture_propaganders
+			has_country_flag = PRC_reform_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_purge_culture_propaganders
@@ -4397,6 +4556,7 @@ PRC_Culture_Revital = {
 		icon = GFX_PRC_Reform_by_Force
 		visible = {
 			has_completed_focus = PRC_nl_purge_culture_propaganders
+			has_country_flag = PRC_reform_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_purge_culture_propaganders
@@ -4433,6 +4593,7 @@ PRC_Culture_Revital = {
 		icon = GFX_PRC_Step_Past_Chairman_Xiaoping
 		visible = {
 			has_completed_focus = PRC_nl_purge_academic_bureaucrats
+			has_country_flag = PRC_reform_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_purge_academic_bureaucrats
@@ -4445,27 +4606,12 @@ PRC_Culture_Revital = {
 			personal_value_factor = 0.03
 		}
 	}
-	#	庆祝无产文化节
-	PRC_celebrate_OUR_art_festival = {
-		icon = GFX_PRC_cylc_decision
-		visible = {
-			has_completed_focus = PRC_nl_proletarian_art_festival
-		}
-		available = {
-			has_completed_focus = PRC_nl_proletarian_art_festival
-		}
-		cost = 50
-		days_remove = 100
-		fire_only_once = yes
-		remove_effect = {
-			country_event = Chihong.37
-		}
-	}
 	#	拆掉防火墙
 	PRC_disable_firewall = {
 		icon = GFX_PRC_liberal_decision
 		visible = {
 			has_completed_focus = PRC_nl_long_live_internationalism
+			has_country_flag = PRC_reform_enabled_flag
 		}
 		available = {
 			has_completed_focus = PRC_nl_long_live_internationalism
@@ -4475,48 +4621,6 @@ PRC_Culture_Revital = {
 		fire_only_once = yes
 		complete_effect = {
 			country_event = Chihong.39
-		}
-	}
-	#	鼓励跨国交流
-	PRC_propagate_international_exchange = {
-		icon = GFX_PRC_new_left_decision
-		visible = {
-			has_completed_focus = PRC_nl_long_live_internationalism
-		}
-		available = {
-			has_completed_focus = PRC_nl_long_live_internationalism
-		}
-		cost = 50
-		days_remove = 60
-		days_re_enable = 60
-		remove_effect = {
-			if = {
-				limit = { 
-					NOT = {
-						has_country_flag = PRC_pp_int_ex
-					}
-				}
-				country_event = Chihong.40
-				set_country_flag = PRC_pp_int_ex
-			}
-			add_to_variable = {
-				PSC_drift_var = 0.1
-			}
-			add_to_variable = {
-				PSC_propaganda_var = 0.1
-			}
-			add_to_variable = {
-				PSC_ideology_var = 0.1
-			}
-			add_to_variable = {
-				PSC_foreign_var = -0.5
-			}
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = PRC_socialist_culture_start
-					add_idea = PRC_socialist_culture_start26
-				}
-			}
 		}
 	}
 }

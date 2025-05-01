@@ -8,4 +8,20 @@ spriteTypes = {
 		name = "GFX_PRC_new_left_jinghji"
 		texturefile = "gfx/gui/PRC_new_left_jinghji.png"
 	}
+	spriteType = {
+		name = "GFX_INS_Dominggus_Oktavianus"
+		textureFile = "gfx/leaders/INS_Dominggus_Oktavianus.png"
+	}
+	spriteType = {
+		name = "GFX_MAL_Husairi_bin_Ariffin"
+		textureFile = "gfx/leaders/MAL_Husairi_bin_Ariffin.png"
+	}
+	spriteType = {
+		name = "GFX_PAK_Imdar_Kazi"
+		textureFile = "gfx/leaders/PAK_Imdar_Kazi.png"
+	}
+	spriteType = {
+		name = "GFX_RAJ_Nanbala_Ksawala_Rao"
+		textureFile = "gfx/leaders/RAJ_Nanbala_Ksawala_Rao.png"
+	}
 }
