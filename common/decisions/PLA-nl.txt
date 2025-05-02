@@ -608,7 +608,7 @@ PRC_new_left_pla_reformation = {
 			tag = PRC
 		}
 		visible = {
-			has_completed_focus = PLA_equipment_research
+			has_completed_focus = PLA_equipment_research_new
 		}
 		available = {
 			NOT = {
@@ -637,7 +637,7 @@ PRC_new_left_pla_reformation = {
 			tag = PRC
 		}
 		visible = {
-			has_completed_focus = PLA_equipment_research
+			has_completed_focus = PLA_equipment_research_new
 		}
 		available = {
 			NOT = {
@@ -666,7 +666,7 @@ PRC_new_left_pla_reformation = {
 			tag = PRC
 		}
 		visible = {
-			has_completed_focus = PLA_equipment_research
+			has_completed_focus = PLA_equipment_research_new
 		}
 		available = {
 			NOT = {
@@ -695,7 +695,7 @@ PRC_new_left_pla_reformation = {
 			tag = PRC
 		}
 		visible = {
-			has_completed_focus = PLA_equipment_research
+			has_completed_focus = PLA_equipment_research_new
 		}
 		available = {
 			NOT = {
@@ -724,7 +724,7 @@ PRC_new_left_pla_reformation = {
 			tag = PRC
 		}
 		visible = {
-			has_completed_focus = PLA_equipment_research
+			has_completed_focus = PLA_equipment_research_new
 		}
 		available = {
 			NOT = {
@@ -753,7 +753,7 @@ PRC_new_left_pla_reformation = {
 			tag = PRC
 		}
 		visible = {
-			has_completed_focus = PLA_equipment_research
+			has_completed_focus = PLA_equipment_research_new
 		}
 		available = {
 			NOT = {
