@@ -1,6 +1,7 @@
 add_namespace = prcs
 add_namespace = Chihong
 add_namespace = china
+#主要事件填充
 country_event = {
 	id = prcs.1
 	title = prcs.1.t
