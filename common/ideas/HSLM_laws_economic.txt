@@ -15,6 +15,9 @@ ideas = {
 			}
 			visible = {
 				has_completed_focus = PRC_nl_industry_five
+				NOT = {
+					has_country_flag = PRC_nl_condition_jingji15_flag
+				}
 			}
 			modifier = {
 				consumer_goods_factor = 0.2
@@ -22,6 +25,29 @@ ideas = {
 				business_value_factor = 0.15
 				personal_value_factor = 0.15
 				production_speed_buildings_factor = 0.1
+			}
+		}
+		auto_socialism1 = {
+			picture = auto_socialism
+			removal_cost = -1
+			level = 7
+			cancel_if_invalid = no
+			default = yes
+			allowed_to_remove = {
+			}
+			available = {
+				has_completed_focus = PRC_nl_industry_five
+			}
+			visible = {
+				has_country_flag = PRC_nl_condition_jingji15_flag
+			}
+			modifier = {
+				consumer_goods_factor = 0.2
+				stability_weekly = 0.002
+				business_value_factor = 0.25
+				personal_value_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				industrial_development_monthly = 0.01
 			}
 		}
 		auto_communism = {

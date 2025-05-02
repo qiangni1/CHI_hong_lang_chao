@@ -5136,8 +5136,8 @@ PRC_maoist_politburo_cat = {
 		complete_effect = {
 		}
 		remove_effect = {
-			change_economy_type_auto_socialism1 = yes
 			set_country_flag = PRC_nl_condition_jingji15_flag
+			change_economy_type_auto_socialism1 = yes
 		}
 	}
 	PRC_nl_jingji16_d1 = {
