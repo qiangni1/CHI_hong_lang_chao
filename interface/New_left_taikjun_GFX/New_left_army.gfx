@@ -1,0 +1,164 @@
+spriteTypes = {
+	#地图注册
+	SpriteType = {
+		name = "GFX_new_left_east_asia"
+		texturefile = "gfx/interface/space_army_GUI/east_asia.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_Cambodia"
+		texturefile = "gfx/interface/space_army_GUI/Cambodia.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_china"
+		texturefile = "gfx/interface/space_army_GUI/china.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_indonesia"
+		texturefile = "gfx/interface/space_army_GUI/indonesia.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_japan"
+		texturefile = "gfx/interface/space_army_GUI/japan.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_laos"
+		texturefile = "gfx/interface/space_army_GUI/laos.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_mailai"
+		texturefile = "gfx/interface/space_army_GUI/mailai.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_mian"
+		texturefile = "gfx/interface/space_army_GUI/mian.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_north_korea"
+		texturefile = "gfx/interface/space_army_GUI/north_korea.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_Philippine"
+		texturefile = "gfx/interface/space_army_GUI/Philippine.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_south_korea"
+		texturefile = "gfx/interface/space_army_GUI/south_korea.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_thai"
+		texturefile = "gfx/interface/space_army_GUI/thai.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_vietnam"
+		texturefile = "gfx/interface/space_army_GUI/vietnam.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_oceania"
+		texturefile = "gfx/interface/space_army_GUI/oceania.png"
+	}
+	#GUI注册
+	SpriteType = {
+		name = "GFX_new_left_PLA_rocket_force_blue"
+		texturefile = "gfx/interface/space_army_GUI/PLA_rocket_force_blue.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_PLA_space_force_blue"
+		texturefile = "gfx/interface/space_army_GUI/PLA_space_force_blue.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_background_GUI"
+		texturefile = "gfx/interface/space_army_GUI/space_army_background_GUI.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_PLA_rocket_force_blue_action"
+		texturefile = "gfx/interface/space_army_GUI/PLA_rocket_force_blue_action.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_PLA_space_force_blue_action"
+		texturefile = "gfx/interface/space_army_GUI/PLA_space_force_blue_action.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_choice_GUI"
+		texturefile = "gfx/interface/space_army_GUI/space_army_choice_GUI.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_nuclear"
+		texturefile = "gfx/interface/space_army_GUI/nuclear.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_choice_GUI_china"
+		texturefile = "gfx/interface/space_army_GUI/character/china.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_choice_GUI_indochina"
+		texturefile = "gfx/interface/space_army_GUI/character/indochina.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_choice_GUI_indonesia"
+		texturefile = "gfx/interface/space_army_GUI/character/indonesia.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_choice_GUI_japan"
+		texturefile = "gfx/interface/space_army_GUI/character/japan.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_choice_GUI_mailai"
+		texturefile = "gfx/interface/space_army_GUI/character/mailai.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_choice_GUI_north_korea"
+		texturefile = "gfx/interface/space_army_GUI/character/north_korea.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_choice_GUI_oceania"
+		texturefile = "gfx/interface/space_army_GUI/character/oceania.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_choice_GUI_Philippines"
+		texturefile = "gfx/interface/space_army_GUI/character/Philippines.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_choice_GUI_south_asia"
+		texturefile = "gfx/interface/space_army_GUI/character/south_asia.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_choice_GUI_south_korea"
+		texturefile = "gfx/interface/space_army_GUI/character/south_korea.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_choice_GUI_thai"
+		texturefile = "gfx/interface/space_army_GUI/character/thai.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_entrance"
+		texturefile = "gfx/interface/space_army_GUI/entrance.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_GUI_close_btn"
+		texturefile = "gfx/interface/space_army_GUI/close_ui.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_GUI_nuclear_btn"
+		texturefile = "gfx/interface/space_army_GUI/nuclear.png"
+	}
+	SpriteType = {
+		name = "GFX_new_left_space_army_GUI_supersecret"
+		texturefile = "gfx/interface/space_army_GUI/supersecret.png"
+	}
+	#太空军图标注册
+	spriteType = {
+		name = "GFX_unit_space_army_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/unit_space_army_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_space_army_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_space_army_icon.dds"  
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_space_army_icon_small"
+		texturefile = "gfx/unit_space_army_icon_small.png" 
+		legacy_lazy_load = no
+	}
+}
