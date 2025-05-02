@@ -1,3 +1,4 @@
+# 转线事件链
 add_namespace = prc_change
 country_event = {
 	id = prc_change.1
