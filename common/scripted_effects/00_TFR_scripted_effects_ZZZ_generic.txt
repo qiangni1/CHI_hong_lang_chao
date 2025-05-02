@@ -4755,7 +4755,7 @@ remove_gov_types = {
 	remove_ideas = {
 		ZZZ_russian_political_system
 		ZZZ_chinese_political_system
-		ZZZ_proleteriat_dictatorship
+		ZZZ_proletariat_dictatorship
 		ZZZ_absolute_monarchy
 		ZZZ_military_dictatorship
 		ZZZ_socialist_republic
@@ -4784,7 +4784,7 @@ change_government_type_proleteriat_dictatorship = {
 	custom_effect_tooltip = change_gov_proleteriat_dictatorship_tt
 	hidden_effect = {
 		remove_gov_types = yes
-		add_ideas = ZZZ_proleteriat_dictatorship
+		add_ideas = ZZZ_proletariat_dictatorship
 	}
 }
 

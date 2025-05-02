@@ -234,10 +234,17 @@ country_event = {
     title = prcs.25.t
     desc = prcs.25.d
 
- is_triggered_only = yes
+    is_triggered_only = yes
 
     option = {
         name = prcs.25.a
+        hidden_effect = {
+            country_event = {
+                id = prcs.26
+                days = 3
+            }
+        }
+        add_ideas = PRC_Wang_Zhaoguo
     }
     major = no
     
@@ -248,17 +255,23 @@ country_event = {
     picture = GFX_prcs.26.p
     title = prcs.26.t
     desc = prcs.26.d
-
- is_triggered_only = yes
-
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            country_event = {
+                id = prcs.27
+                days = 2
+            }
+        }
+    }
     option = {
         name = prcs.26.a
     }
     option = {
         name = prcs.26.b
+        add_ideas = PRC_Mao_Yuanxin
     }
     major = no
-    
 }
 
 country_event = {
@@ -267,10 +280,19 @@ country_event = {
     title = prcs.27.t
     desc = prcs.27.d
 
- is_triggered_only = yes
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            country_event = {
+                id = prcs.28
+                days = 3
+            }
+        }
+    }
 
     option = {
         name = prcs.27.a
+        add_ideas = PRC_Yuan_Jiajun
     }
     major = no
     
@@ -286,6 +308,7 @@ country_event = {
 
     option = {
         name = prcs.28.a
+        add_ideas = PRC_Wang_Huning
     }
     major = no
     

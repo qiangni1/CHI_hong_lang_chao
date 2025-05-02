@@ -1426,7 +1426,7 @@ ideas = {
 			}
 
 		}
-		ZZZ_proleteriat_dictatorship = {
+		ZZZ_proletariat_dictatorship = {
 			allowed = {
 				always = no
 			}
