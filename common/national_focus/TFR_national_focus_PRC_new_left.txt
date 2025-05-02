@@ -14,7 +14,7 @@ focus_tree = {
   focus = {
         #当那一天到来
 		id = PLA_when_that_day_comes
-		icon = GFX_
+		icon = GFX_focus_PRC_establish_eadi
         #图片就不予添加了
 		x = 0
 		y = 0
