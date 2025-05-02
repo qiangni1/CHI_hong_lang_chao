@@ -11,7 +11,7 @@ focus_tree = {
 	}
 	# shared_focus = PRC_establish_eadi
 	shared_focus = PRC_chinas_greatest_hour
-	focus = {
+  focus = {
         #当那一天到来
 		id = PLA_when_that_day_comes
 		icon = GFX_
@@ -80,7 +80,7 @@ focus_tree = {
 	focus = {
 		#新时代人民战争理论建设
 		id = PLA_theoretical_construction_of_PW_in_new_era
-		icon = GFX_
+		icon = GFX_focus_PRC_will_of_the_chinese_people
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_reform_of_military_and_political_work
@@ -108,7 +108,7 @@ focus_tree = {
 	focus = {
 		#武装保卫无产阶级革命
 		id = PLA_armed_defense_of_proletarian_revolution
-		icon = GFX_
+		icon = GFX_focus_PRC_dare_to_fight
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_theoretical_construction_of_PW_in_new_era
@@ -133,7 +133,7 @@ focus_tree = {
 	focus = {
 		#锻造中国革命的坚盾
 		id = PLA_forging_Strong_Shield_of_Chinese_Revolution
-		icon = GFX_
+		icon = GFX_focus_PRC_infantry_primacy
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_theoretical_construction_of_PW_in_new_era
@@ -155,7 +155,7 @@ focus_tree = {
 	focus = {
 		#重铸世界革命的利剑
 		id = PLA_Remaking_the_Sword_of_World_Revolution
-		icon = GFX_
+		icon = GFX_focus_PRC_Send_Chinese_Peacekeepers
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_forging_Strong_Shield_of_Chinese_Revolution
@@ -223,7 +223,7 @@ focus_tree = {
 	focus = {
 		#擎旗自有后来人
 		id = PLA_Qingqi_has_its_own_successors
-		icon = GFX_
+		icon = GFX_focus_PRC_stir_up_youth_patriotism
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_armed_defense_of_proletarian_revolution
@@ -276,7 +276,7 @@ focus_tree = {
 	focus = {
 		#动员全世界无产阶级
 		id = PLA_Mobilize_the_global_proletariat
-		icon = GFX_
+		icon = GFX_focus_PRC_foster_authoritative_statesmen
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_Qingqi_has_its_own_successors
@@ -322,7 +322,7 @@ focus_tree = {
 	focus = {
 		#国际纵队永垂不朽
 		id = PLA_the_IC_will_be_immortalized_forever
-		icon = GFX_
+		icon = GFX_focus_PRC_coordinate_eadi_militaries
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_Mobilize_the_global_proletariat
@@ -344,7 +344,7 @@ focus_tree = {
 	focus = {
 		#建立联合作战指挥部
 		id = PLA_establish_joint_operations_command
-		icon = GFX_
+		icon = GFX_focus_PRC_reconcile_with_militarists
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_when_that_day_comes
@@ -414,7 +414,7 @@ focus_tree = {
 	focus = {
 		#炮兵决胜，信火一体
 		id = PLA_artillery_wins_that_integrating_information_and_fire
-		icon = GFX_
+		icon = GFX_focus_PRC_tank_primacy_nat
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_army_intelligence_reform
@@ -462,7 +462,7 @@ focus_tree = {
 	focus = {
 		#新时代大纵深战略
 		id = PLA_new_era_large_depth_strategy
-		icon = GFX_
+		icon = GFX_focus_PRC_tidal_wave_of_bodies
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_army_intelligence_reform
@@ -510,7 +510,7 @@ focus_tree = {
 	focus = {
 		#陆军智能化改革
 		id = PLA_army_intelligence_reform
-		icon = GFX_
+		icon = GFX_focus_PRC_modern_special_forces
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_establish_joint_operations_command
@@ -550,7 +550,7 @@ focus_tree = {
 	focus = {
 		#精英海军陆战队
 		id = PLA_elite_marine_corps
-		icon = GFX_
+		icon = GFX_focus_PRC_elite_marine_corps
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PAL_build_new_navy
@@ -599,7 +599,7 @@ focus_tree = {
 		#“鲲鹏”计划
 		#相关效果已添加在科技中，后期可以添加到决议中
 		id = PLA_Kunpeng_Plan
-		icon = GFX_
+		icon = GFX_focus_PRC_dominate_south_china_sea
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_elite_marine_corps
@@ -645,7 +645,7 @@ focus_tree = {
 	focus = {
 		#建立无人合成部队
 		id = PLA_establish_an_unmanned_composite_force
-		icon = GFX_
+		icon = GFX_focus_PRC_wang_yang_three_campaigns
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_new_era_large_depth_strategy
@@ -689,7 +689,7 @@ focus_tree = {
 	focus = {
 		#横扫千军如卷席
 		id = PAL_rolling_back_enemy_as_wound_mat
-		icon = GFX_
+		icon = GFX_focus_PRC_mobile_warfare
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_establish_an_unmanned_composite_force
@@ -715,7 +715,7 @@ focus_tree = {
 	focus = {
 		#建设新锐人民海军
 		id = PAL_build_new_navy
-		icon = GFX_
+		icon = GFX_focus_PRC_a_blue_water_navy
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_establish_joint_operations_command
@@ -751,7 +751,7 @@ focus_tree = {
 	focus = {
 		#改革航母战斗群
 		id = PAL_Reforming_aircraft_carrier_battle_groups
-		icon = GFX_
+		icon = GFX_focus_PRC_carrier_primacy
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PAL_build_new_navy
@@ -799,7 +799,7 @@ focus_tree = {
 	focus = {
 		#重拾电磁武库舰
 		id = PAL_retrieve_electromagnetic_arsenal_ship
-		icon = GFX_
+		icon = GFX_focus_PRC_resurrect_the_battleship
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PAL_Reforming_aircraft_carrier_battle_groups
@@ -917,7 +917,7 @@ focus_tree = {
 	focus = {
 		#艟艨巨舰直东指
 		id = PAL_bulky_giant_ship_pointing_straight_east
-		icon = GFX_
+		icon = GFX_focus_PRC_redefine_naval_warfare
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PAL_retrieve_electromagnetic_arsenal_ship
@@ -945,7 +945,7 @@ focus_tree = {
 	focus = {
 		#人民空军改革进行时
 		id = PAL_reform_of_PAF
-		icon = GFX_
+		icon = GFX_focus_PRC_next_generation_airforce
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_establish_joint_operations_command
@@ -973,7 +973,7 @@ focus_tree = {
 	focus = {
 		#建立忠诚僚机系统
 		id = PAL_establish_loyal_wingplane
-		icon = GFX_
+		icon = GFX_focus_PRC_trust_in_the_pilot
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PAL_reform_of_PAF
@@ -998,7 +998,7 @@ focus_tree = {
 	focus = {
 		#龙行矫健，霹雳震天
 		id = PAL_dragons_move_agility_and_thunderstorms_strike_sky
-		icon = GFX_
+		icon = GFX_focus_PRC_deus_ex_machina
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PAL_establish_loyal_wingplane
@@ -1040,7 +1040,7 @@ focus_tree = {
 	focus = {
 		#空突利刃，决胜疆场
 		id = PAL_sharp_blade_in_air_and_win_battlefield
-		icon = GFX_
+		icon = GFX_focus_PRC_military_industries_renewal_campaign
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PAL_establish_loyal_wingplane
@@ -1083,7 +1083,7 @@ focus_tree = {
 	focus = {
 		#玉宇澄清万里埃
 		id = PAL_the_sky_crystal_clear
-		icon = GFX_
+		icon = GFX_focus_PRC_dominate_the_skies
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PAL_dragons_move_agility_and_thunderstorms_strike_sky
@@ -1112,7 +1112,7 @@ focus_tree = {
 		#第四维度战争理论
 		#原本是想放到空军的线上，但考虑到还要把原国策的部分内容结合进来，为了排版美观，只能把它放在这里，延长此国策线
 		id = PAL_fourth_of_war
-		icon = GFX_
+		icon = GFX_focus_PRC_the_organic_state
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_reform_of_military_and_political_work
@@ -1149,7 +1149,7 @@ focus_tree = {
 		#拦阻敌人信息洪流
 		#原本是想放到空军的线上，但考虑到还要把原国策的部分内容结合进来，为了排版美观，只能把它放在这里，延长此国策线
 		id = PAL_block_flood_of_enemy_information
-		icon = GFX_
+		icon = GFX_focus_PRC_digital_leninism
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PLA_reform_of_military_and_political_work
@@ -1171,7 +1171,7 @@ focus_tree = {
 	focus = {
 		#呼风唤雨，擎雷掣电
 		id = PAL_summon_wind_and_electricity
-		icon = GFX_
+		icon = GFX_focus_PRC_set_new_military_standarts
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PAL_the_sky_crystal_clear
@@ -1199,7 +1199,7 @@ focus_tree = {
 	focus = {
 		#狂飙为我从天落
 		id = PAL_roaring_wildly
-		icon = GFX_
+		icon = GFX_focus_PRC_red_military_junta
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PAL_the_sky_crystal_clear
@@ -1242,7 +1242,7 @@ focus_tree = {
 	focus = {
 		#可上九天揽月
 		id = PAL_moon_in_nine_days
-		icon = GFX_
+		icon = GFX_focus_PRC_reform_local_elections
 		#图片就不予添加了
 		available_if_capitulated = yes
         relative_position_id = PAL_the_sky_crystal_clear
