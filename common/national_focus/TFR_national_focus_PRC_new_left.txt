@@ -74,9 +74,9 @@ focus_tree = {
 			else = {
 				army_experience = 30
 			}
-			add_dynamic_modifier = {
-				modifier = PLA_military_and_political_reform_dynamic
-			}
+			#add_dynamic_modifier = {
+				#modifier = PLA_military_and_political_reform_dynamic
+			#}
 			#这个人民解放军军政改革不出现人民解放军军政改革这个修正？而且感觉给的数据里的描述怪怪的，暂且先这样做
 		}
 	}
@@ -1744,9 +1744,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = PLA_when_that_day_comes
 		completion_reward = {
-			add_dynamic_modifier = {
-				modifier = PRC_pla_dynamic
-			}
+			#add_dynamic_modifier = {
+				#modifier = PRC_pla_dynamic
+			#}
 			unlock_decision_tooltip = PRC_project_ghost_dec
 			unlock_decision_tooltip = PRC_project_nib_dec
 			unlock_decision_tooltip = PRC_project_dark_sword_dec
