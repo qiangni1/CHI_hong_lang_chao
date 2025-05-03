@@ -155,7 +155,7 @@ news_event = {
 }
 country_event = {
     id = prcs.10
-    picture = GFX_prcs.10.p
+    picture = GFX_taiwan_new_soldiers
     title = prcs.10.t
     desc = prcs.10.d
 
@@ -171,7 +171,7 @@ country_event = {
 
 country_event = {
     id = prcs.11
-    picture = GFX_prcs.11.p
+    picture = GFX_Indian_mourn
     title = prcs.11.t
     desc = prcs.11.d
 
@@ -186,7 +186,7 @@ country_event = {
 
 country_event = {
     id = prcs.12
-    picture = GFX_prcs.12.p
+    picture = GFX_PLA_marching1
     title = prcs.12.t
     desc = prcs.12.d
 
@@ -201,7 +201,7 @@ country_event = {
 
 country_event = {
     id = prcs.13
-    picture = GFX_prcs.13.p
+    picture = GFX_event_PLA_marching2
     title = prcs.13.t
     desc = prcs.13.d
 
@@ -216,7 +216,7 @@ country_event = {
 
 country_event = {
     id = prcs.14
-    picture = GFX_prcs.14.p
+    picture = GFX_PRC_pcgame
     title = prcs.14.t
     desc = prcs.14.d
 
@@ -231,7 +231,7 @@ country_event = {
 
 country_event = {
     id = prcs.15
-    picture = GFX_prcs.15.p
+    picture = GFX_PRC_pcgame
     title = prcs.15.t
     desc = prcs.15.d
 
@@ -246,7 +246,7 @@ country_event = {
 
 country_event = {
     id = prcs.16
-    picture = GFX_prcs.16.p
+    picture = GFX_PRC_tank_stars
     title = prcs.16.t
     desc = prcs.16.d
 
@@ -261,7 +261,7 @@ country_event = {
 
 country_event = {
     id = prcs.17
-    picture = GFX_prcs.17.p
+    picture = GFX_PRC_tank_stars
     title = prcs.17.t
     desc = prcs.17.d
 
@@ -276,7 +276,7 @@ country_event = {
 
 country_event = {
     id = prcs.18
-    picture = GFX_prcs.18.p
+    picture = GFX_PLA_yilong
     title = prcs.18.t
     desc = prcs.18.d
 
@@ -291,7 +291,7 @@ country_event = {
 
 country_event = {
     id = prcs.19
-    picture = GFX_prcs.19.p
+    picture = GFX_PRC_blackboard
     title = prcs.19.t
     desc = prcs.19.d
 
@@ -306,7 +306,7 @@ country_event = {
 
 country_event = {
     id = prcs.20
-    picture = GFX_prcs.20.p
+    picture = GFX_event_the_doctor
     title = prcs.20.t
     desc = prcs.20.d
 
@@ -321,7 +321,7 @@ country_event = {
 
 country_event = {
     id = prcs.21
-    picture = GFX_prcs.21.p
+    picture = GFX_event_party_tells
     title = prcs.21.t
     desc = prcs.21.d
 
@@ -336,7 +336,7 @@ country_event = {
 
 country_event = {
     id = prcs.22
-    picture = GFX_prcs.22.p
+    picture = GFX_event_oh_no_jap
     title = prcs.22.t
     desc = prcs.22.d
 
@@ -367,7 +367,7 @@ country_event = {
 
 country_event = {
     id = prcs.24
-    picture = GFX_prcs.24.p
+    picture = GFX_PRC_a_meeting
     title = prcs.24.t
     desc = prcs.24.d
 
@@ -382,7 +382,7 @@ country_event = {
 
 country_event = {
     id = prcs.25
-    picture = GFX_prcs.25.p
+    picture = GFX_event_wangzhaoguo
     title = prcs.25.t
     desc = prcs.25.d
 
@@ -404,7 +404,7 @@ country_event = {
 
 country_event = {
     id = prcs.26
-    picture = GFX_prcs.26.p
+    picture = GFX_event_maoyuanxin
     title = prcs.26.t
     desc = prcs.26.d
     is_triggered_only = yes
@@ -418,6 +418,7 @@ country_event = {
     }
     option = {
         name = prcs.26.a
+		add_ideas = PRC_le_yucheng_for
     }
     option = {
         name = prcs.26.b
@@ -428,7 +429,7 @@ country_event = {
 
 country_event = {
     id = prcs.27
-    picture = GFX_prcs.27.p
+    picture = GFX_event_yuanjiajun
     title = prcs.27.t
     desc = prcs.27.d
 
@@ -452,7 +453,7 @@ country_event = {
 
 country_event = {
     id = prcs.28
-    picture = GFX_prcs.28.p
+    picture = GFX_event_wanghuning
     title = prcs.28.t
     desc = prcs.28.d
 
@@ -468,7 +469,7 @@ country_event = {
 
 country_event = {
     id = prcs.29
-    picture = GFX_prcs.29.p
+    picture = GFX_event_PRC_CR_shadow
     title = prcs.29.t
     desc = prcs.29.d
 
@@ -1035,7 +1036,7 @@ country_event = {
     id = Chihong.37
     title = Chihong.37.t
     desc = Chihong.37.desc
-    picture = GFX_Chihong37_event
+    picture = GFX_event_PRC_mao_smile
     is_triggered_only = yes
 
     option = {

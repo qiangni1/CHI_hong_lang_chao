@@ -13991,20 +13991,6 @@ country_event = {
 	}
 }
 
-#Two Red Stars
-country_event = {
-	id = china.1026
-	title = china.1026.t
-	desc = china.1026.d
-	picture = GFX_Chinese_soldiers2
-	is_triggered_only = yes
-	immediate = {
-	}
-	option = {
-		name = china.1026.a
-		add_political_power = 10
-	}
-}
 
 #Because I Live
 country_event = {

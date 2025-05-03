@@ -4838,9 +4838,6 @@ focus_tree = {
 				coalition_partner_var_temp = token:authoritarian_democrat
 			}
 			remove_from_coalition = yes
-			set_temp_variable = {
-				
-			}
 			change_government_type_proleteriat_dictatorship = yes
 			add_to_variable = {
 				PPRC_consumer_num_var = -0.06
