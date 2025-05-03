@@ -629,6 +629,31 @@ PRC_new_left_pla_reformation = {
 			base = 1
 		}
 	}
+	PRC_project_KUNPENG_dec = {
+		#icon = GFX_decision_ger_military_buildup
+		cost = 50
+		fire_only_once = yes
+		allowed = { 
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PLA_Kunpeng_Plan
+		}
+		available = {
+		}
+		complete_effect = {
+			custom_effect_tooltip = PRC_project_KUNPENG_tt  
+			hidden_effect = {
+				set_technology = {
+					PLA_KUNPENG_tech = 1
+					popup = no
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
 	PRC_project_nib_dec = {
 		#icon = GFX_decision_ger_military_buildup
 		cost = 25
