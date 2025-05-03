@@ -31,6 +31,7 @@ focus_tree = {
 			navy_experience = 50
 			air_experience = 50
 			add_ideas = PRC_party_commands_the_guns
+			unlock_decision_category_tooltip = PRC_new_left_pla_reformation
 			#此处添加用于测试，如有想法，可以去除
 			effect_tooltip = {
 				remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
