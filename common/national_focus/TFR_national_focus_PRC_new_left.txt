@@ -74,9 +74,9 @@ focus_tree = {
 			else = {
 				army_experience = 30
 			}
-			#add_dynamic_modifier = {
-				#modifier = PLA_military_and_political_reform_dynamic
-			#}
+			add_dynamic_modifier = {
+				modifier = PLA_military_and_political_reform_dynamic
+			}
 			#这个人民解放军军政改革不出现人民解放军军政改革这个修正？而且感觉给的数据里的描述怪怪的，暂且先这样做
 		}
 	}
@@ -177,9 +177,9 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				#add_dynamic_modifier = {
-				#	modifier = PLA_military_and_political_reform_dynamic
-				#}
+				add_dynamic_modifier = {
+					modifier = PLA_military_and_political_reform_dynamic
+				}
 				add_to_variable = {
 					var = PLA_military_and_political_reform_dynamic_political_power_gain_dynamic_var
 					value = 0.25
