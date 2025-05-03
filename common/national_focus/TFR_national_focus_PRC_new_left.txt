@@ -4947,8 +4947,8 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_reform_people_congress
-		icon = GFX_focus_PRC_from_the_clean_slate
-		cost = 3
+		icon = GFX_focus_PRC_reform_npc
+		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_proletarian_democracy
 		}

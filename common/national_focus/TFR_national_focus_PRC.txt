@@ -5226,18 +5226,6 @@ shared_focus = {
 				id = china.1014
 				days = 2
 			}
-			hidden_effect = {
-				country_event = {
-					id = china.1017
-					days = 70
-					random_days = 20
-				}
-				country_event = {
-					id = china.1026
-					days = 170
-					random_days = 70
-				}
-			}
 		}
 		if = {
 			limit = {
