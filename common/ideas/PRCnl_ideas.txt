@@ -1,5 +1,42 @@
 ideas = {
 	country = {
+		hidden_ideas = {
+			PRC_crists_of_econo_tooltip_1 = {
+				#华尔街之陨事件提示buff
+				name = "经济危机"
+				modifier = {
+					consumer_goods_factor = 0.75
+					stability_factor = -0.75
+					production_speed_buildings_factor = -0.75
+					industrial_capacity_factory = -0.75
+					production_factory_max_efficiency_factor = -0.75
+					poverty_development_monthly = -5
+					industrial_development_monthly = -5
+					income_growth_factor = -0.75
+					business_value_factor = -0.75
+					personal_value_factor = -0.75
+				}
+			}
+			PRC_crists_of_econo_tooltip_2 = {
+				#30天任务演示buff
+				name = "经济危机"
+				modifier = {
+				}
+			}
+			PRC_crists_of_econo_tooltip_3 = {
+				#30天任务演示buff
+				name = "经济危机"
+				modifier = {
+					consumer_goods_factor = 0.1
+					production_speed_buildings_factor = -0.1
+					industrial_capacity_factory = -0.1
+					income_growth_factor = -0.1
+					stability_factor = -0.1
+					business_value_factor = -0.1
+					personal_value_factor = -0.1
+				}
+			}
+		}
 		PRC_SEA_volunteer_limit = {
 			picture = PRC_conduct_final_trining_idea
 			modifier = {
@@ -186,7 +223,7 @@ ideas = {
 			}
 		}
 		PRC_communist_party_of_china_red_wave_idea = {
-			name =  PRC_chinese_communist_party_idea
+			name = PRC_chinese_communist_party_idea
 			picture = PRC_chinese_communist_party
 			allowed = {
 				always = no
@@ -202,20 +239,21 @@ ideas = {
 			}
 		}
 	}
-	
 	#内阁
 	head_minister = {
 		PRC_HuChunHua_hog_dummy = {
 			picture = HuChunHua_hog
 			name = PRC_HuChunHua_hog
-			allowed = { original_tag = PRC}
+			allowed = {
+				original_tag = PRC
+			}
 			visible = {
 				has_country_flag = PRC_the_man_death_flag
 			}
 			allowed_to_remove = {
 				head_minister_trigger = yes
 			}
-			traits = { 
+			traits = {
 				hog_pragmatic_statesman
 			}
 		}
