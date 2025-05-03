@@ -339,6 +339,10 @@ country_event = {
 	desc = prcs.24.d
 	is_triggered_only = yes
 	option = {
+		country_event = {
+				id = prcs.25
+				days = 7
+			}
 		name = prcs.24.a
 	}
 	major = no
@@ -585,7 +589,15 @@ country_event = {
 		set_country_flag = PRC_weiji_end
 	}
 }
-
+country_event = {
+	id = prcs.35	#渡历史的注脚（下）
+	title = prcs.35.t
+	desc = prcs.35.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.35.a
+	}
+}
 country_event = {
 	id = Chihong.1
 	title = Chihong.1.t

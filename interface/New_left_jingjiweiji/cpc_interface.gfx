@@ -23,6 +23,15 @@ spriteTypes = {
 		effectFile = "gfx/FX/progress.lua"
 		steps = 5
 	}
+	frameAnimatedSpriteType = {
+		name = "GFX_PRC_fopo_fake_background_frame"
+		texturefile = "gfx/gui/involvement_bar_animation.dds"
+		noOfFrames = 4
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
 	progressbartype = {
 		name = "GFX_PRC_jingjiweiji_3"
 		textureFile1 = "gfx/gui/PRC_new_left_4.png"
