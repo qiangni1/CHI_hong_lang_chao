@@ -762,7 +762,7 @@ ideas = {
 		}
 		#太空军
 		PLA_plasf_1 = {
-			name = PLA_plarf
+			name = PLA_plasf
 			picture = PRC_chinese_space_age
 			allowed = {
 				always = yes
@@ -775,7 +775,7 @@ ideas = {
 			}
 		}
 		PLA_plasf_2 = {
-			name = PLA_plarf
+			name = PLA_plasf
 			picture = PRC_chinese_space_age
 			allowed = {
 				always = yes
@@ -791,7 +791,7 @@ ideas = {
 			}
 		}
 		PLA_plasf_3 = {
-			name = PLA_plarf
+			name = PLA_plasf
 			picture = PRC_chinese_space_age
 			allowed = {
 				always = yes
@@ -810,7 +810,7 @@ ideas = {
 			}
 		}
 		PLA_plasf_4 = {
-			name = PLA_plarf
+			name = PLA_plasf
 			picture = PRC_chinese_space_age
 			allowed = {
 				always = yes
