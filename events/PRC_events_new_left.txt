@@ -483,7 +483,7 @@ country_event = {
     title = prcs.29.t
     desc = prcs.29.d
 
- is_triggered_only = yes
+	 is_triggered_only = yes
 
     option = {
         name = prcs.29.a
@@ -493,6 +493,81 @@ country_event = {
     }
     major = no
     
+}
+
+country_event = {
+    id = prcs.30
+    picture = GFX_PRC_collapse2
+    title = prcs.30.t
+    desc = prcs.30.d
+
+	 is_triggered_only = yes
+
+    option = {
+        name = prcs.30.a
+    }    
+}
+
+country_event = {
+    id = prcs.31
+    picture = GFX_PRC_the_road_home
+    title = prcs.31.t
+    desc = prcs.31.d
+
+	is_triggered_only = yes
+
+    option = {
+        name = prcs.31.a
+    }
+}
+
+country_event = {
+    id = prcs.32
+    picture = GFX_PRC_hu_chunhua
+    title = prcs.32.t
+    desc = prcs.32.d
+
+	 is_triggered_only = yes
+
+    option = {
+        name = prcs.32.a
+    }
+}
+country_event = {
+    id = prcs.33
+    picture = GFX_PRC_politicians_deputy
+    title = prcs.33.t
+    desc = prcs.33.d
+
+	 is_triggered_only = yes
+
+    option = {
+        name = prcs.33.a
+    }
+}
+country_event = {
+    id = prcs.34
+    picture = GFX_PRC_dark_street
+    title = prcs.34.t
+    desc = prcs.34.d
+
+	 is_triggered_only = yes
+
+    option = {
+        name = prcs.34.a
+    }
+}
+country_event = {
+    id = prcs.35
+    picture = GFX_PRC_red_flag
+    title = prcs.35.t
+    desc = prcs.35.d
+
+	 is_triggered_only = yes
+
+    option = {
+        name = prcs.35.a
+    }
 }
 
 country_event = {
@@ -751,7 +826,7 @@ country_event = {
 	id = Chihong.19
 	title = Chihong.19.t
 	desc = Chihong.19.desc
-	picture = GFX_Chihong19_event
+	picture = GFX_PAK_election
 	is_triggered_only = yes
 	option = {
 		name = Chihong.19.a
@@ -765,7 +840,7 @@ country_event = {
 	id = Chihong.20
 	title = Chihong.20.t
 	desc = Chihong.20.desc
-	picture = GFX_Chihong20_event
+	picture = GFX_PAK_election
 	is_triggered_only = yes
 	option = {
 		name = Chihong.20.a
@@ -779,7 +854,7 @@ country_event = {
 	id = Chihong.21
 	title = Chihong.21.t
 	desc = Chihong.21.desc
-	picture = GFX_Chihong21_event
+	picture = GFX_PRC_conference
 	is_triggered_only = yes
 	option = {
 		name = Chihong.21.a
@@ -799,7 +874,7 @@ country_event = {
 	id = Chihong.22
 	title = Chihong.22.t
 	desc = Chihong.22.desc
-	picture = GFX_Chihong22_event
+	picture = GFX_PRC_gulanjing
 	is_triggered_only = yes
 	option = {
 		name = Chihong.22.a
@@ -813,7 +888,7 @@ country_event = {
 	id = Chihong.23
 	title = Chihong.23.t
 	desc = Chihong.23.desc
-	picture = GFX_Chihong23_event
+	picture = GFX_PRC_conference
 	is_triggered_only = yes
 	option = {
 		name = Chihong.23.a
@@ -827,10 +902,17 @@ country_event = {
 	id = Chihong.24
 	title = Chihong.24.t
 	desc = Chihong.24.desc
-	picture = GFX_Chihong24_event
+	picture = GFX_IRAN_uprising
 	is_triggered_only = yes
 	option = {
 		name = Chihong.24.a
+		hidden_effect = {
+			country_event = {
+				id = Chihong.25
+				days = 3
+				random_days = 3
+			}
+		}
 		ai_chance = {
 			base = 50
 		}
@@ -841,10 +923,18 @@ country_event = {
 	id = Chihong.25
 	title = Chihong.25.t
 	desc = Chihong.25.desc
-	picture = GFX_Chihong25_event
+	picture = GFX_IRAN_lazy_road
 	is_triggered_only = yes
 	option = {
 		name = Chihong.25.a
+		hidden_effect = {
+			country_event = {
+				id = Chihong.26
+				days = 3
+				random_days = 3
+			}
+		}
+
 		ai_chance = {
 			base = 50
 		}
@@ -855,10 +945,18 @@ country_event = {
 	id = Chihong.26
 	title = Chihong.26.t
 	desc = Chihong.26.desc
-	picture = GFX_Chihong26_event
+	picture = GFX_IRAN_yisilahan
 	is_triggered_only = yes
 	option = {
 		name = Chihong.26.a
+		hidden_effect = {
+			country_event = {
+				id = Chihong.27
+				days = 3
+				random_days = 3
+			}
+		}
+
 		ai_chance = {
 			base = 50
 		}
@@ -869,10 +967,18 @@ country_event = {
 	id = Chihong.27
 	title = Chihong.27.t
 	desc = Chihong.27.desc
-	picture = GFX_Chihong27_event
+	picture = GFX_IRAN_car
 	is_triggered_only = yes
 	option = {
 		name = Chihong.27.a
+		hidden_effect = {
+			country_event = {
+				id = Chihong.28
+				days = 3
+				random_days = 3
+			}
+		}
+
 		ai_chance = {
 			base = 50
 		}
@@ -883,10 +989,18 @@ country_event = {
 	id = Chihong.28
 	title = Chihong.28.t
 	desc = Chihong.28.desc
-	picture = GFX_Chihong28_event
+	picture = GFX_IRAN_the_fire_rise
 	is_triggered_only = yes
 	option = {
 		name = Chihong.28.a
+		hidden_effect = {
+			country_event = {
+				id = Chihong.29
+				days = 3
+				random_days = 3
+			}
+		}
+
 		ai_chance = {
 			base = 50
 		}
@@ -897,7 +1011,7 @@ country_event = {
 	id = Chihong.29
 	title = Chihong.29.t
 	desc = Chihong.29.desc
-	picture = GFX_Chihong29_event
+	picture = GFX_JAP_beijing
 	is_triggered_only = yes
 	option = {
 		name = Chihong.29.a
@@ -911,7 +1025,7 @@ country_event = {
 	id = Chihong.30
 	title = Chihong.30.t
 	desc = Chihong.30.desc
-	picture = GFX_Chihong30_event
+	picture = GFX_IRAN_civil_war
 	is_triggered_only = yes
 	option = {
 		name = Chihong.30.a
@@ -1044,7 +1158,7 @@ country_event = {
 	id = Chihong.39
 	title = Chihong.39.t
 	desc = Chihong.39.desc
-	picture = GFX_Chihong39_event
+	picture = GFX_PRC_firewall
 	is_triggered_only = yes
 	option = {
 		name = Chihong.39.a
@@ -1075,7 +1189,7 @@ country_event = {
 	id = Chihong.40
 	title = Chihong.40.t
 	desc = Chihong.40.desc
-	picture = GFX_Chihong40_event
+	picture = GFX_PRC_red_book
 	is_triggered_only = yes
 	option = {
 		name = Chihong.40.a
