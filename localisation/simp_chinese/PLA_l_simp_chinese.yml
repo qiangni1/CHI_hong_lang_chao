@@ -112,11 +112,11 @@
 
  PLA_general_staff: "解放军联合参谋部"
  PLA_general_staff_dynamic: "解放军联合参谋部"
- PLA_plaaf: "人民解放军空军"
- PLA_plan: "人民解放军海军"
- PLA_plaa: "人民解放军陆军"
- PLA_plarf: "人民解放军火箭军"
- PLA_plasf: "人民解放军太空军"
+ PLA_plaaf: "新军改下的空军"
+ PLA_plan: "新军改下的海军"
+ PLA_plaa: "新军改下的陆军"
+ PLA_plarf: "新军改下的火箭军"
+ PLA_plasf: "新军改下的太空军"
  PLA_equipment_perfect_idea: "气与钢"
 
 
