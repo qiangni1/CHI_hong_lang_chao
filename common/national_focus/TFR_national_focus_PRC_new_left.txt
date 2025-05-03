@@ -21,6 +21,9 @@ focus_tree = {
 		ai_will_do = {
 			base = 25
 		}
+		available = {
+			has_country_flag = PRC_military_tree_available
+		}
 		#relative_position_id =
 		completion_reward = {
 			add_political_power = 150
