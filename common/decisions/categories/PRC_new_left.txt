@@ -115,7 +115,7 @@ PRC_new_left_pla_reformation = {
     }
     
     visible = {
-    	has_completed_focus = PLA_reform
+    	has_completed_focus = PLA_when_that_day_comes
     }
     
     priority = 5
