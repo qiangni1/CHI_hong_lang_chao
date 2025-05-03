@@ -1200,7 +1200,7 @@ ideas = {
 		}
 		#人民民主之路
 		PRC_road_to_people_democracy = {
-			picture = PRC_peoples_democracy
+			picture = PRC_peoples_democracy_idea
 			allowed = {
 				always = no
 			}
@@ -1217,7 +1217,7 @@ ideas = {
 		}
 
 		PRC_road_to_people_democracy1 = {
-			picture = PRC_peoples_democracy
+			picture = PRC_peoples_democracy_idea
 			allowed = {
 				always = no
 			}
@@ -1238,7 +1238,7 @@ ideas = {
 		}
 
 		PRC_road_to_people_democracy2 = {
-			picture = PRC_peoples_democracy
+			picture = PRC_peoples_democracy_idea
 			allowed = {
 				always = no
 			}
@@ -1262,7 +1262,7 @@ ideas = {
 		}
 
 		PRC_road_to_people_democracy3 = {
-			picture = PRC_peoples_democracy
+			picture = PRC_peoples_democracy_idea
 			allowed = {
 				always = no
 			}
@@ -1287,7 +1287,7 @@ ideas = {
 		}
 
 		PRC_road_to_people_democracy4 = {
-			picture = PRC_peoples_democracy
+			picture = PRC_peoples_democracy_idea
 			allowed = {
 				always = no
 			}
