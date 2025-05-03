@@ -122,7 +122,7 @@
  PRC_radiated_sun: "@PRK 后羿射日"
  PRC_unfreeze_DPRK: "@PRK 协助朝鲜体制转轨"
  PRC_red_ROK: "@KOR 鼓动韩国左翼"
- PRC_red_bhutan: "@BHL 推动不丹共产党夺权"
+ PRC_red_bhutan: "@BHU 推动不丹共产党夺权"
  PRC_red_nepal: "@NEP 强化尼泊尔共产党在议会中的影响"
  PRC_invite_SriLanka: "@SRL 邀请斯里兰卡加入世解"
  PRC_iran_status_quo: "@PER 分析伊朗现状"
@@ -380,6 +380,7 @@
  jinggao: "警告：本mod在进攻伊朗后极有可能与俄罗斯赛区冲突，请尽量选择不选择此决议"
 
  #民族精神
+ PRC_rectify_the_local_situation: "整饬当地情况"
  PRC_red_flag_prevails: "红旗永不倒"
  PRC_socialist_culture_start: "中国社会主义文化"
  PRC_socialist_culture_start1: "中国社会主义文化"
