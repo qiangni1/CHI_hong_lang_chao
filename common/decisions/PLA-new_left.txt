@@ -3109,17 +3109,17 @@ PLA_jueyileibie = {		#以上需写入categories
 		days_re_enable = 120	#or190...
 		days_remove = 70
 		modifier = {
-			every_country = {
-				if = {
-					limit = {
-						has_war_with = PRC
-					}
-					air_mission_efficiency = -0.1
-					air_detection = -0.85
-					air_weather_penalty = 0.5
-					sortie_efficiency = -0.15
-				}
-			}
+			#every_country = {
+			#	if = {
+			#		limit = {
+			#			has_war_with = PRC
+			#		}
+			#		air_mission_efficiency = -0.1
+			#		air_detection = -0.85
+			#		air_weather_penalty = 0.5
+			#		sortie_efficiency = -0.15
+			#	}
+			#}
 		}
 		remove_effect = {
 		}
@@ -3130,6 +3130,18 @@ PLA_jueyileibie = {		#以上需写入categories
 				value = -10
 			}
 			add_income = yes
+			custom_effect_tooltip = PLA_block_flood_of_enemy_information_tt
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_war_with = PRC
+					}
+				
+				add_timed_idea = {
+					idea = PLA_block_flood_of_enemy_information_idea
+					days = 70
+				}	
+			}
 		}
 		custom_cost_trigger = {
 			check_variable = {
@@ -3141,6 +3153,27 @@ PLA_jueyileibie = {		#以上需写入categories
 		}
 		custom_cost_text = dx_more_than_10B_and_50pp
 	}
+
+	hidden_ideas = {
+		PLA_block_flood_of_enemy_information_idea = {
+			allowed = {
+				always = no
+			}
+			visible = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				air_mission_efficiency = -0.1
+				air_detection = -0.85
+				air_weather_penalty = 0.5
+				sortie_efficiency = -0.15
+			}
+		}
+	}
+
 
 	PLA_build_nuclear_bomb_des = {
 		icon = GFX_
