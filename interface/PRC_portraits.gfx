@@ -24,8 +24,4 @@ spriteTypes = {
 		name = "GFX_RAJ_Nanbala_Ksawala_Rao"
 		textureFile = "gfx/leaders/RAJ_Nanbala_Ksawala_Rao.png"
 	}
-	spriteType = {
-		name = "GFX_PRC_collective_leadership"
-		textureFile = "gfx/leaders/PRC/PRC_collective_leadership.png"
-	}
 }

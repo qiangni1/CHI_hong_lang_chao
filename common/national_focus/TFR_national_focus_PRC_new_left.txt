@@ -29,7 +29,6 @@ focus_tree = {
 			navy_experience = 50
 			air_experience = 50
 			add_ideas = PRC_party_commands_the_guns
-			unlock_decision_category_tooltip = PRC_new_left_pla_reformation
 			#此处添加用于测试，如有想法，可以去除
             effect_tooltip = {
 				remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
@@ -2655,7 +2654,7 @@ focus_tree = {
 			}
 			#事件 人事任命 似乎是原创 等待后续...
 			country_event = {
-				id = prcs.25
+				id = china.xxx 
 				days = 8
 			}
 		}
@@ -5003,7 +5002,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_reform_people_congress
-		icon = GFX_focus_PRC_reform_npc
+		icon = GFX_focus_PRC_from_the_clean_slate
 		cost = 3.00
 		prerequisite = {
 			focus = PRC_nl_proletarian_democracy

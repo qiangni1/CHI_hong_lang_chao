@@ -147,8 +147,5 @@ spriteTypes = {
 		name = "GFX_focus_PRC_battle_pen_revo_drawing"
 		textureFile = "gfx/interface/goals/PRC/PRC_battle_pen_revo_drawing.png"
 	}
-	spriteType = {
-		name = "GFX_focus_PRC_reform_npc"
-		textureFile = "gfx/interface/goals/PRC/PRC_reform_npc.png"
-	}
+
 }

@@ -30,17 +30,13 @@ scripted_gui = {
 					has_idea = ZZZ_ai_governance
 					has_idea = ZZZ_eurasianist_system
 					has_idea = ZZZ_american_peoples_dictatorship
-					has_idea = ZZZ_proletariat_dictatorship
 				}
 			}
 			TFR_russian_political_system_type_icon_visible = {
 				has_idea = ZZZ_russian_political_system
 			}			
 			TFR_chinese_political_system_type_icon_visible = {
-				OR = {
-					has_idea = ZZZ_chinese_political_system
-					has_idea = ZZZ_proletariat_dictatorship
-				}
+				has_idea = ZZZ_chinese_political_system
 			}	
 			TFR_islamic_republic_type_icon_visible = {
 				has_idea = ZZZ_islamic_republic
