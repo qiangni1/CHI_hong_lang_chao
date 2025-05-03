@@ -779,13 +779,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_idea = ZZZ_automation_socialism
+			has_idea = auto_socialism
 		}
 		localization_key = ZZZ_automation_socialism
 	}
 	text = {
 		trigger = {
-			has_idea = ZZZ_automation_communism
+			has_idea = auto_communism
 		}
 		localization_key = ZZZ_automation_communism
 	}
@@ -816,6 +816,8 @@ defined_text = {
 				has_idea = ZZZ_left_corporatism
 				has_idea = ZZZ_liberal_corporatism
 				has_idea = ZZZ_kaiser_economy
+				has_idea = auto_communism
+				has_idea = auto_socialism
 			}
 		}
 		localization_key = ZZZ_no_economy
@@ -957,6 +959,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_idea = ZZZ_proletariat_dictatorship
+		}
+		localization_key = ZZZ_proletariat_dictatorship
+	}
+	text = {
+		trigger = {
 			has_idea = ZZZ_ai_governance
 		}
 		localization_key = ZZZ_ai_governance
@@ -989,6 +997,7 @@ defined_text = {
 				has_idea = ZZZ_ai_governance
 				has_idea = ZZZ_eurasianist_system
 				has_idea = ZZZ_american_peoples_dictatorship
+				has_idea = ZZZ_proletariat_dictatorship
 			}
 		}
 		localization_key = ZZZ_anarchy

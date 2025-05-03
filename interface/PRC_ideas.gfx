@@ -5,27 +5,34 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_PRC_wang_huning"
-		textureFile = "gfx/interface/ideas/PRC/advisors/PRC_wang_huning.png"
+		texturefile = "gfx/interface/ideas/PRC/advisors/PRC_wang_huning.png"
 	}
 	spriteType = {
 		name = "GFX_idea_PRC_yuan_jiajun"
-		textureFile = "gfx/interface/ideas/PRC/advisors/PRC_yuanjiajun.png"
+		texturefile = "gfx/interface/ideas/PRC/advisors/PRC_yuanjiajun.png"
 	}
 	spriteType = {
 		name = "GFX_idea_PRC_mao_yuanxin"
-		textureFile = "gfx/interface/ideas/PRC/advisors/PRC_mao_yuanxin.png"
+		texturefile = "gfx/interface/ideas/PRC/advisors/PRC_mao_yuanxin.png"
 	}
 	spriteType = {
 		name = "GFX_idea_PRC_NPC"
-		textureFile = "gfx/interface/ideas/PRC/advisors/PRC_npc.png"
+		texturefile = "gfx/interface/ideas/PRC/advisors/PRC_npc.png"
 	}
 	spriteType = {
 		name = "GFX_idea_PRC_wang_zhaoguo"
-		textureFile = "gfx/interface/ideas/PRC/advisors/PRC_wang_zhaoguo.png"
+		texturefile = "gfx/interface/ideas/PRC/advisors/PRC_wang_zhaoguo.png"
 	}
 	spriteType = {
 		name = "GFX_idea_PRC_ma_xingrui"
-		textureFile = "gfx/interface/ideas/PRC/advisors/PRC_ma_xingrui.png"
+		texturefile = "gfx/interface/ideas/PRC/advisors/PRC_ma_xingrui.png"
 	}
-
+	spriteType = {
+		name = "GFX_idea_auto_socialism"
+		texturefile = "gfx/interface/ideas/PRC/auto_socialism.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_auto_communism"
+		texturefile = "gfx/interface/ideas/PRC/auto_communism.png"
+	}
 }
