@@ -153,1089 +153,1094 @@ news_event = {
 		}
 	}
 }
-country_event = {
-    id = prcs.10
-    picture = GFX_prcs.10.p
-    title = prcs.10.t
-    desc = prcs.10.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.10.a
-    }
-    major = no
-    
-}
-
 
 country_event = {
-    id = prcs.11
-    picture = GFX_prcs.11.p
-    title = prcs.11.t
-    desc = prcs.11.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.11.a
-    }
-    major = no
-    
+	id = prcs.9
+	title = prcs.9.t
+	desc = prcs.9.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.9.a
+	}
 }
 
 country_event = {
-    id = prcs.12
-    picture = GFX_prcs.12.p
-    title = prcs.12.t
-    desc = prcs.12.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.12.a
-    }
-    major = no
-    
+	id = prcs.10
+	picture = GFX_prcs.10.p
+	title = prcs.10.t
+	desc = prcs.10.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.10.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.13
-    picture = GFX_prcs.13.p
-    title = prcs.13.t
-    desc = prcs.13.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.13.a
-    }
-    major = no
-    
+	id = prcs.11
+	picture = GFX_prcs.11.p
+	title = prcs.11.t
+	desc = prcs.11.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.11.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.14
-    picture = GFX_prcs.14.p
-    title = prcs.14.t
-    desc = prcs.14.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.14.a
-    }
-    major = no
-    
+	id = prcs.12
+	picture = GFX_prcs.12.p
+	title = prcs.12.t
+	desc = prcs.12.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.12.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.15
-    picture = GFX_prcs.15.p
-    title = prcs.15.t
-    desc = prcs.15.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.15.a
-    }
-    major = no
-    
+	id = prcs.13
+	picture = GFX_prcs.13.p
+	title = prcs.13.t
+	desc = prcs.13.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.13.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.16
-    picture = GFX_prcs.16.p
-    title = prcs.16.t
-    desc = prcs.16.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.16.a
-    }
-    major = no
-    
+	id = prcs.14
+	picture = GFX_prcs.14.p
+	title = prcs.14.t
+	desc = prcs.14.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.14.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.17
-    picture = GFX_prcs.17.p
-    title = prcs.17.t
-    desc = prcs.17.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.17.a
-    }
-    major = no
-    
+	id = prcs.15
+	picture = GFX_prcs.15.p
+	title = prcs.15.t
+	desc = prcs.15.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.15.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.18
-    picture = GFX_prcs.18.p
-    title = prcs.18.t
-    desc = prcs.18.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.18.a
-    }
-    major = no
-    
+	id = prcs.16
+	picture = GFX_prcs.16.p
+	title = prcs.16.t
+	desc = prcs.16.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.16.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.19
-    picture = GFX_prcs.19.p
-    title = prcs.19.t
-    desc = prcs.19.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.19.a
-    }
-    major = no
-    
+	id = prcs.17
+	picture = GFX_prcs.17.p
+	title = prcs.17.t
+	desc = prcs.17.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.17.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.20
-    picture = GFX_prcs.20.p
-    title = prcs.20.t
-    desc = prcs.20.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.20.a
-    }
-    major = no
-    
+	id = prcs.18
+	picture = GFX_prcs.18.p
+	title = prcs.18.t
+	desc = prcs.18.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.18.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.21
-    picture = GFX_prcs.21.p
-    title = prcs.21.t
-    desc = prcs.21.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.21.a
-    }
-    major = no
-    
+	id = prcs.19
+	picture = GFX_prcs.19.p
+	title = prcs.19.t
+	desc = prcs.19.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.19.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.22
-    picture = GFX_prcs.22.p
-    title = prcs.22.t
-    desc = prcs.22.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.22.a
-    }
-    major = no
-    
+	id = prcs.20
+	picture = GFX_prcs.20.p
+	title = prcs.20.t
+	desc = prcs.20.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.20.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.23
-    picture = GFX_prcs.23.p
-    title = prcs.23.t
-    desc = prcs.23.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.23.a
-    }
-    major = no
-    
-}
-
-
-country_event = {
-    id = prcs.24
-    picture = GFX_prcs.24.p
-    title = prcs.24.t
-    desc = prcs.24.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.24.a
-    }
-    major = no
-    
+	id = prcs.21
+	picture = GFX_prcs.21.p
+	title = prcs.21.t
+	desc = prcs.21.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.21.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.25
-    picture = GFX_prcs.25.p
-    title = prcs.25.t
-    desc = prcs.25.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.25.a
-    }
-    major = no
-    
+	id = prcs.22
+	picture = GFX_prcs.22.p
+	title = prcs.22.t
+	desc = prcs.22.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.22.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.26
-    picture = GFX_prcs.26.p
-    title = prcs.26.t
-    desc = prcs.26.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.26.a
-    }
-    option = {
-        name = prcs.26.b
-    }
-    major = no
-    
+	id = prcs.23
+	picture = GFX_prcs.23.p
+	title = prcs.23.t
+	desc = prcs.23.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.23.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.27
-    picture = GFX_prcs.27.p
-    title = prcs.27.t
-    desc = prcs.27.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.27.a
-    }
-    major = no
-    
+	id = prcs.24
+	picture = GFX_prcs.24.p
+	title = prcs.24.t
+	desc = prcs.24.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.24.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.28
-    picture = GFX_prcs.28.p
-    title = prcs.28.t
-    desc = prcs.28.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.28.a
-    }
-    major = no
-    
+	id = prcs.25
+	picture = GFX_prcs.25.p
+	title = prcs.25.t
+	desc = prcs.25.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.25.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.29
-    picture = GFX_prcs.29.p
-    title = prcs.29.t
-    desc = prcs.29.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.29.a
-    }
-    option = {
-        name = prcs.29.b
-    }
-    major = no
-    
+	id = prcs.26
+	picture = GFX_prcs.26.p
+	title = prcs.26.t
+	desc = prcs.26.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.26.a
+	}
+	option = {
+		name = prcs.26.b
+	}
+	major = no
 }
 
 country_event = {
-    id = Chihong.1
-    title = Chihong.1.t
-    desc = Chihong.1.desc
-    picture = GFX_Chihong1_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.1.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = prcs.27
+	picture = GFX_prcs.27.p
+	title = prcs.27.t
+	desc = prcs.27.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.27.a
+	}
+	major = no
 }
 
 country_event = {
-    id = Chihong.2
-    title = Chihong.2.t
-    desc = Chihong.2.desc
-    picture = GFX_Chihong2_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.2.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = prcs.28
+	picture = GFX_prcs.28.p
+	title = prcs.28.t
+	desc = prcs.28.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.28.a
+	}
+	major = no
 }
 
 country_event = {
-    id = Chihong.3
-    title = Chihong.3.t
-    desc = Chihong.3.desc
-    picture = GFX_Chihong3_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.3.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = prcs.29
+	picture = GFX_prcs.29.p
+	title = prcs.29.t
+	desc = prcs.29.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.29.a
+	}
+	option = {
+		name = prcs.29.b
+	}
+	major = no
 }
 
 country_event = {
-    id = Chihong.4
-    title = Chihong.4.t
-    desc = Chihong.4.desc
-    picture = GFX_Chihong4_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.4.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = prcs.30	#请输入文字
+	title = prcs.30.t
+	desc = prcs.30.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.30.a
+		add_to_variable = {
+			PRC_influence_new_var = 0.075			#新左派影响力+7.5%
+		}
+		add_political_power = -50
+		add_stability = -0.05
+		add_to_variable = {
+			PRC_approval_rating_var = -0.1			#人大支持率-10%
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.5
-    title = Chihong.5.t
-    desc = Chihong.5.desc
-    picture = GFX_Chihong5_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.5.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = prcs.31	#青年干部崭露头角
+	title = prcs.31.t
+	desc = prcs.31.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.31.a
+		add_to_variable = {
+			PRC_influence_new_var = 0.05			#新左派影响力+5%
+		}
+		add_to_variable = {
+			PRC_approval_rating_var = 0.1			#人大支持率+10%
+		}
+		add_political_power = 50
+	}
 }
 
 country_event = {
-    id = Chihong.6
-    title = Chihong.6.t
-    desc = Chihong.6.desc
-    picture = GFX_Chihong6_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.6.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = prcs.32	#是否引导舆论支持改革
+	title = prcs.32.t
+	desc = prcs.32.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.32.a
+		add_stability = -0.05
+		add_to_variable = {
+			PRC_influence_new_var = 0.05			#新左派影响力+5%
+		}
+		add_to_variable = {
+			PRC_approval_rating_var = 0.1			#人大支持率+5%
+		}
+		add_to_variable = {
+			PRC_reserve_fund = -0.025			#储备金-25B
+		}
+		add_political_power = -50
+	}
+	option = {
+		name = prcs.32.b
+		add_stability = -0.05
+		add_to_variable = {
+			PRC_influence_new_var = 0.05			#自由派影响力+5%
+		}
+		add_to_variable = {
+			PRC_approval_rating_var = 0.1			#人大支持率+5%
+		}
+		add_to_variable = {
+			PRC_reserve_fund = -0.025			#储备金-25B
+		}
+		add_political_power = -50
+	}
 }
 
 country_event = {
-    id = Chihong.7
-    title = Chihong.7.t
-    desc = Chihong.7.desc
-    picture = GFX_Chihong7_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.7.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = prcs.33	#延续加强政府调控？
+	title = prcs.33.t
+	desc = prcs.33.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.33.a
+		add_stability = -0.05
+		add_to_variable = {
+			PRC_influence_new_var = 0.075			#新左派影响力+7.5%
+		}
+		add_to_variable = {
+			PRC_approval_rating_var = -0.1			#人大支持率-10%
+		}
+		add_political_power = -50
+	}
+	option = {
+		name = prcs.33.b
+	}
 }
 
 country_event = {
-    id = Chihong.8
-    title = Chihong.8.t
-    desc = Chihong.8.desc
-    picture = GFX_Chihong8_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.8.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = prcs.34	#渡过金融危机最艰难的时刻
+	title = prcs.34.t
+	desc = prcs.34.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.34.a
+		set_country_flag = PRC_weiji_end
+	}
 }
 
 country_event = {
-    id = Chihong.9
-    title = Chihong.9.t
-    desc = Chihong.9.desc
-    picture = GFX_Chihong9_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.9.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.1
+	title = Chihong.1.t
+	desc = Chihong.1.desc
+	picture = GFX_Chihong1_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.1.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.10
-    title = Chihong.10.t
-    desc = Chihong.10.desc
-    picture = GFX_Chihong10_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.10.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.2
+	title = Chihong.2.t
+	desc = Chihong.2.desc
+	picture = GFX_Chihong2_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.2.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.11
-    title = Chihong.11.t
-    desc = Chihong.11.desc
-    picture = GFX_Chihong11_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.11.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.3
+	title = Chihong.3.t
+	desc = Chihong.3.desc
+	picture = GFX_Chihong3_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.3.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.12
-    title = Chihong.12.t
-    desc = Chihong.12.desc
-    picture = GFX_Chihong12_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.12.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.4
+	title = Chihong.4.t
+	desc = Chihong.4.desc
+	picture = GFX_Chihong4_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.4.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.13
-    title = Chihong.13.t
-    desc = Chihong.13.desc
-    picture = GFX_Chihong13_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.13.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.5
+	title = Chihong.5.t
+	desc = Chihong.5.desc
+	picture = GFX_Chihong5_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.5.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.14
-    title = Chihong.14.t
-    desc = Chihong.14.desc
-    picture = GFX_Chihong14_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.14.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.6
+	title = Chihong.6.t
+	desc = Chihong.6.desc
+	picture = GFX_Chihong6_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.6.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.15
-    title = Chihong.15.t
-    desc = Chihong.15.desc
-    picture = GFX_Chihong15_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.15.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.7
+	title = Chihong.7.t
+	desc = Chihong.7.desc
+	picture = GFX_Chihong7_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.7.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.16
-    title = Chihong.16.t
-    desc = Chihong.16.desc
-    picture = GFX_Chihong16_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.16.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.8
+	title = Chihong.8.t
+	desc = Chihong.8.desc
+	picture = GFX_Chihong8_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.8.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.17
-    title = Chihong.17.t
-    desc = Chihong.17.desc
-    picture = GFX_Chihong17_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.17.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.9
+	title = Chihong.9.t
+	desc = Chihong.9.desc
+	picture = GFX_Chihong9_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.9.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.18
-    title = Chihong.18.t
-    desc = Chihong.18.desc
-    picture = GFX_Chihong18_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.18.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.10
+	title = Chihong.10.t
+	desc = Chihong.10.desc
+	picture = GFX_Chihong10_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.10.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.19
-    title = Chihong.19.t
-    desc = Chihong.19.desc
-    picture = GFX_Chihong19_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.19.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.11
+	title = Chihong.11.t
+	desc = Chihong.11.desc
+	picture = GFX_Chihong11_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.11.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.20
-    title = Chihong.20.t
-    desc = Chihong.20.desc
-    picture = GFX_Chihong20_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.20.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.12
+	title = Chihong.12.t
+	desc = Chihong.12.desc
+	picture = GFX_Chihong12_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.12.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.21
-    title = Chihong.21.t
-    desc = Chihong.21.desc
-    picture = GFX_Chihong21_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.21.a
-        ai_chance = {
-            base = 50
-        }
-    }
-
-    option = {
-        name = Chihong.21.b
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.13
+	title = Chihong.13.t
+	desc = Chihong.13.desc
+	picture = GFX_Chihong13_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.13.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.22
-    title = Chihong.22.t
-    desc = Chihong.22.desc
-    picture = GFX_Chihong22_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.22.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.14
+	title = Chihong.14.t
+	desc = Chihong.14.desc
+	picture = GFX_Chihong14_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.14.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.23
-    title = Chihong.23.t
-    desc = Chihong.23.desc
-    picture = GFX_Chihong23_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.23.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.15
+	title = Chihong.15.t
+	desc = Chihong.15.desc
+	picture = GFX_Chihong15_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.15.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.24
-    title = Chihong.24.t
-    desc = Chihong.24.desc
-    picture = GFX_Chihong24_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.24.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.16
+	title = Chihong.16.t
+	desc = Chihong.16.desc
+	picture = GFX_Chihong16_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.16.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.25
-    title = Chihong.25.t
-    desc = Chihong.25.desc
-    picture = GFX_Chihong25_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.25.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.17
+	title = Chihong.17.t
+	desc = Chihong.17.desc
+	picture = GFX_Chihong17_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.17.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.26
-    title = Chihong.26.t
-    desc = Chihong.26.desc
-    picture = GFX_Chihong26_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.26.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.18
+	title = Chihong.18.t
+	desc = Chihong.18.desc
+	picture = GFX_Chihong18_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.18.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.27
-    title = Chihong.27.t
-    desc = Chihong.27.desc
-    picture = GFX_Chihong27_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.27.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.19
+	title = Chihong.19.t
+	desc = Chihong.19.desc
+	picture = GFX_Chihong19_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.19.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.28
-    title = Chihong.28.t
-    desc = Chihong.28.desc
-    picture = GFX_Chihong28_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.28.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.20
+	title = Chihong.20.t
+	desc = Chihong.20.desc
+	picture = GFX_Chihong20_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.20.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.29
-    title = Chihong.29.t
-    desc = Chihong.29.desc
-    picture = GFX_Chihong29_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.29.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.21
+	title = Chihong.21.t
+	desc = Chihong.21.desc
+	picture = GFX_Chihong21_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.21.a
+		ai_chance = {
+			base = 50
+		}
+	}
+	option = {
+		name = Chihong.21.b
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.30
-    title = Chihong.30.t
-    desc = Chihong.30.desc
-    picture = GFX_Chihong30_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.30.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.22
+	title = Chihong.22.t
+	desc = Chihong.22.desc
+	picture = GFX_Chihong22_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.22.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.31
-    title = Chihong.31.t
-    desc = Chihong.31.desc
-    picture = GFX_Chihong31_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.31.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.23
+	title = Chihong.23.t
+	desc = Chihong.23.desc
+	picture = GFX_Chihong23_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.23.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.32
-    title = Chihong.32.t
-    desc = Chihong.32.desc
-    picture = GFX_Chihong32_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.32.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.24
+	title = Chihong.24.t
+	desc = Chihong.24.desc
+	picture = GFX_Chihong24_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.24.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.33
-    title = Chihong.33.t
-    desc = Chihong.33.desc
-    picture = GFX_Chihong33_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.33.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.25
+	title = Chihong.25.t
+	desc = Chihong.25.desc
+	picture = GFX_Chihong25_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.25.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.34
-    title = Chihong.34.t
-    desc = Chihong.34.desc
-    picture = GFX_Chihong34_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.34.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.26
+	title = Chihong.26.t
+	desc = Chihong.26.desc
+	picture = GFX_Chihong26_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.26.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.35
-    title = Chihong.35.t
-    desc = Chihong.35.desc
-    picture = GFX_Chihong35_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.35.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.27
+	title = Chihong.27.t
+	desc = Chihong.27.desc
+	picture = GFX_Chihong27_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.27.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.36
-    title = Chihong.36.t
-    desc = Chihong.36.desc
-    picture = GFX_Chihong36_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.36.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.28
+	title = Chihong.28.t
+	desc = Chihong.28.desc
+	picture = GFX_Chihong28_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.28.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
+
+country_event = {
+	id = Chihong.29
+	title = Chihong.29.t
+	desc = Chihong.29.desc
+	picture = GFX_Chihong29_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.29.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+country_event = {
+	id = Chihong.30
+	title = Chihong.30.t
+	desc = Chihong.30.desc
+	picture = GFX_Chihong30_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.30.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+country_event = {
+	id = Chihong.31
+	title = Chihong.31.t
+	desc = Chihong.31.desc
+	picture = GFX_Chihong31_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.31.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+country_event = {
+	id = Chihong.32
+	title = Chihong.32.t
+	desc = Chihong.32.desc
+	picture = GFX_Chihong32_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.32.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+country_event = {
+	id = Chihong.33
+	title = Chihong.33.t
+	desc = Chihong.33.desc
+	picture = GFX_Chihong33_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.33.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+country_event = {
+	id = Chihong.34
+	title = Chihong.34.t
+	desc = Chihong.34.desc
+	picture = GFX_Chihong34_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.34.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+country_event = {
+	id = Chihong.35
+	title = Chihong.35.t
+	desc = Chihong.35.desc
+	picture = GFX_Chihong35_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.35.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+country_event = {
+	id = Chihong.36
+	title = Chihong.36.t
+	desc = Chihong.36.desc
+	picture = GFX_Chihong36_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.36.a
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
 #无产文化节胜利
 country_event = {
-    id = Chihong.37
-    title = Chihong.37.t
-    desc = Chihong.37.desc
-    picture = GFX_Chihong37_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.37.a
-        ai_chance = {
-            base = 50
-        }
-        add_political_power = 100
-        add_stability = 0.1
-        add_war_support = 0.1
-    }
+	id = Chihong.37
+	title = Chihong.37.t
+	desc = Chihong.37.desc
+	picture = GFX_Chihong37_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.37.a
+		ai_chance = {
+			base = 50
+		}
+		add_political_power = 100
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
 }
+
 #表彰新一辈人民艺术家
 country_event = {
-    id = Chihong.38
-    title = Chihong.38.t
-    desc = Chihong.38.desc
-    picture = GFX_Chihong38_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.38.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.38
+	title = Chihong.38.t
+	desc = Chihong.38.desc
+	picture = GFX_Chihong38_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.38.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
+
 #此地空余黄鹤楼
 country_event = {
-    id = Chihong.39
-    title = Chihong.39.t
-    desc = Chihong.39.desc
-    picture = GFX_Chihong39_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.39.a
-        ai_chance = {
-            base = 50
-        }
-        add_to_variable = {
-            PSC_drift_var = -0.05
-        }
-        add_to_variable = {
-            PSC_stability_var = -0.05
-        }
-        add_to_variable = {
-            PSC_war_support_var = 0.05
-        }
-        add_political_power = 20
-        effect_tooltip = {
-            swap_ideas = {
-                remove_idea = PRC_socialist_culture_start
-                add_idea = PRC_socialist_culture_start25
-            }
-        }
-    }
+	id = Chihong.39
+	title = Chihong.39.t
+	desc = Chihong.39.desc
+	picture = GFX_Chihong39_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.39.a
+		ai_chance = {
+			base = 50
+		}
+		add_to_variable = {
+			PSC_drift_var = -0.05
+		}
+		add_to_variable = {
+			PSC_stability_var = -0.05
+		}
+		add_to_variable = {
+			PSC_war_support_var = 0.05
+		}
+		add_political_power = 20
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PRC_socialist_culture_start
+				add_idea = PRC_socialist_culture_start25
+			}
+		}
+	}
 }
+
 #小红书的外国用户
 country_event = {
-    id = Chihong.40
-    title = Chihong.40.t
-    desc = Chihong.40.desc
-    picture = GFX_Chihong40_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.40.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.40
+	title = Chihong.40.t
+	desc = Chihong.40.desc
+	picture = GFX_Chihong40_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.40.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.41
-    title = Chihong.41.t
-    desc = Chihong.41.desc
-    picture = GFX_Chihong41_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.41.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.41
+	title = Chihong.41.t
+	desc = Chihong.41.desc
+	picture = GFX_Chihong41_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.41.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.42
-    title = Chihong.42.t
-    desc = Chihong.42.desc
-    picture = GFX_Chihong42_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.42.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.42
+	title = Chihong.42.t
+	desc = Chihong.42.desc
+	picture = GFX_Chihong42_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.42.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.43
-    title = Chihong.43.t
-    desc = Chihong.43.desc
-    picture = GFX_Chihong43_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.43.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.43
+	title = Chihong.43.t
+	desc = Chihong.43.desc
+	picture = GFX_Chihong43_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.43.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.44
-    title = Chihong.44.t
-    desc = Chihong.44.desc
-    picture = GFX_Chihong44_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.44.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.44
+	title = Chihong.44.t
+	desc = Chihong.44.desc
+	picture = GFX_Chihong44_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.44.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.45
-    title = Chihong.45.t
-    desc = Chihong.45.desc
-    picture = GFX_Chihong45_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.45.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.45
+	title = Chihong.45.t
+	desc = Chihong.45.desc
+	picture = GFX_Chihong45_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.45.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.46
-    title = Chihong.46.t
-    desc = Chihong.46.desc
-    picture = GFX_Chihong46_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.46.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.46
+	title = Chihong.46.t
+	desc = Chihong.46.desc
+	picture = GFX_Chihong46_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.46.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.47
-    title = Chihong.47.t
-    desc = Chihong.47.desc
-    picture = GFX_Chihong47_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.47.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.47
+	title = Chihong.47.t
+	desc = Chihong.47.desc
+	picture = GFX_Chihong47_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.47.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.48
-    title = Chihong.48.t
-    desc = Chihong.48.desc
-    picture = GFX_Chihong48_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.48.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.48
+	title = Chihong.48.t
+	desc = Chihong.48.desc
+	picture = GFX_Chihong48_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.48.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.49
-    title = Chihong.49.t
-    desc = Chihong.49.desc
-    picture = GFX_Chihong49_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.49.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.49
+	title = Chihong.49.t
+	desc = Chihong.49.desc
+	picture = GFX_Chihong49_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.49.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
 
 country_event = {
-    id = Chihong.50
-    title = Chihong.50.t
-    desc = Chihong.50.desc
-    picture = GFX_Chihong50_event
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.50.a
-        ai_chance = {
-            base = 50
-        }
-    }
+	id = Chihong.50
+	title = Chihong.50.t
+	desc = Chihong.50.desc
+	picture = GFX_Chihong50_event
+	is_triggered_only = yes
+	option = {
+		name = Chihong.50.a
+		ai_chance = {
+			base = 50
+		}
+	}
 }
+
 country_event = {
 	id = china.1733
 	title = china.1733.t
@@ -1705,7 +1710,6 @@ country_event = {
 			id = china.1731
 			days = 4
 		}
-		
 	}
 	option = {
 		name = china.1718.b
