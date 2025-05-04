@@ -3064,6 +3064,29 @@ PRC_WLA_coordination = {
 		modifier = {
 		}
 		complete_effect = {
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = PRC_joint_military_exercise_event_flag
+					}
+				}
+				hidden_effect = {
+					random_list = {
+						1 = {
+							country_event = {
+								id = prcs.12
+								random_days = 10
+							}
+						}
+						1 = {
+							country_event = {
+								id = prcs.13
+								random_days = 10
+							}
+						}
+					}
+				}	
+			}
 		}
 		remove_effect = {
 			every_country = {
@@ -3092,6 +3115,7 @@ PRC_WLA_coordination = {
 				# 	add_skill_level = 1
 				# }
 			}
+			set_country_flag = PRC_joint_military_exercise_event_flag
 		}
 		ai_will_do = {
 			base = 10

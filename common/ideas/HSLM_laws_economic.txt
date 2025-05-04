@@ -82,41 +82,41 @@ ideas = {
 		}
 	}
 	hidden_ideas = {
-			ZZZ_automation_socialism = {
-				allowed = {
-					always = no
-				}
-				allowed_civil_war = {
-					always = yes
-				}
-				modifier = {
-					consumer_goods_factor = 0.2
-					stability_weekly = 0.002
-					business_value_factor = 0.15
-					personal_value_factor = 0.15
-					production_speed_buildings_factor = 0.1
-				}
+		ZZZ_automation_socialism = {
+			allowed = {
+				always = no
 			}
-			ZZZ_automation_communism = {
-				allowed = {
-					always = no
-				}
-				allowed_civil_war = {
-					always = yes
-				}
-				modifier = {
-					consumer_goods_factor = 0.15
-					stability_weekly = 0.002
-					business_value_factor = 0.15
-					personal_value_factor = 0.15
-					production_speed_buildings_factor = 0.15
-					industrial_development_monthly = 0.005
-                    farming_development_monthly = 0.015
-                    poverty_development_monthly = 0.01
-                    society_development_monthly = 0.01
-				}
+			allowed_civil_war = {
+				always = yes
 			}
-    }
+			modifier = {
+				consumer_goods_factor = 0.2
+				stability_weekly = 0.002
+				business_value_factor = 0.15
+				personal_value_factor = 0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ZZZ_automation_communism = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_weekly = 0.002
+				business_value_factor = 0.15
+				personal_value_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				industrial_development_monthly = 0.005
+				farming_development_monthly = 0.015
+				poverty_development_monthly = 0.01
+				society_development_monthly = 0.01
+			}
+		}
+	}
 	welfare_laws = {
 		law = yes
 		use_list_view = yes
@@ -126,18 +126,18 @@ ideas = {
 			level = 1
 			picture = laws_welfare5
 			allowed = {
-            	tag = PRC
-            }
+				tag = PRC
+			}
 			visible = {
-            	hidden_trigger = {
-            		tag = PRC
-            		has_completed_focus = PRC_nl_greatly_riched
-            	}
-            }
-            available = {
-            	hidden_trigger = {
-            	}
-            }
+				hidden_trigger = {
+					tag = PRC
+					has_completed_focus = PRC_nl_greatly_riched
+				}
+			}
+			available = {
+				hidden_trigger = {
+				}
+			}
 			modifier = {
 				personal_expense = 0.008
 				society_development_monthly = 0.02
@@ -162,8 +162,9 @@ ideas = {
 			}
 		}
 	}
-safety_laws = {
-	PRC_NLAG_safety = { #新时代鞍钢宪法
+	safety_laws = {
+		PRC_NLAG_safety = {
+			#新时代鞍钢宪法
 			removal_cost = -1
 			cost = 100
 			level = 1
@@ -181,7 +182,7 @@ safety_laws = {
 			available = {
 				has_completed_focus = PRC_nl_new_era_angang_constitution
 			}
-			ai_will_do = {				
+			ai_will_do = {
 			}
 			modifier = {
 				stability_factor = 0.05
@@ -192,5 +193,5 @@ safety_laws = {
 				industrial_development_monthly = 0.005
 			}
 		}
-        }
+	}
 }

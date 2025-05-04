@@ -1281,7 +1281,7 @@ ideas = {
 		}
 		PAL_the_better_revolutionary_enthusiasm_idea = {
 		#革命热情
-			picture = PLA_
+			picture = idea_PRC_one_heart_idea
 			#图片不予添加
 			allowed = {
 				always = yes
@@ -1301,7 +1301,7 @@ ideas = {
 		}
 		PAL_the_International_Brigade_idea = {
 		#国际纵队 战时
-			picture = PLA_
+			picture = PRC_vanguard_of_communism_idea
 			#图片不予添加
 			allowed = {
 				always = yes
@@ -1321,7 +1321,7 @@ ideas = {
 		}
 		PAL_the_International_Brigade_nowar_idea = {
 		#国际纵队 非战时
-			picture = PLA_
+			picture = PRC_vanguard_of_communism_idea
 			#图片不予添加
 			allowed = {
 				always = yes
@@ -1401,7 +1401,7 @@ ideas = {
 		}
 		#中国太空霸权
 		PLA_china_space_hegemony = {
-			picture = PRC_
+			picture = idea_PRC_chinese_space_age
 			#图片未定
 			allowed = {
 				always = yes

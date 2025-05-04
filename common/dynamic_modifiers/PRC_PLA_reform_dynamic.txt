@@ -43,7 +43,7 @@ PLA_rocket_army_strategic_strike = {
 	breakthrough_factor = 0.1
 }
 PLA_military_and_political_reform_dynamic = {
-		icon =  GFX_idea_
+		icon =  GFX_idea_PRC_single_party_dictatorship
 		#不予添加
 		enable = { 
 			always = yes

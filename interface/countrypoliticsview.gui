@@ -369,6 +369,13 @@ guiTypes = {
 				spriteType = "GFX_chinese_political_system"
 				pdx_tooltip = "TFR_PRC_POLITICAL_SYSTEM_TT"
 				pdx_tooltip_delayed = "TFR_PRC_POLITICAL_SYSTEM_TT_LONG"
+			}
+			iconType = {
+				name = "TFR_chinese_political_system_type_icon1"
+				position = { x = 8 y = 3 }
+				spriteType = "GFX_chinese_political_system"
+				pdx_tooltip = "TFR_PRC_POLITICAL_SYSTEM_TT1"
+				pdx_tooltip_delayed = "TFR_PRC_POLITICAL_SYSTEM_TT_LONG1"
 			}	
 			iconType = {
 				name = "TFR_ultranationalist_dictatorship_type_icon"

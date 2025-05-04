@@ -604,7 +604,7 @@ ideas = {
 	}
 	country = {
 		junmin_ronghe = {
-			picture = GFX_idea_PLA_army_remnants_idea
+			picture = PRC_new_chinese_revolution_idea
 
 			allowed = {
 				always = no
