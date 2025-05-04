@@ -16,7 +16,6 @@ PRC_new_left_pla_reformation = {
 		fire_only_once = no
 		days_re_enable = 200
 		days_remove = 30
-
 		complete_effect = {
 		}
 		modifier = {
@@ -47,7 +46,6 @@ PRC_new_left_pla_reformation = {
 		fire_only_once = no
 		days_re_enable = 200
 		days_remove = 30
-
 		complete_effect = {
 		}
 		modifier = {
@@ -64,7 +62,7 @@ PRC_new_left_pla_reformation = {
 	}
 	PRC_military_project_mission = {
 		#icon = GFX_decision_ger_military_buildup
-		allowed = { 
+		allowed = {
 			tag = PRC
 		}
 		activation = {
@@ -83,13 +81,10 @@ PRC_new_left_pla_reformation = {
 		}
 		priority = 999
 	}
-
 	PRC_thunder_god_program_jungle = {
 		icon = generic_propaganda_campaigns
-		
 		fire_only_once = yes
 		days_remove = 150
-	
 		visible = {
 			has_completed_focus = PLA_improved_soldiers
 			hidden_trigger = {
@@ -153,14 +148,11 @@ PRC_new_left_pla_reformation = {
 			military_development_monthly = 0.01
 		}
 	}
-	
 	PRC_thunder_god_program_mountain = {
 		icon = generic_propaganda_campaigns
-		
 		fire_only_once = yes
 		days_remove = 150
-	
-		visible = { 
+		visible = {
 			has_completed_focus = PLA_improved_soldiers
 			hidden_trigger = {
 				NOT = {
@@ -223,26 +215,21 @@ PRC_new_left_pla_reformation = {
 			military_development_monthly = 0.01
 		}
 	}
-	
 	PRC_intensify_marine_training = {
 		icon = generic_propaganda_campaigns
-		
 		fire_only_once = no
 		days_remove = 35
 		days_re_enable = 75
 		cost = 35
-	
 		visible = {
 			has_completed_focus = PLA_improved_soldiers
 		}
 		available = {
-			
 		}
 		ai_will_do = {
 			base = 1
 		}
 		complete_effect = {
-			
 		}
 		remove_effect = {
 			effect_tooltip = {
@@ -270,26 +257,21 @@ PRC_new_left_pla_reformation = {
 			experience_gain_navy = 0.1
 		}
 	}
-	
 	PRC_naval_exercises_decision = {
 		icon = generic_propaganda_campaigns
-		
 		fire_only_once = no
 		days_remove = 100
 		days_re_enable = 60
 		cost = 50
-	
 		visible = {
 			has_completed_focus = PRC_south_asian_brothers
 		}
 		available = {
-			
 		}
 		ai_will_do = {
 			base = 1
 		}
 		complete_effect = {
-			
 		}
 		remove_effect = {
 			random_list = {
@@ -329,14 +311,12 @@ PRC_new_left_pla_reformation = {
 		modifier = {
 			experience_gain_navy = 0.1
 		}
-	}	
-
+	}
 	PRC_conduct_army_exercises = {
 		allowed = {
 			tag = PRC
 		}
 		visible = {
-			
 		}
 		fire_only_once = no
 		cost = 0
@@ -366,7 +346,7 @@ PRC_new_left_pla_reformation = {
 			PRC_add_army_reform_progress = yes
 		}
 		ai_will_do = {
-		base = 5
+			base = 5
 		}
 	}
 	PRC_conduct_air_exercises = {
@@ -374,7 +354,6 @@ PRC_new_left_pla_reformation = {
 			tag = PRC
 		}
 		visible = {
-			
 		}
 		fire_only_once = no
 		cost = 0
@@ -404,7 +383,7 @@ PRC_new_left_pla_reformation = {
 			PRC_add_army_reform_progress = yes
 		}
 		ai_will_do = {
-		base = 5
+			base = 5
 		}
 	}
 	PRC_conduct_naval_exercises = {
@@ -412,7 +391,6 @@ PRC_new_left_pla_reformation = {
 			tag = PRC
 		}
 		visible = {
-			
 		}
 		fire_only_once = no
 		cost = 0
@@ -442,10 +420,9 @@ PRC_new_left_pla_reformation = {
 			PRC_add_army_reform_progress = yes
 		}
 		ai_will_do = {
-		base = 5
+			base = 5
 		}
 	}
-	
 	#总参谋部
 	PLA_synthesis = {
 		allowed = {
@@ -480,7 +457,7 @@ PRC_new_left_pla_reformation = {
 			}
 		}
 	}
-	PLA_academy_adjustment= {
+	PLA_academy_adjustment = {
 		allowed = {
 			tag = PRC
 		}
@@ -562,8 +539,8 @@ PRC_new_left_pla_reformation = {
 		remove_effect = {
 			effect_tooltip = {
 				swap_ideas = {
-				remove_idea = PLA_dummy_general_staff
-				add_idea = PLA_general_staff_9
+					remove_idea = PLA_dummy_general_staff
+					add_idea = PLA_general_staff_9
 				}
 			}
 			hidden_effect = {
@@ -581,7 +558,7 @@ PRC_new_left_pla_reformation = {
 	#研发
 	PRC_military_project_mission = {
 		#icon = GFX_decision_ger_military_buildup
-		allowed = { 
+		allowed = {
 			tag = PRC
 		}
 		activation = {
@@ -604,7 +581,7 @@ PRC_new_left_pla_reformation = {
 		#icon = GFX_decision_ger_military_buildup
 		cost = 25
 		fire_only_once = yes
-		allowed = { 
+		allowed = {
 			tag = PRC
 		}
 		visible = {
@@ -624,7 +601,6 @@ PRC_new_left_pla_reformation = {
 			country_event = china.259
 			set_country_flag = anti_debil
 		}
-
 		ai_will_do = {
 			base = 1
 		}
@@ -633,7 +609,7 @@ PRC_new_left_pla_reformation = {
 		#icon = GFX_decision_ger_military_buildup
 		cost = 50
 		fire_only_once = yes
-		allowed = { 
+		allowed = {
 			tag = PRC
 		}
 		visible = {
@@ -642,7 +618,9 @@ PRC_new_left_pla_reformation = {
 		available = {
 		}
 		complete_effect = {
-			custom_effect_tooltip = PRC_project_KUNPENG_tt  
+			custom_effect_tooltip = PRC_project_KUNPENG_tt
+		}
+		remove_effect = {
 			hidden_effect = {
 				set_technology = {
 					PLA_KUNPENG_tech = 1
@@ -650,6 +628,7 @@ PRC_new_left_pla_reformation = {
 				}
 			}
 		}
+		days_remove = 70
 		ai_will_do = {
 			base = 1
 		}
@@ -658,7 +637,7 @@ PRC_new_left_pla_reformation = {
 		#icon = GFX_decision_ger_military_buildup
 		cost = 25
 		fire_only_once = yes
-		allowed = { 
+		allowed = {
 			tag = PRC
 		}
 		visible = {
@@ -678,7 +657,6 @@ PRC_new_left_pla_reformation = {
 			country_event = china.260
 			set_country_flag = anti_debil
 		}
-
 		ai_will_do = {
 			base = 1
 		}
@@ -687,7 +665,7 @@ PRC_new_left_pla_reformation = {
 		#icon = GFX_decision_ger_military_buildup
 		cost = 25
 		fire_only_once = yes
-		allowed = { 
+		allowed = {
 			tag = PRC
 		}
 		visible = {
@@ -707,7 +685,6 @@ PRC_new_left_pla_reformation = {
 			country_event = china.261
 			set_country_flag = anti_debil
 		}
-
 		ai_will_do = {
 			base = 1
 		}
@@ -716,7 +693,7 @@ PRC_new_left_pla_reformation = {
 		#icon = GFX_decision_ger_military_buildup
 		cost = 25
 		fire_only_once = yes
-		allowed = { 
+		allowed = {
 			tag = PRC
 		}
 		visible = {
@@ -736,7 +713,6 @@ PRC_new_left_pla_reformation = {
 			country_event = china.262
 			set_country_flag = anti_debil
 		}
-
 		ai_will_do = {
 			base = 1
 		}
@@ -745,7 +721,7 @@ PRC_new_left_pla_reformation = {
 		#icon = GFX_decision_ger_military_buildup
 		cost = 25
 		fire_only_once = yes
-		allowed = { 
+		allowed = {
 			tag = PRC
 		}
 		visible = {
@@ -765,7 +741,6 @@ PRC_new_left_pla_reformation = {
 			country_event = china.263
 			set_country_flag = anti_debil
 		}
-
 		ai_will_do = {
 			base = 1
 		}
@@ -774,7 +749,7 @@ PRC_new_left_pla_reformation = {
 		#icon = GFX_decision_ger_military_buildup
 		cost = 25
 		fire_only_once = yes
-		allowed = { 
+		allowed = {
 			tag = PRC
 		}
 		visible = {
@@ -794,27 +769,31 @@ PRC_new_left_pla_reformation = {
 			country_event = china.264
 			set_country_flag = anti_debil
 		}
-
 		ai_will_do = {
 			base = 1
 		}
 	}
 }
+
 PRC_new_left_pla_space_force = {
 	#核爆
 	PRC_nuke_tokyo_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2     
-        timeout_effect = {
-            launch_nuke = {
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
+		timeout_effect = {
+			launch_nuke = {
 				province = 1182
 			}
 			news_event = news.528
@@ -856,19 +835,23 @@ PRC_new_left_pla_space_force = {
 				}
 				set_country_flag = PRC_used_nukes
 			}
-        }
+		}
 	}
 	PRC_nuke_nagoya_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -877,16 +860,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	PRC_nuke_osaka_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -895,16 +882,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	PRC_nuke_hiroshima_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -913,16 +904,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	PRC_nuke_kyoto_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -958,16 +953,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	PRC_nuke_sendai_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -976,16 +975,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	PRC_nuke_sapporo_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2 
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -994,16 +997,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	PRC_nuke_hochimin_city_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2 
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -1034,19 +1041,23 @@ PRC_new_left_pla_space_force = {
 					}
 				}
 			}
-		} 
+		}
 	}
 	PRC_nuke_bangkok_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -1080,16 +1091,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	PRC_nuke_dehli_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -1123,16 +1138,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	PRC_nuke_chennai_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -1141,16 +1160,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	PRC_nuke_jakarta_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -1181,19 +1204,23 @@ PRC_new_left_pla_space_force = {
 					}
 				}
 			}
-		}  
+		}
 	}
 	PRC_nuke_sydney_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -1227,16 +1254,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	PRC_nuke_seoul_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -1270,16 +1301,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	PRC_nuke_busan_1 = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -1288,16 +1323,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	PRC_nuke_Singapore = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_country_flag = PRC_used_nukes
 			launch_nuke = {
@@ -1307,24 +1346,28 @@ PRC_new_left_pla_space_force = {
 	}
 	#轨道空降
 	space_strike_tokyo = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2     
-        timeout_effect = {
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
+		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
 			}
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1332,7 +1375,7 @@ PRC_new_left_pla_space_force = {
 				}
 				1332 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1345,19 +1388,23 @@ PRC_new_left_pla_space_force = {
 				}
 			}
 			PRC_space_force_counter = yes
-        }
+		}
 	}
 	space_strike_nagoya = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1365,7 +1412,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1373,7 +1420,7 @@ PRC_new_left_pla_space_force = {
 				}
 				1337 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1389,16 +1436,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_osaka = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1406,7 +1457,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1414,7 +1465,7 @@ PRC_new_left_pla_space_force = {
 				}
 				1340 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1430,16 +1481,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_hiroshima = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1447,7 +1502,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1455,7 +1510,7 @@ PRC_new_left_pla_space_force = {
 				}
 				529 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1471,16 +1526,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_kyoto = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1488,7 +1547,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1496,7 +1555,7 @@ PRC_new_left_pla_space_force = {
 				}
 				531 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1512,16 +1571,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_sendai = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1529,7 +1592,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1537,7 +1600,7 @@ PRC_new_left_pla_space_force = {
 				}
 				1335 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1553,16 +1616,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_sapporo = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2 
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1570,7 +1637,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1578,7 +1645,7 @@ PRC_new_left_pla_space_force = {
 				}
 				1334 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1594,16 +1661,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_hochimin_city = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2 
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1611,7 +1682,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1619,7 +1690,7 @@ PRC_new_left_pla_space_force = {
 				}
 				738 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1635,16 +1706,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_bangkok = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1652,7 +1727,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1660,7 +1735,7 @@ PRC_new_left_pla_space_force = {
 				}
 				289 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1676,16 +1751,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_dehli = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1693,7 +1772,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1701,7 +1780,7 @@ PRC_new_left_pla_space_force = {
 				}
 				1379 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1717,16 +1796,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_chennai = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1734,7 +1817,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1742,7 +1825,7 @@ PRC_new_left_pla_space_force = {
 				}
 				1418 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1758,16 +1841,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_jakarta = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1775,7 +1862,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1783,7 +1870,7 @@ PRC_new_left_pla_space_force = {
 				}
 				1387 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1796,19 +1883,23 @@ PRC_new_left_pla_space_force = {
 				}
 			}
 			PRC_space_force_counter = yes
-		}  
+		}
 	}
 	space_strike_sydney = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2  
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1816,7 +1907,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1824,7 +1915,7 @@ PRC_new_left_pla_space_force = {
 				}
 				285 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1838,19 +1929,22 @@ PRC_new_left_pla_space_force = {
 			}
 			PRC_space_force_counter = yes
 		}
-		
 	}
 	space_strike_seoul = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1858,7 +1952,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1866,7 +1960,7 @@ PRC_new_left_pla_space_force = {
 				}
 				1041 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1882,16 +1976,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_busan = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1899,7 +1997,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1907,7 +2005,7 @@ PRC_new_left_pla_space_force = {
 				}
 				1409 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1923,16 +2021,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_Singapore = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1940,7 +2042,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1948,7 +2050,7 @@ PRC_new_left_pla_space_force = {
 				}
 				336 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -1964,16 +2066,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_Pyongyang = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -1981,7 +2087,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -1989,7 +2095,7 @@ PRC_new_left_pla_space_force = {
 				}
 				1043 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -2005,16 +2111,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_hanoi = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -2022,7 +2132,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -2030,7 +2140,7 @@ PRC_new_left_pla_space_force = {
 				}
 				671 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -2046,16 +2156,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_Phnom = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -2063,7 +2177,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -2071,7 +2185,7 @@ PRC_new_left_pla_space_force = {
 				}
 				286 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -2087,16 +2201,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_vientiane = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -2104,7 +2222,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -2112,7 +2230,7 @@ PRC_new_left_pla_space_force = {
 				}
 				670 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -2128,16 +2246,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_kalimantan = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -2145,7 +2267,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -2153,7 +2275,7 @@ PRC_new_left_pla_space_force = {
 				}
 				334 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -2171,7 +2293,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -2179,7 +2301,7 @@ PRC_new_left_pla_space_force = {
 				}
 				333 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -2195,16 +2317,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_wellington = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -2212,7 +2338,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -2220,7 +2346,7 @@ PRC_new_left_pla_space_force = {
 				}
 				1419 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -2236,16 +2362,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_kuala_lumpur = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -2253,7 +2383,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -2261,7 +2391,7 @@ PRC_new_left_pla_space_force = {
 				}
 				1386 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -2277,16 +2407,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_sumatra = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -2294,7 +2428,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -2302,7 +2436,7 @@ PRC_new_left_pla_space_force = {
 				}
 				672 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -2318,16 +2452,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_strike_manila = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 2
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 2
 		timeout_effect = {
 			set_temp_variable = {
 				PRC_space_force_loop_count = 0
@@ -2335,7 +2473,7 @@ PRC_new_left_pla_space_force = {
 			while_loop_effect = {
 				limit = {
 					check_variable = {
-						PRC_space_force_on_orbit > 0 
+						PRC_space_force_on_orbit > 0
 					}
 					check_variable = {
 						PRC_space_force_loop_count < 3
@@ -2343,7 +2481,7 @@ PRC_new_left_pla_space_force = {
 				}
 				1247 = {
 					create_unit = {
-						division = " name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
+						division = "name = \"轨道空降军\"  division_template = \"轨道空降军\" start_experience_factor = 1.25 "
 						owner = ROOT
 						allow_spawning_on_enemy_provs = yes
 					}
@@ -2359,29 +2497,44 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	space_army_replace = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 14
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 14
 		timeout_effect = {
 			delete_units = {
 				division_template = "轨道空降军"
 			}
-			add_to_variable = { PRC_space_force_on_orbit = PRC_space_force_on_earth }
-			set_variable = { PRC_space_force_on_earth = 0 }
-			
-			set_variable = { PRC_space_force = 0 } 
-			add_to_variable = { PRC_space_force = PRC_space_force_on_earth }
-			add_to_variable = { PRC_space_force = PRC_space_force_on_orbit }
+			add_to_variable = {
+				PRC_space_force_on_orbit = PRC_space_force_on_earth
+			}
+			set_variable = {
+				PRC_space_force_on_earth = 0
+			}
+			set_variable = {
+				PRC_space_force = 0
+			}
+			add_to_variable = {
+				PRC_space_force = PRC_space_force_on_earth
+			}
+			add_to_variable = {
+				PRC_space_force = PRC_space_force_on_orbit
+			}
 			if = {
 				limit = {
-					check_variable = { PRC_space_force > 17.9 }
+					check_variable = {
+						PRC_space_force > 17.9
+					}
 				}
 				set_country_flag = PRC_space_force_troop_limit
 			}
@@ -2389,16 +2542,20 @@ PRC_new_left_pla_space_force = {
 	}
 	#战略打击
 	rocket_army_strategic_strike_japan = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			JAP = {
 				add_timed_idea = {
@@ -2409,16 +2566,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_strategic_strike_indochina = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			if = {
 				limit = {
@@ -2459,20 +2620,23 @@ PRC_new_left_pla_space_force = {
 					}
 				}
 			}
-
 		}
 	}
 	rocket_army_strategic_strike_south_korea = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			KOR = {
 				add_timed_idea = {
@@ -2483,16 +2647,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_strategic_strike_indonesia = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			INS = {
 				add_timed_idea = {
@@ -2503,16 +2671,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_strategic_strike_mailai = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			if = {
 				limit = {
@@ -2543,16 +2715,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_strategic_strike_india = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			RAJ = {
 				add_timed_idea = {
@@ -2563,16 +2739,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_strategic_strike_philippine = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			PHI = {
 				add_timed_idea = {
@@ -2583,16 +2763,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_strategic_strike_thai = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			SIA = {
 				add_timed_idea = {
@@ -2603,16 +2787,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_strategic_strike_oceania = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			if = {
 				limit = {
@@ -2657,16 +2845,20 @@ PRC_new_left_pla_space_force = {
 	}
 	#战术支援
 	rocket_army_tactical_strike_japan = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			JAP = {
 				every_core_state = {
@@ -2680,16 +2872,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_tactical_strike_indochina = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			VIN = {
 				every_core_state = {
@@ -2721,16 +2917,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_tactical_strike_korea = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			KOR = {
 				every_core_state = {
@@ -2744,16 +2944,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_tactical_strike_indonesia = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			INS = {
 				every_core_state = {
@@ -2767,16 +2971,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_tactical_strike_mailai = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			MAL = {
 				every_core_state = {
@@ -2799,16 +3007,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_tactical_strike_india = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			RAJ = {
 				every_core_state = {
@@ -2822,16 +3034,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_tactical_strike_philippine = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			PHI = {
 				every_core_state = {
@@ -2845,16 +3061,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_tactical_strike_thai = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			every_core_state = {
 				add_dynamic_modifier = {
@@ -2866,16 +3086,20 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	rocket_army_tactical_strike_oceania = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			PNG = {
 				every_core_state = {
@@ -2903,20 +3127,24 @@ PRC_new_left_pla_space_force = {
 						days = 180
 					}
 				}
-			}	
+			}
 		}
 	}
 	rocket_army_defense = {
-		allowed = { tag = PRC }
-		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		allowed = {
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 7
+		icon = GFX_decision_generic_deploy_nukes
+		activation = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 7
 		timeout_effect = {
 			every_core_state = {
 				add_dynamic_modifier = {
@@ -2929,54 +3157,70 @@ PRC_new_left_pla_space_force = {
 	}
 	#火箭军能力恢复
 	rocket_army_strengthen_re = {
-		allowed = { tag = PRC }
+		allowed = {
+			tag = PRC
+		}
 		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            check_variable = { rocket_army_ability_upper_limit > rocket_army_ability }
+		activation = {
+			check_variable = {
+				rocket_army_ability_upper_limit > rocket_army_ability
+			}
 		}
 		available = {
 			hidden_trigger = {
 				always = no
 			}
 		}
-        is_good = yes
-        days_mission_timeout = 60
+		is_good = yes
+		days_mission_timeout = 60
 		timeout_effect = {
-			add_to_variable = { rocket_army_ability = 1 }
+			add_to_variable = {
+				rocket_army_ability = 1
+			}
 			custom_effect_tooltip = rocket_army_strengthen_re_tt
 		}
 	}
 	rocket_army_strengthen = {
-		allowed = { tag = PRC }
+		allowed = {
+			tag = PRC
+		}
 		icon = GFX_decision_generic_deploy_nukes
-		activation = {                
-            always = no
+		activation = {
+			always = no
 		}
 		available = {
 			hidden_trigger = {
 				always = no
 			}
 		}
-        is_good = yes
-        days_mission_timeout = 180
+		is_good = yes
+		days_mission_timeout = 180
 		timeout_effect = {
-			add_to_variable = { rocket_army_ability_upper_limit = 1 }
+			add_to_variable = {
+				rocket_army_ability_upper_limit = 1
+			}
 			custom_effect_tooltip = rocket_army_strengthen_tt
 		}
 	}
 	#太空军
 	PLA_space_army_research = {
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		activation = {
+			always = no
 		}
-        is_good = yes
-        days_mission_timeout = 180    
-        timeout_effect = {
-			add_to_variable = { PRC_space_force_on_orbit = 1 }
-			add_to_variable = { space_army_upper_limit = 1 }
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 180
+		timeout_effect = {
+			add_to_variable = {
+				PRC_space_force_on_orbit = 1
+			}
+			add_to_variable = {
+				space_army_upper_limit = 1
+			}
 			create_equipment_variant = {
 				name = "轨道空降军辅助侦察坦克"
 				type = light_tank_chassis_3
@@ -2995,11 +3239,9 @@ PRC_new_left_pla_space_force = {
 					tank_nsb_armor_upgrade = 14
 				}
 			}
-			
 			division_template = {
 				name = "轨道空降军"
 				is_locked = yes
-				
 				regiments = {
 					space_army = {
 						x = 0
@@ -3054,7 +3296,6 @@ PRC_new_left_pla_space_force = {
 						y = 2
 					}
 				}
-				
 				support = {
 					engineer = {
 						x = 0
@@ -3063,7 +3304,7 @@ PRC_new_left_pla_space_force = {
 					exoskeleton_support = {
 						x = 0
 						y = 1
-					} 
+					}
 					spa_company = {
 						x = 0
 						y = 2
@@ -3082,21 +3323,27 @@ PRC_new_left_pla_space_force = {
 		}
 	}
 	PLA_space_army_produce = {
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+		activation = {
+			always = no
 		}
-        is_good = yes
-        days_mission_timeout = 60
-        timeout_effect = {
-			add_to_variable = { PRC_space_force_on_orbit = 1 }
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		is_good = yes
+		days_mission_timeout = 60
+		timeout_effect = {
+			add_to_variable = {
+				PRC_space_force_on_orbit = 1
+			}
 			PRC_space_force_counter = yes
 		}
 	}
-} 
-PLA_jueyileibie = {		#以上需写入categories
+}
+
+PLA_jueyileibie = {
+	#以上需写入categories
 	PLA_block_flood_of_enemy_information_des = {
 		icon = GFX_
 		#图标未定
@@ -3106,22 +3353,12 @@ PLA_jueyileibie = {		#以上需写入categories
 			has_completed_focus = PAL_block_flood_of_enemy_information
 		}
 		fire_only_once = no
-		days_re_enable = 120	#or190...
+		days_re_enable = 120		#or190...
 		days_remove = 70
-		modifier = {
-			#every_country = {
-			#	if = {
-			#		limit = {
-			#			has_war_with = PRC
-			#		}
-			#		air_mission_efficiency = -0.1
-			#		air_detection = -0.85
-			#		air_weather_penalty = 0.5
-			#		sortie_efficiency = -0.15
-			#	}
-			#}
-		}
 		remove_effect = {
+			JAP = {
+				add_ideas = PLA_taikongz
+			}
 		}
 		complete_effect = {
 			add_political_power = -50
@@ -3130,70 +3367,65 @@ PLA_jueyileibie = {		#以上需写入categories
 				value = -10
 			}
 			add_income = yes
-			custom_effect_tooltip = PLA_block_flood_of_enemy_information_tt
 			hidden_effect = {
 				every_country = {
 					limit = {
 						has_war_with = PRC
 					}
-				
-				add_timed_idea = {
-					idea = PLA_block_flood_of_enemy_information_idea
-					days = 70
-				}	
+					add_timed_idea = {
+						idea = PLA_block_flood_of_enemy_information_idea
+						days = 70
+					}
+				}
+			}
+			custom_cost_trigger = {
+				check_variable = {
+					var = income_var
+					value = 10
+					compare = greater_than_or_equals
+				}
+				has_political_power > 50
+			}
+			custom_cost_text = dx_more_than_10B_and_50pp
+		}
+		hidden_ideas = {
+			PLA_block_flood_of_enemy_information_idea = {
+				allowed = {
+					always = no
+				}
+				visible = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				modifier = {
+					air_mission_efficiency = -0.1
+					air_detection = -0.85
+					air_weather_penalty = 0.5
+					sortie_efficiency = -0.15
+				}
 			}
 		}
-		custom_cost_trigger = {
-			check_variable = {
-				var = income_var
-				value = 10
-				compare = greater_than_or_equals
-			}
-			has_political_power > 50
-		}
-		custom_cost_text = dx_more_than_10B_and_50pp
-	}
-
-	hidden_ideas = {
-		PLA_block_flood_of_enemy_information_idea = {
-			allowed = {
-				always = no
+		PLA_build_nuclear_bomb_des = {
+			icon = GFX_
+			available = {
 			}
 			visible = {
-				always = no
+				has_completed_focus = PAL_roaring_wildly
 			}
-			allowed_civil_war = {
-				always = yes
-			}
+			fire_only_once = no
+			cost = 100
+			days_re_enable = 100
+			days_remove = 50
+			#时间随便定的，如有需要，后期再改
 			modifier = {
-				air_mission_efficiency = -0.1
-				air_detection = -0.85
-				air_weather_penalty = 0.5
-				sortie_efficiency = -0.15
 			}
-		}
-	}
-
-
-	PLA_build_nuclear_bomb_des = {
-		icon = GFX_
-		available = {
-		}
-		visible = {
-			has_completed_focus = PAL_roaring_wildly
-		}
-		fire_only_once = no
-		cost = 100
-		days_re_enable = 100	
-		days_remove = 50
-		#时间随便定的，如有需要，后期再改
-		modifier = {
-		}
-		remove_effect = {
-			add_thermo_nuclear_bomb = 1
-		}
-		complete_effect = {
+			remove_effect = {
+				add_thermo_nuclear_bomb = 1
+			}
+			complete_effect = {
+			}
 		}
 	}
 }
-

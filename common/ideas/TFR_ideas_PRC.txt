@@ -1606,7 +1606,7 @@ ideas = {
 		}
 		PRC_nl_jingji4t_idea = {
 			#鼓足干劲力争上游
-			picture = GFX_idea_PRC_made_in_china
+			picture = PRC_made_in_china_new_left_idea
 			name = PRC_nl_jingji4t_idea
 			allowed = {
 				always = no
@@ -1656,7 +1656,7 @@ ideas = {
 		}
 		PRC_nl_jingji5_d1a_idea = {
 			#人民群众的先锋模范
-			picture = GFX_idea_PRC_made_in_china
+			picture = GFX_idea_PRC_made_in_china_new_left_idea
 			name = PRC_peoples_ppioneer_idea
 			allowed = {
 				always = no

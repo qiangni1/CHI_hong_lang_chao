@@ -1,5 +1,18 @@
 ideas = {
 	country = {
+		#电子干扰战idea
+		PLA_taikongz = {
+			name = PLA_taikongz
+			allowed = {
+				always = no
+			}
+			modifier = {
+				air_mission_efficiency = -0.1
+				air_detection = -0.85
+				air_weather_penalty = 0.5
+				sortie_efficiency = -0.15
+			}
+		}
 		#动态buff显示器:参谋部
 		PLA_dummy_general_staff = {
 			name = PLA_general_staff

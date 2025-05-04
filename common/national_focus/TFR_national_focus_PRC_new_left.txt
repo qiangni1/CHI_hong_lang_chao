@@ -74,8 +74,10 @@ focus_tree = {
 			else = {
 				army_experience = 30
 			}
-			add_dynamic_modifier = {
-				modifier = PLA_military_and_political_reform_dynamic
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = PLA_military_and_political_reform_dynamic
+				}
 			}
 			#这个人民解放军军政改革不出现人民解放军军政改革这个修正？而且感觉给的数据里的描述怪怪的，暂且先这样做
 		}
@@ -210,7 +212,7 @@ focus_tree = {
 				}
 				add_to_variable = {
 					var = PLA_military_and_political_reform_dynamic_send_volunteer_factor_dynamic_var
-					value = 3
+					value = 0.03
 				}
 				add_to_variable = {
 					var = PLA_military_and_political_reform_dynamic_air_volunteer_cap_dynamic_var
@@ -438,6 +440,7 @@ focus_tree = {
 			}
 			hidden_effect = {
 				remove_ideas = {
+					PLA_plaa_intelligence_reform
 					PLA_plaa_operations_command
 					PLA_plaa_large_depth
 				}
@@ -485,6 +488,7 @@ focus_tree = {
 			}
 			hidden_effect = {
 				remove_ideas = {
+					PLA_plaa_intelligence_reform
 					PLA_plaa_operations_command
 					PLA_plaa_information_and_fire
 				}
@@ -693,7 +697,6 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			unlock_decision_tooltip = PRC_project_unmanned_dec
 			swap_ideas = {
 				remove_idea = PLA_plaa_unmanned_composite
 				add_idea = PLA_plaa_rolling_back
@@ -1038,7 +1041,7 @@ focus_tree = {
 		}
 		select_effect = {
 			if = {
-				limit = { 
+				limit = {
 					has_tech = advanced_medium_airframe
 				}
 				country_event = {
@@ -1125,7 +1128,7 @@ focus_tree = {
 		}
 		select_effect = {
 			if = {
-				limit = { 
+				limit = {
 					SOV = {
 						OR = {
 							has_government = totalitarian_socialist
@@ -1185,6 +1188,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = PLA_jiesuo
 			custom_effect_tooltip = PLA_block_flood_of_enemy_information_tt
 		}
 	}
@@ -1793,7 +1797,7 @@ focus_tree = {
 		relative_position_id = PLA_when_that_day_comes
 		completion_reward = {
 			#add_dynamic_modifier = {
-				#modifier = PRC_pla_dynamic
+			#modifier = PRC_pla_dynamic
 			#}
 			unlock_decision_tooltip = PRC_project_ghost_dec
 			unlock_decision_tooltip = PRC_project_nib_dec
@@ -4955,9 +4959,7 @@ focus_tree = {
 				idea = PRC_nl_go_to_proletarian_democracy_idea
 				days = 365
 			}
-			effect_tooltip = {
-				add_ideas = PRC_nl_shining_proletarian_democracy_idea
-			}
+			add_ideas = PRC_nl_shining_proletarian_democracy_idea
 		}
 	}
 	focus = {
@@ -4996,7 +4998,7 @@ focus_tree = {
 	focus = {
 		id = PRC_nl_reform_people_congress
 		icon = GFX_focus_PRC_reform_npc
-		cost = 3.00
+		cost = 3
 		prerequisite = {
 			focus = PRC_nl_proletarian_democracy
 		}
@@ -5005,8 +5007,6 @@ focus_tree = {
 		relative_position_id = PRC_nl_proletarian_democracy
 		completion_reward = {
 			custom_effect_tooltip = soc_lib_coalition_tip
-			custom_effect_tooltip = mar_lib_coalition_tip
-			custom_effect_tooltip = con_coalition_tip
 			custom_effect_tooltip = PRC_nl_go_to_democrat_tt
 			modify_timed_idea = {
 				idea = PRC_nl_go_to_proletarian_democracy_idea
@@ -5030,11 +5030,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = PRC_nl_perfect_democratic_centralization
 		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = PRC_nl_shining_proletarian_democracy_2_idea
-					add_idea = PRC_nl_shining_proletarian_democracy_3_idea
-				}
+			swap_ideas = {
+				remove_idea = PRC_nl_shining_proletarian_democracy_2_idea
+				add_idea = PRC_nl_shining_proletarian_democracy_3_idea
 			}
 			custom_effect_tooltip = appoint_interior_minister_tooltip
 			show_ideas_tooltip = PRC_Political_bureau_sec
@@ -5104,12 +5102,10 @@ focus_tree = {
 		y = 4
 		relative_position_id = PRC_nl_proletarian_democracy
 		completion_reward = {
-			effect_tooltip = {
-				add_ideas = PRC_socialist_harmonious_society_idea
-				swap_ideas = {
-					remove_idea = PRC_nl_shining_proletarian_democracy_3_idea
-					add_idea = PRC_nl_shining_proletarian_democracy_4_idea
-				}
+			add_ideas = PRC_socialist_harmonious_society_idea
+			swap_ideas = {
+				remove_idea = PRC_nl_shining_proletarian_democracy_3_idea
+				add_idea = PRC_nl_shining_proletarian_democracy_4_idea
 			}
 			set_temp_variable = {
 				var = society_development_var_temp
