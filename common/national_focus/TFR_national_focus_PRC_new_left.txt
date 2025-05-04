@@ -1036,6 +1036,23 @@ focus_tree = {
 		}
 		available = {
 		}
+		select_effect = {
+			if = {
+				limit = { 
+					has_tech = advanced_medium_airframe
+				}
+				country_event = {
+					id = prcs.16
+					days = 5
+				}
+			}
+			else = {
+				country_event = {
+					id = prcs.17
+					days = 5
+				}
+			}
+		}
 		completion_reward = {
 			effect_tooltip = {
 				swap_ideas = {
@@ -1105,6 +1122,31 @@ focus_tree = {
 			base = 25
 		}
 		available = {
+		}
+		select_effect = {
+			if = {
+				limit = { 
+					SOV = {
+						OR = {
+							has_government = totalitarian_socialist
+							has_government = communist
+							has_government = libertarian_socialist
+						}
+					}
+				}
+				country_event = {
+					id = prcs.14
+					days = 10
+					random_days = 2
+				}
+			}
+			else = {
+				country_event = {
+					id = prcs.15
+					days = 10
+					random_days = 2
+				}
+			}
 		}
 		completion_reward = {
 			air_experience = 100
@@ -1192,6 +1234,12 @@ focus_tree = {
 			base = 25
 		}
 		available = {
+		}
+		select_effect = {
+			country_event = {
+				id = prcs.18
+				days = 10
+			}
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -2748,7 +2796,7 @@ focus_tree = {
 			add_stability = 0.05
 			#审判 相关事件请后续添加 
 			country_event = {
-				id = china.xxx
+				id = Chihong.41
 				days = 3
 			}
 		}
@@ -2948,7 +2996,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = PRC_nl_clean_house
 		completion_reward = {
-			increase_taxes = yes
 			increase_welfare = yes
 			increase_safety = yes
 			add_to_variable = {

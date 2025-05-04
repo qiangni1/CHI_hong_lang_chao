@@ -170,7 +170,7 @@ country_event = {
     title = prcs.10.t
     desc = prcs.10.d
 
- is_triggered_only = yes
+ 	is_triggered_only = yes
 
     option = {
         name = prcs.10.a
@@ -858,6 +858,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Chihong.21.a
+		add_war_support = 0.02
 		ai_chance = {
 			base = 50
 		}
@@ -867,6 +868,7 @@ country_event = {
 		ai_chance = {
 			base = 50
 		}
+		add_political_power = 15
 	}
 }
 
@@ -1198,15 +1200,24 @@ country_event = {
 		}
 	}
 }
-
+#审判（41，43）
 country_event = {
 	id = Chihong.41
 	title = Chihong.41.t
 	desc = Chihong.41.desc
-	picture = GFX_Chihong41_event
+	picture = GFX_PRC_prison_bus
 	is_triggered_only = yes
+	immediate = {
+		
+	}
 	option = {
 		name = Chihong.41.a
+		hidden_effect = {
+			country_event = {
+				id = Chihong.43
+				days = 3
+			}
+		}
 		ai_chance = {
 			base = 50
 		}
@@ -1217,7 +1228,7 @@ country_event = {
 	id = Chihong.42
 	title = Chihong.42.t
 	desc = Chihong.42.desc
-	picture = GFX_Chihong42_event
+	picture = GFX_PRC_killer_glass
 	is_triggered_only = yes
 	option = {
 		name = Chihong.42.a
@@ -1231,12 +1242,22 @@ country_event = {
 	id = Chihong.43
 	title = Chihong.43.t
 	desc = Chihong.43.desc
-	picture = GFX_Chihong43_event
+	picture = GFX_PRC_court
 	is_triggered_only = yes
 	option = {
 		name = Chihong.43.a
 		ai_chance = {
 			base = 50
+		}
+		hidden_effect = {
+			country_event = {
+				id = Chihong.42
+				days = 3
+			}
+			country_event = {
+				id = Chihong.44
+				days = 5
+			}
 		}
 	}
 }
@@ -1245,7 +1266,7 @@ country_event = {
 	id = Chihong.44
 	title = Chihong.44.t
 	desc = Chihong.44.desc
-	picture = GFX_Chihong44_event
+	picture = GFX_PRC_dead_end
 	is_triggered_only = yes
 	option = {
 		name = Chihong.44.a

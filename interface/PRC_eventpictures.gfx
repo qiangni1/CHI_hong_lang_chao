@@ -173,15 +173,15 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_PLA_marching1"
-		textureFile = "gfx/event_picture/PLA_marching.png"
+		textureFile = "gfx/event_pictures/PLA_marching.png"
 	}
 	spriteType = {
 		name = "GFX_PRC_rocket_force"
-		textureFile = "gfx/event_picture/PRC_rocket_force.png"
+		textureFile = "gfx/event_pictures/PRC_rocket_force.png"
 	}
 	spriteType = {
 		name = "GFX_PRC_tank_stars"
-		textureFile = "gfx/event_picture/PRC_tank_stars.png"
+		textureFile = "gfx/event_pictures/PRC_tank_stars.png"
 	}
 	spriteType = {
 		name = "GFX_PRC_contest_mil"
@@ -302,5 +302,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_PRC_red_book"
 		textureFile = "gfx/event_pictures/PRC_red_book.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_prison_bus"
+		textureFile = "gfx/event_pictures/PRC_prison_bus.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_killer_glass"
+		textureFile = "gfx/event_pictures/PRC_killer_glass.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_court"
+		textureFile = "gfx/event_pictures/PRC_court.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_dead_end"
+		textureFile = "gfx/event_pictures/PRC_dead_end.png"
 	}
 }
