@@ -157,206 +157,169 @@ news_event = {
 country_event = {
 	id = prcs.9
 	title = prcs.9.t
+	picture = GFX_event_PRC_propaganda
 	desc = prcs.9.d
 	is_triggered_only = yes
 	option = {
+		set_stability = 0.05
 		name = prcs.9.a
 	}
 }
 
 country_event = {
-    id = prcs.10
-    picture = GFX_taiwan_new_soldiers
-    title = prcs.10.t
-    desc = prcs.10.d
-
- 	is_triggered_only = yes
-
-    option = {
-        name = prcs.10.a
-    }
-    major = no
-    
+	id = prcs.10
+	picture = GFX_taiwan_new_soldiers
+	title = prcs.10.t
+	desc = prcs.10.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.10.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.11
-    picture = GFX_Indian_mourn
-    title = prcs.11.t
-    desc = prcs.11.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.11.a
-    }
-    major = no
-    
+	id = prcs.11
+	picture = GFX_Indian_mourn
+	title = prcs.11.t
+	desc = prcs.11.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.11.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.12
-    picture = GFX_PLA_marching1
-    title = prcs.12.t
-    desc = prcs.12.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.12.a
-    }
-    major = no
-    
+	id = prcs.12
+	picture = GFX_PLA_marching1
+	title = prcs.12.t
+	desc = prcs.12.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.12.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.13
-    picture = GFX_event_PLA_marching2
-    title = prcs.13.t
-    desc = prcs.13.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.13.a
-    }
-    major = no
-    
+	id = prcs.13
+	picture = GFX_event_PLA_marching2
+	title = prcs.13.t
+	desc = prcs.13.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.13.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.14
-    picture = GFX_PRC_pcgame
-    title = prcs.14.t
-    desc = prcs.14.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.14.a
-    }
-    major = no
-    
+	id = prcs.14
+	picture = GFX_PRC_pcgame
+	title = prcs.14.t
+	desc = prcs.14.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.14.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.15
-    picture = GFX_PRC_pcgame
-    title = prcs.15.t
-    desc = prcs.15.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.15.a
-    }
-    major = no
-    
+	id = prcs.15
+	picture = GFX_PRC_pcgame
+	title = prcs.15.t
+	desc = prcs.15.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.15.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.16
-    picture = GFX_PRC_tank_stars
-    title = prcs.16.t
-    desc = prcs.16.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.16.a
-    }
-    major = no
-    
+	id = prcs.16
+	picture = GFX_PRC_tank_stars
+	title = prcs.16.t
+	desc = prcs.16.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.16.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.17
-    picture = GFX_PRC_tank_stars
-    title = prcs.17.t
-    desc = prcs.17.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.17.a
-    }
-    major = no
-    
+	id = prcs.17
+	picture = GFX_PRC_tank_stars
+	title = prcs.17.t
+	desc = prcs.17.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.17.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.18
-    picture = GFX_PLA_yilong
-    title = prcs.18.t
-    desc = prcs.18.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.18.a
-    }
-    major = no
-    
+	id = prcs.18
+	picture = GFX_PLA_yilong
+	title = prcs.18.t
+	desc = prcs.18.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.18.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.19
-    picture = GFX_PRC_blackboard
-    title = prcs.19.t
-    desc = prcs.19.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.19.a
-    }
-    major = no
-    
+	id = prcs.19
+	picture = GFX_PRC_blackboard
+	title = prcs.19.t
+	desc = prcs.19.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.19.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.20
-    picture = GFX_event_the_doctor
-    title = prcs.20.t
-    desc = prcs.20.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.20.a
-    }
-    major = no
-    
+	id = prcs.20
+	picture = GFX_event_the_doctor
+	title = prcs.20.t
+	desc = prcs.20.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.20.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.21
-    picture = GFX_event_party_tells
-    title = prcs.21.t
-    desc = prcs.21.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.21.a
-    }
-    major = no
-    
+	id = prcs.21
+	picture = GFX_event_party_tells
+	title = prcs.21.t
+	desc = prcs.21.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.21.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.22
-    picture = GFX_event_oh_no_jap
-    title = prcs.22.t
-    desc = prcs.22.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.22.a
-    }
-    major = no
-    
+	id = prcs.22
+	picture = GFX_event_oh_no_jap
+	title = prcs.22.t
+	desc = prcs.22.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.22.a
+	}
+	major = no
 }
 
 country_event = {
@@ -372,202 +335,231 @@ country_event = {
 }
 
 country_event = {
-    id = prcs.24
-    picture = GFX_PRC_a_meeting
-    title = prcs.24.t
-    desc = prcs.24.d
-
- is_triggered_only = yes
-
-    option = {
-		country_event = {
-				id = prcs.25
-				days = 7
-			}
-        name = prcs.24.a
-    }
-    major = no
-    
-}
-
-country_event = {
-    id = prcs.25
-    picture = GFX_event_wangzhaoguo
-    title = prcs.25.t
-    desc = prcs.25.d
-
-    is_triggered_only = yes
-
-    option = {
-        name = prcs.25.a
-        hidden_effect = {
-            country_event = {
-                id = prcs.26
-                days = 3
-            }
-        }
-        add_ideas = PRC_Wang_Zhaoguo
-    }
-    major = no
-    
-}
-
-country_event = {
-    id = prcs.26
-    picture = GFX_event_maoyuanxin
-    title = prcs.26.t
-    desc = prcs.26.d
-    is_triggered_only = yes
-    immediate = {
-        hidden_effect = {
-            country_event = {
-                id = prcs.27
-                days = 2
-            }
-        }
-    }
-    option = {
-        name = prcs.26.a
-		add_ideas = PRC_le_yucheng_for
-    }
-    option = {
-        name = prcs.26.b
-        add_ideas = PRC_Mao_Yuanxin
-    }
-    major = no
-}
-
-country_event = {
-    id = prcs.27
-    picture = GFX_event_yuanjiajun
-    title = prcs.27.t
-    desc = prcs.27.d
-
-    is_triggered_only = yes
-    immediate = {
-        hidden_effect = {
-            country_event = {
-                id = prcs.28
-                days = 3
-            }
-        }
-    }
-
-    option = {
-        name = prcs.27.a
-        add_ideas = PRC_Yuan_Jiajun
-    }
-    major = no
-    
-}
-
-country_event = {
-    id = prcs.28
-    picture = GFX_event_wanghuning
-    title = prcs.28.t
-    desc = prcs.28.d
-
- is_triggered_only = yes
-
-    option = {
-        name = prcs.28.a
-        add_ideas = PRC_Wang_Huning
-    }
-    major = no
-    
-}
-
-country_event = {
-    id = prcs.29
-    picture = GFX_event_PRC_CR_shadow
-    title = prcs.29.t
-    desc = prcs.29.d
-
-	 is_triggered_only = yes
-
-    option = {
-        name = prcs.29.a
-    }
-    option = {
-        name = prcs.29.b
-    }
-    major = no
-    
-}
-
-country_event = {
-    id = prcs.30
-    picture = GFX_PRC_collapse2
-    title = prcs.30.t
-    desc = prcs.30.d
-
-	 is_triggered_only = yes
-
-    option = {
-        name = prcs.30.a
-    }    
-}
-
-country_event = {
-    id = prcs.31
-    picture = GFX_PRC_the_road_home
-    title = prcs.31.t
-    desc = prcs.31.d
-
+	id = prcs.24
+	picture = GFX_PRC_a_meeting
+	title = prcs.24.t
+	desc = prcs.24.d
 	is_triggered_only = yes
-
-    option = {
-        name = prcs.31.a
-    }
+	option = {
+		country_event = {
+			id = prcs.25
+			days = 7
+		}
+		name = prcs.24.a
+	}
+	major = no
 }
 
 country_event = {
-    id = prcs.32
-    picture = GFX_PRC_hu_chunhua
-    title = prcs.32.t
-    desc = prcs.32.d
-
-	 is_triggered_only = yes
-
-    option = {
-        name = prcs.32.a
-    }
+	id = prcs.25
+	picture = GFX_event_wangzhaoguo
+	title = prcs.25.t
+	desc = prcs.25.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.25.a
+		hidden_effect = {
+			country_event = {
+				id = prcs.26
+				days = 3
+			}
+		}
+		add_ideas = PRC_Wang_Zhaoguo
+	}
+	major = no
 }
+
 country_event = {
-    id = prcs.33
-    picture = GFX_PRC_politicians_deputy
-    title = prcs.33.t
-    desc = prcs.33.d
-
-	 is_triggered_only = yes
-
-    option = {
-        name = prcs.33.a
-    }
+	id = prcs.26
+	picture = GFX_event_maoyuanxin
+	title = prcs.26.t
+	desc = prcs.26.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = prcs.27
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = prcs.26.a
+		add_ideas = PRC_le_yucheng_for
+	}
+	option = {
+		name = prcs.26.b
+		add_ideas = PRC_Mao_Yuanxin
+	}
+	major = no
 }
+
 country_event = {
-    id = prcs.34
-    picture = GFX_PRC_dark_street
-    title = prcs.34.t
-    desc = prcs.34.d
-
-	 is_triggered_only = yes
-
-    option = {
-        name = prcs.34.a
-    }
+	id = prcs.27
+	picture = GFX_event_yuanjiajun
+	title = prcs.27.t
+	desc = prcs.27.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = prcs.28
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = prcs.27.a
+		add_ideas = PRC_Yuan_Jiajun
+	}
+	major = no
 }
+
 country_event = {
-    id = prcs.35
-    picture = GFX_PRC_red_flag
-    title = prcs.35.t
-    desc = prcs.35.d
+	id = prcs.28
+	picture = GFX_event_wanghuning
+	title = prcs.28.t
+	desc = prcs.28.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.28.a
+		add_ideas = PRC_Wang_Huning
+	}
+	major = no
+}
 
-	 is_triggered_only = yes
+country_event = {
+	id = prcs.29
+	picture = GFX_event_PRC_CR_shadow
+	title = prcs.29.t
+	desc = prcs.29.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.29.a
+	}
+	option = {
+		name = prcs.29.b
+	}
+	major = no
+}
 
-    option = {
-        name = prcs.35.a
-    }
+country_event = {
+	id = prcs.30
+	picture = GFX_PRC_collapse2
+	title = prcs.30.t
+	desc = prcs.30.d
+	is_triggered_only = yes
+	option = {
+		add_political_power = -25
+		name = prcs.30.a
+	}
+}
+
+country_event = {
+	id = prcs.31
+	picture = GFX_PRC_the_road_home
+	title = prcs.31.t
+	desc = prcs.31.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.31.a
+		set_temp_variable = {
+			var = PRC_influence_new_var_temp
+			value = 0.05
+		}
+		PRC_add_influence_new = yes
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = prcs.32
+	picture = GFX_PRC_hu_chunhua
+	title = prcs.32.t
+	desc = prcs.32.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.32.a
+		add_stability = -0.05
+		set_temp_variable = {
+			var = PRC_influence_new_var_temp			#新左派影响力+7.5%
+			value = 0.05
+		}
+		PRC_add_influence_new = yes
+		set_temp_variable = {
+			PRC_reserve_fund_new_dagoujiao = -10			#储备金-10B
+		}
+		PRC_reserve_fund_one_new = yes
+		#储备金-25B
+		add_political_power = -50
+	}
+	option = {
+		set_temp_variable = {
+			var = PRC_influence_lib_var_temp
+			value = 0.05
+		}
+		PRC_add_influence_lib = yes
+		set_temp_variable = {
+			PRC_reserve_fund_new_dagoujiao = -10			#储备金-10B
+		}
+		PRC_reserve_fund_one_new = yes
+		add_political_power = -50
+		name = prcs.32.b
+	}
+}
+
+country_event = {
+	id = prcs.33
+	picture = GFX_PRC_politicians_deputy
+	title = prcs.33.t
+	desc = prcs.33.d
+	is_triggered_only = yes
+	option = {
+		add_stability = -0.05
+		set_temp_variable = {
+			var = PRC_influence_new_var_temp			#新左派影响力+7.5%
+			value = 0.075
+		}
+		PRC_add_influence_new = yes
+		name = prcs.33.a
+	}
+	option = {
+		name = prcs.33.b
+		set_temp_variable = {
+			var = PRC_influence_lib_var_temp
+			value = -0.05
+		}
+		PRC_add_influence_lib = yes
+		set_temp_variable = {
+			var = PRC_approval_rating_var_temp
+			value = -0.1
+		}
+		PRC_add_party_approval = yes
+		add_political_power = -50
+	}
+}
+
+country_event = {
+	id = prcs.34
+	picture = GFX_PRC_dark_street
+	title = prcs.34.t
+	desc = prcs.34.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.34.a
+		set_country_flag = PRC_weiji_end
+	}
+}
+
+country_event = {
+	id = prcs.35
+	picture = GFX_PRC_red_flag
+	title = prcs.35.t
+	desc = prcs.35.d
+	is_triggered_only = yes
+	option = {
+		name = prcs.35.a
+	}
 }
 
 country_event = {
@@ -936,7 +928,6 @@ country_event = {
 				random_days = 3
 			}
 		}
-
 		ai_chance = {
 			base = 50
 		}
@@ -958,7 +949,6 @@ country_event = {
 				random_days = 3
 			}
 		}
-
 		ai_chance = {
 			base = 50
 		}
@@ -980,7 +970,6 @@ country_event = {
 				random_days = 3
 			}
 		}
-
 		ai_chance = {
 			base = 50
 		}
@@ -1002,7 +991,6 @@ country_event = {
 				random_days = 3
 			}
 		}
-
 		ai_chance = {
 			base = 50
 		}
@@ -1123,21 +1111,20 @@ country_event = {
 
 #无产文化节胜利
 country_event = {
-    id = Chihong.37
-    title = Chihong.37.t
-    desc = Chihong.37.desc
-    picture = GFX_event_PRC_mao_smile
-    is_triggered_only = yes
-
-    option = {
-        name = Chihong.37.a
-        ai_chance = {
-            base = 50
-        }
-        add_political_power = 100
-        add_stability = 0.1
-        add_war_support = 0.1
-    }
+	id = Chihong.37
+	title = Chihong.37.t
+	desc = Chihong.37.desc
+	picture = GFX_event_PRC_mao_smile
+	is_triggered_only = yes
+	option = {
+		name = Chihong.37.a
+		ai_chance = {
+			base = 50
+		}
+		add_political_power = 100
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
 }
 
 #表彰新一辈人民艺术家
@@ -1200,6 +1187,7 @@ country_event = {
 		}
 	}
 }
+
 #审判（41，43）
 country_event = {
 	id = Chihong.41
@@ -1208,7 +1196,6 @@ country_event = {
 	picture = GFX_PRC_prison_bus
 	is_triggered_only = yes
 	immediate = {
-		
 	}
 	option = {
 		name = Chihong.41.a
