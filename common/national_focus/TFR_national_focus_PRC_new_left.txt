@@ -24,6 +24,9 @@ focus_tree = {
 		available = {
 			has_country_flag = PRC_military_tree_available
 		}
+		allow_branch = {
+			has_country_flag = PRC_for_policy_tree_available
+		}
 		#relative_position_id =
 		completion_reward = {
 			add_political_power = 150
@@ -657,7 +660,6 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			unlock_decision_tooltip = PRC_project_unmanned_dec
 			add_tech_bonus = {
 				bonus = 2				#研究加成200%
 				uses = 2
@@ -1930,7 +1932,7 @@ focus_tree = {
 	focus = {
 		id = PRC_unfinished_revolution
 		icon = GFX_focus_PRC_gemingdao
-		x = 57
+		x = 70
 		y = 1
 		cost = 3
 		available_if_capitulated = yes
@@ -2664,6 +2666,11 @@ focus_tree = {
 		}
 		available = {
 		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = PRC_for_policy_tree_available
+			}
+		}
 		completion_reward = {
 			swap_ruler_traits = {
 				remove = hos_red_dragon_rider
@@ -2856,6 +2863,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			focus_unlock = yes
 			add_political_power = 100
 			set_temp_variable = {
 				var = society_development_var_temp
@@ -2903,11 +2911,11 @@ focus_tree = {
 		id = PRC_nl_clean_house
 		icon = GFX_focus_PRC_cutdown_party_bureaucracy
 		cost = 7
-		prerequisite = {
-			focus = PRC_nl_red_wave_surge
+		allow_branch = {
+			has_country_flag = PRC_for_policy_tree_available
 		}
-		x = 18
-		y = 5
+		x = 25
+		y = 1
 		completion_reward = {
 			add_stability = 0.1
 			add_political_power = 100
@@ -4122,11 +4130,14 @@ focus_tree = {
 		id = PRC_nl_road_to_future
 		icon = GFX_focus_PRC_forward_to_the_future
 		cost = 3
+		allow_branch = {
+			has_country_flag = PRC_for_policy_tree_available
+		}
 		prerequisite = {
 			focus = PRC_nl_red_wave_surge
 		}
-		x = 42
-		y = 5
+		x = 50
+		y = 1
 		completion_reward = {
 			add_to_variable = {
 				PRC_mic_business_value_dynamic_var = -0.1
@@ -4941,8 +4952,8 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_rebuild_proletarian_dictatorship
 		}
-		x = 18
-		y = 12
+		x = 25
+		y = 7
 		completion_reward = {
 			set_temp_variable = {
 				society_development_var_temp = 0.05
@@ -5067,7 +5078,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_digital_supervision_of_the_people
-		icon = GFX_focus_FRA_EU_The_Will_to_Grow
+		icon = GFX_focus_PRC_chaqingta
 		cost = 3
 		prerequisite = {
 			focus = PRC_nl_reform_people_congress

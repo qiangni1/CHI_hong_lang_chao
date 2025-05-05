@@ -1,4 +1,8 @@
 spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_PRC_chaqingta"
+		texturefile = "gfx/interface/goals/PRC/PRC_chaqingta.png"
+	}
 	SpriteType = {
 		name = "GFX_focus_PRC_new_left_caoxian_xiandai"
 		texturefile = "gfx/interface/goals/PRC/PRC_new_left_caoxian_xiandai.png"
