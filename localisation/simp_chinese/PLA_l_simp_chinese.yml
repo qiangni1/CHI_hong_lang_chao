@@ -268,8 +268,8 @@
  PLA_elite_marine_corps_tt: "§Y海军陆战队、两栖机步营、两栖坦克营：§!\n 组织度+10\n 两栖攻击+30%\n 河流速度+20%\n 河流攻击+20%\n§Y步兵战车:§!\n 两栖攻击+30%\n 河流攻击+10%\n 河流速度+10%\n§Y工兵连：§!\n 两栖攻击+20%\n 河流攻击+10%\n 河流速度+10%"
  PLA_Kunpeng_Plan: "“鲲鹏”计划"
  PLA_Kunpeng_Plan_desc: "登陆作战向来是最残酷的作战方式之一，面临着强渡海区，敌前登陆，背水攻击，战况变化急剧，指挥协同复杂，后勤保障困难等问题。但前苏联的一些军事工程在经过我们的现代化改进之后似乎可以缓解陆战队员们所面临的困难。"
- PRC_project_KUNPENG_dec: "我们将开始§Y“鲲鹏”计划§!"
- PRC_project_KUNPENG_tt: "§Y“鲲鹏”计划§!"
+ PRC_project_KUNPENG_dec: "§Y“鲲鹏”计划§!"
+ PRC_project_KUNPENG_tt: "我们将开始§Y“鲲鹏”计划§!"
  PLA_KUNPENG_tech: "鲲鹏"
  PLA_establish_an_unmanned_composite_force: "建立无人合成部队"
  PLA_establish_an_unmanned_composite_force_desc: "我们将以分布式人工智能中枢为核心，依托抗干扰数据链建立一支能实现全域自主协同作战的机器人作战单位。该单位的模块化单元可动态重组任务编队，在极端环境下承担先锋突破任务。通过毫秒级态势研判与精准火力分配，快速撕裂敌防线关键节点，瓦解纵深防御体系。其无惧战损、持续突击的特性，结合全天候作战与快速重构能力，成为战役体系中无可替代的“钢铁尖刀”，以绝对技术代差与战术效能，奠定高强度对抗下的决定性优势。"
@@ -316,8 +316,8 @@
  dx_more_than_10B_and_50pp_blocked:"£dx  §R10B§! £pol_power  §R50§!"
  PLA_taikongz: "电子战干扰"
  PLA_jiesuo: "§G我们将解锁§!§R电子战§!§G打击§!"
-
-
+ PLA_military_and_political_reform: "§G我们将开始§!§R人民解放军的军政§!§G工作§!"
+ PLA_general_staff_dynamic_tt: "§G我们将开始改革§!§R人民解放军的总参谋部§!"
 
 
 

@@ -77,6 +77,7 @@ focus_tree = {
 			else = {
 				army_experience = 30
 			}
+			custom_effect_tooltip = PLA_military_and_political_reform
 			hidden_effect = {
 				add_dynamic_modifier = {
 					modifier = PLA_military_and_political_reform_dynamic
@@ -1347,9 +1348,6 @@ focus_tree = {
 		x = -2
 		y = 2
 		completion_reward = {
-			add_dynamic_modifier = {
-				modifier = PLA_general_staff_dynamic
-			}
 			#先前后续的两个国策中，如果要围绕修正而添加效果，则就不应该将添加修正和添加效果的国策并列，导致其他情况出现。或许为特殊设计？总之，我就先在这里添加修正了，后期要改动再处理。
 			unlock_decision_tooltip = PRC_intensify_marine_training
 			unlock_decision_tooltip = PRC_thunder_god_program_mountain
@@ -1440,6 +1438,7 @@ focus_tree = {
 					add_idea = PLA_general_staff_2
 				}
 			}
+			custom_effect_tooltip = PLA_general_staff_dynamic_tt
 			hidden_effect = {
 				add_dynamic_modifier = {
 					modifier = PLA_general_staff_dynamic
