@@ -14217,6 +14217,30 @@ country_event = {
 		custom_effect_tooltip = PRC_tfr_china_ending_tt
 		custom_effect_tooltip = unrestricted_diplomacy_tt
 		set_country_flag = unrestricted_diplomacy_flag
+		if = {
+			limit = { 
+				SOV = {
+					OR = {
+						has_government = communist
+						has_government = totalitarian_socialist
+						has_government = libertarian_socialist
+					}
+				}
+			}
+			set_country_flag = PRC_Revolution_return_ending1
+		}
+		else_if = {
+			limit = { 
+				APA = {
+					has_country_flag = APA_reunified_flag
+				}
+			}
+			set_country_flag = PRC_Revolution_return_ending
+		}
+		else = {
+			set_country_flag = PRC_Revolution_return_ending2
+		}
+		TFR_Country_Closing_Screen_Show = yes
 	}
 }
 

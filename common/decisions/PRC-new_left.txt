@@ -6490,7 +6490,6 @@ PRC_solve_economy_crisis = {
 				PRC_reserve_fund_new_dagoujiao = -5
 			}
 			PRC_reserve_fund_one_new = yes
-			country_event = PRC_nl.104
 			country_event = {
 				id = prcs.31
 				days = 3

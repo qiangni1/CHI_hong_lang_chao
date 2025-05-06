@@ -82,12 +82,6 @@ defined_text = {
 	name = Get_TFR_CountryClosing_epilogue_PRC
 	text = {
 		trigger = {
-			has_country_flag = PRC_Xi_success_ending
-		}
-		localization_key = "TFR_CountryClosing_epilogue_PRC_Xi_Good_End"
-	}
-	text = {
-		trigger = {
 			has_country_flag = PRC_Revolution_return_ending
 		}
 		localization_key = "TFR_CountryClosing_epilogue_PRC_Revolution_Ending"

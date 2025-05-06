@@ -161,11 +161,7 @@ country_event = {
 	desc = prcs.9.d
 	is_triggered_only = yes
 	option = {
-		country_event = {
-			id = prcs.9
-			days = 7
-		}
-		set_stability = 0.05
+		add_stability = 0.05
 		name = prcs.9.a
 	}
 }
@@ -454,6 +450,7 @@ country_event = {
 	desc = prcs.30.d
 	is_triggered_only = yes
 	option = {
+		name = prcs.30.a
 		add_political_power = -25
 		add_stability = -0.05
 		set_temp_variable = {
@@ -461,8 +458,17 @@ country_event = {
 			value = 0.025
 		}
 		PRC_add_influence_new = yes
-		country_event = prcs.35
-		name = prcs.30.a
+		country_event = {
+			id = prcs.35
+			days = 2
+			random_days = 2
+		}
+		hidden_effect = {
+			country_event = {
+				id = prcs.9
+				days = 7
+			}
+		}
 	}
 }
 
@@ -474,7 +480,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = prcs.31.a
-		country_event = prcs.9
+		country_event = {
+			id = prcs.9
+			days = 2
+		}
 		set_temp_variable = {
 			var = PRC_influence_new_var_temp
 			value = 0.045
