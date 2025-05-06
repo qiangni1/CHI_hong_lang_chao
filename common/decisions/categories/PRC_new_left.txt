@@ -85,21 +85,11 @@ PRC_mongolia_hetong = {
 	icon = GFX_decision_category_jap_intervene_in_china
 	scripted_gui = PRC_mongolia_hetong_dec
 	visible = {
-		AND = {
-			hidden_trigger = {
-				has_country_flag = PRC_mongolia_hetong_flag
-			}
-			tag = PRC
-		}
+		has_country_flag = PRC_mongolia_hetong_flag
 	}
 	allowed = {
     	tag = PRC
     }
-	# available = {
-	# 	hidden_trigger = {
-	# 		has_country_flag = PRC_mongolia_hetong_flag
-	# 	}
-	# }
 	priority = {
 		base = 250
 	}

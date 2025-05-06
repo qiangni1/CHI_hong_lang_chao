@@ -3408,21 +3408,20 @@ PRC_mongolia_hetong = {
 		fire_only_once = yes
 		timeout_effect = {
 			custom_effect_tooltip = MON_integration_tooltip
+			clr_country_flag = PRC_mongolia_hetong_flag
 			if = {
 				limit = {
 					check_variable = {
-						var = MRC_at_MON
+						var = PRC_at_MON
 						value > 75
 						compare = greater_than_or_equals
 					}
 				}
-				clr_country_flag = PRC_mongolia_hetong_flag
 				country_event = {
 					id = china.1733
 				}
 			}
 			else = {
-				clr_country_flag = PRC_mongolia_hetong_flag
 				country_event = {
 					id = china.1732
 				}
