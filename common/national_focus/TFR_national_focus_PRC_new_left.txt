@@ -1941,6 +1941,9 @@ focus_tree = {
 		available = {
 			has_country_flag = PRC_for_policy_tree_available
 		}
+		allow_branch = {
+			has_country_flag = PRC_for_policy_tree_available
+		}
 		completion_reward = {
 			create_faction = WLI
 			add_ideas = {
