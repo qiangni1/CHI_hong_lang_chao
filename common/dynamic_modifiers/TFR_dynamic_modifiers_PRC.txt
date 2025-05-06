@@ -1,88 +1,89 @@
 ###UNUSED
 PRC_lib_popularity_dynamic = {
-	enable = { 
-		always = yes 
-	}		
-	trade_opinion_factor = PRC_Liberal_Popularity # PRC_Liberal_Loyalty
-	conversion_cost_mil_to_civ_factor = PRC_Liberal_Popularity # PRC_Liberal_Loyalty
-	production_speed_industrial_complex_factor = PRC_Liberal_Popularity # PRC_Liberal_Loyalty
+	enable = {
+		always = yes
+	}
+	trade_opinion_factor = PRC_Liberal_Popularity	# PRC_Liberal_Loyalty
+	conversion_cost_mil_to_civ_factor = PRC_Liberal_Popularity	# PRC_Liberal_Loyalty
+	production_speed_industrial_complex_factor = PRC_Liberal_Popularity	# PRC_Liberal_Loyalty
 }
-	
+
 PRC_nat_popularity_dynamic = {
 	enable = {
-		always = yes 
-	}	
-	army_attack_factor = PRC_Nationalist_Popularity # PRC_Nationalist_Loyalty
-	war_support_factor = PRC_Nationalist_Popularity # PRC_Nationalist_Loyalty
-	conversion_cost_civ_to_mil_factor = PRC_Nationalist_Popularity # PRC_Nationalist_Loyalty
+		always = yes
+	}
+	army_attack_factor = PRC_Nationalist_Popularity	# PRC_Nationalist_Loyalty
+	war_support_factor = PRC_Nationalist_Popularity	# PRC_Nationalist_Loyalty
+	conversion_cost_civ_to_mil_factor = PRC_Nationalist_Popularity	# PRC_Nationalist_Loyalty
 }
-	
-PRC_ycl_popularity_dynamic = {	
+
+PRC_ycl_popularity_dynamic = {
 	enable = {
-		always = yes 
-	}	
-	research_speed_factor = PRC_YCL_Popularity # PRC_YCL_Loyalty
-	stability_factor = PRC_YCL_Popularity # PRC_YCL_Loyalty
-	production_speed_buildings_factor = PRC_YCL_Popularity # PRC_YCL_Loyalty
+		always = yes
+	}
+	research_speed_factor = PRC_YCL_Popularity	# PRC_YCL_Loyalty
+	stability_factor = PRC_YCL_Popularity	# PRC_YCL_Loyalty
+	production_speed_buildings_factor = PRC_YCL_Popularity	# PRC_YCL_Loyalty
 }
-	
-PRC_prince_popularity_dynamic = {	
+
+PRC_prince_popularity_dynamic = {
 	enable = {
-		always = yes 
-	}		
-	industrial_capacity_factory = PRC_Princeling_Popularity # PRC_Princeling_Loyalty
-	production_oil_factor = PRC_Princeling_Popularity # PRC_Princeling_Loyalty
-	line_change_production_efficiency_factor = PRC_Princeling_Popularity # PRC_Princeling_Loyalty
+		always = yes
+	}
+	industrial_capacity_factory = PRC_Princeling_Popularity	# PRC_Princeling_Loyalty
+	production_oil_factor = PRC_Princeling_Popularity	# PRC_Princeling_Loyalty
+	line_change_production_efficiency_factor = PRC_Princeling_Popularity	# PRC_Princeling_Loyalty
 }
 
 PRC_new_left_popularity_dynamic = {
 	enable = {
-		always = yes 
-	}	
-	political_power_gain = PRC_New_Left_Popularity # PRC_New_Left_Loyalty
-	send_volunteer_factor = PRC_New_Left_Popularity # PRC_New_Left_Loyalty
-	army_core_defence_factor = PRC_New_Left_Popularity # PRC_New_Left_Loyalty
+		always = yes
+	}
+	political_power_gain = PRC_New_Left_Popularity	# PRC_New_Left_Loyalty
+	send_volunteer_factor = PRC_New_Left_Popularity	# PRC_New_Left_Loyalty
+	army_core_defence_factor = PRC_New_Left_Popularity	# PRC_New_Left_Loyalty
 }
 
 PRC_auth_popularity_dynamic = {
 	enable = {
-		always = yes 
-	}	
-	enemy_operative_capture_chance_factor = PRC_Authoritarian_Popularity # PRC_Authoritarian_Loyalty
-	enemy_operative_intel_extraction_rate = PRC_Authoritarian_Popularity # PRC_Authoritarian_Loyalty
-	production_factory_efficiency_gain_factor = PRC_Authoritarian_Popularity # PRC_Authoritarian_Loyalty
+		always = yes
+	}
+	enemy_operative_capture_chance_factor = PRC_Authoritarian_Popularity	# PRC_Authoritarian_Loyalty
+	enemy_operative_intel_extraction_rate = PRC_Authoritarian_Popularity	# PRC_Authoritarian_Loyalty
+	production_factory_efficiency_gain_factor = PRC_Authoritarian_Popularity	# PRC_Authoritarian_Loyalty
 }
+
 #####USED
 PRC_influence_nat_dynamic = {
-	enable = { 
+	enable = {
 		has_country_flag = PRC_internal_factions_enabled_flag
 	}
 	army_attack_factor = PRC_influence_nat_dynamic_var
 }
 
 PRC_influence_cen_dynamic = {
-	enable = { 
+	enable = {
 		has_country_flag = PRC_internal_factions_enabled_flag
 	}
 	political_power_gain = PRC_influence_cen_dynamic_var
 }
 
 PRC_influence_lib_dynamic = {
-	enable = { 
+	enable = {
 		has_country_flag = PRC_internal_factions_enabled_flag
 	}
 	stability_factor = PRC_influence_lib_dynamic_var
 }
 
 PRC_influence_new_dynamic = {
-	enable = { 
+	enable = {
 		has_country_flag = PRC_internal_factions_enabled_flag
 	}
 	production_speed_buildings_factor = PRC_influence_new_dynamic_var
 }
 
 PRC_approval_rating_dynamic = {
-	enable = { 
+	enable = {
 		has_country_flag = PRC_chinas_liberalization_enabled_flag
 	}
 	stability_factor = PRC_approval_rating_dynamic_var
@@ -94,7 +95,6 @@ PRC_communist_party_of_china_dynamic = {
 	enable = {
 		always = yes
 	}
-	
 	political_power_cost = PRC_cpc_political_power_cost_dynamic_var
 	political_power_factor = PRC_cpc_political_power_factor_dynamic_var
 	political_power_gain = PRC_cpc_political_power_gain_dynamic_var
@@ -115,7 +115,7 @@ PRC_communist_party_of_china_dynamic = {
 	production_speed_arms_factory_factor = PRC_cpc_production_speed_arms_factory_factor_dynamic_var
 	industrial_capacity_factory = PRC_cpc_industrial_capacity_factory_dynamic_var
 	production_speed_industrial_complex_factor = PRC_cpc_production_speed_industrial_complex_factor_dynamic_var
-	enemy_operative_capture_chance_factor  = PRC_cpc_enemy_operative_capture_chance_factor_dynamic_var
+	enemy_operative_capture_chance_factor = PRC_cpc_enemy_operative_capture_chance_factor_dynamic_var
 	enemy_operative_intel_extraction_rate = PRC_cpc_enemy_operative_intel_extraction_rate_dynamic_var
 	production_speed_buildings_factor = PRC_cpc_production_speed_buildings_factor_dynamic_var
 	production_factory_start_efficiency_factor = PRC_cpc_production_factory_start_efficiency_factor_dynamic_var
@@ -149,15 +149,15 @@ PRC_communist_party_of_china_dynamic = {
 	max_commander_army_size = PRC_cpc_max_commander_army_size_dynamic_var
 	drift_defence_factor = PRC_cpc_drift_defence_factor_dynamic_var
 	monthly_population = PRC_cpc_monthly_population_dynamic_var
-	army_chief_cost_factor = PRC_cpc_army_chief_cost_factor_dynamic_var	
-    navy_chief_cost_factor = PRC_cpc_navy_chief_cost_factor_dynamic_var	
-    air_chief_cost_factor = PRC_cpc_air_chief_cost_factor_dynamic_var	
-    high_command_cost_factor = PRC_cpc_high_command_cost_factor_dynamic_var
-    foreign_minister_cost_factor = PRC_cpc_foreign_minister_cost_factor_dynamic_var
-    economic_minister_cost_factor = PRC_cpc_economic_minister_cost_factor_dynamic_var
-    interior_minister_cost_factor = PRC_cpc_interior_minister_cost_factor_dynamic_var
-    intelligence_minister_cost_factor = PRC_cpc_intelligence_minister_cost_factor_dynamic_var	
-    theorist_minister_cost_factor = PRC_cpc_theorist_minister_cost_factor_dynamic_var	
+	army_chief_cost_factor = PRC_cpc_army_chief_cost_factor_dynamic_var
+	navy_chief_cost_factor = PRC_cpc_navy_chief_cost_factor_dynamic_var
+	air_chief_cost_factor = PRC_cpc_air_chief_cost_factor_dynamic_var
+	high_command_cost_factor = PRC_cpc_high_command_cost_factor_dynamic_var
+	foreign_minister_cost_factor = PRC_cpc_foreign_minister_cost_factor_dynamic_var
+	economic_minister_cost_factor = PRC_cpc_economic_minister_cost_factor_dynamic_var
+	interior_minister_cost_factor = PRC_cpc_interior_minister_cost_factor_dynamic_var
+	intelligence_minister_cost_factor = PRC_cpc_intelligence_minister_cost_factor_dynamic_var
+	theorist_minister_cost_factor = PRC_cpc_theorist_minister_cost_factor_dynamic_var
 }
 
 PRC_national_peoples_congress_dynamic = {
@@ -165,7 +165,6 @@ PRC_national_peoples_congress_dynamic = {
 	enable = {
 		always = yes
 	}
-	
 	political_power_cost = PRC_cpc_political_power_cost_dynamic_var
 	political_power_factor = PRC_cpc_political_power_factor_dynamic_var
 	political_power_gain = PRC_cpc_political_power_gain_dynamic_var
@@ -184,7 +183,7 @@ PRC_national_peoples_congress_dynamic = {
 	production_speed_industrial_complex_factor = PRC_cpc_production_speed_industrial_complex_factor_dynamic_var
 	production_cost_infrastructure_factor = PRC_cpc_production_cost_infrastructure_factor_dynamic_var
 	production_speed_arms_factory_factor = PRC_cpc_production_speed_arms_factory_factor_dynamic_var
-	enemy_operative_capture_chance_factor  = PRC_cpc_enemy_operative_capture_chance_factor_dynamic_var
+	enemy_operative_capture_chance_factor = PRC_cpc_enemy_operative_capture_chance_factor_dynamic_var
 	enemy_operative_intel_extraction_rate = PRC_cpc_enemy_operative_intel_extraction_rate_dynamic_var
 	production_speed_buildings_factor = PRC_cpc_production_speed_buildings_factor_dynamic_var
 	production_factory_efficiency_gain_factor = PRC_cpc_production_factory_efficiency_gain_factor_dynamic_var
@@ -217,30 +216,28 @@ PRC_national_peoples_congress_dynamic = {
 	drift_defence_factor = PRC_cpc_drift_defence_factor_dynamic_var
 	monthly_population = PRC_cpc_monthly_population_dynamic_var
 	consumer_goods_factor = PRC_cpc_consumer_goods_factor_dynamic_var
-	army_chief_cost_factor = PRC_cpc_army_chief_cost_factor_dynamic_var	
-    navy_chief_cost_factor = PRC_cpc_navy_chief_cost_factor_dynamic_var	
-    air_chief_cost_factor = PRC_cpc_air_chief_cost_factor_dynamic_var	
-    high_command_cost_factor = PRC_cpc_high_command_cost_factor_dynamic_var
-    foreign_minister_cost_factor = PRC_cpc_foreign_minister_cost_factor_dynamic_var
-    economic_minister_cost_factor = PRC_cpc_economic_minister_cost_factor_dynamic_var
-    interior_minister_cost_factor = PRC_cpc_interior_minister_cost_factor_dynamic_var
-    intelligence_minister_cost_factor = PRC_cpc_intelligence_minister_cost_factor_dynamic_var	
-    theorist_minister_cost_factor = PRC_cpc_theorist_minister_cost_factor_dynamic_var	
+	army_chief_cost_factor = PRC_cpc_army_chief_cost_factor_dynamic_var
+	navy_chief_cost_factor = PRC_cpc_navy_chief_cost_factor_dynamic_var
+	air_chief_cost_factor = PRC_cpc_air_chief_cost_factor_dynamic_var
+	high_command_cost_factor = PRC_cpc_high_command_cost_factor_dynamic_var
+	foreign_minister_cost_factor = PRC_cpc_foreign_minister_cost_factor_dynamic_var
+	economic_minister_cost_factor = PRC_cpc_economic_minister_cost_factor_dynamic_var
+	interior_minister_cost_factor = PRC_cpc_interior_minister_cost_factor_dynamic_var
+	intelligence_minister_cost_factor = PRC_cpc_intelligence_minister_cost_factor_dynamic_var
+	theorist_minister_cost_factor = PRC_cpc_theorist_minister_cost_factor_dynamic_var
 }
 
 PRC_SPZ_modifier = {
-
 	enable = {
 		always = yes
 	}
-	state_repair_speed_industrial_complex_factor  = 0.10
+	state_repair_speed_industrial_complex_factor = 0.1
 }
 
 PRC_made_in_china_dynamic = {
 	icon = GFX_idea_PRC_made_in_china_idea
 	#desc = PRC_made_in_china_dynamic_desc #No such thing in dynamic modifiers, consider tooltips instead
-
-	enable = { 
+	enable = {
 		always = yes
 	}
 	dtg_threshold = PRC_mic_dtg_threshold_dynamic_var
@@ -253,7 +250,7 @@ PRC_made_in_china_dynamic = {
 	trade_opinion_factor = PRC_mic_faction_trade_opinion_factor_dynamic_var
 	political_power_gain = PRC_mic_political_power_gain_dynamic_var
 	stability_factor = PRC_mic_stability_factor_dynamic_var
-	stability_weekly = PRC_mic_stability_weekly_dynamic_var 
+	stability_weekly = PRC_mic_stability_weekly_dynamic_var
 	war_support_factor = PRC_mic_war_support_factor_dynamic_var
 	war_support_weekly = PRC_mic_war_support_weekly_dynamic_var
 	consumer_goods_factor = PRC_mic_consumer_goods_factor_dynamic_var
@@ -297,7 +294,7 @@ PRC_made_in_china_dynamic = {
 	cic_to_overlord_factor = PRC_mic_cic_to_overlord_factor_dynamic_var
 	mic_to_overlord_factor = PRC_mic_mic_to_overlord_factor_dynamic_var
 	battalion_upkeep_factor = PRC_mic_battalion_upkeep_factor_dynamic_var
-	supply_consumption_factor  = PRC_mic_supply_consumption_factor_dynamic_var
+	supply_consumption_factor = PRC_mic_supply_consumption_factor_dynamic_var
 	supply_factor = PRC_mic_supply_factor_dynamic_var
 	unit_upkeep_attrition_factor = PRC_mic_unit_upkeep_attrition_factor_dynamic_var
 	truck_attrition_factor = PRC_mic_truck_attrition_factor_dynamic_var
@@ -313,14 +310,23 @@ PRC_made_in_china_dynamic = {
 	local_resources_factor = PRC_mic_local_resources_factor_dynamic_var
 }
 
-
-
+PRC_nl_jingji5_d0_dynamic = {
+	icon = GFX_idea_PRC_new_chinese_revolution_idea
+	enable = {
+		OR = {
+			has_country_flag = PRC_nl_condition_jingji9_flag
+			has_country_flag = PRC_nl_condition_jingji10_flag
+		}
+	}
+	industrial_development_monthly = PRC_PXF_industrial_development_monthly_dynamic_var
+	farming_development_monthly = PRC_PXF_farming_development_monthly_dynamic_var
+	political_power_gain = PRC_PXF_political_power_gain_dynamic_var
+}
 
 PRC_nl_jingji3_d3C0_dynamic = {
-	icon = GFX_idea_PRC_made_in_china_idea
+	icon = GFX_idea_PRC_peoples_and_honest_economy
 	#desc = PRC_made_in_china_dynamic_desc #No such thing in dynamic modifiers, consider tooltips instead
-
-	enable = { 
+	enable = {
 		has_country_flag = PRC_nl_condition_jingjiC0_flag
 	}
 	dtg_threshold = PRC_nlgzc_dtg_threshold_dynamic_var
@@ -333,7 +339,7 @@ PRC_nl_jingji3_d3C0_dynamic = {
 	trade_opinion_factor = PRC_nlgzc_faction_trade_opinion_factor_dynamic_var
 	political_power_gain = PRC_nlgzc_political_power_gain_dynamic_var
 	stability_factor = PRC_nlgzc_stability_factor_dynamic_var
-	stability_weekly = PRC_nlgzc_stability_weekly_dynamic_var 
+	stability_weekly = PRC_nlgzc_stability_weekly_dynamic_var
 	war_support_factor = PRC_nlgzc_war_support_factor_dynamic_var
 	war_support_weekly = PRC_nlgzc_war_support_weekly_dynamic_var
 	consumer_goods_factor = PRC_nlgzc_consumer_goods_factor_dynamic_var
@@ -377,7 +383,7 @@ PRC_nl_jingji3_d3C0_dynamic = {
 	cic_to_overlord_factor = PRC_nlgzc_cic_to_overlord_factor_dynamic_var
 	mic_to_overlord_factor = PRC_nlgzc_mic_to_overlord_factor_dynamic_var
 	battalion_upkeep_factor = PRC_nlgzc_battalion_upkeep_factor_dynamic_var
-	supply_consumption_factor  = PRC_nlgzc_supply_consumption_factor_dynamic_var
+	supply_consumption_factor = PRC_nlgzc_supply_consumption_factor_dynamic_var
 	supply_factor = PRC_nlgzc_supply_factor_dynamic_var
 	unit_upkeep_attrition_factor = PRC_nlgzc_unit_upkeep_attrition_factor_dynamic_var
 	truck_attrition_factor = PRC_nlgzc_truck_attrition_factor_dynamic_var
@@ -392,18 +398,18 @@ PRC_nl_jingji3_d3C0_dynamic = {
 	farming_development_monthly = PRC_nlgzc_farming_development_monthly_dynamic_var
 	local_resources_factor = PRC_nlgzc_local_resources_factor_dynamic_var
 	industry_free_repair_factor = PRC_mic_industry_free_repair_factor_dynamic_var
-    	military_factory_upkeep_factor = PRC_mic_military_factory_upkeep_factor_dynamic_var
-    	dockyard_upkeep_factor = PRC_mic_dockyard_upkeep_factor_dynamic_var
-    	production_speed_supply_node_factor = PRC_mic_production_speed_supply_node_factor_dynamic_var
+	military_factory_upkeep_factor = PRC_mic_military_factory_upkeep_factor_dynamic_var
+	dockyard_upkeep_factor = PRC_mic_dockyard_upkeep_factor_dynamic_var
+	production_speed_supply_node_factor = PRC_mic_production_speed_supply_node_factor_dynamic_var
 }
 
 PRC_chinese_space_age_dynamic = {
 	icon = GFX_idea_PRC_chinese_space_age
 	production_speed_buildings_factor = PRC_chinese_space_age_production_speed_buildings_factor_dynamic
 	production_factory_efficiency_gain_factor = PRC_chinese_space_age_production_factory_efficiency_gain_factor_dynamic
-	industrial_capacity_factory =	PRC_chinese_space_age_industrial_capacity_factory_dynamic
+	industrial_capacity_factory = PRC_chinese_space_age_industrial_capacity_factory_dynamic
 	society_development_monthly = PRC_chinese_space_age_society_development_monthly_dynamic
-	political_power_factor = PRC_chinese_space_age_political_power_factor_dynamic 
+	political_power_factor = PRC_chinese_space_age_political_power_factor_dynamic
 	production_lack_of_resource_penalty_factor = PRC_chinese_space_age_production_lack_of_resource_penalty_factor_dynamic
 	consumer_goods_factor = PRC_chinese_space_age_consumer_goods_factor_dynamic
 	industrial_capacity_dockyard = PRC_chinese_space_age_industrial_capacity_dockyard_dynamic
@@ -415,11 +421,10 @@ PRC_chinese_space_age_dynamic = {
 	out_of_supply_factor = PRC_chinese_space_age_out_of_supply_factor_dynamic
 	production_speed_infrastructure_factor = PRC_chinese_space_age_production_speed_infrastructure_factor_dynamic
 }
-	
+
 PRC_made_in_china_new_left_dynamic = {
 	icon = GFX_idea_PRC_made_in_china_new_left_idea
-
-	enable = { 
+	enable = {
 		always = yes
 	}
 	dtg_threshold = PRC_mic_dtg_threshold_dynamic_var
@@ -433,7 +438,7 @@ PRC_made_in_china_new_left_dynamic = {
 	business_value_factor = PRC_mic_business_value_dynamic_var
 	political_power_gain = PRC_mic_political_power_gain_dynamic_var
 	stability_factor = PRC_mic_stability_factor_dynamic_var
-	stability_weekly = PRC_mic_stability_weekly_dynamic_var 
+	stability_weekly = PRC_mic_stability_weekly_dynamic_var
 	war_support_factor = PRC_mic_war_support_factor_dynamic_var
 	war_support_weekly = PRC_mic_war_support_weekly_dynamic_var
 	consumer_goods_factor = PRC_mic_consumer_goods_factor_dynamic_var
@@ -477,26 +482,24 @@ PRC_made_in_china_new_left_dynamic = {
 	cic_to_overlord_factor = PRC_mic_cic_to_overlord_factor_dynamic_var
 	mic_to_overlord_factor = PRC_mic_mic_to_overlord_factor_dynamic_var
 	battalion_upkeep_factor = PRC_mic_battalion_upkeep_factor_dynamic_var
-	supply_consumption_factor  = PRC_mic_supply_consumption_factor_dynamic_var
+	supply_consumption_factor = PRC_mic_supply_consumption_factor_dynamic_var
 	supply_factor = PRC_mic_supply_factor_dynamic_var
 	unit_upkeep_attrition_factor = PRC_mic_unit_upkeep_attrition_factor_dynamic_var
 	truck_attrition_factor = PRC_mic_truck_attrition_factor_dynamic_var
 	supply_node_range = PRC_mic_supply_node_range_dynamic_var
 	misc_income = PRC_mic_misc_income_dynamic_var
 	industry_free_repair_factor = PRC_mic_industry_free_repair_factor_dynamic_var
-    	military_factory_upkeep_factor = PRC_mic_military_factory_upkeep_factor_dynamic_var
-    	dockyard_upkeep_factor = PRC_mic_dockyard_upkeep_factor_dynamic_var
-    	production_speed_supply_node_factor = PRC_mic_production_speed_supply_node_factor_dynamic_var
+	military_factory_upkeep_factor = PRC_mic_military_factory_upkeep_factor_dynamic_var
+	dockyard_upkeep_factor = PRC_mic_dockyard_upkeep_factor_dynamic_var
+	production_speed_supply_node_factor = PRC_mic_production_speed_supply_node_factor_dynamic_var
 }
 
 PRC_chinese_enviroment_dynamic = {
 	icon = GFX_idea_PRC_chinese_enviroment
 	#desc = PRC_chinese_enviroment_dynamic_desc #No such thing in dynamic modifiers, consider tooltips instead
-
-	enable = { 
+	enable = {
 		always = yes
 	}
-
 	production_speed_infrastructure_factor = PRC_ce_production_speed_infrastructure_factor_dynamic_var
 	production_factory_start_efficiency_factor = PRC_ce_production_factory_start_efficiency_factor_dynamic_var
 	production_factory_efficiency_gain_factor = PRC_ce_production_factory_efficiency_gain_factor_dynamic_var
@@ -504,7 +507,7 @@ PRC_chinese_enviroment_dynamic = {
 	business_value_factor = PRC_ce_business_value_dynamic_var
 	political_power_gain = PRC_ce_political_power_gain_dynamic_var
 	stability_factor = PRC_ce_stability_factor_dynamic_var
-	stability_weekly = PRC_ce_stability_weekly_dynamic_var 
+	stability_weekly = PRC_ce_stability_weekly_dynamic_var
 	war_support_factor = PRC_ce_war_support_factor_dynamic_var
 	war_support_weekly = PRC_ce_war_support_weekly_dynamic_var
 	consumer_goods_factor = PRC_ce_consumer_goods_factor_dynamic_var
@@ -528,17 +531,15 @@ PRC_chinese_enviroment_dynamic = {
 	inflation_monthly = PRC_ce_inflation_monthly_dynamic_var
 	conscription = PRC_ce_conscription_dynamic_var
 	monthly_population = PRC_ce_monthly_population_dynamic_var
-	industry_repair_factor = PRC_ce_industry_repair_factor_var	
+	industry_repair_factor = PRC_ce_industry_repair_factor_var
 }
 
 PRC_sino_japanese_computing_race_dynamic = {
 	icon = GFX_idea_PRC_sino_japanese_computing_race
 	#desc = PRC_sino_japanese_computing_race_dynamic_desc #No such thing in dynamic modifiers, consider tooltips instead
-
-	enable = { 
+	enable = {
 		always = yes
 	}
-
 	production_speed_infrastructure_factor = PRC_cr_production_speed_infrastructure_factor_dynamic_var
 	production_factory_start_efficiency_factor = PRC_cr_production_factory_start_efficiency_factor_dynamic_var
 	production_factory_efficiency_gain_factor = PRC_cr_production_factory_efficiency_gain_factor_dynamic_var
@@ -546,7 +547,7 @@ PRC_sino_japanese_computing_race_dynamic = {
 	business_value_factor = PRC_cr_business_value_dynamic_var
 	political_power_gain = PRC_cr_political_power_gain_dynamic_var
 	stability_factor = PRC_cr_stability_factor_dynamic_var
-	stability_weekly = PRC_cr_stability_weekly_dynamic_var 
+	stability_weekly = PRC_cr_stability_weekly_dynamic_var
 	war_support_factor = PRC_cr_war_support_factor_dynamic_var
 	war_support_weekly = PRC_cr_war_support_weekly_dynamic_var
 	consumer_goods_factor = PRC_cr_consumer_goods_factor_dynamic_var
@@ -572,11 +573,9 @@ PRC_sino_japanese_computing_race_dynamic = {
 PRC_sino_japanese_space_race_dynamic = {
 	icon = GFX_idea_PRC_sino_japanese_space_race
 	#desc = PRC_sino_japanese_space_race_dynamic_desc #No such thing in dynamic modifiers, consider tooltips instead
-
-	enable = { 
+	enable = {
 		always = yes
 	}
-
 	production_speed_infrastructure_factor = PRC_cr_production_speed_infrastructure_factor_dynamic_var
 	production_factory_start_efficiency_factor = PRC_cr_production_factory_start_efficiency_factor_dynamic_var
 	production_factory_efficiency_gain_factor = PRC_cr_production_factory_efficiency_gain_factor_dynamic_var
@@ -584,7 +583,7 @@ PRC_sino_japanese_space_race_dynamic = {
 	business_value_factor = PRC_cr_business_value_dynamic_var
 	political_power_gain = PRC_cr_political_power_gain_dynamic_var
 	stability_factor = PRC_cr_stability_factor_dynamic_var
-	stability_weekly = PRC_cr_stability_weekly_dynamic_var 
+	stability_weekly = PRC_cr_stability_weekly_dynamic_var
 	war_support_factor = PRC_cr_war_support_factor_dynamic_var
 	war_support_weekly = PRC_cr_war_support_weekly_dynamic_var
 	consumer_goods_factor = PRC_cr_consumer_goods_factor_dynamic_var
@@ -604,13 +603,12 @@ PRC_sino_japanese_space_race_dynamic = {
 	personal_expense_factor = PRC_cr_personal_expense_factor_dynamic_var
 	inflation_monthly = PRC_cr_inflation_monthly_dynamic_var
 	monthly_population = PRC_cr_monthly_population_dynamic_var
-	industry_repair_factor = PRC_cr_industry_repair_factor_var	
+	industry_repair_factor = PRC_cr_industry_repair_factor_var
 }
 
 PRC_pla_dynamic = {
 	icon = GFX_idea_PRC_pla
-
-	enable = { 
+	enable = {
 		always = yes
 	}
 	army_core_attack_factor = PRC_pla_army_core_attack_factor_dynamic_var
@@ -647,21 +645,20 @@ PRC_pla_dynamic = {
 	navy_screen_attack_factor = PRC_pla_navy_screen_attack_factor_dynamic_var
 	naval_damage_factor = PRC_pla_naval_damage_factor_dynamic_var
 }
-	
+
 PRC_plan_dynamic = {
 	icon = GFX_idea_PRC_plan_dynamic
-
-	enable = { 
-		tag = PRC 
+	enable = {
+		tag = PRC
 		has_completed_focus = PRC_a_blue_water_navy
 	}
 	naval_invasion_prep_speed = PRC_plan_naval_invasion_prep_speed_dynamic_var
-	naval_invasion_capacity  = PRC_plan_naval_invasion_capacity_dynamic_var
-	naval_invasion_penalty  = PRC_plan_naval_invasion_penalty_dynamic_var
-	amphibious_invasion  = PRC_plan_amphibious_invasion_dynamic_var
+	naval_invasion_capacity = PRC_plan_naval_invasion_capacity_dynamic_var
+	naval_invasion_penalty = PRC_plan_naval_invasion_penalty_dynamic_var
+	amphibious_invasion = PRC_plan_amphibious_invasion_dynamic_var
 	naval_accidents_chance = PRC_plan_naval_accidents_chance_dynamic_var
 	naval_coordination = PRC_plan_naval_coordination_dynamic_var
-	naval_damage_factor  = PRC_plan_naval_damage_factor_dynamic_var
+	naval_damage_factor = PRC_plan_naval_damage_factor_dynamic_var
 	naval_defense_factor = PRC_plan_naval_defense_factor_dynamic_var
 	navy_capital_ship_attack_factor = PRC_plan_navy_capital_ship_attack_factor_dynamic_var
 	navy_capital_ship_defence_factor = PRC_plan_navy_capital_ship_defence_factor_dynamic_var
@@ -685,8 +682,9 @@ PRC_plan_dynamic = {
 
 PRC_plaaf_dynamic = {
 	icon = GFX_idea_PRC_plaaf_dynamic
-
-	enable = { tag = PRC }
+	enable = {
+		tag = PRC
+	}
 	air_agility_factor = PRC_plaaf_air_agility_factor_dynamic_var
 	air_attack_factor = PRC_plaaf_air_attack_factor_dynamic_var
 	air_defence_factor = PRC_plaaf_air_defence_factor_dynamic_var
@@ -697,12 +695,10 @@ PRC_plaaf_dynamic = {
 	air_weather_penalty = PRC_plaaf_air_weather_penalty_dynamic_var
 }
 
-
 PRC_chinese_reforms_dynamic = {
 	icon = GFX_idea_PRC_chinese_reforms_dynamic
-
-	enable = { 
-		tag = PRC 
+	enable = {
+		tag = PRC
 		has_completed_focus = PRC_the_chinese_glasnost
 	}
 	production_factory_efficiency_gain_factor = PRC_chinese_reforms_production_factory_efficiency_gain_factor_dynamic_var
@@ -738,9 +734,8 @@ PRC_chinese_reforms_dynamic = {
 
 PRC_econ_engine_dynamic = {
 	icon = GFX_idea_PRC_econ_engine_dynamic
-
-	enable = { 
-		tag = PRC 
+	enable = {
+		tag = PRC
 		has_completed_focus = PRC_economic_cake_growth
 	}
 	production_factory_efficiency_gain_factor = PRC_econ_engine_production_factory_efficiency_gain_factor_dynamic_var
@@ -788,8 +783,7 @@ PRC_econ_engine_dynamic = {
 
 PRC_overloaded_bureaucracy_dynamic = {
 	icon = GFX_idea_PRC_Hundred_Flower_Campaign_idea
-
-	enable = { 
+	enable = {
 		always = yes
 	}
 	conscription_factor = PRC_bureaucracy_conscription_factor_dynamic_var
@@ -813,43 +807,43 @@ PRC_BRI_dynamic = {
 	industrial_development_monthly = PRC_BRI_industrial_development_monthly
 	global_building_slots_factor = PRC_BRI_global_building_slots_factor
 	production_speed_buildings_factor = PRC_BRI_production_speed_buildings_factor
-}	
+}
 
 PRC_surveillanced_city = {
 	icon = GFX_modifiers_soviet_sez
-	
-	enable = { 
+	enable = {
 		always = yes
 	}
 	local_resources_factor = 0.15
 	local_manpower = 0.1
 	local_supplies = 0.1
 	local_building_slots = 1
-}	
+}
+
 PRC_ai_governed_city = {
 	icon = GFX_modiGFX_modifiers_soviet_sezfiers_SOV_soviet_sez
-	
-	enable = { 
+	enable = {
 		always = yes
 	}
 	local_resources_factor = 0.15
 	local_manpower = 0.1
 	local_supplies = 0.1
 	local_building_slots = 1
-}	
+}
+
 PRC_digitalized_region = {
 	icon = GFX_modifiers_soviet_sez
-	
-	enable = { 
+	enable = {
 		always = yes
 	}
 	local_building_slots = 1
 	local_resources_factor = 0.025
 	state_production_speed_buildings_factor = 0.05
-}	
+}
+
 PRC_megacity = {
 	icon = GFX_modifiers_megacity
-	enable = { 
+	enable = {
 		always = yes
 	}
 	local_building_slots = 5
@@ -873,11 +867,9 @@ PRC_war_exhaustion_dynamic = {
 	surrender_limit = PRC_war_exhaustion_surrender_limit_dynamic
 }
 
-
 PRC_ningxia_hui_autonomous_region = {
 	icon = GFX_modifiers_PRC_ningxia_hui_autonomous_region
-	
-	enable = { 
+	enable = {
 		PRC = {
 			controls_state = 1199
 		}
@@ -888,10 +880,10 @@ PRC_ningxia_hui_autonomous_region = {
 	local_supplies = 0.05
 	mobilization_speed = 0.1
 }
+
 PRC_tibet_autonomous_region = {
 	icon = GFX_modifiers_PRC_tibet_autonomous_region
-	
-	enable = { 
+	enable = {
 		PRC = {
 			controls_state = 1156
 		}
@@ -911,8 +903,7 @@ PRC_tibet_autonomous_region = {
 
 PRC_xinjiang_uygur_autonomous_region = {
 	icon = GFX_modifiers_PRC_xinjiang_uygur_autonomous_region
-	
-	enable = { 
+	enable = {
 		PRC = {
 			controls_state = 1165
 		}
@@ -934,10 +925,10 @@ PRC_xinjiang_uygur_autonomous_region = {
 	local_supplies = 0.05
 	mobilization_speed = 0.03
 }
+
 PRC_inner_mongolia_autonomous_region = {
 	icon = GFX_modifiers_PRC_inner_mongolia_autonomous_region
-	
-	enable = { 
+	enable = {
 		PRC = {
 			controls_state = 621
 		}
@@ -960,10 +951,10 @@ PRC_inner_mongolia_autonomous_region = {
 	local_supplies = 0.05
 	mobilization_speed = 0.1
 }
+
 PRC_guangxi_zhuang_autonomous_region = {
 	icon = GFX_modifiers_PRC_guangxi_zhuang_autonomous_region
-	
-	enable = { 
+	enable = {
 		PRC = {
 			controls_state = 594
 		}
@@ -974,9 +965,10 @@ PRC_guangxi_zhuang_autonomous_region = {
 	local_supplies = 0.05
 	mobilization_speed = 0.1
 }
+
 PRC_beijing_city = {
 	icon = GFX_modifiers_PRC_beijing
-	enable = { 
+	enable = {
 		PRC = {
 			controls_state = 608
 		}
@@ -986,9 +978,10 @@ PRC_beijing_city = {
 	local_supplies = 0.1
 	mobilization_speed = 0.1
 }
+
 PRC_tianjin_city = {
 	icon = GFX_modifiers_PRC_tianjin
-	enable = { 
+	enable = {
 		PRC = {
 			controls_state = 1157
 		}
@@ -998,9 +991,10 @@ PRC_tianjin_city = {
 	local_supplies = 0.1
 	mobilization_speed = 0.1
 }
+
 PRC_chongqing_city = {
 	icon = GFX_modifiers_PRC_chongqing
-	enable = { 
+	enable = {
 		PRC = {
 			controls_state = 1189
 		}
@@ -1010,9 +1004,10 @@ PRC_chongqing_city = {
 	local_supplies = 0.1
 	mobilization_speed = 0.1
 }
+
 PRC_shanghai_city = {
 	icon = GFX_modifiers_PRC_shanghai
-	enable = { 
+	enable = {
 		PRC = {
 			controls_state = 1215
 		}
@@ -1022,9 +1017,10 @@ PRC_shanghai_city = {
 	local_supplies = 0.1
 	mobilization_speed = 0.1
 }
+
 PRC_xiongan_city = {
 	icon = GFX_modifiers_PRC_xiongan
-	enable = { 
+	enable = {
 		PRC = {
 			controls_state = 1421
 		}
@@ -1034,6 +1030,7 @@ PRC_xiongan_city = {
 	local_supplies = 0.1
 	mobilization_speed = 0.1
 }
+
 PRC_special_economic_zone = {
 	icon = GFX_modifiers_PRC_economic_zone
 	enable = {
@@ -1046,6 +1043,7 @@ PRC_special_economic_zone = {
 	local_supplies = 0.05
 	local_manpower = 0.02
 }
+
 PRC_national_new_zone = {
 	icon = GFX_modifiers_PRC_economic_zone
 	enable = {
@@ -1056,10 +1054,10 @@ PRC_national_new_zone = {
 	local_supplies = 0.05
 	local_manpower = 0.02
 }
+
 PRC_taiwan_autonomous_region = {
 	icon = GFX_modifiers_PRC_taiwan_autonomous_region
-	
-	enable = { 
+	enable = {
 		PRC = {
 			controls_state = 1148
 		}
@@ -1069,10 +1067,10 @@ PRC_taiwan_autonomous_region = {
 	local_supplies = -0.025
 	mobilization_speed = 0.03
 }
+
 PRC_hong_kong = {
 	icon = GFX_modifiers_PRC_hong_kong
-	
-	enable = { 
+	enable = {
 		PRC = {
 			controls_state = 326
 		}
@@ -1082,10 +1080,10 @@ PRC_hong_kong = {
 	local_building_slots = 1
 	state_resources_factor = -0.25
 }
+
 PRC_macau = {
 	icon = GFX_modifiers_PRC_macau
-	
-	enable = { 
+	enable = {
 		PRC = {
 			controls_state = 729
 		}
@@ -1095,9 +1093,9 @@ PRC_macau = {
 	local_building_slots = 1
 	state_resources_factor = -0.25
 }
+
 PRC_model_socialist_city = {
 	icon = GFX_modifiers_PRC_model_socialist_city
-	
 	enable = {
 		always = yes
 	}
@@ -1107,9 +1105,9 @@ PRC_model_socialist_city = {
 	state_resources_factor = 0.1
 	local_supplies = 0.05
 }
+
 PRC_peoples_commune = {
 	icon = GFX_modifiers_PRC_model_socialist_city
-	
 	enable = {
 		always = yes
 	}
@@ -1119,10 +1117,10 @@ PRC_peoples_commune = {
 	mobilization_speed = 0.1
 	state_production_speed_buildings_factor = 0.02
 }
+
 PRC_liberal_sez = {
 	icon = GFX_modifiers_PRC_liberal_sez
-	
-	enable = { 
+	enable = {
 		always = yes
 	}
 	local_factories = 0.1
@@ -1131,10 +1129,10 @@ PRC_liberal_sez = {
 	local_building_slots = 2
 	state_resources_factor = 0.1
 }
+
 PRC_taiwan = {
 	icon = GFX_modifiers_PRC_taiwan
-	
-	enable = { 
+	enable = {
 		PRC = {
 			controls_state = 1148
 		}
@@ -1147,9 +1145,10 @@ PRC_taiwan = {
 
 PRC_non_combat_area = {
 	icon = GFX_modifiers_unplanned_offensive
-	enable = { always = yes }
+	enable = {
+		always = yes
+	}
 	attacker_modifier = yes
-
 	army_attack_factor = -99.9
 	army_defence_factor = -99.9
 	army_attack_speed_factor = -99.9
@@ -1158,9 +1157,9 @@ PRC_non_combat_area = {
 
 PRC_korean_war_modifer = {
 	icon = GFX_modifiers_unplanned_offensive
-	enable = { 
+	enable = {
 		NOT = {
-			has_global_flag = PRC_operation_changma_dec_global 
+			has_global_flag = PRC_operation_changma_dec_global
 		}
 	}
 	army_attack_factor = -0.25
@@ -1170,12 +1169,11 @@ PRC_korean_war_modifer = {
 
 PRC_korean_war_modifer2 = {
 	icon = GFX_modifiers_unplanned_offensive
-	enable = { 
+	enable = {
 		NOT = {
-			has_global_flag = PRC_operation_changma_dec_global 
+			has_global_flag = PRC_operation_changma_dec_global
 		}
 	}
-
 	army_attack_factor = -0.35
 	army_defence_factor = 0.15
 	army_speed_factor = -0.35
@@ -1184,12 +1182,11 @@ PRC_korean_war_modifer2 = {
 
 PRC_korean_war_modifer3 = {
 	icon = GFX_modifiers_unplanned_offensive
-	enable = { 
+	enable = {
 		NOT = {
-			has_global_flag = PRC_operation_changma_dec_global 
+			has_global_flag = PRC_operation_changma_dec_global
 		}
 	}
-
 	army_attack_factor = -0.15
 	army_defence_factor = 0.075
 	army_speed_factor = -0.15
@@ -1198,9 +1195,10 @@ PRC_korean_war_modifer3 = {
 
 PRC_unplanned_offensive = {
 	icon = GFX_modifiers_unplanned_offensive
-	enable = { always = yes }
+	enable = {
+		always = yes
+	}
 	attacker_modifier = yes
-
 	air_cas_present_factor = -0.5
 	army_attack_factor = -0.5
 	army_attack_speed_factor = -0.5
