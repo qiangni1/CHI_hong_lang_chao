@@ -16,7 +16,7 @@ focus_tree = {
 		id = PLA_when_that_day_comes
 		icon = GFX_focus_PRC_establish_eadi
 		x = 0
-		y = 0
+		y = 1
 		cost = 1
 		ai_will_do = {
 			base = 25
@@ -4551,6 +4551,9 @@ focus_tree = {
 		y = 3
 		relative_position_id = PRC_nl_dawn_project
 		completion_reward = {
+			unlock_decision_tooltip = PRC_project_the_long_march_phase_1
+			unlock_decision_tooltip = PRC_project_the_long_march_phase_2
+			unlock_decision_tooltip = PRC_project_the_long_march_phase_3
 			unlock_decision_category_tooltip = PRC_loji_category
 		}
 	}

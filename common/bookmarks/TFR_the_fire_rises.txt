@@ -4,106 +4,8 @@ bookmarks = {
 		desc = "FIRE_NAME_DESC"
 		date = 2020.1.1.1
 		picture = "GFX_select_date_2020"
-		default_country = "USA"
+		default_country = "PRC"
 		default = yes
-		
-		"USA" = {
-			history = "USA_GATHERING_STORM_DESC"
-			ideology = conservative
-			ideas = {
-				USA_political_division
-				USA_world_police_idea
-				USA_political_establishment
-			}
-			focuses = {
-				USA_side_against_trump
-				USA_state_of_the_union
-				USA_side_with_trump
-			}
-		}
-		
-		#"ENG" = {
-		#	history = "ENG_GATHERING_STORM_DESC"
-		#	ideology = conservative
-		#	ideas = {
-		#		ENG_nato_leader_idea
-		#		ENG_eu_gambit_idea
-		#		ENG_low_conservative_government_confidence_idea
-		#	}
-		#	focuses = {
-		#	}
-		#}
-		
-		"JAP" = {
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = conservative
-			ideas = {
-				JAP_japanese_pacifism_idea
-				JAP_aging_population_idea
-				JAP_keiretsu_control_idea
-			}
-			focuses = {
-				JAP_japan_on_the_world_stage
-				JAP_deal_with_the_pandemic
-				JAP_revise_article_9
-			}
-		}
-		
-		#"RAJ" = {
-		#	history = "RAJ_GATHERING_STORM_DESC"
-		#	ideology = conservative
-		#	ideas = {
-		#
-		#	}
-		#	focuses = {
-		#
-		#	}
-		#}
-		
-		"FRA" = {
-			history = "FRA_GATHERING_STORM_DESC"
-			ideology = social_liberal
-			ideas = {
-				FRA_french_spirit_idea
-				FRA_mass_migration_idea
-				FRA_ENA_idea
-			}
-			focuses = {
-				FRA_criticize_the_eu
-				FRA_support_european_federalization
-				FRA_the_french_armed_forces
-			}
-		}
-		
-		"GER" = {
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = conservative
-			ideas = {
-				GER_german_legacy_idea
-				GER_bundeswehr_shortcomings_idea
-				GER_merkelreich_idea
-			}
-			focuses = {
-				GER_bulwark_of_democracy
-				GER_europe_united
-				GER_empower_the_chancellor
-			}
-		}
-		
-		"SOV" = {
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = authoritarian_democrat
-			ideas = {
-				SOV_heavy_sanctions 
-				SOV_kleptocratic_state 
-				SOV_The_Petrol_Economy
-			}
-			focuses = {
-				SOV_1000_years_of_putinism
-				SOV_the_russian_dream
-				SOV_sanction_proof_economy
-			}
-		}
 		
 		"PRC" = {
 			history = "PRC_GATHERING_STORM_DESC"
@@ -119,22 +21,6 @@ bookmarks = {
 				PRC_nl_rebuild_proletarian_dictatorship
 			}
 		}
-		
-		#"PRK" = {
-		#	minor = yes
-		#	history = "ICE_GATHERING_STORM_DESC"
-		#	ideology = totalitarian_socialist
-		#	ideas = {
-		#		PRK_power_shortages
-		#		PRK_bloated_military_budget
-		#		PRK_militarized_society
-		#	}
-		#	focuses = {
-		#		PRK_the_leaders_health
-		#		PRK_prepare_for_war
-		#		PRK_fortify_pyongyang
-		#	}
-		#}
 		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

@@ -3345,9 +3345,10 @@ PRC_new_left_pla_space_force = {
 PLA_jueyileibie = {
 	#以上需写入categories
 	PLA_block_flood_of_enemy_information_des = {
-		icon = GFX_
+		icon = GFX_decision_SOV_expand_satellite_launching_programme
 		#图标未定
 		available = {
+			has_global_flag = pan_asian_war_ongoing
 		}
 		visible = {
 			has_completed_focus = PAL_block_flood_of_enemy_information

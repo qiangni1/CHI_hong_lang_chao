@@ -20997,7 +20997,7 @@ PRC_loji_category = {
 	PRC_project_the_long_march_phase_1 = {
 		visible = {
 			hidden_trigger = {
-				has_completed_focus = PRC_ai_assisted_governance
+				has_completed_focus = PRC_nl_long_march_plan
 			}
 		}
 		icon = GFX_PRC_decision_industrial_expension
