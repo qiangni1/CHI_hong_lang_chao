@@ -6527,6 +6527,10 @@ PRC_solve_economy_crisis = {
 			}
 			PRC_reserve_fund_one_new = yes
 			country_event = PRC_nl.104
+			country_event = {
+				id = prcs.31
+				days = 3
+			}
 			set_country_flag = PRC_mobilize_grassroots_organizations_yes
 		}
 	}
@@ -6571,7 +6575,14 @@ PRC_solve_economy_crisis = {
 				PRC_reserve_fund_new_dagoujiao = -5
 			}
 			PRC_reserve_fund_one_new = yes
-			country_event = PRC_nl.106
+			country_event = {
+				id = prcs.30
+				days = 5
+			}
+			country_event = {
+				id = prcs.32
+				days = 3
+			}
 			set_country_flag = PRC_control_nationwide_public_opinion_yes
 		}
 	}
@@ -6688,7 +6699,10 @@ PRC_solve_economy_crisis = {
 			}
 			custom_effect_tooltip = PRC_ezhiweiji_tooltip
 			PRC_reserve_fund_one_new = yes
-			country_event = PRC_nl.108
+			country_event = {
+				id = prcs.33
+				days = 4
+			}
 			set_country_flag = PRC_emergency_supply_chain_coordination_yes
 		}
 	}
@@ -6986,7 +7000,7 @@ PRC_solve_economy_crisis = {
 			set_global_flag = TFR_PRC_crists_completed
 			custom_effect_tooltip = PRC_end_jingji
 			country_event = {
-				id = PRC_nl.109
+				id = prcs.34
 				days = 2
 			}
 		}

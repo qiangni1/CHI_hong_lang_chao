@@ -161,6 +161,10 @@ country_event = {
 	desc = prcs.9.d
 	is_triggered_only = yes
 	option = {
+		country_event = {
+			id = prcs.9
+			days = 7
+		}
 		set_stability = 0.05
 		name = prcs.9.a
 	}
@@ -451,6 +455,13 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		add_political_power = -25
+		add_stability = -0.05
+		set_temp_variable = {
+			var = PRC_influence_new_var_temp
+			value = 0.025
+		}
+		PRC_add_influence_new = yes
+		country_event = prcs.35
 		name = prcs.30.a
 	}
 }
@@ -463,12 +474,14 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = prcs.31.a
+		country_event = prcs.9
 		set_temp_variable = {
 			var = PRC_influence_new_var_temp
-			value = 0.05
+			value = 0.045
 		}
 		PRC_add_influence_new = yes
 		add_political_power = 50
+		add_stability = 0.095
 	}
 }
 
@@ -515,7 +528,7 @@ country_event = {
 	desc = prcs.33.d
 	is_triggered_only = yes
 	option = {
-		add_stability = -0.05
+		add_stability = -0.015
 		set_temp_variable = {
 			var = PRC_influence_new_var_temp			#新左派影响力+7.5%
 			value = 0.075
@@ -558,6 +571,8 @@ country_event = {
 	desc = prcs.35.d
 	is_triggered_only = yes
 	option = {
+		add_political_power = -35
+		add_stability = -0.025
 		name = prcs.35.a
 	}
 }
