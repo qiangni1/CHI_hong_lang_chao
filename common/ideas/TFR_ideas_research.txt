@@ -621,7 +621,7 @@ ideas = {
 			}
 		}
 		communist_vision_idea = {
-			picture = GFX_idea_PRC_marxist_democracy
+			picture = PRC_future_of_cyber_communism_idea
 
 			allowed = {
 				always = no

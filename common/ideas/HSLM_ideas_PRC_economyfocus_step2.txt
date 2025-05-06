@@ -263,7 +263,7 @@ ideas = {
 			}
 		}
 		PRC_nl_shining_proletarian_democracy_idea = {
-			picture = GFX_idea_PRC_made_in_china
+			picture = PRC_peoples_democracy_idea
 			name = PRC_nl_shining_proletarian_democracy
 			allowed = {
 				always = no
@@ -284,7 +284,7 @@ ideas = {
 			}
 		}
 		PRC_nl_shining_proletarian_democracy_2_idea = {
-			picture = GFX_idea_PRC_made_in_china
+			picture = PRC_peoples_democracy_idea
 			name = PRC_nl_shining_proletarian_democracy
 			allowed = {
 				always = no
@@ -308,7 +308,7 @@ ideas = {
 			}
 		}
 		PRC_nl_shining_proletarian_democracy_3_idea = {
-			picture = GFX_idea_PRC_made_in_china
+			picture = PRC_peoples_democracy_idea
 			name = PRC_nl_shining_proletarian_democracy
 			allowed = {
 				always = no
@@ -333,7 +333,7 @@ ideas = {
 			}
 		}
 		PRC_nl_shining_proletarian_democracy_4_idea = {
-			picture = GFX_idea_PRC_made_in_china
+			picture = PRC_peoples_democracy_idea
 			name = PRC_nl_shining_proletarian_democracy
 			allowed = {
 				always = no
@@ -362,7 +362,7 @@ ideas = {
 			}
 		}
 		PRC_nl_go_to_proletarian_democracy_idea = {
-			picture = GFX_idea_PRC_national_peoples_congress_dynamic
+			picture = PRC_national_peoples_congress_dynamic
 			name = PRC_nl_go_to_proletarian_democracy
 			allowed = {
 				always = no
