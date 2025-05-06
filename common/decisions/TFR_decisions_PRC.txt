@@ -5013,6 +5013,18 @@ PRC_maoist_politburo_cat = {
 					remove_idea = PRC_made_in_china_dummy_idea0
 					add_idea = PRC_nl_jingji5_d1_idea
 				}
+				if = {
+					limit = {
+						has_country_flag = PRC_nl_condition_jingji10_flag
+					}
+					swap_ideas = {
+						remove_idea = PRC_nl_jingji5_d0_idea
+						add_idea = PRC_nl_jingji5_d1a_idea
+					}
+				}
+				else = {
+					add_ideas = PRC_nl_jingji5_d1a_idea
+				}
 			}
 			add_to_variable = {
 				var = PRC_mic_production_speed_buildings_factor_dynamic_var
@@ -5026,7 +5038,14 @@ PRC_maoist_politburo_cat = {
 				var = PRC_mic_industrial_capacity_dockyard_dynamic_var
 				value = 0.1
 			}
-			add_ideas = PRC_nl_jingji5_d1a_idea
+			add_to_variable = {
+				var = PRC_PXF_political_power_gain_dynamic_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = PRC_PXF_industrial_development_monthly_dynamic_var
+				value = 0.005
+			}
 			set_country_flag = PRC_nl_condition_jingji9_flag
 		}
 	}
@@ -5054,6 +5073,18 @@ PRC_maoist_politburo_cat = {
 					remove_idea = PRC_made_in_china_dummy_idea0
 					add_idea = PRC_nl_jingji6_d1_idea
 				}
+				if = {
+					limit = {
+						has_country_flag = PRC_nl_condition_jingji9_flag
+					}
+					swap_ideas = {
+						remove_idea = PRC_nl_jingji5_d0_idea
+						add_idea = PRC_nl_jingji6_d1b_idea
+					}
+				}
+				else = {
+					add_ideas = PRC_nl_jingji6_d1b_idea
+				}
 			}
 			add_to_variable = {
 				var = PRC_mic_conscription_factor_dynamic_var
@@ -5067,9 +5098,13 @@ PRC_maoist_politburo_cat = {
 				var = PRC_mic_personal_value_factor_dynamic_var
 				value = 0.1
 			}
-			swap_ideas = {
-				remove_idea = PRC_nl_jingji5_d1a_idea
-				add_idea = PRC_nl_jingji6_d1b_idea
+			add_to_variable = {
+				var = PRC_PXF_political_power_gain_dynamic_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = PRC_PXF_farming_development_monthly_dynamic_var
+				value = 0.005
 			}
 			set_country_flag = PRC_nl_condition_jingji10_flag
 		}
