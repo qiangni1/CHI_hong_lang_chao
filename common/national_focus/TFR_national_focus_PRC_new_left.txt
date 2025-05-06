@@ -4132,9 +4132,6 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = PRC_for_policy_tree_available
 		}
-		prerequisite = {
-			focus = PRC_nl_red_wave_surge
-		}
 		x = 50
 		y = 1
 		completion_reward = {
@@ -4993,7 +4990,6 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_society_development = yes
-			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = PRC_nl_shining_proletarian_democracy_idea
 					add_idea = PRC_nl_shining_proletarian_democracy_2_idea
@@ -5002,7 +4998,6 @@ focus_tree = {
 					remove = hos_red_dragon_rider
 					add = hos_red_dragon_rider_nl
 				}
-			}
 		}
 	}
 	focus = {
