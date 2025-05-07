@@ -81,7 +81,6 @@ PRC_Global_Red_Tide_cat = {
 
 PRC_mongolia_hetong = {
 	# 蒙古和平统一
-	visible_when_empty = yes
 	icon = GFX_decision_category_jap_intervene_in_china
 	scripted_gui = PRC_mongolia_hetong_dec
 	visible = {

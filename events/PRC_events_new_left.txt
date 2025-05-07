@@ -1385,8 +1385,6 @@ country_event = {
 				add_core_of = PRC
 			}
 		}
-		clr_country_flag = PRC_mongolia_hetong_flag_1
-		clr_country_flag = PRC_mongolia_hetong_flag
 		annex_country = {
 			target = MON
 			transfer_troops = yes
@@ -1418,8 +1416,6 @@ country_event = {
 				add_core_of = PRC
 			}
 		}
-		clr_country_flag = PRC_mongolia_hetong_flag_1
-		clr_country_flag = PRC_mongolia_hetong_flag
 		declare_war_on = {
 			target = MON
 			type = annex_everything

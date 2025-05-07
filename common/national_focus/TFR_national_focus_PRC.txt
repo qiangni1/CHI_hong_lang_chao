@@ -6571,6 +6571,11 @@ shared_focus = {
 			is_controlled_by_ROOT_or_ally = yes
 		}
 	}
+	bypass = {
+		NOT = {
+			country_exists = INS
+		}
+	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus PRC_operation_southern_fury completion_reward"
 		unlock_decision_tooltip = PRC_operation_samosir_dec
