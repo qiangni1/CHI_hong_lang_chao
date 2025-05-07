@@ -424,6 +424,13 @@ country_event = {
 	option = {
 		name = prcs.28.a
 		add_ideas = PRC_Wang_Huning
+		hidden_effect = {
+			country_event = {
+				id = prcs.29
+				days = 2
+				random_days = 2
+			}
+		}
 	}
 	major = no
 }
@@ -436,9 +443,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = prcs.29.a
+		add_ideas = PRC_Ma_xingrui
 	}
 	option = {
 		name = prcs.29.b
+		add_ideas = PRC_Collective_Leadership_int
 	}
 	major = no
 }
