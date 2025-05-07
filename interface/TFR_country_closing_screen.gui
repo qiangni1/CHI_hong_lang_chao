@@ -25,7 +25,7 @@ guiTypes = {
 				name = "title"
 				position = { x = 0 y = 40 }
 				text = "[Get_TFR_CountryClosing_title]"
-				font = "Bomb_36"
+				font = "VCR02_26"
 				maxwidth = 467
 				format = center
 				text_color_code = W
