@@ -35,4 +35,8 @@ spriteTypes = {
 		name = "GFX_idea_auto_communism"
 		texturefile = "gfx/interface/ideas/PRC/auto_communism.png"
 	}
+	spriteType = {
+		name = "GFX_PRC_liberation_international_faction"
+		texturefile = "gfx/interface/PRC_liberation_international.png"
+	}
 }
