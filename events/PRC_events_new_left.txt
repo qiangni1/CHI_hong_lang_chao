@@ -161,7 +161,7 @@ country_event = {
 	desc = prcs.9.d
 	is_triggered_only = yes
 	option = {
-		add_stability = 0.05
+		add_stability = -0.05
 		name = prcs.9.a
 	}
 }

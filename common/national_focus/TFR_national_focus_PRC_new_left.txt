@@ -1917,7 +1917,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PLA_start_again_new
 		}
-		#relative_position_id = PLA_start_again_new
+		relative_position_id = PLA_when_that_day_comes
 		#relative_position_id = PLA_equipment_perfect_new
 		x = 0
 		y = 8

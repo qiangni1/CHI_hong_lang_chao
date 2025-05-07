@@ -1389,7 +1389,7 @@ ideas = {
 		}
 
 		PRC_teacher_the_gardener_idea = {
-			picture = PRC_socialist_chinese_dream
+			picture = PRC_chinese_dream
 			allowed = {
 				always = no
 			}
