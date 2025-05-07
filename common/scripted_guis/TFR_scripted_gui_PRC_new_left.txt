@@ -22,6 +22,7 @@ scripted_gui = {
 	TFR_jingji_weiji_nl = {
 		window_name = "TFR_jingji_weiji_nl"
 		context_type = decision_category
+		parent_window_name = decision_container
 		properties = {
 			PRC_new_left_tfr_dingdongji = {
 				frame = PRC_zuihuudeshengl
