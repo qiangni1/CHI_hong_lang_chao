@@ -1,6 +1,6 @@
 spriteTypes = {
 	SpriteType = {
-		name = "GFX_focus_PRC_chaqingta"
+		name = "GFX_focus_PRC_chaqingta_shine"
 		texturefile = "gfx/interface/goals/PRC/PRC_chaqingta.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

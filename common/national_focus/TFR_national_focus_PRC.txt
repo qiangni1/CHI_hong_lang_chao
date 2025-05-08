@@ -636,7 +636,6 @@ focus_tree = {
 			add_society_development = yes
 		}
 	}
-
 	focus = {
 		id = PRC_lockdown_wuhan
 		icon = GFX_focus_PRC_lockdown_wuhan
@@ -1299,7 +1298,6 @@ focus_tree = {
 		}
 	}
 	#Oil Crisis
-	
 	focus = {
 		id = PRC_manage_financial_crisis
 		icon = GFX_focus_PRC_stabilize_the_situation
@@ -1325,10 +1323,8 @@ focus_tree = {
 			focus = PRC_manage_financial_crisis
 		}
 		completion_reward = {
-		
 		}
 	}
-
 	focus = {
 		id = PRC_restructure
 		icon = GFX_focus_PRC_crack_down_on_reformist_protesters
@@ -1340,10 +1336,8 @@ focus_tree = {
 			focus = PRC_manage_financial_crisis
 		}
 		completion_reward = {
-		
 		}
 	}
-
 	focus = {
 		id = PRC_dump_us_bonds
 		icon = GFX_focus_PRC_crack_down_on_left_radicals
@@ -1355,10 +1349,8 @@ focus_tree = {
 			focus = PRC_manage_financial_crisis
 		}
 		completion_reward = {
-			
 		}
 	}
-
 	focus = {
 		id = PRC_six_guarantees_stable
 		icon = GFX_focus_PRC_a_nuclear_revolution
@@ -1373,10 +1365,8 @@ focus_tree = {
 			focus = PRC_restructure
 		}
 		completion_reward = {
-		
 		}
 	}
-
 	focus = {
 		id = PRC_stable_real_estate
 		icon = GFX_focus_PRC_stabilize_the_situation
@@ -1403,7 +1393,6 @@ focus_tree = {
 			add_society_development = yes
 		}
 	}
-
 	focus = {
 		id = PRC_epidemic_bonds
 		icon = GFX_focus_PRC_empower_the_50_cent_army
@@ -1427,7 +1416,6 @@ focus_tree = {
 			add_political_power = 25
 		}
 	}
-
 	focus = {
 		id = PRC_support_smes
 		icon = GFX_focus_PRC_contain_the_damage
@@ -1446,7 +1434,6 @@ focus_tree = {
 			add_political_power = 25
 		}
 	}
-
 	focus = {
 		id = PRC_hainan_free_trade
 		icon = GFX_focus_PRC_a_renewable_revolution
@@ -1464,7 +1451,6 @@ focus_tree = {
 			add_political_power = 25
 		}
 	}
-
 	focus = {
 		id = PRC_boost_consumption
 		icon = GFX_focus_PRC_rejuvinate_the_nation
@@ -1490,7 +1476,6 @@ focus_tree = {
 			add_stability = 5
 		}
 	}
-
 	focus = {
 		id = PRC_dual_circulation
 		icon = GFX_focus_PRC_gambit_in_the_gulf
@@ -1509,7 +1494,6 @@ focus_tree = {
 			add_debt_with_inflation = yes
 		}
 	}
-
 	focus = {
 		id = PRC_self_control_chain
 		icon = GFX_focus_PRC_diversify_the_oil_trade
@@ -1534,7 +1518,6 @@ focus_tree = {
 			add_industrial_development = yes
 		}
 	}
-
 	focus = {
 		id = PRC_cjk_trade_zone
 		icon = GFX_focus_PRC_south_china_sea_expansion
@@ -1549,7 +1532,6 @@ focus_tree = {
 			add_political_power = 50
 		}
 	}
-
 	focus = {
 		id = PRC_deep_reforms
 		icon = GFX_focus_PRC_southeast_asian_bailout_package
@@ -1567,7 +1549,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = PRC_expand_belt_road
 		icon = GFX_focus_PRC_search_for_domestic_oil_sources
@@ -1583,7 +1564,6 @@ focus_tree = {
 			add_political_power = 50
 		}
 	}
-
 	focus = {
 		id = PRC_end_financial_crisis
 		icon = GFX_focus_PRC_stabilize_the_political_sphere
@@ -1610,7 +1590,6 @@ focus_tree = {
 			add_industrial_development = yes
 		}
 	}
-
 	focus = {
 		id = PRC_curb_oil_crisis
 		icon = GFX_focus_PRC_curb_oil_crisis
@@ -5288,7 +5267,6 @@ shared_focus = {
 	}
 }
 
-
 shared_focus = {
 	id = PRC_rebuild_japan
 	icon = GFX_focus_PRC_Rebuild_Japan
@@ -5329,9 +5307,6 @@ shared_focus = {
 			JAP = {
 				has_capitulated = yes
 			}
-			JAP = {
-				is_ally_with = PRC
-			}
 		}
 		NOT = {
 			has_government = fascist
@@ -5341,7 +5316,26 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: focus PRC_revenge_for_nanking completion_reward"
 		country_event = china.1012
 		custom_effect_tooltip = PRC_rebuild_japan_tt
-		JAP = {
+		if = {
+			limit = {
+				NOT = {
+					country_exists = JPL
+				}
+			}
+			PRC = {
+				every_controlled_state = {
+					limit = {
+						is_controlled_by = PRC
+						is_core_of = JAP
+					}
+					transfer_state_to = JPL
+					set_state_owner_to = JPL
+					set_state_controller_to = JPL
+					add_core_of = JPL
+				}
+			}
+		}
+		JPL = {
 			set_cosmetic_tag = JAP_PRC_puppet
 			add_timed_idea = {
 				idea = PRC_JAP_mass_repair_company_idea
@@ -5349,7 +5343,7 @@ shared_focus = {
 			}
 			effect_tooltip = {
 				set_politics = {
-					ruling_party = libertarian_socialist
+					ruling_party = totalitarian_socialist
 					long_name = JAP_PRC_puppet_party_long
 					name = JAP_PRC_puppet_party
 				}
@@ -5361,14 +5355,14 @@ shared_focus = {
 		}
 		add_debt_with_inflation = yes
 		hidden_effect = {
-			puppet = JAP
+			puppet = JPL
 			TOK = {
 				set_nationality = {
-					target_country = JAP
+					target_country = JPL
 					character = TOK_toru_miyamoto_char
 				}
 			}
-			JAP = {
+			JPL = {
 				promote_character = {
 					character = TOK_toru_miyamoto_char
 					ideology = eurocommunism
@@ -5388,17 +5382,6 @@ shared_focus = {
 					ruling_party = libertarian_socialist
 					long_name = JAP_PRC_puppet_party_long
 					name = JAP_PRC_puppet_party
-				}
-				remove_ideas = {
-					JAP_red_menace
-					JAP_liberal_one_party_state_2
-					JAP_liberal_one_party_state_party_over_state
-					JAP_state_national_emergency
-					JAP_state_national_emergency_jsdf
-					JAP_persecution_radicalism
-					JAP_state_national_emergency_uncontested
-					JAP_anti_prc_propaganda_idea
-					JAP_zengakuren_mobilisation_idea
 				}
 			}
 			1338 = {
@@ -5517,7 +5500,6 @@ shared_focus = {
 		event_option_tooltip = china.1010.a
 	}
 }
-
 
 shared_focus = {
 	id = PRC_appeal_to_the_chinese_people_gaw
@@ -6366,8 +6348,6 @@ shared_focus = {
 	}
 }
 
-
-
 shared_focus = {
 	id = PRC_kashmir_road
 	icon = GFX_focus_PRC_kashmir_road
@@ -6572,8 +6552,11 @@ shared_focus = {
 		}
 	}
 	bypass = {
-		NOT = {
-			country_exists = INS
+		OR = {
+			is_ally_with = INS
+			NOT = {
+				country_exists = INS
+			}
 		}
 	}
 	completion_reward = {
@@ -6605,6 +6588,11 @@ shared_focus = {
 	available = {
 		336 = {
 			is_controlled_by_ROOT_or_ally = yes
+		}
+	}
+	bypass = {
+		OR = {
+			is_ally_with = MAL
 		}
 	}
 	completion_reward = {
