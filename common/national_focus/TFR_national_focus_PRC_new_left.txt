@@ -5015,8 +5015,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = PRC_nl_proletarian_democracy
 		completion_reward = {
-			custom_effect_tooltip = soc_lib_coalition_tip
-			custom_effect_tooltip = PRC_nl_go_to_democrat_tt
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+			set_temp_variable = { 
+				coalition_partner_var_temp = token:social_liberal
+			}
+			add_to_coalition = yes
 			modify_timed_idea = {
 				idea = PRC_nl_go_to_proletarian_democracy_idea
 				days = -30
@@ -5500,7 +5506,7 @@ focus_tree = {
 		id = PRC_nl_socialist_modernization
 		icon = GFX_focus_PRC_freedom_provinces_initiative
 		cost = 3
-		x = 6
+		x = 5
 		y = 1
 		relative_position_id = PRC_nl_road_to_future
 		prerequisite = {

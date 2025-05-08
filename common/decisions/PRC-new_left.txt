@@ -2767,6 +2767,7 @@ PRC_ussr_diplomacy = {
 		modifier = {
 		}
 		complete_effect = {
+			custom_effect_tooltip = PRC_ussr_diplomacy_tt
 		}
 		ai_will_do = {
 			base = 10

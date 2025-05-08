@@ -16116,13 +16116,18 @@ PRC_great_asian_war = {
 				target = JAP
 				type = annex_everything
 			}
-			PRC = {
-				add_to_faction = PRK
-			}
 			PRK = {
 				set_country_flag = eadi_member
 			}
-			news_event = news.346
+			if = {
+				limit = {
+					has_completed_focus = Promote_the_thawing_of_DPRK
+				}
+				PRC = {
+					add_to_faction = PRK
+				}
+				news_event = news.346
+			}
 			country_event = {
 				id = china.1008
 				hours = 6
@@ -17321,6 +17326,97 @@ PRC_great_asian_war = {
 		}
 		ai_will_do = {
 			base = 100
+		}
+	}
+	PRC_final_chance_thermonuclear = {
+		icon = GFX_decision_generic_deploy_nukes
+		available = {
+			surrender_progress > 0.3
+			has_war_with = JAP
+		}
+		visible = {
+			has_country_flag = PRC_put_the_nuclear_arsenal_on_full_operational_alert_flag
+		}
+		fire_only_once = yes
+		cost = 10
+		days_remove = 3
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRC_thermonuke_japan_tt
+			launch_nuke = {
+				province = 9950
+				controller = JAP
+				nuke_type = thermonuclear_bomb
+			}
+			launch_nuke = {
+				province = 1092
+				controller = JAP
+				nuke_type = thermonuclear_bomb
+			}
+			launch_nuke = {
+				province = 11960
+				controller = JAP
+				nuke_type = thermonuclear_bomb
+			}
+			launch_nuke = {
+				province = 1182
+				controller = JAP
+				nuke_type = thermonuclear_bomb
+			}
+			launch_nuke = {
+				province = 14704
+				controller = JAP
+				nuke_type = thermonuclear_bomb
+			}
+			JAP = {
+				country_event = china.360
+			}
+			news_event = {
+				id = china.361
+				hours = 5
+			}
+			hidden_effect = {
+				sound_effect = siren_sound_effect
+				every_country = {
+					goto_state = 1332
+				}
+				every_state = {
+					limit = {
+						OR = {
+							state = 528
+							state = 529
+							state = 531
+							state = 1332
+							state = 533
+						}
+					}
+					remove_dynamic_modifier = {
+						modifier = fallout_atomic
+					}
+					add_dynamic_modifier = {
+						modifier = fallout_thermonuclear
+						days = 730
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 15
+			modifier = {
+    		    add = 75
+    		    JAP = {
+					has_country_flag = RAJ_nukes_allowed
+				}
+    		}
+			modifier = {
+    		    add = 100
+    		    has_global_flag = RAJ_beijing_bombed
+    		}
+			modifier = {
+    		    add = 50
+    		    has_global_flag = RAJ_shanghai_bombed
+    		}
 		}
 	}
 	PRC_put_the_nuclear_arsenal_on_full_operational_alert = {

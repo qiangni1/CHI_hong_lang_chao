@@ -5183,7 +5183,7 @@ shared_focus = {
 	id = PRC_chinas_greatest_hour
 	icon = GFX_focus_PRC_chinas_greatest_hour
 	x = 68
-	y = 10
+	y = 9
 	cost = 5
 	available_if_capitulated = yes
 	ai_will_do = {
@@ -5343,7 +5343,7 @@ shared_focus = {
 			}
 			effect_tooltip = {
 				set_politics = {
-					ruling_party = totalitarian_socialist
+					ruling_party = communist
 					long_name = JAP_PRC_puppet_party_long
 					name = JAP_PRC_puppet_party
 				}
@@ -5379,7 +5379,7 @@ shared_focus = {
 					libertarian_socialist = 37.6
 				}
 				set_politics = {
-					ruling_party = libertarian_socialist
+					ruling_party = communist
 					long_name = JAP_PRC_puppet_party_long
 					name = JAP_PRC_puppet_party
 				}
@@ -5422,7 +5422,7 @@ shared_focus = {
 					}
 				}
 			}
-			has_completed_focus = PRC_down_to_earth
+			has_completed_focus = Moving_towards_victory
 		}
 		OR = {
 			NOT = {
@@ -5621,8 +5621,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: focus PRC_all_chinese_mobilization completion_reward"
 		country_event = china.1015
 		if = {
-			limit
-			{
+			limit = {
 				NOT = {
 					has_idea = total_mobilization
 				}
