@@ -2027,7 +2027,7 @@ focus_tree = {
 		relative_position_id = Rekindle_the_world_revolution
 		x = -5
 		y = 1
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = Rekindle_the_world_revolution
@@ -2094,7 +2094,7 @@ focus_tree = {
 		relative_position_id = Sparks_on_the_MekongRiver
 		x = 0
 		y = 1
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = Sparks_on_the_MekongRiver
@@ -2170,7 +2170,7 @@ focus_tree = {
 		relative_position_id = Rekindle_the_world_revolution
 		x = -3
 		y = 1
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = Rekindle_the_world_revolution
@@ -2193,7 +2193,7 @@ focus_tree = {
 		relative_position_id = Rekindle_the_world_revolution
 		x = -1
 		y = 1
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = Rekindle_the_world_revolution
@@ -2263,7 +2263,7 @@ focus_tree = {
 		relative_position_id = Rekindle_the_world_revolution
 		x = 2
 		y = 1
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = Rekindle_the_world_revolution
@@ -2337,7 +2337,7 @@ focus_tree = {
 		relative_position_id = Rekindle_the_world_revolution
 		x = 2
 		y = 2
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = Responding_to_the_people_of_the_subcontinent
@@ -2402,7 +2402,7 @@ focus_tree = {
 		relative_position_id = Rekindle_the_world_revolution
 		x = 6
 		y = 1
-		cost = 5
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = Establishment_the_channel
@@ -2423,7 +2423,7 @@ focus_tree = {
 		relative_position_id = Begonia_old_dreams
 		x = -1
 		y = 1
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		mutually_exclusive = {
 			focus = Liberation_of_Mongolia
@@ -2448,7 +2448,7 @@ focus_tree = {
 		relative_position_id = Begonia_old_dreams
 		x = 1
 		y = 1
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		mutually_exclusive = {
 			focus = Referendum_in_Mongolia
@@ -2474,7 +2474,7 @@ focus_tree = {
 		relative_position_id = Referendum_in_Mongolia
 		x = 0
 		y = 1
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		mutually_exclusive = {
 			focus = Beware_of_giant_bears
@@ -2518,7 +2518,7 @@ focus_tree = {
 		relative_position_id = Liberation_of_Mongolia
 		x = 0
 		y = 1
-		cost = 3
+		cost = 2
 		available_if_capitulated = yes
 		mutually_exclusive = {
 			focus = Lenins_promises
@@ -2674,14 +2674,12 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			remove_power_balance = {
+				id = PRC_power_balance
+			}
 			swap_ruler_traits = {
 				remove = hos_red_dragon_rider
 				add = hos_red_dragon_rider_hu				#在country_leader中新写的领导人特性
-			}
-			#中国收复台湾 超事件
-			country_event = {
-				id = news.356
-				days = 1
 			}
 			#台湾军管 事件 不是维持军管，似乎应该是此事件
 			country_event = {
@@ -2912,7 +2910,7 @@ focus_tree = {
 	focus = {
 		id = PRC_nl_clean_house
 		icon = GFX_focus_PRC_cutdown_party_bureaucracy
-		cost = 7
+		cost = 5
 		allow_branch = {
 			has_country_flag = PRC_for_policy_tree_available
 		}
@@ -4135,7 +4133,7 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = PRC_for_policy_tree_available
 		}
-		x = 50
+		x = 49
 		y = 1
 		completion_reward = {
 			add_to_variable = {
@@ -4174,7 +4172,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_road_to_future
 		}
-		x = -13
+		x = -7
 		y = 1
 		relative_position_id = PRC_nl_road_to_future
 		completion_reward = {
@@ -4996,14 +4994,14 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_society_development = yes
-				swap_ideas = {
-					remove_idea = PRC_nl_shining_proletarian_democracy_idea
-					add_idea = PRC_nl_shining_proletarian_democracy_2_idea
-				}
-				swap_ruler_traits = {
-					remove = hos_red_dragon_rider
-					add = hos_red_dragon_rider_nl
-				}
+			swap_ideas = {
+				remove_idea = PRC_nl_shining_proletarian_democracy_idea
+				add_idea = PRC_nl_shining_proletarian_democracy_2_idea
+			}
+			swap_ruler_traits = {
+				remove = hos_red_dragon_rider_hu
+				add = hos_red_dragon_rider_nl
+			}
 		}
 	}
 	focus = {
@@ -5502,7 +5500,7 @@ focus_tree = {
 		id = PRC_nl_socialist_modernization
 		icon = GFX_focus_PRC_freedom_provinces_initiative
 		cost = 3
-		x = 0
+		x = 5
 		y = 1
 		relative_position_id = PRC_nl_road_to_future
 		prerequisite = {

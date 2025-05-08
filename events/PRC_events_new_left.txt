@@ -472,12 +472,6 @@ country_event = {
 			days = 2
 			random_days = 2
 		}
-		hidden_effect = {
-			country_event = {
-				id = prcs.9
-				days = 7
-			}
-		}
 	}
 }
 

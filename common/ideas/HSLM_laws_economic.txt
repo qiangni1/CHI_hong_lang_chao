@@ -139,7 +139,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				personal_expense = 0.008
+				personal_expense = 0.15
 				society_development_monthly = 0.02
 				poverty_development_monthly = 0.02
 				production_speed_buildings_factor = 0.1
