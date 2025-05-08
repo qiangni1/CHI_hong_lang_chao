@@ -2679,9 +2679,8 @@ focus_tree = {
 				add = hos_red_dragon_rider_hu				#在country_leader中新写的领导人特性
 			}
 			#中国收复台湾 超事件
-			country_event = {
-				id = news.356
-				days = 1
+			effect_tooltip = {
+				news_event = news.356
 			}
 			#台湾军管 事件 不是维持军管，似乎应该是此事件
 			country_event = {
@@ -5001,7 +5000,7 @@ focus_tree = {
 					add_idea = PRC_nl_shining_proletarian_democracy_2_idea
 				}
 				swap_ruler_traits = {
-					remove = hos_red_dragon_rider
+					remove = hos_red_dragon_rider_hu
 					add = hos_red_dragon_rider_nl
 				}
 		}
