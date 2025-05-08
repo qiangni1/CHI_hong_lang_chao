@@ -2263,7 +2263,7 @@ focus_tree = {
 		relative_position_id = Rekindle_the_world_revolution
 		x = 2
 		y = 1
-		cost = 2
+		cost = 3
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = Rekindle_the_world_revolution
@@ -2567,7 +2567,7 @@ focus_tree = {
 		relative_position_id = Comrade_in_India
 		x = -1
 		y = 2
-		cost = 5
+		cost = 7
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = Coordination_of_the_World_Liberation_Army
@@ -2587,9 +2587,9 @@ focus_tree = {
 		available = {
 			if = {
 				limit = {
-					has_global_flag = PRC_new_left_win
+					has_country_flag = PRC_new_left_win
 				}
-				has_completed_focus = PRC_communist_vanguard_restored
+				has_completed_focus = PRC_nl_unite_efforts_with_unity
 			}
 		}
 		select_effect = {
@@ -2674,9 +2674,6 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			remove_power_balance = {
-				id = PRC_power_balance
-			}
 			swap_ruler_traits = {
 				remove = hos_red_dragon_rider
 				add = hos_red_dragon_rider_hu				#在country_leader中新写的领导人特性
@@ -4133,7 +4130,7 @@ focus_tree = {
 		allow_branch = {
 			has_country_flag = PRC_for_policy_tree_available
 		}
-		x = 49
+		x = 48
 		y = 1
 		completion_reward = {
 			add_to_variable = {
@@ -4172,7 +4169,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_road_to_future
 		}
-		x = -7
+		x = -6
 		y = 1
 		relative_position_id = PRC_nl_road_to_future
 		completion_reward = {
@@ -5500,7 +5497,7 @@ focus_tree = {
 		id = PRC_nl_socialist_modernization
 		icon = GFX_focus_PRC_freedom_provinces_initiative
 		cost = 3
-		x = 5
+		x = 6
 		y = 1
 		relative_position_id = PRC_nl_road_to_future
 		prerequisite = {
