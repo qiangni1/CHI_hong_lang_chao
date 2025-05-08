@@ -2674,6 +2674,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			remove_power_balance = {
+				id = PRC_power_balance
+			}
 			swap_ruler_traits = {
 				remove = hos_red_dragon_rider
 				add = hos_red_dragon_rider_hu				#在country_leader中新写的领导人特性
