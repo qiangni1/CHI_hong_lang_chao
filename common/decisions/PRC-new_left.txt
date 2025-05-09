@@ -1583,6 +1583,12 @@ PRC_export_revolution = {
 		icon = GFX_PRC_new_left_decision
 		available = {
 			has_completed_focus = Brothers_of_South_Asia
+			PAK = {
+				OR = {
+					has_country_flag = PAK_lost_indo_pakistan_war
+					has_country_flag = PAK_won_indo_pakistan_war
+				}
+			}
 		}
 		visible = {
 			has_completed_focus = Brothers_of_South_Asia

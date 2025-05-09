@@ -327,6 +327,7 @@ scripted_gui = {
 			TFR_li_diplo_icon_visible = {
 				PRC = {
 					has_completed_focus = PRC_unfinished_revolution
+					is_ally_with = FROM
 				}
 			}
 			TFR_Pact_of_Steel_diplo_icon_visible = {
