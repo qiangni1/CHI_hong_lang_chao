@@ -5102,7 +5102,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_unite_efforts_with_unity
-		icon = GFX_focus_SOV_10_stalins_economic_punches
+		icon = GFX_focus_PRC_The_Second_Beijing_Spring
 		cost = 3
 		prerequisite = {
 			focus = PRC_nl_proletarian_good_representative

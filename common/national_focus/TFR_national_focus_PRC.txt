@@ -5634,7 +5634,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRC_propagandize_our_success
-	icon = GFX_focus_PRC_Propagandize_Our_Success
+	icon = GFX_focus_PRC_tidal_wave_of_bodies
 	x = -4
 	y = 1
 	cost = 3.6
