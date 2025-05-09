@@ -1014,7 +1014,7 @@ scripted_gui = {
 		}
 		properties = {
 			CPC_logo = {
-				frame = CPC_lo
+				frame = CPC_frame
 			}
 			button_country_RAJ = {
 				frame = CHN_Display_RAJ

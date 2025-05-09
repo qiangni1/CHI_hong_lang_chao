@@ -293,8 +293,8 @@ PRC_export_revolution = {
 					name = SIA_nationalist_party
 				}
 				create_country_leader = {
-					name = "暹罗人民委员会"
-					picture = "gfx/leaders/PRC/generals/PRC_lianm.png"
+					name = "乍仑·达奈"
+					picture = "gfx/leaders/THA_zhalundanai.png"
 					ideology = left_nationalism
 				}
 				set_politics = {
@@ -389,8 +389,8 @@ PRC_export_revolution = {
 					}
 				}
 				create_country_leader = {
-					name = "老挝人民委员会"
-					picture = "gfx/leaders/PRC/generals/PRC_lianm.png"
+					name = LAO_tonglun
+					picture = "gfx/leaders/LAO_tonglun.png"
 					ideology = left_nationalism
 				}
 			}
@@ -590,12 +590,17 @@ PRC_export_revolution = {
 					}
 				}
 				set_politics = {
-					ruling_party = totalitarian_socialist
+					ruling_party = communist
 					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "PHI_hesaixisong"
+					picture = "gfx/leaders/PHI_hesaixisong.png"
+					ideology = marxism_leninism
 				}
 				hidden_effect = {
 					set_popularities = {
-						totalitarian_socialist = 100
+						communist = 100
 					}
 				}
 				transfer_state = 627
@@ -1109,6 +1114,8 @@ PRC_export_revolution = {
 					ideology = conservative
 					popularity = -0.1
 				}
+				add_stability = -0.1
+				add_war_support = -0.1
 			}
 		}
 	}
@@ -1136,10 +1143,26 @@ PRC_export_revolution = {
 			custom_effect_tooltip = jinggao
 			PER = {
 				dismantle_faction = yes
+				every_controlled_state = {
+					add_core_of = CPP
+				}
+				transfer_units_fraction = {
+					target = CPP
+					size = 0.5
+				}
 			}
-			declare_war_on = {
-				target = PER
-				type = annex_everything
+			CPP = {
+				transfer_state = 266
+				transfer_state = 410
+				transfer_state = 411
+				transfer_state = 412
+				transfer_state = 413
+				load_oob = "PER_2020"
+				declare_war_on = {
+					target = PER
+					type = civil_war
+				}
+				
 			}
 		}
 		ai_will_do = {
@@ -1830,6 +1853,11 @@ PRC_export_revolution = {
 					ideology = social_democrat
 					popularity = 0.05
 				}
+				set_party_name = {
+					ideology = communist
+					long_name = TAL_communist_party_1
+					name = TAL_communist_party_1
+				}
 			}
 			country_event = {
 				id = Chihong.23
@@ -1861,31 +1889,59 @@ PRC_export_revolution = {
 		}
 		on_map_mode = map_and_decisions_view
 		remove_effect = {
-			TAL = {
-				set_politics = {
-					ruling_party = communist
+			AFG = {
+				every_core_state = {
+					add_core_of = CPA
+				}	
+			}
+			CPA = {
+				transfer_state = 267
+				transfer_state = 415
+				transfer_state = 824
+				transfer_state = 1355
+				transfer_state = 1054
+				transfer_state = 1056
+				
+				declare_war_on = {
+					target = AFG
+					type = civil_war
 				}
-				create_country_leader = {
-					name = "阿富汗人民委员会"
-					picture = "gfx/leaders/PRC/generals/PRC_lianm.png"
-					ideology = left_nationalism
+			}
+			if = {
+				limit = {
+					country_exists = TAL
 				}
-				if = {
-					limit = {
-						communist > 0.5
-					}
-					start_civil_war = {
-						ideology = conservative
+				TAL = {
+					transfer_units_fraction = {
+						target = CPA
 						size = 0.4
 					}
 				}
-				else = {
-					start_civil_war = {
-						ideology = conservative
-						size = 0.6
+				CPA = {
+					declare_war_on = {
+						target = TAL
+						type = civil_war
 					}
 				}
 			}
+			if = {
+				limit = { 
+					country_exists = AFG
+				}
+				AFG = {
+					transfer_units_fraction = {
+						target = CPA
+						size = 0.6
+					}
+				}
+				CPA = {
+					declare_war_on = {
+						target = AFG
+						type = civil_war
+					}
+				}
+			}
+			
 		}
 		ai_will_do = {
 			base = 10
@@ -2628,6 +2684,11 @@ PRC_red_JAP = {
 						is_owned_by = JAP
 					}
 					add_core_of = JPL
+				}
+				create_country_leader = {
+					name = "白井聪"
+					picture = "gfx/leaders/JPL_baijincong.png"
+					ideology = marxism_leninism
 				}
 				transfer_state = 528
 				add_state_core = 528

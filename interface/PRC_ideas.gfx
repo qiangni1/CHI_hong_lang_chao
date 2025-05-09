@@ -39,4 +39,9 @@ spriteTypes = {
 		name = "GFX_PRC_liberation_international_faction"
 		texturefile = "gfx/interface/PRC_liberation_international.png"
 	}
+	spriteType = {
+		name = "GFX_ZZZ_NIAS_banner"
+		textureFile = "gfx/interface/PRC_automated_economy.png"
+		legacy_lazy_load = no
+	}
 }

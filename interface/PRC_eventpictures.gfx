@@ -319,4 +319,36 @@ spriteTypes = {
 		name = "GFX_PRC_dead_end"
 		textureFile = "gfx/event_pictures/PRC_dead_end.png"
 	}
+	spriteType = {
+		name = "GFX_PRC_congress"
+		textureFile = "gfx/event_pictures/PRC_congress.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_congress2"
+		textureFile = "gfx/event_pictures/PRC_congress2.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_congress3"
+		textureFile = "gfx/event_pictures/PRC_congress3.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_jetee"
+		textureFile = "gfx/event_pictures/PRC_jetee.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_mao_the_conference"
+		textureFile = "gfx/event_pictures/PRC_mao_the_conference.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_national_symbol"
+		textureFile = "gfx/event_pictures/PRC_national_symbol.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_park"
+		textureFile = "gfx/event_pictures/PRC_park.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_streets"
+		textureFile = "gfx/event_pictures/PRC_streets.png"
+	}
 }

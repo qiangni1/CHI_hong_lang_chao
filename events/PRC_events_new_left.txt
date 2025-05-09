@@ -1428,6 +1428,19 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Chihong.20.a
+		if = {
+			limit = { 
+				PAK = {
+					NOT = {
+						has_country_flag = PAK_lost_indo_pakistan_war
+						has_country_flag = PAK_won_indo_pakistan_war
+					}
+				}
+			}
+			PAK = {
+				set_country_flag = PAK_won_indo_pakistan_war
+			}
+		}
 		ai_chance = {
 			base = 50
 		}

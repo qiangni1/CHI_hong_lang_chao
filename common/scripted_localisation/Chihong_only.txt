@@ -3,7 +3,7 @@ scripted_loc = {
 	text = {
 		trigger = {
 			check_variable = {
-				PRC_Lib_Stage_var = 0
+				CPC_frame < 20
 			}
 		}
 		localization_key = PRC_Lib_Stage_loc2_1
@@ -11,7 +11,14 @@ scripted_loc = {
 	text = {
 		trigger = {
 			check_variable = {
-				PRC_Lib_Stage_var = 1
+				var = CPC_frame
+				value = 20
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = CPC_frame
+				value = 40
+				compare = less_than
 			}
 		}
 		localization_key = PRC_Lib_Stage_loc2_2
@@ -19,7 +26,14 @@ scripted_loc = {
 	text = {
 		trigger = {
 			check_variable = {
-				PRC_Lib_Stage_var = 2
+				var = CPC_frame
+				value = 40
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = CPC_frame
+				value = 60
+				compare = less_than
 			}
 		}
 		localization_key = PRC_Lib_Stage_loc2_3
@@ -27,15 +41,25 @@ scripted_loc = {
 	text = {
 		trigger = {
 			check_variable = {
-				PRC_Lib_Stage_var = 3
+				var = CPC_frame
+				value = 60
+				compare = greater_than_or_equals
 			}
+			check_variable = {
+				var = CPC_frame
+				value = 80
+				compare = less_than
+			}
+
 		}
 		localization_key = PRC_Lib_Stage_loc2_4
 	}
 	text = {
 		trigger = {
 			check_variable = {
-				PRC_Lib_Stage_var = 4
+				var = CPC_frame
+				value = 80
+				compare = greater_than_or_equals
 			}
 		}
 		localization_key = PRC_Lib_Stage_loc2_5
@@ -46,7 +70,7 @@ scripted_loc = {
 	text = {
 		trigger = {
 			check_variable = {
-				PRC_Lib_Stage_var = 0
+				CPC_frame < 20
 			}
 		}
 		localization_key = PRC_Lib_Stage_loc_1
@@ -54,7 +78,14 @@ scripted_loc = {
 	text = {
 		trigger = {
 			check_variable = {
-				PRC_Lib_Stage_var = 1
+				var = CPC_frame
+				value = 20
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = CPC_frame
+				value = 40
+				compare = less_than
 			}
 		}
 		localization_key = PRC_Lib_Stage_loc_2
@@ -62,7 +93,14 @@ scripted_loc = {
 	text = {
 		trigger = {
 			check_variable = {
-				PRC_Lib_Stage_var = 2
+				var = CPC_frame
+				value = 40
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = CPC_frame
+				value = 60
+				compare = less_than
 			}
 		}
 		localization_key = PRC_Lib_Stage_loc_3
@@ -70,7 +108,14 @@ scripted_loc = {
 	text = {
 		trigger = {
 			check_variable = {
-				PRC_Lib_Stage_var = 3
+				var = CPC_frame
+				value = 60
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = CPC_frame
+				value = 80
+				compare = less_than
 			}
 		}
 		localization_key = PRC_Lib_Stage_loc_4
@@ -78,7 +123,9 @@ scripted_loc = {
 	text = {
 		trigger = {
 			check_variable = {
-				PRC_Lib_Stage_var = 4
+				var = CPC_frame
+				value = 80
+				compare = greater_than_or_equals
 			}
 		}
 		localization_key = PRC_Lib_Stage_loc_5

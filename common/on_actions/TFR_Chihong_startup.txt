@@ -2,10 +2,10 @@ on_actions = {
   on_startup = {
     effect = {
        PRC = {
-                #赤红浪潮（GUI初始化）
+                #红色黎明（GUI初始化）
                 set_country_flag = CHN_Display_South_Asia
                 set_variable = {
-                    PRC_Lib_Stage_var = 2
+                    CPC_frame = 0
                 }
                 set_variable = {
                     PRC_Working_Capacity = 10 

@@ -1928,4 +1928,31 @@ characters={
 			}
 		}
     }
+
+	general_commissar_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRC/generals/PRC_lianm.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {
+				hos_heavy_doctrinal_following
+			}
+		}
+	}
+	general_commissar_char1 = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRC/generals/PRC_lianm.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {
+				hos_heavy_doctrinal_following
+			}
+		}
+	}
 }
