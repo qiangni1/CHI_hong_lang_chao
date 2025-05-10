@@ -652,7 +652,6 @@ on_actions = {
 								name = "朝鲜军管委员会"
 								desc = "POLITICS_CHAOXIAN_DESC"
 								picture = "gfx/leaders/PRC/generals/PRC_lianm.png"
-								expire = "1965.1.1"
 								ideology = left_wing_junta
 								traits = {
 								}

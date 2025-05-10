@@ -1194,6 +1194,7 @@ country_event = {
 		ai_chance = {
 			base = 50
 		}
+		custom_effect_tooltip = Chihong_3_tt
 	}
 }
 
@@ -1271,7 +1272,7 @@ country_event = {
 	id = Chihong.9
 	title = Chihong.9.t
 	desc = Chihong.9.desc
-	picture = GFX_Chihong9_event
+	picture = GFX_event_the_doctor
 	is_triggered_only = yes
 	option = {
 		name = Chihong.9.a
@@ -1299,7 +1300,7 @@ country_event = {
 	id = Chihong.11
 	title = Chihong.11.t
 	desc = Chihong.11.desc
-	picture = GFX_Chihong11_event
+	picture = GFX_PRC_party_office
 	is_triggered_only = yes
 	option = {
 		name = Chihong.11.a
@@ -1313,7 +1314,7 @@ country_event = {
 	id = Chihong.12
 	title = Chihong.12.t
 	desc = Chihong.12.desc
-	picture = GFX_Chihong12_event
+	picture = GFX_event_the_doctor
 	is_triggered_only = yes
 	option = {
 		name = Chihong.12.a
@@ -1327,7 +1328,7 @@ country_event = {
 	id = Chihong.13
 	title = Chihong.13.t
 	desc = Chihong.13.desc
-	picture = GFX_Chihong13_event
+	picture = GFX_PRC_event_Long_March
 	is_triggered_only = yes
 	option = {
 		name = Chihong.13.a
@@ -1341,7 +1342,7 @@ country_event = {
 	id = Chihong.14
 	title = Chihong.14.t
 	desc = Chihong.14.desc
-	picture = GFX_Chihong14_event
+	picture = GFX_PRC_lighting_light
 	is_triggered_only = yes
 	option = {
 		name = Chihong.14.a
@@ -1355,12 +1356,20 @@ country_event = {
 	id = Chihong.15
 	title = Chihong.15.t
 	desc = Chihong.15.desc
-	picture = GFX_Chihong15_event
+	picture = GFX_PRC_office_room
 	is_triggered_only = yes
 	option = {
 		name = Chihong.15.a
 		ai_chance = {
 			base = 50
+		}
+		hidden_effect = {
+			country_event = {
+				id = Chihong.45
+				days = 3
+				random_days = 5
+			}
+			
 		}
 	}
 }
@@ -1369,7 +1378,7 @@ country_event = {
 	id = Chihong.16
 	title = Chihong.16.t
 	desc = Chihong.16.desc
-	picture = GFX_Chihong16_event
+	picture = GFX_PRC_CHI_hunan
 	is_triggered_only = yes
 	option = {
 		name = Chihong.16.a
@@ -1383,13 +1392,21 @@ country_event = {
 	id = Chihong.17
 	title = Chihong.17.t
 	desc = Chihong.17.desc
-	picture = GFX_Chihong17_event
+	picture = GFX_PRC_old_comrades
 	is_triggered_only = yes
 	option = {
 		name = Chihong.17.a
 		ai_chance = {
 			base = 50
 		}
+		hidden_effect = {
+			country_event = {
+				id = Chihong.46
+				days = 8
+				random_days = 4
+			}
+		}
+		
 	}
 }
 
@@ -1397,12 +1414,19 @@ country_event = {
 	id = Chihong.18
 	title = Chihong.18.t
 	desc = Chihong.18.desc
-	picture = GFX_Chihong18_event
+	picture = GFX_PRC_marching_hills
 	is_triggered_only = yes
 	option = {
 		name = Chihong.18.a
 		ai_chance = {
 			base = 50
+		}
+		hidden_effect = {
+			country_event = {
+				id = Chihong.47
+				days = 4
+				random_days = 3
+			}
 		}
 	}
 }
@@ -1870,7 +1894,7 @@ country_event = {
 	id = Chihong.45
 	title = Chihong.45.t
 	desc = Chihong.45.desc
-	picture = GFX_Chihong45_event
+	picture = GFX_PRC_cabbage
 	is_triggered_only = yes
 	option = {
 		name = Chihong.45.a
@@ -1884,13 +1908,14 @@ country_event = {
 	id = Chihong.46
 	title = Chihong.46.t
 	desc = Chihong.46.desc
-	picture = GFX_Chihong46_event
+	picture = GFX_PRC_sunset
 	is_triggered_only = yes
 	option = {
 		name = Chihong.46.a
 		ai_chance = {
 			base = 50
 		}
+		custom_effect_tooltip = Chihong_46_tt
 	}
 }
 
@@ -1898,7 +1923,7 @@ country_event = {
 	id = Chihong.47
 	title = Chihong.47.t
 	desc = Chihong.47.desc
-	picture = GFX_Chihong47_event
+	picture = GFX_PRC_the_people
 	is_triggered_only = yes
 	option = {
 		name = Chihong.47.a
@@ -1912,7 +1937,7 @@ country_event = {
 	id = Chihong.48
 	title = Chihong.48.t
 	desc = Chihong.48.desc
-	picture = GFX_Chihong48_event
+	picture = GFX_PRC_golden_fisher
 	is_triggered_only = yes
 	option = {
 		name = Chihong.48.a
@@ -1926,13 +1951,14 @@ country_event = {
 	id = Chihong.49
 	title = Chihong.49.t
 	desc = Chihong.49.desc
-	picture = GFX_Chihong49_event
+	picture = GFX_PRC_shadow
 	is_triggered_only = yes
 	option = {
 		name = Chihong.49.a
 		ai_chance = {
 			base = 50
 		}
+		custom_effect_tooltip = Chihong_49_tt
 	}
 }
 
@@ -1959,6 +1985,16 @@ country_event = {
 	trigger = {
 		tag = PRC
 		country_exists = MON
+	}
+	immediate = {
+		hidden_effect = {
+			remove_mission = PRC_Global_Red_Tide1
+			remove_mission = PRC_Global_Red_Tide2
+		}
+		set_country_flag = {
+			flag = PRC_mongolia_hetong_flag
+			value = 0
+		}
 	}
 	# 吞并选项
 	option = {
@@ -1990,6 +2026,16 @@ country_event = {
 	trigger = {
 		tag = PRC
 		country_exists = MON
+	}
+	immediate = {
+		hidden_effect = {
+			remove_mission = PRC_Global_Red_Tide1
+			remove_mission = PRC_Global_Red_Tide2
+		}
+		set_country_flag = {
+			flag = PRC_mongolia_hetong_flag
+			value = 0
+		}
 	}
 	# 宣战选项
 	option = {

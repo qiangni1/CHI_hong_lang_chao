@@ -85,6 +85,7 @@ PRC_mongolia_hetong = {
 	scripted_gui = PRC_mongolia_hetong_dec
 	visible = {
 		has_country_flag = PRC_mongolia_hetong_flag
+		country_exists = MON
 	}
 	allowed = {
     	tag = PRC

@@ -1324,7 +1324,7 @@ PRC_export_revolution = {
 				type = puppet_wargoal_focus
 			}
 			PRK = {
-				stability_factor = -0.1
+				add_stability = -0.1
 			}
 			country_event = {
 				id = china.1711
@@ -1755,7 +1755,7 @@ PRC_export_revolution = {
 		}
 		cost = 25
 		days_remove = 30
-		days_re_enable = 30
+		fire_only_once = yes
 		remove_effect = {
 			set_country_flag = PAK_teen_advocated
 			PAK = {
@@ -1817,6 +1817,7 @@ PRC_export_revolution = {
 			}
 			PAK = {
 				remove_ideas = PAK_fervent_nationalism
+				remove_ideas = commonwealth_of_nations_member
 				set_cosmetic_tag = PAK_name
 				set_politics = {
 					ruling_party = communist
@@ -1876,6 +1877,7 @@ PRC_export_revolution = {
 				}
 			}
 			BAN = {
+				remove_ideas = commonwealth_of_nations_member
 				hidden_effect = {
 					set_cosmetic_tag = PRC_repolice_gonh
 				}

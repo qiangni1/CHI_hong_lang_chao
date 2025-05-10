@@ -351,4 +351,52 @@ spriteTypes = {
 		name = "GFX_PRC_streets"
 		textureFile = "gfx/event_pictures/PRC_streets.png"
 	}
+	spriteType = {
+		name = "GFX_PRC_event_Long_March"
+		textureFile = "gfx/event_pictures/PRC_long_march.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_lighting_light"
+		textureFile = "gfx/event_pictures/PRC_lighting_light.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_office_room"
+		textureFile = "gfx/event_pictures/PRC_office_room.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_CHI_hunan"
+		textureFile = "gfx/event_pictures/PRC_ROC_hunan.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_old_comrades"
+		textureFile = "gfx/event_pictures/PRC_fellow_comrades.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_marching_hills"
+		textureFile = "gfx/event_pictures/PRC_marching_hills.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_cabbage"
+		textureFile = "gfx/event_pictures/PRC_cabbage.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_sunset"
+		textureFile = "gfx/event_pictures/PRC_sunset.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_the_people"
+		textureFile = "gfx/event_pictures/PRC_the_people.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_golden_fisher"
+		textureFile = "gfx/event_pictures/PRC_golden_fisher.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_shadow"
+		textureFile = "gfx/event_pictures/PRC_shadow.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_party_office"
+		textureFile = "gfx/event_pictures/PRC_party_office.png"
+	}
 }
