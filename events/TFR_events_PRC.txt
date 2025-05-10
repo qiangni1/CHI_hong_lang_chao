@@ -14201,8 +14201,6 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
-	}
-	trigger = {
 		NOT = {
 			has_country_flag = PRC_loji_overlord_flag
 		}

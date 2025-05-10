@@ -47,6 +47,7 @@ country_event = {
 	option = {
 		name = prcs.3.a
 		retire_character = PRC_hu_chunhua
+		promote_character = PRC_ultimate_npc
 	}
 }
 

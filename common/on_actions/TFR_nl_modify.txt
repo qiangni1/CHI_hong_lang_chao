@@ -27,31 +27,6 @@ on_actions = {
 			}
 		}
 	}
-	on_join_faction = {
-		effect = {
-			if = {
-				limit = { 
-					FROM = {
-						original_tag = PRC
-					}
-				}
-				PRC = {
-					add_to_variable = {
-						CPC_frame = 8
-					}
-					clamp_variable = {
-						var = CPC_frame
-						min = 0
-						max = 100
-					}
-					add_to_variable = {
-						PRC_Lib_Int_Dir_Var = 1
-					}	
-				}
-			}
-
-		}
-	}
 	on_annex = {
 		effect = {
 			if = {

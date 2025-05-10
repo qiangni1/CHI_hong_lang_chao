@@ -1995,4 +1995,20 @@ characters={
 			legacy_id=-1
 		}
 	}
+	PRC_ultimate_npc = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRC/PRC_collective_leadership.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			desc = PRC_ultimate_npc_desc
+			traits = {
+				hos_beacon_of_hope
+			}
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
 }

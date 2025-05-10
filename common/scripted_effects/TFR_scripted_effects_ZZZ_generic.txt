@@ -374,30 +374,8 @@ PRC_chinas_victory_in_the_gaw = {
 				portrait = GFX_portrait_PRC_xi_jinping_gaw_win
 			}
 		}
-		if = {
-			limit = {
-				has_country_flag = PRC_centrist_win
-			}
-			country_event = { id = china.2000 days = 3 }
-		}
-		if = {
-			limit = {
-				has_country_flag = PRC_nationalist_win
-			}
-			country_event = { id = china.2001 days = 3 }
-		}
-		if = {
-			limit = {
-				has_country_flag = PRC_liberal_win
-			}
-			country_event = { id = china.2002 days = 3 }
-		}
-		if = {
-			limit = {
-				has_country_flag = PRC_new_left_win
-			}
-			country_event = { id = prcs.36 days = 3 }
-		}
+		country_event = { id = prcs.36 days = 7 }
+		country_event = { id = prcs.3  days = 3}
 	}
 	PRK = {
 		annex_country = {

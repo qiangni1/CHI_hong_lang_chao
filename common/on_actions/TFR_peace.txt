@@ -488,6 +488,17 @@ on_actions = {
 							}
 							PRC = {
 								add_to_faction = ROP
+								add_to_variable = {
+									CPC_frame = 6
+								}
+								clamp_variable = {
+									var = CPC_frame
+									min = 0
+									max = 100
+								}
+								add_to_variable = {
+									PRC_Lib_Int_Dir_Var = 1
+								}
 							}
 						}
 						white_peace = ROOT
@@ -531,6 +542,19 @@ on_actions = {
 							transfer_troops = no
 						}
 					}
+					PRC = {
+						add_to_variable = {
+							CPC_frame = 4
+						}
+						clamp_variable = {
+							var = CPC_frame
+							min = 0
+							max = 100
+						}
+						add_to_variable = {
+							PRC_Lib_Int_Dir_Var = 1
+						}
+					}
 					set_global_flag = skip_default_capitulation
 				}
 				if = {
@@ -558,6 +582,17 @@ on_actions = {
 							}
 							PRC = {
 								add_to_faction = SMA
+								add_to_variable = {
+									CPC_frame = 2
+								}
+								clamp_variable = {
+									var = CPC_frame
+									min = 0
+									max = 100
+								}
+								add_to_variable = {
+									PRC_Lib_Int_Dir_Var = 1
+								}
 							}
 						}
 						white_peace = ROOT
@@ -596,6 +631,17 @@ on_actions = {
 									id = china.1712
 									days = 7
 								}
+							}
+							add_to_variable = {
+								CPC_frame = 2
+							}
+							clamp_variable = {
+								var = CPC_frame
+								min = 0
+								max = 100
+							}
+							add_to_variable = {
+								PRC_Lib_Int_Dir_Var = 1
 							}
 						}
 						PRK = {
@@ -649,6 +695,17 @@ on_actions = {
 					FROM = {
 						white_peace = ROOT
 						puppet = ROOT
+						add_to_variable = {
+							CPC_frame = 6
+						}
+						clamp_variable = {
+							var = CPC_frame
+							min = 0
+							max = 100
+						}
+						add_to_variable = {
+							PRC_Lib_Int_Dir_Var = 1
+						}
 						# clr_country_flag = PRC_spread_chinese_influence
 					}
 					ROOT = {

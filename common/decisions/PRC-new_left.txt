@@ -297,11 +297,18 @@ PRC_export_revolution = {
 		}
 		on_map_mode = map_and_decisions_view
 		remove_effect = {
-			SIA = {
-				transfer_units_fraction = {
-					target = PRT
-					size = 0.6
+			PRT = {
+				set_cosmetic_tag = PRC_sia
+				transfer_state = 289
+				transfer_state = 724
+				transfer_state = 890
+				load_oob = "SIA_reserves"
+				declare_war_on = {
+					target = SIA
+					type = civil_war
 				}
+			}
+			SIA = {
 				transfer_navy = {
 					target = PRT
 				}
@@ -309,16 +316,7 @@ PRC_export_revolution = {
 					add_core_of = PRT
 				}
 			}
-			PRT = {
-				set_cosmetic_tag = PRC_sia
-				transfer_state = 289
-				transfer_state = 724
-				transfer_state = 890
-				declare_war_on = {
-					target = SIA
-					type = civil_war
-				}
-			}
+			
 			PRC = {
 				add_to_variable = {
 					CPC_frame = 2
@@ -1732,6 +1730,17 @@ PRC_export_revolution = {
 					popularity = 0.02
 				}
 			}
+			add_to_variable = {
+				CPC_frame = 2
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
+			}
 			set_country_flag = PRC_PAK_People_Front_flag
 		}
 	}
@@ -2041,6 +2050,17 @@ PRC_export_revolution = {
 					name = TAL_communist_party_1
 				}
 			}
+			add_to_variable = {
+				CPC_frame = 1
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
+			}
 			country_event = {
 				id = Chihong.23
 				days = 7
@@ -2273,6 +2293,17 @@ PRC_assistance2communist = {
 			add_to_variable = {
 				PRC_india_maoism_count = 1
 			}
+			add_to_variable = {
+				CPC_frame = 1
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
+			}
 		}
 		ai_will_do = {
 			base = 10
@@ -2312,6 +2343,18 @@ PRC_assistance2communist = {
 		}
 		remove_effect = {
 			if = {
+				limit = { 
+					country_exists = CPA
+				}
+				CPA = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 179
+					}
+					add_income_with_inflation = yes
+				}
+			}
+			else_if = {
 				limit = {
 					country_exists = AFG
 				}
@@ -2332,12 +2375,24 @@ PRC_assistance2communist = {
 					}
 				}
 			}
-			PER = {
-				set_temp_variable = {
-					var = income_var_temp
-					value = 156
+			if = {
+				limit = { 
+					country_exists = CPP
 				}
-				add_income_with_inflation = yes
+				CPP = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 179
+					}
+					add_income_with_inflation = yes
+				}
+			}
+			else = {
+				set_temp_variable = {
+						var = income_var_temp
+						value = 179
+					}
+					add_income_with_inflation = yes
 			}
 		}
 		ai_will_do = {
@@ -2413,6 +2468,18 @@ PRC_assistance2communist = {
 				}
 				add_industrial_development = yes
 			}
+			add_to_variable = {
+				CPC_frame = 1
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
+			}
+
 		}
 		ai_will_do = {
 			base = 10
@@ -2440,6 +2507,18 @@ PRC_assistance2communist = {
 					value = -97
 				}
 				add_income_with_inflation = yes
+				add_to_variable = {
+					CPC_frame = 1
+				}
+				clamp_variable = {
+					var = CPC_frame
+					min = 0
+					max = 100
+				}
+				add_to_variable = {
+					PRC_Lib_Int_Dir_Var = 1
+				}
+
 			}
 			PRK = {
 				set_temp_variable = {
@@ -2529,6 +2608,18 @@ PRC_assistance2communist = {
 				}
 				add_military_development = yes
 			}
+			add_to_variable = {
+				CPC_frame = 1
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
+			}
+
 		}
 		ai_will_do = {
 			base = 10
