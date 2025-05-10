@@ -65,6 +65,17 @@ on_actions = {
 				}
 				PRC = {
 					add_to_faction = CPP
+					add_to_variable = {
+						CPC_frame = 8
+					}
+					clamp_variable = {
+						var = CPC_frame
+						min = 0
+						max = 100
+					}
+					add_to_variable = {
+						PRC_Lib_Int_Dir_Var = 1
+					}
 				}
 				CPP = {
 					every_core_state = {
@@ -86,6 +97,17 @@ on_actions = {
 				}
 				PRC = {
 					add_to_faction = CPA
+					add_to_variable = {
+						CPC_frame = 8
+					}
+					clamp_variable = {
+						var = CPC_frame
+						min = 0
+						max = 100
+					}
+					add_to_variable = {
+						PRC_Lib_Int_Dir_Var = 1
+					}
 				}
 				CPA = {
 					every_core_state = {
@@ -108,11 +130,46 @@ on_actions = {
 				}
 				PRC = {
 					add_to_faction = CPA
+					add_to_variable = {
+						CPC_frame = 8
+					}
+					clamp_variable = {
+						var = CPC_frame
+						min = 0
+						max = 100
+					}
+					add_to_variable = {
+						PRC_Lib_Int_Dir_Var = 1
+					}
 				}
 				CPA = {
 					every_core_state = {
 						remove_core_of = TAL
 						remove_core_of = AFG
+					}
+				}
+			}
+			else_if = {
+				limit = { 
+					ROOT = {
+						original_tag = PRT
+					}
+					FROM = {
+						original_tag = SIA
+					}
+				}
+				PRC = {
+					add_to_faction = PRT
+					add_to_variable = {
+						CPC_frame = 8
+					}
+					clamp_variable = {
+						var = CPC_frame
+						min = 0
+						max = 100
+					}
+					add_to_variable = {
+						PRC_Lib_Int_Dir_Var = 1
 					}
 				}
 			}

@@ -911,7 +911,7 @@ scripted_gui = {
 		}
 		triggers = {
 			PRC_china_visible = {
-			has_country_flag = CHN_Display_East_Asia
+				has_country_flag = CHN_Display_East_Asia
 			}
 			PRC_moglin_visible = {
 				has_country_flag = CHN_Display_East_Asia
@@ -1055,9 +1055,6 @@ scripted_gui = {
 			button_country_KOR = {
 				frame = CHN_Display_KOR
 			}
-			button_country_NZL = {
-				frame = CHN_Display_NZL
-			}
 			button_country_PEP = {
 				frame = CHN_Display_PEP
 			}
@@ -1066,9 +1063,6 @@ scripted_gui = {
 			}
 			button_country_INS = {
 				frame = CHN_Display_INS
-			}
-			button_country_AST = {
-				frame = CHN_Display_AST
 			}
 			button_country_MAY = {
 				frame = CHN_Display_MAY
