@@ -2414,6 +2414,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.05
+			custom_effect_tooltip = Begonia_old_dreams_tt
 			set_country_flag = sov_diplomacy
 		}
 	}
