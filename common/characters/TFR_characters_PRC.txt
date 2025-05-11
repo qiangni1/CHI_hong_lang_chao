@@ -1928,4 +1928,87 @@ characters={
 			}
 		}
     }
+
+	general_commissar_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRC/generals/PRC_lianm.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {
+				hos_heavy_doctrinal_following
+			}
+		}
+	}
+	general_commissar_char1 = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRC/generals/PRC_lianm.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {
+				hos_heavy_doctrinal_following
+			}
+		}
+	}
+	general_commissar_char2 = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRC/generals/PRC_lianm.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {
+				hos_heavy_doctrinal_following
+			}
+		}
+	}
+	THA_zhalun_dainai = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/THA_zhalundanai.png"
+			}
+			army = {
+				large = "gfx/leaders/THA_zhalundanai.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			traits = {
+				hos_red_marshal
+			}
+			expire="1.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			traits = { old_guard politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	PRC_ultimate_npc = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRC/PRC_collective_leadership.png"
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+			desc = PRC_ultimate_npc_desc
+			traits = {
+				hos_beacon_of_hope
+			}
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
 }

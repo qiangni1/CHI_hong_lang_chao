@@ -975,22 +975,22 @@ defined_text = {
 		localization_key = TFR_PEACE_POPUP_FLAVOR_PER_LOSE
 	}
 
-	#text = {
-		#trigger = {
-			#event_target:winning_country = {
-				#tag = FROM
-			#}
-			#event_target:losing_country = {
-				#tag = RED_PER
-			#}
-		#}
-		#localization_key = TFR_PEACE_POPUP_FLAVOR_RED_PER_LOSE
-	#}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = PER
+			}
+			event_target:losing_country = {
+				tag = CPP
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_RED_PER_LOSE
+	}
 
 	text = {
 		trigger = {
 			event_target:winning_country = {
-				tag = PRC
+				tag = CPA
 			}
 			event_target:losing_country = {
 				tag = AFG
@@ -999,17 +999,17 @@ defined_text = {
 		localization_key = TFR_PEACE_POPUP_FLAVOR_AFG_LOSE
 	}
 
-	#text = {
-		#trigger = {
-			#event_target:winning_country = {
-				#tag = FROM
-			#}
-			#event_target:losing_country = {
-				#tag = RED_AFG
-			#}
-		#}
-		#localization_key = TFR_PEACE_POPUP_FLAVOR_RED_AFG_LOSE
-	#}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = FROM
+			}
+			event_target:losing_country = {
+				tag = CPA
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_RED_AFG_LOSE
+	}
 
 	text = {
 		trigger = {

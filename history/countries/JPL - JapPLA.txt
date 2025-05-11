@@ -163,8 +163,8 @@ set_politics = {
 }
 
 set_popularities = {
-    totalitarian_socialist = 10
-    social_democrat = 10
+    totalitarian_socialist = 20
+    social_democrat = 20
     libertarian_socialist = 20
-    communist = 10
+    communist = 40
 }

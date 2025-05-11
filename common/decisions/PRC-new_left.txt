@@ -96,6 +96,17 @@ PRC_export_revolution = {
 			}
 		}
 		remove_effect = {
+			add_to_variable = {
+				CPC_frame = 4
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
+			}
 			hidden_effect = {
 				news_event = {
 					id = prcs.8
@@ -286,44 +297,38 @@ PRC_export_revolution = {
 		}
 		on_map_mode = map_and_decisions_view
 		remove_effect = {
-			SIA = {
-				set_party_name = {
-					ideology = communist
-					long_name = SIA_nationalist_party_long
-					name = SIA_nationalist_party
-				}
-				create_country_leader = {
-					name = "暹罗人民委员会"
-					picture = "gfx/leaders/PRC/generals/PRC_lianm.png"
-					ideology = left_nationalism
-				}
-				set_politics = {
-					ruling_party = communist
-					last_election = "2021.5.1"
-					election_frequency = 48
-				}
-				hidden_effect = {
-					set_popularities = {
-						communist = 30
-						libertarian_socialist = 10
-						totalitarian_socialist = 30
-						conservative = 5
-						social_liberal = 5
-						social_democrat = 5
-						authoritarian_democrat = 15
-					}
-				}
+			PRT = {
 				set_cosmetic_tag = PRC_sia
-				start_civil_war = {
-					ideology = authoritarian_democrat
-					states = {
-						289
-					}
-					size = 0.4
+				transfer_state = 289
+				transfer_state = 724
+				transfer_state = 890
+				load_oob = "SIA_reserves"
+				declare_war_on = {
+					target = SIA
+					type = civil_war
 				}
 			}
+			SIA = {
+				transfer_navy = {
+					target = PRT
+				}
+				every_core_state = {
+					add_core_of = PRT
+				}
+			}
+			
 			PRC = {
-				add_to_faction = SIA
+				add_to_variable = {
+					CPC_frame = 2
+				}
+				clamp_variable = {
+					var = CPC_frame
+					min = 0
+					max = 100
+				}
+				add_to_variable = {
+					PRC_Lib_Int_Dir_Var = 1
+				}
 			}
 			add_to_variable = {
 				PRC_WLI_consumer_factor = -0.01
@@ -389,13 +394,24 @@ PRC_export_revolution = {
 					}
 				}
 				create_country_leader = {
-					name = "老挝人民委员会"
-					picture = "gfx/leaders/PRC/generals/PRC_lianm.png"
+					name = LAO_tonglun
+					picture = "gfx/leaders/LAO_tonglun.png"
 					ideology = left_nationalism
 				}
 			}
 			PRC = {
 				add_to_faction = LAO
+				add_to_variable = {
+					CPC_frame = 8
+				}
+				clamp_variable = {
+					var = CPC_frame
+					min = 0
+					max = 100
+				}
+				add_to_variable = {
+					PRC_Lib_Int_Dir_Var = 1
+				}
 			}
 			add_to_variable = {
 				PRC_WLI_consumer_factor = -0.01
@@ -476,6 +492,17 @@ PRC_export_revolution = {
 			}
 			PRC = {
 				add_to_faction = CAM
+				add_to_variable = {
+					CPC_frame = 8
+				}
+				clamp_variable = {
+					var = CPC_frame
+					min = 0
+					max = 100
+				}
+				add_to_variable = {
+					PRC_Lib_Int_Dir_Var = 1
+				}
 			}
 			add_to_variable = {
 				PRC_WLI_consumer_factor = -0.01
@@ -532,6 +559,17 @@ PRC_export_revolution = {
 				declare_war_on = {
 					target = VIN
 					type = topple_government
+				}
+				add_to_variable = {
+					CPC_frame = 2
+				}
+				clamp_variable = {
+					var = CPC_frame
+					min = 0
+					max = 100
+				}
+				add_to_variable = {
+					PRC_Lib_Int_Dir_Var = 1
 				}
 			}
 			hidden_effect = {
@@ -590,12 +628,17 @@ PRC_export_revolution = {
 					}
 				}
 				set_politics = {
-					ruling_party = totalitarian_socialist
+					ruling_party = communist
 					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "PHI_hesaixisong"
+					picture = "gfx/leaders/PHI_hesaixisong.png"
+					ideology = marxism_leninism
 				}
 				hidden_effect = {
 					set_popularities = {
-						totalitarian_socialist = 100
+						communist = 100
 					}
 				}
 				transfer_state = 627
@@ -665,6 +708,17 @@ PRC_export_revolution = {
 			}
 			add_to_variable = {
 				PRC_WLI_members_pp_cost = -5
+			}
+			add_to_variable = {
+				CPC_frame = 2
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
 			}
 		}
 		ai_will_do = {
@@ -794,6 +848,17 @@ PRC_export_revolution = {
 			}
 			add_to_variable = {
 				PRC_WLI_members_pp_cost = -5
+			}
+			add_to_variable = {
+				CPC_frame = 4
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
 			}
 		}
 		ai_will_do = {
@@ -955,6 +1020,17 @@ PRC_export_revolution = {
 			add_to_variable = {
 				PRC_WLI_members_pp_cost = -5
 			}
+			add_to_variable = {
+				CPC_frame = 2
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
+			}
 		}
 		ai_will_do = {
 			base = 10
@@ -1016,6 +1092,17 @@ PRC_export_revolution = {
 			}
 			PRC = {
 				add_to_faction = SIG
+				add_to_variable = {
+					CPC_frame = 4
+				}
+				clamp_variable = {
+					var = CPC_frame
+					min = 0
+					max = 100
+				}
+				add_to_variable = {
+					PRC_Lib_Int_Dir_Var = 1
+				}
 			}
 			add_to_variable = {
 				PRC_WLI_consumer_factor = -0.01
@@ -1109,6 +1196,8 @@ PRC_export_revolution = {
 					ideology = conservative
 					popularity = -0.1
 				}
+				add_stability = -0.1
+				add_war_support = -0.1
 			}
 		}
 	}
@@ -1136,10 +1225,36 @@ PRC_export_revolution = {
 			custom_effect_tooltip = jinggao
 			PER = {
 				dismantle_faction = yes
+				every_controlled_state = {
+					add_core_of = CPP
+				}
+				transfer_units_fraction = {
+					target = CPP
+					size = 0.5
+				}
 			}
-			declare_war_on = {
-				target = PER
-				type = annex_everything
+			CPP = {
+				transfer_state = 266
+				transfer_state = 410
+				transfer_state = 411
+				transfer_state = 412
+				transfer_state = 413
+				load_oob = "PER_2020"
+				declare_war_on = {
+					target = PER
+					type = civil_war
+				}	
+			}
+			add_to_variable = {
+				CPC_frame = 3
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
 			}
 		}
 		ai_will_do = {
@@ -1165,6 +1280,17 @@ PRC_export_revolution = {
 		}
 		on_map_mode = map_and_decisions_view
 		complete_effect = {
+			add_to_variable = {
+				CPC_frame = 3
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
+			}
 		}
 		modifier = {
 			send_volunteer_size = 5
@@ -1198,7 +1324,7 @@ PRC_export_revolution = {
 				type = puppet_wargoal_focus
 			}
 			PRK = {
-				stability_factor = -0.1
+				add_stability = -0.1
 			}
 			country_event = {
 				id = china.1711
@@ -1208,6 +1334,17 @@ PRC_export_revolution = {
 					id = prcs.4
 					hours = 2
 				}
+			}
+			add_to_variable = {
+				CPC_frame = 3
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
 			}
 		}
 		ai_will_do = {
@@ -1244,6 +1381,17 @@ PRC_export_revolution = {
 					PRK_Jong_Kyong_thaek_sec
 					PRK_Choe_Pu_Il_int
 				}
+			}
+			add_to_variable = {
+				CPC_frame = 2
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
 			}
 		}
 		ai_will_do = {
@@ -1318,6 +1466,17 @@ PRC_export_revolution = {
 			}
 			PRC = {
 				add_to_faction = BHU
+				add_to_variable = {
+					CPC_frame = 1
+				}
+				clamp_variable = {
+					var = CPC_frame
+					min = 0
+					max = 100
+				}
+				add_to_variable = {
+					PRC_Lib_Int_Dir_Var = 1
+				}
 			}
 			BHU = {
 				hidden_effect = {
@@ -1391,6 +1550,17 @@ PRC_export_revolution = {
 					autonomous_state = autonomy_puppet
 					freedom_level = 0.3
 				}
+				add_to_variable = {
+					CPC_frame = 2
+				}
+				clamp_variable = {
+					var = CPC_frame
+					min = 0
+					max = 100
+				}
+				add_to_variable = {
+					PRC_Lib_Int_Dir_Var = 1
+				}
 			}
 			NEP = {
 				hidden_effect = {
@@ -1437,6 +1607,17 @@ PRC_export_revolution = {
 					target = SRL
 					autonomous_state = autonomy_puppet
 					freedom_level = 0.3
+				}
+				add_to_variable = {
+					CPC_frame = 2
+				}
+				clamp_variable = {
+					var = CPC_frame
+					min = 0
+					max = 100
+				}
+				add_to_variable = {
+					PRC_Lib_Int_Dir_Var = 1
 				}
 			}
 			SRL = {
@@ -1549,6 +1730,17 @@ PRC_export_revolution = {
 					popularity = 0.02
 				}
 			}
+			add_to_variable = {
+				CPC_frame = 2
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
+			}
 			set_country_flag = PRC_PAK_People_Front_flag
 		}
 	}
@@ -1563,7 +1755,7 @@ PRC_export_revolution = {
 		}
 		cost = 25
 		days_remove = 30
-		days_re_enable = 30
+		fire_only_once = yes
 		remove_effect = {
 			set_country_flag = PAK_teen_advocated
 			PAK = {
@@ -1611,9 +1803,21 @@ PRC_export_revolution = {
 			}
 			PRC = {
 				add_to_faction = PAK
+				add_to_variable = {
+					CPC_frame = 4
+				}
+				clamp_variable = {
+					var = CPC_frame
+					min = 0
+					max = 100
+				}
+				add_to_variable = {
+					PRC_Lib_Int_Dir_Var = 1
+				}
 			}
 			PAK = {
 				remove_ideas = PAK_fervent_nationalism
+				remove_ideas = commonwealth_of_nations_member
 				set_cosmetic_tag = PAK_name
 				set_politics = {
 					ruling_party = communist
@@ -1673,6 +1877,7 @@ PRC_export_revolution = {
 				}
 			}
 			BAN = {
+				remove_ideas = commonwealth_of_nations_member
 				hidden_effect = {
 					set_cosmetic_tag = PRC_repolice_gonh
 				}
@@ -1707,6 +1912,17 @@ PRC_export_revolution = {
 			}
 			PRC = {
 				add_to_faction = BAN
+				add_to_variable = {
+					CPC_frame = 3
+				}
+				clamp_variable = {
+					var = CPC_frame
+					min = 0
+					max = 100
+				}
+				add_to_variable = {
+					PRC_Lib_Int_Dir_Var = 1
+				}
 			}
 			add_to_variable = {
 				PRC_WLI_consumer_factor = -0.01
@@ -1830,6 +2046,22 @@ PRC_export_revolution = {
 					ideology = social_democrat
 					popularity = 0.05
 				}
+				set_party_name = {
+					ideology = communist
+					long_name = TAL_communist_party_1
+					name = TAL_communist_party_1
+				}
+			}
+			add_to_variable = {
+				CPC_frame = 1
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
 			}
 			country_event = {
 				id = Chihong.23
@@ -1861,30 +2093,68 @@ PRC_export_revolution = {
 		}
 		on_map_mode = map_and_decisions_view
 		remove_effect = {
-			TAL = {
-				set_politics = {
-					ruling_party = communist
+			AFG = {
+				every_core_state = {
+					add_core_of = CPA
+				}	
+			}
+			CPA = {
+				transfer_state = 267
+				transfer_state = 415
+				transfer_state = 824
+				transfer_state = 1355
+				transfer_state = 1054
+				transfer_state = 1056
+				
+				declare_war_on = {
+					target = AFG
+					type = civil_war
 				}
-				create_country_leader = {
-					name = "阿富汗人民委员会"
-					picture = "gfx/leaders/PRC/generals/PRC_lianm.png"
-					ideology = left_nationalism
+			}
+			if = {
+				limit = {
+					country_exists = TAL
 				}
-				if = {
-					limit = {
-						communist > 0.5
-					}
-					start_civil_war = {
-						ideology = conservative
+				TAL = {
+					transfer_units_fraction = {
+						target = CPA
 						size = 0.4
 					}
 				}
-				else = {
-					start_civil_war = {
-						ideology = conservative
+				CPA = {
+					declare_war_on = {
+						target = TAL
+						type = civil_war
+					}
+				}
+			}
+			if = {
+				limit = { 
+					country_exists = AFG
+				}
+				AFG = {
+					transfer_units_fraction = {
+						target = CPA
 						size = 0.6
 					}
 				}
+				CPA = {
+					declare_war_on = {
+						target = AFG
+						type = civil_war
+					}
+				}
+			}
+			add_to_variable = {
+				CPC_frame = 4
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
 			}
 		}
 		ai_will_do = {
@@ -1926,6 +2196,17 @@ PRC_export_revolution = {
 			declare_war_on = {
 				target = MON
 				type = annex_everything
+			}
+			add_to_variable = {
+				CPC_frame = 2
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
 			}
 		}
 		ai_will_do = {
@@ -2014,6 +2295,17 @@ PRC_assistance2communist = {
 			add_to_variable = {
 				PRC_india_maoism_count = 1
 			}
+			add_to_variable = {
+				CPC_frame = 1
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
+			}
 		}
 		ai_will_do = {
 			base = 10
@@ -2053,6 +2345,18 @@ PRC_assistance2communist = {
 		}
 		remove_effect = {
 			if = {
+				limit = { 
+					country_exists = CPA
+				}
+				CPA = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 179
+					}
+					add_income_with_inflation = yes
+				}
+			}
+			else_if = {
 				limit = {
 					country_exists = AFG
 				}
@@ -2073,12 +2377,24 @@ PRC_assistance2communist = {
 					}
 				}
 			}
-			PER = {
-				set_temp_variable = {
-					var = income_var_temp
-					value = 156
+			if = {
+				limit = { 
+					country_exists = CPP
 				}
-				add_income_with_inflation = yes
+				CPP = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 179
+					}
+					add_income_with_inflation = yes
+				}
+			}
+			else = {
+				set_temp_variable = {
+						var = income_var_temp
+						value = 179
+					}
+					add_income_with_inflation = yes
 			}
 		}
 		ai_will_do = {
@@ -2154,6 +2470,18 @@ PRC_assistance2communist = {
 				}
 				add_industrial_development = yes
 			}
+			add_to_variable = {
+				CPC_frame = 1
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
+			}
+
 		}
 		ai_will_do = {
 			base = 10
@@ -2181,6 +2509,18 @@ PRC_assistance2communist = {
 					value = -97
 				}
 				add_income_with_inflation = yes
+				add_to_variable = {
+					CPC_frame = 1
+				}
+				clamp_variable = {
+					var = CPC_frame
+					min = 0
+					max = 100
+				}
+				add_to_variable = {
+					PRC_Lib_Int_Dir_Var = 1
+				}
+
 			}
 			PRK = {
 				set_temp_variable = {
@@ -2270,6 +2610,18 @@ PRC_assistance2communist = {
 				}
 				add_military_development = yes
 			}
+			add_to_variable = {
+				CPC_frame = 1
+			}
+			clamp_variable = {
+				var = CPC_frame
+				min = 0
+				max = 100
+			}
+			add_to_variable = {
+				PRC_Lib_Int_Dir_Var = 1
+			}
+
 		}
 		ai_will_do = {
 			base = 10
@@ -2628,6 +2980,11 @@ PRC_red_JAP = {
 						is_owned_by = JAP
 					}
 					add_core_of = JPL
+				}
+				create_country_leader = {
+					name = "白井聪"
+					picture = "gfx/leaders/JPL_baijincong.png"
+					ideology = marxism_leninism
 				}
 				transfer_state = 528
 				add_state_core = 528

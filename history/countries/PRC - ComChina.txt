@@ -820,6 +820,7 @@
 	recruit_character = PRC_yin_yong
 	recruit_character = PRC_wen_yunsong
 	recruit_character = PRC_man_guangzhi
+	recruit_character = PRC_ultimate_npc
 
 	activate_advisor = PRC_Xu_Qiliang_air_chief
 	

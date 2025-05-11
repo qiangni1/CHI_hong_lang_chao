@@ -7,7 +7,8 @@ set_stability = 0.25
 
 set_country_flag = country_language_thai
 	
-	recruit_character = PRT_peoples_coaltion_char
+	recruit_character = THA_zhalun_dainai
+
 
 	set_technology = {
 		## Infantry ##
@@ -155,7 +156,11 @@ add_ideas = {
 	medium_poverty
 
 }
-
+set_party_name = {
+	ideology = communist
+	long_name = SIA_nationalist_party_long
+	name = SIA_nationalist_party
+}
 set_politics = {	
 	ruling_party = communist
 	#last_election = 2019.3.24
@@ -164,8 +169,11 @@ set_politics = {
 }
 
 set_popularities = {
-    totalitarian_socialist = 10
-    social_democrat = 10
-    libertarian_socialist = 20
-    communist = 10
+	communist = 50
+	libertarian_socialist = 10
+	totalitarian_socialist = 10
+	conservative = 5
+	social_liberal = 5
+	social_democrat = 5
+	authoritarian_democrat = 15
 }
