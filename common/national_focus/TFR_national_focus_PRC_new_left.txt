@@ -1721,6 +1721,13 @@ focus_tree = {
 				remove_idea = PLA_plasf_1
 				add_idea = PLA_plasf_2
 			}
+			hidden_effect = {
+				country_event = {
+					id = prcs.58
+					days = 10
+					random_days = 10
+				}
+			}
 		}
 	}
 	focus = {
@@ -2714,6 +2721,12 @@ focus_tree = {
 				id = prcs.24
 				days = 2
 			}
+			hidden_effect = {
+				country_event = {
+					id = prcs.75
+					days = 1095
+				}
+			}
 		}
 	}
 	focus = {
@@ -3213,6 +3226,13 @@ focus_tree = {
 		}
 		x = -2
 		y = 1
+		select_effect = {
+			country_event = {
+				id = prcs.40
+				days = 20
+				random_days = 5
+			}
+		}
 		relative_position_id = PRC_nl_sun_at_eight_nine
 		completion_reward = {
 			set_temp_variable = {
@@ -3308,6 +3328,13 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_nl_social_reeducation
 		}
+		select_effect = {
+			country_event = {
+				id = prcs.51
+				days = 10
+				random_days = 10
+			}
+		}
 		completion_reward = {
 			add_political_power = 100
 			effect_tooltip = {
@@ -3334,6 +3361,13 @@ focus_tree = {
 		relative_position_id = PRC_nl_social_reeducation
 		prerequisite = {
 			focus = PRC_nl_social_reeducation
+		}
+		select_effect = {
+			country_event = {
+				id = prcs.41
+				days = 10
+				random_days = 4
+			}
 		}
 		completion_reward = {
 			add_political_power = -50
@@ -3462,6 +3496,13 @@ focus_tree = {
 					add_idea = PRC_socialist_culture_start10
 				}
 			}
+			hidden_effect = {
+				country_event = {
+					id = prcs.55
+					days = 5
+					random_days = 3
+				}
+			}
 		}
 	}
 	focus = {
@@ -3506,6 +3547,11 @@ focus_tree = {
 		relative_position_id = PRC_nl_end_to_past_chaos
 		select_effect = {
 			add_ideas = PRC_offing_bad_trend
+			country_event = {
+				id = prcs.42
+				days = 5
+				random_days = 5
+			}
 		}
 		prerequisite = {
 			focus = PRC_nl_end_to_past_chaos
@@ -4412,6 +4458,13 @@ focus_tree = {
 		}
 		x = -2
 		y = 1
+		select_effect = {
+			country_event = {
+				id = prcs.23
+				days = 5
+				random_days = 20
+			}
+		}
 		relative_position_id = PRC_nl_dawn_project
 		completion_reward = {
 			add_tech_bonus = {
@@ -4472,6 +4525,13 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
+		select_effect = {
+			country_event = {
+				id = prcs.43
+				days = 5
+				random_days = 5
+			}
+		}
 		relative_position_id = PRC_nl_investment_in_new_energy
 		completion_reward = {
 			effect_tooltip = {
@@ -4606,6 +4666,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = PRC_nl_dawn_project
 		completion_reward = {
+			hidden_effect = {
+				country_event = {
+					id = prcs.53
+					days = 40
+					random_days = 50
+				}
+			}
 			unlock_decision_tooltip = PRC_asteroid_mining_programme_new_left
 			unlock_decision_tooltip = PRC_new_moon_race_programme_new_left
 			unlock_decision_tooltip = PRC_expand_satellite_launching_programme_new_left
@@ -4926,6 +4993,13 @@ focus_tree = {
 			custom_effect_tooltip = Two_mutually_exclusive_decision2
 			unlock_decision_tooltip = PRC_bureaucrat_training_standard
 			unlock_decision_tooltip = PRC_second_clear_four_campaign
+			hidden_effect = {
+				country_event = {
+					id = prcs.74
+					days = 10
+					random_days = 10
+				}
+			}
 		}
 	}
 	#人民与党，携手共进
@@ -5012,6 +5086,12 @@ focus_tree = {
 				days = 365
 			}
 			add_ideas = PRC_nl_shining_proletarian_democracy_idea
+			hidden_effect = {
+				country_event = {
+					id = prcs.73
+					days = 7
+				}
+			}
 		}
 	}
 	focus = {
@@ -6449,6 +6529,13 @@ focus_tree = {
 		relative_position_id = PRC_nl_free_and_equal_labor
 		prerequisite = {
 			focus = PRC_nl_free_and_equal_labor
+		}
+		select_effect = {
+			country_event = {
+				id = prcs.46
+				days = 5
+				random_days = 5
+			}
 		}
 		completion_reward = {
 			add_to_variable = {
