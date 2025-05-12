@@ -495,4 +495,12 @@ spriteTypes = {
 		name = "GFX_PRC_taiwan_hills"
 		textureFile = "gfx/event_pictures/PRC_taiwan_hills.png"
 	}
+	spriteType = {
+		name = "GFX_news_india"
+		textureFile = "gfx/event_pictures/news_india.png"
+	}
+	spriteType = {
+		name = "GFX_news_japan"
+		textureFile = "gfx/event_pictures/news_japan.png"
+	}
 }

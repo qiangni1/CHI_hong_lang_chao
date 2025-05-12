@@ -867,17 +867,20 @@ defined_text = {
 		localization_key = TFR_PEACE_POPUP_FLAVOR_SMA_LOSE
 	}
 
-	#text = {
-		#trigger = {
-			#event_target:winning_country = {
-				#tag = FROM
-			#}
-			#event_target:losing_country = {
-				#tag = SIG
-			#}
-		#}
-		#localization_key = TFR_PEACE_POPUP_FLAVOR_RED_SIG_LOSE
-	#}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				tag = FROM
+			}
+			event_target:losing_country = {
+				tag = SIG
+			}
+			SIG = {
+				is_ally_with = PRC
+			}
+		}
+		localization_key = TFR_PEACE_POPUP_FLAVOR_RED_SIG_LOSE
+	}
 
 	text = {
 		trigger = {
