@@ -295,6 +295,13 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = prcs.20.a
+		hidden_effect = {
+			country_event = {
+				id = prcs.57
+				days = 200
+				random_days = 50
+			}
+		}
 	}
 	major = no
 }
@@ -626,37 +633,51 @@ country_event = {
 		TFR_Country_Closing_Screen_Show = yes
 	}
 }
-country_event = {       #####反对加班一####（缺图）
+country_event = {       #####反对加班一####
 	id = prcs.37
 	title = prcs.37.t
 	desc = prcs.37.d
-	picture = GFX_
+	picture = GFX_PRC_streets
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
 	}
 	option = {
 		name = prcs.37.a
+		hidden_effect = {
+			country_event = {
+				id = prcs.38
+				days = 10
+				random_days = 2
+			}
+		}
 	}
 }
-country_event = {       #####反对加班二####（缺图）
+country_event = {       #####反对加班二####
 	id = prcs.38
 	title = prcs.38.t
 	desc = prcs.38.d
-	picture = GFX_
+	picture = GFX_PRC_dark_street
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
 	}
 	option = {
 		name = prcs.38.a
+		hidden_effect = {
+			country_event = {
+				id = prcs.39
+				days = 10
+				random_days = 2
+			}
+		}
 	}
 }
-country_event = {       #####反对加班三####（缺图）
+country_event = {       #####反对加班三####
 	id = prcs.39
 	title = prcs.39.t
 	desc = prcs.39.d
-	picture = GFX_
+	picture = GFX_PRC_chongqing
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -694,11 +715,11 @@ country_event = {       #####冬山市电视台报道####
 	}
 }
 
-country_event = {       #####翻案当年旧事#####（缺图）
+country_event = {       #####翻案当年旧事#####
 	id = prcs.42
 	title = prcs.42.t
 	desc = prcs.42.d
-	picture = GFX_
+	picture = GFX_PRC_school_visit
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -708,37 +729,51 @@ country_event = {       #####翻案当年旧事#####（缺图）
 	}
 }
 
-country_event = {       #####纳米机器人治疗癌症（一）#####（缺图）
+country_event = {       #####纳米机器人治疗癌症（一）#####
 	id = prcs.43
 	title = prcs.43.t
 	desc = prcs.43.d
-	picture = GFX_
+	picture = GFX_PRC_nanobot
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
 	}
 	option = {
 		name = prcs.43.a
+		hidden_effect = {
+			country_event = {
+				id = prcs.44
+				days = 5
+				random_days = 10
+			}
+		}
 	}
 }
-country_event = {       #####纳米机器人治疗癌症（二）#####（缺图）
+country_event = {       #####纳米机器人治疗癌症（二）#####
 	id = prcs.44
 	title = prcs.44.t
 	desc = prcs.44.d
-	picture = GFX_
+	picture = GFX_PRC_nanobot2
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
 	}
 	option = {
 		name = prcs.44.a
+		hidden_effect = {
+			country_event = {
+				id = prcs.45
+				days = 5
+				random_days = 10
+			}
+		}
 	}
 }
-country_event = {       #####纳米机器人治疗癌症（三）#####（缺图）
+country_event = {       #####纳米机器人治疗癌症（三）#####
 	id = prcs.45
 	title = prcs.45.t
 	desc = prcs.45.d
-	picture = GFX_
+	picture = GFX_PRC_nanobot3
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -748,24 +783,31 @@ country_event = {       #####纳米机器人治疗癌症（三）#####（缺图�
 	}
 }
 
-country_event = {       #####智能时代进行时（一）#####（缺图）
+country_event = {       #####智能时代进行时（一）####
 	id = prcs.46
 	title = prcs.46.t
 	desc = prcs.46.d
-	picture = GFX_
+	picture = GFX_PRC_intelligence_era
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
 	}
 	option = {
 		name = prcs.46.a
+		hidden_effect = {
+			country_event = {
+				id = prcs.47
+				days = 5
+				random_days = 10
+			}
+		}
 	}
 }
-country_event = {       #####智能时代进行时（二）#####（缺图）
+country_event = {       #####智能时代进行时（二）#####
 	id = prcs.47
 	title = prcs.47.t
 	desc = prcs.47.d
-	picture = GFX_
+	picture = GFX_PRC_guangzhou
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -789,24 +831,31 @@ country_event = {       #####怪老头（引入工人监管风味事件）#####
 	}
 }
 
-country_event = {       #####天光好（瓦解地方恩庇网事件）#####（缺图）
+country_event = {       #####天光好（瓦解地方恩庇网事件）#####
 	id = prcs.51
 	title = prcs.51.t
 	desc = prcs.51.d
-	picture = GFX_
+	picture = GFX_PRC_fuck_protectors2
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
 	}
 	option = {
 		name = prcs.51.a
+		hidden_effect = {
+			country_event = {
+				id = prcs.52
+				days = 10
+				random_days = 5
+			}
+		}
 	}
 }
-country_event = {       #####晴方好(天光好后续事件)#####（缺图）
+country_event = {       #####晴方好(天光好后续事件)#####
 	id = prcs.52
 	title = prcs.52.t
 	desc = prcs.52.d
-	picture = GFX_
+	picture = GFX_PRC_canteen
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -816,24 +865,31 @@ country_event = {       #####晴方好(天光好后续事件)#####（缺图）
 	}
 }
 
-country_event = {       #####航天食品改革#####（缺图）
+country_event = {       #####航天食品改革#####
 	id = prcs.53
 	title = prcs.53.t
 	desc = prcs.53.d
-	picture = GFX_
+	picture = GFX_PRC_space_food
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
 	}
 	option = {
 		name = prcs.53.a
+		hidden_effect = {
+			country_event = {
+				id = prcs.54
+				days = 100
+				random_days = 20
+			}
+		}
 	}
 }
-country_event = {       #####新式航天飞行器设计#####（缺图）
+country_event = {       #####新式航天飞行器设计#####
 	id = prcs.54
 	title = prcs.54.t
 	desc = prcs.54.d
-	picture = GFX_
+	picture = GFX_PRC_space_jet
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -843,11 +899,11 @@ country_event = {       #####新式航天飞行器设计#####（缺图）
 	}
 }
 
-country_event = {       #####重整理论研究#####（缺图）
+country_event = {       #####重整理论研究#####
 	id = prcs.55
 	title = prcs.55.t
 	desc = prcs.55.d
-	picture = GFX_
+	picture = GFX_PRC_marx_school
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -856,14 +912,17 @@ country_event = {       #####重整理论研究#####（缺图）
 		name = prcs.55.a
 	}
 }
-country_event = {       #####归乡之路#####（缺图）
+country_event = {       #####归乡之路#####
 	id = prcs.56
 	title = prcs.56.t
 	desc = prcs.56.d
-	picture = GFX_
-	is_triggered_only = yes
+	picture = GFX_PRC_PRK_train
+	fire_only_once = yes
 	trigger = {
 		tag = PRC
+		PRK = {
+			is_ally_with = PRC
+		}
 	}
 	option = {
 		name = prcs.56.a
@@ -873,11 +932,11 @@ country_event = {       #####归乡之路#####（缺图）
 		}
 	}
 }
-country_event = {       #####告别#####（缺图）
+country_event = {       #####告别#####
 	id = prcs.57
 	title = prcs.57.t
 	desc = prcs.57.d
-	picture = GFX_
+	picture = GFX_PRC_doctor
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -887,11 +946,11 @@ country_event = {       #####告别#####（缺图）
 	}
 }
 
-country_event = {       #####授勋仪式#####（缺图）
+country_event = {       #####授勋仪式#####
 	id = prcs.58
 	title = prcs.58.t
 	desc = prcs.58.d
-	picture = GFX_
+	picture = GFX_PRC_PLA_honor
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -901,11 +960,11 @@ country_event = {       #####授勋仪式#####（缺图）
 	}
 }
 
-country_event = {       #####天火项目#####（缺图）
+country_event = {       #####天火项目#####
 	id = prcs.59
 	title = prcs.59.t
 	desc = prcs.59.d
-	picture = GFX_
+	picture = GFX_PRC_planA
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -917,11 +976,11 @@ country_event = {       #####天火项目#####（缺图）
 		name = prcs.59.a.2
 	}
 }
-country_event = {       #####天火项目（成功）#####（缺图）
+country_event = {       #####天火项目（成功）#####
 	id = prcs.60
 	title = prcs.60.t
 	desc = prcs.60.d
-	picture = GFX_
+	picture =GFX_PRC_nuke_it
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -931,11 +990,11 @@ country_event = {       #####天火项目（成功）#####（缺图）
 	}
 }
 
-country_event = {       #####鲲鹏项目#####（缺图）
+country_event = {       #####鲲鹏项目#####
 	id = prcs.61
 	title = prcs.61.t
 	desc = prcs.61.d
-	picture = GFX_
+	picture = GFX_PRC_kunpeng
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -945,13 +1004,14 @@ country_event = {       #####鲲鹏项目#####（缺图）
 	}
 	option = {
 		name = prcs.61.a.2
+		#remove_decision = 
 	}
 }
-country_event = {       #####鲲鹏项目（成功）#####（缺图）
+country_event = {       #####鲲鹏项目（成功）#####
 	id = prcs.62
 	title = prcs.62.t
 	desc = prcs.62.d
-	picture = GFX_
+	picture = GFX_PRC_kunpeng_good
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -991,11 +1051,11 @@ country_event = {       #####玄武项目（成功）#####
 	}
 }
 
-country_event = {       #####长缨项目#####（缺图）
+country_event = {       #####长缨项目#####
 	id = prcs.65
 	title = prcs.65.t
 	desc = prcs.65.d
-	picture = GFX_
+	picture = GFX_PRC_missiles
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -1021,11 +1081,11 @@ country_event = {       #####长缨项目（成功）#####
 	}
 }
 
-country_event = {       #####短剑项目#####（缺图）
+country_event = {       #####短剑项目#####
 	id = prcs.67
 	title = prcs.67.t
 	desc = prcs.67.d
-	picture = GFX_
+	picture = GFX_PRC_pen
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -1051,11 +1111,11 @@ country_event = {       #####短剑项目（成功）#####
 	}
 }
 
-country_event = {       #####晨光项目#####（缺图）
+country_event = {       #####晨光项目#####
 	id = prcs.69
 	title = prcs.69.t
 	desc = prcs.69.d
-	picture = GFX_
+	picture = GFX_PRC_space_fight
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -1067,11 +1127,11 @@ country_event = {       #####晨光项目#####（缺图）
 		name = prcs.69.a.2
 	}
 }
-country_event = {       #####晨光项目（部分成功）#####（缺图）
+country_event = {       #####晨光项目（部分成功）#####
 	id = prcs.70
 	title = prcs.70.t
 	desc = prcs.70.d
-	picture = GFX_
+	picture = GFX_PRC_space_fight_maybe
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -1081,11 +1141,11 @@ country_event = {       #####晨光项目（部分成功）#####（缺图）
 	}
 }
 
-country_event = {       #####文化线以技术开拓未来事件（上）########文本太长了分两个写######（缺图）
+country_event = {       #####文化线以技术开拓未来事件（上）########文本太长了分两个写######
 	id = prcs.71
 	title = prcs.71.t
 	desc = prcs.71.d
-	picture = GFX_
+	picture = GFX_PRC_rural_education
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -1113,17 +1173,21 @@ country_event = {       #####文化线以技术开拓未来事件（下）#####
 	}
 }
 
-country_event = {       #####无产阶级的民主事件#####（缺图）
+country_event = {       #####无产阶级的民主事件#####
 	id = prcs.73
 	title = prcs.73.t
 	desc = prcs.73.d
-	picture = GFX_
+	picture = GFX_PRC_proletariat_democracy
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
 	}
 	option = {
 		name = prcs.73.a
+		country_event = {
+			id = prcs.76
+			days = 5
+		}
 	}
 }
 
@@ -1141,11 +1205,11 @@ country_event = {       #####追忆五卅运动（重建无产阶级专政国策
 	}
 }
 
-country_event = {       #####台北自驾之旅（台海三年后触发）#####（缺图）
+country_event = {       #####台北自驾之旅（台海三年后触发）#####
 	id = prcs.75
 	title = prcs.75.t
 	desc = prcs.75.d
-	picture = GFX_
+	picture = GFX_PRC_taiwan_hills
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -1155,6 +1219,37 @@ country_event = {       #####台北自驾之旅（台海三年后触发）#####�
 		add_political_power = 1
 	}
 }
+country_event = {      
+	id = prcs.76
+	title = prcs.76.t
+	desc = prcs.76.d
+	picture = GFX_PRC_mao_the_conference
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = prcs.76.a
+		country_event = {
+			id = prcs.77
+			days = 5
+		}
+	}
+}
+country_event = {      
+	id = prcs.77
+	title = prcs.77.t
+	desc = prcs.77.d
+	picture = GFX_PRC_congress
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = prcs.77.a
+	}
+}
+
 country_event = {
 	id = Chihong.1
 	title = Chihong.1.t
@@ -1384,6 +1479,13 @@ country_event = {
 		name = Chihong.16.a
 		ai_chance = {
 			base = 50
+		}
+		hidden_effect = {
+			country_event = {
+				id = Chihong.48
+				days = 10
+				random_days = 4
+			}
 		}
 	}
 }
@@ -1747,6 +1849,13 @@ country_event = {
 		add_political_power = 100
 		add_stability = 0.1
 		add_war_support = 0.1
+		hidden_effect = {
+			country_event = {
+				id = prcs.48
+				days = 30
+				random_days = 30
+			}
+		}
 	}
 }
 
@@ -1943,6 +2052,13 @@ country_event = {
 		name = Chihong.48.a
 		ai_chance = {
 			base = 50
+		}
+		hidden_effect = {
+			country_event = {
+				id = Chihong.49
+				days = 10
+				random_days = 2
+			}
 		}
 	}
 }

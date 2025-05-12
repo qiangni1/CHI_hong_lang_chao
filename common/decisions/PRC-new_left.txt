@@ -4234,6 +4234,13 @@ PRC_Culture_Revital = {
 					add_idea = PRC_socialist_culture_start18
 				}
 			}
+			hidden_effect = {
+				country_event = {
+					id = prcs.71
+					days = 5
+					random_days = 5
+				}
+			}
 		}
 	}
 	#	乡村学校改造

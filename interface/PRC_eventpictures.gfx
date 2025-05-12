@@ -399,4 +399,108 @@ spriteTypes = {
 		name = "GFX_PRC_party_office"
 		textureFile = "gfx/event_pictures/PRC_party_office.png"
 	}
+	spriteType = {
+		name = "GFX_PRC_school_visit"
+		textureFile = "gfx/event_pictures/PRC_school_visit.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_nanobot"
+		textureFile = "gfx/event_pictures/PRC_nanobot.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_nanobot2"
+		textureFile = "gfx/event_pictures/PRC_nanobot2.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_nanobot3"
+		textureFile = "gfx/event_pictures/PRC_nanobot3.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_intelligence_era"
+		textureFile = "gfx/event_pictures/PRC_intelligence_era.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_fuck_protectors2"
+		textureFile = "gfx/event_pictures/PRC_fuck_protectors2.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_canteen"
+		textureFile = "gfx/event_pictures/PRC_canteen.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_space_food"
+		textureFile = "gfx/event_pictures/PRC_space_food.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_space_jet"
+		textureFile = "gfx/event_pictures/PRC_space_jet.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_marx_school"
+		textureFile = "gfx/event_pictures/PRC_marx_school.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_PRK_train"
+		textureFile = "gfx/event_pictures/PRC_PRK_train.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_doctor"
+		textureFile = "gfx/event_pictures/PRC_doctor.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_PLA_honor"
+		textureFile = "gfx/event_pictures/PRC_PLA_honor.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_planA"
+		textureFile = "gfx/event_pictures/PRC_planA.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_nuke_it"
+		textureFile = "gfx/event_pictures/PRC_nuke_it.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_kunpeng"
+		textureFile = "gfx/event_pictures/PRC_kunpeng.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_kunpeng_good"
+		textureFile = "gfx/event_pictures/PRC_kunpeng_good.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_missiles"
+		textureFile = "gfx/event_pictures/PRC_missiles.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_pen"
+		textureFile = "gfx/event_pictures/PRC_pen.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_space_fight"
+		textureFile = "gfx/event_pictures/PRC_space_fight.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_space_fight_maybe"
+		textureFile = "gfx/event_pictures/PRC_space_fight_maybe.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_rural_education"
+		textureFile = "gfx/event_pictures/PRC_rural_education.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_proletariat_democracy"
+		textureFile = "gfx/event_pictures/PRC_proletariat_democracy.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_taiwan_hills"
+		textureFile = "gfx/event_pictures/PRC_taiwan_hills.png"
+	}
+	spriteType = {
+		name = "GFX_news_india"
+		textureFile = "gfx/event_pictures/news_india.png"
+	}
+	spriteType = {
+		name = "GFX_news_japan"
+		textureFile = "gfx/event_pictures/news_japan.png"
+	}
 }

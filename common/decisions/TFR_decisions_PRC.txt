@@ -4874,6 +4874,13 @@ PRC_maoist_politburo_cat = {
 			poverty_development_monthly = 0.005
 		}
 		complete_effect = {
+			hidden_effect = {
+				country_event = {
+					id = prcs.37
+					days = 5
+					random_days = 20
+				}
+			}
 		}
 		remove_effect = {
 			effect_tooltip = {
