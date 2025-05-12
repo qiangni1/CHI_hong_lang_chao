@@ -302,7 +302,9 @@ PRC_export_revolution = {
 				transfer_state = 289
 				transfer_state = 724
 				transfer_state = 890
-				load_oob = "SIA_reserves"
+				hidden_effect = {
+					load_oob = "SIA_reserves"
+				}
 				declare_war_on = {
 					target = SIA
 					type = civil_war
@@ -1239,7 +1241,9 @@ PRC_export_revolution = {
 				transfer_state = 411
 				transfer_state = 412
 				transfer_state = 413
-				load_oob = "PER_2020"
+				hidden_effect = {
+					load_oob = "PER_2020"
+				}
 				declare_war_on = {
 					target = PER
 					type = civil_war

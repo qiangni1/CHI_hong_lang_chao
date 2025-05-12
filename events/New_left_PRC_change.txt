@@ -138,13 +138,9 @@ country_event = {
 	option = {
 		name = prc_change.8.a
 		hidden_effect = {
-			news_event = {
-				id = china.252
-				hours = 12
-			}
 			country_event = {
-				id = china.18
-				hours = 5
+				id = prc_change.9
+				days = 10
 			}
 		}
 		set_temp_variable = {
@@ -171,59 +167,83 @@ country_event = {
 	}
 }
 
-country_event = {       #####二十大前一#####（缺图）
+country_event = {       #####二十大前一#####
 	id = prc_change.9
 	title = prc_change.9.t
 	desc = prc_change.9.d
-	picture = GFX_
+	picture = GFX_PRC_congress
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
 	}
 	option = {
 		name = prc_change.9.a
+		hidden_effect = {
+			country_event = {
+				id = prc_change.10
+				days = 10
+			}
+		}
 	}
 }
 
-country_event = {       #####二十大前二#####（缺图）
+country_event = {       #####二十大前二#####
 	id = prc_change.10
 	title = prc_change.10.t
 	desc = prc_change.10.d
-	picture = GFX_
+	picture = GFX_PRC_congress2
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
 	}
 	option = {
 		name = prc_change.10.a
+		hidden_effect = {
+			country_event = {
+				id = prc_change.11
+				days = 10
+			}
+		}
 	}
 }
 
-country_event = {       #####二十大前三#####（缺图）
+country_event = {       #####二十大前三#####
 	id = prc_change.11
 	title = prc_change.11.t
 	desc = prc_change.11.d
-	picture = GFX_
+	picture = GFX_PRC_congress3
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
 	}
 	option = {
 		name = prc_change.11.a
+		hidden_effect = {
+			country_event = {
+				id = prc_change.12
+				days = 10
+			}
+		}
 	}
 }
 
-country_event = {       #####二十大会上一#####（缺图）
+country_event = {       #####二十大会上一#####
 	id = prc_change.12
 	title = prc_change.12.t
 	desc = prc_change.12.d
-	picture = GFX_
+	picture = GFX_PRC_hu_chunhua
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
 	}
 	option = {
 		name = prc_change.12.a
+		hidden_effect = {
+			country_event = {
+				id = prc_change.13
+				days = 10
+			}
+		}
 	}
 }
 

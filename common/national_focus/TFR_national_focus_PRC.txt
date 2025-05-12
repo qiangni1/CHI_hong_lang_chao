@@ -336,9 +336,10 @@ focus_tree = {
 		icon = GFX_focus_PRC_five_shinig_stars_of_china
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = PRC_prepare_for_the_20th
 		available_if_capitulated = yes
+		cancelable = no
 		ai_will_do = {
 			factor = 10
 		}
@@ -356,6 +357,12 @@ focus_tree = {
 				}
 			}
 		}
+		select_effect = {
+			country_event = {
+				id = prc_change.8
+				days = 3
+			}
+		}
 		prerequisite = {
 			focus = PRC_in_the_name_of_people
 		}
@@ -369,10 +376,15 @@ focus_tree = {
 			focus = PRC_prepare_for_the_20th
 		}
 		completion_reward = {
-			country_event = {
-				id = prc_change.8
-				hours = 3
+			news_event = {
+				id = china.252
+				hours = 12
 			}
+			country_event = {
+				id = china.18
+				hours = 5
+			}
+
 		}
 	}
 	focus = {
