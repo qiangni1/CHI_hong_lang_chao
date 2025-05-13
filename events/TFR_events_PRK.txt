@@ -417,7 +417,7 @@ country_event = {
 #				days = 5
 #			}
 #		}
-		ai_chance = {
+#		ai_chance = {
 #			base = 0
 #		}
 #	}
