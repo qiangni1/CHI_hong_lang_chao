@@ -95,7 +95,7 @@ guiTypes = { #NVX# Tag for changes
 			iconType = {
 				name ="frontend_game_logo"
 				spriteType = "GFX_frontend_game_logo"
-				position = { x= 20 y = -400 }
+				position = { x= 30 y = -400 }
 			}
 			
 		}
@@ -332,7 +332,7 @@ guiTypes = { #NVX# Tag for changes
 		iconType = {
 			name ="frontend_update_image"
 			spriteType = "GFX_frontend_update_image"
-			position =  { x= 160 y = -55 }
+			position =  { x= 157 y = -55 }
 			pdx_tooltip = "TFR_UPDATE_TOOLTIP"
 		}	
 	}

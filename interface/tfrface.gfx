@@ -19,4 +19,9 @@ spriteTypes = {
 		horizontal = yes
 		effectFile = "gfx/FX/progress.lua"
 	}
+	spriteType = {
+		name = "GFX_next_update"
+		textureFile = "gfx/interface/Nextstop_PLA.png"
+		legacy_lazy_load = no
+	}
 }

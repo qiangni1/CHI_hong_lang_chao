@@ -5,7 +5,7 @@
   TFR_CountryClosing_select_btn_credits_text: "鸣谢"
   TFR_CountryClosing_select_btn_credits_tt: "§W《红色黎明》的开发者诚挚地感谢各位游玩本模组，希望你玩得开心！§!\n\n感谢§3《新秩序·欧洲末日》§!开创的结束语模板！本创意毫无争议地属于他们！"
   TFR_CountryClosing_close_btn_text: "结束…？"
-  TFR_CountryClosing_close_btn_tt: "§W欢迎体验其他的§0TFR§!§t中国区§!submod！§!\n\n《红色黎明》下一版更新计划：\n- 新§G军改§!\n- §p党政§!GUI\n- 更多事件+描述\n-……"
+  TFR_CountryClosing_close_btn_tt: "§W欢迎体验其他的§0TFR§!§t中国区§!submod！§!\n\n《红色黎明》下一版更新计划：\n\n\n\n\n\n\n\n£GFX_next_update\n\n\n\n\n\n\n\n\n\n- 新§G军改§!\n- §p党政§!GUI\n- 更多事件+描述\n-……"
   TFR_CountryClosing_page_btn_tt: "§W第[Get_TFR_CountryClosing_page_btn_text]页§!"
 
   TFR_CountryClosing_epilogue_PRC_Revolution_Ending: "§3新自由主义者§!曾狂妄的宣称：“20世纪最伟大的两件事是社会主义的§t尝试§!和它的§3失败§!。”但我们用现实雄辩地证明：§t苏联§!，乃至全西方的异化§t马克思主义§!理论，远远不是伟大社会主义能为文明带来的极限。\n\n时值[GetYear]年，又一次§A战争§!与§t革命§!的新时代用第三世界的怒火将§3资本主义§!从历史终结的山巅之城中连根拔起。在§A旧社会§!的废墟中，终得解放的劳动者们正在憧憬着用自己的双手亲自建设一个§t新的世界。§!\n现在，那些曾攻击我们的人也不得不加入到我们的行列中，人民追随着文明之火纷至沓来。我们永远不会宣称自己§3已经§!实现了文明的极限，而是§t继续革命§!，每一次斗争都将让我们将离§R共产主义§!的世界更近一步。\n\n§R新的世界，继续前进！§!\n\n感谢你游玩中国！感谢你游玩§R《红色黎明》§!！"
