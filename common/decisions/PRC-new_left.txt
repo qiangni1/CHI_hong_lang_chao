@@ -4395,9 +4395,17 @@ PRC_Culture_Revital = {
 			society_development_monthly = 0.02
 		}
 		remove_effect = {
-			custom_override_tooltip = {
-				tooltip = Put_Back_365_days
-				country_event = Chihong.37
+			custom_effect_tooltip = Put_Back_365_days
+			add_timed_idea = {
+				idea = PRC_leading_the_student
+				days = 365
+			}
+			custom_effect_tooltip = on_idea_removal_tt
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_socialist_culture_start
+					add_idea = PRC_socialist_culture_start29
+				}
 			}
 		}
 	}
@@ -5761,8 +5769,14 @@ PRC_Youth_Ideological_Education = {
 				mission = PRC_damage_from_reactionary_mission
 				days = 25
 			}
-			retire_character = PRC_wei_fenghe
-			retire_character = PRC_Li_Shangfu
+			custom_effect_tooltip = characters_will_be_retired
+			show_ideas_tooltip = PRC_wei_fenghe
+			show_ideas_tooltip = PRC_li_shangfu
+			hidden_effect = {
+				retire_character = PRC_wei_fenghe
+				retire_character = PRC_Li_Shangfu
+				set_country_flag = PRC_jailed_for_corruption_flag
+			}
 		}
 	}
 	#	第二次新文化运动:党组领导，吸收外来，不忘本来

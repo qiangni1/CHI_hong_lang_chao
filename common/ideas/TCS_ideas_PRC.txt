@@ -524,7 +524,66 @@ ideas = {
 				army_org_factor = 0.05
 			}	
 		}
+		#	国策 - 寰宇赤潮 - 效果
+		PRC_socialist_culture_start29 = {
+			picture = generic_covid
+	
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				research_speed_factor = 0.05
+				industrial_capacity_factory = 0.03
+				production_factory_max_efficiency_factor = 0.05
+				personal_value_factor = 0.075
+				conscription_factor = 0.05
+				army_org_factor = 0.03
+			}	
+		}
 
+		#	决议 - 引导学生 - 假精神
+		PRC_leading_the_student = {
+			picture = PRC_one_heart_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				
+			}
+			on_remove = {
+				add_to_variable = {
+					PSC_pp_cost_var = -0.05
+				}
+				add_to_variable = {
+					PSC_research_var = 0.05
+				}
+				add_to_variable = {
+					PSC_factory_output_var = 0.03
+				}
+				add_to_variable = {
+					PSC_max_efficiency_var = 0.05
+				}
+				add_to_variable = {
+					PSC_personal_value_var = 0.075
+				}
+				add_to_variable = {
+					PSC_conscription_factor_var = 0.05
+				}
+				add_to_variable = {
+					PSC_army_org_var = 0.03
+				}
+			}
+		}
 		#	党内整风 - 初始
 		PRC_party_rectification_campaign = {
 			picture = generic_covid
