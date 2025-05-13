@@ -15,7 +15,7 @@ on_actions = {
 					var = mingong_cha
 					value = mingongshu0
 				}
-				multiply_variable = { mingong_cha = 0.005 }
+				multiply_variable = { mingong_cha = 0.003 }
 				set_variable = {
 					var = mingong_cha1
 					value = mingong_cha
