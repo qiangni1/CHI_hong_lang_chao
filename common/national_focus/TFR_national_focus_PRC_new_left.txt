@@ -2013,6 +2013,7 @@ focus_tree = {
 			}
 			set_country_flag = PRC_world_revolution
 			add_ideas = PRC_birthplace_of_the_revolution_idea
+			unlock_decision_category_tooltip = PRC_export_revolution
 		}
 	}
 	focus = {
@@ -2258,9 +2259,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			unlock_decision_tooltip = PRC_DPRK_mechanized
-			country_event = {
-				id = china.1716
-			}
 		}
 	}
 	focus = {
