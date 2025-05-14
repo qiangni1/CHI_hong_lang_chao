@@ -2411,12 +2411,13 @@ PRC_assistance2communist = {
 		available = {
 			hidden_trigger = {
 				has_completed_focus = Moisturizing_things_silently
-				has_country_flag = PRCnl_kill_AFG
-				has_country_flag = PRCnl_kill_PER
 				NOT = {
 					has_country_flag = terrorist_clr
 				}
 			}
+			PRC_new_west_asia_trigger = yes
+			#country_exists = CPA
+			#country_exists = CPP
 		}
 		visible = {
 			has_completed_focus = Moisturizing_things_silently
@@ -2567,6 +2568,9 @@ PRC_assistance2communist = {
 						instant_build = yes
 					}
 				}
+			}
+			country_event = {
+				id = china.1716
 			}
 		}
 		ai_will_do = {
