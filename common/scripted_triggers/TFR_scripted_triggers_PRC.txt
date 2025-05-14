@@ -407,3 +407,12 @@ PRC_jingji_3_jieduan = {	#国策敢教日月换新天执行条件：已完成第
 	}
 }
 
+PRC_new_west_asia_trigger = {	#援助西亚前提条件
+	custom_trigger_tooltip = {
+		tooltip = PRC_nl_new_west_asia_trigger_tooltip
+		tag = PRC
+		country_exists = CPA
+		country_exists = CPP
+	}
+}
+
