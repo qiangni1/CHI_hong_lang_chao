@@ -182,6 +182,9 @@ PRC_ready_for_global_economy_destory_category = {
 PRC_solve_economy_crisis = {
 	icon = GFX_PRC_Communist_Money
 	scripted_gui = TFR_jingji_weiji_nl
+	allowed = {
+		tag = PRC
+	}
 	visible = {
 		OR = {
 			has_country_flag = PRC_wall_street_death			#华尔街崩溃

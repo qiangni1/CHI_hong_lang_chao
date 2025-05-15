@@ -2409,10 +2409,14 @@ PRC_assistance2communist = {
 		#西亚
 		icon = GFX_PRC_new_left_decision
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_nl_new_west_asia_trigger_tooltip
+				tag = PRC
+				country_exists = CPA
+				country_exists = CPP
+			}
 			hidden_trigger = {
 				has_completed_focus = Moisturizing_things_silently
-				has_country_flag = PRCnl_kill_AFG
-				has_country_flag = PRCnl_kill_PER
 				NOT = {
 					has_country_flag = terrorist_clr
 				}
@@ -2567,6 +2571,11 @@ PRC_assistance2communist = {
 						instant_build = yes
 					}
 				}
+			}
+		}
+		remove_effect = {
+			country_event = {
+				id = china.1716
 			}
 		}
 		ai_will_do = {
@@ -3937,10 +3946,7 @@ PRC_mongolia_hetong = {
 		days_remove = 20
 		fire_only_once = yes		# 允许重复触发 # 花费
 		remove_effect = {
-			set_country_flag = {
-				flag = PRC_mongolia_hetong_flag
-				value = 3
-			}
+			set_country_flag = PRC_mongolia_status_flag
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -2000
@@ -3968,10 +3974,7 @@ PRC_mongolia_hetong = {
 	}
 	PRC_Global_Red_Tide6 = {
 		visible = {
-			has_country_flag = {
-				flag = PRC_mongolia_hetong_flag
-				value = 3
-			}
+			has_country_flag = PRC_mongolia_status_flag
 		}
 		available = {
 			always = yes
@@ -3980,10 +3983,7 @@ PRC_mongolia_hetong = {
 		days_remove = 20
 		fire_only_once = yes		# 允许重复触发 # 花费
 		remove_effect = {
-			set_country_flag = {
-				flag = PRC_mongolia_hetong_flag
-				value = 4
-			}
+			set_country_flag = PRC_mongolia_assist_flag
 			MON = {
 				set_politics = {
 					ruling_party = communist
@@ -4009,10 +4009,7 @@ PRC_mongolia_hetong = {
 	}
 	PRC_Global_Red_Tide7 = {
 		visible = {
-			has_country_flag = {
-				flag = PRC_mongolia_hetong_flag
-				value = 4
-			}
+			has_country_flag = PRC_mongolia_assist_flag
 		}
 		available = {
 			always = yes
@@ -4027,10 +4024,7 @@ PRC_mongolia_hetong = {
 			PRC_wofo_MON = yes
 		}
 		remove_effect = {
-			set_country_flag = {
-				flag = PRC_mongolia_hetong_flag
-				value = 5
-			}
+			set_country_flag = PRC_mongolia_heb_flag
 			set_temp_variable = {
 				var = PRC_enviromental_progress_temp
 				value = 0.1
@@ -4061,10 +4055,7 @@ PRC_mongolia_hetong = {
 	}
 	PRC_Global_Red_Tide8 = {
 		visible = {
-			has_country_flag = {
-				flag = PRC_mongolia_hetong_flag
-				value = 5
-			}
+			has_country_flag = PRC_mongolia_heb_flag
 		}
 		available = {
 			always = yes
@@ -4396,9 +4387,11 @@ PRC_Culture_Revital = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = Put_Back_365_days
-			add_timed_idea = {
+			hidden_effect = {
+				add_timed_idea = {
 				idea = PRC_leading_the_student
 				days = 365
+				}
 			}
 			custom_effect_tooltip = on_idea_removal_tt
 			effect_tooltip = {

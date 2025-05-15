@@ -1,5 +1,6 @@
 PRC_nems_system = {
 	icon = GFX_PRC_NEMS
+	picture = GFX_PRC_loji_banner
 	visible_when_empty = yes
 	allowed = {
 		tag = PRC
