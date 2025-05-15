@@ -2011,6 +2011,7 @@ focus_tree = {
 					random_days = 50
 				}
 			}
+			custom_effect_tooltip = PRC_revolutionary_tt
 			set_country_flag = PRC_world_revolution
 			add_ideas = PRC_birthplace_of_the_revolution_idea
 		}
@@ -2036,8 +2037,7 @@ focus_tree = {
 			hidden_effect = {
 				country_event = {
 					id = Chihong.16
-					days = 75
-					random_days = 25
+					days = 4
 				}
 			}
 		}
@@ -2258,9 +2258,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			unlock_decision_tooltip = PRC_DPRK_mechanized
-			country_event = {
-				id = china.1716
-			}
 		}
 	}
 	focus = {

@@ -7,7 +7,6 @@ focus_tree = {
 			tag = PRC
 		}
 	}
-	#Covid
 	focus = {
 		id = PRC_the_man_death
 		icon = GFX_focus_PRC_likeqiang
@@ -358,9 +357,11 @@ focus_tree = {
 			}
 		}
 		select_effect = {
-			country_event = {
-				id = prc_change.8
-				days = 3
+			hidden_effect = {
+				country_event = {
+					id = prc_change.9
+					days = 4
+				}
 			}
 		}
 		prerequisite = {
@@ -376,15 +377,17 @@ focus_tree = {
 			focus = PRC_prepare_for_the_20th
 		}
 		completion_reward = {
-			news_event = {
-				id = china.252
-				hours = 12
+			hidden_effect = {
+				country_event = {
+					id = prc_change.8
+					hours = 5
+				}
+				news_event = {
+					id = china.252
+					hours = 12
+				}
 			}
-			country_event = {
-				id = china.18
-				hours = 5
-			}
-
+			custom_effect_tooltip = PRC_20big_effect
 		}
 	}
 	focus = {
@@ -661,6 +664,9 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			hidden_effect = {
+				scoped_play_song = "vision2020"
+			}
 			add_days_mission_timeout = {
 				mission = PRC_control_the_coronavirus_mission
 				days = 30
@@ -5489,7 +5495,6 @@ shared_focus = {
 	allow_branch = {
 		OR = {
 			has_global_flag = pan_asian_war_ongoing
-			is_ally_with = PRK
 		}
 	}
 	available = {
