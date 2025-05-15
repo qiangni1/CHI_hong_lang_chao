@@ -137,11 +137,80 @@ country_event = {
 	}
 	option = {
 		name = prc_change.8.a
+		set_global_flag = PRC_xx_congress_end
 		hidden_effect = {
-			country_event = {
-				id = prc_change.9
-				days = 10
+			load_focus_tree = PRC_taiwan_war_tree
+			complete_national_focus = PRC_consolidate_hu_chunhua_support
+		}
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = no
 			}
+		}
+		retire_character = PRC_xi_jinping
+		add_country_leader_role = {
+			character = PRC_Hu_Chunhua
+			promote_leader = yes
+			country_leader = {
+				ideology = marxism_leninism
+				expire = "2099.1.1.1"
+				traits = {
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = PRC_Hu_Chunhua
+			promote_leader = yes
+			country_leader = {
+				ideology = eurocommunism
+				expire = "1.1.1.1"
+				traits = {
+				}
+			}
+		}
+		custom_effect_tooltip = appoint_head_minister_tooltip
+		show_ideas_tooltip = PRC_HuChunHua_hog_dummy
+		clr_country_flag = PRC_internal_factions_enabled_flag
+		set_country_flag = PRC_the_man_death_flag
+		hidden_effect = {
+			set_cosmetic_tag = PRC_totalitarian_socialist
+			add_ideas = PRC_HuChunHua_hog_dummy
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.1
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = PRC_communist_party_long
+				name = PRC_communist_party
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = PRC_cpc_rad_maoist_tot_soc
+				name = PRC_cpc_rad_maoist_tot_soc_short
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = PRC_cpc_neomarxist_libsoc
+				name = PRC_cpc_neomarxist_libsoc_short
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
 		}
 		set_temp_variable = {
 			coalition_partner_var_temp = token:social_liberal

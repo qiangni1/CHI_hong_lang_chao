@@ -41,13 +41,20 @@ country_event = {
 	id = prcs.3
 	title = prcs.3.t
 	desc = prcs.3.d
-	picture = GFX_2025_xinchun
+	picture = GFX_PRC_mao_the_sun
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = prcs.3.a
-		retire_character = PRC_hu_chunhua
-		promote_character = PRC_ultimate_npc
+		hidden_effect = {
+			retire_character = PRC_hu_chunhua
+			promote_character = PRC_ultimate_npc
+			country_event = {
+				id = prcs.36
+				hours = 7
+			}
+		}
+		custom_effect_tooltip = PRC_tfr_china_end_tt
 	}
 }
 
@@ -162,7 +169,7 @@ country_event = {
 	desc = prcs.9.d
 	is_triggered_only = yes
 	option = {
-		add_stability = -0.05
+		add_stability = 0.015
 		name = prcs.9.a
 	}
 }
@@ -524,7 +531,6 @@ country_event = {
 		}
 		PRC_reserve_fund_one_new = yes
 		#储备金-25B
-		add_political_power = -50
 	}
 	option = {
 		set_temp_variable = {
@@ -553,6 +559,10 @@ country_event = {
 			var = PRC_influence_new_var_temp			#新左派影响力+7.5%
 			value = 0.075
 		}
+		set_temp_variable = {
+			var = PRC_approval_rating_var_temp
+			value = -0.1
+		}
 		PRC_add_influence_new = yes
 		name = prcs.33.a
 	}
@@ -560,7 +570,7 @@ country_event = {
 		name = prcs.33.b
 		set_temp_variable = {
 			var = PRC_influence_lib_var_temp
-			value = -0.05
+			value = 0.05
 		}
 		PRC_add_influence_lib = yes
 		set_temp_variable = {
@@ -581,6 +591,7 @@ country_event = {
 	option = {
 		name = prcs.34.a
 		set_country_flag = PRC_weiji_end
+		add_stability = 0.025
 	}
 }
 
@@ -596,6 +607,7 @@ country_event = {
 		name = prcs.35.a
 	}
 }
+
 country_event = {
 	id = prcs.36
 	picture = GFX_event_tiananmen
@@ -608,7 +620,7 @@ country_event = {
 		custom_effect_tooltip = unrestricted_diplomacy_tt
 		set_country_flag = unrestricted_diplomacy_flag
 		if = {
-			limit = { 
+			limit = {
 				SOV = {
 					OR = {
 						has_government = communist
@@ -620,7 +632,7 @@ country_event = {
 			set_country_flag = PRC_Revolution_return_ending1
 		}
 		else_if = {
-			limit = { 
+			limit = {
 				APA = {
 					has_country_flag = APA_reunified_flag
 				}
@@ -633,7 +645,9 @@ country_event = {
 		TFR_Country_Closing_Screen_Show = yes
 	}
 }
-country_event = {       #####反对加班一####
+
+country_event = {
+	#####反对加班一####
 	id = prcs.37
 	title = prcs.37.t
 	desc = prcs.37.d
@@ -653,7 +667,9 @@ country_event = {       #####反对加班一####
 		}
 	}
 }
-country_event = {       #####反对加班二####
+
+country_event = {
+	#####反对加班二####
 	id = prcs.38
 	title = prcs.38.t
 	desc = prcs.38.d
@@ -673,7 +689,9 @@ country_event = {       #####反对加班二####
 		}
 	}
 }
-country_event = {       #####反对加班三####
+
+country_event = {
+	#####反对加班三####
 	id = prcs.39
 	title = prcs.39.t
 	desc = prcs.39.d
@@ -687,7 +705,8 @@ country_event = {       #####反对加班三####
 	}
 }
 
-country_event = {       #####批判儒家事件####
+country_event = {
+	#####批判儒家事件####
 	id = prcs.40
 	title = prcs.40.t
 	desc = prcs.40.d
@@ -701,7 +720,8 @@ country_event = {       #####批判儒家事件####
 	}
 }
 
-country_event = {       #####冬山市电视台报道####
+country_event = {
+	#####冬山市电视台报道####
 	id = prcs.41
 	title = prcs.41.t
 	desc = prcs.41.d
@@ -715,7 +735,8 @@ country_event = {       #####冬山市电视台报道####
 	}
 }
 
-country_event = {       #####翻案当年旧事#####
+country_event = {
+	#####翻案当年旧事#####
 	id = prcs.42
 	title = prcs.42.t
 	desc = prcs.42.d
@@ -729,7 +750,8 @@ country_event = {       #####翻案当年旧事#####
 	}
 }
 
-country_event = {       #####纳米机器人治疗癌症（一）#####
+country_event = {
+	#####纳米机器人治疗癌症（一）#####
 	id = prcs.43
 	title = prcs.43.t
 	desc = prcs.43.d
@@ -749,7 +771,9 @@ country_event = {       #####纳米机器人治疗癌症（一）#####
 		}
 	}
 }
-country_event = {       #####纳米机器人治疗癌症（二）#####
+
+country_event = {
+	#####纳米机器人治疗癌症（二）#####
 	id = prcs.44
 	title = prcs.44.t
 	desc = prcs.44.d
@@ -769,7 +793,9 @@ country_event = {       #####纳米机器人治疗癌症（二）#####
 		}
 	}
 }
-country_event = {       #####纳米机器人治疗癌症（三）#####
+
+country_event = {
+	#####纳米机器人治疗癌症（三）#####
 	id = prcs.45
 	title = prcs.45.t
 	desc = prcs.45.d
@@ -783,7 +809,8 @@ country_event = {       #####纳米机器人治疗癌症（三）#####
 	}
 }
 
-country_event = {       #####智能时代进行时（一）####
+country_event = {
+	#####智能时代进行时（一）####
 	id = prcs.46
 	title = prcs.46.t
 	desc = prcs.46.d
@@ -803,7 +830,9 @@ country_event = {       #####智能时代进行时（一）####
 		}
 	}
 }
-country_event = {       #####智能时代进行时（二）#####
+
+country_event = {
+	#####智能时代进行时（二）#####
 	id = prcs.47
 	title = prcs.47.t
 	desc = prcs.47.d
@@ -817,7 +846,8 @@ country_event = {       #####智能时代进行时（二）#####
 	}
 }
 
-country_event = {       #####怪老头（引入工人监管风味事件）#####
+country_event = {
+	#####怪老头（引入工人监管风味事件）#####
 	id = prcs.48
 	title = prcs.48.t
 	desc = prcs.48.d
@@ -831,7 +861,8 @@ country_event = {       #####怪老头（引入工人监管风味事件）#####
 	}
 }
 
-country_event = {       #####天光好（瓦解地方恩庇网事件）#####
+country_event = {
+	#####天光好（瓦解地方恩庇网事件）#####
 	id = prcs.51
 	title = prcs.51.t
 	desc = prcs.51.d
@@ -851,7 +882,9 @@ country_event = {       #####天光好（瓦解地方恩庇网事件）#####
 		}
 	}
 }
-country_event = {       #####晴方好(天光好后续事件)#####
+
+country_event = {
+	#####晴方好(天光好后续事件)#####
 	id = prcs.52
 	title = prcs.52.t
 	desc = prcs.52.d
@@ -865,7 +898,8 @@ country_event = {       #####晴方好(天光好后续事件)#####
 	}
 }
 
-country_event = {       #####航天食品改革#####
+country_event = {
+	#####航天食品改革#####
 	id = prcs.53
 	title = prcs.53.t
 	desc = prcs.53.d
@@ -885,7 +919,9 @@ country_event = {       #####航天食品改革#####
 		}
 	}
 }
-country_event = {       #####新式航天飞行器设计#####
+
+country_event = {
+	#####新式航天飞行器设计#####
 	id = prcs.54
 	title = prcs.54.t
 	desc = prcs.54.d
@@ -899,7 +935,8 @@ country_event = {       #####新式航天飞行器设计#####
 	}
 }
 
-country_event = {       #####重整理论研究#####
+country_event = {
+	#####重整理论研究#####
 	id = prcs.55
 	title = prcs.55.t
 	desc = prcs.55.d
@@ -912,7 +949,9 @@ country_event = {       #####重整理论研究#####
 		name = prcs.55.a
 	}
 }
-country_event = {       #####归乡之路#####
+
+country_event = {
+	#####归乡之路#####
 	id = prcs.56
 	title = prcs.56.t
 	desc = prcs.56.d
@@ -932,7 +971,9 @@ country_event = {       #####归乡之路#####
 		}
 	}
 }
-country_event = {       #####告别#####
+
+country_event = {
+	#####告别#####
 	id = prcs.57
 	title = prcs.57.t
 	desc = prcs.57.d
@@ -946,7 +987,8 @@ country_event = {       #####告别#####
 	}
 }
 
-country_event = {       #####授勋仪式#####
+country_event = {
+	#####授勋仪式#####
 	id = prcs.58
 	title = prcs.58.t
 	desc = prcs.58.d
@@ -960,7 +1002,8 @@ country_event = {       #####授勋仪式#####
 	}
 }
 
-country_event = {       #####天火项目#####
+country_event = {
+	#####天火项目#####
 	id = prcs.59
 	title = prcs.59.t
 	desc = prcs.59.d
@@ -976,11 +1019,13 @@ country_event = {       #####天火项目#####
 		name = prcs.59.a.2
 	}
 }
-country_event = {       #####天火项目（成功）#####
+
+country_event = {
+	#####天火项目（成功）#####
 	id = prcs.60
 	title = prcs.60.t
 	desc = prcs.60.d
-	picture =GFX_PRC_nuke_it
+	picture = GFX_PRC_nuke_it
 	is_triggered_only = yes
 	trigger = {
 		tag = PRC
@@ -990,7 +1035,8 @@ country_event = {       #####天火项目（成功）#####
 	}
 }
 
-country_event = {       #####鲲鹏项目#####
+country_event = {
+	#####鲲鹏项目#####
 	id = prcs.61
 	title = prcs.61.t
 	desc = prcs.61.d
@@ -1007,7 +1053,9 @@ country_event = {       #####鲲鹏项目#####
 		#remove_decision = 
 	}
 }
-country_event = {       #####鲲鹏项目（成功）#####
+
+country_event = {
+	#####鲲鹏项目（成功）#####
 	id = prcs.62
 	title = prcs.62.t
 	desc = prcs.62.d
@@ -1021,7 +1069,8 @@ country_event = {       #####鲲鹏项目（成功）#####
 	}
 }
 
-country_event = {       #####玄武项目#####
+country_event = {
+	#####玄武项目#####
 	id = prcs.63
 	title = prcs.63.t
 	desc = prcs.63.d
@@ -1037,7 +1086,9 @@ country_event = {       #####玄武项目#####
 		name = prcs.63.a.2
 	}
 }
-country_event = {       #####玄武项目（成功）#####
+
+country_event = {
+	#####玄武项目（成功）#####
 	id = prcs.64
 	title = prcs.64.t
 	desc = prcs.64.d
@@ -1051,7 +1102,8 @@ country_event = {       #####玄武项目（成功）#####
 	}
 }
 
-country_event = {       #####长缨项目#####
+country_event = {
+	#####长缨项目#####
 	id = prcs.65
 	title = prcs.65.t
 	desc = prcs.65.d
@@ -1067,7 +1119,9 @@ country_event = {       #####长缨项目#####
 		name = prcs.65.a.2
 	}
 }
-country_event = {       #####长缨项目（成功）#####
+
+country_event = {
+	#####长缨项目（成功）#####
 	id = prcs.66
 	title = prcs.66.t
 	desc = prcs.66.d
@@ -1081,7 +1135,8 @@ country_event = {       #####长缨项目（成功）#####
 	}
 }
 
-country_event = {       #####短剑项目#####
+country_event = {
+	#####短剑项目#####
 	id = prcs.67
 	title = prcs.67.t
 	desc = prcs.67.d
@@ -1097,7 +1152,9 @@ country_event = {       #####短剑项目#####
 		name = prcs.67.a.2
 	}
 }
-country_event = {       #####短剑项目（成功）#####
+
+country_event = {
+	#####短剑项目（成功）#####
 	id = prcs.68
 	title = prcs.68.t
 	desc = prcs.68.d
@@ -1111,7 +1168,8 @@ country_event = {       #####短剑项目（成功）#####
 	}
 }
 
-country_event = {       #####晨光项目#####
+country_event = {
+	#####晨光项目#####
 	id = prcs.69
 	title = prcs.69.t
 	desc = prcs.69.d
@@ -1127,7 +1185,9 @@ country_event = {       #####晨光项目#####
 		name = prcs.69.a.2
 	}
 }
-country_event = {       #####晨光项目（部分成功）#####
+
+country_event = {
+	#####晨光项目（部分成功）#####
 	id = prcs.70
 	title = prcs.70.t
 	desc = prcs.70.d
@@ -1141,7 +1201,8 @@ country_event = {       #####晨光项目（部分成功）#####
 	}
 }
 
-country_event = {       #####文化线以技术开拓未来事件（上）########文本太长了分两个写######
+country_event = {
+	#####文化线以技术开拓未来事件（上）########文本太长了分两个写######
 	id = prcs.71
 	title = prcs.71.t
 	desc = prcs.71.d
@@ -1159,7 +1220,9 @@ country_event = {       #####文化线以技术开拓未来事件（上）######
 		}
 	}
 }
-country_event = {       #####文化线以技术开拓未来事件（下）#####
+
+country_event = {
+	#####文化线以技术开拓未来事件（下）#####
 	id = prcs.72
 	title = prcs.72.t
 	desc = prcs.72.d
@@ -1173,7 +1236,8 @@ country_event = {       #####文化线以技术开拓未来事件（下）#####
 	}
 }
 
-country_event = {       #####无产阶级的民主事件#####
+country_event = {
+	#####无产阶级的民主事件#####
 	id = prcs.73
 	title = prcs.73.t
 	desc = prcs.73.d
@@ -1191,7 +1255,8 @@ country_event = {       #####无产阶级的民主事件#####
 	}
 }
 
-country_event = {       #####追忆五卅运动（重建无产阶级专政国策触发事件）#####
+country_event = {
+	#####追忆五卅运动（重建无产阶级专政国策触发事件）#####
 	id = prcs.74
 	title = prcs.74.t
 	desc = prcs.74.d
@@ -1205,7 +1270,8 @@ country_event = {       #####追忆五卅运动（重建无产阶级专政国策
 	}
 }
 
-country_event = {       #####台北自驾之旅（台海三年后触发）#####
+country_event = {
+	#####台北自驾之旅（台海三年后触发）#####
 	id = prcs.75
 	title = prcs.75.t
 	desc = prcs.75.d
@@ -1219,7 +1285,8 @@ country_event = {       #####台北自驾之旅（台海三年后触发）#####
 		add_political_power = 1
 	}
 }
-country_event = {      
+
+country_event = {
 	id = prcs.76
 	title = prcs.76.t
 	desc = prcs.76.d
@@ -1232,11 +1299,12 @@ country_event = {
 		name = prcs.76.a
 		country_event = {
 			id = prcs.77
-			days = 5
+			hours = 5
 		}
 	}
 }
-country_event = {      
+
+country_event = {
 	id = prcs.77
 	title = prcs.77.t
 	desc = prcs.77.d
@@ -1461,10 +1529,8 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = Chihong.45
-				days = 3
-				random_days = 5
+				hours = 3
 			}
-			
 		}
 	}
 }
@@ -1483,8 +1549,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = Chihong.48
-				days = 10
-				random_days = 4
+				hours = 10
 			}
 		}
 	}
@@ -1504,11 +1569,9 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = Chihong.46
-				days = 8
-				random_days = 4
+				hours = 8
 			}
 		}
-		
 	}
 }
 
@@ -1556,7 +1619,7 @@ country_event = {
 	option = {
 		name = Chihong.20.a
 		if = {
-			limit = { 
+			limit = {
 				PAK = {
 					NOT = {
 						has_country_flag = PAK_lost_indo_pakistan_war
