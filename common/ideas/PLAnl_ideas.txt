@@ -1,4 +1,23 @@
 ideas = {
+	hidden_ideas = {
+		PLA_block_flood_of_enemy_information_idea = {
+			allowed = {
+				always = no
+			}
+			visible = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				air_mission_efficiency = -0.1
+				air_detection = -0.85
+				air_weather_penalty = 0.5
+				sortie_efficiency = -0.15
+			}
+		}
+	}
 	country = {
 		#电子干扰战idea
 		PLA_taikongz = {
