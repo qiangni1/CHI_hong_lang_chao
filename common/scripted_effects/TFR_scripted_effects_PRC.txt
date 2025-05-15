@@ -1410,276 +1410,276 @@
 	}
 
 	
-	PRC_chinas_victory_in_the_gaw_allies = {
-		PRC = {
-			if = {
-				limit = {
-					has_completed_focus = PRC_under_the_rule_of_the_great_entity
-				}
-				set_country_flag = PRC_loji_united_asia
-			}
-		}
-		news_event = {
-			id = news.413
-			days = 0
-		}
-		PRC = {
-			annex_country = {
-    			target = CHI
-    			transfer_troops = no
-			}
-			country_event = {
-				id = china.333
-				days = 50
-			}
-		}
-		PRK = {
-			annex_country = {
-    			target = KOR
-    			transfer_troops = no
-			}
-		}
-		#NEP = {
-		#	set_cosmetic_tag = PRC_military_administration
-		#}
-		#BHU = {
-		#	set_cosmetic_tag = PRC_military_administration
-		#}
-		# if = {
-		# 	limit = {
-		# 		VIN = {
-		# 			is_puppet_of = PRC
-		# 		}
-		# 	}
-		# 	VIN = {
-		# 		drop_cosmetic_tag = yes
-		# 		set_politics = {
-		# 			ruling_party = communist
-		# 			elections_allowed = no
-		# 		}
-		# 		set_popularities = {
-		# 			totalitarian_socialist = 5
-		# 			libertarian_socialist = 10
-		# 			social_democrat = 5
-		# 			communist = 80
-		# 		}
-		# 	}
-		# }
-		# if = {
-		# 	limit = {
-		# 		LAO = {
-		# 			is_puppet_of = PRC
-		# 		}
-		# 	}
-		# 	LAO = {
-		# 		drop_cosmetic_tag = yes
-		# 		set_politics = {
-		# 			ruling_party = communist
-		# 			elections_allowed = no
-		# 		}
-		# 		set_popularities = {
-		# 			totalitarian_socialist = 3
-		# 			libertarian_socialist = 2
-		# 			social_democrat = 2
-		# 			communist = 93
-		# 		}
-		# 	}
-		# }
-		# if = {
-		# 	limit = {
-		# 		CAM = {
-		# 			is_puppet_of = PRC
-		# 		}
-		# 	}
-		# 	CAM = {
-		# 		drop_cosmetic_tag = yes
-		# 		set_politics = {
-		# 			ruling_party = authoritarian_democrat
-		# 			elections_allowed = no
-		# 		}
-		# 		set_popularities = {
-		# 			communist = 10
-		# 			conservative = 6
-		# 			social_democrat = 12
-		# 			authoritarian_democrat = 72
-		# 		}
-		# 	}
-		# }
-		# if = {
-		# 	limit = {
-		# 		SIA = {
-		# 			is_puppet_of = PRC
-		# 		}
-		# 	}
-		# 	SIA = {
-		# 		drop_cosmetic_tag = yes
-		# 		set_politics = {
-		# 			ruling_party = communist
-		# 			elections_allowed = no
-		# 		}
-		# 		set_popularities = {
-		# 			conservative = 5
-		# 			authoritarian_democrat = 19
-		# 			market_liberal = 2
-		# 			social_democrat = 10
-		# 			nationalist = 5
-		# 			communist = 59
-		# 		}
-		# 	}
-		# }
-		# if = {
-		# 	limit = {
-		# 		INS = {
-		# 			is_puppet_of = PRC
-		# 		}
-		# 	}
-		# 	INS = {
-		# 		drop_cosmetic_tag = yes
-		# 		set_politics = {
-		# 			ruling_party = authoritarian_democrat
-		# 			elections_allowed = no
-		# 		}
-		# 		set_popularities = {
-		# 			totalitarian_socialist = 3
-		# 			libertarian_socialist = 10
-		# 			social_democrat = 12
-		# 			social_liberal = 15
-		# 			authoritarian_democrat = 60
-		# 		}
-		# 	}
-		# }
-		# if = {
-		# 	limit = {
-		# 		MAL = {
-		# 			is_puppet_of = PRC
-		# 		}
-		# 	}
-		# 	MAL = {
-		# 		drop_cosmetic_tag = yes
-		# 		set_politics = {
-		# 			ruling_party = authoritarian_democrat
-		# 			elections_allowed = no
-		# 		}
-		# 		set_popularities = {
-		# 			totalitarian_socialist = 3
-		# 			libertarian_socialist = 10
-		# 			social_democrat = 12
-		# 			social_liberal = 15
-		# 			authoritarian_democrat = 60
-		# 		}
-		# 	}
-		# }
-		# if = {
-		# 	limit = {
-		# 		PHI = {
-		# 			is_puppet_of = PRC
-		# 		}
-		# 	}
-		# 	PHI = {
-		# 		drop_cosmetic_tag = yes
-		# 		set_politics = {
-		# 			ruling_party = totalitarian_socialist
-		# 			elections_allowed = no
-		# 		}
-		# 		set_popularities = {
-		# 			totalitarian_socialist = 77
-		# 			conservative = 10
-		# 			social_democrat = 10
-		# 			fascist = 3
-		# 		}
-		# 		create_country_leader = {
-		# 			name = NPA_luis_jalandoni_char
-		# 			picture = "gfx/leaders/PHI/Luis_Jalandoni.png"
-		# 			ideology = left_wing_junta
-		# 		}
-		# 	}
-		# }
-		if = {
-			limit = {
-				AST = {
-					is_puppet_of = PRC
-				}
-			}
-			AST = {
-				drop_cosmetic_tag = yes
-				set_politics = {
-					ruling_party = libertarian_socialist
-					elections_allowed = no
-				}
-				set_popularities = {
-					conservative = 8
-					libertarian_socialist = 52
-					market_liberal = 25
-					nationalist = 15
-				}
-			}
-		}
-		if = {
-			limit = {
-				PNG = {
-					is_puppet_of = PRC
-				}
-			}
-			PNG = {
-				drop_cosmetic_tag = yes
-				set_politics = {
-					ruling_party = conservative
-					elections_allowed = no
-				}
-				set_popularities = {
-					conservative = 55
-					market_liberal = 35
-					authoritarian_democrat = 1
-					nationalist = 1
-					market_liberal = 2
-					social_liberal = 2
-					communist = 4
-				}
-			}
-		}
-		if = {
-			limit = {
-				NZL = {
-					is_puppet_of = PRC
-				}
-			}
-			NZL = {
-				drop_cosmetic_tag = yes
-				set_politics = {
-					ruling_party = social_democrat
-					elections_allowed = no
-				}
-				set_popularities = {
-					conservative = 30
-					social_democrat = 35
-					authoritarian_democrat = 17
-					nationalist = 3
-					market_liberal = 5
-					social_liberal = 3
-					communist = 7
-				}
-			}
-		}
-		every_country = {
-			limit = {
-				has_country_flag = pdto_member
-			}
-			clr_country_flag = pdto_member
-		}
-		every_country = {
-			limit = {
-				is_ally_with = PRC
-			}
-			clr_country_flag = JAP_PEC_member_flag
-			set_country_flag = eadi_member
-			remove_ideas = {
-				JAP_PDTO_member_1
-				JAP_PDTO_member_2
-				JAP_PEC_member
-				JAP_PEC_member_2
-			}
-		}
-	}
+	# PRC_chinas_victory_in_the_gaw_allies = {
+	# 	PRC = {
+	# 		if = {
+	# 			limit = {
+	# 				has_completed_focus = PRC_under_the_rule_of_the_great_entity
+	# 			}
+	# 			set_country_flag = PRC_loji_united_asia
+	# 		}
+	# 	}
+	# 	news_event = {
+	# 		id = news.413
+	# 		days = 0
+	# 	}
+	# 	PRC = {
+	# 		annex_country = {
+    # 			target = CHI
+    # 			transfer_troops = no
+	# 		}
+	# 		country_event = {
+	# 			id = china.333
+	# 			days = 50
+	# 		}
+	# 	}
+	# 	PRK = {
+	# 		annex_country = {
+    # 			target = KOR
+    # 			transfer_troops = no
+	# 		}
+	# 	}
+	# 	#NEP = {
+	# 	#	set_cosmetic_tag = PRC_military_administration
+	# 	#}
+	# 	#BHU = {
+	# 	#	set_cosmetic_tag = PRC_military_administration
+	# 	#}
+	# 	# if = {
+	# 	# 	limit = {
+	# 	# 		VIN = {
+	# 	# 			is_puppet_of = PRC
+	# 	# 		}
+	# 	# 	}
+	# 	# 	VIN = {
+	# 	# 		drop_cosmetic_tag = yes
+	# 	# 		set_politics = {
+	# 	# 			ruling_party = communist
+	# 	# 			elections_allowed = no
+	# 	# 		}
+	# 	# 		set_popularities = {
+	# 	# 			totalitarian_socialist = 5
+	# 	# 			libertarian_socialist = 10
+	# 	# 			social_democrat = 5
+	# 	# 			communist = 80
+	# 	# 		}
+	# 	# 	}
+	# 	# }
+	# 	# if = {
+	# 	# 	limit = {
+	# 	# 		LAO = {
+	# 	# 			is_puppet_of = PRC
+	# 	# 		}
+	# 	# 	}
+	# 	# 	LAO = {
+	# 	# 		drop_cosmetic_tag = yes
+	# 	# 		set_politics = {
+	# 	# 			ruling_party = communist
+	# 	# 			elections_allowed = no
+	# 	# 		}
+	# 	# 		set_popularities = {
+	# 	# 			totalitarian_socialist = 3
+	# 	# 			libertarian_socialist = 2
+	# 	# 			social_democrat = 2
+	# 	# 			communist = 93
+	# 	# 		}
+	# 	# 	}
+	# 	# }
+	# 	# if = {
+	# 	# 	limit = {
+	# 	# 		CAM = {
+	# 	# 			is_puppet_of = PRC
+	# 	# 		}
+	# 	# 	}
+	# 	# 	CAM = {
+	# 	# 		drop_cosmetic_tag = yes
+	# 	# 		set_politics = {
+	# 	# 			ruling_party = authoritarian_democrat
+	# 	# 			elections_allowed = no
+	# 	# 		}
+	# 	# 		set_popularities = {
+	# 	# 			communist = 10
+	# 	# 			conservative = 6
+	# 	# 			social_democrat = 12
+	# 	# 			authoritarian_democrat = 72
+	# 	# 		}
+	# 	# 	}
+	# 	# }
+	# 	# if = {
+	# 	# 	limit = {
+	# 	# 		SIA = {
+	# 	# 			is_puppet_of = PRC
+	# 	# 		}
+	# 	# 	}
+	# 	# 	SIA = {
+	# 	# 		drop_cosmetic_tag = yes
+	# 	# 		set_politics = {
+	# 	# 			ruling_party = communist
+	# 	# 			elections_allowed = no
+	# 	# 		}
+	# 	# 		set_popularities = {
+	# 	# 			conservative = 5
+	# 	# 			authoritarian_democrat = 19
+	# 	# 			market_liberal = 2
+	# 	# 			social_democrat = 10
+	# 	# 			nationalist = 5
+	# 	# 			communist = 59
+	# 	# 		}
+	# 	# 	}
+	# 	# }
+	# 	# if = {
+	# 	# 	limit = {
+	# 	# 		INS = {
+	# 	# 			is_puppet_of = PRC
+	# 	# 		}
+	# 	# 	}
+	# 	# 	INS = {
+	# 	# 		drop_cosmetic_tag = yes
+	# 	# 		set_politics = {
+	# 	# 			ruling_party = authoritarian_democrat
+	# 	# 			elections_allowed = no
+	# 	# 		}
+	# 	# 		set_popularities = {
+	# 	# 			totalitarian_socialist = 3
+	# 	# 			libertarian_socialist = 10
+	# 	# 			social_democrat = 12
+	# 	# 			social_liberal = 15
+	# 	# 			authoritarian_democrat = 60
+	# 	# 		}
+	# 	# 	}
+	# 	# }
+	# 	# if = {
+	# 	# 	limit = {
+	# 	# 		MAL = {
+	# 	# 			is_puppet_of = PRC
+	# 	# 		}
+	# 	# 	}
+	# 	# 	MAL = {
+	# 	# 		drop_cosmetic_tag = yes
+	# 	# 		set_politics = {
+	# 	# 			ruling_party = authoritarian_democrat
+	# 	# 			elections_allowed = no
+	# 	# 		}
+	# 	# 		set_popularities = {
+	# 	# 			totalitarian_socialist = 3
+	# 	# 			libertarian_socialist = 10
+	# 	# 			social_democrat = 12
+	# 	# 			social_liberal = 15
+	# 	# 			authoritarian_democrat = 60
+	# 	# 		}
+	# 	# 	}
+	# 	# }
+	# 	# if = {
+	# 	# 	limit = {
+	# 	# 		PHI = {
+	# 	# 			is_puppet_of = PRC
+	# 	# 		}
+	# 	# 	}
+	# 	# 	PHI = {
+	# 	# 		drop_cosmetic_tag = yes
+	# 	# 		set_politics = {
+	# 	# 			ruling_party = totalitarian_socialist
+	# 	# 			elections_allowed = no
+	# 	# 		}
+	# 	# 		set_popularities = {
+	# 	# 			totalitarian_socialist = 77
+	# 	# 			conservative = 10
+	# 	# 			social_democrat = 10
+	# 	# 			fascist = 3
+	# 	# 		}
+	# 	# 		create_country_leader = {
+	# 	# 			name = NPA_luis_jalandoni_char
+	# 	# 			picture = "gfx/leaders/PHI/Luis_Jalandoni.png"
+	# 	# 			ideology = left_wing_junta
+	# 	# 		}
+	# 	# 	}
+	# 	# }
+	# 	if = {
+	# 		limit = {
+	# 			AST = {
+	# 				is_puppet_of = PRC
+	# 			}
+	# 		}
+	# 		AST = {
+	# 			drop_cosmetic_tag = yes
+	# 			set_politics = {
+	# 				ruling_party = libertarian_socialist
+	# 				elections_allowed = no
+	# 			}
+	# 			set_popularities = {
+	# 				conservative = 8
+	# 				libertarian_socialist = 52
+	# 				market_liberal = 25
+	# 				nationalist = 15
+	# 			}
+	# 		}
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			PNG = {
+	# 				is_puppet_of = PRC
+	# 			}
+	# 		}
+	# 		PNG = {
+	# 			drop_cosmetic_tag = yes
+	# 			set_politics = {
+	# 				ruling_party = conservative
+	# 				elections_allowed = no
+	# 			}
+	# 			set_popularities = {
+	# 				conservative = 55
+	# 				market_liberal = 35
+	# 				authoritarian_democrat = 1
+	# 				nationalist = 1
+	# 				market_liberal = 2
+	# 				social_liberal = 2
+	# 				communist = 4
+	# 			}
+	# 		}
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			NZL = {
+	# 				is_puppet_of = PRC
+	# 			}
+	# 		}
+	# 		NZL = {
+	# 			drop_cosmetic_tag = yes
+	# 			set_politics = {
+	# 				ruling_party = social_democrat
+	# 				elections_allowed = no
+	# 			}
+	# 			set_popularities = {
+	# 				conservative = 30
+	# 				social_democrat = 35
+	# 				authoritarian_democrat = 17
+	# 				nationalist = 3
+	# 				market_liberal = 5
+	# 				social_liberal = 3
+	# 				communist = 7
+	# 			}
+	# 		}
+	# 	}
+	# 	every_country = {
+	# 		limit = {
+	# 			has_country_flag = pdto_member
+	# 		}
+	# 		clr_country_flag = pdto_member
+	# 	}
+	# 	every_country = {
+	# 		limit = {
+	# 			is_ally_with = PRC
+	# 		}
+	# 		clr_country_flag = JAP_PEC_member_flag
+	# 		set_country_flag = eadi_member
+	# 		remove_ideas = {
+	# 			JAP_PDTO_member_1
+	# 			JAP_PDTO_member_2
+	# 			JAP_PEC_member
+	# 			JAP_PEC_member_2
+	# 		}
+	# 	}
+	# }
 
 	PRC_end_taiwan_war = {
 		clr_global_flag = PRC_ongoing_taiwan_war
@@ -2471,267 +2471,267 @@
 		}
 	}
 
-	PRC_gaw_start = {
-		every_state = {
-			limit = {
-				OR = {
-					state = 787
-					state = 1132
-					state = 440
-					state = 1380
-					state = 442
-					state = 443
-					state = 445
-					state = 1324
-					state = 441
-					state = 1131
-					state = 1373
-					state = 439
-					state = 1381
-					state = 437
-					state = 1397
-					state = 1398
-					state = 1370
-					state = 789
-					state = 432
-					state = 1367
-					state = 434
-					state = 1366
-					state = 1368
-					state = 1369
-					state = 430
-					state = 431
-					state = 424
-					state = 1418
-					state = 1413
-					state = 1417
-					state = 1414
-					state = 1415
-					state = 1416
-					state = 422
-					region = 146
-					region = 189
-					region = 142
-					region = 188
-					region = 160
-					region = 159
-					region = 187
-					region = 158
-					region = 93
-					region = 167
-					region = 193
-					region = 194
-					region = 195
-					region = 156
-					region = 76
-					region = 154
-					region = 165
-					region = 164
-					region = 143
-					region = 145
-					region = 220
-					region = 216
-					region = 219
-					region = 152
-					state = 428
-					state = 433
-					state = 1379
-					state = 438
-					state = 436
-					state = 1400
-					state = 1399
-					state = 435
-					state = 1371
-					state = 426
-					state = 1372
-					state = 427
-					state = 425
-					state = 423
-					state = 320
-					state = 429
-					state = 716
-					state = 1394
-					state = 328
-					state = 717
-				}
-			}
-			add_dynamic_modifier = {
-				modifier = PRC_unplanned_offensive
-				days = 575
-			}
-		}
-		#every_state = {
-		#	limit = {
-		#		OR = {
-		#		}
-		#	}
-		#	add_dynamic_modifier = {
-		#		modifier = PRC_non_combat_area
-		#	}
-		#}
-		JAP = {
-			country_event = {
-				id = jap.1002
-				hours = 6
-			}
-			activate_mission = JAP_GAW_war_exhaustion
-			PRC_GAW_check_faction_members = yes
-			add_dynamic_modifier = {
-				modifier = PRC_war_exhaustion_dynamic
-			}
-			load_oob = GAW_reserves_jap1
-		}
-		if = {
-			limit = {
-				JAP = {
-					is_ai = yes
-				}
-			}
-			JAP = {
-				load_oob = GAW_reserves_jap1_ai
-			}
-		}
-		news_event = news.415
-		set_global_flag = pan_asian_war_ongoing
-		clr_global_flag = GAW_soon
-		activate_mission = PRC_GAW_war_exhaustion
-		PRC_GAW_check_faction_members = yes
-		add_dynamic_modifier = {
-			modifier = PRC_war_exhaustion_dynamic
-		}
-		AST = {
-			activate_mission = JAP_GAW_war_exhaustion
-			PRC_GAW_check_faction_members = yes
-			add_dynamic_modifier = {
-				modifier = PRC_war_exhaustion_dynamic
-			}
-			load_oob = GAW_reserves_ast1_ai
-			if = {
-				limit = { has_dlc = "Man the Guns" }
-					load_oob = "AST_2000_naval_mtg"
-					load_oob = "AST_2000_naval_mtg"
-					load_oob = "AST_2000_naval_mtg"
-				else = {
-					load_oob = "AST_2000_naval_legacy"
-					load_oob = "AST_2000_naval_legacy"
-					load_oob = "AST_2000_naval_legacy"
-				}
-			}
-		}
-		RAJ = {
-			activate_mission = JAP_GAW_war_exhaustion
-			PRC_GAW_check_faction_members = yes
-			add_dynamic_modifier = {
-				modifier = PRC_war_exhaustion_dynamic
-			}
-			load_oob = GAW_militia_raj1
-			if = {
-				limit = { has_dlc = "Man the Guns" }
-					load_oob = "RAJ_2000_naval_mtg"
-				else = {
-					load_oob = "RAJ_2000_naval_legacy"
-				}
-			}
-		}
-		CUB = {
-			activate_mission = great_asian_war_mission
-		}
-		if = {
-			limit = {
-				PRC = {
-					is_ai = yes
-				}
-			}
-			INS = {
-				load_oob = GAW_militia_ins2
-			}
-		}
-		if = {
-			limit = {
-				PRC = {
-					is_ai = no
-				}
-			}
-			INS = {
-				load_oob = GAW_militia_ins1
-			}
-		}
-		if = {
-			limit = {
-				PRC = {
-					is_ai = yes
-				}
-			}
-			PAK = {
-				load_oob = GAW_militia_pak1
-			}
-		}
-		if = {
-			limit = {
-				JAP  = {
-					is_ai = yes
-				}
-				PRC  = {
-					is_ai = no
-				}
-			}
-			every_country = {
-				limit = {
-					OR = {
-						tag = AST
-						tag = RAJ
-						tag = JAP
-					}
-				}
-				add_ideas = JAP_AST_RAJ_ai_buff_against_prc_player_gaw
-			}
-		}
-		if = {
-			limit = {
-				JAP  = {
-					is_ai = no
-				}
-				PRC  = {
-					is_ai = yes
-				}
-			}
-			PRC =  {
-				add_ideas = PRC_ai_buff_against_jap_player_gaw
-			}
-		}
-		every_country = {
-			limit = {
-				OR = {
-					tag = NEP
-					tag = SRL
-					tag = VIN
-					tag = LAO
-					tag = CAM
-					tag = SIA
-					tag = MAL
-					tag = SIG
-					tag = INS
-					tag = PHI
-					tag = PNG
-					tag = NZL
-					tag = BAN
-				}
-			}
-			load_oob = GAW_templates_for_ai
-			capital_scope = {
-				create_unit = {
-					division = "division_template = \"GAW Militia\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
-					owner = PREV
-					count = 6
-				}
-				create_unit = {
-					division = "division_template = \"GAW Regular Infantry\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
-					owner = PREV
-					count = 4
-				}
-			}
-		}
-	}
+	# PRC_gaw_start = {
+	# 	every_state = {
+	# 		limit = {
+	# 			OR = {
+	# 				state = 787
+	# 				state = 1132
+	# 				state = 440
+	# 				state = 1380
+	# 				state = 442
+	# 				state = 443
+	# 				state = 445
+	# 				state = 1324
+	# 				state = 441
+	# 				state = 1131
+	# 				state = 1373
+	# 				state = 439
+	# 				state = 1381
+	# 				state = 437
+	# 				state = 1397
+	# 				state = 1398
+	# 				state = 1370
+	# 				state = 789
+	# 				state = 432
+	# 				state = 1367
+	# 				state = 434
+	# 				state = 1366
+	# 				state = 1368
+	# 				state = 1369
+	# 				state = 430
+	# 				state = 431
+	# 				state = 424
+	# 				state = 1418
+	# 				state = 1413
+	# 				state = 1417
+	# 				state = 1414
+	# 				state = 1415
+	# 				state = 1416
+	# 				state = 422
+	# 				region = 146
+	# 				region = 189
+	# 				region = 142
+	# 				region = 188
+	# 				region = 160
+	# 				region = 159
+	# 				region = 187
+	# 				region = 158
+	# 				region = 93
+	# 				region = 167
+	# 				region = 193
+	# 				region = 194
+	# 				region = 195
+	# 				region = 156
+	# 				region = 76
+	# 				region = 154
+	# 				region = 165
+	# 				region = 164
+	# 				region = 143
+	# 				region = 145
+	# 				region = 220
+	# 				region = 216
+	# 				region = 219
+	# 				region = 152
+	# 				state = 428
+	# 				state = 433
+	# 				state = 1379
+	# 				state = 438
+	# 				state = 436
+	# 				state = 1400
+	# 				state = 1399
+	# 				state = 435
+	# 				state = 1371
+	# 				state = 426
+	# 				state = 1372
+	# 				state = 427
+	# 				state = 425
+	# 				state = 423
+	# 				state = 320
+	# 				state = 429
+	# 				state = 716
+	# 				state = 1394
+	# 				state = 328
+	# 				state = 717
+	# 			}
+	# 		}
+	# 		add_dynamic_modifier = {
+	# 			modifier = PRC_unplanned_offensive
+	# 			days = 575
+	# 		}
+	# 	}
+	# 	#every_state = {
+	# 	#	limit = {
+	# 	#		OR = {
+	# 	#		}
+	# 	#	}
+	# 	#	add_dynamic_modifier = {
+	# 	#		modifier = PRC_non_combat_area
+	# 	#	}
+	# 	#}
+	# 	JAP = {
+	# 		country_event = {
+	# 			id = jap.1002
+	# 			hours = 6
+	# 		}
+	# 		activate_mission = JAP_GAW_war_exhaustion
+	# 		PRC_GAW_check_faction_members = yes
+	# 		add_dynamic_modifier = {
+	# 			modifier = PRC_war_exhaustion_dynamic
+	# 		}
+	# 		load_oob = GAW_reserves_jap1
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			JAP = {
+	# 				is_ai = yes
+	# 			}
+	# 		}
+	# 		JAP = {
+	# 			load_oob = GAW_reserves_jap1_ai
+	# 		}
+	# 	}
+	# 	news_event = news.415
+	# 	set_global_flag = pan_asian_war_ongoing
+	# 	clr_global_flag = GAW_soon
+	# 	activate_mission = PRC_GAW_war_exhaustion
+	# 	PRC_GAW_check_faction_members = yes
+	# 	add_dynamic_modifier = {
+	# 		modifier = PRC_war_exhaustion_dynamic
+	# 	}
+	# 	AST = {
+	# 		activate_mission = JAP_GAW_war_exhaustion
+	# 		PRC_GAW_check_faction_members = yes
+	# 		add_dynamic_modifier = {
+	# 			modifier = PRC_war_exhaustion_dynamic
+	# 		}
+	# 		load_oob = GAW_reserves_ast1_ai
+	# 		if = {
+	# 			limit = { has_dlc = "Man the Guns" }
+	# 				load_oob = "AST_2000_naval_mtg"
+	# 				load_oob = "AST_2000_naval_mtg"
+	# 				load_oob = "AST_2000_naval_mtg"
+	# 			else = {
+	# 				load_oob = "AST_2000_naval_legacy"
+	# 				load_oob = "AST_2000_naval_legacy"
+	# 				load_oob = "AST_2000_naval_legacy"
+	# 			}
+	# 		}
+	# 	}
+	# 	RAJ = {
+	# 		activate_mission = JAP_GAW_war_exhaustion
+	# 		PRC_GAW_check_faction_members = yes
+	# 		add_dynamic_modifier = {
+	# 			modifier = PRC_war_exhaustion_dynamic
+	# 		}
+	# 		load_oob = GAW_militia_raj1
+	# 		if = {
+	# 			limit = { has_dlc = "Man the Guns" }
+	# 				load_oob = "RAJ_2000_naval_mtg"
+	# 			else = {
+	# 				load_oob = "RAJ_2000_naval_legacy"
+	# 			}
+	# 		}
+	# 	}
+	# 	CUB = {
+	# 		activate_mission = great_asian_war_mission
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			PRC = {
+	# 				is_ai = yes
+	# 			}
+	# 		}
+	# 		INS = {
+	# 			load_oob = GAW_militia_ins2
+	# 		}
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			PRC = {
+	# 				is_ai = no
+	# 			}
+	# 		}
+	# 		INS = {
+	# 			load_oob = GAW_militia_ins1
+	# 		}
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			PRC = {
+	# 				is_ai = yes
+	# 			}
+	# 		}
+	# 		PAK = {
+	# 			load_oob = GAW_militia_pak1
+	# 		}
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			JAP  = {
+	# 				is_ai = yes
+	# 			}
+	# 			PRC  = {
+	# 				is_ai = no
+	# 			}
+	# 		}
+	# 		every_country = {
+	# 			limit = {
+	# 				OR = {
+	# 					tag = AST
+	# 					tag = RAJ
+	# 					tag = JAP
+	# 				}
+	# 			}
+	# 			add_ideas = JAP_AST_RAJ_ai_buff_against_prc_player_gaw
+	# 		}
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			JAP  = {
+	# 				is_ai = no
+	# 			}
+	# 			PRC  = {
+	# 				is_ai = yes
+	# 			}
+	# 		}
+	# 		PRC =  {
+	# 			add_ideas = PRC_ai_buff_against_jap_player_gaw
+	# 		}
+	# 	}
+	# 	every_country = {
+	# 		limit = {
+	# 			OR = {
+	# 				tag = NEP
+	# 				tag = SRL
+	# 				tag = VIN
+	# 				tag = LAO
+	# 				tag = CAM
+	# 				tag = SIA
+	# 				tag = MAL
+	# 				tag = SIG
+	# 				tag = INS
+	# 				tag = PHI
+	# 				tag = PNG
+	# 				tag = NZL
+	# 				tag = BAN
+	# 			}
+	# 		}
+	# 		load_oob = GAW_templates_for_ai
+	# 		capital_scope = {
+	# 			create_unit = {
+	# 				division = "division_template = \"GAW Militia\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
+	# 				owner = PREV
+	# 				count = 6
+	# 			}
+	# 			create_unit = {
+	# 				division = "division_template = \"GAW Regular Infantry\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
+	# 				owner = PREV
+	# 				count = 4
+	# 			}
+	# 		}
+	# 	}
+	# }
 	
 PRC_remove_special_regional_modifiers = {
 	custom_effect_tooltip = SOV_remove_special_regional_modifiers_tt
