@@ -777,6 +777,71 @@ PRC_new_left_pla_reformation = {
 }
 
 PRC_new_left_pla_space_force = {
+	PLA_block_flood_of_enemy_information_des = {
+		icon = GFX_decision_SOV_expand_satellite_launching_programme
+		available = {
+			has_global_flag = pan_asian_war_ongoing
+			custom_cost_trigger = {
+				check_variable = {
+					var = income_var
+					value = 10
+					compare = greater_than_or_equals
+				}
+				has_political_power > 50
+			}
+		}
+		visible = {
+			has_completed_focus = PAL_block_flood_of_enemy_information
+		}
+		fire_only_once = no
+		days_re_enable = 120		#or190...
+		days_remove = 70
+		remove_effect = {
+			JAP = {
+				add_ideas = PLA_taikongz
+			}
+		}
+		custom_cost_text = dx_more_than_10B_and_50pp
+		complete_effect = {
+			add_political_power = -50
+			set_temp_variable = {
+				var = income_var_temp
+				value = -10
+			}
+			add_income = yes
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_war_with = PRC
+					}
+					add_timed_idea = {
+						idea = PLA_block_flood_of_enemy_information_idea
+						days = 70
+					}
+				}
+			}
+		}
+	}
+	PLA_build_nuclear_bomb_des = {
+		icon = GFX_
+		available = {
+		}
+		visible = {
+			has_completed_focus = PAL_roaring_wildly
+		}
+		fire_only_once = no
+		cost = 100
+		days_re_enable = 100
+		days_remove = 50
+		#时间随便定的，如有需要，后期再改
+		modifier = {
+		}
+		remove_effect = {
+			add_thermo_nuclear_bomb = 1
+		}
+		complete_effect = {
+		}
+	}
 	#核爆
 	PRC_nuke_tokyo_1 = {
 		allowed = {
@@ -3339,75 +3404,6 @@ PRC_new_left_pla_space_force = {
 				PRC_space_force_on_orbit = 1
 			}
 			PRC_space_force_counter = yes
-		}
-	}
-}
-
-PLA_jueyileibie = {
-	#以上需写入categories
-	PLA_block_flood_of_enemy_information_des = {
-		icon = GFX_decision_SOV_expand_satellite_launching_programme
-		available = {
-			has_global_flag = pan_asian_war_ongoing
-			custom_cost_trigger = {
-				check_variable = {
-					var = income_var
-					value = 10
-					compare = greater_than_or_equals
-				}
-				has_political_power > 50
-			}
-		}
-		visible = {
-			has_completed_focus = PAL_block_flood_of_enemy_information
-		}
-		fire_only_once = no
-		days_re_enable = 120		#or190...
-		days_remove = 70
-		remove_effect = {
-			JAP = {
-				add_ideas = PLA_taikongz
-			}
-		}
-		custom_cost_text = dx_more_than_10B_and_50pp
-		complete_effect = {
-			add_political_power = -50
-			set_temp_variable = {
-				var = income_var_temp
-				value = -10
-			}
-			add_income = yes
-			hidden_effect = {
-				every_country = {
-					limit = {
-						has_war_with = PRC
-					}
-					add_timed_idea = {
-						idea = PLA_block_flood_of_enemy_information_idea
-						days = 70
-					}
-				}
-			}
-		}
-	}
-	PLA_build_nuclear_bomb_des = {
-		icon = GFX_
-		available = {
-		}
-		visible = {
-			has_completed_focus = PAL_roaring_wildly
-		}
-		fire_only_once = no
-		cost = 100
-		days_re_enable = 100
-		days_remove = 50
-		#时间随便定的，如有需要，后期再改
-		modifier = {
-		}
-		remove_effect = {
-			add_thermo_nuclear_bomb = 1
-		}
-		complete_effect = {
 		}
 	}
 }

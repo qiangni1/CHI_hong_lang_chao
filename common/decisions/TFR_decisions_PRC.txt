@@ -9521,248 +9521,257 @@ PRC_foreign_policy_category = {
 			}
 		}
 	}
-	PRC_invest_pakistan_military = {
-		available = {
-			PAK = {
-				OR = {
-					has_country_flag = PAK_lost_indo_pakistan_war
-					has_country_flag = PAK_won_indo_pakistan_war
-				}
-			}
-		}
-		visible = {
-			has_completed_focus = PRC_support_pakistan
-		}
-		fire_only_once = no
-		days_remove = 35
-		days_re_enable = 50
-		cost = 50
-		complete_effect = {
-			set_temp_variable = {
-				var = income_var_temp
-				value = -0.6
-			}
-			add_income = yes
-			hidden_effect = {
-			}
-			PAK = {
-				set_temp_variable = {
-					var = income_var_temp
-					value = 0.6
-				}
-				add_income = yes
-				set_temp_variable = {
-					var = military_development_var_temp
-					value = 0.05
-				}
-				add_military_development = yes
-				if = {
-					limit = {
-						NOT = {
-							has_idea = PRC_pakistan_military_support
-						}
-					}
-					add_timed_idea = {
-						idea = PRC_pakistan_military_support
-						days = 70
-					}
-				}
-			}
-		}
-	}
-	PRC_invest_pakistan_industry = {
-		available = {
-			PAK = {
-				OR = {
-					has_country_flag = PAK_lost_indo_pakistan_war
-					has_country_flag = PAK_won_indo_pakistan_war
-				}
-			}
-		}
-		visible = {
-			has_completed_focus = PRC_support_pakistan
-		}
-		fire_only_once = no
-		days_remove = 35
-		days_re_enable = 50
-		cost = 35
-		complete_effect = {
-			set_temp_variable = {
-				var = income_var_temp
-				value = -3.5
-			}
-			add_income = yes
-			#hidden_effect = {
-			#	random_list = {
-			#		60 = {
-			#		}
-			#		40 = {
-			#			country_event = { id = china.153 days = 10 }
-			#		}
-			#	}
-			#}
-			PAK = {
-				set_temp_variable = {
-					var = income_var_temp
-					value = 0.95
-				}
-				random_list = {
-					60 = {
-					}
-					40 = {
-						random_owned_controlled_state = {
-							limit = {
-								is_core_of = ROOT
-								free_building_slots = {
-									building = industrial_complex
-									size > 1
-									include_locked = yes
-								}
-							}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-								type = industrial_complex
-								level = 2
-								instant_build = yes
-							}
-						}
-					}
-				}
-				add_income = yes
-				set_temp_variable = {
-					var = industrial_development_var_temp
-					value = 0.05
-				}
-				add_industrial_development = yes
-				if = {
-					limit = {
-						NOT = {
-							has_idea = PRC_pakistan_industrial_support
-						}
-					}
-					add_timed_idea = {
-						idea = PRC_pakistan_industrial_support
-						days = 70
-					}
-				}
-			}
-		}
-	}
-	PRC_invite_pakistan_to_eadi = {
-		#какой долбаеб это делал потом переделаю #ну как, какой... известно, какой -IAVL #переделал
-		available = {
-			PAK = {
-				OR = {
-					has_country_flag = PAK_lost_indo_pakistan_war
-					has_country_flag = PAK_won_indo_pakistan_war
-				}
-			}
-		}
-		visible = {
-			has_completed_focus = PRC_establish_eadi
-			NOT = {
-				PAK = {
-					is_in_faction = yes
-				}
-			}
-		}
-		fire_only_once = yes
-		days_remove = 50
-		cancel_if_not_visible = yes
-		ai_will_do = {
-			base = 10
-		}
-		modifier = {
-		}
-		complete_effect = {
-		}
-		remove_effect = {
-			PRC = {
-				add_to_faction = PAK
-			}
-			PAK = {
-				set_country_flag = eadi_member
-			}
-			hidden_effect = {
-				443 = {
-					set_demilitarized_zone = no
-				}
-				1380 = {
-					set_demilitarized_zone = no
-				}
-				787 = {
-					set_demilitarized_zone = no
-				}
-				1132 = {
-					set_demilitarized_zone = no
-				}
-				787 = {
-					set_demilitarized_zone = no
-				}
-			}
-		}
-	}
-	PRC_train_pakistan_army = {
-		available = {
-			PAK = {
-				OR = {
-					has_country_flag = PAK_lost_indo_pakistan_war
-					has_country_flag = PAK_won_indo_pakistan_war
-				}
-			}
-		}
-		visible = {
-			has_completed_focus = PRC_support_pakistan
-		}
-		fire_only_once = no
-		days_remove = 35
-		days_re_enable = 150
-		ai_will_do = {
-			base = 10
-		}
-		cost = 50
-		complete_effect = {
-			PAK = {
-				1321 = {
-					create_unit = {
-						division = "division_template = \"Infantry Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
-						owner = PAK
-						count = 5
-					}
-					create_unit = {
-						division = "division_template = \"Armored Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
-						owner = PAK
-						count = 2
-					}
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 1500
-					producer = PRC
-				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 300
-					producer = PRC
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 300
-					producer = PRC
-				}
-				add_equipment_to_stockpile = {
-					type = support_equipment
-					amount = 500
-					producer = PRC
-				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment
-					amount = 500
-					producer = PRC
-				}
-			}
-		}
-	}
+	# PRC_invest_pakistan_military = {
+	# 	available = {
+	# 		PAK = {
+	# 			OR = {
+	# 				has_country_flag = PAK_lost_indo_pakistan_war
+	# 				has_country_flag = PAK_won_indo_pakistan_war
+	# 			}
+	# 		}
+	# 	}
+	# 	visible = {
+	# 		has_completed_focus = Brothers_of_South_Asia
+	# 		PRC = {
+	# 			is_ally_with = PAK
+	# 		}
+	# 	}
+	# 	fire_only_once = no
+	# 	days_remove = 35
+	# 	days_re_enable = 50
+	# 	cost = 50
+	# 	complete_effect = {
+	# 		set_temp_variable = {
+	# 			var = income_var_temp
+	# 			value = -0.6
+	# 		}
+	# 		add_income = yes
+	# 		hidden_effect = {
+	# 		}
+	# 		PAK = {
+	# 			set_temp_variable = {
+	# 				var = income_var_temp
+	# 				value = 0.6
+	# 			}
+	# 			add_income = yes
+	# 			set_temp_variable = {
+	# 				var = military_development_var_temp
+	# 				value = 0.05
+	# 			}
+	# 			add_military_development = yes
+	# 			if = {
+	# 				limit = {
+	# 					NOT = {
+	# 						has_idea = PRC_pakistan_military_support
+	# 					}
+	# 				}
+	# 				add_timed_idea = {
+	# 					idea = PRC_pakistan_military_support
+	# 					days = 70
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# PRC_invest_pakistan_industry = {
+	# 	available = {
+	# 		PAK = {
+	# 			OR = {
+	# 				has_country_flag = PAK_lost_indo_pakistan_war
+	# 				has_country_flag = PAK_won_indo_pakistan_war
+	# 			}
+	# 		}
+	# 	}
+	# 	visible = {
+	# 		has_completed_focus = Brothers_of_South_Asia
+	# 		PRC = {
+	# 			is_ally_with = PAK
+	# 		}
+	# 	}
+	# 	fire_only_once = no
+	# 	days_remove = 35
+	# 	days_re_enable = 50
+	# 	cost = 35
+	# 	complete_effect = {
+	# 		set_temp_variable = {
+	# 			var = income_var_temp
+	# 			value = -3.5
+	# 		}
+	# 		add_income = yes
+	# 		#hidden_effect = {
+	# 		#	random_list = {
+	# 		#		60 = {
+	# 		#		}
+	# 		#		40 = {
+	# 		#			country_event = { id = china.153 days = 10 }
+	# 		#		}
+	# 		#	}
+	# 		#}
+	# 		PAK = {
+	# 			set_temp_variable = {
+	# 				var = income_var_temp
+	# 				value = 0.95
+	# 			}
+	# 			random_list = {
+	# 				60 = {
+	# 				}
+	# 				40 = {
+	# 					random_owned_controlled_state = {
+	# 						limit = {
+	# 							is_core_of = ROOT
+	# 							free_building_slots = {
+	# 								building = industrial_complex
+	# 								size > 1
+	# 								include_locked = yes
+	# 							}
+	# 						}
+	# 						add_extra_state_shared_building_slots = 2
+	# 						add_building_construction = {
+	# 							type = industrial_complex
+	# 							level = 2
+	# 							instant_build = yes
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 			add_income = yes
+	# 			set_temp_variable = {
+	# 				var = industrial_development_var_temp
+	# 				value = 0.05
+	# 			}
+	# 			add_industrial_development = yes
+	# 			if = {
+	# 				limit = {
+	# 					NOT = {
+	# 						has_idea = PRC_pakistan_industrial_support
+	# 					}
+	# 				}
+	# 				add_timed_idea = {
+	# 					idea = PRC_pakistan_industrial_support
+	# 					days = 70
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# PRC_invite_pakistan_to_eadi = {
+	# 	#какой долбаеб это делал потом переделаю #ну как, какой... известно, какой -IAVL #переделал
+	# 	available = {
+	# 		PAK = {
+	# 			OR = {
+	# 				has_country_flag = PAK_lost_indo_pakistan_war
+	# 				has_country_flag = PAK_won_indo_pakistan_war
+	# 			}
+	# 		}
+	# 	}
+	# 	visible = {
+	# 		has_completed_focus = PRC_establish_eadi
+	# 		NOT = {
+	# 			PAK = {
+	# 				is_in_faction = yes
+	# 			}
+	# 		}
+	# 	}
+	# 	fire_only_once = yes
+	# 	days_remove = 50
+	# 	cancel_if_not_visible = yes
+	# 	ai_will_do = {
+	# 		base = 10
+	# 	}
+	# 	modifier = {
+	# 	}
+	# 	complete_effect = {
+	# 	}
+	# 	remove_effect = {
+	# 		PRC = {
+	# 			add_to_faction = PAK
+	# 		}
+	# 		PAK = {
+	# 			set_country_flag = eadi_member
+	# 		}
+	# 		hidden_effect = {
+	# 			443 = {
+	# 				set_demilitarized_zone = no
+	# 			}
+	# 			1380 = {
+	# 				set_demilitarized_zone = no
+	# 			}
+	# 			787 = {
+	# 				set_demilitarized_zone = no
+	# 			}
+	# 			1132 = {
+	# 				set_demilitarized_zone = no
+	# 			}
+	# 			787 = {
+	# 				set_demilitarized_zone = no
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# PRC_train_pakistan_army = {
+	# 	available = {
+	# 		PAK = {
+	# 			OR = {
+	# 				has_country_flag = PAK_lost_indo_pakistan_war
+	# 				has_country_flag = PAK_won_indo_pakistan_war
+	# 			}
+	# 		}
+	# 	}
+	# 	visible = {
+	# 		has_completed_focus = Brothers_of_South_Asia
+	# 		PRC = {
+	# 			is_ally_with = PAK
+	# 		}
+	# 	}
+	# 	fire_only_once = no
+	# 	days_remove = 35
+	# 	days_re_enable = 150
+	# 	ai_will_do = {
+	# 		base = 10
+	# 	}
+	# 	cost = 50
+	# 	complete_effect = {
+	# 		PAK = {
+	# 			1321 = {
+	# 				create_unit = {
+	# 					division = "division_template = \"Infantry Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+	# 					owner = PAK
+	# 					count = 5
+	# 				}
+	# 				create_unit = {
+	# 					division = "division_template = \"Armored Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+	# 					owner = PAK
+	# 					count = 2
+	# 				}
+	# 			}
+	# 			add_equipment_to_stockpile = {
+	# 				type = infantry_equipment_1
+	# 				amount = 1500
+	# 				producer = PRC
+	# 			}
+	# 			add_equipment_to_stockpile = {
+	# 				type = anti_tank_equipment_1
+	# 				amount = 300
+	# 				producer = PRC
+	# 			}
+	# 			add_equipment_to_stockpile = {
+	# 				type = anti_air_equipment_1
+	# 				amount = 300
+	# 				producer = PRC
+	# 			}
+	# 			add_equipment_to_stockpile = {
+	# 				type = support_equipment
+	# 				amount = 500
+	# 				producer = PRC
+	# 			}
+	# 			add_equipment_to_stockpile = {
+	# 				type = motorized_equipment
+	# 				amount = 500
+	# 				producer = PRC
+	# 			}
+	# 		}
+	# 	}
+	# }
 	PRC_military_intervention_vin = {
 		available = {
 			NOT = {
@@ -14800,7 +14809,7 @@ PRC_pla_reformation = {
 			tag = PRC
 		}
 		visible = {
-			has_completed_focus = PRC_rain_fire_from_above
+			has_completed_focus = PLA_elite_marine_corps
 		}
 		available = {
 			NOT = {
@@ -15940,6 +15949,9 @@ PRC_great_asian_war = {
 			tag = PRC
 		}
 		visible = {
+			NOT = {
+				has_country_flag = PRC_new_left_win
+			}
 		}
 		available = {
 			NOT = {
@@ -15956,7 +15968,7 @@ PRC_great_asian_war = {
 					is_controlled_by_ROOT_or_ally = yes
 				}
 			}
-			has_completed_focus = PRC_rain_fire_from_above
+			has_completed_focus = PLA_elite_marine_corps
 			has_equipment = {
 				infantry_equipment > 7500
 			}
@@ -16104,7 +16116,7 @@ PRC_great_asian_war = {
 		}
 		available = {
 			has_idea = PRC_operation_majestic_idea
-			has_completed_focus = PRC_rain_fire_from_above
+			has_completed_focus = PLA_elite_marine_corps
 			has_equipment = {
 				infantry_equipment > 10000
 			}
@@ -16442,7 +16454,7 @@ PRC_great_asian_war = {
 				is_controlled_by_ROOT_or_ally = yes
 			}
 			has_war_with = RAJ
-			has_completed_focus = PRC_rain_fire_from_above
+			has_completed_focus = PLA_elite_marine_corps
 			has_equipment = {
 				infantry_equipment > 10000
 			}
@@ -16790,7 +16802,7 @@ PRC_great_asian_war = {
 				}
 			}
 			has_war_with = INS
-			has_completed_focus = PRC_rain_fire_from_above
+			has_completed_focus = PLA_elite_marine_corps
 			has_equipment = {
 				infantry_equipment > 7500
 			}
@@ -16851,7 +16863,7 @@ PRC_great_asian_war = {
 		available = {
 			PRC_no_offensive_actions = yes
 			has_war_with = AST
-			has_completed_focus = PLA_elite_marine_corps
+			has_completed_focus = PRC_operation_coronet
 			has_equipment = {
 				infantry_equipment > 7500
 			}

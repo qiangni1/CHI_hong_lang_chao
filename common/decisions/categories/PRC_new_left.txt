@@ -23,18 +23,6 @@ PRC_assistance2communist = {
 	priority = 195
 }
 
-PRC_red_JAP = {
-	icon = GFX_PRC_gaw_cat
-	visible_when_empty = yes
-	allowed = {
-		tag = PRC
-	}
-	visible = {
-		has_country_flag = PRC_red_JAP_project
-	}
-	priority = 197
-}
-
 PRC_ussr_diplomacy = {
 	icon = GFX_PRC_gaw_cat
 	allowed = {
@@ -42,17 +30,6 @@ PRC_ussr_diplomacy = {
 	}
 	visible = {
 		has_country_flag = sov_diplomacy
-	}
-	priority = 196
-}
-
-PRC_WLA_coordination = {
-	icon = GFX_PRC_gaw_cat
-	allowed = {
-		tag = PRC
-	}
-	visible = {
-		has_country_flag = form_the_WLA
 	}
 	priority = 196
 }
@@ -154,17 +131,6 @@ PRC_Youth_Ideological_Education = {
 		has_completed_focus = PRC_nl_cadre_revolutionization
 	}
 	priority = 1
-}
-PLA_jueyileibie = {
-	icon = GFX_PRC_gaw_cat
-	visible_when_empty = yes
-	allowed = {
-		tag = PRC
-	}
-	visible = {
-		has_completed_focus = PLA_when_that_day_comes
-	}
-	priority = 199
 }
 PRC_ready_for_global_economy_destory_category = {
 	visible_when_empty = yes
