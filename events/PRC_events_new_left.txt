@@ -1346,7 +1346,14 @@ country_event = {
 	}
 	option = {
 		name = prcs.78.a
-		news_event = news.556
+		if = {
+			limit = { 
+				NOT = {
+					has_country_flag = fuck_off_news1
+				}
+			}
+			news_event = news.556
+		}
 	}
 }
 country_event = {
@@ -1390,7 +1397,14 @@ country_event = {
 	}
 	option = {
 		name = prcs.79.a
-		news_event = news.557
+		if = {
+			limit = { 
+				NOT = {
+					has_country_flag = fuck_off_news2
+				}
+			}
+			news_event = {news.557}
+		}
 	}
 }
 news_event = {
