@@ -94,7 +94,6 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				war_support_factor = 0.1
-				war_stability_factor = -0.2
 			}
 		}
 		PRC_birthplace_of_the_revolution_idea = {
@@ -108,6 +107,10 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				breakthrough_factor = 0.05
+				planning_speed = 0.1
 				totalitarian_socialist_drift = 0.01
 				communist_drift = 0.01
 				libertarian_socialist_drift = 0.01
