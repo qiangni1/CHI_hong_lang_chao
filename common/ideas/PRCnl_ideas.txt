@@ -236,9 +236,11 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				political_power_gain = 0.15
+				political_power_gain = 0.25
+				stability_factor = 0.025
 				production_factory_max_efficiency_factor = 0.03
-				society_development_monthly = 0.003
+				academic_development_monthly = 0.005
+				society_development_monthly = 0.008
 			}
 		}
 	}

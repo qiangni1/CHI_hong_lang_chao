@@ -18,6 +18,7 @@ country_event = {
 		show_ideas_tooltip = PRC_li_keqiang_hog
 		hidden_effect = {
 			remove_ideas = PRC_li_keqiang_hog
+			add_ideas = vacant_hog
 		}
 		focus_unlock = yes
 		complete_national_focus = PRC_the_man_death

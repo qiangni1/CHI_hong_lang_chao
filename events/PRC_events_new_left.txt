@@ -3125,7 +3125,7 @@ country_event = {
 	}
 	option = {
 		name = china.1731.a
-		custom_effect_tooltip = PRC_waixibei
+		custom_effect_tooltip = PRC_waidongbei
 		hidden_effect = {
 			PRC = {
 				add_state_core = 329

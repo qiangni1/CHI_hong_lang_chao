@@ -2254,11 +2254,24 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
-			PRK = {
-				NOT = {
-					has_country_leader = {
-						character = PRK_kim_jongun
-						ruling_only = yes
+			OR = {
+				AND = {
+					has_completed_focus = Shoot_the_sun
+					PRK = {
+						NOT = {
+							has_country_leader = {
+								character = PRK_kim_jongun
+								ruling_only = yes
+							}
+						}
+					}
+				}
+				AND = {
+					has_completed_focus = Promote_the_thawing_of_DPRK
+					PRK = {
+						NOT = {
+							has_idea = PRK_Total_Control_idea
+						}
 					}
 				}
 			}

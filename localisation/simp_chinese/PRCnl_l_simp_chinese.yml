@@ -1,5 +1,5 @@
 ﻿l_simp_chinese:
- PRC_waixibei: "我们将获得外西北地区"
+ PRC_waidongbei: "我们将获得外东北地区"
  PRC_revolutionary_tt: "§R我们将启用全球革命系统§!"
  PRCcczi: "最终，台海两岸迎来了真正的§Y统一§!。"
  PRC_ussr_diplomacy_tt: "§G外东北和谈暂未完成§!§R敬请期待§!"
@@ -291,7 +291,7 @@
  china.1730.t: "“新长城”被攻占"
  china.1730.d: "你个伟大祖国的叛徒，你怎么能让俄国佬攻占我们的新长城？"
  china.1730.a: "组织已经决定了，就由你扛着炸药包把碉堡给炸了"
- china.1731.t: "俄罗斯已同意转交外西北地区"
+ china.1731.t: "俄罗斯已同意转交外东北地区"
  china.1731.d: ""
  china.1731.a: "这是个明智的选择"
  TFR_MRC_at_value_MON: "蒙古人民的意愿:\n[?PRC_at_MON|2Y]%"
