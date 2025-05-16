@@ -5251,11 +5251,11 @@ shared_focus = {
 				days = 40
 				random_days = 5
 			}
-			#country_event = {
-			#	id = china.1019
-			#	days = 70
-			#	random_days = 40
-			#}
+			country_event = {
+				id = Chihong.1
+				days = 4
+				random_hours = 5
+			}
 		}
 	}
 }

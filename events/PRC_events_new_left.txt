@@ -1329,6 +1329,13 @@ country_event = {
 		ai_chance = {
 			base = 50
 		}
+		hidden_effect = {
+			country_event = {
+				id = Chihong.2
+				days = 4
+				random_hours = 13
+			}
+		}
 	}
 }
 
@@ -1343,6 +1350,13 @@ country_event = {
 		custom_effect_tooltip = Chihong_2_tt
 		ai_chance = {
 			base = 50
+		}
+		hidden_effect = {
+			country_event = {
+				id = Chihong.3
+				days = 4
+				random_hours = 10
+			}
 		}
 	}
 }
@@ -1359,6 +1373,13 @@ country_event = {
 			base = 50
 		}
 		custom_effect_tooltip = Chihong_3_tt
+		hidden_effect = {
+			country_event = {
+				id = Chihong.4
+				days = 3
+				random_hours = 18
+			}
+		}
 	}
 }
 
@@ -1372,6 +1393,13 @@ country_event = {
 		name = Chihong.4.a
 		ai_chance = {
 			base = 50
+		}
+		hidden_effect = {
+			country_event = {
+				id = Chihong.5
+				days = 5
+				random_hours = 13
+			}
 		}
 	}
 }
@@ -1387,6 +1415,13 @@ country_event = {
 		custom_effect_tooltip = Chihong_5_tt
 		ai_chance = {
 			base = 50
+		}
+		hidden_effect = {
+			country_event = {
+				id = Chihong.6
+				days = 4
+				random_hours = 13
+			}
 		}
 	}
 }
@@ -1406,6 +1441,13 @@ country_event = {
 		ai_chance = {
 			base = 50
 		}
+		hidden_effect = {
+			country_event = {
+				id = Chihong.7
+				days = 3
+				random_hours = 13
+			}
+		}
 	}
 }
 
@@ -1419,6 +1461,13 @@ country_event = {
 		name = Chihong.7.a
 		ai_chance = {
 			base = 50
+		}
+		hidden_effect = {
+			country_event = {
+				id = Chihong.8
+				days = 4
+				random_hours = 13
+			}
 		}
 	}
 }

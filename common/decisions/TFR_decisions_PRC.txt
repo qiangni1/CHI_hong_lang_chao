@@ -15882,7 +15882,7 @@ PRC_great_asian_war = {
 		}
 		complete_effect = {
 			hidden_effect = {
-				PRC_chinas_victory_in_the_gaw = yes
+				PRC_chinas_victory_in_the_gaw_nl = yes
 				PRC = {
 					country_event = china.1001
 				}

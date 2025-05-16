@@ -354,7 +354,7 @@ PRC_gaw_start = {
 	}
 }
 
-PRC_chinas_victory_in_the_gaw = {
+PRC_chinas_victory_in_the_gaw_nl = {
 	clr_global_flag = pan_asian_war_ongoing
 	set_global_flag = PRC_chinese_gaw_victory_global
 	PRC_dissolve_japan = yes

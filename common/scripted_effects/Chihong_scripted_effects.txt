@@ -120,3 +120,26 @@ may_i_pull_out_your_south_asia = {
 		news_event = { id = news.556 }
 	}
 }
+may_i_pull_out_your_southeast_pacifica = {
+	if = {
+		limit = { 
+			all_country = {
+				limit = {
+					OR = {
+						tag = VIN#
+						tag = ROP#
+						tag = PRT#
+						tag = SMA#
+						tag = SRI#
+						tag = SIG#
+						tag = CAM#
+						tag = LAO#
+						tag = BRM#
+					}
+				}
+				is_in_faction_with = PRC
+			}
+		}
+		news_event = news.557
+	}
+}
