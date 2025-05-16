@@ -1352,7 +1352,7 @@ country_event = {
 					has_country_flag = fuck_off_news1
 				}
 			}
-			news_event = news.556
+			news_event = { id = news.556 }
 		}
 	}
 }
@@ -1403,7 +1403,9 @@ country_event = {
 					has_country_flag = fuck_off_news2
 				}
 			}
-			news_event = {news.557}
+			news_event = {
+				id = news.557
+			}
 		}
 	}
 }
