@@ -2604,6 +2604,7 @@ country_event = {
 	desc = china.1716.d
 	picture = GFX_APA_marx_lenin
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		tag = PRC
 	}
