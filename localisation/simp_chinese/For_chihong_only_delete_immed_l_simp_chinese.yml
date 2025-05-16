@@ -47,6 +47,7 @@
   CPPCC_conservative_short: "政协（保守派）"
 #决议——文化
   PRC_Culture_Revital: "文化革新运动"
+  PRC_Culture_Revital_desc: "\n\n\n\n\n\nnGFX_PRC_chinese_century_banner\n\n\n\n\n\n"
   Tool_toogle_culture_switch: "显示/隐藏§C文化&教育§!决议"
   Tool_toogle_propaganda_switch: "显示/隐藏§Y宣传§!决议"
   Tool_toogle_reform_switch: "显示/隐藏§t改革§!决议"
@@ -57,8 +58,8 @@
   PRC_cadre_revolutionization: "树立§t干部§!新目标"
   PRC_establish_lead_by_party: "§Y宣传§!：坚持党的领导"
   PRC_hundred_flowers: "§Y宣传§!：百花齐放，百家争鸣"
-  PRC_establish_lead_by_party_desc: "\n\n\n\n\n£GFX_PRC_improve_party_discipline_banner\n\n\n\n\n\n"
-  PRC_hundred_flowers_desc: "\n\n\n\n\n£GFX_PRC_let_flowers_grow_banner\n\n\n\n\n\n"
+  PRC_establish_lead_by_party_desc: "\n\n\n\n\n\n£GFX_PRC_improve_party_discipline_banner\n\n\n\n\n\n"
+  PRC_hundred_flowers_desc: "\n\n\n\n\n\n£GFX_PRC_let_flowers_grow_banner\n\n\n\n\n\n"
   PRC_out_capitalist_so_call_equity: "§Y揭穿§!资产阶级平等幻象"
   PRC_out_capitalist_so_call_equity_desc: "什么是平等?平等是我们不分身份、不分财富，所有人都是一样的，都是“人”。而资产阶级在提出了这一概念后却又暗戳戳地依据人的职业、财富、出身等来将人们划分为三六九等，以身份政治来切割人民。我们必须戳破这一点，让平等的概念回到原点。"
   PRC_out_maleism: "瓦解§Y父权制§!遗毒"

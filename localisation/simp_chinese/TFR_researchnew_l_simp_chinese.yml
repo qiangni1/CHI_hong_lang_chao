@@ -2,7 +2,7 @@
  PRC_research_dynamic: "中国科学"
  junmin_ronghe: "军民融合战略"
  PRC_nems_system: "NEMS系统"
- PRC_nems_system_desc: "NEMS系统当前进度为: [?nems_jindu_rating_var|=+1%]"
+ PRC_nems_system_desc: "\n\n\n\n\nGFX_PRC_loji_banner\n\n\n\n\n NEMS系统当前进度为: [?nems_jindu_rating_var|=+1%]"
  yu_fanduipai_hezuo: "与反对派合作"
  fanduipai_zunao: "反对派阻挠"
  chongzu_zjw: "重组中计委"
