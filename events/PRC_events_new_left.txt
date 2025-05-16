@@ -1480,10 +1480,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Chihong.8.a
-		custom_effect_tooltip = Chihong_8_tt
 		JAP = {
 			add_manpower = -232
 		}
+		custom_effect_tooltip = Chihong_8_tt
 		ai_chance = {
 			base = 50
 		}
