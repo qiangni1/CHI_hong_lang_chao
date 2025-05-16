@@ -8908,7 +8908,7 @@ PRC_chinese_socialist_economy_cat = {
 	}
 	PRC_asteroid_mining_programme_new_left = {
 		visible = {
-			has_completed_focus = PRC_fund_space_development
+			has_completed_focus = PRC_nl_stellar_exploration
 		}
 		modifier = {
 			political_power_gain = -0.1
@@ -8956,7 +8956,7 @@ PRC_chinese_socialist_economy_cat = {
 	}
 	PRC_new_moon_race_programme_new_left = {
 		visible = {
-			has_completed_focus = PRC_fund_space_development
+			has_completed_focus = PRC_nl_stellar_exploration
 		}
 		modifier = {
 			political_power_gain = 0.1
@@ -9004,7 +9004,7 @@ PRC_chinese_socialist_economy_cat = {
 	}
 	PRC_expand_satellite_launching_programme_new_left = {
 		visible = {
-			has_completed_focus = PRC_fund_space_development
+			has_completed_focus = PRC_nl_stellar_exploration
 		}
 		modifier = {
 			political_power_gain = -0.05

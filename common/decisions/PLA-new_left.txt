@@ -232,12 +232,7 @@ PRC_new_left_pla_reformation = {
 		complete_effect = {
 		}
 		remove_effect = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = PLA_dummy_general_staff
-					add_idea = PRC_intensify_marine_training_general_staff
-				}
-			}
+			custom_effect_tooltip = PRC_intensify_marine_training_tt
 			hidden_effect = {
 				add_to_variable = {
 					var = PRC_new_left_plan_naval_invasion_penalty_dynamic_var
