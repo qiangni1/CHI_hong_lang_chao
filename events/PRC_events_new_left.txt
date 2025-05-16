@@ -1317,6 +1317,80 @@ country_event = {
 		name = prcs.77.a
 	}
 }
+country_event = {
+	id = prcs.78
+	title = prcs.78.t
+	desc = prcs.78.d
+	hidden = yes
+	timeout_days = 1
+	trigger = {
+		PAK = {
+			is_in_faction_with = PRC
+		}
+		BHU = {
+			is_in_faction_with = PRC
+		}
+		NEP = {
+			is_in_faction_with = PRC
+		}
+		BAN = {
+			is_in_faction_with = PRC
+		}
+		SRL = {
+			is_in_faction_with = PRC
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = prcs.78.a
+		news_event = news.556
+	}
+}
+country_event = {
+	id = prcs.79
+	title = prcs.79.t
+	desc = prcs.79.d
+	hidden = yes
+	timeout_days = 1
+	trigger = {
+		VIN = {
+			is_in_faction_with = PRC
+		}
+		ROP = {
+			is_in_faction_with = PRC
+		}
+		PRT = {
+			is_in_faction_with = PRC
+		}
+		SMA = {
+			is_in_faction_with = PRC
+		}
+		SRI = {
+			is_in_faction_with = PRC
+		}
+		SIG = {
+			is_in_faction_with = PRC
+		}
+		CAM = {
+			is_in_faction_with = PRC
+		}
+		LAO = {
+			is_in_faction_with = PRC
+		}
+		BRM = {
+			is_in_faction_with = PRC
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = prcs.79.a
+		news_event = news.557
+	}
+}
 
 country_event = {
 	id = Chihong.1

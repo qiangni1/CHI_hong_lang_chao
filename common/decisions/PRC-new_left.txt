@@ -430,7 +430,7 @@ PRC_export_revolution = {
 			add_to_variable = {
 				PRC_WLI_members_pp_cost = -5
 			}
-			may_i_pull_out_your_southeast_pacifica = yes
+			
 		}
 		ai_will_do = {
 			base = 10
@@ -522,7 +522,7 @@ PRC_export_revolution = {
 			add_to_variable = {
 				PRC_WLI_members_pp_cost = -5
 			}
-			may_i_pull_out_your_southeast_pacifica = yes
+			
 		}
 		ai_will_do = {
 			base = 10
@@ -1123,7 +1123,7 @@ PRC_export_revolution = {
 			add_to_variable = {
 				PRC_WLI_members_pp_cost = -5
 			}
-			may_i_pull_out_your_southeast_pacifica = yes
+			
 		}
 		ai_will_do = {
 			base = 10
@@ -1517,7 +1517,7 @@ PRC_export_revolution = {
 					}
 				}
 			}
-			may_i_pull_out_your_south_asia = yes
+			
 			add_to_variable = {
 				PRC_WLI_consumer_factor = -0.01
 			}
@@ -1591,7 +1591,7 @@ PRC_export_revolution = {
 					popularity = 0.1
 				}
 			}
-			may_i_pull_out_your_south_asia = yes
+			
 		}
 		ai_will_do = {
 			base = 10
@@ -1672,7 +1672,7 @@ PRC_export_revolution = {
 			add_to_variable = {
 				PRC_WLI_members_pp_cost = -5
 			}
-			may_i_pull_out_your_south_asia = yes
+			
 		}
 		ai_will_do = {
 			base = 10
@@ -1864,7 +1864,7 @@ PRC_export_revolution = {
 				}
 				clr_country_flag = Pakistan_selected
 			}
-			may_i_pull_out_your_south_asia = yes
+			
 		}
 		ai_will_do = {
 			base = 10
@@ -1939,7 +1939,7 @@ PRC_export_revolution = {
 					PRC_Lib_Int_Dir_Var = 1
 				}
 			}
-			may_i_pull_out_your_south_asia = yes
+			
 			add_to_variable = {
 				PRC_WLI_consumer_factor = -0.01
 			}

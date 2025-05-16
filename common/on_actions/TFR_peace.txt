@@ -233,7 +233,7 @@ on_actions = {
 									set_state_controller_to = BRM
 								}
 							}
-							may_i_pull_out_your_southeast_pacifica = yes
+							
 						}
 						BRM = {
 							every_country = {
@@ -500,7 +500,7 @@ on_actions = {
 								add_to_variable = {
 									PRC_Lib_Int_Dir_Var = 1
 								}
-								may_i_pull_out_your_southeast_pacifica = yes
+								
 							}
 						}
 						white_peace = ROOT
@@ -556,7 +556,7 @@ on_actions = {
 						add_to_variable = {
 							PRC_Lib_Int_Dir_Var = 1
 						}
-						may_i_pull_out_your_southeast_pacifica = yes
+						
 					}
 					set_global_flag = skip_default_capitulation
 				}
@@ -596,7 +596,7 @@ on_actions = {
 								add_to_variable = {
 									PRC_Lib_Int_Dir_Var = 1
 								}
-								may_i_pull_out_your_southeast_pacifica = yes
+								
 							}
 						}
 						white_peace = ROOT
@@ -709,7 +709,7 @@ on_actions = {
 						add_to_variable = {
 							PRC_Lib_Int_Dir_Var = 1
 						}
-						may_i_pull_out_your_southeast_pacifica = yes
+						
 						# clr_country_flag = PRC_spread_chinese_influence
 					}
 					ROOT = {

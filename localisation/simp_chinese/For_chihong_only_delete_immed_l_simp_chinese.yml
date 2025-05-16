@@ -47,7 +47,7 @@
   CPPCC_conservative_short: "政协（保守派）"
 #决议——文化
   PRC_Culture_Revital: "文化革新运动"
-  PRC_Culture_Revital_desc: "\n\n\n\n\n\nnGFX_PRC_chinese_century_banner\n\n\n\n\n\n"
+  PRC_Culture_Revital_desc: "\n\n\n\n\n\n\n£GFX_PRC_chinese_century_banner\n\n\n\n\n\n"
   Tool_toogle_culture_switch: "显示/隐藏§C文化&教育§!决议"
   Tool_toogle_propaganda_switch: "显示/隐藏§Y宣传§!决议"
   Tool_toogle_reform_switch: "显示/隐藏§t改革§!决议"
