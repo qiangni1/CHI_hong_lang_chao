@@ -515,4 +515,28 @@ spriteTypes = {
 		name = "GFX_PRC_midst_of_change"
 		textureFile = "gfx/event_pictures/PRC_midst_of_change.png"
 	}
+	spriteType = {
+		name = "GFX_PRC_GAW3"
+		textureFile = "gfx/event_pictures/PRC_GAW3.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_GAW4"
+		textureFile = "gfx/event_pictures/PRC_GAW4.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_GAW5"
+		textureFile = "gfx/event_pictures/PRC_GAW5.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_GAW6"
+		textureFile = "gfx/event_pictures/PRC_GAW6.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_GAW7"
+		textureFile = "gfx/event_pictures/PRC_GAW7.png"
+	}
+	spriteType = {
+		name = "GFX_PRC_GAW8"
+		textureFile = "gfx/event_pictures/PRC_GAW8.png"
+	}
 }
