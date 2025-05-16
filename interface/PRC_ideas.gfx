@@ -41,7 +41,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ZZZ_NIAS_banner"
-		textureFile = "gfx/PRC_automated_economy.png"
+		textureFile = "gfx/interface/PRC_automated_economy.png"
 		legacy_lazy_load = no
 	}
 }
