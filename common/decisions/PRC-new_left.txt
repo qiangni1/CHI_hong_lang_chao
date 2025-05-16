@@ -1035,6 +1035,7 @@ PRC_export_revolution = {
 			add_to_variable = {
 				PRC_Lib_Int_Dir_Var = 1
 			}
+			news_event = prcs.80
 		}
 		ai_will_do = {
 			base = 10

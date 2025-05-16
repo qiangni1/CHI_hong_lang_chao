@@ -1393,7 +1393,50 @@ country_event = {
 		news_event = news.557
 	}
 }
-
+news_event = {
+	id = prcs.80
+	title = prcs.80.t
+	desc = prcs.80.d
+	picture = GFX_PLAN2
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = prcs.80.a
+	}
+}
+news_event = {
+	id = prcs.81
+	title = prcs.81.t
+	desc = prcs.81.d
+	picture = GFX_PLAN3
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = prcs.81.a
+	}
+}
+country_event = {
+	id = prcs.82
+	title = prcs.80.t
+	desc = prcs.80.d
+	hidden = yes
+	timeout_days = 1
+	trigger = {
+		NOT = {
+			country_exists = INS
+			country_exists = PHI
+			country_exists = MAL
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	fire_only_once = yes
+	option = {
+		name = prcs.82.a
+		news_event = prcs.81
+	}
+}
 country_event = {
 	id = Chihong.1
 	title = Chihong.1.t
