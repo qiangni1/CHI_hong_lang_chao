@@ -1322,7 +1322,7 @@ country_event = {
 	id = Chihong.1
 	title = Chihong.1.t
 	desc = Chihong.1.desc
-	picture = GFX_Chihong1_event
+	picture = GFX_PRC_the_people
 	is_triggered_only = yes
 	option = {
 		name = Chihong.1.a
@@ -1336,10 +1336,11 @@ country_event = {
 	id = Chihong.2
 	title = Chihong.2.t
 	desc = Chihong.2.desc
-	picture = GFX_Chihong2_event
+	picture = GFX_PRC_lighting_light
 	is_triggered_only = yes
 	option = {
 		name = Chihong.2.a
+		custom_effect_tooltip = Chihong_2_tt
 		ai_chance = {
 			base = 50
 		}
@@ -1383,6 +1384,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Chihong.5.a
+		custom_effect_tooltip = Chihong_5_tt
 		ai_chance = {
 			base = 50
 		}
@@ -1397,6 +1399,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Chihong.6.a
+		custom_effect_tooltip = Chihong_6_tt
+		PRC = {
+			add_manpower = -1
+		}
 		ai_chance = {
 			base = 50
 		}
@@ -1425,6 +1431,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = Chihong.8.a
+		custom_effect_tooltip = Chihong_8_tt
+		JAP = {
+			add_manpower = -232
+		}
 		ai_chance = {
 			base = 50
 		}
@@ -2154,7 +2164,46 @@ country_event = {
 		}
 	}
 }
-
+country_event = {
+    id = Chihong.51
+    title = Chihong.51.t
+    desc = Chihong.51.d
+    picture = GFX_PRC_coffin
+	fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = Chihong.51.a
+        ai_chance = {
+            base = 50
+        }
+        country_event={
+			id = Chihong.52
+			days = 3
+		}
+	}
+	option = {
+		name = Chihong.51.b
+		ai_chance = {
+			base = 50
+		}
+		country_event={
+			id = Chihong.52
+			days = 3
+		}
+	}
+}
+#丰碑
+country_event = {
+    id = Chihong.52
+    title = Chihong.52.t
+    desc = Chihong.52.d
+    picture = GFX_PRC_xiangriver
+	fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = Chihong.52.a
+    }
+}
 country_event = {
 	id = china.1733
 	title = china.1733.t
@@ -2578,6 +2627,9 @@ country_event = {
 		}
 	}
 	option = {
+		PRK = {
+			add_stability = 0.10
+		}
 		name = china.1714.b
 	}
 }

@@ -8120,7 +8120,24 @@ news_event = {
 	title = news.556.t
 	desc = news.556.d
 	picture = GFX_news_india
-	is_triggered_only = yes
+	trigger = {
+		PAK = {
+			is_in_faction_with = PRC
+		}
+		BHU = {
+			is_in_faction_with = PRC
+		}
+		NEP = {
+			is_in_faction_with = PRC
+		}
+		BAN = {
+			is_in_faction_with = PRC
+		}
+		SRL = {
+			is_in_faction_with = PRC
+		}
+	}
+	fire_only_once = yes
 	major = yes
 	option = {
 		name = news.556.a
@@ -8132,7 +8149,24 @@ news_event = {
 	title = news.557.t
 	desc = news.557.d
 	picture = GFX_news_japan
-	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		NOT = {
+			country_exists = INS
+			country_exists = PHI
+			country_exists = BRM
+			country_exists = SIA
+		}
+		VIN = {
+			is_in_faction_with = PRC
+		}
+		LAO = {
+			is_in_faction_with = PRC
+		}
+		SIG = {
+			is_in_faction_with = PRC
+		}
+	}
 	major = yes
 	option = {
 		name = news.557.a
