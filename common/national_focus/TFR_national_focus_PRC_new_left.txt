@@ -2050,7 +2050,6 @@ focus_tree = {
 		y = 1
 		cost = 3
 		available_if_capitulated = yes
-		
 		prerequisite = {
 			focus = Rekindle_the_world_revolution
 		}
@@ -2255,6 +2254,14 @@ focus_tree = {
 			factor = 50
 		}
 		available = {
+			PRK = {
+				NOT = {
+					has_country_leader = {
+						character = PRK_kim_jongun
+						ruling_only = yes
+					}
+				}
+			}
 		}
 		completion_reward = {
 			unlock_decision_tooltip = PRC_DPRK_mechanized
@@ -2328,6 +2335,9 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_unite_PAK
 			unlock_decision_tooltip = PRC_bangladesh_revolution
 			unlock_decision_tooltip = PRC_PAK_industry
+			unlock_decision_tooltip = PRC_invest_pakistan_military
+			unlock_decision_tooltip = PRC_invest_pakistan_industry
+			unlock_decision_tooltip = PRC_train_pakistan_army
 		}
 	}
 	focus = {
@@ -2531,11 +2541,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			unlock_decision_tooltip = PRC_USSR_diplomacy
-			SOV = {
-				country_event = {
-					id = china.1718
-					days = 4
-				}
+			country_event = {
+				id = china.1718
+				days = 4
 			}
 		}
 	}
@@ -4918,7 +4926,20 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = PRC_nl_from_people_to_people
+		select_effect = {
+			country_event = {
+				id = prcs.74
+				days = 2
+				random_hours = 5
+			}
+		}
 		completion_reward = {
+			hidden_effect = {
+				country_event = {
+					id = Chihong.51
+					days = 1
+				}
+			}
 			custom_effect_tooltip = PRC_nl_rebuild_proletarian_dictatorship_tt
 			set_temp_variable_to_random = {
 				var = PRC_nl_manpower_minus
@@ -4995,13 +5016,6 @@ focus_tree = {
 			custom_effect_tooltip = Two_mutually_exclusive_decision2
 			unlock_decision_tooltip = PRC_bureaucrat_training_standard
 			unlock_decision_tooltip = PRC_second_clear_four_campaign
-			hidden_effect = {
-				country_event = {
-					id = prcs.74
-					days = 10
-					random_days = 10
-				}
-			}
 		}
 	}
 	#人民与党，携手共进
@@ -5142,7 +5156,7 @@ focus_tree = {
 				coalition_partner_var_temp = token:social_democrat
 			}
 			add_to_coalition = yes
-			set_temp_variable = { 
+			set_temp_variable = {
 				coalition_partner_var_temp = token:social_liberal
 			}
 			add_to_coalition = yes
