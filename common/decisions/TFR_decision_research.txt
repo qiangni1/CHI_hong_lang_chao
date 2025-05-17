@@ -1847,6 +1847,9 @@ PRC_nems_system = {
 	}
 	apply_nems_to_other_states = {
 		icon = GFX_PRC_loji_decision_icon
+		visible = {
+			has_completed_focus = PRC_nl_integrate_long_march_AI
+		}
 		target_trigger = {
 			NOT = {
 				tag = PRC
@@ -1860,6 +1863,9 @@ PRC_nems_system = {
 			custom_effect_tooltip = spread_nems_tt
 			FROM = {
 				set_country_flag = zizhu_diedai
+				add_dynamic_modifier = {
+					modifier = PRC_NEMS_dynamic
+				}
 			}
 		}
 
