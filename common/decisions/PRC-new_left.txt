@@ -1656,8 +1656,9 @@ PRC_export_revolution = {
 					picture = "gfx/leaders/PRC/generals/PRC_lianm.png"
 					ideology = marxism_leninism
 				}
-				add_to_faction = SRL
 			}
+			add_to_faction = SRL
+
 			add_to_variable = {
 				PRC_WLI_consumer_factor = -0.01
 			}
