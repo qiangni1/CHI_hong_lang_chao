@@ -451,7 +451,7 @@ ideas = {
 			visible = {
 				tag = PRC
 				NOT = {
-					has_completed_focus = PRC_lessons_from_the_taiwan_war
+					has_completed_focus = PLA_reform_of_military_and_political_work
 				}
 			}
 			modifier = {
@@ -476,7 +476,7 @@ ideas = {
 			picture = PRC_Complacent_Officers
 			visible = {
 				tag = PRC
-				has_completed_focus = PLA_party_commands_guns
+				has_completed_focus = PLA_reform_of_military_and_political_work
 			}
 			modifier = {
 				military_leader_cost_factor = -0.1

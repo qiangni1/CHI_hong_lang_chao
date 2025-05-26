@@ -8114,38 +8114,3 @@ news_event = {
 		}
 	}
 }
-#新：南亚盟友拉完
-news_event = {
-	id = news.556
-	title = news.556.t
-	desc = news.556.d
-	picture = GFX_news_india
-	is_triggered_only = yes
-	major = yes
-	immediate = {
-		PRC = {
-			set_country_flag = fuck_off_news1
-		}
-	}
-	option = {
-		name = news.556.a
-		
-	}
-}
-#新：东南亚&太平洋盟友拉完
-news_event = {
-	id = news.557
-	title = news.557.t
-	desc = news.557.d
-	picture = GFX_news_japan
-	is_triggered_only = yes
-	major = yes
-	immediate = {
-		PRC = {
-			set_country_flag = fuck_off_news2	
-		}
-	}
-	option = {
-		name = news.557.a
-	}
-}

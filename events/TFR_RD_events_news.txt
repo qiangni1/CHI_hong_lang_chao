@@ -1,0 +1,37 @@
+add_namespace = nlnews
+#此文件为红色黎明新闻事件
+#新：南亚盟友拉完
+news_event = {
+	id = nlnews.556
+	title = nlnews.556.t
+	desc = nlnews.556.d
+	picture = GFX_news_india
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		PRC = {
+			set_country_flag = fuck_off_news1
+		}
+	}
+	option = {
+		name = nlnews.556.a
+		
+	}
+}
+#新：东南亚&太平洋盟友拉完
+news_event = {
+	id = nlnews.557
+	title = nlnews.557.t
+	desc = nlnews.557.d
+	picture = GFX_news_japan
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		PRC = {
+			set_country_flag = fuck_off_news2	
+		}
+	}
+	option = {
+		name = nlnews.557.a
+	}
+}

@@ -24,6 +24,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			clr_country_flag = PRC_first_committee_transition_flag
+			set_country_flag = PRC_first_committee_transition_flag_1
 			add_political_power = 100
 			add_stability = -0.1
 			set_temp_variable = {
@@ -6464,15 +6465,6 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: focus PRC_operation_southern_fury completion_reward"
-		if = {
-			NOT = {
-				has_war_with = BAN
-			}
-			country_event = {
-				id = china.285
-				hours = 12
-			}
-		}
 		unlock_decision_tooltip = PRC_operation_gangaridai_dec
 		custom_effect_tooltip = when_selecting_a_decision_tt
 		show_ideas_tooltip = PRC_operation_gangaridai_idea

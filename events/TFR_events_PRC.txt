@@ -2574,6 +2574,10 @@ news_event = {
 	trigger = {
 	}
 	option = {
+		country_event = {
+			id = prcs.22
+			hours = 12
+		}
 		name = china.72.a
 	}
 }

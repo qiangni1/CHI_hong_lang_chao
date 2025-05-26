@@ -68,11 +68,9 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = PRC_complacent_officers_spirit
-				}
-				remove_ideas = PRC_complacent_officers_spirit
+			swap_ideas = {
+				remove_idea = PRC_complacent_officers_spirit
+				add_idea = PRC_complacent_officers_spirit2
 			}
 			else = {
 				army_experience = 30
@@ -1043,6 +1041,10 @@ focus_tree = {
 		available = {
 		}
 		select_effect = {
+			country_event = {
+				id = prcs.14
+				hours = 10
+			}
 			if = {
 				limit = {
 					has_tech = advanced_medium_airframe
@@ -1139,11 +1141,6 @@ focus_tree = {
 							has_government = libertarian_socialist
 						}
 					}
-				}
-				country_event = {
-					id = prcs.14
-					days = 10
-					random_days = 2
 				}
 			}
 			else = {
@@ -2513,8 +2510,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			unlock_decision_tooltip = PRC_mongolia_war
-			country_event = {
-				id = china.1719
+			SOV = {
+				country_event = {
+					id = china.1719
+					hours = 12
+				}
 			}
 		}
 	}
@@ -2554,9 +2554,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			unlock_decision_tooltip = PRC_USSR_diplomacy
-			country_event = {
-				id = china.1718
-				days = 4
+			SOV = {
+				country_event = {
+					id = china.1718
+					days = 4
+				}
 			}
 		}
 	}

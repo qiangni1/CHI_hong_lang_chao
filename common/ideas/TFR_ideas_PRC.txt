@@ -10149,7 +10149,6 @@ ideas = {
 				NOT = {
 					OR = {
 						has_country_flag = PRC_first_committee_transition_flag_1
-						has_completed_focus = PRC_the_man_death
 					}
 				}
 			}

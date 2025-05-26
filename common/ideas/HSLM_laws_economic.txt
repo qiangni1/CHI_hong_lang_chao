@@ -58,9 +58,6 @@ ideas = {
 			default = yes
 			allowed_to_remove = {
 			}
-			visible = {
-				has_completed_focus = PRC_nl_new_sky
-			}
 			available = {
 				has_completed_focus = PRC_nl_industry_five
 			}
