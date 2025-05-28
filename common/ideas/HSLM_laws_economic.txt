@@ -10,6 +10,9 @@ ideas = {
 			default = yes
 			allowed_to_remove = {
 			}
+			allowed = {
+				tag = PRC
+			}
 			available = {
 				has_completed_focus = PRC_nl_industry_five
 			}
@@ -35,6 +38,9 @@ ideas = {
 			default = yes
 			allowed_to_remove = {
 			}
+			allowed = {
+				tag = PRC
+			}
 			available = {
 				has_completed_focus = PRC_nl_industry_five
 			}
@@ -57,6 +63,9 @@ ideas = {
 			cancel_if_invalid = no
 			default = yes
 			allowed_to_remove = {
+			}
+			allowed = {
+				tag = PRC
 			}
 			available = {
 				has_completed_focus = PRC_nl_industry_five
