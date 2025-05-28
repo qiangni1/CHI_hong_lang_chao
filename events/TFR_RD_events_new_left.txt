@@ -1352,7 +1352,7 @@ country_event = {
 					has_country_flag = fuck_off_news1
 				}
 			}
-			news_event = { id = news.556 }
+			news_event = { id = nlnews.556 }
 		}
 	}
 }
@@ -1404,7 +1404,7 @@ country_event = {
 				}
 			}
 			news_event = {
-				id = news.557
+				id = nlnews.557
 			}
 		}
 	}
@@ -2502,7 +2502,6 @@ country_event = {
 		set_country_flag = PRC_mongolia_hetong
 		name = china.1701.a
 		set_country_flag = PRC_waijiao
-		load_focus_tree = PRC_nl_focus
 	}
 }
 
