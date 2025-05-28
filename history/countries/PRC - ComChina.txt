@@ -437,9 +437,9 @@
 		create_intelligence_agency = yes
 	}
 
-	create_equipment_variant = { name = "J-6" type = fighter_equipment_1 upgrades = { plane_gun_upgrade = 2 plane_engine_upgrade = 2 plane_reliability_upgrade = 2 } obsolete = yes }
-	create_equipment_variant = { name = "J-7" type = fighter_equipment_1 upgrades = { plane_gun_upgrade = 5 plane_engine_upgrade = 5 plane_reliability_upgrade = 5 } obsolete = yes }
-	create_equipment_variant = { name = "H-5" type = strat_bomber_equipment_1  obsolete = yes }
+	create_equipment_variant = { name = "歼-6" type = fighter_equipment_1 upgrades = { plane_gun_upgrade = 2 plane_engine_upgrade = 2 plane_reliability_upgrade = 2 } obsolete = yes }
+	create_equipment_variant = { name = "歼-7" type = fighter_equipment_1 upgrades = { plane_gun_upgrade = 5 plane_engine_upgrade = 5 plane_reliability_upgrade = 5 } obsolete = yes }
+	create_equipment_variant = { name = "轰-5" type = strat_bomber_equipment_1  obsolete = yes }
 	
 	#Ideas
 	add_ideas = {
@@ -840,9 +840,10 @@
 		limit = { has_dlc = "Man the Guns" }
 		## Carriers ##
 		create_equipment_variant = { #Carrier 1
-			name = "Kuznetsov-class"
+			name = "辽宁舰"
 			type = ship_hull_carrier_conversion_bb
 			parent_version = 0
+			name_group = Province_namegroup
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
 				fixed_ship_deck_slot_2 = ship_deck_space
@@ -856,8 +857,9 @@
 			icon = "GFX_PRC_carrier_1"
 		}
 		create_equipment_variant = { #Carrier Shandong
-			name = "Shandong-class"
+			name = "山东舰"
 			type = ship_hull_carrier_conversion_bb
+			name_group = Province_namegroup
 			parent_version = 0
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
@@ -872,8 +874,9 @@
 			icon = "GFX_PRC_carrier_1"
 		}
 		create_equipment_variant = { #Carrier Fujian
-			name = "Fujian-class"
+			name = "福建舰"
 			type = ship_hull_carrier_1
+			name_group = Province_namegroup
 			parent_version = 0
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
@@ -888,10 +891,11 @@
 			icon = "GFX_PRC_carrier_2"
 		}
 
-		## Missile Cruisers ##
+		## 导弹驱逐舰 ##
 		create_equipment_variant = {
-			name = "Type 055 Missile Destroyer"
+			name = "055型导弹驱逐舰"
 			type = ship_hull_heavy_2
+			name_group = THEME_CITIES_namegroup
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_heavy_battery_2
@@ -909,10 +913,11 @@
 			icon = "GFX_PRC_missile_cruisers_2"
 		}
 		
-		## Corvettes ##
+		## 轻型护卫舰 ##
 		create_equipment_variant = { #Corvette 2
-			name = "Type 037 Corvette"
+			name = "037-II型导弹艇"
 			type = ship_hull_light_2
+			name_group = THEME_SM_CITIES_namegroup
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_1
@@ -927,8 +932,9 @@
 			obsolete = yes
 		}
 		create_equipment_variant = { #Corvette 2
-			name = "Type 056 Corvette"
+			name = "056型护卫舰"
 			type = ship_hull_light_2
+			name_group = THEME_SM_CITIES_namegroup
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_2
@@ -943,8 +949,9 @@
 			icon = "GFX_PRC_corvette_2"
 		}
 		create_equipment_variant = { #Corvette 056A
-			name = "Type 056A Corvette"
+			name = "056A型护卫舰"
 			type = ship_hull_light_2
+			name_group = THEME_CITIES_namegroup
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_2
@@ -960,9 +967,9 @@
 		}
 
 
-		## Frigates ##
+		## 护卫舰 ##
 		create_equipment_variant = { #Frigate 1
-			name = "Type 053 Frigate"
+			name = "053H1G型护卫舰"
 			type = ship_hull_cruiser_1
 			parent_version = 0
 			modules = {
@@ -980,7 +987,7 @@
 			obsolete = yes
 		}
 		create_equipment_variant = { #Frigate 2
-			name = "Type 053H3 Frigate"
+			name = "053H3型护卫舰"
 			type = ship_hull_cruiser_1
 			parent_version = 0
 			modules = {
@@ -999,8 +1006,9 @@
 			obsolete = yes
 		}
 		create_equipment_variant = { 
-			name = "Type 054A Frigate"
+			name = "054A型护卫舰"
 			type = ship_hull_cruiser_2
+			name_group = THEME_SM_CITIES_namegroup
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_medium_battery_2
@@ -1016,9 +1024,9 @@
 			}
 			icon = "GFX_PRC_Frigate_2"
 		}
-		### Destroyers ###
+		### 驱逐舰 ###
 		create_equipment_variant = { #Destroyer 051B
-			name = "Type 051B Destroyer"
+			name = "051B型驱逐舰"
 			type = ship_hull_cruiser_1
 			parent_version = 0
 			modules = {
@@ -1035,7 +1043,7 @@
 			obsolete = yes
 		}
 		create_equipment_variant = { #Destroyer 051C
-			name = "Type 051C Destroyer"
+			name = "051C型驱逐舰"
 			type = ship_hull_cruiser_1
 			parent_version = 0
 			modules = {
@@ -1052,7 +1060,7 @@
 			obsolete = yes
 		}
 		create_equipment_variant = { 
-			name = "Sovremenny Destroyer"
+			name = "现代级导弹驱逐舰"
 			type = ship_hull_cruiser_1
 			parent_version = 0
 			modules = {
@@ -1069,8 +1077,9 @@
 			obsolete = yes
 		}
 		create_equipment_variant = { #Destroyer 052C
-			name = "Type 052C Destroyer"
+			name = "052C型驱逐舰"
 			type = ship_hull_cruiser_2
+			name_group = THEME_SM_CITIES_namegroup
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_medium_battery_2
@@ -1086,8 +1095,9 @@
 			icon = "GFX_PRC_destroyer_2"
 		}
 		create_equipment_variant = { #Destroyer 052D
-			name = "Type 052D Destroyer"
+			name = "052D型驱逐舰"
 			type = ship_hull_cruiser_2
+			name_group = THEME_SM_CITIES_namegroup
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_medium_battery_2
@@ -1103,9 +1113,9 @@
 			icon = "GFX_PRC_destroyer_2"
 		}
 
-		## Submarines ##
+		## 潜艇 ##
 		create_equipment_variant = { #Diesel Sub 1
-			name = "Type 039 submarine"
+			name = "039型常规动力潜艇"
 			type = ship_hull_submarine_1
 			parent_version = 0
 			modules = {
@@ -1116,7 +1126,7 @@
 			obsolete = yes
 		}
 		create_equipment_variant = { 
-			name = "Type 094/094A"
+			name = "094A型核潜艇"
 			type = ship_hull_submarine_2
 			parent_version = 0
 			modules = {
@@ -1126,7 +1136,7 @@
 			}
 		}
 		create_equipment_variant = { #Diesel Sub 2
-			name = "Kilo-class submarine"
+			name = "基洛级潜艇"
 			type = ship_hull_submarine_1
 			parent_version = 0
 			modules = {
@@ -1137,7 +1147,7 @@
 			obsolete = yes
 		}
 		create_equipment_variant = { #Diesel Sub 3
-			name = "Type 035 submarine"
+			name = "035型常规动力潜艇"
 			type = ship_hull_submarine_1
 			parent_version = 0
 			modules = {
@@ -1148,7 +1158,7 @@
 			obsolete = yes
 		}
 		create_equipment_variant = { #Nuclear Sub 1
-			name = "Type 092 Submarine"
+			name = "092型战略导弹核潜艇"
 			type = ship_hull_submarine_2
 			parent_version = 0
 			modules = {
@@ -1158,7 +1168,7 @@
 			}
 		}
 		create_equipment_variant = { #Nuclear Sub 2
-			name = "Type 091 Submarine"
+			name = "091型攻击核潜艇"
 			type = ship_hull_submarine_2
 			parent_version = 0
 			modules = {
@@ -1175,7 +1185,7 @@
 			has_dlc = "No Step Back"
 		}
 		create_equipment_variant = {
-			name = "ZTD-05"
+			name = "ZTD-05两栖战车"
 			type = amphibious_tank_chassis_1
 			parent_version = 0
 			modules = {
@@ -1196,7 +1206,7 @@
 			icon = "gfx/interface/technologies/armor/PRC_light_tank1.png"
 		}
 		create_equipment_variant = {
-			name = "ZTZ-96B"
+			name = "ZTZ-96B主战坦克"
 			type = modern_tank_chassis_1
 			parent_version = 0
 			modules = {
@@ -1217,7 +1227,7 @@
 			icon = "gfx/interface/technologies/armor/PRC_modern_tank6.dds"
 		}
 		create_equipment_variant = {
-			name = "ZTZ-99A"
+			name = "ZTZ-99A主战坦克"
 			type = modern_tank_chassis_2
 			parent_version = 0
 			modules = {
@@ -1238,7 +1248,7 @@
 			icon = "gfx/interface/technologies/armor/PRC_modern_tank7.png"
 		}
 		create_equipment_variant = {
-			name = "ZTQ-15"
+			name = "ZTQ-15轻型坦克"
 			type = light_tank_chassis_1
 			parent_version = 0
 			modules = {
@@ -1265,7 +1275,7 @@
 			has_dlc = "By Blood Alone"
 		}
 		create_equipment_variant = {
-			name = "Shenyang J-15 Flying Shark"
+			name = "歼-15T“飞鲨”"
 			type = cv_small_plane_naval_bomber_airframe_1
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
@@ -1279,7 +1289,7 @@
 		}
 		
 		create_equipment_variant = {
-			name = "Shenyang J-7"
+			name = "歼-7"
 			type = small_plane_airframe_0
 			modules = {
 				fixed_main_weapon_slot = heavy_mg_4x
@@ -1293,7 +1303,7 @@
 		}
 
 		create_equipment_variant = {
-			name = "Shenyang J-8"
+			name = "歼-8"
 			type = small_plane_airframe_0
 			modules = {
 				fixed_main_weapon_slot = heavy_mg_4x
@@ -1307,7 +1317,7 @@
 		}
 
 		create_equipment_variant = {
-			name = "Nanchang Q-5"
+			name = "强-5"
 			type = small_plane_airframe_0
 			modules = {
 				fixed_main_weapon_slot = heavy_mg_4x
@@ -1321,7 +1331,7 @@
 		}
 
 		create_equipment_variant = {
-			name = "Shenyang J-10"
+			name = "歼-10C"
 			type = small_plane_airframe_0
 			modules = {
 				fixed_main_weapon_slot = heavy_mg_4x
@@ -1335,7 +1345,7 @@
 		}
 		
 		create_equipment_variant = {
-			name = "Shenyang J-11"
+			name = "歼-11B"
 			type = small_plane_airframe_0
 			modules = {
 				fixed_main_weapon_slot = heavy_mg_4x
@@ -1349,7 +1359,7 @@
 		}
 		
 		create_equipment_variant = {
-			name = "Shenyang J-16"
+			name = "歼-16“炸弹卡车”"
 			type = small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = heavy_mg_4x
@@ -1363,7 +1373,7 @@
 		}
 
 		create_equipment_variant = {
-			name = "Chengdu J-20"
+			name = "歼-20“威龙”"
 			type = small_plane_airframe_2
 			modules = {
 				fixed_main_weapon_slot = heavy_mg_4x
@@ -1379,7 +1389,7 @@
 		}
 		
 		create_equipment_variant = {
-			name = "Xian JH-7"
+			name = "歼轰-7“飞豹”"
 			type = small_plane_cas_airframe_1
 			modules = {
 				fixed_main_weapon_slot = bomb_locks
@@ -1407,7 +1417,7 @@
 		}
 
 		create_equipment_variant = {
-			name = "Xian H-5" 
+			name = "轰-5" 
 			type = large_plane_airframe_0
 			modules = {
 				fixed_main_weapon_slot = aircraft_cannon_1_2x
@@ -1422,7 +1432,7 @@
 		}
 		
 		create_equipment_variant = {
-			name = "Xian H-6" 
+			name = "轰-6K“战神”" 
 			type = large_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = aircraft_cannon_1_2x
