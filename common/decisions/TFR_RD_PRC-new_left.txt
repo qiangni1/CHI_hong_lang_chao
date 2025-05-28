@@ -318,7 +318,6 @@ PRC_export_revolution = {
 					add_core_of = PRT
 				}
 			}
-			
 			PRC = {
 				add_to_variable = {
 					CPC_frame = 2
@@ -430,7 +429,6 @@ PRC_export_revolution = {
 			add_to_variable = {
 				PRC_WLI_members_pp_cost = -5
 			}
-			
 		}
 		ai_will_do = {
 			base = 10
@@ -522,7 +520,6 @@ PRC_export_revolution = {
 			add_to_variable = {
 				PRC_WLI_members_pp_cost = -5
 			}
-			
 		}
 		ai_will_do = {
 			base = 10
@@ -1124,7 +1121,6 @@ PRC_export_revolution = {
 			add_to_variable = {
 				PRC_WLI_members_pp_cost = -5
 			}
-			
 		}
 		ai_will_do = {
 			base = 10
@@ -1251,7 +1247,7 @@ PRC_export_revolution = {
 				declare_war_on = {
 					target = PER
 					type = civil_war
-				}	
+				}
 			}
 			add_to_variable = {
 				CPC_frame = 3
@@ -1518,7 +1514,6 @@ PRC_export_revolution = {
 					}
 				}
 			}
-			
 			add_to_variable = {
 				PRC_WLI_consumer_factor = -0.01
 			}
@@ -1592,7 +1587,6 @@ PRC_export_revolution = {
 					popularity = 0.1
 				}
 			}
-			
 		}
 		ai_will_do = {
 			base = 10
@@ -1658,7 +1652,6 @@ PRC_export_revolution = {
 				}
 			}
 			add_to_faction = SRL
-
 			add_to_variable = {
 				PRC_WLI_consumer_factor = -0.01
 			}
@@ -1674,7 +1667,6 @@ PRC_export_revolution = {
 			add_to_variable = {
 				PRC_WLI_members_pp_cost = -5
 			}
-			
 		}
 		ai_will_do = {
 			base = 10
@@ -1866,7 +1858,6 @@ PRC_export_revolution = {
 				}
 				clr_country_flag = Pakistan_selected
 			}
-			
 		}
 		ai_will_do = {
 			base = 10
@@ -1941,7 +1932,6 @@ PRC_export_revolution = {
 					PRC_Lib_Int_Dir_Var = 1
 				}
 			}
-			
 			add_to_variable = {
 				PRC_WLI_consumer_factor = -0.01
 			}
@@ -2114,7 +2104,7 @@ PRC_export_revolution = {
 			AFG = {
 				every_core_state = {
 					add_core_of = CPA
-				}	
+				}
 			}
 			CPA = {
 				transfer_state = 267
@@ -2123,7 +2113,6 @@ PRC_export_revolution = {
 				transfer_state = 1355
 				transfer_state = 1054
 				transfer_state = 1056
-				
 				declare_war_on = {
 					target = AFG
 					type = civil_war
@@ -2147,7 +2136,7 @@ PRC_export_revolution = {
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					country_exists = AFG
 				}
 				AFG = {
@@ -2361,6 +2350,16 @@ PRC_export_revolution = {
 		fire_only_once = yes
 		cost = 100
 		days_remove = 35
+		complete_effect = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_owned_by = JAP
+					}
+					add_core_of = JPL
+				}
+			}
+		}
 		remove_effect = {
 			ROOT = {
 				set_autonomy = {
@@ -2370,12 +2369,6 @@ PRC_export_revolution = {
 				}
 			}
 			JPL = {
-				every_state = {
-					limit = {
-						is_owned_by = JAP
-					}
-					add_core_of = JPL
-				}
 				create_country_leader = {
 					name = "白井聪"
 					picture = "gfx/leaders/JPL_baijincong.png"
@@ -2514,11 +2507,28 @@ PRC_export_revolution = {
 				has_global_flag = pan_asian_war_ongoing
 			}
 			has_completed_focus = Coordination_of_the_World_Liberation_Army
+			PRC = {
+				is_ally_with = SRI
+				is_ally_with = SMA
+				is_ally_with = ROP
+				is_ally_with = LAO
+				is_ally_with = VIN
+				is_ally_with = CAM
+				is_ally_with = BAN
+				is_ally_with = PRK
+				is_ally_with = PAK
+				is_ally_with = CPA
+				is_ally_with = CPP
+				is_ally_with = PRT
+				is_ally_with = BHU
+				is_ally_with = NEP
+				is_ally_with = SRL
+			}
 		}
 		visible = {
 			has_completed_focus = Coordination_of_the_World_Liberation_Army
 		}
-		fire_only_once = no
+		fire_only_once = yes
 		cost = 25
 		days_remove = 15
 		remove_effect = {
@@ -2844,7 +2854,7 @@ PRC_assistance2communist = {
 		}
 		remove_effect = {
 			if = {
-				limit = { 
+				limit = {
 					country_exists = CPA
 				}
 				CPA = {
@@ -2877,7 +2887,7 @@ PRC_assistance2communist = {
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					country_exists = CPP
 				}
 				CPP = {
@@ -2890,10 +2900,10 @@ PRC_assistance2communist = {
 			}
 			else = {
 				set_temp_variable = {
-						var = income_var_temp
-						value = 179
-					}
-					add_income_with_inflation = yes
+					var = income_var_temp
+					value = 179
+				}
+				add_income_with_inflation = yes
 			}
 		}
 		ai_will_do = {
@@ -2984,7 +2994,6 @@ PRC_assistance2communist = {
 			add_to_variable = {
 				PRC_Lib_Int_Dir_Var = 1
 			}
-
 		}
 		ai_will_do = {
 			base = 10
@@ -3023,7 +3032,6 @@ PRC_assistance2communist = {
 				add_to_variable = {
 					PRC_Lib_Int_Dir_Var = 1
 				}
-
 			}
 			PRK = {
 				set_temp_variable = {
@@ -3134,7 +3142,6 @@ PRC_assistance2communist = {
 			add_to_variable = {
 				PRC_Lib_Int_Dir_Var = 1
 			}
-
 		}
 		ai_will_do = {
 			base = 10
@@ -4027,7 +4034,7 @@ PRC_mongolia_hetong = {
 			custom_effect_tooltip = MON_integration_tooltip
 			clr_country_flag = PRC_mongolia_hetong_flag_1
 			clr_country_flag = PRC_mongolia_hetong_flag
-				if = {
+			if = {
 				limit = {
 					check_variable = {
 						var = PRC_at_MON
@@ -4602,8 +4609,8 @@ PRC_Culture_Revital = {
 			custom_effect_tooltip = Put_Back_365_days
 			hidden_effect = {
 				add_timed_idea = {
-				idea = PRC_leading_the_student
-				days = 365
+					idea = PRC_leading_the_student
+					days = 365
 				}
 			}
 			custom_effect_tooltip = on_idea_removal_tt
@@ -7925,6 +7932,825 @@ PRC_ready_for_global_economy_destory_category = {
 				value = 0.05
 			}
 			PRC_add_influence_new = yes
+		}
+	}
+}
+PRC_maoist_politburo_cat = {
+	PRC_clean_up_kinmen = {
+		icon = GFX_PRC_soliders
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_martial_law_reconstruction #PRC_the_red_phoenix
+		}
+		available = {
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = 60
+		highlight_states = {
+			highlight_state_targets = {
+				state = 648
+			}
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_state_core = 648
+		}
+		ai_will_do = {
+			base = 999
+		}
+	}
+	PRC_clean_up_tainan = {
+		icon = GFX_PRC_soliders
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_martial_law_reconstruction #PRC_the_red_phoenix
+		}
+		available = {
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = 60
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1150
+			}
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_state_core = 1150
+		}
+		ai_will_do = {
+			base = 999
+		}
+	}
+	PRC_clean_up_hualan = {
+		icon = GFX_PRC_soliders
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_martial_law_reconstruction #PRC_the_red_phoenix
+		}
+		available = {
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = 60
+		highlight_states = {
+			highlight_state_targets = {
+				state = 524
+			}
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_state_core = 524
+		}
+		ai_will_do = {
+			base = 999
+		}
+	}
+	PRC_clean_up_taichzhun = {
+		icon = GFX_PRC_soliders
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_martial_law_reconstruction #PRC_the_red_phoenix
+		}
+		available = {
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = 60
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1149
+			}
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_state_core = 1149
+		}
+		ai_will_do = {
+			base = 999
+		}
+	}
+	PRC_clean_up_taibei = {
+		icon = GFX_PRC_soliders
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_martial_law_reconstruction #PRC_the_red_phoenix
+		}
+		available = {
+			1150 = {
+				is_core_of = PRC
+			}
+			524 = {
+				is_core_of = PRC
+			}
+			1149 = {
+				is_core_of = PRC
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		days_remove = 60
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1148
+			}
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_state_core = 1148
+		}
+		ai_will_do = {
+			base = 999
+		}
+	}
+	PRC_nl_jingji2_d1 = {
+			#决议：推进国内大循环	
+			icon = GFX_PRC_decision_industrial_expension
+			cost = 100
+			days_remove = 90	
+			fire_only_once = yes
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_completed_focus = PRC_nl_advance_productivity #完成国策发展先进生产力解锁此决议
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				misc_expense = 25
+			}
+			complete_effect = {
+			}
+			remove_effect = {
+				effect_tooltip = {	#仅展示效果，不执行
+					swap_ideas = {
+						remove_idea = PRC_made_in_china_dummy_idea0	#空民族精神，无效果
+						add_idea = PRC_nl_jingji2_d1_idea	#仅填追加效果
+					}
+				}
+				add_to_variable = {	#预设变量，文件在common/dynamic_modifiers中，直接作用于于此创建的dynamic（相当于民族精神）实际上执行上文效果的是这部分
+					var = PRC_mic_production_speed_buildings_factor_dynamic_var	#效果为建造速度+5%，具体效果根据此名称在dynamic_modifiers文件中对应的修正而定
+					value = 0.05  #数值
+				}
+				add_to_variable = {
+					var = PRC_mic_local_resources_factor_dynamic_var
+					value = 0.1
+				}
+				add_to_variable = {
+					var = PRC_mic_min_export_dynamic_var
+					value = -0.1
+				}
+				add_to_variable = {
+					var = PRC_mic_industrial_development_monthly_dynamic_var
+					value = 0.005
+				}
+				add_stability = 0.05
+				set_temp_variable = { #TFR特殊变量：工业发展+10%
+					var = industrial_development_var_temp
+					value = 0.1
+				}
+				add_industrial_development = yes
+				set_country_flag = PRC_nl_condition_jingji1_flag  #创建国家标记，一些p语言没有的条件需要借此实现
+			}
+	}
+	PRC_nl_jingji2_d2 = {
+		#决议：建设先进产业集群
+		icon = GFX_PRC_decision_fund_manufacturing_improvements
+		cost = 100
+		days_remove = 180	
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_advance_productivity
+		}
+		modifier = {
+			production_speed_buildings_factor = -0.1
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea0
+					add_idea = PRC_nl_jingji2_d2_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_production_speed_buildings_factor_dynamic_var
+				value = 0.15
+			}
+			every_controlled_state = { #随机控制省份+3建筑位+2民工
+				random_select_amount = 3
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			every_controlled_state = {
+				random_select_amount = 3
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = PRC_nl_condition_jingji2_flag
+		}
+	}
+	PRC_nl_jingji2_d3 = {
+		#决议：	扩展科技小院模式
+		icon = GFX_decision_FPR_Energy_Focus
+		cost = 75
+		days_remove = 90	
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_advance_productivity
+		}
+		modifier = {
+			farming_development_monthly = 0.005 
+			academic_development_monthly = 0.005
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea0
+					add_idea = PRC_nl_jingji2_d3_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_society_development_monthly_dynamic_var
+				value = 0.005
+			}
+			add_to_variable = {
+				var = PRC_mic_farming_development_monthly_dynamic_var
+				value = 0.005
+			}
+			add_to_variable = {
+				var = PRC_mic_production_speed_energy_farm_factor_dynamic_var
+				value = 0.1
+			}
+			every_controlled_state = {
+				random_select_amount = 5
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = PRC_nl_condition_jingji3_flag
+		}
+	}
+	PRC_nl_jingji2_d4 = {
+		#决议：推广农业八字宪法	
+		icon = GFX_decision_generic_investment
+		cost = 50
+		days_remove = 90	
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_advance_productivity
+		}
+		modifier = {
+			farming_development_monthly = 0.005
+			society_development_monthly = 0.005
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea0
+					add_idea = PRC_nl_jingji2_d4_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_poverty_development_monthly_dynamic_var
+				value = 0.005
+			}
+			add_to_variable = {
+				var = PRC_mic_local_resources_factor_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = PRC_mic_farming_development_monthly_dynamic_var
+				value = 0.005
+			}
+			set_country_flag = PRC_nl_condition_jingji4_flag
+		}
+	}
+	PRC_nl_jingji3_d1 = {
+		#决议：消灭血汗工厂
+		icon = GFX_PRC_things_going_bad
+		cost = 100
+		days_remove = 90	
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_reform_production_relation
+		}
+		modifier = {
+			industrial_development_monthly = 0.005
+			production_speed_buildings_factor = -0.2
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea0
+					add_idea = PRC_nl_jingji3_d1_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_society_development_monthly_dynamic_var
+				value = 0.005
+			}
+			add_to_variable = {
+				var = PRC_mic_industrial_development_monthly_dynamic_var
+				value = 0.005
+			}
+			592 = {	#于592移除一个民工，若加仅变正负
+				add_building_construction = {
+					type = industrial_complex
+					level = -1
+					instant_build = yes
+				}
+			}
+			1206 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = -1
+					instant_build = yes
+				}
+			}
+			1207 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = -1
+					instant_build = yes
+				}
+			}
+			728 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = -1
+					instant_build = yes
+				}
+			}
+			set_country_flag = PRC_nl_condition_jingji5_flag
+		}
+	}
+	PRC_nl_jingji3_d2 = {
+		#决议：落实劳动法
+		icon = GFX_SOV_decision_SOV_recover_bureaucracy
+		cost = 150
+		days_remove = 180	
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_reform_production_relation
+		}
+		modifier = {
+			political_power_factor = -0.15
+			poverty_development_monthly = 0.005
+		}
+		complete_effect = {
+			hidden_effect = {
+				country_event = {
+					id = prcs.37
+					days = 5
+					random_days = 20
+				}
+			}
+		}
+		remove_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea0
+					add_idea = PRC_nl_jingji3_d2_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_production_factory_max_efficiency_factor_dynamic_var
+				value = 0.05
+			}
+			swap_ideas = {
+				remove_idea = medium_safety
+				add_idea = high_safety
+			}
+			set_country_flag = PRC_nl_condition_jingji6_flag
+		}
+	}
+	PRC_nl_jingji3_d3 = {
+		#决议：新时代赎买政策
+		icon = GFX_SOV_china_investment
+		cost = 100
+		days_remove = 180	
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_reform_production_relation
+		}
+		modifier = {
+			consumer_goods_factor = -0.15
+			business_value_factor = -0.25
+		}
+		complete_effect = {
+			set_country_flag = PRC_gaizaoqiye1_flag
+			unlock_decision_category_tooltip = PRC_gaizaodaxingqiye_category
+			effect_tooltip = {
+				add_ideas = PRC_nl_jingji3_d3C0_idea
+			}
+			add_to_variable = {
+				var = PRC_nlgzc_political_power_gain_dynamic_var
+				value = -0.2
+			}
+			add_to_variable = {
+				var = PRC_nlgzc_business_value_factor_dynamic_var
+				value = -0.1
+			}
+			add_to_variable = {
+				var = PRC_nlgzc_expense_growth_factor_dynamic_var
+				value = 0.05
+			}
+			set_country_flag = PRC_nl_condition_jingjiC0_flag
+		}
+		remove_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea0
+					add_idea = PRC_nl_jingji3_d3_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_business_value_factor_dynamic_var
+				value = -0.15
+			}
+			add_to_variable = {
+				var = PRC_mic_poverty_development_monthly_dynamic_var
+				value = 0.005
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 150
+			}
+			add_debt_with_inflation = yes
+			set_country_flag = PRC_nl_condition_jingji7_flag
+		}
+	}
+	PRC_nl_jingji3_d4 = {
+		#决议：规范统一平台经济
+		icon = GFX_decision_FPR_Debt_Forgiveness_Programs
+		cost = 100
+		days_remove = 120	
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_reform_production_relation
+		}
+		modifier = {
+			consumer_goods_factor = 0.1
+			misc_income = 25
+		}
+		complete_effect = {
+			unlock_decision_tooltip = PRC_nl_jingjiCd10
+			unlock_decision_tooltip = PRC_nl_jingjiCd11
+			set_country_flag = PRC_gaizaoqiye2_flag
+		}
+		remove_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea0
+					add_idea = PRC_nl_jingji3_d4_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_business_value_factor_dynamic_var
+				value = 0.15
+			}
+			add_stability = 0.05
+			add_war_support = 0.05
+			set_country_flag = PRC_nl_condition_jingji8_flag
+		}
+	}
+	PRC_nl_jingji5_d1 = {
+		#决议：发扬大庆工业精神
+		icon = GFX_PRC_decision_youth_project
+		cost = 150
+		days_remove = 180	
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_new_era_angang_constitution
+		}
+		modifier = {
+			political_power_factor = 0.1
+			production_speed_buildings_factor = 0.15
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea0
+					add_idea = PRC_nl_jingji5_d1_idea
+				}
+				if = {
+					limit = {
+						has_country_flag = PRC_nl_condition_jingji10_flag
+					}
+					swap_ideas = {
+						remove_idea = PRC_nl_jingji5_d0_idea
+						add_idea = PRC_nl_jingji5_d1a_idea
+					}
+				}
+				else = {
+					add_ideas = PRC_nl_jingji5_d1a_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_production_speed_buildings_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PRC_mic_industrial_capacity_factory_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PRC_mic_industrial_capacity_dockyard_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PRC_PXF_political_power_gain_dynamic_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = PRC_PXF_industrial_development_monthly_dynamic_var
+				value = 0.005
+			}
+			set_country_flag = PRC_nl_condition_jingji9_flag
+		}
+	}
+	PRC_nl_jingji6_d1 = {
+		#决议：发扬农业大寨精神
+		icon = GFX_decision_generic_investment
+		cost = 100
+		days_remove = 120	
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_reform_farmer_cooperation
+		}
+		modifier = {
+			political_power_factor = 0.1
+			consumer_goods_factor = -0.1
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea0
+					add_idea = PRC_nl_jingji6_d1_idea
+				}
+				if = {
+					limit = {
+						has_country_flag = PRC_nl_condition_jingji9_flag
+					}
+					swap_ideas = {
+						remove_idea = PRC_nl_jingji5_d0_idea
+						add_idea = PRC_nl_jingji6_d1b_idea
+					}
+				}
+				else = {
+					add_ideas = PRC_nl_jingji6_d1b_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_conscription_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PRC_mic_local_resources_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PRC_mic_personal_value_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PRC_PXF_political_power_gain_dynamic_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = PRC_PXF_farming_development_monthly_dynamic_var
+				value = 0.005
+			}
+			set_country_flag = PRC_nl_condition_jingji10_flag
+		}
+	}
+	PRC_nl_jingji14_d1 = {
+		#决议：发挥人民群众的创造力
+		icon = GFX_PRC_new_left_decision
+		cost = 100
+		days_remove = 120
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_free_and_equal_labor
+		}
+		modifier = {
+			research_speed_factor = 0.1
+			industrial_development_monthly = 0.01
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea0
+					add_idea = PRC_nl_jingji14_d1_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_personal_value_dynamic_var
+				value = 0.2
+			}
+			add_to_variable = {
+				var = PRC_mic_personal_value_factor_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = PRC_mic_personal_expense_dynamic_var
+				value = 0.1
+			}
+			set_country_flag = PRC_nl_condition_jingji14_flag
+		}
+	}
+	PRC_nl_jingji15_d1 = {
+		#决议：实现自由人的联合体
+		icon = GFX_PRC_new_left_decision
+		cost = 100
+		days_remove = 120
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		available = {
+			has_completed_focus = PRC_nl_industry_five
+		}
+		visible = {
+			has_completed_focus = PRC_nl_improve_commune_function
+		}
+		modifier = {
+			political_power_factor = 0.1
+			society_development_monthly = 0.01
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			change_economy_type_auto_socialism1 = yes
+			set_country_flag = PRC_nl_condition_jingji15_flag
+		}
+	}
+	PRC_nl_jingji16_d1 = {
+		#决议：普及家用服务机器人
+		icon = GFX_PRC_decision_fund_manufacturing_improvements
+		cost = 50
+		days_remove = 180
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_robotic_emergency_assist
+		}
+		modifier = {
+			civilian_factory_use = 10
+			consumer_goods_factor = 0.25
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea0
+					add_idea = PRC_nl_jingji16_d1_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_consumer_goods_factor_dynamic_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = PRC_mic_monthly_population_dynamic_var
+				value = 0.2
+			}
+			add_to_variable = {
+				var = PRC_mic_personal_value_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PRC_mic_society_development_monthly_dynamic_var
+				value = 0.005
+			}
+			add_to_variable = {
+				var = PRC_mic_academic_development_monthly_dynamic_var
+				value = 0.005
+			}
+			set_country_flag = PRC_nl_condition_jingji16_flag
+		}
+	}
+	PRC_nl_jingji23_d1 = {
+		#决议：人定胜天
+		icon = GFX_PRC_decision_youth_project
+		cost = 200
+		days_remove = 120
+		fire_only_once = yes
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_nl_improve_commune_function
+		}
+		modifier = {
+			expense_growth_factor = 0.15
+			research_speed_factor = -0.1
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 350
+			}
+			add_debt_with_inflation = yes
+		}
+		remove_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_made_in_china_dummy_idea0
+					add_idea = PRC_nl_jingji23_d1_idea
+				}
+			}
+			add_to_variable = {
+				var = PRC_mic_local_building_slots_factor_dynamic_var
+				value = 0.15
+			}
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = oil
+				amount = 2
+			}
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 4
+			}
+			set_country_flag = PRC_nl_condition_jingji23_flag
 		}
 	}
 }
