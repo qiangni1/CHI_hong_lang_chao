@@ -354,12 +354,20 @@ PRC_gaw_start = {
 	}
 }
 
-PRC_chinas_victory_in_the_gaw_nl = {
+PRC_chinas_victory_in_the_gaw = {
 	clr_global_flag = pan_asian_war_ongoing
 	set_global_flag = PRC_chinese_gaw_victory_global
 	PRC_dissolve_japan = yes
 	PRC_dissolve_india = yes
 	PRC = {
+		annex_country = {
+			target = CHI
+			transfer_troops = no
+		}
+		add_state_core = 1150
+		add_state_core = 524
+		add_state_core = 1149
+		add_state_core = 1148
 		if = {
 			limit = {
 				has_country_leader = {
@@ -372,9 +380,29 @@ PRC_chinas_victory_in_the_gaw_nl = {
 				portrait = GFX_portrait_PRC_xi_jinping_gaw_win
 			}
 		}
-		country_event = {
-			id = prcs.3
-			days = 3
+		if = {
+			limit = {
+				has_country_flag = PRC_centrist_win
+			}
+			country_event = { id = china.2000 days = 3 }
+		}
+		if = {
+			limit = {
+				has_country_flag = PRC_nationalist_win
+			}
+			country_event = { id = china.2001 days = 3 }
+		}
+		if = {
+			limit = {
+				has_country_flag = PRC_liberal_win
+			}
+			country_event = { id = china.2002 days = 3 }
+		}
+		if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
+			country_event = { id = china.2003 days = 3 }
 		}
 	}
 	PRK = {
@@ -383,89 +411,12 @@ PRC_chinas_victory_in_the_gaw_nl = {
 			transfer_troops = no
 		}
 	}
-	if = {
-		limit = {
-			AST = {
-				is_puppet_of = PRC
-			}
-		}
-		AST = {
-			drop_cosmetic_tag = yes
-			set_politics = {
-				ruling_party = libertarian_socialist
-				elections_allowed = no
-			}
-			set_popularities = {
-				conservative = 8
-				libertarian_socialist = 52
-				market_liberal = 25
-				communist = 15
-			}
-		}
+	NEP = {
+		set_cosmetic_tag = PRC_military_administration
+		JAP_leave_PEC = yes
 	}
-	if = {
-		limit = {
-			PNG = {
-				is_puppet_of = PRC
-			}
-		}
-		PNG = {
-			drop_cosmetic_tag = yes
-			set_politics = {
-				ruling_party = conservative
-				elections_allowed = no
-			}
-			set_popularities = {
-				communist = 55
-				libertarian_socialist = 35
-				authoritarian_democrat = 1
-				nationalist = 1
-				market_liberal = 2
-				social_liberal = 2
-				conservative = 4
-			}
-		}
-	}
-	if = {
-		limit = {
-			NZL = {
-				is_puppet_of = PRC
-			}
-		}
-		NZL = {
-			drop_cosmetic_tag = yes
-			set_politics = {
-				ruling_party = social_democrat
-				elections_allowed = no
-			}
-			set_popularities = {
-				communist = 30
-				libertarian_socialist = 35
-				authoritarian_democrat = 17
-				nationalist = 3
-				market_liberal = 5
-				social_liberal = 3
-				communist = 7
-			}
-		}
-	}
-	every_country = {
-		limit = {
-			has_country_flag = pdto_member
-		}
-		clr_country_flag = pdto_member
-	}
-	every_country = {
-		limit = {
-			is_ally_with = PRC
-		}
-		clr_country_flag = JAP_PEC_member_flag
-		set_country_flag = eadi_member
-		remove_ideas = {
-			JAP_PDTO_member_1
-			JAP_PDTO_member_2
-			JAP_PEC_member
-			JAP_PEC_member_2
-		}
+	BHU = {
+		set_cosmetic_tag = PRC_military_administration
+		JAP_leave_PEC = yes
 	}
 }

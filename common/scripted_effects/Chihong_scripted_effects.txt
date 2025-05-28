@@ -117,7 +117,7 @@ may_i_pull_out_your_south_asia = {
 				is_in_faction_with = PRC
 			}
 		}
-		news_event = { id = news.556 }
+		news_event = { id = nlnews.556 }
 	}
 }
 may_i_pull_out_your_southeast_pacifica = {
@@ -140,6 +140,6 @@ may_i_pull_out_your_southeast_pacifica = {
 				is_in_faction_with = PRC
 			}
 		}
-		news_event = news.557
+		news_event = nlnews.557
 	}
 }
