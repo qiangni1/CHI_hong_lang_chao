@@ -447,8 +447,7 @@ PRC_chinas_victory_in_the_gaw_nl = {
 		limit = {
 			is_ally_with = PRC
 		}
-		clr_country_flag = JAP_PEC_member_flag
-		set_country_flag = eadi_member
+		clr_country_flag = eadi_member
 		remove_ideas = {
 			JAP_PDTO_member_1
 			JAP_PDTO_member_2

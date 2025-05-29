@@ -2319,7 +2319,6 @@ PRC_chinas_liberalization_category = {
 				add_to_faction = PRK
 			}
 			PRK = {
-				set_country_flag = eadi_member
 				add_ai_strategy = {
 					type = prepare_for_war
 					id = KOR

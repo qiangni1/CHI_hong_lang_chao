@@ -128,9 +128,6 @@ PRC_export_revolution = {
 			add_to_variable = {
 				PRC_WLI_members_pp_cost = -5
 			}
-			MND = {
-				set_country_flag = eadi_member
-			}
 			# PRC = {
 			# 	add_to_faction = MND
 			# }

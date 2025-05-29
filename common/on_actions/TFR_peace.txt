@@ -259,7 +259,6 @@ on_actions = {
 							}
 							# country_event = { id = bur.5 }
 							clr_country_flag = pdto_member
-							set_country_flag = eadi_member
 						}
 					}
 				}
@@ -776,7 +775,6 @@ on_actions = {
 							ideology = left_wing_junta
 						}
 						clr_country_flag = pdto_member
-						set_country_flag = eadi_member
 						every_country = {
 							limit = {
 								is_in_faction_with = ROOT
