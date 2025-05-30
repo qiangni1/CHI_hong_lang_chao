@@ -1,0 +1,2772 @@
+shared_focus = {
+	#当那一天到来
+	id = PLA_when_that_day_comes
+	icon = GFX_focus_PRC_establish_eadi
+	x = 0
+	y = 1
+	cost = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+		has_country_flag = PRC_military_tree_available
+	}
+	allow_branch = {
+		has_country_flag = PRC_for_policy_tree_available
+	}
+	#relative_position_id =
+	completion_reward = {
+		add_political_power = 150
+		army_experience = 50
+		navy_experience = 50
+		air_experience = 50
+		add_ideas = PRC_party_commands_the_guns
+		unlock_decision_category_tooltip = PRC_new_left_pla_reformation
+		#此处添加用于测试，如有想法，可以去除
+		effect_tooltip = {
+			remove_ideas = PRC_insufficient_understanding_of_modern_warfare_idea
+		}
+		hidden_effect = {
+			remove_ideas = {
+				PRC_insufficient_understanding_of_modern_warfare_idea
+				PRC_insufficient_understanding_of_modern_warfare_idea2
+				PRC_insufficient_understanding_of_modern_warfare_idea3
+				PRC_insufficient_understanding_of_modern_warfare_idea4
+				PRC_insufficient_understanding_of_modern_warfare_idea5
+			}
+		}
+	}
+}
+
+shared_focus = {
+	#改革人民解放军政工工作
+	id = PLA_reform_of_military_and_political_work
+	icon = GFX_focus_PRC_finaltraining
+	available_if_capitulated = yes
+	relative_position_id = PLA_when_that_day_comes
+	prerequisite = {
+		focus = PLA_when_that_day_comes
+	}
+	cost = 3
+	x = -8
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = PRC_complacent_officers_spirit
+			add_idea = PRC_complacent_officers_spirit2
+		}
+		else = {
+			army_experience = 30
+		}
+		custom_effect_tooltip = PLA_military_and_political_reform
+		hidden_effect = {
+			add_dynamic_modifier = {
+				modifier = PLA_military_and_political_reform_dynamic
+			}
+		}
+		#这个人民解放军军政改革不出现人民解放军军政改革这个修正？而且感觉给的数据里的描述怪怪的，暂且先这样做
+	}
+}
+
+shared_focus = {
+	#新时代人民战争理论建设
+	id = PLA_theoretical_construction_of_PW_in_new_era
+	icon = GFX_focus_PRC_will_of_the_chinese_people
+	available_if_capitulated = yes
+	relative_position_id = PLA_reform_of_military_and_political_work
+	prerequisite = {
+		focus = PAL_fourth_of_war
+	}
+	prerequisite = {
+		focus = PAL_block_flood_of_enemy_information
+	}
+	cost = 3
+	x = 2
+	y = 2
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = PRC_party_commands_the_guns
+			add_idea = PRC_party_commands_the_guns_1
+		}
+	}
+}
+
+shared_focus = {
+	#武装保卫无产阶级革命
+	id = PLA_armed_defense_of_proletarian_revolution
+	icon = GFX_focus_PRC_dare_to_fight
+	available_if_capitulated = yes
+	relative_position_id = PLA_theoretical_construction_of_PW_in_new_era
+	prerequisite = {
+		focus = PLA_theoretical_construction_of_PW_in_new_era
+	}
+	cost = 3
+	x = 1
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = PRC_party_commands_the_guns_1
+			add_idea = PRC_party_commands_the_guns_2
+		}
+	}
+}
+
+shared_focus = {
+	#锻造中国革命的坚盾
+	id = PLA_forging_Strong_Shield_of_Chinese_Revolution
+	icon = GFX_focus_PRC_infantry_primacy
+	available_if_capitulated = yes
+	relative_position_id = PLA_theoretical_construction_of_PW_in_new_era
+	prerequisite = {
+		focus = PLA_theoretical_construction_of_PW_in_new_era
+	}
+	cost = 3
+	x = -1
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		add_ideas = PAL_the_better_revolutionary_enthusiasm_idea
+	}
+}
+
+shared_focus = {
+	#重铸世界革命的利剑
+	id = PLA_Remaking_the_Sword_of_World_Revolution
+	icon = GFX_focus_PRC_Send_Chinese_Peacekeepers
+	available_if_capitulated = yes
+	relative_position_id = PLA_forging_Strong_Shield_of_Chinese_Revolution
+	prerequisite = {
+		focus = PLA_forging_Strong_Shield_of_Chinese_Revolution
+	}
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_military_and_political_reform_dynamic_dummy
+				add_idea = PLA_military_and_political_reform_dynamic_idea_1
+			}
+		}
+		hidden_effect = {
+			add_dynamic_modifier = {
+				modifier = PLA_military_and_political_reform_dynamic
+			}
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_political_power_gain_dynamic_var
+				value = 0.25
+			}
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_army_org_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_army_morale_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_offensive_war_stability_factor_dynamic_var
+				value = 0.3
+			}
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_war_support_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_operation_outcome_dynamic_var
+				value = 0.5
+			}
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_military_development_monthly_dynamic_var
+				value = 0.005
+			}
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_send_volunteer_factor_dynamic_var
+				value = 0.03
+			}
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_air_volunteer_cap_dynamic_var
+				value = 300
+			}
+		}
+	}
+}
+
+shared_focus = {
+	#擎旗自有后来人
+	id = PLA_Qingqi_has_its_own_successors
+	icon = GFX_focus_PRC_stir_up_youth_patriotism
+	available_if_capitulated = yes
+	relative_position_id = PLA_armed_defense_of_proletarian_revolution
+	prerequisite = {
+		focus = PLA_armed_defense_of_proletarian_revolution
+	}
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_military_and_political_reform_dynamic_dummy
+				add_idea = PLA_military_and_political_reform_dynamic_idea_2
+			}
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_political_power_gain_dynamic_var
+				value = 0.2
+			}
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_planning_speed_dynamic_var
+				value = 0.2
+			}
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_max_planning_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_supply_consumption_factor_dynamic_var
+				value = -0.1
+			}
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_out_of_supply_factor_dynamic_var
+				value = -0.5
+			}
+			add_to_variable = {
+				var = PLA_military_and_political_reform_dynamic_military_development_monthly_dynamic_var
+				value = 0.005
+			}
+		}
+	}
+}
+
+shared_focus = {
+	#动员全世界无产阶级
+	id = PLA_Mobilize_the_global_proletariat
+	icon = GFX_focus_PRC_foster_authoritative_statesmen
+	available_if_capitulated = yes
+	relative_position_id = PLA_Qingqi_has_its_own_successors
+	prerequisite = {
+		focus = PLA_Qingqi_has_its_own_successors
+	}
+	prerequisite = {
+		focus = PLA_Remaking_the_Sword_of_World_Revolution
+	}
+	cost = 3
+	x = -1
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		add_war_support = 0.1
+		add_stability = 0.1
+		add_political_power = 100
+		every_country = {
+			if = {
+				limit = {
+					OR = {
+						has_government = communism
+						has_government = libertarian_socialist
+						has_government = totalitarian_socialist
+					}
+				}
+				add_popularity = {
+					ideology = libertarian_socialist
+					popularity = 0.1
+				}
+			}
+			else = {
+				add_stability = -0.05
+				add_political_power = -50
+			}
+		}
+	}
+}
+
+shared_focus = {
+	#国际纵队永垂不朽
+	id = PLA_the_IC_will_be_immortalized_forever
+	icon = GFX_focus_PRC_coordinate_eadi_militaries
+	available_if_capitulated = yes
+	relative_position_id = PLA_Mobilize_the_global_proletariat
+	prerequisite = {
+		focus = PLA_Mobilize_the_global_proletariat
+	}
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		add_ideas = PAL_the_International_Brigade_nowar_idea
+	}
+}
+
+shared_focus = {
+	#建立联合作战指挥部
+	id = PLA_establish_joint_operations_command
+	icon = GFX_focus_PRC_reconcile_with_militarists
+	available_if_capitulated = yes
+	relative_position_id = PLA_when_that_day_comes
+	prerequisite = {
+		focus = PLA_when_that_day_comes
+	}
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		army_experience = 50
+		navy_experience = 50
+		air_experience = 50
+		#动态修正为主，在装备效果方面，则使用隐藏民族精神与描述
+		#放弃动态修正了，要弄装备效果，还是民族精神更省事
+		add_ideas = PLA_plaa_operations_command
+		add_ideas = PLA_plan_operations_command
+		add_ideas = PLA_plaaf_operations_command
+		hidden_effect = {
+			#add_dynamic_modifier = {
+			#	modifier = PLA_plaa		#陆军
+			#}
+			#add_dynamic_modifier = {
+			#	modifier = PLA_plan		#海军
+			#}
+			#add_dynamic_modifier = {
+			#	modifier = PLA_plaaf	#空军
+			#}
+			#分隔用 以下为陆军
+			#add_to_variable = {
+			#	var = PLA_plaa_army_attack_factor
+			#	value = 0.1
+			#}
+			#add_to_variable = {
+			#	var = PLA_plaa_army_defence_factor
+			#	value = 0.1
+			#}
+			#add_to_variable = {
+			#	var = PLA_plaa_army_core_attack_factor
+			#	value = 0.05
+			#}
+			#add_to_variable = {
+			#	var = PLA_plaa_army_core_defence_factor
+			#	value = 0.15
+			#}
+			#add_to_variable = {
+			#	var = PLA_plaa_experience_gain_army_unit_factor
+			#	value = 0.15
+			#}
+			#add_to_variable = {
+			#	var = PLA_plaa_coordination_bonus	#此处按照10%来对应
+			#	value = 0.1
+			#}
+			#add_to_variable = {
+			#	var = PLA_plaa_military_factory_upkeep_factor
+			#	value = 0.1
+			#}
+			#分隔用 以下为海军
+		}
+	}
+}
+
+shared_focus = {
+	#炮兵决胜，信火一体
+	id = PLA_artillery_wins_that_integrating_information_and_fire
+	icon = GFX_focus_PRC_tank_primacy_nat
+	available_if_capitulated = yes
+	relative_position_id = PLA_army_intelligence_reform
+	prerequisite = {
+		focus = PLA_army_intelligence_reform
+	}
+	cost = 3
+	x = 1
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 2			#研究加成200%
+			uses = 1
+			ahead_reduction = 2
+			category = artillery			#科技
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_plaa_operations_command
+				add_idea = PLA_plaa_information_and_fire
+			}
+		}
+		hidden_effect = {
+			remove_ideas = {
+				PLA_plaa_intelligence_reform
+				PLA_plaa_operations_command
+				PLA_plaa_large_depth
+			}
+			if = {
+				limit = {
+					has_completed_focus = PLA_new_era_large_depth_strategy
+				}
+				add_ideas = PLA_plaa_large_depth_with_information_and_fire
+			}
+			else = {
+				add_ideas = PLA_plaa_information_and_fire
+			}
+		}
+	}
+}
+
+shared_focus = {
+	#新时代大纵深战略
+	id = PLA_new_era_large_depth_strategy
+	icon = GFX_focus_PRC_tidal_wave_of_bodies
+	available_if_capitulated = yes
+	relative_position_id = PLA_army_intelligence_reform
+	prerequisite = {
+		focus = PLA_army_intelligence_reform
+	}
+	cost = 3
+	x = -1
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		PRC = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_plaa_operations_command
+				add_idea = PLA_plaa_large_depth
+			}
+		}
+		hidden_effect = {
+			remove_ideas = {
+				PLA_plaa_intelligence_reform
+				PLA_plaa_operations_command
+				PLA_plaa_information_and_fire
+			}
+			if = {
+				limit = {
+					has_completed_focus = PLA_artillery_wins_that_integrating_information_and_fire
+				}
+				add_ideas = PLA_plaa_large_depth_with_information_and_fire
+			}
+			else = {
+				add_ideas = PLA_plaa_large_depth
+			}
+		}
+	}
+}
+
+shared_focus = {
+	#陆军智能化改革
+	id = PLA_army_intelligence_reform
+	icon = GFX_focus_PRC_modern_special_forces
+	available_if_capitulated = yes
+	relative_position_id = PLA_establish_joint_operations_command
+	prerequisite = {
+		focus = PLA_establish_joint_operations_command
+	}
+	prerequisite = {
+		focus = PLA_equipment_research_new
+	}
+	cost = 3
+	x = 2
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		swap_ideas = {
+			remove_idea = PLA_plaa_operations_command
+			add_idea = PLA_plaa_intelligence_reform
+		}
+		hidden_effect = {
+			set_technology = {
+				PLA_army_intelligence_reform_tech = 1
+				popup = no
+			}
+		}
+	}
+}
+
+shared_focus = {
+	#精英海军陆战队
+	id = PLA_elite_marine_corps
+	icon = GFX_focus_PRC_elite_marine_corps
+	available_if_capitulated = yes
+	relative_position_id = PAL_build_new_navy
+	prerequisite = {
+		focus = PAL_build_new_navy
+	}
+	cost = 3
+	x = -1
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		custom_effect_tooltip = PRC_rain_fire_from_above_tt
+		#原版有这个决议吗...只有加强两栖训练
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 50
+		}
+		add_debt_with_inflation = yes
+		hidden_effect = {
+			remove_ideas = {
+				PLA_plan_build_new_navy
+				PLA_plan_reforming_aircraft
+			}
+			if = {
+				limit = {
+					has_completed_focus = PAL_Reforming_aircraft_carrier_battle_groups
+				}
+				add_ideas = PLA_plan_reforming_aircraft_all
+			}
+			else = {
+				add_ideas = PLA_plan_marine_corps
+			}
+			set_technology = {
+				PLA_elite_marine_corps_tech = 1
+				popup = no
+			}
+		}
+	}
+}
+
+shared_focus = {
+	#“鲲鹏”计划
+	#相关效果已添加在科技中，后期可以添加到决议中
+	id = PLA_Kunpeng_Plan
+	icon = GFX_focus_PRC_dominate_south_china_sea
+	available_if_capitulated = yes
+	relative_position_id = PLA_elite_marine_corps
+	prerequisite = {
+		focus = PLA_elite_marine_corps
+	}
+	prerequisite = {
+		focus = PAL_Reforming_aircraft_carrier_battle_groups
+	}
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_project_KUNPENG_dec
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_plan_reforming_aircraft_all
+				add_idea = PLA_plan_kungpeng
+			}
+		}
+		hidden_effect = {
+			remove_ideas = {
+				PLA_plan_reforming_aircraft_all
+				PLA_plan_retrieve_electromagnetic
+			}
+			if = {
+				limit = {
+					has_completed_focus = PAL_retrieve_electromagnetic_arsenal_ship
+				}
+				add_ideas = PLA_plan_retrieve_electromagnetic_two
+			}
+			else = {
+				add_ideas = PLA_plan_kungpeng
+			}
+		}
+	}
+}
+
+shared_focus = {
+	#建立无人合成部队
+	id = PLA_establish_an_unmanned_composite_force
+	icon = GFX_focus_PRC_wang_yang_three_campaigns
+	available_if_capitulated = yes
+	relative_position_id = PLA_new_era_large_depth_strategy
+	prerequisite = {
+		focus = PLA_new_era_large_depth_strategy
+	}
+	prerequisite = {
+		focus = PLA_artillery_wins_that_integrating_information_and_fire
+	}
+	cost = 3
+	x = 1
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 2			#研究加成200%
+			uses = 2
+			ahead_reduction = 2
+			category = support_equipment			#科技
+		}
+		set_technology = {
+			body_armor6 = 1
+		}
+		set_technology = {
+			body_armor7 = 1
+		}
+		set_technology = {
+			body_armor8 = 1
+		}
+		swap_ideas = {
+			remove_idea = PLA_plaa_large_depth_with_information_and_fire
+			add_idea = PLA_plaa_unmanned_composite
+		}
+	}
+}
+
+shared_focus = {
+	#横扫千军如卷席
+	id = PAL_rolling_back_enemy_as_wound_mat
+	icon = GFX_focus_PRC_mobile_warfare
+	available_if_capitulated = yes
+	relative_position_id = PLA_establish_an_unmanned_composite_force
+	prerequisite = {
+		focus = PLA_establish_an_unmanned_composite_force
+	}
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = PLA_plaa_unmanned_composite
+			add_idea = PLA_plaa_rolling_back
+		}
+	}
+}
+
+shared_focus = {
+	#建设新锐人民海军
+	id = PAL_build_new_navy
+	icon = GFX_focus_PRC_a_blue_water_navy
+	available_if_capitulated = yes
+	relative_position_id = PLA_establish_joint_operations_command
+	prerequisite = {
+		focus = PLA_establish_joint_operations_command
+	}
+	prerequisite = {
+		focus = PLA_equipment_research_new
+	}
+	cost = 3
+	x = -2
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		navy_experience = 50
+		add_tech_bonus = {
+			bonus = 1			#研究加成200%
+			uses = 2
+			#ahead_reduction = 2
+			category = naval_equipment			#科技
+		}
+		swap_ideas = {
+			remove_idea = PLA_plan_operations_command
+			add_idea = PLA_plan_build_new_navy
+		}
+		add_ideas = PRC_mass_naval_production_non_bba
+	}
+}
+
+shared_focus = {
+	#改革航母战斗群
+	id = PAL_Reforming_aircraft_carrier_battle_groups
+	icon = GFX_focus_PRC_carrier_primacy
+	available_if_capitulated = yes
+	relative_position_id = PAL_build_new_navy
+	prerequisite = {
+		focus = PAL_build_new_navy
+	}
+	cost = 3
+	x = 1
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 2			#研究加成200%
+			uses = 2
+			ahead_reduction = 2
+			category = cv_tech			#科技
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_plan_build_new_navy
+				add_idea = PLA_plan_reforming_aircraft
+			}
+		}
+		hidden_effect = {
+			remove_ideas = {
+				PLA_plan_build_new_navy
+				PLA_plan_marine_corps
+			}
+			if = {
+				limit = {
+					has_completed_focus = PLA_elite_marine_corps
+				}
+				add_ideas = PLA_plan_reforming_aircraft_all
+			}
+			else = {
+				add_ideas = PLA_plan_reforming_aircraft
+			}
+		}
+	}
+}
+
+shared_focus = {
+	#重拾电磁武库舰
+	id = PAL_retrieve_electromagnetic_arsenal_ship
+	icon = GFX_focus_PRC_resurrect_the_battleship
+	available_if_capitulated = yes
+	relative_position_id = PAL_Reforming_aircraft_carrier_battle_groups
+	prerequisite = {
+		focus = PAL_Reforming_aircraft_carrier_battle_groups
+	}
+	prerequisite = {
+		focus = PLA_elite_marine_corps
+	}
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 2			#研究加成200%
+			uses = 2
+			ahead_reduction = 2
+			category = bc_tech			#科技
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_plan_reforming_aircraft_all
+				add_idea = PLA_plan_retrieve_electromagnetic
+			}
+		}
+		add_ideas = PRC_battle_cruiser_idea
+		#以下是直接套模版的，需结合游戏内容进一步修改
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			create_equipment_variant = {
+				#Carrier 2020
+				name = "Xiangyang"
+				type = ship_hull_carrier_1
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_deck_slot_2 = ship_deck_space
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_radar_slot = ship_radar_1
+					fixed_ship_engine_slot = carrier_ship_engine_3
+					fixed_ship_secondaries_slot = ship_secondaries_1
+					front_1_custom_slot = ship_deck_space
+					mid_1_custom_slot = ship_deck_space
+					mid_2_custom_slot = ship_deck_space
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_5
+					creator = "PRC"
+					version_name = "Xiangyang"
+				}
+				name = "Xiangyang"
+				requested_factories = 5
+				progress = 0.5
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_heavy_5
+					creator = "PRC"
+					version_name = "Xiangyang"
+				}
+				name = "Heluo"
+				requested_factories = 5
+				progress = 0.35
+				amount = 1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_dlc = "Man the Guns"
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = carrier_2
+					creator = "PRC"
+				}
+				name = "Xiangyang"
+				requested_factories = 5
+				progress = 0.5
+				amount = 1
+			}
+		}
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 150
+		}
+		add_debt_with_inflation = yes
+		hidden_effect = {
+			remove_ideas = {
+				PLA_plan_reforming_aircraft_all
+				PLA_plan_kungpeng
+			}
+			if = {
+				limit = {
+					has_completed_focus = PLA_Kunpeng_Plan
+				}
+				add_ideas = PLA_plan_retrieve_electromagnetic_two
+			}
+			else = {
+				add_ideas = PLA_plan_retrieve_electromagnetic
+			}
+		}
+	}
+}
+
+shared_focus = {
+	#艟艨巨舰直东指
+	id = PAL_bulky_giant_ship_pointing_straight_east
+	icon = GFX_focus_PRC_redefine_naval_warfare
+	available_if_capitulated = yes
+	relative_position_id = PAL_retrieve_electromagnetic_arsenal_ship
+	prerequisite = {
+		focus = PAL_retrieve_electromagnetic_arsenal_ship
+	}
+	prerequisite = {
+		focus = PLA_Kunpeng_Plan
+	}
+	cost = 3
+	x = -1
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = PLA_plan_retrieve_electromagnetic_two
+			add_idea = PLA_plan_straight_east
+		}
+	}
+}
+
+shared_focus = {
+	#人民空军改革进行时
+	id = PAL_reform_of_PAF
+	icon = GFX_focus_PRC_next_generation_airforce
+	available_if_capitulated = yes
+	relative_position_id = PLA_establish_joint_operations_command
+	prerequisite = {
+		focus = PLA_establish_joint_operations_command
+	}
+	prerequisite = {
+		focus = PLA_equipment_research_new
+	}
+	cost = 3
+	x = 6
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = PLA_plaaf_operations_command
+			add_idea = PLA_plaaf_reform_of
+		}
+	}
+}
+
+shared_focus = {
+	#建立忠诚僚机系统
+	id = PAL_establish_loyal_wingplane
+	icon = GFX_focus_PRC_trust_in_the_pilot
+	available_if_capitulated = yes
+	relative_position_id = PAL_reform_of_PAF
+	prerequisite = {
+		focus = PAL_reform_of_PAF
+	}
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = PLA_plaaf_reform_of
+			add_idea = PLA_plaaf_loyal_wingplane
+		}
+	}
+}
+
+shared_focus = {
+	#龙行矫健，霹雳震天
+	id = PAL_dragons_move_agility_and_thunderstorms_strike_sky
+	icon = GFX_focus_PRC_deus_ex_machina
+	available_if_capitulated = yes
+	relative_position_id = PAL_establish_loyal_wingplane
+	prerequisite = {
+		focus = PAL_establish_loyal_wingplane
+	}
+	cost = 3
+	x = -1
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_plaaf_loyal_wingplane
+				add_idea = PLA_plaaf_dragons_move
+			}
+		}
+		hidden_effect = {
+			remove_ideas = {
+				PLA_plaaf_loyal_wingplane
+				PLA_plaaf_sharp_blade
+			}
+			if = {
+				limit = {
+					has_completed_focus = PAL_sharp_blade_in_air_and_win_battlefield
+				}
+				add_ideas = PLA_plaaf_sharp_blade_and_dragons_move
+			}
+			else = {
+				add_ideas = PLA_plaaf_dragons_move
+			}
+		}
+	}
+}
+
+shared_focus = {
+	#空突利刃，决胜疆场
+	id = PAL_sharp_blade_in_air_and_win_battlefield
+	icon = GFX_focus_PRC_military_industries_renewal_campaign
+	available_if_capitulated = yes
+	relative_position_id = PAL_establish_loyal_wingplane
+	prerequisite = {
+		focus = PAL_establish_loyal_wingplane
+	}
+	cost = 3
+	x = 1
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	select_effect = {
+		country_event = {
+			id = prcs.14
+			hours = 10
+		}
+		if = {
+			limit = {
+				has_tech = advanced_medium_airframe
+			}
+			country_event = {
+				id = prcs.16
+				days = 5
+			}
+		}
+		else = {
+			country_event = {
+				id = prcs.17
+				days = 5
+			}
+		}
+	}
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_plaaf_loyal_wingplane
+				add_idea = PLA_plaaf_sharp_blade
+			}
+		}
+		custom_effect_tooltip = PRC_air_sharp_blade_tt
+		hidden_effect = {
+			remove_ideas = {
+				PLA_plaaf_loyal_wingplane
+				PLA_plaaf_dragons_move
+			}
+			if = {
+				limit = {
+					has_completed_focus = PAL_dragons_move_agility_and_thunderstorms_strike_sky
+				}
+				add_ideas = PLA_plaaf_sharp_blade_and_dragons_move
+			}
+			else = {
+				add_ideas = PLA_plaaf_sharp_blade
+			}
+		}
+	}
+}
+
+shared_focus = {
+	#玉宇澄清万里埃
+	id = PAL_the_sky_crystal_clear
+	icon = GFX_focus_PRC_dominate_the_skies
+	available_if_capitulated = yes
+	relative_position_id = PAL_dragons_move_agility_and_thunderstorms_strike_sky
+	prerequisite = {
+		focus = PAL_dragons_move_agility_and_thunderstorms_strike_sky
+	}
+	prerequisite = {
+		focus = PAL_sharp_blade_in_air_and_win_battlefield
+	}
+	cost = 3
+	x = 1
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = PLA_plaaf_sharp_blade_and_dragons_move
+			add_idea = PLA_plaaf_crystal_clear
+		}
+	}
+}
+
+shared_focus = {
+	#第四维度战争理论
+	#原本是想放到空军的线上，但考虑到还要把原国策的部分内容结合进来，为了排版美观，只能把它放在这里，延长此国策线
+	id = PAL_fourth_of_war
+	icon = GFX_focus_PRC_the_organic_state
+	available_if_capitulated = yes
+	relative_position_id = PLA_reform_of_military_and_political_work
+	prerequisite = {
+		focus = PLA_reform_of_military_and_political_work
+	}
+	cost = 3
+	x = 1
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	select_effect = {
+		if = {
+			limit = {
+				SOV = {
+					OR = {
+						has_government = totalitarian_socialist
+						has_government = communist
+						has_government = libertarian_socialist
+					}
+				}
+			}
+		}
+		else = {
+			country_event = {
+				id = prcs.15
+				days = 10
+				random_days = 2
+			}
+		}
+	}
+	completion_reward = {
+		air_experience = 100
+		set_technology = {
+			fighter_equipment_7 = 1
+		}
+		add_tech_bonus = {
+			bonus = 2			#研究加成200%
+			uses = 4
+			ahead_reduction = 2
+			category = air_equipment			#科技
+		}
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 100
+		}
+		add_debt_with_inflation = yes
+	}
+}
+
+shared_focus = {
+	#拦阻敌人信息洪流
+	#原本是想放到空军的线上，但考虑到还要把原国策的部分内容结合进来，为了排版美观，只能把它放在这里，延长此国策线
+	id = PAL_block_flood_of_enemy_information
+	icon = GFX_focus_PRC_digital_leninism
+	available_if_capitulated = yes
+	relative_position_id = PLA_reform_of_military_and_political_work
+	prerequisite = {
+		focus = PLA_reform_of_military_and_political_work
+	}
+	cost = 3
+	x = -1
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		custom_effect_tooltip = PLA_jiesuo
+		custom_effect_tooltip = PLA_block_flood_of_enemy_information_tt
+	}
+}
+
+shared_focus = {
+	#呼风唤雨，擎雷掣电
+	id = PAL_summon_wind_and_electricity
+	icon = GFX_focus_PRC_set_new_military_standarts
+	available_if_capitulated = yes
+	relative_position_id = PAL_the_sky_crystal_clear
+	prerequisite = {
+		focus = PAL_the_sky_crystal_clear
+	}
+	prerequisite = {
+		focus = PLA_electronic_warfare_new
+	}
+	cost = 3
+	x = 2
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = PLA_plaaf_crystal_clear
+			add_idea = PLA_plaaf_summon_wind
+		}
+	}
+}
+
+shared_focus = {
+	#狂飙为我从天落
+	id = PAL_roaring_wildly
+	icon = GFX_focus_PRC_red_military_junta
+	available_if_capitulated = yes
+	relative_position_id = PAL_the_sky_crystal_clear
+	prerequisite = {
+		focus = PAL_rolling_back_enemy_as_wound_mat
+	}
+	prerequisite = {
+		focus = PAL_the_sky_crystal_clear
+	}
+	cost = 3
+	x = -2
+	y = 1
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	select_effect = {
+		country_event = {
+			id = prcs.18
+			days = 10
+		}
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = PLA_plaa_rolling_back
+			add_idea = PLA_plaa_roaring_wildly
+		}
+		custom_effect_tooltip = PLA_roaring_wildly_tt
+		hidden_effect = {
+			set_technology = {
+				nukes = 1
+			}
+			#获得核武器科技
+			add_nuclear_bombs = 20
+			add_thermo_nuclear_bomb = 5
+			enable_equipments = {
+				nuclear_missile_equipment_1
+			}
+			#允许生产核导弹
+			set_country_flag = TFR_sword_of_damocles_flag
+			#TFR_sword_of_damocles_flag是在tfr突袭机制里面找出来的，理论上能让核打击显示出来...
+		}
+	}
+}
+
+shared_focus = {
+	#可上九天揽月
+	id = PAL_moon_in_nine_days
+	icon = GFX_focus_PRC_reform_local_elections
+	available_if_capitulated = yes
+	relative_position_id = PAL_the_sky_crystal_clear
+	prerequisite = {
+		focus = PAL_roaring_wildly
+	}
+	prerequisite = {
+		focus = PAL_summon_wind_and_electricity
+	}
+	cost = 3
+	x = 0
+	y = 2
+	ai_will_do = {
+		base = 25
+	}
+	available = {
+	}
+	completion_reward = {
+		add_ideas = PLA_china_space_hegemony
+	}
+}
+
+shared_focus = {
+	#三子归边，同时融合了原版的火箭军
+	#不对，火箭军写成修正可太合适了吧...算了，就民族精神吧
+	id = PLA_orbital_drop_new
+	icon = GFX_focus_PLA_orbital_drop
+	cost = 3
+	prerequisite = {
+		focus = PLA_establish_joint_operations_command
+	}
+	prerequisite = {
+		focus = PLA_equipment_research_new
+	}
+	relative_position_id = PLA_when_that_day_comes
+	x = 10
+	y = 2
+	completion_reward = {
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = PRC_new_left_pla_space_force_GUI_open
+				}
+			}
+			set_country_flag = PRC_new_left_pla_space_force_GUI_open
+			custom_effect_tooltip = PRC_new_left_pla_space_force_GUI_open_tt
+		}
+		set_temp_variable = {
+			debt_var_temp = 100
+		}
+		add_debt = yes
+		add_to_variable = {
+			rocket_army_ability_upper_limit = 1
+		}
+		add_to_variable = {
+			rocket_army_ability = 1
+		}
+		custom_effect_tooltip = PLA_rocket_force_tt
+		#描述后面再改吧...
+	}
+}
+
+#以下皆移植于原有
+shared_focus = {
+	id = PLA_improved_soldiers_new
+	icon = GFX_focus_PRC_next_generation_army
+	cost = 3
+	prerequisite = {
+		focus = PAL_block_flood_of_enemy_information
+	}
+	prerequisite = {
+		focus = PAL_fourth_of_war
+	}
+	relative_position_id = PLA_reform_of_military_and_political_work
+	x = -2
+	y = 2
+	completion_reward = {
+		#先前后续的两个国策中，如果要围绕修正而添加效果，则就不应该将添加修正和添加效果的国策并列，导致其他情况出现。或许为特殊设计？总之，我就先在这里添加修正了，后期要改动再处理。
+		unlock_decision_tooltip = PRC_intensify_marine_training
+		unlock_decision_tooltip = PRC_thunder_god_program_mountain
+		unlock_decision_tooltip = PRC_thunder_god_program_jungle
+		unlock_decision_tooltip = PRC_conduct_army_exercises
+	}
+}
+
+#左线-总参谋部
+shared_focus = {
+	id = PLA_commanders_reinforce_new
+	icon = GFX_focus_PRC_expand_border_training
+	cost = 3
+	prerequisite = {
+		focus = PLA_improved_soldiers_new
+	}
+	relative_position_id = PLA_improved_soldiers_new
+	x = -3
+	y = 1
+	completion_reward = {
+		if = {
+			limit = {
+				has_dynamic_modifier = {
+					modifier = PLA_general_staff_dynamic
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PLA_dummy_general_staff
+					add_idea = PLA_general_staff_1
+				}
+			}
+		}
+		else = {
+			effect_tooltip = {
+				add_ideas = PLA_general_staff_1
+			}
+		}
+		hidden_effect = {
+			#add_dynamic_modifier = {
+			#	modifier = PLA_general_staff_dynamic
+			#}
+			add_to_variable = {
+				var = PLA_new_left_planning_speed_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PLA_new_left_max_planning_factor_dynamic_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = PLA_new_left_minimum_training_level_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = PLA_new_left_battalion_upkeep_factor_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = PLA_new_left_ship_upkeep_factor_dynamic_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = PLA_new_left_aircraft_upkeep_factor_dynamic_var
+				value = 0.15
+			}
+			add_to_variable = {
+				var = PLA_new_left_military_development_monthly_dynamic_var
+				value = 0.005
+			}
+		}
+		unlock_decision_tooltip = PLA_synthesis
+	}
+}
+
+shared_focus = {
+	id = PLA_political_education_new
+	icon = GFX_focus_GER_turn_ploughshares_into_swords
+	cost = 3
+	prerequisite = {
+		focus = PLA_improved_soldiers_new
+	}
+	x = 1
+	y = 1
+	relative_position_id = PLA_improved_soldiers_new
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_dummy_general_staff
+				add_idea = PLA_general_staff_2
+			}
+		}
+		custom_effect_tooltip = PLA_general_staff_dynamic_tt
+		hidden_effect = {
+			add_dynamic_modifier = {
+				modifier = PLA_general_staff_dynamic
+			}
+			add_to_variable = {
+				var = PLA_new_left_party_popularity_stability_factor_dynamic_var
+				value = 0.2
+			}
+			add_to_variable = {
+				var = PLA_new_left_army_org_regain_dynamic_var
+				value = 0.1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PLA_talents_education_new
+	icon = GFX_focus_PRC_improve_officer_training
+	cost = 3
+	prerequisite = {
+		focus = PLA_spread_knowledge_new
+	}
+	prerequisite = {
+		focus = PLA_commanders_reinforce_new
+	}
+	prerequisite = {
+		focus = PLA_political_education_new
+	}
+	x = -1
+	y = 1
+	relative_position_id = PLA_political_education_new
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_dummy_general_staff
+				add_idea = PLA_general_staff_6
+			}
+		}
+		add_to_variable = {
+			var = PLA_new_left_military_development_monthly_dynamic_var
+			value = 0.005
+		}
+		add_to_variable = {
+			var = PLA_new_left_research_speed_factor_dynamic_var
+			value = 0.05
+		}
+		add_research_slot = 1
+		unlock_decision_tooltip = PLA_academy_adjustment
+		unlock_decision_tooltip = PLA_command_technical
+	}
+}
+
+shared_focus = {
+	id = PLA_spread_knowledge_new
+	icon = GFX_focus_SOV_promote_civil_rights
+	cost = 3
+	prerequisite = {
+		focus = PLA_improved_soldiers_new
+	}
+	x = -1
+	y = 1
+	relative_position_id = PLA_improved_soldiers_new
+	completion_reward = {
+		if = {
+			limit = {
+				has_dynamic_modifier = {
+					modifier = PLA_general_staff_dynamic
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PLA_dummy_general_staff
+					add_idea = PLA_general_staff_4
+				}
+			}
+		}
+		else = {
+			effect_tooltip = {
+				add_ideas = PLA_general_staff_4
+			}
+		}
+		unlock_decision_tooltip = PLA_peoples_warfare
+		hidden_effect = {
+			add_to_variable = {
+				var = PLA_new_left_military_development_monthly_dynamic_var
+				value = 0.005
+			}
+			add_to_variable = {
+				var = PLA_new_left_academic_development_monthly_dynamic_var
+				value = 0.005
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PLA_military_training_new
+	icon = GFX_focus_PRC_call_up_the_reserves
+	cost = 3
+	prerequisite = {
+		focus = PLA_spread_knowledge_new
+	}
+	prerequisite = {
+		focus = PLA_commanders_reinforce_new
+	}
+	prerequisite = {
+		focus = PLA_political_education_new
+	}
+	x = -1
+	y = 1
+	relative_position_id = PLA_spread_knowledge_new
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_dummy_general_staff
+				add_idea = PLA_general_staff_3
+			}
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = PLA_new_left_conscription_factor_dynamic_var
+				value = 0.05
+			}
+			add_to_variable = {
+				var = PLA_new_left_training_time_factor_dynamic_var
+				value = -0.2
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PLA_militia_new
+	icon = GFX_focus_PRC_revive_peoples_war_mindset
+	cost = 3
+	prerequisite = {
+		focus = PLA_spread_knowledge_new
+	}
+	prerequisite = {
+		focus = PLA_commanders_reinforce_new
+	}
+	prerequisite = {
+		focus = PLA_political_education_new
+	}
+	x = -1
+	y = 1
+	relative_position_id = PLA_commanders_reinforce_new
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_dummy_general_staff
+				add_idea = PLA_general_staff_5
+			}
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = PLA_new_left_conscription_factor_dynamic_var
+				value = 0.05
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PLA_peoples_army_new
+	icon = GFX_focus_PLA_peoples_army
+	cost = 3
+	prerequisite = {
+		focus = PLA_talents_education_new
+	}
+	prerequisite = {
+		focus = PLA_militia_new
+	}
+	prerequisite = {
+		focus = PLA_military_training_new
+	}
+	x = 3
+	y = 1
+	relative_position_id = PLA_militia_new
+	#relative_position_id = PLA_talents_education
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_dummy_general_staff
+				add_idea = PLA_general_staff_10
+			}
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = PLA_new_left_war_support_factor_dynamic_var
+				value = 0.2
+			}
+			add_to_variable = {
+				var = PLA_new_left_production_speed_arms_factory_factor_dynamic_var
+				value = 0.1
+			}
+			add_to_variable = {
+				var = PLA_new_left_battalion_upkeep_factor_var
+				value = -0.25
+			}
+			add_to_variable = {
+				var = PLA_new_left_ship_upkeep_factor_dynamic_var
+				value = -0.25
+			}
+			add_to_variable = {
+				var = PLA_new_left_aircraft_upkeep_factor_dynamic_var
+				value = -0.25
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PLA_start_again_new
+	icon = GFX_focus_PLA_start_again
+	cost = 3
+	prerequisite = {
+		focus = PLA_peoples_army_new
+	}
+	x = 1
+	y = 1
+	relative_position_id = PLA_peoples_army_new
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = PLA_dummy_general_staff
+				add_idea = PLA_general_staff_11
+			}
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = PLA_new_left_command_power_gain_dynamic_var
+				value = 1
+			}
+			add_to_variable = {
+				var = PLA_new_left_max_command_power_factor_dynamic_var
+				value = 100
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PLA_space_force_new
+	icon = GFX_focus_PLA_space_force
+	cost = 3
+	prerequisite = {
+		focus = PLA_orbital_drop_new
+	}
+	relative_position_id = PLA_orbital_drop_new
+	x = 1
+	y = 1
+	completion_reward = {
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = PRC_new_left_pla_space_force_GUI_open
+				}
+			}
+			set_country_flag = PRC_new_left_pla_space_force_GUI_open
+			custom_effect_tooltip = PRC_new_left_pla_space_force_GUI_open_tt
+		}
+		set_temp_variable = {
+			debt_var_temp = 500
+		}
+		add_debt = yes
+		add_ideas = PLA_plasf_1
+	}
+}
+
+shared_focus = {
+	id = PLA_near_earth_orbit_new
+	icon = GFX_focus_PRC_fund_space_development
+	cost = 3
+	prerequisite = {
+		focus = PLA_space_force_new
+	}
+	relative_position_id = PLA_space_force_new
+	x = 0
+	y = 1
+	completion_reward = {
+		set_temp_variable = {
+			debt_var_temp = 750
+		}
+		add_debt = yes
+		swap_ideas = {
+			remove_idea = PLA_plasf_1
+			add_idea = PLA_plasf_2
+		}
+		hidden_effect = {
+			country_event = {
+				id = prcs.58
+				days = 10
+				random_days = 10
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PLA_electronic_warfare_new
+	icon = GFX_focus_GER_EW_Warfare_Study
+	cost = 3
+	prerequisite = {
+		focus = PLA_near_earth_orbit_new
+	}
+	prerequisite = {
+		focus = PLA_cooperate_others_new
+	}
+	relative_position_id = PLA_near_earth_orbit_new
+	x = -1
+	y = 1
+	completion_reward = {
+		set_temp_variable = {
+			debt_var_temp = 100
+		}
+		add_debt = yes
+		swap_ideas = {
+			remove_idea = PLA_plasf_2
+			add_idea = PLA_plasf_3
+		}
+		set_country_flag = PLA_electronic_warfare_cf
+		custom_effect_tooltip = PLA_electronic_warfare_tt
+	}
+}
+
+shared_focus = {
+	id = PLA_further_rocket_new
+	icon = GFX_focus_PRC_modernize_the_missile_corps
+	cost = 3
+	prerequisite = {
+		focus = PLA_orbital_drop_new
+	}
+	relative_position_id = PLA_orbital_drop_new
+	x = -1
+	y = 1
+	completion_reward = {
+		set_temp_variable = {
+			debt_var_temp = 100
+		}
+		add_debt = yes
+		set_country_flag = PLA_further_rocket_cf
+		custom_effect_tooltip = PLA_further_rocket_tt
+	}
+}
+
+shared_focus = {
+	id = PLA_cooperate_others_new
+	icon = GFX_focus_PRC_air_navy_coordination
+	cost = 3
+	prerequisite = {
+		focus = PLA_further_rocket_new
+	}
+	relative_position_id = PLA_further_rocket_new
+	x = 0
+	y = 1
+	completion_reward = {
+		set_temp_variable = {
+			debt_var_temp = 500
+		}
+		add_debt = yes
+		add_ideas = PLA_plarf
+	}
+}
+
+shared_focus = {
+	id = PLA_equipment_research_new
+	icon = GFX_focus_PRC_military_industries_renewal_campaign
+	cost = 3
+	prerequisite = {
+		focus = PLA_when_that_day_comes
+	}
+	x = 8
+	y = 1
+	relative_position_id = PLA_when_that_day_comes
+	completion_reward = {
+		#add_dynamic_modifier = {
+		#modifier = PRC_pla_dynamic
+		#}
+		unlock_decision_tooltip = PRC_project_ghost_dec
+		unlock_decision_tooltip = PRC_project_nib_dec
+		unlock_decision_tooltip = PRC_project_dark_sword_dec
+		unlock_decision_tooltip = PRC_project_impulse_dec
+		unlock_decision_tooltip = PRC_project_swimmer_dec
+		unlock_decision_tooltip = PRC_project_flash_dec
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 50
+		}
+		add_debt = yes
+		add_tech_bonus = {
+			name = PLA_equipment_research
+			bonus = 1
+			uses = 5
+			category = infantry_weapons
+			category = armor
+			category = artillery
+			category = air_equipment
+			category = naval_equipment
+		}
+	}
+}
+
+shared_focus = {
+	id = PLA_peoples_sky_new
+	icon = GFX_focus_PRC_streamline_aircraft_production
+	cost = 3
+	prerequisite = {
+		focus = PAL_summon_wind_and_electricity
+	}
+	relative_position_id = PAL_summon_wind_and_electricity
+	x = 2
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = PLA_plaaf_summon_wind
+			add_idea = PLA_plaaf_people_sky
+		}
+	}
+}
+
+#原有之息壤
+shared_focus = {
+	id = PLA_floating_island_fortress_new
+	icon = GFX_focus_PRC_build_up_fortifications
+	cost = 3
+	prerequisite = {
+		focus = PAL_bulky_giant_ship_pointing_straight_east
+	}
+	prerequisite = {
+		focus = PAL_rolling_back_enemy_as_wound_mat
+	}
+	relative_position_id = PAL_bulky_giant_ship_pointing_straight_east
+	x = 2
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = PLA_plan_straight_east
+			add_idea = PLA_plan_floating_island_fortress
+		}
+	}
+}
+
+shared_focus = {
+	id = PLA_global_projection_new
+	icon = GFX_focus_PRC_supremacy_above_and_below_waters
+	cost = 3
+	prerequisite = {
+		focus = PLA_floating_island_fortress_new
+	}
+	relative_position_id = PLA_floating_island_fortress_new
+	x = -2
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = PLA_plan_floating_island_fortress
+			add_idea = PLA_plan_global_projection
+		}
+	}
+}
+
+shared_focus = {
+	id = PLA_equipment_perfect_new
+	icon = GFX_focus_PRC_youth_military_brigades
+	cost = 3
+	prerequisite = {
+		focus = PLA_floating_island_fortress_new
+	}
+	prerequisite = {
+		focus = PAL_roaring_wildly
+	}
+	relative_position_id = PAL_roaring_wildly
+	x = -2
+	y = 1
+	completion_reward = {
+		add_ideas = PLA_equipment_perfect_idea_1
+	}
+}
+
+shared_focus = {
+	id = PLA_first_army_new
+	icon = GFX_focus_PRC_chinas_spot_in_the_sun
+	cost = 3
+	prerequisite = {
+		focus = PLA_equipment_perfect_new
+	}
+	prerequisite = {
+		focus = PLA_the_IC_will_be_immortalized_forever
+	}
+	prerequisite = {
+		focus = PLA_global_projection_new
+	}
+	prerequisite = {
+		focus = PAL_moon_in_nine_days
+	}
+	prerequisite = {
+		focus = PLA_peoples_sky_new
+	}
+	prerequisite = {
+		focus = PLA_start_again_new
+	}
+	relative_position_id = PLA_when_that_day_comes
+	#relative_position_id = PLA_equipment_perfect_new
+	x = 0
+	y = 8
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = PLA_equipment_perfect_idea_1
+			add_idea = PLA_equipment_perfect_idea_2
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_unfinished_revolution
+	icon = GFX_focus_PRC_gemingdao
+	x = 70
+	y = 1
+	cost = 3
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 100
+	}
+	available = {
+		has_country_flag = PRC_for_policy_tree_available
+	}
+	allow_branch = {
+		has_country_flag = PRC_for_policy_tree_available
+	}
+	completion_reward = {
+		create_faction = WLI
+		add_ideas = {
+			PRC_WLI_idea
+		}
+		hidden_effect = {
+			news_event = {
+				id = prcs.6
+			}
+			add_dynamic_modifier = {
+				modifier = PRC_WLI_modifiers
+			}
+			set_variable = {
+				PRC_WLI_consumer_factor = 0
+			}
+			set_variable = {
+				PRC_WLI_industrial_factor = 0
+			}
+			set_variable = {
+				PRC_WLI_members_num = 0
+			}
+			set_variable = {
+				PRC_WLI_members_eco_cost = 0
+			}
+			set_variable = {
+				PRC_WLI_members_pp_cost = 0
+			}
+			remove_ideas = {
+				PRC_WLI_idea
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = Rekindle_the_world_revolution
+	icon = GFX_focus_PRC_new_left_qianjin
+	relative_position_id = Establishment_the_channel
+	x = -2
+	y = 0
+	cost = 3
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = PRC_unfinished_revolution
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		country_event = {
+			id = china.1709
+		}
+		hidden_effect = {
+			country_event = {
+				id = Chihong.17
+				days = 80
+				random_days = 50
+			}
+		}
+		custom_effect_tooltip = PRC_revolutionary_tt
+		set_country_flag = PRC_world_revolution
+		add_ideas = PRC_birthplace_of_the_revolution_idea
+	}
+}
+
+shared_focus = {
+	id = Establishment_the_channel
+	icon = GFX_focus_PRC_new_left_pepleo
+	relative_position_id = PRC_unfinished_revolution
+	x = 1
+	y = 1
+	cost = 3
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = PRC_unfinished_revolution
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		add_ideas = PRC_Voice_of_the_People_idea
+		hidden_effect = {
+			country_event = {
+				id = Chihong.16
+				days = 4
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = Sparks_on_the_MekongRiver
+	icon = GFX_focus_PRC_new_left_meigonghe
+	relative_position_id = Rekindle_the_world_revolution
+	x = -5
+	y = 1
+	cost = 3
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Rekindle_the_world_revolution
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_end_the_junta
+		unlock_decision_tooltip = PRC_thailand_communist
+		hidden_effect = {
+			country_event = {
+				id = Chihong.18
+				days = 40
+				random_days = 20
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = Adjust_path_in_Indochina
+	icon = GFX_focus_PRC_new_left_zhongnanbandao
+	relative_position_id = Sparks_on_the_MekongRiver
+	x = -1
+	y = 2
+	cost = 2
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = The_Spring_of_West_Asia
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_laos_seize_power
+		unlock_decision_tooltip = PRC_khmer_rouge
+		unlock_decision_tooltip = PRC_retrace_HoChiMinh
+	}
+}
+
+shared_focus = {
+	id = Ignite_the_Malay_Archipelago
+	icon = GFX_focus_PRC_new_left_zhongnan
+	relative_position_id = Adjust_path_in_Indochina
+	x = 0
+	y = 1
+	cost = 2
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Adjust_path_in_Indochina
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		add_ideas = PRC_SEA_volunteer_limit
+		unlock_decision_tooltip = PRC_PHIred_rebellion
+		unlock_decision_tooltip = PRC_fire_Kuala_Lumpur
+		unlock_decision_tooltip = PRC_equator_awaken
+		unlock_decision_tooltip = PRC_red_lion_city
+	}
+}
+
+shared_focus = {
+	id = The_Spring_of_West_Asia
+	icon = GFX_focus_PRC_new_left_xiya
+	relative_position_id = Sparks_on_the_MekongRiver
+	x = 0
+	y = 1
+	cost = 2
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Sparks_on_the_MekongRiver
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_spring_thunder
+		unlock_decision_tooltip = PRC_break_the_chains
+		hidden_effect = {
+			set_variable = {
+				Attempted_terrorist_plot_factor = 0
+			}
+			set_variable = {
+				Attempted_terrorist_plot_pp_factor = 0
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = Moisturizing_things_silently
+	icon = GFX_focus_PRC_new_left_3
+	relative_position_id = The_Spring_of_West_Asia
+	x = 1
+	y = 1
+	cost = 2
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = The_Spring_of_West_Asia
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_new_arab
+		unlock_decision_tooltip = PRC_new_west_asia
+	}
+}
+
+shared_focus = {
+	id = Bury_neo_Nazis
+	icon = GFX_focus_PRC_new_left_2
+	relative_position_id = Moisturizing_things_silently
+	x = 0
+	y = 1
+	cost = 2
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Moisturizing_things_silently
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+		ISR = {
+			has_war = yes
+		}
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_free_Palestine
+	}
+}
+
+shared_focus = {
+	id = Shoot_the_sun
+	icon = GFX_focus_PRC_new_left_caoxian
+	mutually_exclusive = {
+		focus = Promote_the_thawing_of_DPRK
+	}
+	relative_position_id = Rekindle_the_world_revolution
+	x = -3
+	y = 1
+	cost = 3
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Rekindle_the_world_revolution
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_radiated_sun
+	}
+}
+
+shared_focus = {
+	id = Promote_the_thawing_of_DPRK
+	icon = GFX_focus_PRC_new_left_caoxian_jiedng
+	mutually_exclusive = {
+		focus = Shoot_the_sun
+	}
+	relative_position_id = Rekindle_the_world_revolution
+	x = -1
+	y = 1
+	cost = 3
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Rekindle_the_world_revolution
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_unfreeze_DPRK
+		country_event = {
+			id = china.1715
+		}
+	}
+}
+
+shared_focus = {
+	id = Assist_in_the_modernization_of_DPRK
+	icon = GFX_focus_PRC_new_left_caoxian_xiandai
+	relative_position_id = Shoot_the_sun
+	x = 1
+	y = 1
+	cost = 2
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Shoot_the_sun
+		focus = Promote_the_thawing_of_DPRK
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+		OR = {
+			AND = {
+				has_completed_focus = Shoot_the_sun
+				PRK = {
+					NOT = {
+						has_country_leader = {
+							character = PRK_kim_jongun
+							ruling_only = yes
+						}
+					}
+				}
+			}
+			AND = {
+				has_completed_focus = Promote_the_thawing_of_DPRK
+				PRK = {
+					NOT = {
+						has_idea = PRK_Total_Control_idea
+					}
+				}
+			}
+		}
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_DPRK_mechanized
+	}
+}
+
+shared_focus = {
+	id = Death_of_the_Han_River
+	icon = GFX_focus_PRC_new_left_hanjiang
+	relative_position_id = Assist_in_the_modernization_of_DPRK
+	x = 0
+	y = 2
+	cost = 2
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Assist_in_the_modernization_of_DPRK
+	}
+	prerequisite = {
+		focus = Brothers_of_South_Asia
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_red_ROK
+	}
+}
+
+shared_focus = {
+	id = Responding_to_the_people_of_the_subcontinent
+	icon = GFX_focus_PRC_new_left_6
+	relative_position_id = Rekindle_the_world_revolution
+	x = 2
+	y = 1
+	cost = 3
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Rekindle_the_world_revolution
+	}
+	prerequisite = {
+		focus = Establishment_the_channel
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_red_bhutan
+		unlock_decision_tooltip = PRC_red_nepal
+		unlock_decision_tooltip = PRC_invite_SriLanka
+	}
+}
+
+shared_focus = {
+	id = Brothers_of_South_Asia
+	icon = GFX_focus_PRC_new_left_nanyaxd
+	relative_position_id = Responding_to_the_people_of_the_subcontinent
+	x = -3
+	y = 2
+	cost = 2
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Red_Dongying_Project
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_unite_PAK
+		unlock_decision_tooltip = PRC_bangladesh_revolution
+		unlock_decision_tooltip = PRC_PAK_industry
+		unlock_decision_tooltip = PRC_invest_pakistan_military
+		unlock_decision_tooltip = PRC_invest_pakistan_industry
+		unlock_decision_tooltip = PRC_train_pakistan_army
+	}
+}
+
+shared_focus = {
+	id = Comrade_in_India
+	icon = GFX_focus_PRC_new_left_india
+	relative_position_id = Brothers_of_South_Asia
+	x = 1
+	y = 1
+	cost = 2
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Brothers_of_South_Asia
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_reunite_india
+		unlock_decision_tooltip = PRC_india_maoism
+		set_variable = {
+			PRC_india_maoism_count = 3
+		}
+		country_event = {
+			id = china.1717
+		}
+	}
+}
+
+shared_focus = {
+	id = Red_Dongying_Project
+	icon = GFX_focus_PRC_new_left_red_jap
+	relative_position_id = Rekindle_the_world_revolution
+	x = 2
+	y = 2
+	cost = 2
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Responding_to_the_people_of_the_subcontinent
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		set_country_flag = PRC_red_JAP_project
+		unlock_decision_tooltip = PRC_JAP_intel
+	}
+}
+
+shared_focus = {
+	id = Contact_the_Jap_left
+	icon = GFX_focus_PRC_new_left_lianluo
+	relative_position_id = Red_Dongying_Project
+	x = 1
+	y = 1
+	cost = 2
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Red_Dongying_Project
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_JAP_secret_united
+	}
+}
+
+shared_focus = {
+	id = Formation_of_JAP_Red_Army
+	icon = GFX_focus_PRC_new_left_robenhpngjun
+	relative_position_id = Contact_the_Jap_left
+	x = 0
+	y = 1
+	cost = 2
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Lenins_promises
+		focus = Beware_of_giant_bears
+	}
+	prerequisite = {
+		focus = Contact_the_Jap_left
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_JAP_red_army
+	}
+}
+
+shared_focus = {
+	id = Begonia_old_dreams
+	icon = GFX_focus_PRC_new_left_qiuhaitang
+	relative_position_id = Rekindle_the_world_revolution
+	x = 6
+	y = 1
+	cost = 3
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Establishment_the_channel
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		add_war_support = 0.05
+		custom_effect_tooltip = Begonia_old_dreams_tt
+		set_country_flag = sov_diplomacy
+	}
+}
+
+shared_focus = {
+	id = Referendum_in_Mongolia
+	icon = GFX_focus_PRC_new_left_4
+	relative_position_id = Begonia_old_dreams
+	x = -1
+	y = 1
+	cost = 2
+	available_if_capitulated = yes
+	mutually_exclusive = {
+		focus = Liberation_of_Mongolia
+	}
+	prerequisite = {
+		focus = Begonia_old_dreams
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		set_country_flag = PRC_mongolia_hetong_flag_1
+		set_country_flag = PRC_mongolia_hetong_flag
+		unlock_decision_category_tooltip = PRC_mongolia_hetong
+	}
+}
+
+shared_focus = {
+	id = Liberation_of_Mongolia
+	icon = GFX_focus_PRC_new_left_jiefangmon
+	relative_position_id = Begonia_old_dreams
+	x = 1
+	y = 1
+	cost = 2
+	available_if_capitulated = yes
+	mutually_exclusive = {
+		focus = Referendum_in_Mongolia
+	}
+	prerequisite = {
+		focus = Begonia_old_dreams
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_mongolia_war
+		SOV = {
+			country_event = {
+				id = china.1719
+				hours = 12
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = Lenins_promises
+	icon = GFX_focus_PRC_new_left_1
+	relative_position_id = Referendum_in_Mongolia
+	x = 0
+	y = 1
+	cost = 2
+	available_if_capitulated = yes
+	mutually_exclusive = {
+		focus = Beware_of_giant_bears
+	}
+	prerequisite = {
+		focus = Referendum_in_Mongolia
+		focus = Liberation_of_Mongolia
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+		SOV = {
+			OR = {
+				has_government = communist
+				has_government = libertarian_socialist
+				has_government = totalitarian_socialist
+				has_government = authoritarian_democrat
+				has_government = social_liberal
+				has_government = social_democrat
+				has_country_leader = {
+					character = SOV_gennady_zyuganov
+					ruling_only = yes
+				}
+			}
+		}
+	}
+	completion_reward = {
+		unlock_decision_tooltip = PRC_USSR_diplomacy
+		SOV = {
+			country_event = {
+				id = china.1718
+				days = 4
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = Beware_of_giant_bears
+	icon = GFX_focus_PRC_new_left_5
+	relative_position_id = Liberation_of_Mongolia
+	x = 0
+	y = 1
+	cost = 2
+	available_if_capitulated = yes
+	mutually_exclusive = {
+		focus = Lenins_promises
+	}
+	prerequisite = {
+		focus = Referendum_in_Mongolia
+		focus = Liberation_of_Mongolia
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+		SOV = {
+			OR = {
+				OR = {
+					has_government = authoritarian_democrat
+					has_government = social_democrat
+					has_government = libertarian_socialist
+					has_country_leader = {
+						character = SOV_dmitry_medvedev
+						ruling_only = yes
+					}
+				}
+				OR = {
+					has_government = fascist
+					has_country_leader = {
+						character = SOV_vladimir_zhirinovsky
+						ruling_only = yes
+					}
+				}
+			}
+		}
+	}
+	completion_reward = {
+		effect_tooltip = {
+			country_event = china.1719
+		}
+		unlock_decision_tooltip = PRC_defense_north
+		unlock_decision_tooltip = PRC_defense_wn
+		unlock_decision_tooltip = PRC_defense_en
+	}
+}
+
+shared_focus = {
+	id = Moving_towards_victory	#宣战太约
+	icon = GFX_focus_PRC_new_left_chaozheshengli
+	relative_position_id = Comrade_in_India
+	x = -1
+	y = 2
+	cost = 7
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Coordination_of_the_World_Liberation_Army
+	}
+	prerequisite = {
+		focus = Comrade_in_India
+	}
+	prerequisite = {
+		focus = Formation_of_JAP_Red_Army
+	}
+	prerequisite = {
+		focus = Death_of_the_Han_River
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+		if = {
+			limit = {
+				has_country_flag = PRC_new_left_win
+			}
+			has_completed_focus = PRC_nl_unite_efforts_with_unity
+		}
+	}
+	select_effect = {
+		PRK = {
+			add_ai_strategy = {
+				type = prepare_for_war
+				id = KOR
+				value = 1000
+			}
+			add_ai_strategy = {
+				type = consider_weak
+				id = KOR
+				value = 1000
+			}
+			add_ai_strategy = {
+				type = conquer
+				id = KOR
+				value = 1000
+			}
+		}
+	}
+	completion_reward = {
+		hidden_effect = {
+			country_event = china.1722
+		}
+		PRK = {
+			country_event = nk.14
+		}
+		effect_tooltip = {
+			PRK = {
+				add_war_support = 0.15
+				add_timed_idea = {
+					idea = PRK_surprise_offensive
+					days = 50
+				}
+			}
+		}
+		custom_effect_tooltip = PRC_this_will_lead_to_the_gaw
+		hidden_effect = {
+			set_global_flag = GAW_soon
+		}
+	}
+}
+
+shared_focus = {
+	id = Coordination_of_the_World_Liberation_Army	#协调军队
+	icon = GFX_focus_PRC_new_left_xietiaoshijie
+	relative_position_id = Ignite_the_Malay_Archipelago
+	x = 1
+	y = 1
+	cost = 2
+	available_if_capitulated = yes
+	prerequisite = {
+		focus = Ignite_the_Malay_Archipelago
+		focus = Bury_neo_Nazis
+	}
+	ai_will_do = {
+		factor = 50
+	}
+	available = {
+	}
+	completion_reward = {
+		set_country_flag = form_the_WLA
+		unlock_decision_tooltip = Establish_a_unified_command_system
+		unlock_decision_tooltip = Military_Exercises
+	}
+}
