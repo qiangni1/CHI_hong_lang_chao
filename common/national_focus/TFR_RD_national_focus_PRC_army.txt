@@ -1325,27 +1325,11 @@ shared_focus = {
 	x = 10
 	y = 2
 	completion_reward = {
-		if = {
-			limit = {
-				NOT = {
-					has_country_flag = PRC_new_left_pla_space_force_GUI_open
-				}
-			}
-			set_country_flag = PRC_new_left_pla_space_force_GUI_open
-			custom_effect_tooltip = PRC_new_left_pla_space_force_GUI_open_tt
-		}
+		#移除太空火箭军部署系统，债务作为占位。
 		set_temp_variable = {
 			debt_var_temp = 100
 		}
 		add_debt = yes
-		add_to_variable = {
-			rocket_army_ability_upper_limit = 1
-		}
-		add_to_variable = {
-			rocket_army_ability = 1
-		}
-		custom_effect_tooltip = PLA_rocket_force_tt
-		#描述后面再改吧...
 	}
 }
 
@@ -1711,15 +1695,7 @@ shared_focus = {
 	x = 1
 	y = 1
 	completion_reward = {
-		if = {
-			limit = {
-				NOT = {
-					has_country_flag = PRC_new_left_pla_space_force_GUI_open
-				}
-			}
-			set_country_flag = PRC_new_left_pla_space_force_GUI_open
-			custom_effect_tooltip = PRC_new_left_pla_space_force_GUI_open_tt
-		}
+		#移除太空火箭军部署系统
 		set_temp_variable = {
 			debt_var_temp = 500
 		}
@@ -1779,8 +1755,6 @@ shared_focus = {
 			remove_idea = PLA_plasf_2
 			add_idea = PLA_plasf_3
 		}
-		set_country_flag = PLA_electronic_warfare_cf
-		custom_effect_tooltip = PLA_electronic_warfare_tt
 	}
 }
 
