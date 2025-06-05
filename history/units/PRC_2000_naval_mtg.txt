@@ -7,19 +7,20 @@
 		task_force = {
 			name = "北海舰队"
 			location = 10000 #Yulin
-			ship = { name = "035型常规动力潜艇358号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "035型常规动力潜艇" } } }
-			ship = { name = "035型常规动力潜艇359号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "035型常规动力潜艇" } } }
-			ship = { name = "035型常规动力潜艇360号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "035型常规动力潜艇" } } }
-			ship = { name = "035型常规动力潜艇361号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "035型常规动力潜艇" } } }
-			ship = { name = "035型常规动力潜艇362号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "035型常规动力潜艇" } } }
-			ship = { name = "035型常规动力潜艇363号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "035型常规动力潜艇" } } }
-			ship = { name = "039型常规动力潜艇316号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "039型常规动力潜艇" } } }
-			ship = { name = "091型攻击核潜艇“长征3号”" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = PRC version_name = "091型攻击核潜艇" } } }
-			ship = { name = "091型攻击核潜艇“长征4号”" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = PRC version_name = "091型攻击核潜艇" } } }
-			ship = { name = "091型攻击核潜艇“长征5号”" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = PRC version_name = "091型攻击核潜艇" } } }
+			ship = { name = "035型常规动力潜艇358号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "035型常规动力潜艇" } } }
+			ship = { name = "035型常规动力潜艇359号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "035型常规动力潜艇" } } }
+			ship = { name = "035型常规动力潜艇360号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "035型常规动力潜艇" } } }
+			ship = { name = "035型常规动力潜艇361号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "035型常规动力潜艇" } } }
+			ship = { name = "035型常规动力潜艇362号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "035型常规动力潜艇" } } }
+			ship = { name = "035型常规动力潜艇363号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "035型常规动力潜艇" } } }
+			ship = { name = "039型常规动力潜艇316号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "039型常规动力潜艇" } } }
+			ship = { name = "091型攻击核潜艇“长征3号”" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_2 = { amount = 1 owner = PRC version_name = "091型攻击核潜艇" } } }
+			ship = { name = "091型攻击核潜艇“长征4号”" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_2 = { amount = 1 owner = PRC version_name = "091型攻击核潜艇" } } }
+			ship = { name = "091型攻击核潜艇“长征5号”" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_2 = { amount = 1 owner = PRC version_name = "091型攻击核潜艇" } } }
 			ship = { 
 				name = 001型辽宁舰
 				definition = carrier   
+				start_experience_factor = 0.75
 				equipment = { 
 					ship_hull_carrier_conversion_bb = { 
 						amount = 1 
@@ -30,6 +31,7 @@
 			}
 			ship = {
 				name = "052D型成都舰"
+				start_experience_factor = 0.3
 				definition = heavy_cruiser
 				equipment = {
 					ship_hull_cruiser_2 = {
@@ -41,6 +43,7 @@
 			}
 			ship = {
 				name = "052D型齐齐哈尔舰"
+				start_experience_factor = 0.3
 				definition = heavy_cruiser
 				equipment = {
 					ship_hull_cruiser_2 = {
@@ -52,6 +55,7 @@
 			}
 			ship = { 
 				name = "052D型乌鲁木齐舰" 
+				start_experience_factor = 0.3
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -63,6 +67,7 @@
 			}
 			ship = { 
 				name = "52D型贵阳舰" 
+				start_experience_factor = 0.3
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -75,6 +80,7 @@
 
 			ship = {
 				name = "052C型长春舰"
+				start_experience_factor = 0.3
 				definition = heavy_cruiser
 				equipment = {
 					ship_hull_cruiser_2 = {
@@ -86,6 +92,7 @@
 			}
 			ship = {
 				name = "052C型济南舰"
+				start_experience_factor = 0.3
 				definition = heavy_cruiser
 				equipment = {
 					ship_hull_cruiser_2 = {
@@ -97,6 +104,7 @@
 			}
 			ship = { 
 				name = "054A型烟台舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -108,6 +116,7 @@
 			}
 			ship = { 
 				name = "054A型盐城舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -119,6 +128,7 @@
 			}
 			ship = { 
 				name = "054A型临沂舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -130,6 +140,7 @@
 			}
 			ship = { 
 				name = "054A型大庆舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -141,6 +152,7 @@
 			}
 			ship = { 
 				name = "054A型衡阳舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -152,6 +164,7 @@
 			}
 			ship = { 
 				name = "054A型潍坊舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -163,6 +176,7 @@
 			}
 			ship = { 
 				name = "054A型邯郸舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -174,6 +188,7 @@
 			}
 			ship = {
 				name = "054A型芜湖舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser
 				equipment = {
 					ship_hull_cruiser_2 = {
@@ -185,6 +200,7 @@
 			}
 			ship = {
 				name = "054A型枣庄舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser
 				equipment = {
 					ship_hull_cruiser_2 = {
@@ -196,6 +212,7 @@
 			}
 			ship = {
 				name = "052H3型宜昌舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser
 				equipment = {
 					ship_hull_cruiser_1 = {
@@ -207,6 +224,7 @@
 			}
 			ship = {
 				name = "053H3型葫芦岛舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser
 				equipment = {
 					ship_hull_cruiser_1 = {
@@ -218,6 +236,7 @@
 			}
 			ship = {
 				name = "056A型三门峡舰" 
+				start_experience_factor = 0.3
 				definition = destroyer
 				equipment = {
 					ship_hull_light_2 = {
@@ -229,6 +248,7 @@
 			}
 			ship = {
 				name = "056A型黄石舰" 
+				start_experience_factor = 0.3
 				definition = destroyer
 				equipment = {
 					ship_hull_light_2 = {
@@ -240,6 +260,7 @@
 			}
 			ship = {
 				name = "056A型秦皇岛舰" 
+				start_experience_factor = 0.3
 				definition = destroyer
 				equipment = {
 					ship_hull_light_2 = {
@@ -251,6 +272,7 @@
 			}
 			ship = {
 				name = "056A型乌海舰" 
+				start_experience_factor = 0.3
 				definition = destroyer
 				equipment = {
 					ship_hull_light_2 = {
@@ -262,6 +284,7 @@
 			}
 			ship = {
 				name = "056A型张掖舰" 
+				start_experience_factor = 0.3
 				definition = destroyer
 				equipment = {
 					ship_hull_light_2 = {
@@ -273,6 +296,7 @@
 			}
 			ship = { 
 				name = "056型大同舰" 
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -284,6 +308,7 @@
 			}
 			ship = { 
 				name = "056型营口舰" 
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -295,6 +320,7 @@
 			}
 			ship = { 
 				name = "056型威海舰" 
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -306,6 +332,7 @@
 			}
 			ship = { 
 				name = "056型抚顺舰" 
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -317,6 +344,7 @@
 			}
 			ship = { 
 				name = "056型信阳舰" 
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -336,6 +364,7 @@
 			location = 7014 #Shanghai
 			ship = { 
 				name = "052D型厦门舰" 
+				start_experience_factor = 0.3
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -347,6 +376,7 @@
 			}
 			ship = { 
 				name = "052D型南京舰" 
+				start_experience_factor = 0.3
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -358,6 +388,7 @@
 			}
 			ship = { 
 				name = "052D型淄博舰" 
+				start_experience_factor = 0.3
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -369,6 +400,7 @@
 			}
 			ship = { 
 				name = "052D型太原舰" 
+				start_experience_factor = 0.3
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -380,6 +412,7 @@
 			}
 			ship = { 
 				name = "052C型郑州舰" 
+				start_experience_factor = 0.3
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -391,6 +424,7 @@
 			}
 			ship = { 
 				name = "052C型西安舰" 
+				start_experience_factor = 0.3
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -402,6 +436,7 @@
 			}
 			ship = { 
 				name = "“现代级”956E型杭州舰" 
+				start_experience_factor = 0.3
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_1 = { 
@@ -413,6 +448,7 @@
 			}
 			ship = { 
 				name = "“现代级”956E型福州舰" 
+				start_experience_factor = 0.3
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_1 = { 
@@ -424,6 +460,7 @@
 			}
 			ship = { 
 				name = "“现代级”956E型台州舰" 
+				start_experience_factor = 0.3
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_1 = { 
@@ -435,6 +472,7 @@
 			}
 			ship = { 
 				name = "“现代级”956E型宁波舰" 
+				start_experience_factor = 0.3
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_1 = { 
@@ -446,6 +484,7 @@
 			}
 			ship = { 
 				name = "054A型舟山舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -457,6 +496,7 @@
 			}
 			ship = { 
 				name = "054A型徐州舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -468,6 +508,7 @@
 			}
 			ship = { 
 				name = "054A型宜阳舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -479,6 +520,7 @@
 			}
 			ship = { 
 				name = "054A型常州舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -490,6 +532,7 @@
 			}
 			ship = { 
 				name = "054A型黄冈舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -501,6 +544,7 @@
 			}
 			ship = { 
 				name = "054A型扬州舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -512,6 +556,7 @@
 			}
 			ship = { 
 				name = "054A型荆州舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -523,6 +568,7 @@
 			}
 			ship = { 
 				name = "054A型湘潭舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -534,6 +580,7 @@
 			}
 			ship = { 
 				name = "054A型滨州舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -545,6 +592,7 @@
 			}
 			ship = { 
 				name = "054A型日照舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -556,6 +604,7 @@
 			}
 			ship = { 
 				name = "054A型安阳舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -567,6 +616,7 @@
 			}
 			ship = { 
 				name = "054A型南通舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -578,6 +628,7 @@
 			}
 			ship = { 
 				name = "053H3型嘉兴舰" 
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_1 = { 
@@ -589,6 +640,7 @@
 			}
 			ship = {
 				name = "053H3型三明舰"
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = {
 					ship_hull_cruiser_1 = {
@@ -600,6 +652,7 @@
 			}
 			ship = {
 				name = "053H3型怀化舰"
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = {
 					ship_hull_cruiser_1 = {
@@ -611,6 +664,7 @@
 			}
 			ship = {
 				name = "053H3型襄阳舰"
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = {
 					ship_hull_cruiser_1 = {
@@ -622,6 +676,7 @@
 			}
 			ship = {
 				name = "053H1G型肇庆舰"
+				start_experience_factor = 0.3
 				definition = light_cruiser 
 				equipment = {
 					ship_hull_cruiser_1 = {
@@ -633,6 +688,7 @@
 			}
 			ship = {
 				name = "056A型株洲舰"
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 = {
@@ -644,6 +700,7 @@
 			}
 			ship = {
 				name = "056A型义乌舰"
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 = {
@@ -655,6 +712,7 @@
 			}
 			ship = {
 				name = "056A型宣城舰"
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 = {
@@ -666,6 +724,7 @@
 			}
 			ship = {
 				name = "056A型宜春舰"
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 = {
@@ -677,6 +736,7 @@
 			}
 			ship = {
 				name = "056A型德阳舰"
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 = {
@@ -688,6 +748,7 @@
 			}
 			ship = {
 				name = "056A型朔州舰"
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 = {
@@ -699,6 +760,7 @@
 			}
 			ship = {
 				name = "056A型聊城舰"
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 = {
@@ -710,6 +772,7 @@
 			}
 			ship = { 
 				name = "056型蚌埠舰" 
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -721,6 +784,7 @@
 			}
 			ship = { 
 				name = "056型上饶舰" 
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -732,6 +796,7 @@
 			}
 			ship = { 
 				name = "056型吉安舰" 
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -743,6 +808,7 @@
 			}
 			ship = { 
 				name = "056型泉州舰" 
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -754,6 +820,7 @@
 			}
 			ship = { 
 				name = "056A型门峡舰" 
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -765,6 +832,7 @@
 			}
 			ship = { 
 				name = "056型苏州舰" 
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -776,6 +844,7 @@
 			}
 			ship = { 
 				name = "056型保定舰" 
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -787,6 +856,7 @@
 			}
 			ship = { 
 				name = "056A型鄂州舰" 
+				start_experience_factor = 0.3
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -796,33 +866,34 @@
 					} 
 				} 
 			}
-				ship = { name = "636M型常规动力潜艇368号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "基洛级潜艇" } } }
-				ship = { name = "636M型常规动力潜艇369号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "基洛级潜艇" } } }
-				ship = { name = "636M型常规动力潜艇366号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "基洛级潜艇" } } }
-				ship = { name = "636M型常规动力潜艇367号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "基洛级潜艇" } } }
-				ship = { name = "039型常规动力潜艇324号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "039型常规动力潜艇" } } }
-				ship = { name = "039型常规动力潜艇325号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "039型常规动力潜艇" } } }
-				ship = { name = "039型常规动力潜艇314号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "039型常规动力潜艇" } } }
+				ship = { name = "636M型常规动力潜艇368号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "基洛级潜艇" } } }
+				ship = { name = "636M型常规动力潜艇369号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "基洛级潜艇" } } }
+				ship = { name = "636M型常规动力潜艇366号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "基洛级潜艇" } } }
+				ship = { name = "636M型常规动力潜艇367号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "基洛级潜艇" } } }
+				ship = { name = "039型常规动力潜艇324号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "039型常规动力潜艇" } } }
+				ship = { name = "039型常规动力潜艇325号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "039型常规动力潜艇" } } }
+				ship = { name = "039型常规动力潜艇314号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "039型常规动力潜艇" } } }
 		}
 	}
 	fleet = {
 		name = "南海舰队"
-		naval_base = 7135 #Zhanjiang
+		naval_base = 11981 #Zhanjiang
 		task_force = {
 			name = "南海舰队"
-			location = 7135 #Zhanjiang
-			ship = { name = "035型常规动力潜艇305号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
-			ship = { name = "035型常规动力潜艇306号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
-			ship = { name = "035型常规动力潜艇307号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
-			ship = { name = "035型常规动力潜艇308号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
-			ship = { name = "035型常规动力潜艇309号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
-			ship = { name = "035型常规动力潜艇310号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
-			ship = { name = "035型常规动力潜艇311号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
-			ship = { name = "035型常规动力潜艇312号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
-			ship = { name = "035型常规动力潜艇313号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
-			ship = { name = "039型常规动力潜艇326号" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 039 submarine" } } }
+			location = 11981 #Zhanjiang
+			ship = { name = "035型常规动力潜艇305号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
+			ship = { name = "035型常规动力潜艇306号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
+			ship = { name = "035型常规动力潜艇307号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
+			ship = { name = "035型常规动力潜艇308号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
+			ship = { name = "035型常规动力潜艇309号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
+			ship = { name = "035型常规动力潜艇310号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
+			ship = { name = "035型常规动力潜艇311号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
+			ship = { name = "035型常规动力潜艇312号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
+			ship = { name = "035型常规动力潜艇313号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 035 submarine" } } }
+			ship = { name = "039型常规动力潜艇326号" definition = submarine start_experience_factor = 0.75 equipment = { ship_hull_submarine_1 = { amount = 1 owner = PRC version_name = "Type 039 submarine" } } }
 			ship = { 
 				name = "002型山东舰" 
+				start_experience_factor = 0.75
 				definition = carrier 
 				equipment = { 
 					ship_hull_carrier_conversion_bb = { 
@@ -833,7 +904,8 @@
 				} 
 			}
 			ship = { 
-				name = "052D型昆明舰" 
+				name = "052D型昆明舰"
+				start_experience_factor = 0.3 
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -845,6 +917,7 @@
 			}
 			ship = { 
 				name = "052D型长沙舰" 
+				start_experience_factor = 0.3 
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -856,6 +929,7 @@
 			}
 			ship = { 
 				name = "052D型银川舰" 
+				start_experience_factor = 0.3 
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -867,6 +941,7 @@
 			}
 			ship = { 
 				name = "052D型合肥舰" 
+				start_experience_factor = 0.3 
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -878,6 +953,7 @@
 			}
 			ship = { 
 				name = "052D型呼和浩特舰" 
+				start_experience_factor = 0.3 
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -889,6 +965,7 @@
 			}
 			ship = { 
 				name = "052C型兰州舰" 
+				start_experience_factor = 0.3 
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -900,6 +977,7 @@
 			}
 			ship = { 
 				name = "052C型海口舰" 
+				start_experience_factor = 0.3 
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -911,6 +989,7 @@
 			}
 			ship = { 
 				name = "051B型深圳舰" 
+				start_experience_factor = 0.3 
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_1 = { 
@@ -922,6 +1001,7 @@
 			}
 			ship = { 
 				name = "052D型湛江舰" 
+				start_experience_factor = 0.3 
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -933,6 +1013,7 @@
 			}
 			ship = { 
 				name = "052D型西宁舰" 
+				start_experience_factor = 0.3 
 				definition = heavy_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -944,6 +1025,7 @@
 			}
 			ship = { 
 				name = "054A型黄山舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -955,6 +1037,7 @@
 			}
 			ship = { 
 				name = "054A型许昌舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -966,6 +1049,7 @@
 			}
 			ship = { 
 				name = "054A型运城舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -977,6 +1061,7 @@
 			}
 			ship = { 
 				name = "054A型玉林舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -988,6 +1073,7 @@
 			}
 			ship = { 
 				name = "054A型衡水舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -999,6 +1085,7 @@
 			}
 			ship = { 
 				name = "054A型柳州舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -1010,6 +1097,7 @@
 			}
 			ship = { 
 				name = "054A型三亚舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -1021,6 +1109,7 @@
 			}
 			ship = { 
 				name = "054A型岳阳舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -1032,6 +1121,7 @@
 			}
 			ship = { 
 				name = "054A型咸宁舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_2 = { 
@@ -1043,6 +1133,7 @@
 			}
 			ship = {
 				name = "053H3型洛阳舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = {
 					ship_hull_cruiser_1 = {
@@ -1054,6 +1145,7 @@
 			}
 			ship = {
 				name = "053H3型绵阳舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = {
 					ship_hull_cruiser_1 = {
@@ -1066,6 +1158,7 @@
 			
 			ship = { 
 				name = "053H1G型北海舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_1 = { 
@@ -1077,6 +1170,7 @@
 			}
 			ship = { 
 				name = "053H1G型东莞舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_1 = { 
@@ -1088,6 +1182,7 @@
 			}
 			ship = { 
 				name = "053H1G型汕头舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_1 = { 
@@ -1099,6 +1194,7 @@
 			}
 			ship = { 
 				name = "053H1G型江门舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_1 = { 
@@ -1110,6 +1206,7 @@
 			}
 			ship = { 
 				name = "053H1G型佛山舰" 
+				start_experience_factor = 0.3 
 				definition = light_cruiser 
 				equipment = { 
 					ship_hull_cruiser_1 = { 
@@ -1121,6 +1218,7 @@
 			}
 			ship = {
 				name = "056A型舰"
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 ={
@@ -1132,6 +1230,7 @@
 			}
 			ship = {
 				name = "056A型汉中舰"
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 ={
@@ -1143,6 +1242,7 @@
 			}
 			ship = {
 				name = "056A型遂宁舰"
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 ={
@@ -1154,6 +1254,7 @@
 			}
 			ship = {
 				name = "Type =056A型广元舰"
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 ={
@@ -1165,6 +1266,7 @@
 			}
 			ship = {
 				name = "056A型南充舰"
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 ={
@@ -1176,6 +1278,7 @@
 			}
 			ship = {
 				name = "056A型巴中舰"
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 ={
@@ -1187,6 +1290,7 @@
 			}
 			ship = {
 				name = "056A型梧州舰"
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 ={
@@ -1198,6 +1302,7 @@
 			}
 			ship = {
 				name = "056A型文山舰"
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = {
 					ship_hull_light_2 ={
@@ -1209,6 +1314,7 @@
 			}
 			ship = { 
 				name = "056型梅州舰" 
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -1220,6 +1326,7 @@
 			}
 			ship = { 
 				name = "056型百色舰" 
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -1231,6 +1338,7 @@
 			}
 			ship = { 
 				name = "056型揭阳舰" 
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -1242,6 +1350,7 @@
 			}
 			ship = { 
 				name = "056型清远舰" 
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -1253,6 +1362,7 @@
 			}
 			ship = { 
 				name = "056型泸州舰" 
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -1264,6 +1374,7 @@
 			}
 			ship = { 
 				name = "056A型荆门舰" 
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -1275,6 +1386,7 @@
 			}
 			ship = { 
 				name = "056A型同仁舰" 
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -1286,6 +1398,7 @@
 			}
 			ship = { 
 				name = "056A型曲靖舰" 
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
@@ -1297,6 +1410,7 @@
 			}
 			ship = { 
 				name = "056A型六盘水舰" 
+				start_experience_factor = 0.3 
 				definition = destroyer 
 				equipment = { 
 					ship_hull_light_2 = { 
