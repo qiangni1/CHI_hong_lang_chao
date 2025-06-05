@@ -6,7 +6,7 @@ sub_units = {
 		type = { fighter cas }
 		need = { attack_helicopter_equipment = 1 }
 		categories = { category_helicopter }
-		land_air_wing_size = 12
+		land_air_wing_size = 100
 	}
 
 	suicide_craft = {
@@ -16,7 +16,7 @@ sub_units = {
 		type = { fighter cas }
 		need = { suicide_craft_equipment = 1 }
 		categories = { category_fighter }
-		land_air_wing_size = 64
+		land_air_wing_size = 100
 	}
 	
 	fighter = {		###多用途飞机（歼-10C）（歼-20）（歼-16）
@@ -26,7 +26,7 @@ sub_units = {
 		type = { fighter cas }
 		need = { small_plane_airframe = 1 }
 		categories = { category_fighter }
-		land_air_wing_size = 24
+		land_air_wing_size = 100
 	}
 	
 	cv_fighter = {
@@ -47,7 +47,7 @@ sub_units = {
 		type = { cas }
 		need = { small_plane_cas_airframe = 1 }
 		categories = { category_cas }
-		land_air_wing_size = 24
+		land_air_wing_size = 100
 	}
 	
 	cv_cas = {		###多用途近距支援机（SU-30MKK）
@@ -58,7 +58,7 @@ sub_units = {
 		need = { cv_small_plane_cas_airframe = 1 }
 		categories = { category_cas }
 		carrier_air_wing_size = 10
-		land_air_wing_size = 24
+		land_air_wing_size = 100
 	}
 	
 	nav_bomber = {
@@ -102,7 +102,7 @@ sub_units = {
 		type = { strategic_bomber }
 		need = { large_plane_airframe = 1 }
 		categories = { category_strat_bomber }
-		land_air_wing_size = 12
+		land_air_wing_size = 100
 		mega_carrier_air_wing_size = 10
 	}
 	
@@ -134,7 +134,7 @@ sub_units = {
 		active = yes
 		type = { air_transport }
 		need = { transport_plane_equipment = 1 }
-		land_air_wing_size = 24
+		land_air_wing_size = 100
 	}
 	
 	rocket_interceptor = {
@@ -212,7 +212,7 @@ sub_units = {
 		type = strategic_bomber
 		need = { strat_bomber_intercontinental_equipment = 1 }
 		categories = { category_strat_bomber }
-		land_air_wing_size = 24
+		land_air_wing_size = 100
 		mega_carrier_air_wing_size = 5
 	}
 }
