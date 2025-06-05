@@ -88,20 +88,6 @@ PRC_new_left_pla_reformation = {
     priority = 5
 }
 
-PRC_new_left_pla_space_force = {
-    icon = GFX_PRC_pla_cat
-    visible_when_empty = yes
-    
-    allowed = {
-    	#tag = PRC
-    }
-    scripted_gui = new_left_space_force_entrance_gui
-    visible = {
-    	has_country_flag = PRC_new_left_pla_space_force_GUI_open
-    }
-    
-    priority = 4
-}
 PRC_Culture_Revital = {
 	icon = GFX_PRC_gaw_cat
 	allowed = {
