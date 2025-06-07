@@ -376,7 +376,6 @@ PRC_chinas_victory_in_the_gaw_nl = {
 			}
 		}
 		AST = {
-			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = libertarian_socialist
 				elections_allowed = no
@@ -396,7 +395,6 @@ PRC_chinas_victory_in_the_gaw_nl = {
 			}
 		}
 		PNG = {
-			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = conservative
 				elections_allowed = no
@@ -419,7 +417,6 @@ PRC_chinas_victory_in_the_gaw_nl = {
 			}
 		}
 		NZL = {
-			drop_cosmetic_tag = yes
 			set_politics = {
 				ruling_party = social_democrat
 				elections_allowed = no
