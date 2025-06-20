@@ -102,6 +102,8 @@
  PRC_nl_go_to_proletarian_democracy: "推动无产阶级民主化"
 
 ########经济法案########
+ common_prosperity_law: "共同富裕"
+ common_prosperity_law_desc: ""
  auto_socialism: "自动化社会主义经济"
  auto_socialism1: "自动化社会主义经济"
  auto_communism: "自动化共产主义经济"
