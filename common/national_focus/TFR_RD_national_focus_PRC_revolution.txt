@@ -79,6 +79,7 @@ shared_focus = {
 		add_ideas = PRC_birthplace_of_the_revolution_idea
 	}
 }
+#建立人民之声媒体频道
 shared_focus = {
 	id = Establishment_the_channel
 	icon = GFX_focus_PRC_new_left_pepleo

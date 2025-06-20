@@ -85,6 +85,7 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_clean_up_taibei
 		}
 	}
+	#整饬台湾情况
 	focus = {
 		id = PRC_nl_industry_integration_with_mainland
 		icon = GFX_focus_PRC_one_china_two_systems
@@ -207,6 +208,7 @@ focus_tree = {
 			}
 		}
 	}
+	#赤色浪潮在奔涌
 	focus = {
 		id = PRC_nl_red_wave_surge
 		icon = GFX_focus_PRC_popular_socialist_democracy
