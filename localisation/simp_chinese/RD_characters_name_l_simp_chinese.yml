@@ -127,3 +127,11 @@
  CPPCC_market_liberal_short: "政协（侨胞）"
  CPPCC_conservative: "政治协商会议（保守派）"
  CPPCC_conservative_short: "政协（保守派）"
+
+########舰船命名组########
+ THEME_CITIES_namegroup: "中大城市"
+ THEME_SM_CITIES_namegroup: "中小城市"
+ Province_namegroup: "省份"
+ RIVER_MOUNTAIN_namegroup: "知名山川"
+ THEME_LEADERS_namegroup: "历史名人"
+ PRC_Martyr_namegroup: "革命烈士"
