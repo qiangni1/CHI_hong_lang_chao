@@ -413,13 +413,6 @@ units = {
 		start_equipment_factor = 1
 	}
 	division = {			
-		name = "123rd Mechanized Division"
-		location = 10404
-		division_template = "机械化合成旅"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division = {			
 		name = "第72集团军15重型装甲合成旅"
 		location = 10404
 		division_template = "重型装甲合成旅"
