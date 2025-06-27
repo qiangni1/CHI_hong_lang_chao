@@ -135,3 +135,16 @@
  RIVER_MOUNTAIN_namegroup: "知名山川"
  THEME_LEADERS_namegroup: "历史名人"
  PRC_Martyr_namegroup: "革命烈士"
+
+########陆军编制命名组########
+ PRC_PAP_namegroup: "武警"
+ PRC_JXH_HCL_namegroup: "机械化合成旅"
+ PRC_ZJ_HCL_namegroup: "装甲合成旅"
+ PRC_ZX_ZJ_HCL_namegroup: "重型装甲合成旅"
+ PRC_QX_HCL_namegroup: "轻型合成旅"
+ PRC_ZX_JXH_HCL: "中型机械化合成旅"
+ PRC_SP_namegroup: "特种作战旅"
+ PRC_KJB_namegroup: "空降兵"
+ PRC_HJ_LZD_namegroup: "海军陆战队"
+ PRC_LQZJ_HCL_namegroup: "两栖装甲合成旅"
+ PRC_GD_TKJ_namegroup: "轨道太空军"
