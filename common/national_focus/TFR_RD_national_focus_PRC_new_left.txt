@@ -16,10 +16,10 @@ focus_tree = {
 	#重置-政经线
 	focus = {
 		id = PRC_nl_ancestor_worship
-		icon = GFX_focus_PRC_the_red_phoenix
+		icon = GFX_focus_PRC_FengHuangNiePan 
 		cost = 3
 		x = 18
-		y = 0
+		y = 0  
 		ai_will_do = {
 			factor = 50
 		}
@@ -29,7 +29,7 @@ focus_tree = {
 			NOT = {
 				has_country_flag = PRC_for_policy_tree_available
 			}
-		}
+		}  
 		completion_reward = {
 			remove_power_balance = {
 				id = PRC_power_balance
@@ -58,7 +58,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_martial_law_reconstruction
-		icon = GFX_focus_PRC_utilize_xinjiang_methods
+		icon = GFX_focus_PRC_utilize_xinjiang_methods 
 		cost = 3
 		prerequisite = {
 			focus = PRC_nl_ancestor_worship
@@ -152,10 +152,10 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_public_trial_separatists
-		icon = GFX_focus_PRC_quell_the_protests
+		icon = GFX_focus_PRC_GongShen_TaiWan
 		cost = 3
 		prerequisite = {
-			focus = PRC_nl_ancestor_worship
+			focus = PRC_nl_ancestor_worship 
 		}
 		x = 2
 		y = 1
@@ -209,7 +209,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_red_wave_surge
-		icon = GFX_focus_PRC_popular_socialist_democracy
+		icon = GFX_focus_PRC_ChiSeLangChao_ZaiBenYong
 		cost = 3
 		prerequisite = {
 			focus = PRC_nl_cross_strait_family
