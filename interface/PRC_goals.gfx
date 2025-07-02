@@ -275,8 +275,21 @@ spriteTypes = {
 		name = "GFX_focus_PLA_TieLiu_LiangWanWuQianLi"   
 		textureFile = "gfx/interface/goals/PRC/PLA_TieLiu_LiangWanWuQianLi.png"  
 	}
-	spriteType = {			###
-		name = "GFX_focus_PRC_XXXXX"  
-		textureFile = "gfx/interface/goals/PRC/PRC_XXXXX.png"  
+	spriteType = {			###敢把皇帝拉下马
+		name = "GFX_focus_PRC_GanBaHuangDi_LaXiaMa"  
+		textureFile = "gfx/interface/goals/PRC/PRC_GanBaHuangDi_LaXiaMa.png"  
+	}
+	spriteType = {			###赤色浪潮在奔涌
+		name = "GFX_focus_PRC_ChiSeLangChao_ZaiBenYong"  
+		textureFile = "gfx/interface/goals/PRC/PRC_ChiSeLangChao_ZaiBenYong.png"  
+	}
+	spriteType = {			###公审台湾
+		name = "GFX_focus_PRC_GongShen_TaiWan"   
+		textureFile = "gfx/interface/goals/PRC/PRC_GongShen_TaiWan.png"  
+	}
+	SpriteType = {			###凤凰涅槃
+		name = "GFX_focus_PRC_FengHuangNiePan"    
+		textureFile = "gfx/interface/goals/PRC/PRC_FengHuangNiePan.png"  
 	}
 }  
+ 
