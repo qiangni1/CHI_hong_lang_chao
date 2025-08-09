@@ -228,6 +228,27 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = ptf.1919
+	title = ptf.1919.t
+	desc = ptf.1919.d
+	picture = GFX_gmac_destruction
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		original_tag = PTF
+	}
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = ptf.1919.a
+	}
+}
+
 #Second Boston Massacre
 country_event = {
 	id = ptf.5
@@ -4688,3 +4709,4 @@ news_event = {
 		}
 	}
 }
+
