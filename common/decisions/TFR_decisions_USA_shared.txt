@@ -736,9 +736,7 @@ USA_restoring_american_foreign_influence_category = {
 				if = {
 					limit = {
 						OR = {
-							tag = QUE
 							tag = USN
-							tag = CAN
 						}
 					}
 					exists = yes
@@ -781,9 +779,7 @@ USA_restoring_american_foreign_influence_category = {
 						is_in_faction_with = ROOT
 					}
 					OR = {
-						tag = QUE
 						tag = USN
-						tag = CAN
 					}
 				}
 				war_with_PREV = yes
@@ -935,3 +931,4 @@ USA_restoring_american_foreign_influence_category = {
 		}
 	}
 }
+
