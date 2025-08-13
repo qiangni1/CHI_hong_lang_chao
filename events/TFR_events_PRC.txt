@@ -382,81 +382,6 @@ country_event = {
 	}
 	option = {
 		name = china.18.a
-		set_global_flag = PRC_xx_congress_end
-		hidden_effect = {
-			load_focus_tree = PRC_taiwan_war_tree
-			complete_national_focus = PRC_consolidate_hu_chunhua_support
-		}
-		effect_tooltip = {
-			set_politics = {
-				ruling_party = communist
-				elections_allowed = no
-			}
-		}
-		retire_character = PRC_xi_jinping
-		add_country_leader_role = {
-			character = PRC_Hu_Chunhua
-			promote_leader = yes
-			country_leader = {
-				ideology = marxism_leninism
-				expire = "2099.1.1.1"
-				traits = {
-				}
-			}
-		}
-		add_country_leader_role = {
-			character = PRC_Hu_Chunhua
-			promote_leader = yes
-			country_leader = {
-				ideology = eurocommunism
-				expire = "1.1.1.1"
-				traits = {
-				}
-			}
-		}
-		custom_effect_tooltip = appoint_head_minister_tooltip
-		show_ideas_tooltip = PRC_HuChunHua_hog_dummy
-		clr_country_flag = PRC_internal_factions_enabled_flag
-		set_country_flag = PRC_the_man_death_flag
-		hidden_effect = {
-			set_cosmetic_tag = PRC_totalitarian_socialist
-			add_ideas = PRC_HuChunHua_hog_dummy
-			add_popularity = {
-				ideology = libertarian_socialist
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = communist
-				popularity = 0.15
-			}
-			add_popularity = {
-				ideology = totalitarian_socialist
-				popularity = 0.1
-			}
-			set_party_name = {
-				ideology = communist
-				long_name = PRC_communist_party_long
-				name = PRC_communist_party
-			}
-			set_party_name = {
-				ideology = totalitarian_socialist
-				long_name = PRC_cpc_rad_maoist_tot_soc
-				name = PRC_cpc_rad_maoist_tot_soc_short
-			}
-			set_party_name = {
-				ideology = libertarian_socialist
-				long_name = PRC_cpc_neomarxist_libsoc
-				name = PRC_cpc_neomarxist_libsoc_short
-			}
-			set_temp_variable = {
-				coalition_partner_var_temp = token:totalitarian_socialist
-			}
-			add_to_coalition = yes
-			set_temp_variable = {
-				coalition_partner_var_temp = token:libertarian_socialist
-			}
-			add_to_coalition = yes
-		}
 	}
 }
 
@@ -710,6 +635,10 @@ country_event = {
 				idea = PRC_chinese_triumphalism
 				days = 1000
 			}
+		}
+		swap_ideas = {
+			remove_idea = PRC_party_rectification_campaign_bf1e
+			add_idea = PRC_party_rectification_campaign_bf2
 		}
 	}
 }
@@ -2649,6 +2578,10 @@ news_event = {
 	trigger = {
 	}
 	option = {
+		country_event = {
+			id = prcs.22
+			hours = 12
+		}
 		name = china.72.a
 	}
 }
@@ -8725,7 +8658,6 @@ country_event = {
 			has_country_flag = PRC_project_swimmer_failed
 		}
 	}
-	desc = china.268.d
 	picture = GFX_PRC_swimmer
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -9334,6 +9266,9 @@ country_event = {
 	}
 	option = {
 		name = china.279.a
+		hidden_effect = {
+			scoped_play_song = "TFR_Graduation_song"
+		}
 		add_political_power = -10
 	}
 }
@@ -9636,6 +9571,10 @@ country_event = {
 			popularity = -0.03
 		}
 		add_stability = -0.015
+		swap_ideas = {
+			remove_idea = PRC_party_rectification_campaign_bf1
+			add_idea = PRC_party_rectification_campaign_bf1b
+		}
 	}
 }
 
@@ -10105,6 +10044,10 @@ country_event = {
 			value = -0.15
 		}
 		add_poverty_development = yes
+		swap_ideas = {
+			remove_idea = PRC_party_rectification_campaign_bf1b
+			add_idea = PRC_party_rectification_campaign_bf1f 
+		}
 	}
 }
 
@@ -10414,6 +10357,10 @@ country_event = {
 			value = -0.075
 		}
 		add_farming_development = yes
+		swap_ideas = {
+			remove_idea = PRC_party_rectification_campaign_bf1f 
+			add_idea = PRC_party_rectification_campaign_bf1e
+		}
 	}
 }
 
@@ -14262,5 +14209,41 @@ country_event = {
 		custom_effect_tooltip = PRC_tfr_china_ending_loji_tt
 		custom_effect_tooltip = unrestricted_diplomacy_tt
 		set_country_flag = unrestricted_diplomacy_flag
+	}
+}
+
+country_event = {
+	id = IPAF.1
+	picture = GFX_PRC_nailoong
+	title = IPAF.1.t
+	desc = IPAF.1.d
+	#title和desc皆为文本代码，需在本地化文件写文本#
+	#通常来说trigger = { …… }与is_triggered_only = yes必须二选一
+	is_triggered_only = yes
+	#或
+	trigger = {
+		
+	}
+	#通常trigger = { …… }与fire_only_once = yes搭配
+	fire_only_once = yes
+	option = {
+		name = IPAF.1.a
+		add_ideas = IPAF_others_idea
+		add_stability = 0.05
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.05
+		}
+		add_society_development = yes
+		set_temp_variable = {
+			var = industrial_development_var_temp
+			value = 0.05
+		}
+		add_industrial_development = yes
+		set_temp_variable = {
+			var = farming_development_var_temp
+			value = 0.05
+		}
+		add_farming_development = yes
 	}
 }
