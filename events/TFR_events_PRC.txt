@@ -14195,3 +14195,157 @@ country_event = {
 		set_country_flag = unrestricted_diplomacy_flag
 	}
 }
+
+country_event = {
+	id = china.3001
+	title = china.3001.t
+	desc = china.3001.d
+	picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+    	name = china.3001.a
+    	custom_effect_tooltip = PRC_tfr_nl_china_multigov_tt
+    	add_political_power = 100
+    	country_event = {
+        	id = china.3002
+        	days = 0
+        }
+    }
+}
+
+country_event = {
+	id = china.3002
+	title = china.3002.t
+	desc = china.3002.d
+	picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+    	name = china.3002.a
+    	custom_effect_tooltip = PRC_tfr_nl_china_multigov_civ_tt
+    }
+}
+
+country_event = {
+	id = china.3003
+	title = china.3003.t
+	desc = china.3003.d
+	picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+    	name = china.3003.a
+    	add_political_power = 50
+    	custom_effect_tooltip = PRC_tfr_nl_china_old_hkway_tt
+    }
+    option = {
+    	name = china.3003.b
+    	add_political_power = -50
+    	custom_effect_tooltip = PRC_tfr_nl_china_new_hkway_tt
+    }
+}
+
+country_event = {
+	id = china.3004
+	title = china.3004.t
+	desc = china.3004.d
+	picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+    	name = china.3004.a
+    }
+}
+
+country_event = {
+	id = china.3005
+	title = china.3005.t
+	desc = china.3005.d
+	picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+    	name = china.3005.a
+    }
+    option = {
+    	name = china.3005.b
+    }
+}
+
+country_event = {
+	id = china.3006
+	title = china.3006.t
+	desc = china.3006.d
+	picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+    	name = china.3006.a
+    	custom_effect_tooltip = PRC_tfr_nl_china_third_core_tt
+    }
+    option = {
+    	name = china.3006.b
+    	custom_effect_tooltip = PRC_tfr_nl_china_fifth_city_tt
+    }
+}
+
+country_event = {
+	id = china.3007
+	title = china.3007.t
+	desc = china.3007.d
+	picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+    	name = china.3007.a
+    }
+}
+
+country_event = {
+	id = china.3008
+	title = china.3008.t
+	desc = china.3008.d
+	picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+    	name = china.3008.a
+    }
+}
+
+country_event = {
+	id = china.3009
+	title = china.3009.t
+	desc = china.3009.d
+	picture = GFX_Chinese_soldiers
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+    	name = china.3009.a
+    	custom_effect_tooltip = PRC_tfr_nl_china_pandem_tt
+    }
+    option = {
+    	name = china.3009.b
+    	custom_effect_tooltip = PRC_tfr_nl_china_hksyndica_tt
+    }
+}
+
