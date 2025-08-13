@@ -2503,7 +2503,7 @@ focus_tree = {
 	#}
 	focus = {
 		id = PRC_nl_dawn_project
-		icon = GFX_focus_PRC_towards_automated_socialism
+		icon = GFX_focus_PRC_Chuji_Shuguang
 		cost = 2
 		x = -1
 		y = 3
@@ -2520,7 +2520,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_national_IoT_construction
-		icon = GFX_focus_PRC_invest_in_artificial_intelligence
+		icon = GFX_focus_PRC_Quanquyu_Hulianwang_Jianshe
 		cost = 3
 		x = -1
 		y = 1
@@ -2732,7 +2732,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_introduce_worker_supervision
-		icon = GFX_focus_SOV_empower_peoples_corporations
+		icon = GFX_focus_PRC_Yinru_Gongrenjianguan
 		cost = 2
 		x = 1
 		y = 1
@@ -2784,7 +2784,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_reform_farmer_cooperation
-		icon = GFX_focus_PRC_rooting_weeds
+		icon = GFX_focus_PRC_Xikan_Daojiqianchonglang
 		cost = 3
 		x = 1
 		y = 1
@@ -3000,7 +3000,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_autonomous_iteration_system
-		icon = GFX_focus_PRC_fusion_investements
+		icon = GFX_focus_PRC_Zizhudiedaixitong
 		cost = 2
 		x = -1
 		y = 1
@@ -3064,7 +3064,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PRC_nl_free_and_equal_labor
-		icon = GFX_focus_PRC_tackle_youth_unemployment
+		icon = GFX_focus_PRC_Ziyou_Pingdeng_Laodong
 		cost = 3
 		x = -1
 		y = 1
