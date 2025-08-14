@@ -14244,11 +14244,21 @@ country_event = {
     	name = china.3003.a
     	add_political_power = 50
     	custom_effect_tooltip = PRC_tfr_nl_china_old_hkway_tt
+    	add_ideas = PRC_Organizacion_del_Partido_idea
+    	country_event = {
+            id = china.3009
+            days = 120
+        }
     }
     option = {
     	name = china.3003.b
     	add_political_power = -50
     	custom_effect_tooltip = PRC_tfr_nl_china_new_hkway_tt
+    	add_ideas = PRC_Organizacion_del_Partido_idea
+    	country_event = {
+             id = china.3006
+             days = 180
+        }
     }
 }
 
@@ -14263,6 +14273,17 @@ country_event = {
 	}
 	option = {
     	name = china.3004.a
+    	swap_ideas = {
+			remove_idea = PRC_Organizacion_del_Partido_mygo_idea
+			add_idea = PRC_Organizacion_del_Partido_bluelotus_idea
+		}
+		remove_ideas = {
+		    PRC_the_separatist_problem
+		}
+		add_timed_idea = {
+            idea = PRC_the_separatist_problem
+            days = 60
+        }
     }
 }
 
@@ -14277,9 +14298,24 @@ country_event = {
 	}
 	option = {
     	name = china.3005.a
+    	swap_ideas = {
+			remove_idea = PRC_Organizacion_del_Partido_mygo_idea
+			add_idea = PRC_Organizacion_del_Partido_oldhappy_idea
+		}
     }
     option = {
     	name = china.3005.b
+    	swap_ideas = {
+			remove_idea = PRC_Organizacion_del_Partido_mygo_idea
+			add_idea = PRC_Organizacion_del_Partido_oldhappy_idea
+		}
+		remove_ideas = {
+		    PRC_the_separatist_problem
+		}
+		add_timed_idea = {
+            idea = PRC_the_separatist_problem
+            days = 120
+        }
     }
 }
 
@@ -14295,10 +14331,26 @@ country_event = {
 	option = {
     	name = china.3006.a
     	custom_effect_tooltip = PRC_tfr_nl_china_third_core_tt
+    	swap_ideas = {
+			remove_idea = PRC_Organizacion_del_Partido_idea
+			add_idea = PRC_Organizacion_del_Partido_oldandnew_idea
+		}
+    	country_event = {
+            id = china.3007
+            days = 240
+        }
     }
     option = {
     	name = china.3006.b
     	custom_effect_tooltip = PRC_tfr_nl_china_fifth_city_tt
+    	swap_ideas = {
+			remove_idea = PRC_Organizacion_del_Partido_idea
+			add_idea = PRC_Organizacion_del_Partido_oldandnew_idea
+		}
+    	country_event = {
+            id = china.3008
+            days = 240
+        }
     }
 }
 
@@ -14313,6 +14365,17 @@ country_event = {
 	}
 	option = {
     	name = china.3007.a
+    	swap_ideas = {
+			remove_idea = PRC_Organizacion_del_Partido_oldandnew_idea
+			add_idea = PRC_Organizacion_del_Partido_lionmout_idea
+		}
+		remove_ideas = {
+		    PRC_the_separatist_problem
+		}
+		add_timed_idea = {
+            idea = PRC_the_separatist_problem
+            days = 240
+        }
     }
 }
 
@@ -14327,6 +14390,17 @@ country_event = {
 	}
 	option = {
     	name = china.3008.a
+    	swap_ideas = {
+			remove_idea = PRC_Organizacion_del_Partido_oldandnew_idea
+			add_idea = PRC_Organizacion_del_Partido_flower_idea
+		}
+		remove_ideas = {
+		    PRC_the_separatist_problem
+		}
+		add_timed_idea = {
+            idea = PRC_the_separatist_problem
+            days = 150
+        }
     }
 }
 
@@ -14342,10 +14416,27 @@ country_event = {
 	option = {
     	name = china.3009.a
     	custom_effect_tooltip = PRC_tfr_nl_china_pandem_tt
+    	swap_ideas = {
+			remove_idea = PRC_Organizacion_del_Partido_idea
+			add_idea = PRC_Organizacion_del_Partido_mygo_idea
+		}
+    	country_event = {
+             id = china.3004
+             days = 120
+        }
     }
     option = {
     	name = china.3009.b
     	custom_effect_tooltip = PRC_tfr_nl_china_hksyndica_tt
+    	swap_ideas = {
+			remove_idea = PRC_Organizacion_del_Partido_idea
+			add_idea = PRC_Organizacion_del_Partido_mygo_idea
+		}
+    	country_event = {
+            id = china.3005
+             days = 240
+        }
     }
 }
+
 
