@@ -243,6 +243,119 @@ ideas = {
 				society_development_monthly = 0.008
 			}
 		}
+		PRC_Organizacion_del_Partido_idea = {
+        	name = PRC_odp
+        	picture = PRC_pla
+        	allowed = {
+        		always = yes
+        	}
+        	removal_cost = -1
+        	modifier = {
+        	}
+        }
+
+        PRC_Organizacion_del_Partido_mygo_idea = {
+        	name = PRC_odp
+        	picture = PRC_pla
+        	allowed = {
+        		always = yes
+        	}
+        	removal_cost = -1
+        	modifier = {
+        	    political_power_factor = -0.07
+        	    stability_factor = 0.10
+        	    business_value_factor = 0.05
+        	    communist_drift = 0.03
+        	    authoritarian_democrat_drift = -0.03
+        	    nationalist_drift = -0.03
+        	}
+        }
+
+        PRC_Organizacion_del_Partido_bluelotus_idea = {
+        	name = PRC_odp
+        	picture = PRC_pla
+        	allowed = {
+        		always = yes
+        	}
+        	removal_cost = -1
+        	modifier = {
+        	    political_power_factor = 0.05
+        	    stability_factor = 0.15
+        	    society_development_monthly = -0.03
+        	}
+        }
+
+        PRC_Organizacion_del_Partido_oldhappy_idea = {
+        	name = PRC_odp
+        	picture = PRC_pla
+        	allowed = {
+        		always = yes
+        	}
+        	removal_cost = -1
+        	modifier = {
+        	    political_power_factor = -0.07
+        	    political_power_cost = -0.03
+        	    production_cost_industrial_complex_factor = 0.03
+        	    production_factory_max_efficiency_factor = -0.03
+        	    stability_factor = 0.10
+        	    business_value_factor = 0.05
+        	    communist_drift = 0.03
+        	    authoritarian_democrat_drift = -0.1
+        	    nationalist_drift = -0.1
+        	}
+        }
+
+        PRC_Organizacion_del_Partido_oldandnew_idea = {
+        	name = PRC_odp
+        	picture = PRC_pla
+        	allowed = {
+        		always = yes
+        	}
+        	removal_cost = -1
+        	modifier = {
+        	    political_power_cost = -0.03
+        	    stability_factor = -0.05
+        	    personal_expense_factor = -0.05
+
+        	    authoritarian_democrat_drift = -0.05
+                nationalist_drift = -0.05
+        	}
+        }
+        PRC_Organizacion_del_Partido_lionmout_idea = {
+        	name = PRC_odp
+        	picture = PRC_pla
+        	allowed = {
+        		always = yes
+        	}
+        	removal_cost = -1
+        	modifier = {
+        	    political_power_cost = -0.03
+        	    stability_factor = -0.05
+        	    personal_expense_factor = -0.05
+        	    authoritarian_democrat_drift = -0.05
+                nationalist_drift = -0.05
+                production_speed_industrial_complex_factor = 0.05
+                business_value_factor = 0.05
+                research_speed_factor = 0.05
+        	}
+        }
+
+        PRC_Organizacion_del_Partido_flower_idea = {
+        	name = PRC_odp
+        	picture = PRC_pla
+        	allowed = {
+        		always = yes
+        	}
+        	removal_cost = -1
+        	modifier = {
+        	    political_power_cost = -0.03
+        	    stability_factor = 0.05
+        	    personal_expense_factor = 0.05
+        	    authoritarian_democrat_drift = -0.05
+                nationalist_drift = -0.05
+                society_development_monthly = 0.03
+        	}
+        }
 	}
 	#内阁
 	head_minister = {
