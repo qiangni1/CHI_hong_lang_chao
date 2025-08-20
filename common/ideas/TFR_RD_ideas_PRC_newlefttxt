@@ -243,6 +243,8 @@ ideas = {
 				society_development_monthly = 0.008
 			}
 		}
+		
+
 	}
 	#内阁
 	head_minister = {
